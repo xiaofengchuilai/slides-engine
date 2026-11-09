@@ -1,0 +1,22 @@
+<Slide>
+  {/* chinese/1636 纯文字·大留白意境：巨字 + 副题 + 居中短线点缀 */}
+  <Box style={{ height: 720, width: 1280, background: '#FAF9F6', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      {/* 主标题：大字 */}
+      <Text style={{ fontSize: 'hero', color: '#7A1F1F', bold: true, letterSpacing: 10, fontFamily: 'serif', marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}禅</Text>
+      {/* 副标题 */}
+      <Box style={{ alignItems: 'center', gap: 'xl' }}>
+        <Text style={{ fontSize: 'title', color: '#4A4A4A', fontFamily: 'serif', letterSpacing: 3 }}>{/* {{替换：副题}} */}空即是色，色即是空</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'lg' }}>
+          <Box style={{ width: 64, height: 1, background: '#7A1F1F', opacity: 0.2 }} />
+          <Text style={{ fontSize: 'body', color: '#6B7280', letterSpacing: 4 }}>静心</Text>
+          <Box style={{ width: 64, height: 1, background: '#7A1F1F', opacity: 0.2 }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+  {/* 印章装饰（降级为简约色块+细线） */}
+  <Box style={{ position: 'absolute', bottom: 56, right: 56, width: 56, height: 56, border: '1px solid #7A1F1F', alignItems: 'center', justifyContent: 'center', opacity: 0.4 }}>
+    <Text style={{ fontSize: 'body', color: '#7A1F1F', fontFamily: 'serif' }}>禅</Text>
+  </Box>
+</Slide>

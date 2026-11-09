@@ -1,0 +1,51 @@
+<Slide>
+  {/* chinese/3533 中国风-水墨书卷：宣纸米底 + 左侧竹节装饰 + 大标题 + 下划线章节 + 右侧印章 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #FAF8F5 0%, #F0EBE3 100%)', padding: 48 }}>
+    <Box style={{ height: 624, flexDirection: 'row' }}>
+      {/* 左侧竹节装饰 */}
+      <Box style={{ width: 160, alignItems: 'center', justifyContent: 'center', gap: 4 }}>
+        <Box style={{ width: 2, height: 96, background: 'linear-gradient(180deg, rgba(139,115,85,0) 0%, #8b7355 100%)' }} />
+        <Box style={{ width: 12, height: 4, borderRadius: 2, background: '#8b7355' }} />
+        <Box style={{ width: 2, height: 64, background: '#8b7355' }} />
+        <Box style={{ width: 12, height: 4, borderRadius: 2, background: '#8b7355' }} />
+        <Box style={{ width: 2, height: 64, background: '#8b7355' }} />
+        <Box style={{ width: 12, height: 4, borderRadius: 2, background: '#8b7355' }} />
+        <Box style={{ width: 2, height: 96, background: 'linear-gradient(180deg, #8b7355 0%, rgba(139,115,85,0) 100%)' }} />
+      </Box>
+      {/* 主内容区 */}
+      <Box style={{ flex: 1, justifyContent: 'center', paddingLeft: 32 }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 24, marginBottom: 48 }}>
+          <Text style={{ fontSize: 'hero', color: '#3d3d3d', bold: true, fontFamily: 'serif' }}>{/* {{标题}} */}目录</Text>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, paddingBottom: 12 }}>
+            <Box style={{ width: 64, height: 1, background: '#a0937d' }} />
+            <Text style={{ fontSize: 'label', color: '#a0937d', letterSpacing: 4 }}>CONTENTS</Text>
+          </Box>
+        </Box>
+        <Box style={{ gap: 16 }}>
+          {[
+            ['一', '项目背景'],
+            ['二', '核心功能'],
+            ['三', '技术架构'],
+            ['四', '实施计划'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', alignItems: 'center' }}>
+              <Box style={{ width: 80, alignItems: 'center' }}>
+                <Text style={{ fontSize: 'kpi', color: '#c9b896', fontFamily: 'serif', bold: true }}>{/* {{章节编号}} */}{x[0]}</Text>
+              </Box>
+              <Box style={{ flex: 1, paddingTop: 16, paddingBottom: 16, position: 'relative' }}>
+                <Text style={{ fontSize: 'card', color: '#4a4036', fontFamily: 'serif', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+                <Box style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 1, background: '#e5e0d8' }} />
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 右侧印章 */}
+      <Box style={{ width: 128, alignItems: 'center', paddingTop: 80 }}>
+        <Box style={{ width: 56, height: 56, border: '2px solid #a65a4c', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#a65a4c', bold: true, fontFamily: 'serif' }}>{/* {{印章字}} */}录</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,52 @@
+<Slide>
+  {/* minimalist/1592 居中标题 + 左文右图两栏：两张要点卡 + 配图 + 底部来源 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 左侧装饰竖线 */}
+    <Box style={{ position: 'absolute', left: 0, top: 180, width: 4, height: 360, background: 'primary' }} />
+    {/* 右上角装饰点 */}
+    <Box style={{ position: 'absolute', right: 48, top: 48, width: 12, height: 12, borderRadius: 6, background: 'primary' }} />
+    <Box style={{ position: 'absolute', right: 80, top: 48, width: 12, height: 12, borderRadius: 6, background: 'muted' }} />
+
+    <Box style={{ flex: 1, gap: 'xl' }}>
+      {/* 标题区 */}
+      <Box style={{ alignItems: 'center', gap: 'sm' }}>
+        <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{标题}} */}创新驱动发展</Text>
+        <Box style={{ width: 80, height: 2, background: 'primary', marginBottom: 'xs' }} />
+        <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{副标题}} */}Innovation-Driven Development Strategy</Text>
+      </Box>
+
+      {/* 图文混排区 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+        {/* 左列两卡 */}
+        <Box style={{ flex: 1, gap: 'xl', justifyContent: 'center' }}>
+          <Box style={{ background: 'cardBg', padding: 'xl', borderRadius: 'sm', gap: 'sm', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+              <Box style={{ width: 8, height: 8, borderRadius: 4, background: 'primary' }} />
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{卡1标题}} */}技术创新</Text>
+            </Box>
+            <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{卡1正文}} */}持续投入研发，构建核心技术能力，形成可持续的竞争优势。</Text>
+          </Box>
+          <Box style={{ background: 'cardBg', padding: 'xl', borderRadius: 'sm', gap: 'sm', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+              <Box style={{ width: 8, height: 8, borderRadius: 4, background: 'primary' }} />
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{卡2标题}} */}模式创新</Text>
+            </Box>
+            <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{卡2正文}} */}探索新的商业模式和服务方式，创造新的价值增长点。</Text>
+          </Box>
+        </Box>
+
+        {/* 右列配图 */}
+        <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center', borderRadius: 'md' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1592.png" style={{ width: 560, height: 420, objectFit: 'contain' }} />
+        </Box>
+      </Box>
+
+      {/* 底部来源 */}
+      <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{来源}} */}*基于国家创新驱动发展战略纲要</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{更新时间}} */}更新时间：2024年12月</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

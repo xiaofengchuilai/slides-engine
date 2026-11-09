@@ -1,0 +1,19 @@
+<Slide>
+  {/* decorative/cartoon/2007 卡通风-软萌小图标：浅底 + 彩色 emoji 装饰网格 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFF7ED 0%, #FDF2F8 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center', gap: 24 }}>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Emoji name="⭐" style={{ width: 32, height: 32 }} />
+        <Emoji name="💖" style={{ width: 32, height: 32 }} />
+        <Emoji name="🌈" style={{ width: 32, height: 32 }} />
+        <Emoji name="✨" style={{ width: 32, height: 32 }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Emoji name="🎈" style={{ width: 32, height: 32 }} />
+        <Emoji name="🌟" style={{ width: 32, height: 32 }} />
+        <Emoji name="💫" style={{ width: 32, height: 32 }} />
+        <Emoji name="🎀" style={{ width: 32, height: 32 }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

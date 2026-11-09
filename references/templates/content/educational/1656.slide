@@ -1,0 +1,67 @@
+<Slide>
+  {/* educational/1656 JavaScript基础·变量与数据类型：深色 + let/const/var 三卡 + 使用建议/实战示例 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E293B 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 'title', color: '#FACC15', bold: true, fontFamily: 'monospace' }}>{/* {{替换：标题}} */}JavaScript 基础</Text>
+        <Text style={{ fontSize: 'body', color: '#9CA3AF', fontFamily: 'monospace', marginTop: 'xs' }}>{/* {{替换：副标题}} */}变量声明 let, const, var</Text>
+      </Box>
+      <Emoji name="📦" style={{ width: 36, height: 36 }} />
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+      {[
+        ['let', '可以重新赋值', ['块级作用域', '可以修改', '不能重复声明'], '✓ ✓ ✗', '推荐使用', '需要改变的变量', '#3B82F6', '#60A5FA'],
+        ['const', '不能重新赋值', ['块级作用域', '不能修改', '不能重复声明'], '✓ ✗ ✗', '推荐使用 ⭐⭐', '不变的常量', '#A855F7', '#C084FC'],
+        ['var', '旧语法', ['函数作用域', '可以修改', '可以重复声明'], '✗ ✓ ✓', '不推荐', '容易产生问题', '#6B7280', '#9CA3AF'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: `linear-gradient(135deg, ${x[6]}40 0%, ${x[6]}30 100%)`, border: `2px solid ${x[7]}`, borderRadius: 'md', padding: 'lg' }}>
+          <Text style={{ fontSize: 'card', color: x[7], bold: true, fontFamily: 'monospace', marginBottom: 'sm' }}>{/* {{替换：关键词}} */}{x[0]}</Text>
+          <Box style={{ background: '#0F172A', borderRadius: 'sm', padding: 'sm', gap: 'xs', marginBottom: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: '#9CA3AF', fontFamily: 'monospace' }}>{x[1]}</Text>
+          </Box>
+          <Box style={{ background: x[6], borderRadius: 'sm', padding: 'sm', opacity: 0.15, gap: 'xs', marginBottom: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: x[7], bold: true }}>{/* {{替换：特点}} */}{x[2][0]}</Text>
+            <Text style={{ fontSize: 'label', color: '#D1D5DB' }}>{/* {{替换：特点}} */}{x[2][1]}</Text>
+            <Text style={{ fontSize: 'label', color: '#D1D5DB' }}>{/* {{替换：特点}} */}{x[2][2]}</Text>
+          </Box>
+          <Box style={{ background: x[6], borderRadius: 'sm', padding: 'sm', opacity: 0.15 }}>
+            <Text style={{ fontSize: 'label', color: x[7], bold: true }}>{/* {{替换：建议}} */}{x[4]}</Text>
+            <Text style={{ fontSize: 'label', color: '#D1D5DB' }}>{/* {{替换：建议说明}} */}{x[5]}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'lg' }}>
+      <Box style={{ flex: 1, background: 'rgba(6,182,212,0.1)', border: '1px solid rgba(6,182,212,0.3)', borderRadius: 'md', padding: 'lg' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+          <Emoji name="📚" style={{ width: 18, height: 18 }} />
+          <Text style={{ fontSize: 'body', color: '#22D3EE', bold: true, fontFamily: 'monospace' }}>{/* {{替换：标题}} */}使用建议</Text>
+        </Box>
+        <Box style={{ gap: 'xs' }}>
+          {[
+            ['默认使用 const', '#C084FC'],
+            ['需要改变值时用 let', '#60A5FA'],
+            ['不要使用 var', '#9CA3AF'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+              <Text style={{ fontSize: 'label', color: '#22D3EE', bold: true }}>{i + 1}.</Text>
+              <Text style={{ fontSize: 'label', color: '#D1D5DB' }}>{/* {{替换：建议}} */}{x[0]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      <Box style={{ flex: 1, background: 'rgba(250,204,21,0.1)', border: '1px solid rgba(250,204,21,0.3)', borderRadius: 'md', padding: 'lg' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+          <Emoji name="⚡" style={{ width: 18, height: 18 }} />
+          <Text style={{ fontSize: 'body', color: '#FACC15', bold: true, fontFamily: 'monospace' }}>{/* {{替换：标题}} */}实战示例</Text>
+        </Box>
+        <Box style={{ background: '#0F172A', borderRadius: 'sm', padding: 'sm', gap: 'xs' }}>
+          <Text style={{ fontSize: 'label', color: '#C084FC', fontFamily: 'monospace' }}>const studentName = "小明";</Text>
+          <Text style={{ fontSize: 'label', color: '#60A5FA', fontFamily: 'monospace' }}>let score = 90;</Text>
+          <Text style={{ fontSize: 'label', color: '#60A5FA', fontFamily: 'monospace' }}>score = score + 5;</Text>
+          <Text style={{ fontSize: 'label', color: '#9CA3AF', fontFamily: 'monospace' }}>// score现在是95</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

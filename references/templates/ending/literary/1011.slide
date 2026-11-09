@@ -1,0 +1,29 @@
+<Slide>
+  {/* ending/literary/1011 文艺风-诗意告别：米橙渐变 + 细线 + 居中诗语 + 联系卡 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #FDF3E7 0%, #FDEBD0 100%)' }}>
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      {/* 花朵装饰（彩色 emoji） */}
+      <Emoji name="🌸" style={{ width: 40, height: 40, marginBottom: 'lg' }} />
+      <Text style={{ fontSize: 'hero', color: '#374151', bold: true, fontFamily: 'serif', marginBottom: 'md' }}>{/* {{替换：主标题}} */}谢谢</Text>
+      {/* 分隔线 + Thank You */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 'md' }}>
+        <Box style={{ width: 80, height: 1, background: '#F59E0B' }} />
+        <Text style={{ fontSize: 'card', color: '#4B5563', fontFamily: 'serif' }}>Thank You</Text>
+        <Box style={{ width: 80, height: 1, background: '#F59E0B' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#4B5563', fontFamily: 'serif', marginBottom: 'xl' }}>{/* {{替换：诗语}} */}" 山水一程，三生有幸 "</Text>
+      {/* 联系卡 */}
+      <Box style={{ border: '4px solid #FCD34D', background: '#FFFFFF', padding: 'lg xl', borderRadius: 'sm', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <FAIcon name="envelope" style={{ fill: '#D97706', width: 16, height: 16 }} />
+          <Text style={{ fontSize: 'body', color: '#374151' }}>{/* {{替换：联系内容}} */}mail@literary.com</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginTop: 'xs' }}>
+          <FAIcon name="phone" style={{ fill: '#D97706', width: 16, height: 16 }} />
+          <Text style={{ fontSize: 'body', color: '#374151' }}>{/* {{替换：联系内容}} */}138-1234-5678</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

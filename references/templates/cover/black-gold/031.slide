@@ -1,0 +1,15 @@
+<Slide>
+  {/* black-gold/031 奢华渐变：黑底 + 金色光晕 + 皇冠图标 + 金字标题 + 金线 + 副标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #451A03 0%, #000000 55%, #3A2404 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 金色光晕（右上/左下，低透明度） */}
+    <Box style={{ position: 'absolute', top: 0, right: 0, width: 500, height: 500, borderRadius: 250, background: '#EAB308', opacity: 0.08 }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 400, height: 400, borderRadius: 200, background: '#B45309', opacity: 0.06 }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Emoji name="👑" style={{ width: 72, height: 72, marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}VIP 专属</Text>
+      <Box style={{ width: 256, height: 3, background: 'linear-gradient(90deg, rgba(234,179,8,0) 0%, #EAB308 50%, rgba(234,179,8,0) 100%)', marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'card', color: 'rgba(234,179,8,0.8)', letterSpacing: 8 }}>{/* {{替换：副标题}} */}EXCLUSIVE PRIVILEGE</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,25 @@
+<Slide>
+  {/* business/060 深色封面：四角 L 形角饰 + 居中大标题 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #111827 0%, #1E293B 50%, #111827 100%)', position: 'relative' }}>
+    {/* 左上角饰（横条+竖条拼 L） */}
+    <Box style={{ position: 'absolute', top: 48, left: 48, flexDirection: 'column' }}>
+      <Box style={{ width: 96, height: 4, background: '#FFFFFF', opacity: 0.1 }} />
+      <Box style={{ width: 4, height: 96, background: '#FFFFFF', opacity: 0.1 }} />
+    </Box>
+    {/* 右下角饰 */}
+    <Box style={{ position: 'absolute', bottom: 48, right: 48, flexDirection: 'column', alignItems: 'flex-end' }}>
+      <Box style={{ width: 4, height: 96, background: '#FFFFFF', opacity: 0.1 }} />
+      <Box style={{ width: 96, height: 4, background: '#FFFFFF', opacity: 0.1 }} />
+    </Box>
+    {/* 主内容区 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, justifyContent: 'center', alignItems: 'center', padding: 'xxl xl' }}>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, textAlign: 'center', letterSpacing: 4, lineHeight: 1.2, marginBottom: 'xxl' }}>{/* {{主标题}} */}投资价值分析</Text>
+      <Text style={{ fontSize: 'body', color: '#94A3B8', textAlign: 'center', letterSpacing: 2, lineHeight: 1.5, marginBottom: 'xxl' }}>{/* {{副标题}} */}洞察趋势·把握机遇·稳健增长</Text>
+      <Box style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 'lg' }}>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', letterSpacing: 1 }}>{/* {{落款一}} */}投资管理部</Text>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.5 }}>·</Text>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', letterSpacing: 1 }}>{/* {{落款二}} */}投资决策评审</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

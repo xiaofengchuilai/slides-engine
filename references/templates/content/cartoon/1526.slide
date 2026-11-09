@@ -1,0 +1,77 @@
+<Slide>
+  {/* cartoon/1526 学习大冒险：游戏标题栏 + 关卡地图 + 任务提示 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #7DD3FC 0%, #BAE6FD 50%, #BBF7D0 100%)', padding: 'xl', gap: 'lg' }}>
+    {/* 云朵装饰 */}
+    <Box style={{ position: 'absolute', top: 56, left: 120, opacity: 0.6 }}>
+      <Emoji name="☁️" style={{ width: 64, height: 64 }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 96, right: 180, opacity: 0.5 }}>
+      <Emoji name="☁️" style={{ width: 52, height: 52 }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 160, left: '58%', opacity: 0.4 }}>
+      <Emoji name="☁️" style={{ width: 44, height: 44 }} />
+    </Box>
+    {/* 游戏标题栏 */}
+    <Box style={{ background: 'linear-gradient(90deg, #6366F1 0%, #8B5CF6 100%)', borderRadius: 'lg', padding: 'lg', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+        <Box style={{ width: 60, height: 60, borderRadius: 30, background: '#FBBF24', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Emoji name="😎" style={{ width: 32, height: 32 }} />
+        </Box>
+        <Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：游戏名}} */}学习大冒险</Text>
+          <Text style={{ fontSize: 'label', color: '#C7D2FE', bold: true }}>{/* {{替换：关卡名}} */}Level 5 - 知识岛探索</Text>
+        </Box>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+        <Box style={{ background: 'rgba(255,255,255,0.2)', borderRadius: 'md', padding: 'sm md' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs' }}>
+            <Emoji name="⭐" style={{ width: 16, height: 16 }} />
+            <Text style={{ fontSize: 'label', color: '#FDE68A', bold: true }}>{/* {{替换：积分标签}} */}积分</Text>
+          </Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：积分值}} */}2,480</Text>
+        </Box>
+        <Box style={{ background: 'rgba(255,255,255,0.2)', borderRadius: 'md', padding: 'sm md' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs' }}>
+            <Emoji name="❤️" style={{ width: 16, height: 16 }} />
+            <Text style={{ fontSize: 'label', color: '#FCA5A5', bold: true }}>{/* {{替换：生命标签}} */}生命</Text>
+          </Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：生命值}} */}3 / 5</Text>
+        </Box>
+      </Box>
+    </Box>
+    {/* 关卡地图（五关路径） */}
+    <Box style={{ flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 'md xl', position: 'relative' }}>
+      {/* 路径线 */}
+      <Box style={{ position: 'absolute', left: 60, right: 60, top: '50%', height: 6, background: 'rgba(139,92,246,0.4)' }} />
+      {[
+        ['第1关', '已完成', '#4ADE80', '#166534', '✅', 88],
+        ['第2关', '已完成', '#60A5FA', '#1E3A8A', '✅', 88],
+        ['第3关', '正在挑战', '#FBBF24', '#78350F', '🎯', 110],
+        ['第4关', '未解锁', '#D1D5DB', '#4B5563', '🔒', 88],
+        ['最终Boss', 'Boss关卡', '#A855F7', '#4C1D95', '👾', 100],
+      ].map((x, i) => (
+        <Box key={i} style={{ alignItems: 'center' }}>
+          <Box style={{ width: x[5], height: x[5], borderRadius: x[5] / 2, background: x[2], alignItems: 'center', justifyContent: 'center', border: i === 2 ? '4px solid #FFFFFF' : undefined, boxShadow: i === 2 ? '0 16px 48px rgba(0,0,0,0.28)' : '0 12px 36px rgba(0,0,0,0.22)' }}>
+            <Emoji name={x[4]} style={{ width: i === 2 ? 40 : 30, height: i === 2 ? 40 : 30 }} />
+            {i === 4 && <Emoji name="🔒" style={{ position: 'absolute', top: -20, width: 30, height: 30 }} />}
+          </Box>
+          <Box style={{ background: i === 2 ? '#7C2D12' : '#FFFFFF', borderRadius: 20, padding: 'xs md', marginTop: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: i === 2 ? '#FFFFFF' : x[3], bold: true }}>{/* {{替换：关卡状态}} */}{x[1]}</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: x[3], bold: true, marginTop: 'xs' }}>{/* {{替换：关卡名}} */}{x[0]}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 任务提示 */}
+    <Box style={{ background: 'rgba(255,255,255,0.9)', borderRadius: 'md', padding: 'lg', flexDirection: 'row', alignItems: 'center', gap: 'lg', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+      <Emoji name="📢" style={{ width: 40, height: 40 }} />
+      <Box style={{ flex: 1 }}>
+        <Text style={{ fontSize: 'card', color: '#1F2937', bold: true, marginBottom: 'xs' }}>{/* {{替换：任务标题}} */}当前任务：完成数据结构练习</Text>
+        <Text style={{ fontSize: 'body', color: '#4B5563' }}>{/* {{替换：任务描述}} */}完成3道算法题即可解锁下一关！加油！💪</Text>
+      </Box>
+      <Box style={{ background: 'linear-gradient(90deg, #4ADE80 0%, #10B981 100%)', borderRadius: 'md', padding: 'sm lg', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：按钮文字}} */}开始挑战</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

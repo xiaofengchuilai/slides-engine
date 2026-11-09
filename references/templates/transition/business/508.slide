@@ -1,0 +1,19 @@
+<Slide>
+  {/* transition/business/508 专业边框：四角 L 形边框 + 横线章节标签 + 居中章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%)', position: 'relative', padding: 'xxl xl' }}>
+    {/* 四角边框（L 形 = 横条+竖条 Box，原单边 border 拆成细条） */}
+    <Box style={{ position: 'absolute', top: 32, left: 24, width: 80, height: 6, background: '#4F46E5' }} />
+    <Box style={{ position: 'absolute', top: 32, left: 24, width: 6, height: 80, background: '#4F46E5' }} />
+    <Box style={{ position: 'absolute', bottom: 32, right: 24, width: 80, height: 6, background: '#4F46E5' }} />
+    <Box style={{ position: 'absolute', bottom: 32, right: 24, width: 6, height: 80, background: '#4F46E5' }} />
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 24 }}>
+        <Box style={{ width: 64, height: 2, background: '#4F46E5' }} />
+        <Text style={{ fontSize: 'body', color: '#4F46E5', bold: true }}>{/* {{替换：章标签}} */}第一章</Text>
+        <Box style={{ width: 64, height: 2, background: '#4F46E5' }} />
+      </Box>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,66 @@
+<Slide>
+  {/* minimalist/1607 L型布局：全宽标题区 + 左(横图+服务承诺卡) + 右(深色数据卡) + 底部注释 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, gap: 'lg' }}>
+      {/* 上部全宽标题区 */}
+      <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', paddingBottom: 'lg' }}>
+        <Box>
+          <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'xs' }}>{/* {{标题}} */}服务体系架构</Text>
+          <Text style={{ fontSize: 'body', color: 'muted' }}>Service System Architecture</Text>
+        </Box>
+        <Box style={{ alignItems: 'flex-end' }}>
+          <Text style={{ fontSize: 'title', color: 'text', bold: true, lineHeight: 1 }}>7×24</Text>
+          <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>全天候服务</Text>
+        </Box>
+      </Box>
+      {/* 下部：左右分布 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+        {/* 左侧 70% */}
+        <Box style={{ flex: 7, gap: 'lg' }}>
+          <Box style={{ height: 180, position: 'relative', borderRadius: 'md', background: 'cardBg' }}>
+            {/* {{图片：服务流程图，有图填 assets/images/1607_main.png，无图删掉整个 <Image>}} */}
+            <Image src="assets/images/1607_main.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+            <Text style={{ position: 'absolute', bottom: 16, left: 20, fontSize: 'label', color: 'muted' }}>从需求接收到交付闭环的完整流程</Text>
+          </Box>
+          <Box style={{ flex: 1, background: 'cardBg', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'xl', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'lg' }}>
+              <Box style={{ width: 4, height: 24, background: 'primary', borderRadius: 2 }} />
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>核心服务承诺</Text>
+            </Box>
+            <Box style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 'lg' }}>
+              {[
+                ['快速响应', '工单5分钟内响应'],
+                ['专业团队', '认证工程师服务'],
+                ['问题闭环', '100%问题追踪'],
+                ['持续优化', '定期服务改进'],
+              ].map((x, i) => (
+                <Box key={i} style={{ width: '45%', flexDirection: 'row', gap: 'sm', alignItems: 'flex-start' }}>
+                  <Text style={{ fontSize: 'card', color: '#D1D5DB', lineHeight: 1 }}>·</Text>
+                  <Box style={{ flex: 1 }}>
+                    <Text style={{ fontSize: 'body', color: 'text', bold: true, marginBottom: 'xs' }}>{/* {{承诺标题}} */}{x[0]}</Text>
+                    <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{承诺说明}} */}{x[1]}</Text>
+                  </Box>
+                </Box>
+              ))}
+            </Box>
+          </Box>
+        </Box>
+        {/* 右侧 30%：深色数据卡 */}
+        <Box style={{ flex: 3, background: 'primary', borderRadius: 'md', alignItems: 'center', justifyContent: 'center', position: 'relative', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Box style={{ alignItems: 'center' }}>
+            <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, lineHeight: 1, marginBottom: 'md' }}>98.6%</Text>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.8 }}>客户满意度</Text>
+            <Box style={{ width: 64, height: 1, background: '#FFFFFF', opacity: 0.3, marginTop: 'md', marginBottom: 'md', alignSelf: 'center' }} />
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.6 }}>基于12,000+有效反馈</Text>
+          </Box>
+          <Text style={{ position: 'absolute', bottom: 20, fontSize: 'label', color: '#FFFFFF', opacity: 0.8 }}>NPS评分：+72</Text>
+        </Box>
+      </Box>
+    </Box>
+    {/* 底部功能文字 */}
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 'lg' }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>服务标准：ISO 20000认证 | SLA承诺：99.9%可用性</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>数据更新：2024年12月</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,53 @@
+<Slide>
+  {/* business/1531 摘要两栏：左核心发现(3条编号卡) + 右金句卡+数据说明 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    <Box style={{ background: 'cardBg', borderRadius: 'md', padding: 'xl', marginBottom: 'lg', flexDirection: 'row', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+      <Box style={{ width: 4, background: 'primary', borderRadius: 2, marginRight: 'md' }} />
+      <Box style={{ flex: 1 }}>
+      <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'md' }}>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{标题}} */}市场分析报告</Text>
+        <Box style={{ background: 'light', padding: 'sm md', borderRadius: 'sm' }}>
+          <Text style={{ fontSize: 'label', color: 'primary', bold: true }}>{/* {{标签}} */}Executive Summary</Text>
+        </Box>
+      </Box>
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6, marginBottom: 'sm' }}>{/* {{摘要段1}} */}根据 2024 Q1 市场调研，全球数字化转型市场规模达 2.3 万亿美元，同比增长 15.7%。</Text>
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6 }}>{/* {{摘要段2}} */}预计未来三年保持年均 12% 以上复合增长率，亚太贡献全球增长 40% 以上。</Text>
+      </Box>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'xl', flex: 1 }}>
+      <Box style={{ flex: 2, background: 'cardBg', borderRadius: 'md', padding: 'lg', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+        <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'md' }}>{/* {{栏标题}} */}核心发现</Text>
+        <Box style={{ height: 2, background: 'line', marginBottom: 'md' }} />
+        <Box style={{ gap: 'md' }}>
+          {[
+            ['云优先战略成为主流', '78% 的企业已将工作负载迁移至云端'],
+            ['AI 应用场景快速拓展', '智能客服、数据分析成为热点'],
+            ['网络安全投资显著增加', '安全预算占 IT 总预算 15-20%'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', gap: 'md', alignItems: 'flex-start', background: 'cardBg', padding: 'md', borderRadius: 'sm' }}>
+              <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{i + 1}</Text>
+              </Box>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{x[0]}</Text>
+                <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>{x[1]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        <Box style={{ background: 'primary', borderRadius: 'md', padding: 'lg', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'kpi', color: 'muted', lineHeight: 1 }}>"</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', lineHeight: 1.6, marginBottom: 'md' }}>数字化不再是选择题，而是生存题。</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.8 }}>Satya Nadella · Microsoft CEO</Text>
+        </Box>
+        <Box style={{ background: 'cardBg', borderRadius: 'sm', padding: 'md', border: '1px solid line' }}>
+          <Text style={{ fontSize: 'label', color: 'primary', bold: true, marginBottom: 'xs' }}>数据说明</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>来源：Gartner, IDC 联合报告</Text>
+          <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>样本：2000+ 企业</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

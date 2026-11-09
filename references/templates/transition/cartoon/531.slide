@@ -1,0 +1,24 @@
+<Slide>
+  {/* transition/cartoon/531 卡通风-彩虹分隔：蓝紫浅底 + 彩虹条 + 居中章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #DBEAFE 0%, #EDE9FE 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ width: 72, height: 72, borderRadius: 36, background: '#ec4899', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+          <Emoji name="🌈" style={{ width: 44, height: 44 }} />
+        </Box>
+        {/* 彩虹条 */}
+        <Box style={{ gap: 6, marginBottom: 20, alignItems: 'center' }}>
+          <Box style={{ width: 320, height: 8, borderRadius: 4, background: '#f87171' }} />
+          <Box style={{ width: 256, height: 8, borderRadius: 4, background: '#fb923c' }} />
+          <Box style={{ width: 320, height: 8, borderRadius: 4, background: '#facc15' }} />
+          <Box style={{ width: 256, height: 8, borderRadius: 4, background: '#4ade80' }} />
+          <Box style={{ width: 320, height: 8, borderRadius: 4, background: '#60a5fa' }} />
+          <Box style={{ width: 256, height: 8, borderRadius: 4, background: '#a855f7' }} />
+        </Box>
+        <Text style={{ fontSize: 'title', color: '#ec4899', bold: true, marginBottom: 12 }}>{/* {{替换：章序号}} */}第一章</Text>
+        <Text style={{ fontSize: 'title', color: '#374151', bold: true, marginBottom: 12 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#7c3aed' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

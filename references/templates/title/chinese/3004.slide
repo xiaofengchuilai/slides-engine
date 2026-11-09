@@ -1,0 +1,16 @@
+<Slide>
+  {/* title/chinese/3004 中国风-印章装饰：白米渐变底 + 红色印章块 + 标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(90deg, #FFFFFF 0%, #FFF9F0 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24 }}>
+        <Box style={{ width: 64, height: 64, background: '#b91c1c', border: '2px solid #7f1d1d', alignItems: 'center', justifyContent: 'center', rotate: 6, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>{/* {{替换：印章字}} */}壹</Text>
+        </Box>
+        <Box style={{ alignItems: 'flex-start' }}>
+          <Text style={{ fontSize: 'title', color: '#881337', bold: true, letterSpacing: 8, fontFamily: 'serif' }}>{/* {{替换：标题}} */}诗词鉴赏</Text>
+          <Text style={{ fontSize: 'body', color: '#6b7280', marginTop: 8, fontFamily: 'serif' }}>{/* {{替换：副标题}} */}品味千古流传的文学经典</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

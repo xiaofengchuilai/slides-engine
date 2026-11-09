@@ -1,0 +1,16 @@
+<Slide>
+  {/* ending/chinese/1029 中国风-水墨山水：米底+底部山形弧、印章方章、大标题+诗句 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #F8F8F0 0%, #E8E8D8 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 水墨山形：底部半透明深色弧 */}
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 252, background: 'linear-gradient(180deg, rgba(96,96,88,0) 0%, rgba(96,96,88,0.18) 100%)', borderRadius: 'md' }} />
+    {/* 印章（方形红章） */}
+    <Box style={{ position: 'absolute', top: 88, right: 96, width: 70, height: 70, border: '3px solid #A81810', background: 'rgba(200,16,46,0.10)', alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 20, color: '#A81810', bold: true, lineHeight: 1.1, textAlign: 'center' }}>谢 谢</Text>
+    </Box>
+    <Box style={{ alignItems: 'center', gap: 'lg' }}>
+      <Text style={{ fontSize: 60, color: '#2C2C2C', letterSpacing: 10 }}>{/* {{替换：致谢标题}} */}感谢聆听</Text>
+      <Box style={{ width: 100, height: 2, background: '#8B7355', marginTop: 'xs' }} />
+      <Text style={{ fontSize: 'card', color: '#666666', letterSpacing: 3 }}>{/* {{替换：寄语}} */}山高水长，后会有期</Text>
+    </Box>
+  </Box>
+</Slide>

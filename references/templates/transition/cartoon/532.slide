@@ -1,0 +1,17 @@
+<Slide>
+  {/* transition/cartoon/532 卡通风-云朵漂浮：蓝天渐变底 + 云朵 + 椭圆白卡章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #93C5FD 0%, #BFDBFE 50%, #DBEAFE 100%)', padding: 48, position: 'relative' }}>
+    {/* 云朵装饰 */}
+    <Emoji name="☁️" style={{ position: 'absolute', top: 16, left: 24, width: 56, height: 56, opacity: 0.8 }} />
+    <Emoji name="☁️" style={{ position: 'absolute', top: 32, right: 16, width: 44, height: 44, opacity: 0.8 }} />
+    <Emoji name="☁️" style={{ position: 'absolute', bottom: 24, left: 72, width: 44, height: 44, opacity: 0.8 }} />
+    <Emoji name="☁️" style={{ position: 'absolute', bottom: 16, right: 24, width: 56, height: 56, opacity: 0.8 }} />
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ background: '#FFFFFF', border: '4px solid #22d3ee', borderRadius: 999, padding: 40, paddingLeft: 64, paddingRight: 64, alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 'hero', color: '#06b6d4', bold: true, marginBottom: 16 }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Text style={{ fontSize: 'title', color: '#374151', bold: true, marginBottom: 12 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#0891b2' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

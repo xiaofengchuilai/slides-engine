@@ -1,0 +1,16 @@
+<Slide>
+  {/* transition/minimalist/523 点线组合：圆点-横线-章节号-横线-圆点 + 章节名 + 导语 */}
+  <Box style={{ height: 720, width: 1280, background: 'cardBg', alignItems: 'center', justifyContent: 'center' }}>
+    <Box style={{ alignItems: 'center' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 24 }}>
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: 'secondary' }} />
+        <Box style={{ width: 112, height: 2, background: '#9CA3AF' }} />
+        <Text style={{ fontSize: 'kpi', color: 'text', bold: true }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Box style={{ width: 112, height: 2, background: '#9CA3AF' }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: 'secondary' }} />
+      </Box>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 12, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+    </Box>
+  </Box>
+</Slide>

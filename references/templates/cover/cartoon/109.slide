@@ -1,0 +1,20 @@
+<Slide>
+  {/* cartoon/109 糖果色块：粉底 + 四角色块 + 圆点 + 半透明卡 + 大标题 */}
+  <Box style={{ height: 720, width: 1280, background: '#FDF2F8', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 糖果色块装饰（四角，右上青块旋转 -12°） */}
+    <Box style={{ position: 'absolute', top: 80, left: 80, width: 112, height: 112, background: '#F472B6', borderRadius: 'md', opacity: 0.7 }} />
+    <Box style={{ position: 'absolute', top: 112, right: 144, width: 128, height: 128, background: '#22D3EE', borderRadius: 'lg', opacity: 0.7, rotate: -12 }} />
+    <Box style={{ position: 'absolute', bottom: 112, left: 176, width: 96, height: 96, background: '#FCD34D', borderRadius: 'md', opacity: 0.7 }} />
+    <Box style={{ position: 'absolute', bottom: 144, right: 128, width: 80, height: 80, background: '#BBF7D0', borderRadius: 'sm', opacity: 0.7 }} />
+    {/* 圆点装饰 */}
+    <Box style={{ position: 'absolute', top: 192, left: 208, width: 28, height: 28, borderRadius: 14, background: '#C7D2FE' }} />
+    <Box style={{ position: 'absolute', top: 432, right: 256, width: 32, height: 32, borderRadius: 16, background: '#FCD34D' }} />
+    <Box style={{ position: 'absolute', bottom: 224, left: 384, width: 20, height: 20, borderRadius: 10, background: '#F472B6' }} />
+    {/* 半透明主卡 */}
+    <Box style={{ background: 'rgba(255,255,255,0.3)', borderRadius: 'lg', padding: 'xxl', alignItems: 'center' }}>
+      <Text style={{ fontSize: 'hero', color: '#F472B6', bold: true, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}甜蜜生活节</Text>
+      <Text style={{ fontSize: 'card', color: '#22D3EE', bold: true, marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}缤纷色彩·甜蜜时光</Text>
+      <Text style={{ fontSize: 'body', color: '#4B5563', bold: true }}>{/* {{替换：落款}} */}生活美学馆 | 烘焙课堂分享</Text>
+    </Box>
+  </Box>
+</Slide>

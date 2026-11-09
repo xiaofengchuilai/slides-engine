@@ -1,0 +1,27 @@
+<Slide>
+  {/* ending/cartoon/1044 卡通风-波浪边框：米蓝渐变底+上下波浪色条+左右竖条+彩点、粉标题+三色分隔+副题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #FFF5E6 0%, #E6F7FF 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 顶部波浪条（粉） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 100, background: '#FF6B9D' }} />
+    {/* 底部波浪条（绿） */}
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 100, background: '#77DD77' }} />
+    {/* 左竖条（橙） */}
+    <Box style={{ position: 'absolute', top: 144, left: 0, width: 80, height: 432, background: '#FFB347' }} />
+    {/* 右竖条（紫） */}
+    <Box style={{ position: 'absolute', top: 144, right: 0, width: 80, height: 432, background: '#B388FF' }} />
+    {/* 彩点（+ 阴影） */}
+    <Box style={{ position: 'absolute', top: 130, left: 190, width: 25, height: 25, borderRadius: 'sm', background: '#FFEA5C', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+    <Box style={{ position: 'absolute', top: 180, right: 230, width: 30, height: 30, borderRadius: 'sm', background: '#66CCFF', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+    <Box style={{ position: 'absolute', bottom: 180, left: 260, width: 28, height: 28, borderRadius: 'sm', background: '#FF99CC', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+    <Box style={{ position: 'absolute', bottom: 140, right: 280, width: 26, height: 26, borderRadius: 'sm', background: '#FFB347', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+    <Box style={{ alignItems: 'center', gap: 'md' }}>
+      <Text style={{ fontSize: 64, color: '#FF6B9D', bold: true }}>{/* {{替换：致谢标题}} */}感谢</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+        <Box style={{ width: 60, height: 4, borderRadius: 'sm', background: '#FFB347' }} />
+        <Box style={{ width: 20, height: 20, borderRadius: 'sm', background: '#FF6B9D' }} />
+        <Box style={{ width: 60, height: 4, borderRadius: 'sm', background: '#77DD77' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#666666', bold: true }}>{/* {{替换：副题}} */}感谢您的聆听与关注</Text>
+    </Box>
+  </Box>
+</Slide>

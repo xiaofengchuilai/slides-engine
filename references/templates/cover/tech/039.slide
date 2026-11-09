@@ -1,0 +1,35 @@
+<Slide>
+  {/* cover/tech/039 科技风-网格线条：深色网格底 + 状态标签 + 主标题 + 副标题 + 状态胶囊 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 网格装饰（横竖细线降级） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, opacity: 0.08 }}>
+      <Box style={{ position: 'absolute', top: 100, left: 0, width: 1280, height: 1, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 200, left: 0, width: 1280, height: 1, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 300, left: 0, width: 1280, height: 1, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 400, left: 0, width: 1280, height: 1, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 500, left: 0, width: 1280, height: 1, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 600, left: 0, width: 1280, height: 1, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 100, width: 1, height: 720, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 200, width: 1, height: 720, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 300, width: 1, height: 720, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 400, width: 1, height: 720, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 500, width: 1, height: 720, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 600, width: 1, height: 720, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 700, width: 1, height: 720, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 800, width: 1, height: 720, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 900, width: 1, height: 720, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 1000, width: 1, height: 720, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 1100, width: 1, height: 720, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 1200, width: 1, height: 720, background: '#22D3EE' }} />
+    </Box>
+    <Box style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 'label', color: '#22D3EE', letterSpacing: 4, marginBottom: 'lg' }}>{/* {{替换：状态标签}} */}[SYSTEM_READY]</Text>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, letterSpacing: 2, textAlign: 'center', lineHeight: 1.1, marginBottom: 'lg' }}>{/* {{替换：主标题}} */}智能网络</Text>
+      <Text style={{ fontSize: 'card', color: '#22D3EE', letterSpacing: 3, marginBottom: 'xl' }}>{/* {{替换：副标题}} */}SMART NETWORK</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', border: '1px solid #0E7490', background: '#123C46', padding: 'sm lg' }}>
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#06B6D4' }} />
+        <Text style={{ fontSize: 'label', color: '#22D3EE', letterSpacing: 2 }}>{/* {{替换：状态文案}} */}ONLINE</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

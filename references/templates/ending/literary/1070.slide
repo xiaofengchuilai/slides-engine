@@ -1,0 +1,31 @@
+<Slide>
+  {/* ending/literary/1070 文艺风-复古纸张：米色底 + 双层边框 + 装饰线条 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: '#F4F1E8' }}>
+    {/* 纸张纹理降级为极淡网格 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, opacity: 0.25 }}>
+      {[40, 80, 120, 160, 200, 240, 280, 320, 360, 400, 440, 480, 520, 560, 600, 640, 680].map((y, i) => (
+        <Box key={i} style={{ position: 'absolute', top: y, left: 0, width: 1280, height: 1, background: '#8B6F47' }} />
+      ))}
+      {[40, 80, 120, 160, 200, 240, 280, 320, 360, 400, 440, 480, 520, 560, 600, 640, 680, 720, 760, 800, 840, 880, 920, 960, 1000, 1040, 1080, 1120, 1160, 1200, 1240].map((x, i) => (
+        <Box key={i} style={{ position: 'absolute', top: 0, left: x, width: 1, height: 720, background: '#8B6F47' }} />
+      ))}
+    </Box>
+    {/* 复古边框（双层） */}
+    <Box style={{ position: 'absolute', top: 50, left: 50, right: 50, bottom: 50, border: '2px solid #C9B896' }} />
+    <Box style={{ position: 'absolute', top: 60, left: 60, right: 60, bottom: 60, border: '1px solid #D4C5A9' }} />
+    {/* 装饰线条 */}
+    <Box style={{ position: 'absolute', top: 359, left: 490, width: 300, height: 1, background: '#C9B896' }} />
+    {/* 复古装饰（星形降级为圆点+方框） */}
+    <Box style={{ position: 'absolute', top: 80, left: 80, width: 60, height: 60, border: '2px solid #C9B896', borderRadius: 'sm', opacity: 0.5 }} />
+    <Box style={{ position: 'absolute', bottom: 80, right: 80, width: 60, height: 60, border: '2px solid #C9B896', borderRadius: 'sm', opacity: 0.5 }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#6B5D4F', fontFamily: 'serif', letterSpacing: 2, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}感谢聆听</Text>
+      <Text style={{ fontSize: 'title', color: '#8B7355', fontFamily: 'serif', lineHeight: 1.8 }}>{/* {{替换：致谢语}} */}期待与您再次相见</Text>
+    </Box>
+    {/* 复古印章效果（降级为圆环+文字） */}
+    <Box style={{ position: 'absolute', top: 140, right: 190, width: 80, height: 80, borderRadius: 40, border: '3px solid #8B6F47', opacity: 0.4, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'label', color: '#8B6F47', bold: true, textAlign: 'center', lineHeight: 1.4 }}>THANK{'\n'}YOU</Text>
+    </Box>
+  </Box>
+</Slide>

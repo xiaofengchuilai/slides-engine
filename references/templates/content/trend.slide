@@ -1,0 +1,29 @@
+<Slide>
+  {/* content/trend：趋势演进（时间轴 + 3-5 趋势 + 预测） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: '56px 80px' }}>
+    <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：趋势标题（结论句）}} */}行业正从规模竞争转向价值竞争</Text>
+    {/* 横向时间轴：圆点节点 + 趋势 */}
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', marginTop: 70, position: 'relative' }}>
+      {/* 轴线 */}
+      <Box style={{ position: 'absolute', top: 8, left: 40, right: 40, height: 2, background: 'line' }} />
+      {[
+        { year: '2023', t: '跑马圈地', body: '拼用户规模与流量' },
+        { year: '2024', t: '精细运营', body: '拼留存与转化效率' },
+        { year: '2025', t: '价值深耕', body: '拼客户终身价值' },
+        { year: '2026', t: '生态共建', body: '拼协同与护城河' },
+      ].map((s, i) => (
+        <Box key={i} style={{ width: 250, alignItems: 'center' }}>
+          <Box style={{ width: 16, height: 16, borderRadius: 8, background: 'accent' }} />
+          <Text style={{ fontSize: 20, color: 'primary', bold: true, marginTop: 16 }}>{/* {{替换：年份}} */}{s.year}</Text>
+          <Text style={{ fontSize: 'body', color: 'text', bold: true, marginTop: 8 }}>{/* {{替换：趋势关键词}} */}{s.t}</Text>
+          <Text style={{ fontSize: 'label', color: 'muted', lineHeight: 1.5, marginTop: 6 }}>{/* {{替换：趋势说明}} */}{s.body}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 预测 + 行动 */}
+    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, marginTop: 70 }}>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{替换：预测标签}} */}预判：</Text>
+      <Text style={{ fontSize: 20, color: 'accent', bold: true }}>{/* {{替换：预测结论}} */}下一阶段的胜负手在「生态协同」</Text>
+    </Box>
+  </Box>
+</Slide>

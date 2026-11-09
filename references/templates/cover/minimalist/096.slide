@@ -1,0 +1,12 @@
+<Slide>
+  {/* cover/minimalist/096 极简主义：白底 + 顶部小圆点 + 居中标题 + 细线 + 底部信息 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ position: 'absolute', top: 180, left: 637, width: 6, height: 6, borderRadius: 3, background: 'text' }} />
+    <Box style={{ alignItems: 'center', gap: 'xl' }}>
+      <Text style={{ fontSize: 'hero', color: 'text', lineHeight: 1.15, letterSpacing: 3 }}>{/* {{替换：主标题}} */}专注力提升</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 3 }}>{/* {{替换：副标题}} */}心无旁骛·深度工作</Text>
+      <Box style={{ width: 96, height: 1, background: '#9CA3AF' }} />
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginTop: 'md' }}>{/* {{替换：部门/主题}} */}培训发展部 | 能力提升课程</Text>
+    </Box>
+  </Box>
+</Slide>

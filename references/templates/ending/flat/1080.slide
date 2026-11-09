@@ -1,0 +1,19 @@
+<Slide>
+  {/* ending/flat 1080 圆形组合结尾：靛紫渐变底 + 白色半透明圆 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #6366F1 0%, #A855F7 50%, #6D28D9 100%)' }}>
+    {/* 大圆装饰 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 240, height: 240, borderRadius: 120, background: '#FFFFFF', opacity: 0.15 }} />
+    <Box style={{ position: 'absolute', top: 108, right: 8, width: 280, height: 280, borderRadius: 140, background: '#FFFFFF', opacity: 0.1 }} />
+    <Box style={{ position: 'absolute', bottom: 40, left: 256, width: 260, height: 260, borderRadius: 130, background: '#FFFFFF', opacity: 0.12 }} />
+    <Box style={{ position: 'absolute', bottom: 72, right: 8, width: 180, height: 180, borderRadius: 90, background: '#FFFFFF', opacity: 0.18 }} />
+    {/* 小圆装饰 */}
+    <Box style={{ position: 'absolute', top: 216, left: 320, width: 60, height: 60, borderRadius: 30, background: '#FFFFFF', opacity: 0.25 }} />
+    <Box style={{ position: 'absolute', top: 396, right: 358, width: 50, height: 50, borderRadius: 25, background: '#FFFFFF', opacity: 0.2 }} />
+    <Box style={{ position: 'absolute', bottom: 252, left: 448, width: 70, height: 70, borderRadius: 35, background: '#FFFFFF', opacity: 0.22 }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: '#FFFFFF', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}感谢聆听</Text>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', textAlign: 'center' }}>{/* {{副标题}} */}期待与您再次相见</Text>
+    </Box>
+  </Box>
+</Slide>

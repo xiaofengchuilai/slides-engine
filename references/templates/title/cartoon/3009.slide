@@ -1,0 +1,15 @@
+<Slide>
+  {/* title/cartoon/3009 卡通风-堆叠效果：蓝黄渐变底 + 三层堆叠色块标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #DBEAFE 0%, #FEF3C7 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ position: 'relative', alignItems: 'center' }}>
+        <Box style={{ position: 'absolute', top: -8, left: -8, width: 320, height: 80, background: '#60a5fa', borderRadius: 16, opacity: 0.5 }} />
+        <Box style={{ position: 'absolute', top: 8, left: 8, width: 320, height: 80, background: '#4ade80', borderRadius: 16, opacity: 0.5 }} />
+        <Box style={{ background: '#facc15', border: '4px solid #111827', borderRadius: 16, padding: 20, paddingLeft: 48, paddingRight: 48, position: 'relative', boxShadow: '0 16px 48px rgba(0,0,0,0.28)', flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+          <Text style={{ fontSize: 'title', color: '#111827', bold: true }}>{/* {{替换：标题}} */}探索世界</Text>
+          <Emoji name="🌍" style={{ width: 36, height: 36 }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

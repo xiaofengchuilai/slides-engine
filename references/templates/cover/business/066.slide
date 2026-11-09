@@ -1,0 +1,21 @@
+<Slide>
+  {/* business/066 深绿渐变封面：底部装饰横线 + 居中大标题 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #064E3B 0%, #0F766E 50%, #164E63 100%)', position: 'relative' }}>
+    {/* 底部装饰横线（三层，低透明度） */}
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 256, opacity: 0.1 }}>
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, rgba(255,255,255,0) 0%, #FFFFFF 50%, rgba(255,255,255,0) 100%)' }} />
+      <Box style={{ position: 'absolute', bottom: 64, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%)' }} />
+      <Box style={{ position: 'absolute', bottom: 128, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%)' }} />
+    </Box>
+    {/* 主内容区 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, justifyContent: 'center', alignItems: 'center', padding: 'xxl xl' }}>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, textAlign: 'center', letterSpacing: 4, lineHeight: 1.2, marginBottom: 'xxl' }}>{/* {{主标题}} */}可持续发展报告</Text>
+      <Text style={{ fontSize: 'body', color: '#A7F3D0', textAlign: 'center', letterSpacing: 2, lineHeight: 1.5, marginBottom: 'xxl' }}>{/* {{副标题}} */}绿色运营·社会责任·长期价值</Text>
+      <Box style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 'lg' }}>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', letterSpacing: 1 }}>{/* {{落款一}} */}ESG管理委员会</Text>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.5 }}>·</Text>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', letterSpacing: 1 }}>{/* {{落款二}} */}年度ESG报告</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

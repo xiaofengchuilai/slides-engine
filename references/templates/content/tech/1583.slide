@@ -1,0 +1,76 @@
+<Slide>
+  {/* tech/1583 智能芯片架构：中央 CPU 芯片 + 四角模块 + 连接线 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xl', position: 'relative' }}>
+    {/* 电路板网格装饰 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'row', justifyContent: 'space-between', opacity: 0.08 }}>
+      {[200, 500, 800, 1080].map((x) => (
+        <Box key={x} style={{ width: 1, height: 720, background: '#22D3EE' }} />
+      ))}
+    </Box>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'column', justifyContent: 'space-between', opacity: 0.08 }}>
+      {[100, 300, 500].map((y) => (
+        <Box key={y} style={{ width: 1280, height: 1, background: '#22D3EE' }} />
+      ))}
+    </Box>
+    <Text style={{ fontSize: 'title', color: '#22D3EE', bold: true, textAlign: 'center', marginBottom: 'md' }}>{/* {{标题}} */}智能芯片架构</Text>
+    <Box style={{ flex: 1, position: 'relative', alignItems: 'center', justifyContent: 'center' }}>
+      {/* 中央 CPU 芯片 */}
+      <Box style={{ width: 260, height: 260, border: '4px solid #22D3EE', borderRadius: 'md', background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', alignItems: 'center', justifyContent: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Box style={{ width: 200, height: 200, border: '2px solid rgba(34,211,238,0.5)', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+          <Box style={{ width: 160, height: 160, border: '1px solid rgba(34,211,238,0.3)', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+            <Emoji name="⚡" style={{ width: 40, height: 40, marginBottom: 'sm' }} />
+            <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>CPU</Text>
+            <Text style={{ fontSize: 'body', color: '#22D3EE', marginTop: 'xs' }}>Central Core</Text>
+          </Box>
+        </Box>
+      </Box>
+      {/* 四角外围模块 */}
+      <Box style={{ position: 'absolute', top: 20, left: 40, width: 150, height: 150, border: '2px solid #60A5FA', background: 'rgba(30,41,59,0.8)', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center', padding: 'sm' }}>
+        <Text style={{ fontSize: 'card', color: '#60A5FA', bold: true, marginBottom: 'xs' }}>GPU</Text>
+        <Text style={{ fontSize: 'label', color: '#94A3B8', marginBottom: 'sm' }}>Graphics</Text>
+        <Emoji name="🎮" style={{ width: 30, height: 30 }} />
+      </Box>
+      <Box style={{ position: 'absolute', top: 20, right: 40, width: 150, height: 150, border: '2px solid #C084FC', background: 'rgba(30,41,59,0.8)', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center', padding: 'sm' }}>
+        <Text style={{ fontSize: 'card', color: '#C084FC', bold: true, marginBottom: 'xs' }}>RAM</Text>
+        <Text style={{ fontSize: 'label', color: '#94A3B8', marginBottom: 'sm' }}>Memory</Text>
+        <Emoji name="💾" style={{ width: 30, height: 30 }} />
+      </Box>
+      <Box style={{ position: 'absolute', bottom: 20, left: 40, width: 150, height: 150, border: '2px solid #34D399', background: 'rgba(30,41,59,0.8)', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center', padding: 'sm' }}>
+        <Text style={{ fontSize: 'card', color: '#34D399', bold: true, marginBottom: 'xs' }}>SSD</Text>
+        <Text style={{ fontSize: 'label', color: '#94A3B8', marginBottom: 'sm' }}>Storage</Text>
+        <Emoji name="💿" style={{ width: 30, height: 30 }} />
+      </Box>
+      <Box style={{ position: 'absolute', bottom: 20, right: 40, width: 150, height: 150, border: '2px solid #FBBF24', background: 'rgba(30,41,59,0.8)', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center', padding: 'sm' }}>
+        <Text style={{ fontSize: 'card', color: '#FBBF24', bold: true, marginBottom: 'xs' }}>NIC</Text>
+        <Text style={{ fontSize: 'label', color: '#94A3B8', marginBottom: 'sm' }}>Network</Text>
+        <Emoji name="📡" style={{ width: 30, height: 30 }} />
+      </Box>
+      {/* 连接线（绝对定位细线） */}
+      <Box style={{ position: 'absolute', top: 105, left: 195, width: 60, height: 2, background: '#22D3EE', opacity: 0.6 }} />
+      <Box style={{ position: 'absolute', top: 105, right: 195, width: 60, height: 2, background: '#22D3EE', opacity: 0.6 }} />
+      <Box style={{ position: 'absolute', bottom: 105, left: 195, width: 60, height: 2, background: '#22D3EE', opacity: 0.6 }} />
+      <Box style={{ position: 'absolute', bottom: 105, right: 195, width: 60, height: 2, background: '#22D3EE', opacity: 0.6 }} />
+      {/* 芯片引脚（上下左右短线） */}
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 1232, height: 8, flexDirection: 'row', justifyContent: 'space-evenly', opacity: 0.5 }}>
+        {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+          <Box key={i} style={{ width: 6, height: 8, background: '#22D3EE' }} />
+        ))}
+      </Box>
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1232, height: 8, flexDirection: 'row', justifyContent: 'space-evenly', opacity: 0.5 }}>
+        {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+          <Box key={i} style={{ width: 6, height: 8, background: '#22D3EE' }} />
+        ))}
+      </Box>
+      <Box style={{ position: 'absolute', left: 0, top: 0, width: 8, height: 500, flexDirection: 'column', justifyContent: 'space-evenly', opacity: 0.5 }}>
+        {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+          <Box key={i} style={{ width: 8, height: 6, background: '#22D3EE' }} />
+        ))}
+      </Box>
+      <Box style={{ position: 'absolute', right: 0, top: 0, width: 8, height: 500, flexDirection: 'column', justifyContent: 'space-evenly', opacity: 0.5 }}>
+        {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+          <Box key={i} style={{ width: 8, height: 6, background: '#22D3EE' }} />
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

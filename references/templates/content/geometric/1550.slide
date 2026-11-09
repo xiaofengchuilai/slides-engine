@@ -1,0 +1,54 @@
+<Slide>
+  {/* geometric/1550 黄金比例：琥珀底 + 白卡内黄金分割螺旋 + 内容块 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 50%, #FFF7ED 100%)', padding: 'xl', alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 'title', color: '#111827', bold: true, textAlign: 'center', marginBottom: 'xs' }}>{/* {{替换：页面标题}} */}黄金比例</Text>
+    <Text style={{ fontSize: 'body', color: '#4B5563', textAlign: 'center', marginBottom: 'lg' }}>{/* {{替换：副标题}} */}基于斐波那契数列的自然和谐美学</Text>
+    {/* 白卡 1080x500 */}
+    <Box style={{ width: 1080, height: 500, background: '#FFFFFF', borderRadius: 'lg', padding: 'lg', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Box style={{ flexDirection: 'row', height: '100%' }}>
+        {/* 左侧大区域 (约62%) */}
+        <Box style={{ flex: 1.618, flexDirection: 'column', gap: 'sm' }}>
+          {/* 上部 (约62%) */}
+          <Box style={{ flex: 1.618, flexDirection: 'row', gap: 'sm' }}>
+            <Box style={{ flex: 1.618, background: 'linear-gradient(135deg, #6366F1 0%, #9333EA 100%)', borderRadius: 'md', padding: 'md', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+              <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>φ = 1.618</Text>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', marginBottom: 'xs' }}>黄金分割比</Text>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.9, textAlign: 'center' }}>自然界中普遍存在的完美比例</Text>
+            </Box>
+            <Box style={{ flex: 1, background: 'linear-gradient(135deg, #06B6D4 0%, #2563EB 100%)', borderRadius: 'md', padding: 'md', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>视觉</Text>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', textAlign: 'center' }}>和谐美感</Text>
+            </Box>
+          </Box>
+          {/* 下部 (约38%) */}
+          <Box style={{ flex: 1, flexDirection: 'row', gap: 'sm' }}>
+            <Box style={{ flex: 1.618, background: 'linear-gradient(135deg, #10B981 0%, #0D9488 100%)', borderRadius: 'md', padding: 'md', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>斐波那契数列</Text>
+              <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>1, 1, 2, 3, 5, 8, 13, 21...</Text>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.9, marginTop: 'xs', textAlign: 'center' }}>相邻两项之比趋近黄金比</Text>
+            </Box>
+            <Box style={{ flex: 1, background: 'linear-gradient(135deg, #F59E0B 0%, #EA580C 100%)', borderRadius: 'md', padding: 'md', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>自然</Text>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', textAlign: 'center' }}>螺旋结构</Text>
+            </Box>
+          </Box>
+        </Box>
+        {/* 右侧小区域 (约38%) */}
+        <Box style={{ flex: 1, flexDirection: 'column', gap: 'sm' }}>
+          <Box style={{ flex: 1, background: 'linear-gradient(135deg, #F43F5E 0%, #DB2777 100%)', borderRadius: 'md', padding: 'md', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>应用场景</Text>
+            {['建筑设计', '艺术创作', '界面布局', '摄影构图'].map((s, i) => (
+              <Box key={i} style={{ background: 'rgba(255,255,255,0.2)', borderRadius: 'sm', padding: 'xs md', marginBottom: 'xs', width: '100%', alignItems: 'center' }}>
+                <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>{s}</Text>
+              </Box>
+            ))}
+          </Box>
+          <Box style={{ flex: 0.618, background: 'linear-gradient(135deg, #8B5CF6 0%, #9333EA 100%)', borderRadius: 'md', padding: 'md', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>数学之美</Text>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.9, textAlign: 'center' }}>完美平衡的视觉比例</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

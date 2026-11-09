@@ -1,0 +1,20 @@
+<Slide>
+  {/* cover/business/045 商务风-橙色活力：左白底标题 + 右橙红渐变块大数字 */}
+  <Box style={{ flexDirection: 'row', height: 720, width: 1280 }}>
+    {/* 左栏：白底标题区 */}
+    <Box style={{ flex: 1, height: 720, background: 'bg', padding: '0 80px', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 16, color: '#EA580C', bold: true, letterSpacing: 4, marginBottom: 'xl' }}>{/* {{替换：顶部英文标签}} */}INNOVATION REPORT</Text>
+      <Text style={{ fontSize: 80, color: '#111827', bold: true, lineHeight: 1.15, marginBottom: 40 }}>{/* {{替换：主标题（可换行）}} */}创新驱动{"\n"}增长战略</Text>
+      {/* 三条递减横线（原 w-20/w-12/w-6 橙条） */}
+      <Box style={{ flexDirection: 'row', gap: 'md' }}>
+        <Box style={{ width: 80, height: 3, borderRadius: 2, background: '#F97316' }} />
+        <Box style={{ width: 48, height: 3, borderRadius: 2, background: '#FB923C' }} />
+        <Box style={{ width: 24, height: 3, borderRadius: 2, background: '#FDBA74' }} />
+      </Box>
+    </Box>
+    {/* 右栏：橙红渐变块 + 大数字 */}
+    <Box style={{ width: 512, height: 720, background: 'linear-gradient(135deg, #F97316 0%, #EF4444 100%)', alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 128, color: '#FFFFFF', bold: true, lineHeight: 1, opacity: 0.3 }}>{/* {{替换：年份}} */}2025</Text>
+    </Box>
+  </Box>
+</Slide>

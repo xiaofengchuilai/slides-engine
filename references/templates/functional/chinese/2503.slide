@@ -1,0 +1,49 @@
+<Slide>
+  {/* functional/chinese/2503 中国风-变体1：米白底 + 红章导航/按钮/扫码/页脚 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFFFFF 0%, #FFF9F0 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 24 }}>
+      {/* 导航 - 汉字圆章指示 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, border: '1px solid #E5E7EB', background: '#FAFAF9', padding: 20 }}>
+        <Box style={{ width: 48, height: 48, borderRadius: 24, background: '#b91c1c', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>{/* {{替换：章号}} */}三</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+          <Text style={{ fontSize: 'body', color: '#b91c1c', bold: true, fontFamily: 'serif' }}>{/* {{替换：章序号}} */}第三章</Text>
+          <Text style={{ fontSize: 'body', color: '#f87171' }}>•</Text>
+          <Text style={{ fontSize: 'body', color: '#6b7280', fontFamily: 'serif' }}>{/* {{替换：章节名}} */}传统文化</Text>
+        </Box>
+        <Box style={{ flex: 1 }} />
+        <Box style={{ background: '#fee2e2', border: '1px solid #fca5a5', borderRadius: 8, padding: 8, paddingLeft: 16, paddingRight: 16 }}>
+          <Text style={{ fontSize: 'body', color: '#b91c1c', fontFamily: 'serif' }}>{/* {{替换：按钮文字}} */}下一节：文化传承 →</Text>
+        </Box>
+      </Box>
+      {/* 行动 - 扫码关注(印章风) */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24, border: '1px solid #E5E7EB', background: '#FAFAF9', padding: 20 }}>
+        <Box style={{ position: 'relative', width: 96, height: 96 }}>
+          <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, border: '2px solid #fca5a5', borderRadius: 8, background: '#FFFFFF', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'label', color: '#f87171' }}>{/* {{替换：二维码文字}} */}二维码</Text>
+          </Box>
+          <Box style={{ position: 'absolute', top: -12, right: -12, width: 40, height: 40, borderRadius: 20, background: '#b91c1c', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>扫</Text>
+          </Box>
+        </Box>
+        <Box>
+          <Text style={{ fontSize: 'card', color: '#881337', bold: true, fontFamily: 'serif', marginBottom: 4 }}>{/* {{替换：标题}} */}扫码关注公众号</Text>
+          <Text style={{ fontSize: 'body', color: '#b91c1c', fontFamily: 'serif' }}>{/* {{替换：副标题}} */}了解更多传统文化</Text>
+        </Box>
+      </Box>
+      {/* 页脚 - 传统印章风格 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, padding: 12, background: '#FAFAF9', border: '1px solid #FECACA' }}>
+        <Box style={{ width: 40, height: 40, borderRadius: 20, background: '#b91c1c', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>印</Text>
+        </Box>
+        <Text style={{ flex: 1, fontSize: 'body', color: '#881337', bold: true, fontFamily: 'serif' }}>{/* {{替换：品牌名}} */}文化传承研究院</Text>
+        <Text style={{ fontSize: 'label', color: '#dc2626', fontFamily: 'serif' }}>{/* {{替换：版权}} */}© 2024 版权所有</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Text style={{ fontSize: 'card', color: '#b91c1c', bold: true, fontFamily: 'serif' }}>{/* {{替换：页码}} */}三</Text>
+          <Text style={{ fontSize: 'label', color: '#f87171', fontFamily: 'serif' }}>{/* {{替换：页码文字}} */}第三页</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

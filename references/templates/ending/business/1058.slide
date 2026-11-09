@@ -1,0 +1,27 @@
+<Slide>
+  {/* ending/business/1058 深蓝科技：网格底 + 中心光晕 + 四角方块 + 居中谢谢 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 网格背景（半透明矩形近似） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(148,163,184,0.05)' }} />
+    {/* 聚光效果 - 中心（大圆半透明） */}
+    <Box style={{ position: 'absolute', top: 60, left: 340, width: 600, height: 600, borderRadius: 300, background: 'rgba(59,130,246,0.15)' }} />
+    {/* 装饰线条 - 顶部/底部（中间蓝） */}
+    <Box style={{ position: 'absolute', top: 108, left: 256, right: 256, height: 1, background: 'linear-gradient(90deg, rgba(59,130,246,0) 0%, rgba(59,130,246,0.5) 50%, rgba(59,130,246,0) 100%)' }} />
+    <Box style={{ position: 'absolute', bottom: 108, left: 256, right: 256, height: 1, background: 'linear-gradient(90deg, rgba(59,130,246,0) 0%, rgba(59,130,246,0.5) 50%, rgba(59,130,246,0) 100%)' }} />
+    {/* 四角方块装饰（旋转 45°） */}
+    <Box style={{ position: 'absolute', top: 72, left: 128, width: 30, height: 30, border: '2px solid rgba(59,130,246,0.4)', rotate: 45 }} />
+    <Box style={{ position: 'absolute', top: 72, right: 128, width: 30, height: 30, border: '2px solid rgba(59,130,246,0.4)', rotate: 45 }} />
+    <Box style={{ position: 'absolute', bottom: 72, left: 128, width: 30, height: 30, border: '2px solid rgba(59,130,246,0.4)', rotate: 45 }} />
+    <Box style={{ position: 'absolute', bottom: 72, right: 128, width: 30, height: 30, border: '2px solid rgba(59,130,246,0.4)', rotate: 45 }} />
+    {/* 发光点装饰（+ 光晕） */}
+    <Box style={{ position: 'absolute', top: 180, left: 256, width: 6, height: 6, borderRadius: 3, background: '#3b82f6', boxShadow: '0 0 15px rgba(59,130,246,0.8)' }} />
+    <Box style={{ position: 'absolute', top: 216, right: 320, width: 8, height: 8, borderRadius: 4, background: '#3b82f6', boxShadow: '0 0 15px rgba(59,130,246,0.8)' }} />
+    <Box style={{ position: 'absolute', bottom: 202, left: 320, width: 7, height: 7, borderRadius: 3, background: '#3b82f6', boxShadow: '0 0 15px rgba(59,130,246,0.8)' }} />
+    {/* 主要内容 */}
+    <Box style={{ alignItems: 'center', maxWidth: 960 }}>
+      <Text style={{ fontSize: 60, color: '#FFFFFF', letterSpacing: 8, textAlign: 'center', marginBottom: 42 }}>{/* {{替换：主标题}} */}谢谢</Text>
+      <Box style={{ width: 140, height: 2, background: '#3b82f6', marginBottom: 40 }} />
+      <Text style={{ fontSize: 'card', color: '#cbd5e0', letterSpacing: 2, lineHeight: 1.8, textAlign: 'center' }}>{/* {{替换：致谢语}} */}感谢您的耐心聆听</Text>
+    </Box>
+  </Box>
+</Slide>

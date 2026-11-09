@@ -1,0 +1,12 @@
+<Slide>
+  {/* minimalist/1023 左对齐排版：左侧竖线装饰 + 左对齐大标题与副文 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg' }}>
+    {/* 左侧竖线（垂直居中，上 25% 下 25% 之间） */}
+    <Box style={{ position: 'absolute', left: 70, top: 180, width: 3, height: 360, background: 'text' }} />
+    {/* 左对齐内容区 */}
+    <Box style={{ height: 720, justifyContent: 'center', gap: 'md', paddingLeft: 100 }}>
+      <Text style={{ fontSize: 'kpi', color: 'text', letterSpacing: 4 }}>{/* {{替换：致谢标题}} */}谢谢观看</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{替换：副文}} */}期待您的宝贵意见</Text>
+    </Box>
+  </Box>
+</Slide>

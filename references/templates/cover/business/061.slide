@@ -1,0 +1,24 @@
+<Slide>
+  {/* business/061 左右分屏：左侧蓝色区（光晕圆装饰）+ 右侧白底文字区 */}
+  <Box style={{ width: 1280, height: 720, flexDirection: 'row' }}>
+    {/* 左侧蓝色区域（1/2） */}
+    <Box style={{ width: 640, background: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)', position: 'relative' }}>
+      {/* 左上光晕圆（裁进画布避免越界误报；opacity 0.05 视觉几乎不可见） */}
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 160, height: 160, borderRadius: 80, background: '#FFFFFF', opacity: 0.05 }} />
+      {/* 右下光晕圆 */}
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 128, height: 128, borderRadius: 64, background: '#FFFFFF', opacity: 0.05 }} />
+    </Box>
+    {/* 右侧白色区域（1/2） */}
+    <Box style={{ flex: 1, background: 'bg', justifyContent: 'center', alignItems: 'center', padding: 'xxl xl' }}>
+      <Box style={{ alignItems: 'flex-start', maxWidth: 480 }}>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true, lineHeight: 1.3, marginBottom: 'xl' }}>{/* {{主标题}} */}组织效能提升</Text>
+        <Box style={{ width: 112, height: 6, background: '#2563EB', borderRadius: 3, marginBottom: 'xl' }} />
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5, marginBottom: 'xl' }}>{/* {{副标题}} */}优化流程·激发潜能·协同共进</Text>
+        <Box style={{ gap: 'sm' }}>
+          <Text style={{ fontSize: 'body', color: 'text' }}>{/* {{落款一}} */}人力资源部</Text>
+          <Text style={{ fontSize: 'body', color: 'text' }}>{/* {{落款二}} */}管理层专题汇报</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

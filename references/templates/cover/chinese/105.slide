@@ -1,0 +1,36 @@
+<Slide>
+  {/* chinese/105 琴棋书画：米金底 + 棋盘格 + 琴弦线 + 书卷 + 主标题 + 副标题 + 三圆点 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FBF3E8 0%, #E7E5E4 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 围棋棋盘装饰（右上：网格线组） */}
+    <Box style={{ position: 'absolute', top: 64, right: 128, width: 128, height: 128, opacity: 0.2 }}>
+      {[0, 28, 56, 84, 112].map((x) => (
+        <Box key={'v' + x} style={{ position: 'absolute', top: 0, left: x, width: 2, height: 128, background: '#4A3A2A' }} />
+      ))}
+      {[0, 28, 56, 84, 112].map((y) => (
+        <Box key={'h' + y} style={{ position: 'absolute', top: y, left: 0, width: 128, height: 2, background: '#4A3A2A' }} />
+      ))}
+      <Box style={{ position: 'absolute', top: 26, left: 26, width: 16, height: 16, borderRadius: 8, background: '#111827' }} />
+      <Box style={{ position: 'absolute', top: 84, left: 88, width: 16, height: 16, borderRadius: 8, border: '1px solid #9CA3AF', background: '#F8F8F8' }} />
+    </Box>
+    {/* 古琴弦装饰（左下：四条横线） */}
+    <Box style={{ position: 'absolute', bottom: 112, left: 80, width: 208, height: 80, opacity: 0.15 }}>
+      {[16, 32, 48, 64].map((y) => (
+        <Box key={y} style={{ position: 'absolute', top: y, left: 0, width: 208, height: 2, background: '#78350F' }} />
+      ))}
+    </Box>
+    {/* 书卷装饰（左中两条线，旋转 -6°） */}
+    <Box style={{ position: 'absolute', top: 336, left: 128, width: 112, height: 4, background: '#92400E', opacity: 0.3, rotate: -6 }} />
+    <Box style={{ position: 'absolute', top: 352, left: 128, width: 112, height: 2, background: '#92400E', opacity: 0.25, rotate: -6 }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#1C1917', bold: true, lineHeight: 1.3, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}雅集清谈</Text>
+      <Text style={{ fontSize: 'card', color: '#92400E', marginBottom: 'xxl', letterSpacing: 2 }}>{/* {{替换：副标题}} */}琴棋书画·四艺皆通</Text>
+      <Box style={{ flexDirection: 'row', gap: 'lg', justifyContent: 'center', marginBottom: 'xl' }}>
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#111827' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, border: '2px solid #92400E' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#111827' }} />
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：落款}} */}文人雅集 | 艺术沙龙</Text>
+    </Box>
+  </Box>
+</Slide>

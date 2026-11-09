@@ -1,0 +1,33 @@
+<Slide>
+  {/* content/process：流程/阶段结构图（文图分离：Shape 骨架 + 独立 Text） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: '56px 80px' }}>
+    <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：流程标题（结论句）}} */}三步打通增长闭环</Text>
+    {/* 横向流程：chevron 箭头 + 步骤 */}
+    <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 70 }}>
+      {[
+        { step: '01', title: '洞察', body: '数据埋点 + 用户访谈' },
+        { step: '02', title: '验证', body: '小步快跑 A/B 测试' },
+        { step: '03', title: '放大', body: '标准化 + 规模化复制' },
+      ].map((s, i) => (
+        <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', flex: 1 }}>
+          {/* Shape 骨架：chevron 节点 */}
+          <Box style={{ flex: 1, alignItems: 'center' }}>
+            <Box style={{ width: 260, height: 110, borderRadius: 12, background: 'primary', padding: '18px 20px', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'body', color: 'accent', bold: true }}>{s.step}</Text>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginTop: 4 }}>{/* {{替换：步骤名}} */}{s.title}</Text>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.8, marginTop: 4 }}>{/* {{替换：步骤说明}} */}{s.body}</Text>
+            </Box>
+          </Box>
+          {/* 连接箭头（非最后一个） */}
+          {i < 2 && <Box style={{ width: 60, height: 2, background: 'accent', marginTop: 55 }} />}
+        </Box>
+      ))}
+    </Box>
+    {/* 底部成功指标 */}
+    <Box style={{ flexDirection: 'row', gap: 32, marginTop: 70, alignItems: 'center' }}>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{替换：成功指标标签}} */}成功指标：</Text>
+      <Text style={{ fontSize: 'card', color: 'accent', bold: true }}>{/* {{替换：指标}} */}转化率 +40%</Text>
+      <Text style={{ fontSize: 'card', color: 'accent', bold: true }}>{/* {{替换：指标}} */}周期 -30%</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,22 @@
+<Slide>
+  {/* transition/black-gold/516 黑金风-斜角装饰：纯黑底 + 金色角块 + 居中章节 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 48, position: 'relative' }}>
+    {/* 金色斜角（降级为三角形色块） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 120, height: 6, background: '#C9A227' }} />
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 6, height: 120, background: '#C9A227' }} />
+    <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 120, height: 6, background: '#C9A227' }} />
+    <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 6, height: 120, background: '#C9A227' }} />
+    <Text style={{ position: 'absolute', top: 12, left: 12, fontSize: 'kpi', color: '#C9A227', bold: true }}>{/* {{替换：章节号}} */}01</Text>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'title', color: '#EAB308', bold: true, marginBottom: 16 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'card', color: '#C9A227' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+        <Box style={{ flexDirection: 'row', gap: 8, marginTop: 24 }}>
+          <Box style={{ width: 12, height: 12, background: '#C9A227', rotate: 45 }} />
+          <Box style={{ width: 12, height: 12, background: '#C9A227', rotate: 45 }} />
+          <Box style={{ width: 12, height: 12, background: '#C9A227', rotate: 45 }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

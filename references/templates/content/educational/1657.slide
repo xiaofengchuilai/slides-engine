@@ -1,0 +1,50 @@
+<Slide>
+  {/* educational/1657 成语故事·图文并茂：左大字成语+插图(可选) + 右故事/出处/造句 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFF1F2 0%, #FFE4E6 100%)', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, flexDirection: 'row' }}>
+      {/* 左侧：成语 + 插图 */}
+      <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 'xl' }}>
+        <Text style={{ fontSize: 'hero', color: '#881337', fontFamily: 'serif', bold: true, marginBottom: 'xs' }}>{/* {{替换：成语}} */}守株待兔</Text>
+        <Text style={{ fontSize: 'body', color: '#BE123C', marginBottom: 'lg' }}>{/* {{替换：拼音}} */}shǒu zhū dài tù</Text>
+        {/* {{图片：有图填 assets/images/shouzhudait.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/shouzhudait.png" style={{ objectFit: 'cover', width: 240, height: 240, marginBottom: 'lg' }} />
+        <Box style={{ background: '#FFE4E6', border: '2px solid #FDA4AF', padding: 'md', alignItems: 'center' }}>
+          <Text style={{ fontSize: 'body', color: '#9F1239', bold: true, textAlign: 'center', lineHeight: 1.7 }}>{/* {{替换：释义}} */}比喻不主动努力，只想靠运气获得成功</Text>
+        </Box>
+      </Box>
+      {/* 右侧：故事 + 出处 + 造句 */}
+      <Box style={{ flex: 1.2, justifyContent: 'center', padding: 'xl' }}>
+        <Box style={{ background: '#FFFFFF', border: '2px solid #FECDD3', padding: 'lg', marginBottom: 'lg' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+            <Box style={{ width: 32, height: 32, background: '#FFE4E6', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+              <Emoji name="📖" style={{ width: 16, height: 16 }} />
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#9F1239', bold: true }}>{/* {{替换：标题}} */}成语故事</Text>
+          </Box>
+          <Box style={{ gap: 'sm' }}>
+            <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.7 }}>{/* {{替换：故事段1}} */}古时候，宋国有个农夫在田里耕作。忽然，一只兔子飞快地跑过来，一头撞在田边的树桩上，折断了脖子死了。</Text>
+            <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.7 }}>{/* {{替换：故事段2}} */}农夫捡起兔子，高兴极了。从此，他每天坐在树桩旁边等兔子，田地也荒废了，再也没有等到撞死的兔子。</Text>
+          </Box>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 'md', marginBottom: 'lg' }}>
+          {[
+            ['出处', '《韩非子·五蠹》'],
+            ['类型', '贬义词'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: '#FFF1F2', border: '1px solid #FECDD3', borderRadius: 'sm', padding: 'sm' }}>
+              <Text style={{ fontSize: 'label', color: '#9F1239', bold: true }}>{/* {{替换：标签}} */}{x[0]}</Text>
+              <Text style={{ fontSize: 'body', color: '#374151', marginTop: 'xs' }}>{/* {{替换：内容}} */}{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+        <Box style={{ background: 'linear-gradient(90deg, #FFE4E6 0%, #FDF2F8 100%)', border: '2px solid #FDA4AF', padding: 'md' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xs' }}>
+            <Emoji name="📝" style={{ width: 16, height: 16 }} />
+            <Text style={{ fontSize: 'body', color: '#881337', bold: true }}>{/* {{替换：标题}} */}造句示例</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.7 }}>{/* {{替换：造句}} */}学习不能守株待兔，要主动努力，不断进步。</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

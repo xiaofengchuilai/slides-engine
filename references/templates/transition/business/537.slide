@@ -1,0 +1,22 @@
+<Slide>
+  {/* transition/business/537 网格布局：浅网格线装饰 + 深框白卡章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', position: 'relative', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 网格线装饰（原 background-image 网格，引擎不支持 → 少量细线近似） */}
+    <Box style={{ position: 'absolute', top: 0, bottom: 0, left: 160, width: 2, background: '#0F172A', opacity: 0.08 }} />
+    <Box style={{ position: 'absolute', top: 0, bottom: 0, left: 480, width: 2, background: '#0F172A', opacity: 0.08 }} />
+    <Box style={{ position: 'absolute', top: 0, bottom: 0, left: 800, width: 2, background: '#0F172A', opacity: 0.08 }} />
+    <Box style={{ position: 'absolute', top: 0, bottom: 0, left: 1120, width: 2, background: '#0F172A', opacity: 0.08 }} />
+    <Box style={{ position: 'absolute', top: 120, left: 0, right: 0, height: 2, background: '#0F172A', opacity: 0.08 }} />
+    <Box style={{ position: 'absolute', top: 360, left: 0, right: 0, height: 2, background: '#0F172A', opacity: 0.08 }} />
+    <Box style={{ position: 'absolute', top: 600, left: 0, right: 0, height: 2, background: '#0F172A', opacity: 0.08 }} />
+    <Box style={{ background: 'bg', border: '4px solid #0F172A', padding: 'xxl xl', alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'lg', marginBottom: 16 }}>
+        <Box style={{ width: 64, height: 2, background: 'secondary' }} />
+        <Text style={{ fontSize: 'kpi', color: 'secondary', bold: true }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Box style={{ width: 64, height: 2, background: 'secondary' }} />
+      </Box>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+    </Box>
+  </Box>
+</Slide>

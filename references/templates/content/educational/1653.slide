@@ -1,0 +1,61 @@
+<Slide>
+  {/* educational/1653 诗词对仗·对联欣赏：标题 + 左诗文对仗标注 + 右对仗分析 + 规则小结 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FDF4FF 0%, #FAE8FF 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Text style={{ fontSize: 'title', color: '#701A75', fontFamily: 'serif', bold: true }}>{/* {{替换：标题}} */}诗词对仗之美</Text>
+      <Text style={{ fontSize: 'body', color: '#C026D3' }}>{/* {{替换：副标题}} */}《登鹳雀楼》· 王之涣</Text>
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'lg' }}>
+      {/* 左侧：诗句 + 对仗标注 */}
+      <Box style={{ flex: 1, background: 'rgba(255,255,255,0.9)', border: '2px solid #F5D0FE', borderRadius: 'md', padding: 'lg', alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ gap: 'lg', alignItems: 'center' }}>
+          {[
+            ['白日依山尽', '名词', '#A21CAF'],
+            ['黄河入海流', '名词', '#4338CA'],
+            ['欲穷千里目', '动词', '#BE123C'],
+            ['更上一层楼', '动词', '#B45309'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+              <Text style={{ fontSize: 'card', color: '#1F2937', fontFamily: 'serif' }}>{/* {{替换：诗句}} */}{x[0]}</Text>
+              <Box style={{ padding: 'xs sm', background: x[2], borderRadius: 'sm' }}>
+                <Text style={{ fontSize: 10, color: '#FFFFFF', bold: true }}>{/* {{替换：词性}} */}{x[1]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 右侧：对仗分析 */}
+      <Box style={{ flex: 1, background: 'linear-gradient(135deg, #FAE8FF 0%, #F3E8FF 100%)', border: '2px solid #F5D0FE', borderRadius: 'md', padding: 'lg', gap: 'md' }}>
+        <Text style={{ fontSize: 'card', color: '#86198F', bold: true }}>{/* {{替换：标题}} */}对仗分析</Text>
+        {[
+          ['词性对仗', '白日(名词) ⟷ 黄河(名词)\n依山(动词) ⟷ 入海(动词)', '#A21CAF'],
+          ['结构对仗', '主谓结构：白日依山尽 ⟷ 黄河入海流\n动宾结构：欲穷千里目 ⟷ 更上一层楼', '#4338CA'],
+          ['意境对仗', '上联写景，下联抒情\n远景与近景结合', '#BE123C'],
+        ].map((x, i) => (
+          <Box key={i} style={{ background: 'rgba(255,255,255,0.85)', borderRadius: 'sm', padding: 'sm' }}>
+            <Text style={{ fontSize: 'body', color: x[2], bold: true, marginBottom: 'xs' }}>{/* {{替换：分析项}} */}{x[0]}</Text>
+            <Text style={{ fontSize: 'label', color: '#374151', lineHeight: 1.7 }}>{/* {{替换：分析内容}} */}{x[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    <Box style={{ background: 'linear-gradient(90deg, #FAE8FF 0%, #F3E8FF 100%)', border: '2px solid #F0ABFC', borderRadius: 'md', padding: 'lg' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+        <Emoji name="📌" style={{ width: 16, height: 16 }} />
+        <Text style={{ fontSize: 'body', color: '#86198F', bold: true }}>{/* {{替换：标题}} */}对仗规则小结</Text>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 'md' }}>
+        {[
+          ['词性相同', '名词对名词，动词对动词'],
+          ['结构相似', '主谓对主谓，动宾对动宾'],
+          ['意境协调', '内容相关，情感呼应'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, background: '#FFFFFF', borderRadius: 'sm', padding: 'sm' }}>
+            <Text style={{ fontSize: 'body', color: '#A21CAF', bold: true }}>{/* {{替换：规则名}} */}{x[0]}</Text>
+            <Text style={{ fontSize: 'label', color: '#4B5563', marginTop: 'xs' }}>{/* {{替换：规则说明}} */}{x[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

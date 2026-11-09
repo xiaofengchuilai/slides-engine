@@ -1,0 +1,21 @@
+<Slide>
+  {/* ending/literary/1069 文艺风-水彩晕染：浅粉米渐变 + 装饰曲线 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #FFECD2 0%, #FCB69F 100%)' }}>
+    {/* 水彩晕染降级为大圆点（低透明度） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 300, height: 300, borderRadius: 150, background: '#FFB6C1', opacity: 0.3 }} />
+    <Box style={{ position: 'absolute', top: 180, right: 0, width: 340, height: 340, borderRadius: 170, background: '#B0E0E6', opacity: 0.25 }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 260, width: 300, height: 300, borderRadius: 150, background: '#FFDAB9', opacity: 0.28 }} />
+    {/* 手绘线条装饰降级为细线 */}
+    <Shape type="line" style={{ width: 120, height: 0, position: 'absolute', top: 100, left: 130, line: { color: '#D4A373', width: 2 } }} />
+    <Shape type="line" style={{ width: 100, height: 0, position: 'absolute', bottom: 130, right: 150, line: { color: '#D4A373', width: 2 } }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#8B6F47', fontFamily: 'serif', marginBottom: 'xl' }}>{/* {{替换：主标题}} */}谢谢观看</Text>
+      <Text style={{ fontSize: 'title', color: '#A67C52', fontFamily: 'serif', lineHeight: 1.8 }}>{/* {{替换：致谢语}} */}感谢您的聆听</Text>
+    </Box>
+    {/* 小花朵装饰降级为圆点 */}
+    <Box style={{ position: 'absolute', top: 180, left: 230, width: 25, height: 25, borderRadius: 12, background: '#FFB6C1', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 205, left: 260, width: 20, height: 20, borderRadius: 10, background: '#FFB6C1', opacity: 0.35 }} />
+    <Box style={{ position: 'absolute', bottom: 160, right: 190, width: 22, height: 22, borderRadius: 11, background: '#B0E0E6', opacity: 0.4 }} />
+  </Box>
+</Slide>

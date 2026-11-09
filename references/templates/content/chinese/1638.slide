@@ -1,0 +1,81 @@
+<Slide>
+  {/* chinese/1638 五行学说·表格式布局：标题 + 五行表(Box 网格) + 底部相生相克说明 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F8F5F0 0%, #EBE4D8 100%)', padding: 'xl' }}>
+    {/* 标题区 */}
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 'md', paddingLeft: 'sm', paddingRight: 'sm' }}>
+      <Box>
+        <Text style={{ fontSize: 'title', color: '#7A1F1F', bold: true, fontFamily: 'serif', letterSpacing: 2 }}>{/* {{替换：标题}} */}五行学说</Text>
+        <Text style={{ fontSize: 'label', color: '#6B7280', marginTop: 'xs' }}>金木水火土 · 相生相克 · 天人合一</Text>
+      </Box>
+      <Text style={{ fontSize: 'title', color: '#7A1F1F', opacity: 0.5, fontFamily: 'serif' }}>☯</Text>
+    </Box>
+    {/* 五行表头：五行名 + 方位季节 */}
+    <Box style={{ flexDirection: 'row', marginBottom: 'sm', paddingLeft: 'sm', paddingRight: 'sm' }}>
+      <Box style={{ width: 120 }} />
+      {[
+        ['木', '东方 · 春', '#166534'],
+        ['火', '南方 · 夏', '#B91C1C'],
+        ['土', '中央 · 长夏', '#92400E'],
+        ['金', '西方 · 秋', '#A16207'],
+        ['水', '北方 · 冬', '#1E3A8A'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, alignItems: 'center' }}>
+          <Text style={{ fontSize: 'card', color: x[2], bold: true, fontFamily: 'serif' }}>{x[0]}</Text>
+          <Text style={{ fontSize: 'label', color: x[2], marginTop: 'xs' }}>{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 五行数据行 */}
+    {[
+      {
+        name: '五脏',
+        cells: [
+          ['肝', '藏血疏泄'], ['心', '主血脉'], ['脾', '主运化'], ['肺', '主气'], ['肾', '藏精'],
+        ],
+      },
+      { name: '五腑', cells: [['胆', ''], ['小肠', ''], ['胃', ''], ['大肠', ''], ['膀胱', '']] },
+      {
+        name: '五色',
+        dots: ['#16A34A', '#DC2626', '#EAB308', '#F9FAFB', '#1F2937'],
+        cells: [['青', ''], ['赤', ''], ['黄', ''], ['白', ''], ['黑', '']],
+      },
+      {
+        name: '五味',
+        cells: [
+          ['酸', '收敛'], ['苦', '清热'], ['甘', '补益'], ['辛', '发散'], ['咸', '软坚'],
+        ],
+      },
+      { name: '五志', cells: [['怒', ''], ['喜', ''], ['思', ''], ['悲', ''], ['恐', '']] },
+      {
+        name: '生克',
+        cells: [
+          ['生火·克土', ''], ['生土·克金', ''], ['生金·克水', ''], ['生水·克木', ''], ['生木·克火', ''],
+        ],
+      },
+    ].map((row, ri) => (
+      <Box key={ri} style={{ flexDirection: 'row', alignItems: 'center', paddingTop: 'sm', paddingBottom: 'sm', border: '1px solid #E5E7EB', marginBottom: 'xs', paddingLeft: 'sm', paddingRight: 'sm', background: '#FDFCFA' }}>
+        <Box style={{ width: 120 }}>
+          <Text style={{ fontSize: 'body', color: '#7A1F1F', bold: true }}>{row.name}</Text>
+        </Box>
+        {row.cells.map((c, ci) => (
+          <Box key={ci} style={{ flex: 1, alignItems: 'center', flexDirection: 'row', justifyContent: 'center', gap: 'sm' }}>
+            {row.dots && (
+              <Box style={{ width: 16, height: 16, borderRadius: 16, background: row.dots[ci], border: '1px solid #E5E7EB' }} />
+            )}
+            <Box style={{ alignItems: 'center' }}>
+              <Text style={{ fontSize: 'body', color: '#374151' }}>{c[0]}</Text>
+              {c[1] !== '' && (
+                <Text style={{ fontSize: 'label', color: '#6B7280' }}>{c[1]}</Text>
+              )}
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    ))}
+    {/* 底部说明 */}
+    <Box style={{ flexDirection: 'row', justifyContent: 'center', gap: 'xl', marginTop: 'md' }}>
+      <Text style={{ fontSize: 'label', color: '#4B5563' }}>相生：木→火→土→金→水→木（顺时针滋养）</Text>
+      <Text style={{ fontSize: 'label', color: '#4B5563' }}>相克：木→土→水→火→金→木（隔位制约）</Text>
+    </Box>
+  </Box>
+</Slide>

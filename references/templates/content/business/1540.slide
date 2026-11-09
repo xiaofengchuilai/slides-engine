@@ -1,0 +1,101 @@
+<Slide>
+  {/* business/1540 投资回报分析：深色底 + 左投资概览三卡 + 右三年收益预测 */}
+  <Box style={{ height: 720, width: 1280, background: '#0F172A', padding: 'xl xl' }}>
+    {/* 标题 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'md' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true }}>{/* {{替换：页面标题}} */}投资回报分析</Text>
+      <Text style={{ fontSize: 'body', color: '#94A3B8', marginTop: 'xs' }}>ROI Analysis & Financial Projections</Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 'xl', flex: 1, alignItems: 'stretch' }}>
+      {/* 左：投资概览 */}
+      <Box style={{ flex: 1, gap: 'md' }}>
+        {/* 总投资 */}
+        <Box style={{ flex: 1.9, background: 'linear-gradient(135deg, #2563EB 0%, #4338CA 100%)', borderRadius: 'md', padding: 'md', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Text style={{ fontSize: 'label', color: '#BFDBFE', bold: true }}>总投资金额</Text>
+          <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 'xs', marginTop: 'xs' }}>
+            <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>¥500</Text>
+            <Text style={{ fontSize: 'card', color: '#BFDBFE', marginBottom: 'sm' }}>万</Text>
+          </Box>
+          {[
+            ['软件许可', '40%'],
+            ['实施服务', '35%'],
+            ['培训及其他', '25%'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginTop: 'sm' }}>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'label', color: '#DBEAFE' }}>{x[0]}</Text>
+                <Box style={{ height: 8, background: '#1E3A8A', borderRadius: 'sm', marginTop: 'xs' }}>
+                  <Box style={{ width: x[1], height: 8, background: '#93C5FD', borderRadius: 'sm' }} />
+                </Box>
+              </Box>
+              <Text style={{ fontSize: 'label', color: '#DBEAFE', bold: true }}>{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+
+        {/* 回报周期 */}
+        <Box style={{ flex: 1, background: 'linear-gradient(135deg, #059669 0%, #15803D 100%)', borderRadius: 'md', padding: 'sm', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Text style={{ fontSize: 'label', color: '#A7F3D0', bold: true }}>投资回报周期</Text>
+          <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 'xs', marginTop: 'xs' }}>
+            <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>18</Text>
+            <Text style={{ fontSize: 'card', color: '#A7F3D0', marginBottom: 'sm' }}>个月</Text>
+          </Box>
+          <Text style={{ fontSize: 'label', color: '#D1FAE5', marginTop: 'xs' }}>预计在第二年实现盈亏平衡</Text>
+        </Box>
+
+        {/* 年化收益 */}
+        <Box style={{ flex: 1, background: 'linear-gradient(135deg, #9333EA 0%, #4338CA 100%)', borderRadius: 'md', padding: 'sm', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Text style={{ fontSize: 'label', color: '#E9D5FF', bold: true }}>年化投资回报率</Text>
+          <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 'xs', marginTop: 'xs' }}>
+            <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>35%</Text>
+          </Box>
+          <Text style={{ fontSize: 'label', color: '#F3E8FF', marginTop: 'xs' }}>远高于行业平均水平的18%</Text>
+        </Box>
+      </Box>
+
+      {/* 右：三年收益预测 */}
+      <Box style={{ flex: 1, background: '#1E293B', borderRadius: 'md', padding: 'lg' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>三年收益预测</Text>
+        <Box style={{ gap: 'sm' }}>
+          {[
+            ['第一年', '投资期', '#EAB308', '#713F12', '+30%', '¥150万'],
+            ['第二年', '增长期', '#3B82F6', '#FFFFFF', '+50%', '¥350万'],
+            ['第三年', '成熟期', '#10B981', '#FFFFFF', '+65%', '¥550万'],
+          ].map((y, i) => (
+            <Box key={i} style={{ background: '#0F172A', borderRadius: 'md', padding: 'sm' }}>
+              <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'xs' }}>
+                <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{y[0]}</Text>
+                <Box style={{ background: y[2], borderRadius: 'sm', padding: 'xs sm' }}>
+                  <Text style={{ fontSize: 'label', color: y[3], bold: true }}>{y[1]}</Text>
+                </Box>
+              </Box>
+              <Box style={{ flexDirection: 'row', gap: 'md' }}>
+                <Box style={{ flex: 1 }}>
+                  <Text style={{ fontSize: 'label', color: '#94A3B8' }}>效率提升</Text>
+                  <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true, marginTop: 'xs' }}>{y[4]}</Text>
+                </Box>
+                <Box style={{ flex: 1 }}>
+                  <Text style={{ fontSize: 'label', color: '#94A3B8' }}>成本节省</Text>
+                  <Text style={{ fontSize: 'body', color: '#34D399', bold: true, marginTop: 'xs' }}>{y[5]}</Text>
+                </Box>
+              </Box>
+            </Box>
+          ))}
+
+          {/* 总计 */}
+          <Box style={{ background: 'linear-gradient(90deg, #059669 0%, #16A34A 100%)', borderRadius: 'md', padding: 'md', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+            <Box>
+              <Text style={{ fontSize: 'label', color: '#D1FAE5' }}>三年累计收益</Text>
+              <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>¥1,050万</Text>
+            </Box>
+            <Box style={{ alignItems: 'flex-end' }}>
+              <Text style={{ fontSize: 'label', color: '#D1FAE5' }}>净收益</Text>
+              <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>¥550万</Text>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

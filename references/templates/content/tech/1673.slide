@@ -1,0 +1,54 @@
+<Slide>
+  {/* tech/1673 数据处理全流程：三步流程卡（图文/数据卡/指标卡） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    <Box style={{ marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'xs' }}>{/* {{标题}} */}数据处理全流程</Text>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{副标题}} */}从数据采集到价值输出的完整链路</Text>
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'lg' }}>
+      {/* 步骤1：图文卡 */}
+      <Box style={{ flex: 1 }}>
+        <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginBottom: 'xs' }}>STEP 01</Text>
+        <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'sm' }}>数据接入</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6, marginBottom: 'md' }}>支持MySQL、Oracle、Kafka等50+数据源，提供可视化配置界面，无需编码即可完成数据接入。</Text>
+        {/* {{图片：有图填 assets/images/ingest.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/ingest.png" style={{ width: '100%', height: 180, objectFit: 'cover' }} />
+      </Box>
+      {/* 箭头 */}
+      <Box style={{ width: 36, alignItems: 'center', justifyContent: 'center' }}>
+        <FAIcon name='arrow-right' style={{ fill: '#94A3B8', width: 28, height: 28 }} />
+      </Box>
+      {/* 步骤2：数据卡 */}
+      <Box style={{ flex: 1 }}>
+        <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginBottom: 'xs' }}>STEP 02</Text>
+        <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'sm' }}>数据加工</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6, marginBottom: 'md' }}>内置200+数据处理算子，支持数据清洗、转换、聚合等操作，拖拽式构建数据处理流程。</Text>
+        <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'sm', padding: 'lg', flexDirection: 'row', gap: 'lg', alignItems: 'center' }}>
+          {[
+            { val: '200+', label: '处理算子' },
+            { val: '5分钟', label: '平均配置时间' },
+          ].map((x) => (
+            <Box key={x.label} style={{ flex: 1, alignItems: 'center' }}>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{x.val}</Text>
+              <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>{x.label}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 箭头 */}
+      <Box style={{ width: 36, alignItems: 'center', justifyContent: 'center' }}>
+        <FAIcon name='arrow-right' style={{ fill: '#94A3B8', width: 28, height: 28 }} />
+      </Box>
+      {/* 步骤3：指标卡 */}
+      <Box style={{ flex: 1 }}>
+        <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginBottom: 'xs' }}>STEP 03</Text>
+        <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'sm' }}>数据应用</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6, marginBottom: 'md' }}>提供报表、大屏、API等多种数据消费方式，一键生成可视化图表，快速响应业务需求。</Text>
+        <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'sm', padding: 'lg', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'kpi', color: 'text', bold: true, marginBottom: 'xs' }}>85%</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>开发效率提升</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

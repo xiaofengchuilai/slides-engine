@@ -1,0 +1,18 @@
+<Slide>
+  {/* chinese/098 山水意境：浅灰渐变底 + 山峦色块 + 主标题 + 副标题 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #E5E7EB 0%, #D1D5DB 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 山峦轮廓：底部三个山形色块（降级为梯形/圆角块） */}
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 160, background: 'rgba(55,65,81,0.2)' }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 128, width: 256, height: 192, background: 'rgba(55,65,81,0.15)', borderRadius: 200 }} />
+    <Box style={{ position: 'absolute', bottom: 0, right: 144, width: 208, height: 160, background: 'rgba(55,65,81,0.12)', borderRadius: 180 }} />
+    {/* 飞鸟装饰（两条斜线，旋转 ±15°/12°） */}
+    <Box style={{ position: 'absolute', top: 192, right: 384, width: 64, height: 2, background: 'rgba(55,65,81,0.3)', borderRadius: 1, rotate: -15 }} />
+    <Box style={{ position: 'absolute', top: 224, right: 360, width: 48, height: 2, background: 'rgba(55,65,81,0.25)', borderRadius: 1, rotate: 12 }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#374151', bold: true, lineHeight: 1.3, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}山水人文之旅</Text>
+      <Text style={{ fontSize: 'card', color: '#4B5563', marginBottom: 'xxl', letterSpacing: 2 }}>{/* {{替换：副标题}} */}寄情山水·修身养性</Text>
+      <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：落款}} */}文旅事业部 | 文化旅游规划</Text>
+    </Box>
+  </Box>
+</Slide>

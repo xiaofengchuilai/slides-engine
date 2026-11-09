@@ -1,0 +1,32 @@
+<Slide>
+  {/* ending/tech/1106 科技风-能量波：深色渐变 + 同心圆环 + 能量核心 + 渐变标题 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #050510 0%, #1A1A2E 100%)' }}>
+    {/* 能量波同心圆环（静态） */}
+    <Box style={{ position: 'absolute', top: 210, left: 490, width: 300, height: 300, border: '2px solid #00D4FF', borderRadius: 'sm', opacity: 0.5 }} />
+    <Box style={{ position: 'absolute', top: 160, left: 440, width: 400, height: 400, border: '2px solid #00FFCC', borderRadius: 'sm', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 110, left: 390, width: 500, height: 500, border: '2px solid #00FF99', borderRadius: 'sm', opacity: 0.3 }} />
+    {/* 能量粒子 */}
+    <Box style={{ position: 'absolute', top: 145, left: 190, width: 8, height: 8, borderRadius: 'sm', background: '#00D4FF', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', bottom: 130, right: 155, width: 6, height: 6, borderRadius: 'sm', background: '#00FFCC', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 215, right: 190, width: 7, height: 7, borderRadius: 'sm', background: '#00FF99', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 470, right: 230, width: 9, height: 9, borderRadius: 'sm', background: '#00FFFF', opacity: 0.8 }} />
+    {/* 中心内容框（半透明底用深色 hex 双层：底层装饰、上层内容） */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ position: 'relative', border: '2px solid #00D4FF', borderRadius: 'sm', background: '#050510', padding: 'xl xxl', boxShadow: '0 0 60px rgba(0,212,255,0.4)' }}>
+        {/* 能量节点装饰（上下左右圆点） */}
+        <Box style={{ position: 'absolute', top: -8, left: 370, width: 14, height: 14, borderRadius: 'sm', background: '#00D4FF' }} />
+        <Box style={{ position: 'absolute', bottom: -8, left: 370, width: 14, height: 14, borderRadius: 'sm', background: '#00D4FF' }} />
+        <Box style={{ position: 'absolute', left: -8, top: 80, width: 14, height: 14, borderRadius: 'sm', background: '#00FFCC' }} />
+        <Box style={{ position: 'absolute', right: -8, top: 80, width: 14, height: 14, borderRadius: 'sm', background: '#00FFCC' }} />
+        <Text style={{ fontSize: 'kpi', bold: true, letterSpacing: 6, marginBottom: 'md', backgroundClip: 'text', backgroundImage: 'linear-gradient(135deg, #00D4FF 0%, #00FFCC 50%, #00FF99 100%)', color: '#00D4FF' }}>{/* {{替换：主标题}} */}谢谢观看</Text>
+        <Text style={{ fontSize: 'card', color: '#00D4FF', letterSpacing: 3 }}>{/* {{替换：致谢语}} */}欢迎提出宝贵建议</Text>
+      </Box>
+    </Box>
+    {/* 能量指示器 */}
+    <Box style={{ position: 'absolute', bottom: 25, left: 0, right: 0, flexDirection: 'row', justifyContent: 'center', gap: 'sm' }}>
+      <Box style={{ width: 8, height: 8, borderRadius: 'sm', background: '#00D4FF', opacity: 0.9 }} />
+      <Box style={{ width: 8, height: 8, borderRadius: 'sm', background: '#00FFCC', opacity: 0.7 }} />
+      <Box style={{ width: 8, height: 8, borderRadius: 'sm', background: '#00FF99', opacity: 0.5 }} />
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,17 @@
+<Slide>
+  {/* black-gold/035 光芒四射：黑底 + 中央金晕 + 放射线 + 巨字标题 + 副标题 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 中央金色光晕 */}
+    <Box style={{ position: 'absolute', top: 160, left: 460, width: 360, height: 360, borderRadius: 180, background: '#EAB308', opacity: 0.1 }} />
+    {/* 放射线装饰（金线从中心向四周，降级为四角斜线） */}
+    <Box style={{ position: 'absolute', top: 200, left: 560, width: 2, height: 400, background: '#FBBF24', opacity: 0.12 }} />
+    <Box style={{ position: 'absolute', top: 200, right: 560, width: 2, height: 400, background: '#FBBF24', opacity: 0.12 }} />
+    <Box style={{ position: 'absolute', top: 360, left: 480, width: 400, height: 2, background: '#FBBF24', opacity: 0.12 }} />
+    <Box style={{ position: 'absolute', top: 360, right: 480, width: 400, height: 2, background: '#FBBF24', opacity: 0.12 }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}荣耀</Text>
+      <Text style={{ fontSize: 'card', color: 'rgba(234,179,8,0.8)', letterSpacing: 8 }}>{/* {{替换：副标题}} */}GLORY &amp; HONOR</Text>
+    </Box>
+  </Box>
+</Slide>

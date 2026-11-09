@@ -1,0 +1,26 @@
+<Slide>
+  {/* business/058 左右分屏：左侧深色标题区 + 右侧同心圆装饰 */}
+  <Box style={{ width: 1280, height: 720, flexDirection: 'row' }}>
+    {/* 左侧深色区域（2/5） */}
+    <Box style={{ width: 512, background: 'linear-gradient(135deg, #1E293B 0%, #0F172A 100%)', justifyContent: 'center', alignItems: 'center', padding: 'xxl xl' }}>
+      <Box style={{ alignItems: 'flex-start', width: '100%' }}>
+        <Box style={{ width: 112, height: 6, background: '#3B82F6', borderRadius: 3, marginBottom: 'xl' }} />
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, lineHeight: 1.3, marginBottom: 'xl' }}>{/* {{主标题}} */}市场拓展方案</Text>
+        <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.5, marginBottom: 'xl' }}>{/* {{副标题}} */}深耕存量·拓展增量·全域布局</Text>
+        <Box style={{ gap: 'sm' }}>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1' }}>{/* {{落款一}} */}市场营销中心</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1' }}>{/* {{落款二}} */}季度业务复盘</Text>
+        </Box>
+      </Box>
+    </Box>
+    {/* 右侧浅色区域（3/5） */}
+    <Box style={{ flex: 1, background: 'linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%)', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
+      {/* 外圈 */}
+      <Box style={{ position: 'absolute', width: 320, height: 320, borderRadius: 160, background: '#3B82F6', opacity: 0.15 }} />
+      {/* 中圈 */}
+      <Box style={{ position: 'absolute', width: 240, height: 240, borderRadius: 120, background: '#3B82F6', opacity: 0.22 }} />
+      {/* 内实心圆 */}
+      <Box style={{ position: 'absolute', width: 160, height: 160, background: 'linear-gradient(135deg, #3B82F6 0%, #4F46E5 100%)', borderRadius: 80, opacity: 0.25 }} />
+    </Box>
+  </Box>
+</Slide>

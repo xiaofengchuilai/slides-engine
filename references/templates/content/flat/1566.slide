@@ -1,0 +1,69 @@
+<Slide>
+  {/* flat/1566 界面布局：浏览器窗口(标题栏+内容区) + 导航/侧栏/主内容卡片 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFEDD5 0%, #FEE2E2 100%)', padding: 'xxl xl', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 浏览器窗口 */}
+    <Box style={{ width: '100%', maxWidth: 1152, background: 'cardBg', borderRadius: 'lg', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      {/* 浏览器标题栏 */}
+      <Box style={{ background: '#E5E7EB', padding: 'sm xl', flexDirection: 'row', alignItems: 'center' }}>
+        <Box style={{ flexDirection: 'row', gap: 'xs' }}>
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#EF4444' }} />
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#EAB308' }} />
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#22C55E' }} />
+        </Box>
+        <Box style={{ flex: 1, marginLeft: 'lg', marginRight: 'lg', background: 'cardBg', borderRadius: 'sm', padding: 'xs md', border: '1px solid #D1D5DB' }}>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：网址}} */}www.flatdesign.com</Text>
+        </Box>
+        <Box style={{ width: 16, height: 16, background: '#6B7280', borderRadius: 2 }} />
+      </Box>
+      {/* 浏览器内容区 */}
+      <Box style={{ background: 'linear-gradient(135deg, #F97316 0%, #EF4444 100%)', padding: 'xl' }}>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, textAlign: 'center', marginBottom: 'lg' }}>{/* {{替换：标题}} */}界面布局</Text>
+        {/* 顶部导航栏示意 */}
+        <Box style={{ background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm', padding: 'xs md', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 'sm' }}>
+          <Box style={{ flexDirection: 'row', gap: 'xs' }}>
+            <Box style={{ width: 28, height: 28, background: 'cardBg', borderRadius: 'sm' }} />
+            <Box style={{ width: 64, height: 28, background: 'cardBg', opacity: 0.7, borderRadius: 'sm' }} />
+            <Box style={{ width: 64, height: 28, background: 'cardBg', opacity: 0.7, borderRadius: 'sm' }} />
+          </Box>
+          <Box style={{ width: 112, height: 28, background: 'cardBg', opacity: 0.7, borderRadius: 'sm' }} />
+        </Box>
+        {/* 侧边栏 + 主内容区 */}
+        <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+          {/* 侧边栏 */}
+          <Box style={{ width: 300, background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm', padding: 'md', gap: 'xs' }}>
+            <Box style={{ background: 'cardBg', height: 32, borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'label', color: '#EA580C', bold: true }}>{/* {{替换：导航项}} */}清晰</Text>
+            </Box>
+            <Box style={{ background: 'cardBg', opacity: 0.7, height: 28, borderRadius: 'sm' }} />
+            <Box style={{ background: 'cardBg', opacity: 0.7, height: 28, borderRadius: 'sm' }} />
+            <Box style={{ background: 'cardBg', opacity: 0.7, height: 28, borderRadius: 'sm' }} />
+          </Box>
+          {/* 主内容区 */}
+          <Box style={{ flex: 1, gap: 'sm' }}>
+            {/* 主内容卡片 */}
+            <Box style={{ background: 'cardBg', borderRadius: 'sm', padding: 'lg', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+              <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 'sm' }}>
+                <Text style={{ fontSize: 'card', color: '#EA580C', bold: true }}>{/* {{替换：主卡片标题}} */}信息层级分明</Text>
+                <Box style={{ width: 56, height: 56, background: 'linear-gradient(135deg, #FB923C 0%, #EF4444 100%)', borderRadius: 'sm' }} />
+              </Box>
+              <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{替换：主卡片说明}} */}清晰的视觉层次让用户快速理解内容结构，提高信息获取效率</Text>
+            </Box>
+            {/* 次要内容卡片 x2 */}
+            <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+              {[
+                ['高效操作', '流程顺畅', 'linear-gradient(135deg, #FB923C 0%, #EA580C 100%)'],
+                ['友好体验', '体验优秀', 'linear-gradient(135deg, #F87171 0%, #DC2626 100%)'],
+              ].map((x, i) => (
+                <Box key={i} style={{ flex: 1, background: 'cardBg', opacity: 0.9, borderRadius: 'sm', padding: 'md' }}>
+                  <Box style={{ width: 48, height: 48, background: x[2], borderRadius: 'sm', marginBottom: 'xs' }} />
+                  <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{x[0]}</Text>
+                  <Text style={{ fontSize: 'label', color: 'muted' }}>{x[1]}</Text>
+                </Box>
+              ))}
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

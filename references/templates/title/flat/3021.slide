@@ -1,0 +1,19 @@
+<Slide>
+  {/* title/flat/3021 扁平风-卡片式：白底 + 双渐变卡片（蓝/紫） */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 'xl' }}>
+    <Box style={{ height: '100%', justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+      <Box style={{ flexDirection: 'row', gap: 'md', width: 720 }}>
+        {/* 蓝色渐变卡片 */}
+        <Box style={{ flex: 1, background: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)', borderRadius: 'md', padding: 'xl' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：卡片标题}} */}核心功能</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.9, marginTop: 'xs' }}>{/* {{替换：英文副标}} */}Core Features</Text>
+        </Box>
+        {/* 紫色渐变卡片 */}
+        <Box style={{ flex: 1, background: 'linear-gradient(135deg, #A855F7 0%, #9333EA 100%)', borderRadius: 'md', padding: 'xl' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：卡片标题}} */}技术架构</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.9, marginTop: 'xs' }}>{/* {{替换：英文副标}} */}Architecture</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

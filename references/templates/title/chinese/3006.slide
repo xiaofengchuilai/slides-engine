@@ -1,0 +1,12 @@
+<Slide>
+  {/* title/chinese/3006 中国风-祥云纹饰：米金渐变底 + 居中大红标题（两侧装饰括号降级色块） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFFBF0 0%, #FFF5E0 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24 }}>
+        <Box style={{ width: 8, height: 96, background: 'rgba(220,38,38,0.25)' }} />
+        <Text style={{ fontSize: 'title', color: '#881337', bold: true, letterSpacing: 8, fontFamily: 'serif', textAlign: 'center' }}>{/* {{替换：标题}} */}古典诗词赏析</Text>
+        <Box style={{ width: 8, height: 96, background: 'rgba(220,38,38,0.25)' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

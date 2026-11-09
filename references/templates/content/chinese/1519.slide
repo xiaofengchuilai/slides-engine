@@ -1,0 +1,37 @@
+<Slide>
+  {/* chinese/1519 左图右文·园林艺术：左图 + 右文（标题+导语+三要点） */}
+  <Box style={{ height: 720, width: 1280, background: '#FAF9F6', padding: 'xxl xl', flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+    {/* 左图区 */}
+    <Box style={{ width: '42%', height: '100%', alignItems: 'center', justifyContent: 'center' }}>
+      {/* {{图片：有图填 assets/images/garden.png，无图删掉整个 <Image>}} */}
+      <Image src="assets/images/garden.png" style={{ objectFit: 'cover', width: 420, height: 560 }} />
+    </Box>
+    {/* 右文区 */}
+    <Box style={{ flex: 1, gap: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true }}>{/* {{替换：主标题}} */}园林艺术</Text>
+      <Box style={{ width: 96, height: 2, background: 'rgba(168, 24, 16, 0.3)' }} />
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.8 }}>{/* {{替换：导语段落}} */}
+        中国园林艺术追求“虽由人作，宛自天开”的境界，通过山水、建筑、植物的巧妙布局，营造出诗情画意的空间。
+      </Text>
+      <Box style={{ gap: 'lg' }}>
+        {[
+          ['借景', '远借、邻借、仰借、俯借，扩大空间感受'],
+          ['对景', '主从有序，虚实相生，形成视觉焦点'],
+          ['框景', '门窗框景，步移景异，如诗如画'],
+        ].map((x, i) => (
+          <Box key={i} style={{ gap: 2 }}>
+            <Text style={{ fontSize: 'card', color: '#A81810', bold: true }}>{x[0]}</Text>
+            <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{x[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    {/* 角落细线装饰 */}
+    <Box style={{ position: 'absolute', top: 64, right: 64, width: 96, height: 96 }}>
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 40, height: 2, background: 'rgba(168, 24, 16, 0.2)' }} />
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 2, height: 40, background: 'rgba(168, 24, 16, 0.2)' }} />
+    </Box>
+    {/* 功能文字 */}
+    <Text style={{ fontSize: 'label', color: 'muted', position: 'absolute', left: 80, bottom: 24 }}>{/* {{替换：参考}} */}参考：《园冶》· 计成著 · 明代造园专著</Text>
+  </Box>
+</Slide>

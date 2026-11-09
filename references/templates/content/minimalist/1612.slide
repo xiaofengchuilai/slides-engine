@@ -1,0 +1,53 @@
+<Slide>
+  {/* minimalist/1612 云原生架构演进：标题+悬浮K8s卡 / 左大图+右三叠数据卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 标题区 + 右上 K8s 悬浮卡 */}
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 'lg' }}>
+      <Box style={{ flex: 1 }}>
+        <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'xs' }}>{/* {{标题}} */}云原生架构演进</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+          <Box style={{ width: 80, height: 2, background: 'primary' }} />
+          <Text style={{ fontSize: 'label', color: 'muted' }}>Cloud Native Evolution</Text>
+        </Box>
+        <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6, maxWidth: 560 }}>从传统单体架构向微服务、容器化、服务网格的逐步演进，实现更高的敏捷性和可扩展性。</Text>
+      </Box>
+      <Box style={{ width: 120, height: 120, background: 'primary', borderRadius: 'md', alignItems: 'center', justifyContent: 'center', marginLeft: 'lg', boxShadow: '0 16px 48px rgba(0,0,0,0.28)', rotate: 6 }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>K8s</Text>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.8 }}>容器编排平台</Text>
+      </Box>
+    </Box>
+
+    {/* 主图区：左大图 + 右三叠数据卡 */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1 }}>
+      {/* 左侧大图 */}
+      <Box style={{ flex: 2, background: 'cardBg', borderRadius: 'md', alignItems: 'center', justifyContent: 'center', padding: 'md' }}>
+        {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/architecture.png" style={{ width: 560, height: 320, objectFit: 'cover' }} />
+      </Box>
+      {/* 右侧三叠数据卡 */}
+      <Box style={{ flex: 1, gap: 'md' }}>
+        {[
+          ['部署效率提升', '10倍', '从小时级到分钟级', 'primary'],
+          ['资源利用率', '75%', '提升50个百分点', 'secondary'],
+          ['故障恢复时间', '<30秒', '自动化故障转移', 'muted'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', border: '1px solid #E5E7EB', justifyContent: 'center', flexDirection: 'row', gap: 'md', alignItems: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+            <Box style={{ width: 4, height: 48, background: x[3], borderRadius: 2 }} />
+            <Box style={{ flex: 1 }}>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'kpi', color: 'text', bold: true }}>{x[1]}</Text>
+              <Text style={{ fontSize: 'body', color: 'muted' }}>{x[2]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+
+    {/* 底部条 */}
+    <Box style={{ height: 2, background: '#E5E7EB', marginTop: 'md', marginBottom: 'sm' }} />
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>技术栈：Docker + Kubernetes + Istio + Prometheus</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>参考：CNCF云原生技术图谱 2024版</Text>
+    </Box>
+  </Box>
+</Slide>

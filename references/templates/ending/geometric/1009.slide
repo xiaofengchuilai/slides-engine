@@ -1,0 +1,28 @@
+<Slide>
+  {/* ending/geometric 1009 多边形组合结尾：淡紫粉渐变底 + 菱形/圆环/三角装饰 + 白卡 + 联系方式 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #F3E8FF 0%, #FCE7F3 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 几何装饰 */}
+    <Shape type="diamond" style={{ position: 'absolute', top: 40, left: 40, width: 112, height: 112, fill: '#A855F7', opacity: 0.6 }} />
+    <Shape type="ellipse" style={{ position: 'absolute', bottom: 56, right: 56, width: 128, height: 128, line: { color: '#EC4899', width: 8 }, opacity: 0.4 }} />
+    <Shape type="triangle" style={{ position: 'absolute', top: 80, right: 80, width: 100, height: 90, fill: '#3B82F6', opacity: 0.5 }} />
+    {/* 主内容 */}
+    <Box style={{ alignItems: 'center' }}>
+      {/* 白卡主标题 */}
+      <Box style={{ background: 'bg', padding: 'xxl xl', marginBottom: 'md', alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 88, color: 'secondary', bold: true, marginBottom: 'md' }}>{/* {{主标题}} */}THANKS</Text>
+        <Text style={{ fontSize: 'card', color: 'text' }}>{/* {{副标题}} */}感谢聆听</Text>
+      </Box>
+      {/* 联系方式双卡 */}
+      <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+        <Box style={{ background: 'bg', borderRadius: 'sm', padding: 'md xl', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'label', color: 'muted', marginBottom: 'xs' }}>{/* {{标签一}} */}EMAIL</Text>
+          <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{邮箱}} */}hello@design.com</Text>
+        </Box>
+        <Box style={{ background: 'bg', borderRadius: 'sm', padding: 'md xl', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'label', color: 'muted', marginBottom: 'xs' }}>{/* {{标签二}} */}PHONE</Text>
+          <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{电话}} */}+86 138-0000-0000</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

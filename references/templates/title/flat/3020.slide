@@ -1,0 +1,17 @@
+<Slide>
+  {/* title/flat/3020 扁平风-多色分段：灰底 + 六色竖条 + 大标题 */}
+  <Box style={{ width: 1280, height: 720, background: 'cardBg', position: 'absolute', top: 0, left: 0, padding: 'xl' }}>
+    <Box style={{ height: '100%', justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 0 }}>
+        {/* 六色分段竖条 */}
+        <Box style={{ width: 8, height: 80, background: '#EF4444' }} />
+        <Box style={{ width: 8, height: 80, background: '#F97316' }} />
+        <Box style={{ width: 8, height: 80, background: '#EAB308' }} />
+        <Box style={{ width: 8, height: 80, background: '#22C55E' }} />
+        <Box style={{ width: 8, height: 80, background: '#3B82F6' }} />
+        <Box style={{ width: 8, height: 80, background: '#A855F7' }} />
+        <Text style={{ fontSize: 'kpi', color: 'text', bold: true, marginLeft: 32 }}>{/* {{替换：主标题}} */}用户研究报告</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

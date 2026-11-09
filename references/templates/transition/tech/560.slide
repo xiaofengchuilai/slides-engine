@@ -1,0 +1,23 @@
+<Slide>
+  {/* transition/tech/560 科技风-数据流：靛蓝深底 + 三条数据流线 + 章节号/名/导语 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #1e1b4b 0%, #172554 50%, #1e1b4b 100%)', padding: 48, position: 'relative' }}>
+    {/* 数据流线条 */}
+    <Box style={{ position: 'absolute', top: 180, left: 0, right: 0, height: 1, background: 'linear-gradient(90deg, rgba(96,165,250,0) 0%, #60a5fa 50%, rgba(96,165,250,0) 100%)' }} />
+    <Box style={{ position: 'absolute', top: 540, left: 0, right: 0, height: 1, background: 'linear-gradient(90deg, rgba(192,132,252,0) 0%, #c084fc 50%, rgba(192,132,252,0) 100%)' }} />
+    <Box style={{ position: 'absolute', top: 360, left: 0, right: 0, height: 1, background: 'linear-gradient(90deg, rgba(34,211,238,0) 0%, #22d3ee 50%, rgba(34,211,238,0) 100%)' }} />
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'hero', color: '#60a5fa', bold: true, marginBottom: 24 }}>{/* {{替换：章节号 01-0N}} */}[ 01 ]</Text>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 16 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#93c5fd' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 32 }}>
+          <Box style={{ width: 80, height: 3, background: '#60a5fa' }} />
+          <Box style={{ width: 8, height: 8, background: '#60a5fa' }} />
+          <Box style={{ width: 80, height: 3, background: '#c084fc' }} />
+          <Box style={{ width: 8, height: 8, background: '#c084fc' }} />
+          <Box style={{ width: 80, height: 3, background: '#22d3ee' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

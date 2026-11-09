@@ -1,0 +1,53 @@
+<Slide style={{ background: 'bg' }}>
+  {/* business/1536 组织架构图：CEO → C-Level(COO/CFO/CTO) → 部门层4组 */}
+  <Box style={{ padding: 'xxl xl', height: '100%', alignItems: 'center', gap: 'sm' }}>
+    {/* 标题 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'sm' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{标题}} */}组织架构</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', marginTop: 'xs' }}>Organizational Structure</Text>
+    </Box>
+    {/* CEO */}
+    <Box style={{ width: 300, background: 'linear-gradient(90deg, #1E293B 0%, #334155 100%)', borderRadius: 'md', padding: 'lg', alignItems: 'center', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+      <Emoji name="👔" style={{ width: 32, height: 32 }} />
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginTop: 'sm' }}>CEO</Text>
+      <Text style={{ fontSize: 'label', color: '#CBD5E1', marginTop: 'xs' }}>首席执行官</Text>
+    </Box>
+    {/* 竖连接线 */}
+    <Box style={{ width: 4, height: 24, background: '#CBD5E1' }} />
+    {/* 横连接线 */}
+    <Box style={{ width: 720, height: 4, background: '#CBD5E1' }} />
+    {/* C-Level 层 */}
+    <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+      {[
+        ['COO', '首席运营官', '💼', 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)', '#DBEAFE'],
+        ['CFO', '首席财务官', '💰', 'linear-gradient(135deg, #059669 0%, #15803D 100%)', '#D1FAE5'],
+        ['CTO', '首席技术官', '⚙️', 'linear-gradient(135deg, #7C3AED 0%, #4338CA 100%)', '#EDE9FE'],
+      ].map((c, i) => (
+        <Box key={i} style={{ width: 240, background: c[3], borderRadius: 'md', padding: 'lg', alignItems: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Emoji name={c[2]} style={{ width: 24, height: 24 }} />
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginTop: 'sm' }}>{c[0]}</Text>
+          <Text style={{ fontSize: 'label', color: c[4], marginTop: 'xs' }}>{c[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 部门层 */}
+    <Box style={{ flexDirection: 'row', gap: 'md' }}>
+      {[
+        { bg: '#EFF6FF', border: '#BFDBFE', text: '#1E3A8A', sub: '#2563EB', items: [['市场部', 'Marketing'], ['销售部', 'Sales']] },
+        { bg: '#ECFDF5', border: '#A7F3D0', text: '#064E3B', sub: '#059669', items: [['财务部', 'Finance'], ['审计部', 'Audit']] },
+        { bg: '#F5F3FF', border: '#DDD6FE', text: '#4C1D95', sub: '#7C3AED', items: [['研发部', 'R&D'], ['IT部', 'IT']] },
+        { bg: '#F8FAFC', border: '#E2E8F0', text: '#0F172A', sub: '#475569', items: [['人力资源', 'HR'], ['行政部', 'Admin']] },
+      ].map((g, i) => (
+        <Box key={i} style={{ gap: 'xs', alignItems: 'center', width: 180 }}>
+          <Box style={{ width: 4, height: 16, background: '#CBD5E1' }} />
+          {g.items.map((it, j) => (
+            <Box key={j} style={{ background: g.bg, border: '2px solid ' + g.border, borderRadius: 'sm', padding: 'sm', width: 180, alignItems: 'center' }}>
+              <Text style={{ fontSize: 'body', color: g.text, bold: true }}>{/* {{部门}} */}{it[0]}</Text>
+              <Text style={{ fontSize: 'label', color: g.sub }}>{it[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

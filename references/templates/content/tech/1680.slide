@@ -1,0 +1,46 @@
+<Slide>
+  {/* tech/1680 客户成功案例：左主案例+大图，右背景/方案/成果数据 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题 */}
+    <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xl' }}>{/* {{标题}} */}客户成功案例</Text>
+
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+      {/* 左侧主区域 */}
+      <Box style={{ flex: 1, flexDirection: 'column' }}>
+        <Text style={{ fontSize: 26, color: '#FFFFFF', bold: true, marginBottom: 'md' }}>{/* {{案例标题}} */}某大型金融机构数据中台建设</Text>
+        <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6, marginBottom: 'lg' }}>{/* {{案例简介}} */}为国内头部金融机构搭建统一数据中台，整合分散在各业务系统的数据资产，实现数据资产统一管理与高效利用。</Text>
+        <Box style={{ flex: 1, borderRadius: 'md' }}>
+          {/* {{图片：有图填 assets/images/1680.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1680.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </Box>
+      </Box>
+
+      {/* 右侧区域组 */}
+      <Box style={{ width: 500, gap: 'xl' }}>
+        <Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{小标题}} */}项目背景</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{背景描述}} */}客户原有数据分散在20+业务系统，数据孤岛严重，缺乏统一的数据标准与治理体系，数据价值难以释放。</Text>
+        </Box>
+        <Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{小标题}} */}解决方案</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{方案描述}} */}部署统一数据平台，建立数据标准体系，实现全域数据采集、加工、服务能力，支撑风控、营销等核心业务场景。</Text>
+        </Box>
+        {/* 成果数据 */}
+        <Box style={{ marginTop: 'auto', flexDirection: 'row', gap: 'md' }}>
+          {[
+            ['300%', '数据处理效率提升'],
+            ['60%', '开发成本降低'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', alignItems: 'center' }}>
+              <Text style={{ fontSize: 28, color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

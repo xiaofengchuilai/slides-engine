@@ -1,0 +1,27 @@
+<Slide>
+  {/* ending/business/1057 浅色清新：斜对角渐变色块 + 菱形装饰 + 居中感谢聆听 */}
+  <Box style={{ height: 720, width: 1280, background: '#f7fafc', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 渐变色块 - 左上（蓝→透明） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 576, height: 216, background: 'linear-gradient(135deg, rgba(49,130,206,0.1) 0%, rgba(49,130,206,0) 100%)' }} />
+    {/* 渐变色块 - 右下（橙→透明） */}
+    <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 640, height: 252, background: 'linear-gradient(315deg, rgba(237,137,54,0.1) 0%, rgba(237,137,54,0) 100%)' }} />
+    {/* 斜线装饰 - 左 */}
+    <Box style={{ position: 'absolute', top: 144, left: 154, width: 2, height: 150, background: 'linear-gradient(180deg, #3182ce 0%, rgba(49,130,206,0) 100%)' }} />
+    {/* 斜线装饰 - 右 */}
+    <Box style={{ position: 'absolute', bottom: 158, right: 192, width: 2, height: 140, background: 'linear-gradient(0deg, #ed8936 0%, rgba(237,137,54,0) 100%)' }} />
+    {/* 菱形装饰（旋转 45°） */}
+    <Box style={{ position: 'absolute', top: 130, right: 320, width: 40, height: 40, background: 'rgba(49,130,206,0.1)', border: '2px solid rgba(49,130,206,0.3)', rotate: 45 }} />
+    <Box style={{ position: 'absolute', bottom: 180, left: 358, width: 35, height: 35, background: 'rgba(237,137,54,0.1)', border: '2px solid rgba(237,137,54,0.3)', rotate: 45 }} />
+    {/* 主要内容 */}
+    <Box style={{ alignItems: 'center', maxWidth: 960 }}>
+      <Text style={{ fontSize: 56, color: '#2d3748', letterSpacing: 6, textAlign: 'center', marginBottom: 40 }}>{/* {{替换：主标题}} */}感谢聆听</Text>
+      {/* 分隔装饰：渐变线 + 圆点 + 渐变线 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 15, marginBottom: 38 }}>
+        <Box style={{ width: 70, height: 3, background: 'linear-gradient(90deg, rgba(49,130,206,0) 0%, #3182ce 100%)' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#ed8936' }} />
+        <Box style={{ width: 70, height: 3, background: 'linear-gradient(270deg, rgba(237,137,54,0) 0%, #ed8936 100%)' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#718096', letterSpacing: 2, lineHeight: 1.8, textAlign: 'center' }}>{/* {{替换：致谢语}} */}期待下次再见</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,19 @@
+<Slide>
+  {/* cover/minimalist/137 图文交融：浅渐变底 + 右上/左下圆环 + 蓝色点缀 + 顶部装饰行 + 居中标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ position: 'absolute', top: 144, right: 192, width: 256, height: 256, borderRadius: 128, border: '1px solid #CBD5E1', opacity: 0.5 }} />
+    <Box style={{ position: 'absolute', bottom: 108, left: 154, width: 192, height: 192, borderRadius: 96, border: '1px solid #BFDBFE', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 180, left: 230, width: 8, height: 8, borderRadius: 4, background: 'secondary' }} />
+    <Box style={{ position: 'absolute', bottom: 216, right: 282, width: 8, height: 8, borderRadius: 4, background: '#94A3B8' }} />
+    <Box style={{ alignItems: 'center', gap: 'xl' }}>
+      <Box style={{ flexDirection: 'row', gap: 'md', alignItems: 'center' }}>
+        <Box style={{ width: 64, height: 1, background: 'secondary' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: 'secondary' }} />
+        <Box style={{ width: 64, height: 1, background: '#CBD5E1' }} />
+      </Box>
+      <Text style={{ fontSize: 'hero', color: 'text', bold: true, lineHeight: 1.15, letterSpacing: 2 }}>{/* {{替换：主标题}} */}创意设计工坊</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 4 }}>{/* {{替换：副标题}} */}图文并茂·视觉传达</Text>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginTop: 'md' }}>{/* {{替换：部门/主题}} */}设计部 | 季度创意分享</Text>
+    </Box>
+  </Box>
+</Slide>

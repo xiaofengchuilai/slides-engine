@@ -1,0 +1,19 @@
+<Slide>
+  {/* decorative/literary/2018 文艺风-复古小纹路：米白底 + 复古方框/圆环/条纹装饰 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAFAF9 0%, #F5F0E8 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center', gap: 32 }}>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Box style={{ width: 48, height: 48, border: '2px solid #a8a29e' }} />
+        <Box style={{ width: 48, height: 48, borderRadius: 24, border: '2px solid #a8a29e' }} />
+        <Box style={{ width: 40, height: 40, borderRadius: 20, border: '1px solid #d97706', background: 'repeating-linear-gradient(45deg, rgba(217,119,6,0.3) 0px, rgba(217,119,6,0.3) 2px, rgba(0,0,0,0) 2px, rgba(0,0,0,0) 4px)' }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Box style={{ width: 48, height: 48, border: '2px solid #78716c', position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 8, left: 8, right: 8, bottom: 8, border: '1px solid rgba(120,113,108,0.5)' }} />
+        </Box>
+        <Box style={{ width: 32, height: 32, borderRadius: 16, background: 'rgba(146,64,14,0.3)' }} />
+        <Box style={{ width: 40, height: 40, border: '2px solid rgba(217,119,6,0.4)', borderRadius: 8 }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

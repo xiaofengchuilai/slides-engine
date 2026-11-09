@@ -1,0 +1,10 @@
+<Slide>
+  {/* minimalist/1024 渐变背景：浅灰→白对角渐变 + 居中标题与细线 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F3F4F6 0%, #FFFFFF 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    <Box style={{ alignItems: 'center', gap: 'md' }}>
+      <Text style={{ fontSize: 'kpi', color: 'text', letterSpacing: 8 }}>{/* {{替换：致谢标题}} */}感谢</Text>
+      <Box style={{ width: 128, height: 2, background: '#9CA3AF', marginTop: 'xl', marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'card', color: 'muted', lineHeight: 1.6 }}>{/* {{替换：副文}} */}感谢您的聆听与关注</Text>
+    </Box>
+  </Box>
+</Slide>

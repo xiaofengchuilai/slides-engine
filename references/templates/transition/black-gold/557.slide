@@ -1,0 +1,22 @@
+<Slide>
+  {/* transition/black-gold/557 黑金风-金色框架：纯黑底 + 金边大框 + 四角金块 + 居中章节 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 48 }}>
+    <Box style={{ height: 624, position: 'relative' }}>
+      {/* 金色大框 */}
+      <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, border: '6px solid #C9A227' }} />
+      <Box style={{ position: 'absolute', top: 12, left: 12, right: 12, bottom: 12, border: '2px solid rgba(201,162,39,0.4)' }} />
+      {/* 四角金块 */}
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 64, height: 64, background: '#C9A227' }} />
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 64, height: 64, background: '#C9A227' }} />
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 64, height: 64, background: '#C9A227' }} />
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 64, height: 64, background: '#C9A227' }} />
+      <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ alignItems: 'center' }}>
+          <Text style={{ fontSize: 'hero', color: '#C9A227', bold: true, marginBottom: 24 }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+          <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 16 }}>{/* {{替换：章节名}} */}项目背景</Text>
+          <Text style={{ fontSize: 'body', color: '#EAB308' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

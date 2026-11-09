@@ -1,0 +1,21 @@
+<Slide>
+  {/* business/059 白底封面：顶部渐变条 + 底部光晕 + 居中内容 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'relative' }}>
+    {/* 顶部装饰条 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 12, background: 'linear-gradient(90deg, #2563EB 0%, #3B82F6 50%, #4F46E5 100%)' }} />
+    {/* 底部光晕（左） */}
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 320, height: 320, borderRadius: 160, background: '#EFF6FF', opacity: 0.8 }} />
+    {/* 底部光晕（右） */}
+    <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 320, height: 320, borderRadius: 160, background: '#EEF2FF', opacity: 0.8 }} />
+    {/* 主内容区 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, justifyContent: 'center', alignItems: 'center', padding: 'xxl xl' }}>
+      <Text style={{ fontSize: 'hero', color: 'text', bold: true, textAlign: 'center', letterSpacing: 2, lineHeight: 1.2, marginBottom: 'xxl' }}>{/* {{主标题}} */}品牌升级方案</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center', letterSpacing: 2, lineHeight: 1.5, marginBottom: 'xxl' }}>{/* {{副标题}} */}重塑形象·焕新体验·引领潮流</Text>
+      <Box style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 'lg' }}>
+        <Text style={{ fontSize: 'label', color: 'text', letterSpacing: 1 }}>{/* {{落款一}} */}品牌管理部</Text>
+        <Text style={{ fontSize: 'body', color: 'text', opacity: 0.5 }}>·</Text>
+        <Text style={{ fontSize: 'label', color: 'text', letterSpacing: 1 }}>{/* {{落款二}} */}品牌战略发布</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,68 @@
+<Slide>
+  {/* minimalist/1599 标题 + 上图(功能架构图带数据标注) + 四功能卡 + 底部说明 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 顶部装饰条 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, flexDirection: 'row' }}>
+      <Box style={{ flex: 1, background: 'primary' }} />
+      <Box style={{ flex: 1, background: 'muted' }} />
+      <Box style={{ flex: 1, background: '#E5E7EB' }} />
+    </Box>
+
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+      {/* 左侧窄列装饰 */}
+      <Box style={{ width: 40, alignItems: 'center', justifyContent: 'center', gap: 'xl' }}>
+        <Box style={{ width: 8, height: 8, borderRadius: 4, background: 'primary' }} />
+        <Box style={{ width: 8, height: 8, borderRadius: 4, background: 'muted' }} />
+        <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#E5E7EB' }} />
+      </Box>
+
+      {/* 主内容区 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        {/* 标题 */}
+        <Box style={{ gap: 'xs' }}>
+          <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{标题}} */}产品功能矩阵</Text>
+          <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{副标题}} */}Product Feature Matrix</Text>
+        </Box>
+
+        {/* 上部图片 */}
+        <Box style={{ height: 200, alignItems: 'center', justifyContent: 'center', borderRadius: 'md' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1599.png" style={{ width: 1180, height: 200, objectFit: 'cover' }} />
+        </Box>
+
+        {/* 下部四功能卡 */}
+        <Box style={{ flex: 1, flexDirection: 'row', gap: 'md' }}>
+          {[
+            ['A', '基础功能', '满足日常使用需求'],
+            ['B', '高级功能', '提供深度分析能力'],
+            ['C', '智能功能', 'AI赋能自动化'],
+            ['D', '集成功能', '对接第三方系统'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flex: 1, border: '1px solid line', padding: 'md', borderRadius: 'sm', gap: 'sm' }}>
+              <Box style={{ width: 40, height: 40, borderRadius: 20, background: 'cardBg', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{标识}} */}{x[0]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{卡标题}} */}{x[1]}</Text>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{卡说明}} */}{x[2]}</Text>
+            </Box>
+          ))}
+        </Box>
+
+        {/* 底部说明 */}
+        <Box style={{ background: 'cardBg', padding: 'md', borderRadius: 'sm', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          <Box style={{ flexDirection: 'row', gap: 'lg', alignItems: 'center' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center' }}>
+              <Text style={{ fontSize: 'label', color: 'text', bold: true }}>版本：</Text>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{版本}} */}V3.0 企业版</Text>
+            </Box>
+            <Box style={{ flexDirection: 'row', alignItems: 'center' }}>
+              <Text style={{ fontSize: 'label', color: 'text', bold: true }}>兼容性：</Text>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{兼容性}} */}支持所有主流平台</Text>
+            </Box>
+          </Box>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{更新时间}} */}最后更新：2024年12月</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

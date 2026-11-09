@@ -1,0 +1,48 @@
+<Slide>
+  {/* business/1533 SWOT 分析矩阵：2×2 四象限（S/W/O/T），各含 4 要点 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 标题栏 */}
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'lg' }}>
+      <Box>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{标题}} */}SWOT 战略分析</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>Strategic Analysis Framework</Text>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 'xs' }}>
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: 'primary' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: 'secondary' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: 'muted' }} />
+      </Box>
+    </Box>
+
+    {/* 2×2 四象限矩阵 */}
+    <Box style={{ flex: 1, flexDirection: 'row', flexWrap: 'wrap', gap: 'lg' }}>
+      {[
+        { key: 'S', en: 'Strengths', cn: '优势', color: 'primary', items: ['品牌知名度高，市场认可度强', '技术研发能力突出，拥有核心专利', '供应链管理完善，成本控制有效', '客户忠诚度高，复购率达65%'] },
+        { key: 'W', en: 'Weaknesses', cn: '劣势', color: 'muted', items: ['产品线单一，抗风险能力较弱', '国际市场拓展缓慢，海外占比仅15%', '数字化转型滞后，运营效率有待提升', '人才储备不足，关键岗位流失率高'] },
+        { key: 'O', en: 'Opportunities', cn: '机会', color: 'secondary', items: ['新兴市场需求激增，增长空间巨大', '政策支持力度加大，获得专项扶持', '行业整合加速，并购重组机会增多', '消费升级趋势明显，高端需求旺盛'] },
+        { key: 'T', en: 'Threats', cn: '威胁', color: 'accent', items: ['市场竞争加剧，价格战压力增大', '新技术颠覆风险，传统模式受冲击', '原材料成本上涨，利润空间收窄', '监管政策趋严，合规成本增加'] },
+      ].map((q, i) => (
+        <Box key={i} style={{ width: 604, flexDirection: 'row', background: 'cardBg', borderRadius: 'md', padding: 'lg', alignItems: 'flex-start', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+          <Box style={{ width: 4, alignSelf: 'stretch', background: q.color, borderRadius: 2, marginRight: 'md' }} />
+          <Box style={{ flex: 1, gap: 'sm' }}>
+            <Box style={{ flexDirection: 'row', gap: 'md', alignItems: 'center' }}>
+              <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: q.color, alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{q.key}</Text>
+              </Box>
+              <Box>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{q.en}</Text>
+                <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{象限中文}} */}{q.cn}</Text>
+              </Box>
+            </Box>
+            {q.items.map((it, j) => (
+              <Box key={j} style={{ flexDirection: 'row', gap: 'xs', alignItems: 'flex-start' }}>
+                <Box style={{ width: 6, height: 6, borderRadius: 3, background: q.color, marginTop: 6 }} />
+                <Text style={{ fontSize: 'body', color: 'text', flex: 1, lineHeight: 1.5 }}>{/* {{要点}} */}{it}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

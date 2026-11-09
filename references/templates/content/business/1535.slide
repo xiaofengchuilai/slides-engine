@@ -1,0 +1,62 @@
+<Slide style={{ background: 'bg' }}>
+  {/* business/1535 项目时间线甘特图：标题+进度卡 / 季度标签 / 5阶段甘特条 / 底部3指标卡 */}
+  <Box style={{ position: 'relative', height: '100%' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(135deg, #F8FAFC 0%, #F3F4F6 100%)' }} />
+    <Box style={{ position: 'relative', padding: 'xxl xl', height: '100%', gap: 'sm' }}>
+      {/* 标题行 */}
+      <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box>
+          <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{标题}} */}项目执行时间线</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', marginTop: 'xs' }}>Project Timeline · Digital Transformation Initiative</Text>
+        </Box>
+        <Box style={{ background: 'primary', padding: 'md lg', borderRadius: 'md', alignItems: 'center', gap: 'xs' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>项目进度</Text>
+          <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, lineHeight: 1 }}>{/* {{进度}} */}67%</Text>
+        </Box>
+      </Box>
+      {/* 季度标签（左对齐甘特条起点） */}
+      <Box style={{ flexDirection: 'row', paddingLeft: 280 }}>
+        {['Q1', 'Q2', 'Q3', 'Q4'].map((q, i) => (
+          <Box key={i} style={{ flex: 1, alignItems: 'center' }}>
+            <Text style={{ fontSize: 'body', color: 'muted', bold: true }}>{q}</Text>
+          </Box>
+        ))}
+      </Box>
+      {/* 甘特图 */}
+      <Box style={{ gap: 'sm' }}>
+        {[
+          { name: '需求分析', en: 'Requirements Analysis', left: 0, width: 238, grad: 'linear-gradient(90deg, #10B981 0%, #16A34A 100%)', label: '已完成' },
+          { name: '系统设计', en: 'System Design', left: 238, width: 238, grad: 'linear-gradient(90deg, #3B82F6 0%, #4F46E5 100%)', label: '已完成' },
+          { name: '开发实施', en: 'Development', left: 428, width: 209, grad: 'linear-gradient(90deg, #F97316 0%, #D97706 100%)', label: '进行中 67%' },
+          { name: '测试验证', en: 'Testing & Validation', left: 638, width: 143, grad: '#94A3B8', label: '待开始', opacity: 0.5 },
+          { name: '上线部署', en: 'Deployment', left: 781, width: 171, grad: '#94A3B8', label: '待开始', opacity: 0.5 },
+        ].map((p, i) => (
+          <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 'lg' }}>
+            <Box style={{ width: 260, background: 'primary', padding: 'xs md', borderRadius: 'md' }}>
+              <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{阶段名}} */}{p.name}</Text>
+              <Text style={{ fontSize: 'label', color: '#CBD5E1', marginTop: 'xs' }}>{p.en}</Text>
+            </Box>
+            <Box style={{ flex: 1, height: 52, background: '#E2E8F0', borderRadius: 'md', position: 'relative' }}>
+              <Box style={{ position: 'absolute', top: 0, left: p.left, width: p.width, height: 52, background: p.grad, borderRadius: 'md', alignItems: 'center', justifyContent: 'center', opacity: p.opacity }}>
+                <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{p.label}</Text>
+              </Box>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+      {/* 底部信息 */}
+      <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+        {[
+          ['项目周期', '12个月'],
+          ['团队规模', '45人'],
+          ['预计完成', '2024 Q4'],
+        ].map((m, i) => (
+          <Box key={i} style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+            <Text style={{ fontSize: 'body', color: 'muted', marginBottom: 'xs' }}>{m[0]}</Text>
+            <Text style={{ fontSize: 24, color: 'text', bold: true }}>{/* {{数据}} */}{m[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

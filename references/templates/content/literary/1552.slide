@@ -1,0 +1,63 @@
+<Slide>
+  {/* literary/1552 文艺生活专栏：上标题区，下左文右卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F5F5F4 0%, #FAFAF9 100%)', padding: 'xl' }}>
+    {/* 标题区 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'lg' }}>
+      <Box style={{ height: 3, width: 560, background: '#A8A29E', marginBottom: 'sm' }} />
+      <Text style={{ fontSize: 'title', color: '#44403C', bold: true, textAlign: 'center' }}>{/* {{替换：专栏标题}} */}文艺生活专栏</Text>
+      <Text style={{ fontSize: 'label', color: '#78716C', textAlign: 'center', marginTop: 'xs' }}>{/* {{替换：副标题}} */}Literary Life</Text>
+      <Box style={{ height: 3, width: 560, background: '#A8A29E', marginTop: 'sm' }} />
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'xl', flex: 1 }}>
+      {/* 左栏 */}
+      <Box style={{ flex: 1, paddingRight: 'xl' }}>
+        <Text style={{ fontSize: 'card', color: '#44403C', bold: true, marginBottom: 'sm' }}>{/* {{替换：栏标题}} */}旧时光里的书香</Text>
+        <Box style={{ height: 2, background: '#A8A29E', marginBottom: 'md' }} />
+        <Text style={{ fontSize: 'body', color: '#57534E', lineHeight: 1.7, marginBottom: 'sm' }}>{/* {{替换：正文段1}} */}书店的一角，阳光斜斜地洒进来。空气中弥漫着纸张特有的香气，混合着淡淡的咖啡香。这是城市中少有的宁静之地。</Text>
+        <Text style={{ fontSize: 'body', color: '#57534E', lineHeight: 1.7, marginBottom: 'sm' }}>{/* {{替换：正文段2}} */}翻开一本旧书，扉页上还有前人留下的笔记。书籍连接着过去与现在，让素未谋面的人们在文字中相遇。</Text>
+        <Text style={{ fontSize: 'body', color: '#57534E', lineHeight: 1.7, marginBottom: 'md' }}>{/* {{替换：正文段3}} */}在这个数字化的时代，纸质书的触感显得尤为珍贵。阅读，不仅是获取信息，更是一种生活方式。</Text>
+        {/* 引用块：左侧细条+斜体 */}
+        <Box style={{ flexDirection: 'row', background: '#E7E5E4', borderRadius: 'sm', padding: 'md' }}>
+          <Box style={{ width: 4, background: '#57534E', marginRight: 'md' }} />
+          <Box style={{ flex: 1 }}>
+            <Text style={{ fontSize: 'body', color: '#44403C', lineHeight: 1.7, fontFamily: 'serif' }}>{/* {{替换：引用}} */}"一个人的阅读史，就是他的精神发育史。"</Text>
+            <Text style={{ fontSize: 'label', color: '#78716C', textAlign: 'right', marginTop: 'xs' }}>{/* {{替换：引用署名}} */}— 朱永新</Text>
+          </Box>
+        </Box>
+      </Box>
+      {/* 右栏 */}
+      <Box style={{ width: 400, flexDirection: 'column', gap: 'md' }}>
+        <Box style={{ background: '#FFFFFF', borderRadius: 'md', padding: 'md', border: '1px solid #D6D3D1', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+          <Text style={{ fontSize: 'card', color: '#44403C', bold: true, marginBottom: 'sm' }}>{/* {{替换：卡标题}} */}阅读指南</Text>
+          <Box style={{ height: 2, background: '#D6D3D1', marginBottom: 'sm' }} />
+          <Box style={{ gap: 'sm' }}>
+            {[
+              ['I', '选择合适的时间', '找到属于自己的阅读节奏'],
+              ['II', '营造阅读氛围', '舒适的光线、安静的环境'],
+              ['III', '做好读书笔记', '记录感悟、摘抄金句'],
+            ].map((x, i) => (
+              <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+                <Box style={{ width: 30, height: 30, borderRadius: 15, background: '#57534E', alignItems: 'center', justifyContent: 'center' }}>
+                  <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+                </Box>
+                <Box style={{ flex: 1 }}>
+                  <Text style={{ fontSize: 'body', color: '#44403C', bold: true }}>{/* {{替换：要点名}} */}{x[1]}</Text>
+                  <Text style={{ fontSize: 'label', color: '#78716C' }}>{/* {{替换：要点描述}} */}{x[2]}</Text>
+                </Box>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Box style={{ background: 'linear-gradient(135deg, #FEF3C7 0%, #FFEDD5 100%)', borderRadius: 'md', padding: 'md', alignItems: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+          <Text style={{ fontSize: 'body', color: '#D97706', fontFamily: 'serif', lineHeight: 1 }}>❝</Text>
+          <Text style={{ fontSize: 'body', color: '#57534E', textAlign: 'center', lineHeight: 1.7, fontFamily: 'serif' }}>{/* {{替换：名言}} */}读书使人充实，<br />讨论使人机智，<br />笔记使人准确。</Text>
+          <Text style={{ fontSize: 'label', color: '#78716C', marginTop: 'xs' }}>{/* {{替换：名言署名}} */}— 弗朗西斯·培根</Text>
+        </Box>
+        <Box style={{ background: '#FAFAF9', borderRadius: 'sm', padding: 'md', border: '1px solid #D6D3D1' }}>
+          <Text style={{ fontSize: 'label', color: '#57534E', lineHeight: 1.7 }}>{/* {{替换：编者按}} */}📖 编者按：本文旨在唤起对传统阅读方式的重视。</Text>
+          <Text style={{ fontSize: 'label', color: '#78716C', marginTop: 'xs' }}>{/* {{替换：推荐书单}} */}推荐书单：《瓦尔登湖》《浮生六记》</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

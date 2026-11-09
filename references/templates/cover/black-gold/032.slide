@@ -1,0 +1,17 @@
+<Slide>
+  {/* black-gold/032 金属边框：黑底 + 双线金框 + 菱形 + 英文标签 + 大标题 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 双线金框（外框 + 内框） */}
+    <Box style={{ position: 'absolute', top: 64, left: 64, right: 64, bottom: 64, border: '3px solid #CA8A04' }} />
+    <Box style={{ position: 'absolute', top: 76, left: 76, right: 76, bottom: 76, border: '1px solid #CA8A04', opacity: 0.6 }} />
+    {/* 主内容区 */}
+    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Text style={{ fontSize: 'kpi', color: '#EAB308', bold: true }}>◆</Text>
+      <Box>
+        <Text style={{ fontSize: 'label', color: '#CA8A04', letterSpacing: 6, marginBottom: 'md' }}>{/* {{替换：英文标签}} */}PREMIUM COLLECTION</Text>
+        <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, letterSpacing: 2 }}>{/* {{替换：主标题}} */}至臻系列</Text>
+      </Box>
+      <Text style={{ fontSize: 'kpi', color: '#EAB308', bold: true }}>◆</Text>
+    </Box>
+  </Box>
+</Slide>

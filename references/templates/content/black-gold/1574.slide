@@ -1,0 +1,23 @@
+<Slide>
+  {/* black-gold/1574 权力金字塔：标题 + 三层金字塔 + 底部说明 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #111827 0%, #000000 50%, #111827 100%)', padding: 'xxl xl', alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 'title', color: '#FBBF24', bold: true, marginBottom: 'xl' }}>{/* {{替换：标题}} */}权力金字塔</Text>
+    {/* 三层金字塔 */}
+    <Box style={{ alignItems: 'center' }}>
+      <Box style={{ width: 320, height: 96, background: 'linear-gradient(135deg, #FBBF24 0%, #D97706 100%)', alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'card', color: '#000000', bold: true }}>{/* {{替换：顶层名}} */}战略决策层</Text>
+        <Text style={{ fontSize: 'label', color: '#1F2937', marginTop: 'xs' }}>{/* {{替换：顶层副名}} */}Strategic Leadership</Text>
+      </Box>
+      <Box style={{ width: 440, height: 100, background: 'linear-gradient(135deg, #EAB308 0%, #B45309 100%)', alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'card', color: '#000000', bold: true }}>{/* {{替换：中层名}} */}管理执行层</Text>
+        <Text style={{ fontSize: 'label', color: '#1F2937', marginTop: 'xs' }}>{/* {{替换：中层副名}} */}Management Execution</Text>
+      </Box>
+      <Box style={{ width: 560, height: 104, background: 'linear-gradient(135deg, #CA8A04 0%, #92400E 100%)', alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'card', color: '#000000', bold: true }}>{/* {{替换：基层名}} */}运营支持层</Text>
+        <Text style={{ fontSize: 'label', color: '#1F2937', marginTop: 'xs' }}>{/* {{替换：基层副名}} */}Operational Support</Text>
+      </Box>
+    </Box>
+    {/* 底部说明 */}
+    <Text style={{ fontSize: 'body', color: '#FBBF24', letterSpacing: 1, marginTop: 'xl' }}>{/* {{替换：底部说明}} */}层级清晰 · 权责分明 · 高效协同</Text>
+  </Box>
+</Slide>

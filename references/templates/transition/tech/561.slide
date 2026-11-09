@@ -1,0 +1,18 @@
+<Slide>
+  {/* transition/tech/561 科技风-芯片主题：深灰底 + 芯片引脚 + 大边框块章节号 */}
+  <Box style={{ height: 720, width: 1280, background: '#0F172A', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ border: '4px solid #22d3ee', background: '#1e293b', padding: 48, paddingLeft: 96, paddingRight: 96, alignItems: 'center' }}>
+        <Text style={{ fontSize: 'hero', color: '#22d3ee', bold: true, marginBottom: 24 }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 16 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#22d3ee' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+        <Box style={{ flexDirection: 'row', gap: 8, marginTop: 32 }}>
+          <Box style={{ width: 8, height: 8, background: '#22d3ee' }} />
+          <Box style={{ width: 8, height: 8, background: '#22d3ee' }} />
+          <Box style={{ width: 8, height: 8, background: '#22d3ee' }} />
+          <Box style={{ width: 8, height: 8, background: '#22d3ee' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

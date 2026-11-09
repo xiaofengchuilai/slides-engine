@@ -1,0 +1,26 @@
+<Slide>
+  {/* chinese/1520 诗意留白·茶文化：主标题 + 诗句 + 三点式 + 底部引文 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #FAF9F6 0%, #F5F3ED 100%)', padding: 'xxl xl', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 主标题 */}
+    <Box style={{ alignItems: 'center', gap: 'lg', marginBottom: 'xl' }}>
+      <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true, letterSpacing: 12 }}>{/* {{替换：主标题}} */}茶 文 化</Text>
+      <Box style={{ width: 144, height: 2, background: 'rgba(168, 24, 16, 0.3)' }} />
+    </Box>
+    {/* 诗句区 */}
+    <Box style={{ alignItems: 'center', gap: 'md', marginBottom: 'xl' }}>
+      <Text style={{ fontSize: 'card', color: 'text', lineHeight: 1.8, letterSpacing: 3 }}>{/* {{替换：诗句一}} */}茶香缕缕，静心品味</Text>
+      <Text style={{ fontSize: 'card', color: 'text', lineHeight: 1.8, letterSpacing: 3 }}>{/* {{替换：诗句二}} */}禅茶一味，道法自然</Text>
+    </Box>
+    {/* 三点式内容 */}
+    <Box style={{ flexDirection: 'row', gap: 'xxl', marginBottom: 'xl' }}>
+      {['清心', '养性', '明志'].map((x, i) => (
+        <Box key={i} style={{ alignItems: 'center', gap: 'sm' }}>
+          <Text style={{ fontSize: 'card', color: '#A81810', bold: true }}>·</Text>
+          <Text style={{ fontSize: 'body', color: 'text' }}>{x}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 底部引文 */}
+    <Text style={{ fontSize: 'label', color: 'muted', textAlign: 'center', letterSpacing: 1 }}>{/* {{替换：引文}} */}“茶之为饮，发乎神农氏” ——《茶经》陆羽</Text>
+  </Box>
+</Slide>

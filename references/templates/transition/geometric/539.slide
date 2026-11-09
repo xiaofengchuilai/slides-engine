@@ -1,0 +1,17 @@
+<Slide>
+  {/* transition/geometric/539 六边形：浅青绿底，角落六边形装饰，中置大六边形(Shape)内章节号+章节名+导语 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #CCFBF1 0%, #CFFAFE 100%)', position: 'relative' }}>
+    <Shape type="hexagon" style={{ position: 'absolute', top: 0, left: 0, width: 128, height: 128, fill: '#14B8A6', opacity: 0.3 }} />
+    <Shape type="hexagon" style={{ position: 'absolute', bottom: 0, right: 0, width: 128, height: 128, fill: '#06B6D4', opacity: 0.3 }} />
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ width: 208, height: 208, alignItems: 'center', justifyContent: 'center' }}>
+          <Shape type="hexagon" style={{ position: 'absolute', top: 0, left: 0, width: 208, height: 208, fill: '#FFFFFF', line: { color: '#14B8A6', width: 4 } }} />
+          <Text style={{ fontSize: 'title', color: '#0F766E', bold: true }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        </Box>
+        <Text style={{ fontSize: 'title', color: '#111827', bold: true, marginBottom: 12, marginTop: 24 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'card', color: '#0F766E', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,34 @@
+<Slide>
+  {/* minimalist/1591 左图右文：配图 + 核心要点标签 + 标题 + 两段正文 + 来源注释 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 顶部装饰线 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'primary' }} />
+
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xxl' }}>
+      {/* 左侧图片区 */}
+      <Box style={{ width: 440, alignItems: 'center', justifyContent: 'center' }}>
+        {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/1591.png" style={{ width: 440, height: 600, objectFit: 'contain' }} />
+      </Box>
+
+      {/* 右侧内容区 */}
+      <Box style={{ flex: 1, justifyContent: 'center', gap: 'xl' }}>
+        <Box style={{ gap: 'md' }}>
+          <Box style={{ alignSelf: 'flex-start', background: 'primary', padding: 'xs md', borderRadius: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{标签}} */}核心要点</Text>
+          </Box>
+          <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{标题}} */}数字化转型的关键路径</Text>
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6 }}>{/* {{正文1}} */}企业数字化转型需要从战略、组织、技术三个维度系统性推进，确保业务流程与技术创新深度融合。</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{正文2}} */}通过建立敏捷的数字化能力体系，企业能够快速响应市场变化，提升运营效率和客户体验。</Text>
+        </Box>
+
+        {/* 底部来源注释 */}
+        <Box style={{ gap: 'xs' }}>
+          <Box style={{ width: '100%', height: 2, background: '#E5E7EB', marginBottom: 'md' }} />
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{来源}} */}*数据来源：IDC《2024中国企业数字化转型白皮书》</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{样本}} */}样本规模：覆盖国内500家大中型企业</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

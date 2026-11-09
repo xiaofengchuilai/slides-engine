@@ -1,0 +1,50 @@
+<Slide>
+  {/* cover/tech/049 科技风-数字雨：黑底 + 二进制点缀 + 标签 + 主标题 + 副标题 + 落款 + 四角扫描框 */}
+  <Box style={{ width: 1280, height: 720, background: '#020617', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 数字雨点缀（低透明度二进制列） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, opacity: 0.1 }}>
+      <Text style={{ position: 'absolute', top: 40, left: 128, fontSize: 'label', color: '#10B981' }}>01010011</Text>
+      <Text style={{ position: 'absolute', top: 40, left: 384, fontSize: 'label', color: '#10B981' }}>11001010</Text>
+      <Text style={{ position: 'absolute', top: 40, left: 640, fontSize: 'label', color: '#10B981' }}>10100111</Text>
+      <Text style={{ position: 'absolute', top: 40, left: 896, fontSize: 'label', color: '#10B981' }}>01110010</Text>
+      <Text style={{ position: 'absolute', top: 40, left: 1152, fontSize: 'label', color: '#10B981' }}>11010101</Text>
+    </Box>
+    {/* 四角扫描框 */}
+    <Box style={{ position: 'absolute', top: 40, left: 40, width: 96, height: 96 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 96, height: 2, background: '#14532D' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 2, height: 96, background: '#14532D' }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 40, right: 40, width: 96, height: 96 }}>
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 96, height: 2, background: '#14532D' }} />
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 2, height: 96, background: '#14532D' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 40, left: 40, width: 96, height: 96 }}>
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 96, height: 2, background: '#14532D' }} />
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 2, height: 96, background: '#14532D' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 40, right: 40, width: 96, height: 96 }}>
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 96, height: 2, background: '#14532D' }} />
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 2, height: 96, background: '#14532D' }} />
+    </Box>
+    <Box style={{ justifyContent: 'center', alignItems: 'center', maxWidth: 1100 }}>
+      <Box style={{ border: '2px solid #14532D', background: '#052E16', padding: 'sm xl', marginBottom: 'xxl' }}>
+        <Text style={{ fontSize: 'body', color: '#34D399', letterSpacing: 8 }}>{/* {{替换：标签}} */}&lt; SYSTEM READY /&gt;</Text>
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#34D399', bold: true, letterSpacing: 2, textAlign: 'center', lineHeight: 1.1, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}数据分析系统</Text>
+      <Text style={{ fontSize: 'card', color: '#6EE7B7', fontWeight: 300, letterSpacing: 3, textAlign: 'center', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}DATA ANALYSIS SYSTEM</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'lg', justifyContent: 'center' }}>
+        <Box style={{ border: '2px solid #14532D', background: '#052E16', padding: 'xs lg' }}>
+          <Text style={{ fontSize: 'body', color: '#10B981' }}>{/* {{替换：落款一}} */}数据中心</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 6 }}>
+          <Box style={{ width: 2, height: 2, borderRadius: 1, background: '#10B981' }} />
+          <Box style={{ width: 2, height: 2, borderRadius: 1, background: '#10B981' }} />
+          <Box style={{ width: 2, height: 2, borderRadius: 1, background: '#10B981' }} />
+        </Box>
+        <Box style={{ border: '2px solid #14532D', background: '#052E16', padding: 'xs lg' }}>
+          <Text style={{ fontSize: 'body', color: '#10B981' }}>{/* {{替换：落款二}} */}2025/01/20</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

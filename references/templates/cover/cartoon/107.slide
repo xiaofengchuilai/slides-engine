@@ -1,0 +1,16 @@
+<Slide>
+  {/* cartoon/107 星星闪烁：黄渐变底 + 四角星星 + 大标题 + 副标题 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FEFCE8 0%, #FDE68A 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 星星装饰（四角，FAIcon 替代三角星形） */}
+    <Emoji name="⭐" style={{ position: 'absolute', top: 112, left: 176, width: 48, height: 48, opacity: 0.8 }} />
+    <Emoji name="⭐" style={{ position: 'absolute', top: 176, right: 208, width: 36, height: 36, opacity: 0.8 }} />
+    <Emoji name="⭐" style={{ position: 'absolute', bottom: 144, left: 256, width: 40, height: 40, opacity: 0.8 }} />
+    <Emoji name="⭐" style={{ position: 'absolute', bottom: 192, right: 176, width: 32, height: 32, opacity: 0.8 }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#F87171', bold: true, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}儿童趣味学堂</Text>
+      <Text style={{ fontSize: 'card', color: '#22D3EE', bold: true, marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}快乐学习·闪耀成长</Text>
+      <Text style={{ fontSize: 'body', color: '#4B5563', bold: true }}>{/* {{替换：落款}} */}幼儿教育中心 | 亲子活动分享</Text>
+    </Box>
+  </Box>
+</Slide>

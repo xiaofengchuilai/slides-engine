@@ -1,0 +1,67 @@
+<Slide>
+  {/* tech/1678 项目实施计划：左列三阶段+主图，右列里程碑+标签 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题 */}
+    <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xl' }}>{/* {{标题}} */}项目实施计划</Text>
+
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xxl' }}>
+      {/* 左侧: 三个阶段 + 主图 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        {[
+          ['阶段一', 'Q1-Q2', '需求调研与方案设计', '深入业务调研，明确功能需求，完成技术选型与架构设计，输出详细设计文档。'],
+          ['阶段二', 'Q2-Q3', '核心功能开发', '完成数据采集、处理、存储核心模块开发，搭建基础运行环境，进行单元测试与集成测试。'],
+          ['阶段三', 'Q4', '上线部署与运维', '完成系统部署与数据迁移，进行全面性能测试与安全审计，正式上线并提供运维保障。'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', gap: 'lg', alignItems: 'flex-start' }}>
+            <Box style={{ width: 100 }}>
+              <Box style={{ alignSelf: 'flex-start', padding: 'xs sm', background: i === 1 ? 'secondary' : 'primary', borderRadius: 'sm' }}>
+                <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>{x[1]}</Text>
+            </Box>
+            <Box style={{ flex: 1 }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{x[2]}</Text>
+              <Text style={{ fontSize: 14, color: '#CBD5E1', lineHeight: 1.6 }}>{x[3]}</Text>
+            </Box>
+          </Box>
+        ))}
+        {/* 主图 */}
+        <Box style={{ flex: 1, borderRadius: 'md' }}>
+          {/* {{图片：有图填 assets/images/1678.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1678.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </Box>
+      </Box>
+
+      {/* 右侧: 关键里程碑 */}
+      <Box style={{ width: 360, flexDirection: 'column' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'lg' }}>{/* {{栏标题}} */}关键里程碑</Text>
+        <Box style={{ flex: 1, gap: 'lg' }}>
+          {[
+            ['需求文档输出', '4月'],
+            ['核心功能上线', '8月'],
+            ['全量数据迁移', '10月'],
+            ['正式上线运营', '12月'],
+          ].map((x, i) => (
+            <Box key={i}>
+              <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingBottom: 'sm' }}>
+                <Text style={{ fontSize: 14, color: 'muted' }}>{x[0]}</Text>
+                <Text style={{ fontSize: 18, color: '#FFFFFF', bold: true }}>{x[1]}</Text>
+              </Box>
+              <Box style={{ height: 1, background: '#334155' }} />
+            </Box>
+          ))}
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 'sm', flexWrap: 'wrap', marginTop: 'lg' }}>
+          {['敏捷开发', '持续集成', '灰度发布'].map((t, i) => (
+            <Box key={i} style={{ padding: 'xs sm', background: 'cardBg', borderRadius: 'sm' }}>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{t}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

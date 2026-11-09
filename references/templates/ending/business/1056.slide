@@ -1,0 +1,27 @@
+<Slide>
+  {/* ending/business/1056 深灰渐变：大圆环装饰 + 圆点分隔 + 居中谢谢观看 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #1a202c 0%, #2d3748 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 大圆环 - 左上（三圈橙） */}
+    <Box style={{ position: 'absolute', top: -144, left: -192, width: 500, height: 500, borderRadius: 250, border: '3px solid rgba(237,137,54,0.2)' }} />
+    <Box style={{ position: 'absolute', top: -108, left: -128, width: 400, height: 400, borderRadius: 200, border: '2px solid rgba(237,137,54,0.15)' }} />
+    <Box style={{ position: 'absolute', top: -72, left: -64, width: 300, height: 300, borderRadius: 150, border: '1px solid rgba(237,137,54,0.1)' }} />
+    {/* 大圆环 - 右下（三圈蓝，贴角避免负偏移溢出画布） */}
+    <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 500, height: 500, borderRadius: 250, border: '3px solid rgba(66,153,225,0.2)' }} />
+    <Box style={{ position: 'absolute', bottom: 50, right: 50, width: 400, height: 400, borderRadius: 200, border: '2px solid rgba(66,153,225,0.15)' }} />
+    <Box style={{ position: 'absolute', bottom: 100, right: 100, width: 300, height: 300, borderRadius: 150, border: '1px solid rgba(66,153,225,0.1)' }} />
+    {/* 中间小圆点装饰（+ 发光） */}
+    <Box style={{ position: 'absolute', top: 180, right: 256, width: 8, height: 8, borderRadius: 4, background: '#ed8936', boxShadow: '0 0 10px rgba(237,137,54,0.6)' }} />
+    <Box style={{ position: 'absolute', bottom: 202, left: 282, width: 10, height: 10, borderRadius: 5, background: '#4299e1', boxShadow: '0 0 10px rgba(66,153,225,0.6)' }} />
+    {/* 主要内容 */}
+    <Box style={{ alignItems: 'center', maxWidth: 896 }}>
+      <Text style={{ fontSize: 56, color: '#FFFFFF', letterSpacing: 8, textAlign: 'center', marginBottom: 40 }}>{/* {{替换：主标题}} */}谢谢观看</Text>
+      {/* 分隔装饰：圆 + 线 + 圆 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 20, marginBottom: 40 }}>
+        <Box style={{ width: 20, height: 20, borderRadius: 10, border: '2px solid #ed8936' }} />
+        <Box style={{ width: 80, height: 1, background: 'rgba(255,255,255,0.3)' }} />
+        <Box style={{ width: 20, height: 20, borderRadius: 10, border: '2px solid #4299e1' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#cbd5e0', letterSpacing: 2, lineHeight: 1.8, textAlign: 'center' }}>{/* {{替换：致谢语}} */}欢迎提出宝贵建议</Text>
+    </Box>
+  </Box>
+</Slide>

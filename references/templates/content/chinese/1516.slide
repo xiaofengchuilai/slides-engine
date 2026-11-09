@@ -1,0 +1,37 @@
+<Slide>
+  {/* chinese/1516 右图左文·武术精神：左文三要点 + 右图 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(315deg, #FAF9F6 0%, #F5F3ED 100%)', padding: 'xxl xl', flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+    {/* 左文字区 */}
+    <Box style={{ width: '55%', gap: 'lg' }}>
+      <Box style={{ gap: 'sm' }}>
+        <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true }}>{/* {{替换：主标题}} */}武术精神</Text>
+        <Box style={{ width: 80, height: 2, background: 'rgba(168, 24, 16, 0.3)' }} />
+      </Box>
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.8 }}>{/* {{替换：段落}} */}
+        中国武术源远流长，不仅是强身健体的技艺，更是修身养性的途径。武术讲究“内外兼修”，既重视外在的招式技巧，更注重内在的精神修炼。
+      </Text>
+      <Box style={{ gap: 'lg' }}>
+        {[
+          ['尚武崇德', '习武先修德，武德为先'],
+          ['刚柔并济', '以柔克刚，刚柔相济'],
+          ['天人合一', '顺应自然，内外和谐'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'md' }}>
+            <Box style={{ width: 32, height: 2, background: 'rgba(168, 24, 16, 0.3)', marginTop: 10 }} />
+            <Box style={{ gap: 2 }}>
+              <Text style={{ fontSize: 'card', color: '#A81810', bold: true }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>{x[1]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    {/* 右图区 */}
+    <Box style={{ flex: 1, height: '100%', alignItems: 'center', justifyContent: 'center' }}>
+      {/* {{图片：有图填 assets/images/wushu.png，无图删掉整个 <Image>}} */}
+      <Image src="assets/images/wushu.png" style={{ objectFit: 'cover', width: 420, height: 560 }} />
+    </Box>
+    {/* 功能文字 */}
+    <Text style={{ fontSize: 'label', color: 'muted', position: 'absolute', left: 80, bottom: 24 }}>{/* {{替换：来源}} */}资料：中国武术协会 · 非物质文化遗产</Text>
+  </Box>
+</Slide>

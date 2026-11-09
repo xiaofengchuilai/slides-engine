@@ -1,0 +1,26 @@
+<Slide>
+  {/* title/hand-drawn/3012 手绘风-便签纸标题：白底 + 手绘虚线边框黄色便签 + 图钉 + 任务清单 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 'xl' }}>
+    <Box style={{ height: '100%', justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+      {/* 便签主体：手绘虚线边框（amber-600 #D97706）+ 浅黄底 */}
+      <Box style={{ position: 'relative', width: 560, padding: 'xl xxl' }}>
+        {/* 图钉（红点，便签上方居中） */}
+        <Box style={{ position: 'absolute', left: 272, top: -12, width: 24, height: 24, borderRadius: 12, background: '#EF4444' }} />
+        <RoughBox shape="rect" style={{ position: 'absolute', left: -12, top: -12, width: 584, height: 208, stroke: '#D97706', strokeWidth: 3, roughness: 2, fill: '#FEF9C3', fillStyle: 'solid' }} />
+        <Text style={{ fontSize: 'title', color: 'text', bold: true, fontFamily: 'hand', textAlign: 'center', lineHeight: 1.4 }}>{/* {{标题}} */}今日任务</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginTop: 'md' }}>
+          <FAIcon name="check" style={{ width: 18, height: 18, fill: '#16A34A' }} />
+          <Text style={{ fontSize: 'body', color: 'text', fontFamily: 'hand', lineHeight: 1.5 }}>{/* {{任务一}} */}完成项目规划</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginTop: 'xs' }}>
+          <FAIcon name="check" style={{ width: 18, height: 18, fill: '#16A34A' }} />
+          <Text style={{ fontSize: 'body', color: 'text', fontFamily: 'hand', lineHeight: 1.5 }}>{/* {{任务二}} */}整理会议纪要</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginTop: 'xs' }}>
+          <FAIcon name="check" style={{ width: 18, height: 18, fill: '#16A34A' }} />
+          <Text style={{ fontSize: 'body', color: 'muted', fontFamily: 'hand', lineHeight: 1.5 }}>{/* {{任务三}} */}给团队发周报</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

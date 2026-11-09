@@ -1,0 +1,44 @@
+<Slide>
+  {/* functional/minimalist/2502 简约风-变体2：白底 + 章节圆指示/上下页切换/图标按钮组/三段式页脚 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 20 }}>
+      {/* 导航 - 章节圆形指示器 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, border: '1px solid #E5E7EB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        <Box style={{ width: 40, height: 40, borderRadius: 20, background: '#1F2937', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{替换：章节号}} */}3</Text>
+        </Box>
+        <Box>
+          <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：章节名}} */}第三章节</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：副标签}} */}Chapter Three</Text>
+        </Box>
+      </Box>
+      {/* 导航 - 上下页切换 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24, border: '1px solid #E5E7EB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：上一页}} */}← 上一页</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>|</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：下一页}} */}下一页 →</Text>
+      </Box>
+      {/* 行动 - 图标按钮组 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24, border: '1px solid #E5E7EB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        {[
+          ['📧', '联系我们'],
+          ['💬', '欢迎提问'],
+          ['🔗', '访问官网'],
+        ].map((x, i) => (
+          <Box key={i} style={{ alignItems: 'center', flex: 1 }}>
+            <Box style={{ width: 56, height: 56, borderRadius: 28, background: '#F3F4F6', alignItems: 'center', justifyContent: 'center', marginBottom: 'xs' }}>
+              <Emoji name={x[0]} style={{ width: 28, height: 28 }} />
+            </Box>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：按钮文字}} */}{x[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+      {/* 页脚 - 三段式信息 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', border: '1px solid #E5E7EB', background: '#F9FAFB', padding: 12, borderRadius: 'sm' }}>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：网址}} */}www.company.com</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：版权}} */}Confidential & Proprietary</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：页码}} */}03 / 12</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

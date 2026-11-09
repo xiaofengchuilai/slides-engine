@@ -1,0 +1,69 @@
+<Slide>
+  {/* educational/1642 生字教学·笔画拆解：左大字展示(米字格) + 右笔顺/组词/易错提示 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFF9F0 0%, #FEF5E7 100%)', padding: 'xxl xl', gap: 'xl' }}>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+      {/* 左侧：大字展示 */}
+      <Box style={{ flex: 2, gap: 'lg', alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 256, height: 256, border: '2px solid #FDBA74', borderRadius: 'md', background: 'rgba(255,255,255,0.85)', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+          {/* 米字格辅助线 */}
+          <Box style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: 1, background: '#FED7AA' }} />
+          <Box style={{ position: 'absolute', top: 0, left: 0, width: 1, height: '100%', background: '#FED7AA' }} />
+          <Text style={{ fontSize: 'kpi', color: '#7C2D12', fontFamily: 'serif', bold: true }}>{/* {{替换：生字}} */}春</Text>
+        </Box>
+        <Box style={{ gap: 'xs', alignItems: 'center' }}>
+          <Box style={{ flexDirection: 'row', gap: 'xs' }}>
+            <Text style={{ fontSize: 'body', color: '#4B5563' }}>拼音:</Text>
+            <Text style={{ fontSize: 'body', color: '#C2410C', bold: true }}>{/* {{替换：拼音}} */}chūn</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', gap: 'xs' }}>
+            <Text style={{ fontSize: 'body', color: '#4B5563' }}>笔画数:</Text>
+            <Text style={{ fontSize: 'body', color: '#C2410C', bold: true }}>{/* {{替换：笔画数}} */}9画</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', gap: 'xs' }}>
+            <Text style={{ fontSize: 'body', color: '#4B5563' }}>部首:</Text>
+            <Text style={{ fontSize: 'body', color: '#C2410C', bold: true }}>{/* {{替换：部首}} */}日</Text>
+          </Box>
+        </Box>
+      </Box>
+      {/* 右侧：笔顺解析 */}
+      <Box style={{ flex: 3, gap: 'lg' }}>
+        <Box style={{ background: 'rgba(255,255,255,0.85)', border: '1px solid #FED7AA', borderRadius: 'md', padding: 'lg' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+            <FAIcon name="pen" style={{ fill: '#EA580C', width: 22, height: 22 }} />
+            <Text style={{ fontSize: 'card', color: '#9A3412', bold: true }}>{/* {{替换：标题}} */}笔顺步骤</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', gap: 'md' }}>
+            {[
+              ['㇐', '第1画：横'],
+              ['㇑', '第2画：竖'],
+              ['㇒', '第3画：撇'],
+            ].map((x, i) => (
+              <Box key={i} style={{ flex: 1, gap: 'xs' }}>
+                <Box style={{ height: 80, background: '#FFF7ED', border: '1px solid #FED7AA', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+                  <Text style={{ fontSize: 'title', color: '#C2410C', fontFamily: 'serif', bold: true }}>{/* {{替换：笔画}} */}{x[0]}</Text>
+                </Box>
+                <Text style={{ fontSize: 'label', color: '#4B5563', textAlign: 'center' }}>{/* {{替换：笔画名}} */}{x[1]}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Box style={{ background: 'rgba(255,255,255,0.85)', border: '1px solid #FED7AA', borderRadius: 'md', padding: 'lg' }}>
+          <Text style={{ fontSize: 'card', color: '#9A3412', bold: true, marginBottom: 'md' }}>{/* {{替换：标题}} */}组词练习</Text>
+          <Box style={{ flexDirection: 'row', gap: 'sm', flexWrap: 'wrap' }}>
+            {['春天', '春风', '春节', '立春', '青春'].map((x, i) => (
+              <Box key={i} style={{ padding: 'xs lg', background: '#FFF7ED', border: '1px solid #FED7AA', borderRadius: 'sm' }}>
+                <Text style={{ fontSize: 'body', color: '#374151', bold: true }}>{/* {{替换：组词}} */}{x}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Box style={{ background: '#FFFBEB', flexDirection: 'row', alignItems: 'center', padding: 'md', borderRadius: 'sm' }}>
+          <Box style={{ width: 4, height: 40, background: '#F59E0B', borderRadius: 2, marginRight: 'md' }} />
+          <Text style={{ fontSize: 'body', color: '#78350F', bold: true }}>易错提示：</Text>
+          <Text style={{ fontSize: 'body', color: '#78350F', lineHeight: 1.6, flex: 1 }}>{/* {{替换：易错提示}} */}第三笔"撇"起笔位置在横的中间偏右，不要写太靠左。</Text>
+        </Box>
+      </Box>
+    </Box>
+    <Text style={{ fontSize: 'label', color: '#9CA3AF', textAlign: 'right' }}>{/* {{替换：参考来源}} */}参考：《小学语文生字表》· 人教版</Text>
+  </Box>
+</Slide>

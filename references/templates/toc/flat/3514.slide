@@ -1,0 +1,31 @@
+<Slide>
+  {/* flat/3514 扁平风-极简卡片：2x2 卡片，渐变细条+灰编号+标题+副标 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg' }}>
+    <Box style={{ height: 720, justifyContent: 'center', padding: 'xxl xl' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 48, textAlign: 'center' }}>{/* {{替换：标题}} */}CONTENTS</Text>
+      {[
+        [
+          ['linear-gradient(90deg, #3B82F6 0%, #06B6D4 100%)', '01', '项目概述', 'Project Overview and Goals'],
+          ['linear-gradient(90deg, #22C55E 0%, #10B981 100%)', '02', '核心内容', 'Core Content and Features'],
+        ],
+        [
+          ['linear-gradient(90deg, #F97316 0%, #EF4444 100%)', '03', '实施计划', 'Implementation Timeline'],
+          ['linear-gradient(90deg, #A855F7 0%, #EC4899 100%)', '04', '成果展示', 'Results and Outcomes'],
+        ],
+      ].map((row, ri) => (
+        <Box key={ri} style={{ flexDirection: 'row', gap: 'lg', marginBottom: 32 }}>
+          {row.map((x, i) => (
+            <Box key={i} style={{ flex: 1 }}>
+              <Box style={{ height: 12, background: x[0], borderRadius: 2, marginBottom: 12 }} />
+              <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+                <Text style={{ fontSize: 'title', color: '#D1D5DB', bold: true }}>{x[1]}</Text>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[2]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'body', color: 'muted', marginLeft: 76, marginTop: 8 }}>{/* {{章节副标题}} */}{x[3]}</Text>
+            </Box>
+          ))}
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

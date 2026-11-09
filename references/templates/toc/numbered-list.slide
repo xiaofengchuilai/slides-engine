@@ -1,0 +1,28 @@
+<Slide>
+  {/* toc/numbered-list：左标题栏 + 右编号条目（3-5 章） */}
+  <Box style={{ flexDirection: 'row', height: 720, width: 1280 }}>
+    {/* 左栏：主色深底标题 */}
+    <Box style={{ width: 400, height: 720, background: 'primary', padding: '70px 50px', justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 20, color: '#FFFFFF', letterSpacing: 2, opacity: 0.8 }}>CONTENTS</Text>
+        <Text style={{ fontSize: 48, color: '#FFFFFF', bold: true, marginTop: 16 }}>{/* {{替换：目录标题，如「目录」}} */}目录</Text>
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.6 }}>{/* {{替换：章节数}} */}共 4 章</Text>
+    </Box>
+    {/* 右栏：编号条目 */}
+    <Box style={{ flex: 1, height: 720, background: 'bg', padding: '70px 60px', justifyContent: 'center' }}>
+      {/* 以下为条目，可按章节数增删；每个条目 = 编号块 + 章节名 */}
+      {[
+        { no: '01', name: '市场与机会' },
+        { no: '02', name: '产品与方案' },
+        { no: '03', name: '数据与成果' },
+        { no: '04', name: '规划与行动' },
+      ].map((item, i) => (
+        <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', padding: '22px 0' }}>
+          <Text style={{ fontSize: 40, color: 'accent', bold: true, width: 90 }}>{item.no}</Text>
+          <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{替换：章节名}} */}{item.name}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

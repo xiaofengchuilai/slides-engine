@@ -1,0 +1,38 @@
+<Slide>
+  {/* chinese/1632 纯文字·两栏对比：标题 + 诗/画两栏 + 底部总结 */}
+  <Box style={{ height: 720, width: 1280, background: '#FAF9F6', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, flexDirection: 'column', padding: 'xl' }}>
+      {/* 标题 */}
+      <Box style={{ alignItems: 'center', marginBottom: 'lg' }}>
+        <Text style={{ fontSize: 'title', color: '#7A1F1F', bold: true, fontFamily: 'serif' }}>{/* {{替换：标题}} */}诗与画</Text>
+        <Box style={{ width: 80, height: 1, background: '#7A1F1F', opacity: 0.3, marginTop: 'md' }} />
+      </Box>
+      {/* 两栏对比 */}
+      <Box style={{ flex: 1, flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        {[
+          ['诗', '以文字为媒\n抒发情感\n意境悠远', '“诗言志，歌永言”'],
+          ['画', '以笔墨为形\n写意传神\n气韵生动', '“画中有诗，诗中有画”'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, alignItems: 'center', gap: 'md' }}>
+            <Box style={{ alignItems: 'center', gap: 'sm' }}>
+              <Text style={{ fontSize: 'hero', color: '#7A1F1F', fontFamily: 'serif', lineHeight: 1.1, marginBottom: 'sm' }}>{x[0]}</Text>
+              <Box style={{ width: 48, height: 1, background: '#7A1F1F', opacity: 0.3 }} />
+            </Box>
+            <Box style={{ alignItems: 'center', gap: 'sm' }}>
+              <Text style={{ fontSize: 'body', color: '#4A4A4A', lineHeight: 1.8, textAlign: 'center' }}>{x[1]}</Text>
+              <Text style={{ fontSize: 'body', color: '#6B7280', fontFamily: 'serif', marginTop: 'sm' }}>{x[2]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+      {/* 底部总结 */}
+      <Box style={{ alignItems: 'center', marginTop: 'lg' }}>
+        <Text style={{ fontSize: 'body', color: '#6B7280', letterSpacing: 1 }}>{/* {{替换：总结}} */}诗画同源，相互交融，共同构成中国文人的审美世界</Text>
+      </Box>
+    </Box>
+  </Box>
+  {/* 底部功能文字 */}
+  <Box style={{ position: 'absolute', bottom: 24, left: 0, right: 0, alignItems: 'center' }}>
+    <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>苏轼《书鄢陵王主簿所画折枝二首》</Text>
+  </Box>
+</Slide>

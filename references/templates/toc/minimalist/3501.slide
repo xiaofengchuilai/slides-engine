@@ -1,0 +1,33 @@
+<Slide>
+  {/* minimalist/3501 简约风-左侧数字：左侧超大「目录」+ 右列编号章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg' }}>
+    <Box style={{ height: 720, flexDirection: 'row', paddingLeft: 48, paddingRight: 48 }}>
+      <Box style={{ width: 400, flexDirection: 'column', justifyContent: 'center', paddingRight: 48 }}>
+        <Text style={{ fontSize: 96, color: 'line', fontWeight: 300 }}>目</Text>
+        <Text style={{ fontSize: 96, color: 'line', fontWeight: 300 }}>录</Text>
+        <Box style={{ width: 64, height: 2, background: 'text', marginTop: 32 }} />
+        <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 4, marginTop: 16 }}>CONTENTS</Text>
+      </Box>
+      <Box style={{ flex: 1, justifyContent: 'center', paddingLeft: 64 }}>
+        <Box style={{ gap: 32 }}>
+          {[
+            ['01', '项目背景'],
+            ['02', '解决方案'],
+            ['03', '实施计划'],
+            ['04', '预期成果'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 40 }}>
+              <Box style={{ width: 110, alignItems: 'flex-end' }}>
+                <Text style={{ fontSize: 48, color: 'line', fontWeight: 300 }}>{x[0]}</Text>
+              </Box>
+              <Box style={{ flex: 1, paddingBottom: 8, position: 'relative' }}>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+                <Box style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 2, background: 'line' }} />
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

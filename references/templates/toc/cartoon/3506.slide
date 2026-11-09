@@ -1,0 +1,43 @@
+<Slide>
+  {/* cartoon/3506 卡通风-书本翻页：青蓝渐变底 + 左侧标题 + 2x2 白卡（左侧彩条） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(90deg, #CFFAFE 0%, #BFDBFE 100%)', padding: 48 }}>
+    <Box style={{ height: 624, flexDirection: 'row', alignItems: 'center', gap: 32 }}>
+      {/* 左侧标题 */}
+      <Box style={{ width: 240, alignItems: 'center' }}>
+        <Emoji name="📚" style={{ width: 56, height: 56, marginBottom: 12 }} />
+        <Text style={{ fontSize: 'title', color: '#374151', bold: true }}>{/* {{标题}} */}目录</Text>
+      </Box>
+      {/* 章节卡 */}
+      <Box style={{ flex: 1, gap: 20 }}>
+        <Box style={{ flexDirection: 'row', gap: 20 }}>
+          <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 16, padding: 20, position: 'relative', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+            <Box style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 8, background: '#f472b6' }} />
+            <Emoji name="📖" style={{ width: 28, height: 28, marginBottom: 8 }} />
+            <Text style={{ fontSize: 'card', color: '#ec4899', bold: true, marginBottom: 4 }}>{/* {{章节编号}} */}01</Text>
+            <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{章节名}} */}开篇导读</Text>
+          </Box>
+          <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 16, padding: 20, position: 'relative', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+            <Box style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 8, background: '#60a5fa' }} />
+            <Emoji name="📝" style={{ width: 28, height: 28, marginBottom: 8 }} />
+            <Text style={{ fontSize: 'card', color: '#3b82f6', bold: true, marginBottom: 4 }}>{/* {{章节编号}} */}02</Text>
+            <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{章节名}} */}内容详解</Text>
+          </Box>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 20 }}>
+          <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 16, padding: 20, position: 'relative', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+            <Box style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 8, background: '#4ade80' }} />
+            <Emoji name="🎯" style={{ width: 28, height: 28, marginBottom: 8 }} />
+            <Text style={{ fontSize: 'card', color: '#22c55e', bold: true, marginBottom: 4 }}>{/* {{章节编号}} */}03</Text>
+            <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{章节名}} */}行动指南</Text>
+          </Box>
+          <Box style={{ flex: 1, background: '#FFFFFF', borderRadius: 16, padding: 20, position: 'relative', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+            <Box style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 8, background: '#fb923c' }} />
+            <Emoji name="🌟" style={{ width: 28, height: 28, marginBottom: 8 }} />
+            <Text style={{ fontSize: 'card', color: '#f97316', bold: true, marginBottom: 4 }}>{/* {{章节编号}} */}04</Text>
+            <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{章节名}} */}精彩收尾</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

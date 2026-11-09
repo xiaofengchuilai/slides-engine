@@ -1,0 +1,23 @@
+<Slide>
+  {/* cover/literary/155 文艺风-诗意散落：浅米渐变底 + 散落圆点 + 装饰弧线 + 主标题 + 下划线 + 副标题 + 落款 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #F9F3E8 0%, #F1E8D9 50%, #E8D9C5 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 散落圆点装饰 */}
+    <Box style={{ position: 'absolute', top: 108, left: 192, width: 8, height: 8, borderRadius: 4, background: '#C97064', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 144, right: 230, width: 6, height: 6, borderRadius: 3, background: '#8B6F47', opacity: 0.3 }} />
+    <Box style={{ position: 'absolute', bottom: 180, left: 256, width: 8, height: 8, borderRadius: 4, background: '#A0826D', opacity: 0.35 }} />
+    <Box style={{ position: 'absolute', bottom: 216, right: 282, width: 6, height: 6, borderRadius: 3, background: '#C97064', opacity: 0.3 }} />
+    <Box style={{ justifyContent: 'center', alignItems: 'center', maxWidth: 900 }}>
+      {/* 装饰弧线（SVG 降级为细线 + 圆点） */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', justifyContent: 'center', marginBottom: 'lg' }}>
+        <Box style={{ width: 6, height: 6, borderRadius: 3, background: '#8B6F47', opacity: 0.4 }} />
+        <Box style={{ width: 110, height: 1, background: '#8B6F47', opacity: 0.4 }} />
+        <Box style={{ width: 6, height: 6, borderRadius: 3, background: '#8B6F47', opacity: 0.4 }} />
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#6B5444', fontWeight: 300, fontFamily: 'serif', letterSpacing: 3, textAlign: 'center', lineHeight: 1.2, marginBottom: 'lg' }}>{/* {{替换：主标题}} */}岁月静好</Text>
+      {/* 手绘下划线（短色条降级） */}
+      <Box style={{ width: 300, height: 2, background: '#C97064', opacity: 0.4, marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'card', color: '#8B7355', fontWeight: 300, letterSpacing: 2, textAlign: 'center', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}诗意生活·慢享时光</Text>
+      <Text style={{ fontSize: 'body', color: '#A0826D', letterSpacing: 2, textAlign: 'center' }}>{/* {{替换：落款}} */}文学社 | 读书分享会</Text>
+    </Box>
+  </Box>
+</Slide>

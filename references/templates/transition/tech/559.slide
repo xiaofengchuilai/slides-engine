@@ -1,0 +1,23 @@
+<Slide>
+  {/* transition/tech/559 科技风-电路纹理：深灰底 + 电路线装饰 + 大章节号/名/导语 */}
+  <Box style={{ height: 720, width: 1280, background: '#0F172A', padding: 48, position: 'relative' }}>
+    {/* 电路线装饰 */}
+    <Box style={{ position: 'absolute', top: 0, left: 320, width: 4, height: 240, background: 'rgba(34,211,238,0.6)' }} />
+    <Box style={{ position: 'absolute', top: 240, left: 320, width: 320, height: 4, background: 'rgba(34,211,238,0.6)' }} />
+    <Box style={{ position: 'absolute', top: 240, right: 320, width: 4, height: 240, background: 'rgba(34,211,238,0.6)' }} />
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ border: '4px solid #22d3ee', padding: 24, paddingLeft: 48, paddingRight: 48, marginBottom: 24 }}>
+          <Text style={{ fontSize: 'hero', color: '#22d3ee', bold: true }}>{/* {{替换：章节号 01-0N}} */}&lt;01/&gt;</Text>
+        </Box>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 16 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#22d3ee' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+        <Box style={{ flexDirection: 'row', gap: 12, marginTop: 32 }}>
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#22d3ee' }} />
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#22d3ee' }} />
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#22d3ee' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

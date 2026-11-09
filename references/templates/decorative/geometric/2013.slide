@@ -1,0 +1,41 @@
+<Slide>
+  {/* decorative/geometric/2013 几何风-拼接小几何：白底 + 拼接方块/竖条/渐变菱形/三角元素网格 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 40 }}>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        {/* 双拼方块 */}
+        <Box style={{ flexDirection: 'row', gap: 4 }}>
+          <Box style={{ width: 20, height: 20, background: '#6366F1' }} />
+          <Box style={{ width: 20, height: 20, background: '#A855F7' }} />
+        </Box>
+        {/* 三横条（蓝/青/青绿） */}
+        <Box style={{ flexDirection: 'column', gap: 4 }}>
+          <Box style={{ width: 32, height: 8, background: '#3B82F6' }} />
+          <Box style={{ width: 32, height: 8, background: '#06B6D4' }} />
+          <Box style={{ width: 32, height: 8, background: '#14B8A6' }} />
+        </Box>
+        {/* 2x2 棋盘（紫/粉交替） */}
+        <Box style={{ flexDirection: 'row', gap: 4 }}>
+          <Box style={{ flexDirection: 'column', gap: 4 }}>
+            <Box style={{ width: 20, height: 20, background: '#A855F7' }} />
+            <Box style={{ width: 20, height: 20, background: '#EC4899' }} />
+          </Box>
+          <Box style={{ flexDirection: 'column', gap: 4 }}>
+            <Box style={{ width: 20, height: 20, background: '#EC4899' }} />
+            <Box style={{ width: 20, height: 20, background: '#A855F7' }} />
+          </Box>
+        </Box>
+        <Shape type="diamond" style={{ width: 40, height: 40, fill: '#6366F1', rotate: 45 }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        {/* 三竖条（蓝/靛/紫） */}
+        <Box style={{ flexDirection: 'row', gap: 4, alignItems: 'flex-end' }}>
+          <Box style={{ width: 12, height: 32, background: '#3B82F6' }} />
+          <Box style={{ width: 12, height: 40, background: '#6366F1' }} />
+          <Box style={{ width: 12, height: 24, background: '#A855F7' }} />
+        </Box>
+        <Shape type="triangle" style={{ width: 40, height: 40, fill: '#06B6D4' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,42 @@
+<Slide>
+  {/* black-gold/1576 财富守护者：保险箱 + 密码盘 + 底部指标 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #000000 0%, #111827 50%, #000000 100%)', padding: 'xl', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 标题 */}
+    <Box style={{ position: 'absolute', top: 56, alignItems: 'center' }}>
+      <Text style={{ fontSize: 'title', color: '#FBBF24', bold: true, marginBottom: 'xs' }}>{/* {{替换：标题}} */}财富守护者</Text>
+      <Text style={{ fontSize: 'label', color: '#FBBF24', letterSpacing: 3 }}>{/* {{替换：副标题}} */}WEALTH PROTECTOR</Text>
+    </Box>
+    {/* 保险箱外框 */}
+    <Box style={{ width: 380, height: 380, borderRadius: 'lg', border: '4px solid rgba(202,138,4,0.5)', background: 'linear-gradient(135deg, #1F2937 0%, #111827 50%, #000000 100%)', alignItems: 'center', justifyContent: 'center', position: 'relative', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      {/* 四角螺栓 */}
+      {[
+        { top: 12, left: 12 },
+        { top: 12, right: 12 },
+        { bottom: 12, left: 12 },
+        { bottom: 12, right: 12 },
+      ].map((pos, i) => (
+        <Box key={i} style={{ position: 'absolute', ...pos, width: 20, height: 20, borderRadius: 10, background: 'linear-gradient(135deg, #FBBF24 0%, #D97706 100%)' }} />
+      ))}
+      {/* 密码盘 */}
+      <Box style={{ width: 200, height: 200, borderRadius: 100, border: '4px solid #D4AF37', background: '#1A1A1A', alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 148, height: 148, borderRadius: 74, border: '2px dashed #D4AF37' }} />
+        <Emoji name="💎" style={{ width: 44, height: 44 }} />
+      </Box>
+      {/* 把手 */}
+      <Box style={{ position: 'absolute', right: -36, top: '50%', width: 36, height: 96, background: 'linear-gradient(90deg, #CA8A04 0%, #92400E 100%)', border: '2px solid #D4AF37', borderRadius: 4 }} />
+    </Box>
+    {/* 底部指标 */}
+    <Box style={{ position: 'absolute', bottom: 48, flexDirection: 'row', gap: 'xl', alignItems: 'center' }}>
+      {[
+        ['AAA+', '安全等级'],
+        ['24/7', '全天守护'],
+        ['∞', '无限价值'],
+      ].map((x, i) => (
+        <Box key={i} style={{ alignItems: 'center', padding: '0 xl' }}>
+          <Text style={{ fontSize: 'card', color: '#FBBF24', bold: true }}>{/* {{替换：指标值}} */}{x[0]}</Text>
+          <Text style={{ fontSize: 'label', color: '#9CA3AF', marginTop: 'xs' }}>{/* {{替换：指标名}} */}{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

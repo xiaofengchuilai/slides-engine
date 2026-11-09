@@ -1,0 +1,45 @@
+<Slide>
+  {/* minimalist/1593 上图下文：顶部配图(带标签) + 标题正文 + 右侧两条要点 + 底部参考文献 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 顶部图片 */}
+    <Box style={{ height: 280, alignItems: 'center', justifyContent: 'center', borderRadius: 'md' }}>
+      {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+      <Image src="assets/images/1593.png" style={{ width: 1216, height: 280, objectFit: 'cover' }} />
+    </Box>
+
+    {/* 下半内容 */}
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xxl', marginTop: 'xl' }}>
+      {/* 左侧标题正文 */}
+      <Box style={{ flex: 1, gap: 'md', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{标题}} */}用户体验优化方法论</Text>
+        <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6 }}>{/* {{正文1}} */}通过数据分析和用户研究，我们发现优质的用户体验来自于对细节的精心打磨和对用户需求的深刻理解。</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{正文2}} */}每一个交互点都是与用户建立情感连接的机会，设计师需要站在用户角度思考问题。</Text>
+      </Box>
+
+      {/* 分隔竖线 */}
+      <Box style={{ width: 2, alignSelf: 'stretch', background: '#E5E7EB' }} />
+
+      {/* 右侧要点列表 */}
+      <Box style={{ width: 320, gap: 'lg', justifyContent: 'center' }}>
+        {[
+          ['可用性测试', '持续验证设计方案'],
+          ['数据驱动迭代', '基于真实反馈优化'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', gap: 'md', alignItems: 'flex-start' }}>
+            <Box style={{ width: 32, height: 32, borderRadius: 'sm', background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+              <FAIcon name="check" style={{ fill: '#FFFFFF', width: 16, height: 16 }} />
+            </Box>
+            <Box style={{ flex: 1 }}>
+              <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{要点标题}} */}{x[0]}</Text>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{要点说明}} */}{x[1]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+
+    {/* 底部参考文献 */}
+    <Box style={{ height: 2, background: '#E5E7EB', marginTop: 'lg' }} />
+    <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'sm' }}>{/* {{参考文献}} */}参考文献：Nielsen Norman Group《UX研究最佳实践》2024版</Text>
+  </Box>
+</Slide>

@@ -1,0 +1,23 @@
+<Slide>
+  {/* transition/chinese/504 中国风-水墨竹韵：米白渐变底 + 左侧竹节 + 金底章序 + 印章 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF9F5 0%, #E8E6DC 100%)', padding: 48, position: 'relative' }}>
+    {/* 竹节装饰（左下） */}
+    <Box style={{ position: 'absolute', left: 40, top: 120, width: 8, height: 420, background: 'linear-gradient(180deg, #374151 0%, #4b5563 100%)', borderRadius: 4, opacity: 0.15 }} />
+    <Box style={{ position: 'absolute', left: 48, top: 220, width: 80, height: 4, background: '#4b5563', borderRadius: 2, opacity: 0.15 }} />
+    <Box style={{ position: 'absolute', left: 48, top: 320, width: 64, height: 4, background: '#4b5563', borderRadius: 2, opacity: 0.15 }} />
+    <Box style={{ position: 'absolute', left: 48, top: 420, width: 96, height: 4, background: '#4b5563', borderRadius: 2, opacity: 0.15 }} />
+    {/* 印章（右下角） */}
+    <Box style={{ position: 'absolute', bottom: 32, right: 32, width: 64, height: 64, background: 'linear-gradient(135deg, #C41E3A 0%, #8B1428 100%)', alignItems: 'center', justifyContent: 'center', rotate: 5 }}>
+      <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>{/* {{印章字}} */}笔墨</Text>
+    </Box>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ background: 'rgba(212,175,55,0.15)', padding: 8, paddingLeft: 32, paddingRight: 32, marginBottom: 20 }}>
+          <Text style={{ fontSize: 'card', color: '#8b4513', letterSpacing: 8, fontFamily: 'serif' }}>{/* {{替换：章序号}} */}第一章</Text>
+        </Box>
+        <Text style={{ fontSize: 'title', color: '#2d2d2d', bold: true, letterSpacing: 4, fontFamily: 'serif', marginBottom: 24 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#666666', letterSpacing: 2, fontFamily: 'serif' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,27 @@
+<Slide>
+  {/* ending/geometric 1065 透视网格结尾：靛紫渐变底 + 等距网格（菱形排布）+ 中心菱形框 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #667EEA 0%, #764BA2 100%)' }}>
+    {/* 等距网格近似：菱形排布（半透明白） */}
+    <Shape type="diamond" style={{ position: 'absolute', top: 0, left: 0, width: 60, height: 60, line: { color: '#FFFFFF', width: 0.5 }, opacity: 0.15 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: 0, left: 70, width: 60, height: 60, line: { color: '#FFFFFF', width: 0.5 }, opacity: 0.15 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: 0, left: 140, width: 60, height: 60, line: { color: '#FFFFFF', width: 0.5 }, opacity: 0.15 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: 0, left: 210, width: 60, height: 60, line: { color: '#FFFFFF', width: 0.5 }, opacity: 0.15 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: 0, left: 280, width: 60, height: 60, line: { color: '#FFFFFF', width: 0.5 }, opacity: 0.15 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: 0, left: 350, width: 60, height: 60, line: { color: '#FFFFFF', width: 0.5 }, opacity: 0.15 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: 0, left: 420, width: 60, height: 60, line: { color: '#FFFFFF', width: 0.5 }, opacity: 0.15 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: 0, left: 490, width: 60, height: 60, line: { color: '#FFFFFF', width: 0.5 }, opacity: 0.15 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: 0, left: 560, width: 60, height: 60, line: { color: '#FFFFFF', width: 0.5 }, opacity: 0.15 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: 0, left: 630, width: 60, height: 60, line: { color: '#FFFFFF', width: 0.5 }, opacity: 0.15 }} />
+    {/* 中心菱形框 */}
+    <Shape type="diamond" style={{ position: 'absolute', top: '50%', left: '50%', width: 350, height: 350, fill: '#FFFFFF', opacity: 0.08 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: '50%', left: '50%', width: 350, height: 350, line: { color: '#FFFFFF', width: 3 }, opacity: 0.3 }} />
+    {/* 立方体装饰（用菱形堆叠近似） */}
+    <Shape type="diamond" style={{ position: 'absolute', top: 108, left: 128, width: 80, height: 80, fill: '#FFFFFF', opacity: 0.12 }} />
+    <Shape type="diamond" style={{ position: 'absolute', bottom: 144, right: 154, width: 100, height: 100, fill: '#FFFFFF', opacity: 0.1 }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: '#FFFFFF', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}谢谢</Text>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', textAlign: 'center' }}>{/* {{副标题}} */}感谢您的宝贵时间</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,27 @@
+<Slide>
+  {/* cover/geometric 150 菱形穿插封面：淡绿渐变底 + 菱形装饰 + 白卡落款 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #ECFDF5 0%, #FFFFFF 50%, #F0FDFA 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 菱形装饰（左上） */}
+    <Shape type="diamond" style={{ position: 'absolute', top: 112, left: 160, width: 80, height: 80, fill: '#A7F3D0', rotate: 45 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: 144, left: 208, width: 64, height: 64, fill: '#99F6E4', rotate: 45 }} />
+    {/* 菱形装饰（右上） */}
+    <Shape type="diamond" style={{ position: 'absolute', top: 128, right: 176, width: 72, height: 72, fill: '#6EE7B7', rotate: 45 }} />
+    {/* 菱形装饰（左下） */}
+    <Shape type="diamond" style={{ position: 'absolute', bottom: 144, left: 192, width: 56, height: 56, fill: '#5EEAD4', rotate: 45 }} />
+    {/* 菱形装饰（右下） */}
+    <Shape type="diamond" style={{ position: 'absolute', bottom: 160, right: 208, width: 88, height: 88, fill: '#A7F3D0', rotate: 45 }} />
+    {/* 主内容 */}
+    <Box style={{ alignItems: 'center', padding: '0 xl', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'md', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}品牌视觉体系</Text>
+      <Text style={{ fontSize: 'card', color: 'muted', marginBottom: 'lg', textAlign: 'center' }}>{/* {{副标题}} */}几何美学·系统规范</Text>
+      {/* 白卡落款（左侧主色条） */}
+      <Box style={{ background: 'bg', padding: 'md xl', flexDirection: 'row', alignItems: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+        <Box style={{ width: 3, height: 48, background: '#10B981' }} />
+        <Box style={{ paddingLeft: 'md' }}>
+          <Text style={{ fontSize: 'body', color: '#059669', bold: true }}>{/* {{落款一}} */}品牌设计部</Text>
+          <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>{/* {{落款二}} */}视觉识别指南</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

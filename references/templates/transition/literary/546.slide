@@ -1,0 +1,17 @@
+<Slide>
+  {/* transition/literary/546 文艺风-咖啡主题：琥珀橙浅底 + 虚线白卡 + 章序/章节名 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFFBEB 0%, #FFEDD5 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ background: 'rgba(255,255,255,0.85)', border: '4px dashed #fbbf24', borderRadius: 24, padding: 48, paddingLeft: 96, paddingRight: 96, alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Emoji name="☕" style={{ width: 56, height: 56, marginBottom: 24 }} />
+        <Text style={{ fontSize: 'title', color: '#78350f', bold: true, fontFamily: 'serif', marginBottom: 24 }}>{/* {{替换：章序号}} */}第一章</Text>
+        <Text style={{ fontSize: 'title', color: '#374151', bold: true, marginBottom: 16, fontFamily: 'serif' }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#b45309', fontFamily: 'serif' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 32 }}>
+          <Box style={{ width: 96, height: 1, background: '#f59e0b' }} />
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#d97706' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

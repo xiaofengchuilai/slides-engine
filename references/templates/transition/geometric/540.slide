@@ -1,0 +1,18 @@
+<Slide>
+  {/* transition/geometric/540 菱形层叠：浅紫粉橙底，背景菱形叠层(Shape diamond) + 中置白卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F3E8FF 0%, #FCE7F3 50%, #FFEDD5 100%)' }}>
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Shape type="diamond" style={{ position: 'absolute', top: 80, left: -80, width: 320, height: 320, fill: '#C084FC', opacity: 0.2 }} />
+        <Shape type="diamond" style={{ position: 'absolute', top: 150, left: -10, width: 260, height: 260, fill: '#F472B6', opacity: 0.3 }} />
+        <Shape type="diamond" style={{ position: 'absolute', top: 210, left: 50, width: 200, height: 200, fill: '#FB923C', opacity: 0.4 }} />
+        <Box style={{ background: '#FFFFFF', paddingTop: 48, paddingBottom: 48, paddingLeft: 64, paddingRight: 64, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Text style={{ fontSize: 72, color: '#A855F7', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+          <Text style={{ fontSize: 'title', color: '#111827', bold: true, marginBottom: 12, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+          <Text style={{ fontSize: 'card', color: '#7E22CE', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+          <Box style={{ height: 8, background: 'linear-gradient(90deg, #A855F7 0%, #EC4899 50%, #F97316 100%)', borderRadius: 4, marginTop: 20 }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

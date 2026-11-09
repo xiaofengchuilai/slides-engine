@@ -1,0 +1,31 @@
+<Slide>
+  {/* ending/black-gold/1089 黑金风-金色线条：深蓝渐变 + 上下金线 + 双层金框 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0F172A 0%, #1E1B4B 50%, #1E293B 100%)' }}>
+    {/* 上下金色线条 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 3, background: 'linear-gradient(90deg, #0F172A 0%, #D4AF37 30%, #FFD700 50%, #D4AF37 70%, #0F172A 100%)', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 3, background: 'linear-gradient(90deg, #0F172A 0%, #D4AF37 30%, #FFD700 50%, #D4AF37 70%, #0F172A 100%)', opacity: 0.8 }} />
+    {/* 侧边金色线条 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 2, height: 720, background: 'linear-gradient(180deg, #0F172A 0%, #D4AF37 20%, #FFD700 50%, #D4AF37 80%, #0F172A 100%)', opacity: 0.7 }} />
+    <Box style={{ position: 'absolute', top: 0, right: 0, width: 2, height: 720, background: 'linear-gradient(180deg, #0F172A 0%, #D4AF37 20%, #FFD700 50%, #D4AF37 80%, #0F172A 100%)', opacity: 0.7 }} />
+    {/* 对角线金色装饰（降级为斜线，用 Shape rotate） */}
+    <Shape type="line" style={{ width: 185, height: 0, position: 'absolute', top: 95, left: 100, line: { color: '#D4AF37', width: 2 }, rotate: -45 }} />
+    <Shape type="line" style={{ width: 120, height: 0, position: 'absolute', bottom: 140, right: 130, line: { color: '#FFD700', width: 2 }, rotate: 45 }} />
+    {/* 金色方框装饰（双层） */}
+    <Box style={{ position: 'absolute', top: 232, left: 455, width: 370, height: 255, border: '2px solid #D4AF37', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 242, left: 465, width: 350, height: 235, border: '1px solid #FFD700', opacity: 0.3 }} />
+    {/* 角落装饰（降级为 L 形） */}
+    <Box style={{ position: 'absolute', top: 45, left: 45, width: 55, height: 55, background: 'transparent', opacity: 0.6 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 55, height: 2, background: '#D4AF37' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 2, height: 55, background: '#D4AF37' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 45, right: 45, width: 55, height: 55, background: 'transparent', opacity: 0.6 }}>
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 55, height: 2, background: '#D4AF37' }} />
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 2, height: 55, background: '#D4AF37' }} />
+    </Box>
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#EAB308', bold: true, marginBottom: 'md' }}>{/* {{替换：主标题}} */}谢谢观看</Text>
+      <Text style={{ fontSize: 'title', color: '#D4AF37' }}>{/* {{替换：致谢语}} */}感谢您的聆听</Text>
+    </Box>
+  </Box>
+</Slide>

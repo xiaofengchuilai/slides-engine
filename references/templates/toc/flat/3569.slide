@@ -1,0 +1,27 @@
+<Slide>
+  {/* flat/3569 扁平风-长投影：橙粉渐变底，白卡+深色偏移底边（长投影降级）+渐变数字块 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FB923C 0%, #F87171 50%, #F472B6 100%)' }}>
+    <Box style={{ height: 720, justifyContent: 'center', padding: 'xxl xl' }}>
+      <Box style={{ alignItems: 'center', marginBottom: 40 }}>
+        <Box style={{ background: '#FFFFFF', opacity: 0.2, borderRadius: 'lg', paddingTop: 20, paddingBottom: 20, paddingLeft: 40, paddingRight: 40 }}>
+          <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, textAlign: 'center' }}>{/* {{替换：标题}} */}目录</Text>
+        </Box>
+      </Box>
+      {[
+        ['1', '项目背景'],
+        ['2', '核心功能'],
+        ['3', '技术架构'],
+        ['4', '实施计划'],
+      ].map((x, i) => (
+        <Box key={i} style={{ background: '#000000', opacity: 0.15, borderRadius: 'md', padding: 4, marginBottom: 20 }}>
+          <Box style={{ background: '#FFFFFF', borderRadius: 'md', padding: 'md', flexDirection: 'row', alignItems: 'center', gap: 'lg', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+            <Box style={{ width: 64, height: 64, background: 'linear-gradient(135deg, #F97316 0%, #EC4899 100%)', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#111827', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,17 @@
+<Slide>
+  {/* black-gold/082 星光璀璨：黑底 + 星点 + 金字标题 + 金线 + 副标题 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 星光装饰（四角金点） */}
+    <Box style={{ position: 'absolute', top: 80, left: 128, width: 8, height: 8, borderRadius: 4, background: '#EAB308', boxShadow: '0 0 20px rgba(255,215,0,0.8)' }} />
+    <Box style={{ position: 'absolute', top: 160, right: 160, width: 8, height: 8, borderRadius: 4, background: '#EAB308', boxShadow: '0 0 20px rgba(255,215,0,0.8)' }} />
+    <Box style={{ position: 'absolute', bottom: 128, left: 192, width: 8, height: 8, borderRadius: 4, background: '#EAB308', boxShadow: '0 0 20px rgba(255,215,0,0.8)' }} />
+    <Box style={{ position: 'absolute', bottom: 160, right: 128, width: 8, height: 8, borderRadius: 4, background: '#EAB308', boxShadow: '0 0 20px rgba(255,215,0,0.8)' }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}年度颁奖盛典</Text>
+      <Box style={{ width: 192, height: 2, background: 'linear-gradient(90deg, rgba(255,215,0,0) 0%, #FFD700 50%, rgba(255,215,0,0) 100%)', marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'card', color: '#CA8A04', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}荣耀时刻·卓越成就·共创辉煌</Text>
+      <Text style={{ fontSize: 'body', color: '#9CA3AF' }}>{/* {{替换：落款}} */}总裁办公室 | 年度表彰大会</Text>
+    </Box>
+  </Box>
+</Slide>

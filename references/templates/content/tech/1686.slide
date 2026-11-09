@@ -1,0 +1,46 @@
+<Slide>
+  {/* tech/1686 数据治理成熟度模型：四阶阶梯（初始→规范→量化→优化） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题区 */}
+    <Box style={{ marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{标题}} */}数据治理成熟度模型</Text>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{副题}} */}从无序到卓越的演进路径</Text>
+    </Box>
+
+    {/* 阶梯递进布局 */}
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'lg' }}>
+      {[
+        ['1', '初始级', '数据管理无规范，各业务系统独立运作，数据质量参差不齐，缺乏统一标准。', 0, 'img', null],
+        ['2', '规范级', '建立数据标准与规范，开始进行数据质量监控，具备基本的元数据管理能力。', 32, 'stat', ['标准覆盖率', '60%']],
+        ['3', '量化级', '数据质量可量化度量，建立完整的数据血缘追溯能力，数据资产可视化管理。', 64, 'stat', ['质量达标率', '85%']],
+        ['4', '优化级', '数据驱动业务决策，智能化数据治理，持续优化迭代，实现数据价值最大化。', 96, 'stat', ['数据价值', '最大化']],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, flexDirection: 'column', paddingTop: x[3] }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Box style={{ width: 40, height: 40, borderRadius: 'md', background: i === 1 || i === 2 ? 'secondary' : 'primary', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{x[1]}</Text>
+          </Box>
+          <Text style={{ fontSize: 14, color: '#CBD5E1', lineHeight: 1.6, marginBottom: 'md' }}>{x[2]}</Text>
+          {x[4] === 'img' ? (
+            <Box style={{ flex: 1, borderRadius: 'md' }}>
+              {/* {{图片：有图填 assets/images/1686a.png，无图删掉整个 <Image>}} */}
+              <Image src="assets/images/1686a.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </Box>
+          ) : (
+            <Box style={{ marginTop: 'auto', padding: 'md', borderRadius: 'md', background: i === 3 ? 'primary' : 'cardBg' }}>
+              <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                <Text style={{ fontSize: 14, color: i === 3 ? '#FFFFFF' : 'muted' }}>{x[5][0]}</Text>
+                <Text style={{ fontSize: 20, color: i === 3 ? '#FFFFFF' : '#FFFFFF', bold: true }}>{x[5][1]}</Text>
+              </Box>
+            </Box>
+          )}
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

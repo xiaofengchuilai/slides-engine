@@ -1,0 +1,44 @@
+<Slide>
+  {/* chinese/3527 中国风-青花瓷：蓝白底 + 圆形蓝环装饰 + 2x2 蓝白章节卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #EFF6FF 0%, #FFFFFF 100%)', padding: 48, position: 'relative' }}>
+    {/* 青花瓷圆环装饰 */}
+    <Box style={{ position: 'absolute', top: 40, right: 80, width: 256, height: 256, borderRadius: 128, border: '8px solid #93c5fd', opacity: 0.3 }} />
+    <Box style={{ position: 'absolute', bottom: 80, left: 80, width: 192, height: 192, borderRadius: 96, border: '8px solid #bfdbfe', opacity: 0.3 }} />
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center', marginBottom: 40 }}>
+        <Text style={{ fontSize: 'title', color: '#1e3a8a', bold: true, paddingBottom: 16, position: 'relative' }}>{/* {{标题}} */}目录</Text>
+        <Box style={{ width: 200, height: 4, background: '#3b82f6' }} />
+      </Box>
+      <Box style={{ gap: 24 }}>
+        <Box style={{ flexDirection: 'row', gap: 24 }}>
+          <Box style={{ flex: 1, flexDirection: 'row', alignItems: 'center', gap: 20, background: '#FFFFFF', border: '2px solid #bfdbfe', borderRadius: 16, padding: 20, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Box style={{ width: 56, height: 56, background: '#2563eb', borderRadius: 28, alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节编号}} */}1</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{章节名}} */}项目背景</Text>
+          </Box>
+          <Box style={{ flex: 1, flexDirection: 'row', alignItems: 'center', gap: 20, background: '#FFFFFF', border: '2px solid #bfdbfe', borderRadius: 16, padding: 20, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Box style={{ width: 56, height: 56, background: '#2563eb', borderRadius: 28, alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节编号}} */}2</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{章节名}} */}核心功能</Text>
+          </Box>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 24 }}>
+          <Box style={{ flex: 1, flexDirection: 'row', alignItems: 'center', gap: 20, background: '#FFFFFF', border: '2px solid #bfdbfe', borderRadius: 16, padding: 20, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Box style={{ width: 56, height: 56, background: '#2563eb', borderRadius: 28, alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节编号}} */}3</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{章节名}} */}技术架构</Text>
+          </Box>
+          <Box style={{ flex: 1, flexDirection: 'row', alignItems: 'center', gap: 20, background: '#FFFFFF', border: '2px solid #bfdbfe', borderRadius: 16, padding: 20, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Box style={{ width: 56, height: 56, background: '#2563eb', borderRadius: 28, alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节编号}} */}4</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{章节名}} */}实施计划</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

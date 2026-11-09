@@ -1,0 +1,26 @@
+<Slide>
+  {/* business/3508 商务风-网格卡片：标题 + 4 个渐变章节卡（横排） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 48 }}>
+    <Box style={{ height: 624 }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 8 }}>{/* {{标题}} */}目录</Text>
+      <Box style={{ width: 96, height: 4, background: 'secondary', borderRadius: 2, marginBottom: 40 }} />
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 20 }}>
+        {[
+          ['01', '项目背景', 'Background', '了解项目起源与背景', 'linear-gradient(135deg, #4F46E5 0%, #4338CA 100%)'],
+          ['02', '方案设计', 'Solution', '详细方案与设计思路', 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)'],
+          ['03', '实施路径', 'Implementation', '落地执行的具体步骤', 'linear-gradient(135deg, #0891B2 0%, #0E7490 100%)'],
+          ['04', '成果预期', 'Outcome', '预期成果与价值展示', 'linear-gradient(135deg, #0D9488 0%, #0F766E 100%)'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, background: x[4], borderRadius: 8, padding: 24, justifyContent: 'space-between', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+            <Box>
+              <Text style={{ fontSize: 'kpi', color: '#FFFFFF', opacity: 0.5, bold: true, marginBottom: 16 }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+              <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.8, marginTop: 8 }}>{/* {{英文名}} */}{x[2]}</Text>
+            </Box>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.9, marginTop: 16 }}>{/* {{章节说明}} */}{x[3]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,42 @@
+<Slide>
+  {/* chinese/3504 中国风-水墨竖排：浅灰底 + 左侧标题（竖排改横排）+ 中缝红条 + 2列红圈章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #F3F4F6 0%, #E5E7EB 100%)', padding: 48 }}>
+    <Box style={{ height: 624, flexDirection: 'row', alignItems: 'center', gap: 40 }}>
+      {/* 左侧标题（竖排改横排） */}
+      <Box style={{ width: 220, alignItems: 'center' }}>
+        <Text style={{ fontSize: 'hero', color: '#374151', bold: true, fontFamily: 'serif' }}>{/* {{标题}} */}目录</Text>
+      </Box>
+      {/* 中缝红条 */}
+      <Box style={{ width: 2, height: 480, background: 'linear-gradient(180deg, rgba(185,28,28,0) 0%, #991b1b 50%, rgba(185,28,28,0) 100%)' }} />
+      {/* 章节列 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 48, justifyContent: 'center' }}>
+        <Box style={{ gap: 24 }}>
+          {[
+            ['一', '背景分析'],
+            ['三', '执行计划'],
+          ].map((x, i) => (
+            <Box key={i} style={{ alignItems: 'center' }}>
+              <Box style={{ width: 64, height: 64, borderRadius: 32, background: '#fecaca', alignItems: 'center', justifyContent: 'center', marginBottom: 8 }}>
+                <Text style={{ fontSize: 'kpi', color: '#dc2626', bold: true, fontFamily: 'serif' }}>{/* {{章节编号}} */}{x[0]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: '#374151', bold: true, fontFamily: 'serif' }}>{/* {{章节名}} */}{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+        <Box style={{ gap: 24 }}>
+          {[
+            ['二', '解决方案'],
+            ['四', '总结回顾'],
+          ].map((x, i) => (
+            <Box key={i} style={{ alignItems: 'center' }}>
+              <Box style={{ width: 64, height: 64, borderRadius: 32, background: '#fecaca', alignItems: 'center', justifyContent: 'center', marginBottom: 8 }}>
+                <Text style={{ fontSize: 'kpi', color: '#dc2626', bold: true, fontFamily: 'serif' }}>{/* {{章节编号}} */}{x[0]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: '#374151', bold: true, fontFamily: 'serif' }}>{/* {{章节名}} */}{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

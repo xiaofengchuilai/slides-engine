@@ -1,0 +1,14 @@
+<Slide>
+  {/* transition/geometric/543 渐变三角：左右对角三角渐变（Shape triangle），中置白圆盘渐变文字章节号+章节名+导语 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', position: 'relative' }}>
+    <Shape type="triangle" style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, fill: 'linear-gradient(135deg, #8B5CF6 0%, #D946EF 100%)' }} />
+    <Shape type="triangle" style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, fill: 'linear-gradient(315deg, #06B6D4 0%, #6366F1 100%)', rotate: 180, opacity: 0.8 }} />
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ width: 440, borderRadius: 999, background: '#FFFFFF', opacity: 0.9, paddingTop: 64, paddingBottom: 64, alignItems: 'center' }}>
+        <Text style={{ fontSize: 96, bold: true, marginBottom: 24, textAlign: 'center', backgroundImage: 'linear-gradient(90deg, #7C3AED 0%, #DB2777 100%)', backgroundClip: 'text', color: 'transparent' }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Text style={{ fontSize: 'title', color: '#111827', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'card', color: 'muted', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,50 @@
+<Slide>
+  {/* tech/1684 平台整体架构：中心圆盘 + 四角分区（接入/计算/应用层） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题 */}
+    <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, textAlign: 'center', marginBottom: 'xl' }}>{/* {{标题}} */}平台整体架构</Text>
+
+    {/* 内容区 */}
+    <Box style={{ flex: 1, position: 'relative' }}>
+      {/* 左侧区域: 数据接入层 */}
+      <Box style={{ position: 'absolute', left: 0, top: '50%', width: 300, marginTop: -130 }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{层名}} */}数据接入层</Text>
+        <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6, marginBottom: 'md' }}>{/* {{描述}} */}支持50+数据源接入，包括关系型数据库、NoSQL、消息队列、文件系统等。</Text>
+        <Box style={{ flexDirection: 'row', gap: 'xs', flexWrap: 'wrap' }}>
+          {['MySQL', 'Kafka', 'S3'].map((t, i) => (
+            <Box key={i} style={{ padding: 'xs sm', background: 'cardBg', borderRadius: 'sm' }}>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{t}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+
+      {/* 右上区域: 计算引擎层 */}
+      <Box style={{ position: 'absolute', right: 0, top: 20, width: 320 }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{层名}} */}计算引擎层</Text>
+        <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}批流一体的计算架构，支持离线批处理与实时流计算双模式。</Text>
+      </Box>
+
+      {/* 右下区域: 应用服务层 */}
+      <Box style={{ position: 'absolute', right: 0, bottom: 20, width: 320 }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{层名}} */}应用服务层</Text>
+        <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}提供数据查询、报表分析、API服务、数据订阅等多种数据消费方式。</Text>
+      </Box>
+
+      {/* 中心圆形区域 */}
+      <Box style={{ position: 'absolute', left: '50%', top: '50%', width: 420, height: 420, marginLeft: -210, marginTop: -210, borderRadius: 210, background: 'cardBg', border: '2px solid #334155', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Box style={{ width: 340, alignItems: 'center' }}>
+          <Box style={{ width: 280, height: 180, borderRadius: 'md', marginBottom: 'lg' }}>
+            {/* {{图片：有图填 assets/images/1684.png，无图删掉整个 <Image>}} */}
+            <Image src="assets/images/1684.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </Box>
+          <Text style={{ fontSize: 24, color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{平台名}} */}统一数据平台</Text>
+          <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{平台描述}} */}一站式数据开发与治理平台</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

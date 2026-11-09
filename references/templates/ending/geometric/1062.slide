@@ -1,0 +1,22 @@
+<Slide>
+  {/* ending/geometric 1062 圆形组合结尾：浅青粉渐变底 + 大圆 + 同心圆环 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #A8EDEA 0%, #FED6E3 100%)' }}>
+    {/* 大圆装饰 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 320, height: 320, borderRadius: 160, background: '#FFFFFF', opacity: 0.15 }} />
+    <Box style={{ position: 'absolute', top: 200, right: 0, width: 400, height: 400, borderRadius: 200, background: '#FFFFFF', opacity: 0.12 }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 384, width: 280, height: 280, borderRadius: 140, background: '#FFFFFF', opacity: 0.18 }} />
+    {/* 中心同心圆环 */}
+    <Shape type="ellipse" style={{ position: 'absolute', top: '50%', left: '50%', width: 280, height: 280, line: { color: '#FFFFFF', width: 3 }, opacity: 0.4 }} />
+    <Shape type="ellipse" style={{ position: 'absolute', top: '50%', left: '50%', width: 220, height: 220, line: { color: '#FFFFFF', width: 2 }, opacity: 0.3 }} />
+    <Shape type="ellipse" style={{ position: 'absolute', top: '50%', left: '50%', width: 160, height: 160, fill: '#FFFFFF', opacity: 0.1 }} />
+    {/* 小圆装饰 */}
+    <Box style={{ position: 'absolute', top: 130, left: 192, width: 60, height: 60, borderRadius: 30, background: '#FFFFFF', opacity: 0.25 }} />
+    <Box style={{ position: 'absolute', top: 468, right: 230, width: 50, height: 50, borderRadius: 25, background: '#FFFFFF', opacity: 0.3 }} />
+    <Box style={{ position: 'absolute', bottom: 108, left: 320, width: 70, height: 70, borderRadius: 35, background: '#FFFFFF', opacity: 0.2 }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: '#2C3E50', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}致谢</Text>
+      <Text style={{ fontSize: 'card', color: '#34495E', textAlign: 'center' }}>{/* {{副标题}} */}欢迎交流与指导</Text>
+    </Box>
+  </Box>
+</Slide>

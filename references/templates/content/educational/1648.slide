@@ -1,0 +1,79 @@
+<Slide>
+  {/* educational/1648 诗词意境鉴赏·画面感：左诗词+意象卡 + 右画面重构(深色)+艺术手法 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%)', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xxl' }}>
+      {/* 左侧：诗词 + 意象 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        <Box style={{ background: 'rgba(255,255,255,0.85)', border: '2px solid #A7F3D0', borderRadius: 'md', padding: 'lg', alignItems: 'center' }}>
+          <Text style={{ fontSize: 'title', color: '#064E3B', fontFamily: 'serif', bold: true, marginBottom: 'xs' }}>{/* {{替换：诗题}} */}《枫桥夜泊》</Text>
+          <Text style={{ fontSize: 'label', color: '#059669', marginBottom: 'lg' }}>{/* {{替换：作者}} */}唐·张继</Text>
+          <Box style={{ gap: 'sm', alignItems: 'center' }}>
+            <Text style={{ fontSize: 'card', color: '#1F2937', fontFamily: 'serif' }}>月落乌啼霜满天</Text>
+            <Text style={{ fontSize: 'card', color: '#1F2937', fontFamily: 'serif' }}>江枫渔火对愁眠</Text>
+            <Text style={{ fontSize: 'card', color: '#1F2937', fontFamily: 'serif' }}>姑苏城外寒山寺</Text>
+            <Text style={{ fontSize: 'card', color: '#1F2937', fontFamily: 'serif' }}>夜半钟声到客船</Text>
+          </Box>
+        </Box>
+        <Box style={{ background: 'rgba(255,255,255,0.85)', border: '2px solid #A7F3D0', borderRadius: 'md', padding: 'lg' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+            <Emoji name="🖼" style={{ width: 20, height: 20 }} />
+            <Text style={{ fontSize: 'card', color: '#065F46', bold: true }}>{/* {{替换：标题}} */}意象元素</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', gap: 'sm', flexWrap: 'wrap' }}>
+            {[
+              ['月落', '时间·夜深', '🌙'],
+              ['乌啼', '声音·凄凉', '🦅'],
+              ['霜满天', '触觉·寒冷', '❄'],
+              ['钟声', '听觉·悠远', '🔔'],
+            ].map((x, i) => (
+              <Box key={i} style={{ width: '48%', background: '#ECFDF5', borderRadius: 'sm', padding: 'sm', alignItems: 'center' }}>
+                <Emoji name={x[2]} style={{ width: 22, height: 22, marginBottom: 'xs' }} />
+                <Text style={{ fontSize: 'body', color: '#064E3B', bold: true }}>{/* {{替换：意象名}} */}{x[0]}</Text>
+                <Text style={{ fontSize: 'label', color: '#6B7280', marginTop: 'xs' }}>{/* {{替换：意象释义}} */}{x[1]}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+      {/* 右侧：画面感重构 + 艺术手法 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        <Box style={{ background: 'linear-gradient(135deg, #064E3B 0%, #134E4A 100%)', borderRadius: 'md', padding: 'lg', flex: 1, position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 8, right: 12, opacity: 0.12 }}>
+            <Emoji name="🌊" style={{ width: 42, height: 42 }} />
+          </Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'md' }}>{/* {{替换：标题}} */}画面感重构</Text>
+          <Box style={{ gap: 'sm' }}>
+            {[
+              ['视觉:', '月亮西沉，江边枫树影影绰绰，渔船上点点渔火在江面摇曳，远处姑苏城若隐若现。'],
+              ['听觉:', '乌鸦啼叫声划破夜空，远处寒山寺的钟声悠悠传来，回荡在江面上。'],
+              ['触觉:', '深秋的霜气弥漫天空，寒意透骨，让人不由裹紧衣衫。'],
+              ['情感:', '客居他乡的诗人辗转难眠，满怀愁绪，孤独寂寞之感充斥心间。'],
+            ].map((x, i) => (
+              <Box key={i} style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 'sm', padding: 'sm' }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+                  <Text style={{ fontSize: 'label', color: '#6EE7B7', bold: true }}>{/* {{替换：感官}} */}{x[0]}</Text>
+                  <Text style={{ fontSize: 'label', color: '#E5E7EB', lineHeight: 1.6, flex: 1 }}>{/* {{替换：描述}} */}{x[1]}</Text>
+                </Box>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Box style={{ background: 'rgba(255,255,255,0.85)', border: '2px solid #A7F3D0', borderRadius: 'md', padding: 'lg' }}>
+          <Text style={{ fontSize: 'card', color: '#065F46', bold: true, marginBottom: 'md' }}>{/* {{替换：标题}} */}艺术手法</Text>
+          <Box style={{ gap: 'sm' }}>
+            {[
+              ['以景衬情', '用凄凉的秋夜景色衬托旅人的愁绪'],
+              ['动静结合', '乌啼、钟声(动) + 霜天、客船(静)'],
+              ['多感官描写', '视觉、听觉、触觉全方位营造意境'],
+            ].map((x, i) => (
+              <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+                <Text style={{ fontSize: 'body', color: '#047857', bold: true, width: 96 }}>{/* {{替换：手法名}} */}{x[0]}</Text>
+                <Text style={{ fontSize: 'body', color: '#374151', flex: 1 }}>{/* {{替换：说明}} */}{x[1]}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

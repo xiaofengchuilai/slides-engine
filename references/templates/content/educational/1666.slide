@@ -1,0 +1,42 @@
+<Slide>
+  {/* educational/1666 古典诗词·意境赏析：标题 + 诗文卡 + 4关键词卡 + 赏析区 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FDFBF7 0%, #F5F0E6 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+        <Emoji name="🏔" style={{ width: 18, height: 18 }} />
+        <Text style={{ fontSize: 'title', color: '#1F2937', fontFamily: 'serif', bold: true }}>{/* {{替换：诗题}} */}《望庐山瀑布》</Text>
+        <Emoji name="🏔" style={{ width: 18, height: 18 }} />
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：作者}} */}唐·李白</Text>
+    </Box>
+    <Box style={{ background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg', alignItems: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+      <Box style={{ gap: 'sm', alignItems: 'center' }}>
+        <Text style={{ fontSize: 'title', color: '#374151', fontFamily: 'serif' }}>日照香炉生紫烟，</Text>
+        <Text style={{ fontSize: 'title', color: '#374151', fontFamily: 'serif' }}>遥看瀑布挂前川。</Text>
+        <Text style={{ fontSize: 'title', color: '#374151', fontFamily: 'serif' }}>飞流直下三千尺，</Text>
+        <Text style={{ fontSize: 'title', color: '#374151', fontFamily: 'serif' }}>疑是银河落九天。</Text>
+      </Box>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'md' }}>
+      {[
+        ['日照', '阳光照射，营造金光闪耀', '#7C3AED', 'rgba(124,58,237,0.08)', '☀'],
+        ['紫烟', '水汽在阳光下呈紫色', '#0284C7', 'rgba(2,132,199,0.08)', '☁'],
+        ['飞流', '瀑布飞速倾泻而下', '#0D9488', 'rgba(13,148,136,0.08)', '💧'],
+        ['银河', '比喻瀑布如天河倾泻', '#4338CA', 'rgba(67,56,202,0.08)', '🌌'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: x[3], border: `1px solid ${x[2]}`, borderRadius: 'md', padding: 'lg', alignItems: 'center' }}>
+          <Emoji name={x[4]} style={{ width: 20, height: 20, marginBottom: 'xs' }} />
+          <Text style={{ fontSize: 'card', color: x[2], bold: true, fontFamily: 'serif', marginBottom: 'sm' }}>{/* {{替换：关键词}} */}{x[0]}</Text>
+          <Text style={{ fontSize: 'label', color: '#4B5563', textAlign: 'center', lineHeight: 1.6 }}>{/* {{替换：释义}} */}{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flex: 1, background: '#334155', borderRadius: 'md', padding: 'lg' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+        <Emoji name="✨" style={{ width: 18, height: 18 }} />
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：标题}} */}诗歌赏析</Text>
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#E2E8F0', lineHeight: 1.8 }}>{/* {{替换：赏析}} */}诗人运用夸张手法"三千尺"、"九天"，将瀑布的壮观气势表现得淋漓尽致。用"挂"字写静态，用"飞流"写动态，动静结合，展现了庐山瀑布的雄伟壮丽。</Text>
+    </Box>
+  </Box>
+</Slide>

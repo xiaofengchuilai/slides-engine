@@ -1,0 +1,22 @@
+<Slide>
+  {/* ending/black-gold/1097 黑金风-金色旋涡：深黑渐变 + 同心金环 + 放射光线 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #1A1A2E 0%, #000000 100%)' }}>
+    {/* 金色旋涡装饰（同心圆环） */}
+    <Box style={{ position: 'absolute', top: 130, left: 365, width: 550, height: 550, borderRadius: 275, border: '2px solid #FFD700', opacity: 0.3 }} />
+    <Box style={{ position: 'absolute', top: 160, left: 395, width: 490, height: 490, borderRadius: 245, border: '2px solid #D4AF37', opacity: 0.25 }} />
+    <Box style={{ position: 'absolute', top: 190, left: 425, width: 430, height: 430, borderRadius: 215, border: '2px solid #DAA520', opacity: 0.2 }} />
+    <Box style={{ position: 'absolute', top: 220, left: 455, width: 370, height: 370, borderRadius: 185, border: '2px solid #D4AF37', opacity: 0.2 }} />
+    <Box style={{ position: 'absolute', top: 250, left: 485, width: 310, height: 310, borderRadius: 155, border: '2px solid #FFD700', opacity: 0.18 }} />
+    {/* 中心光点 */}
+    <Box style={{ position: 'absolute', top: 320, left: 600, width: 80, height: 80, borderRadius: 40, background: '#FFD700', opacity: 0.25 }} />
+    {/* 金色光线（放射细线） */}
+    <Shape type="line" style={{ width: 280, height: 0, position: 'absolute', top: 360, left: 500, line: { color: '#FFD700', width: 2 }, rotate: 0, opacity: 0.5 }} />
+    <Shape type="line" style={{ width: 260, height: 0, position: 'absolute', top: 360, left: 510, line: { color: '#D4AF37', width: 2 }, rotate: 60, opacity: 0.4 }} />
+    <Shape type="line" style={{ width: 280, height: 0, position: 'absolute', top: 360, left: 500, line: { color: '#FFD700', width: 2 }, rotate: 120, opacity: 0.5 }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#EAB308', bold: true, marginBottom: 'md' }}>{/* {{替换：主标题}} */}感谢聆听</Text>
+      <Text style={{ fontSize: 'title', color: '#D4AF37' }}>{/* {{替换：致谢语}} */}期待下次再见</Text>
+    </Box>
+  </Box>
+</Slide>

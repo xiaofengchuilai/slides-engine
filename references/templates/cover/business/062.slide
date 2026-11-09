@@ -1,0 +1,21 @@
+<Slide>
+  {/* business/062 浅灰底 + 居中白色大卡：对角渐变装饰条 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%)', justifyContent: 'center', alignItems: 'center', padding: 'xxl xl' }}>
+    <Box style={{ width: 960, background: 'cardBg', borderRadius: 'lg', padding: 'xxl xl', position: 'relative', justifyContent: 'center', alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      {/* 顶部左侧装饰条 */}
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 160, height: 12, background: 'linear-gradient(90deg, #2563EB 0%, #06B6D4 100%)' }} />
+      {/* 底部右侧装饰条 */}
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 160, height: 12, background: 'linear-gradient(270deg, #2563EB 0%, #06B6D4 100%)' }} />
+      {/* 内容区域 */}
+      <Box style={{ alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'hero', color: 'text', bold: true, textAlign: 'center', lineHeight: 1.2, marginBottom: 'xl' }}>{/* {{主标题}} */}客户成功体系</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center', lineHeight: 1.5, marginBottom: 'xxl' }}>{/* {{副标题}} */}以客户为中心·创造卓越体验</Text>
+        <Box style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 'lg' }}>
+          <Text style={{ fontSize: 'label', color: 'text', letterSpacing: 1 }}>{/* {{落款一}} */}客户成功部</Text>
+          <Text style={{ fontSize: 'body', color: 'text', opacity: 0.5 }}>·</Text>
+          <Text style={{ fontSize: 'label', color: 'text', letterSpacing: 1 }}>{/* {{落款二}} */}年度服务报告</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

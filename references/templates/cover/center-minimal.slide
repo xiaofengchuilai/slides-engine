@@ -1,0 +1,17 @@
+<Slide>
+  {/* cover/center-minimal：居中大字 + 一句话定位（大留白，克制） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: '0 120px', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 顶部装饰线 */}
+    <Box style={{ width: 48, height: 6, background: 'accent', position: 'absolute', top: 160, left: 616 }} />
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 4 }}>{/* {{替换：小标签}} */}ANNUAL REPORT</Text>
+      <Text style={{ fontSize: 60, color: 'text', bold: true, lineHeight: 1.15, marginTop: 24, textAlign: 'center' }}>{/* {{替换：主标题}} */}行稳致远</Text>
+      <Text style={{ fontSize: 'card', color: 'muted', lineHeight: 1.5, marginTop: 28, textAlign: 'center' }}>{/* {{替换：钩子/定位一句话}} */}过去一年的答案，藏在每一次取舍里</Text>
+      <Box style={{ flexDirection: 'row', marginTop: 56, gap: 16, alignItems: 'center' }}>
+        <Box style={{ width: 32, height: 1, background: 'line' }} />
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：汇报人/日期}} */}张三 · 2026.08</Text>
+        <Box style={{ width: 32, height: 1, background: 'line' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

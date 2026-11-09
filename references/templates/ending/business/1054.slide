@@ -1,0 +1,23 @@
+<Slide>
+  {/* ending/business/1054 深蓝科技渐变：网格底 + 双色圆形装饰 + 居中感谢 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 网格背景（细线交叉，用两个整块半透明矩形近似） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(82,139,255,0.05)' }} />
+    {/* 顶部发光横线 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 2, background: 'linear-gradient(90deg, rgba(82,139,255,0) 0%, #528bff 50%, rgba(82,139,255,0) 100%)', boxShadow: '0 0 10px rgba(82,139,255,0.8)' }} />
+    {/* 右侧发光竖线 */}
+    <Box style={{ position: 'absolute', top: 0, right: 0, bottom: 0, width: 2, background: 'linear-gradient(180deg, rgba(0,217,255,0) 0%, #00d9ff 50%, rgba(0,217,255,0) 100%)', boxShadow: '0 0 10px rgba(0,217,255,0.8)' }} />
+    {/* 圆形装饰（左上：双圈蓝 + 发光） */}
+    <Box style={{ position: 'absolute', top: 108, left: 192, width: 100, height: 100, borderRadius: 50, border: '2px solid rgba(82,139,255,0.4)', boxShadow: '0 0 20px rgba(82,139,255,0.3)' }} />
+    <Box style={{ position: 'absolute', top: 128, left: 212, width: 60, height: 60, borderRadius: 30, border: '1px solid rgba(82,139,255,0.3)' }} />
+    {/* 圆形装饰（右下：双圈青 + 发光） */}
+    <Box style={{ position: 'absolute', bottom: 108, right: 192, width: 80, height: 80, borderRadius: 40, border: '2px solid rgba(0,217,255,0.4)', boxShadow: '0 0 20px rgba(0,217,255,0.3)' }} />
+    <Box style={{ position: 'absolute', bottom: 128, right: 212, width: 50, height: 50, borderRadius: 25, border: '1px solid rgba(0,217,255,0.3)' }} />
+    {/* 主要内容 */}
+    <Box style={{ alignItems: 'center', maxWidth: 960 }}>
+      <Text style={{ fontSize: 60, color: '#FFFFFF', letterSpacing: 8, textAlign: 'center', marginBottom: 42 }}>{/* {{替换：主标题}} */}感谢</Text>
+      <Box style={{ width: 150, height: 2, background: 'linear-gradient(90deg, #528bff 0%, #00d9ff 100%)', marginBottom: 40 }} />
+      <Text style={{ fontSize: 'card', color: '#b8d4e8', letterSpacing: 2, lineHeight: 1.8, textAlign: 'center' }}>{/* {{替换：致谢语}} */}感谢您的聆听与关注</Text>
+    </Box>
+  </Box>
+</Slide>

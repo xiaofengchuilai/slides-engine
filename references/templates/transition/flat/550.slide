@@ -1,0 +1,14 @@
+<Slide>
+  {/* transition/flat/550 三色分层：上绿/中青/下蓝三段，中部白字章节号+章节名+导语 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg' }}>
+    <Box style={{ flex: 1, flexDirection: 'column' }}>
+      <Box style={{ flex: 1, background: '#10B981' }} />
+      <Box style={{ flex: 1, background: '#14B8A6', alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 96, color: '#FFFFFF', bold: true, marginBottom: 16 }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 12 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'card', color: '#CCFBF1' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+      <Box style={{ flex: 1, background: '#06B6D4' }} />
+    </Box>
+  </Box>
+</Slide>

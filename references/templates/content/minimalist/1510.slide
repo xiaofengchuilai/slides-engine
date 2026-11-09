@@ -1,0 +1,28 @@
+<Slide>
+  {/* minimalist/1510 项目时间线：标题 + 4 节点横向时间轴（圆点 + 贯穿线） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl', justifyContent: 'center' }}>
+    <Box style={{ marginBottom: 'xxl' }}>
+      <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{替换：页面标题}} */}项目时间线</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', marginTop: 'xs' }}>{/* {{替换：副标题}} */}关键里程碑与阶段性成果</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+      {[
+        ['Q1 2024', '#0F172A', 'text', '需求分析', '完成市场调研与用户需求收集，确定产品方向'],
+        ['Q2 2024', '#0F172A', 'text', '原型设计', '交互原型与视觉设计完成，通过评审'],
+        ['Q3 2024', '#0F172A', 'text', '开发测试', '核心功能开发完成，进入内部测试阶段'],
+        ['Q4 2024', '#CBD5E1', 'muted', '正式上线', '产品发布与市场推广，持续迭代优化'],
+      ].map((m, i) => (
+        <Box key={i} style={{ flex: 1, alignItems: 'center' }}>
+          <Text style={{ fontSize: 'label', color: 'muted', marginBottom: 'sm' }}>{/* {{替换：时间节点}} */}{m[0]}</Text>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', width: '100%' }}>
+            <Box style={{ flex: 1, height: 2, background: '#E2E8F0' }} />
+            <Box style={{ width: 12, height: 12, borderRadius: 6, background: m[1], marginLeft: 'sm', marginRight: 'sm' }} />
+            <Box style={{ flex: 1, height: 2, background: '#E2E8F0' }} />
+          </Box>
+          <Text style={{ fontSize: 'card', color: m[2], marginTop: 'lg' }}>{/* {{替换：里程碑名}} */}{m[3]}</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6, marginTop: 'xs', textAlign: 'center' }}>{/* {{替换：里程碑说明}} */}{m[4]}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,23 @@
+<Slide>
+  {/* business/3547 商务风-渐变卡片：浅渐变底 + 2x2 白蓝渐变卡片 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #EEF2FF 0%, #EFF6FF 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'title', color: 'primary', bold: true, textAlign: 'center', marginBottom: 40 }}>{/* {{标题}} */}目录</Text>
+      <Box style={{ flexDirection: 'row', gap: 24, flexWrap: 'wrap' }}>
+        {[
+          ['1', '项目背景'],
+          ['2', '核心功能'],
+          ['3', '技术架构'],
+          ['4', '实施计划'],
+        ].map((x, i) => (
+          <Box key={i} style={{ width: 576, background: 'linear-gradient(135deg, #FFFFFF 0%, #EFF6FF 100%)', padding: 24, borderRadius: 12, flexDirection: 'row', gap: 20, alignItems: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Box style={{ width: 64, height: 64, background: 'linear-gradient(135deg, #4F46E5 0%, #2563EB 100%)', borderRadius: 8, alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,15 @@
+<Slide>
+  {/* cover/literary/022 文艺风-水彩渐变：粉紫蓝渐变底 + 光晕圆 + 章节标签 + 主标题 + 副标题 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #FCE7F3 0%, #EDE9FE 50%, #DBEAFE 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 水彩光晕装饰 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, opacity: 0.3 }}>
+      <Box style={{ position: 'absolute', top: 180, left: 300, width: 480, height: 480, borderRadius: 240, background: '#F472B6', opacity: 0.25 }} />
+      <Box style={{ position: 'absolute', top: 240, left: 700, width: 480, height: 480, borderRadius: 240, background: '#A78BFA', opacity: 0.25 }} />
+    </Box>
+    <Box style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 'card', color: '#9333EA', bold: true, letterSpacing: 6, marginBottom: 'lg', textAlign: 'center' }}>{/* {{替换：章节标签}} */}━━━ CHAPTER I ━━━</Text>
+      <Text style={{ fontSize: 'hero', color: '#111827', fontFamily: 'serif', letterSpacing: 2, textAlign: 'center', marginBottom: 'lg' }}>{/* {{替换：主标题}} */}岁月留声</Text>
+      <Text style={{ fontSize: 'card', color: '#374151', fontWeight: 300, letterSpacing: 2, textAlign: 'center' }}>{/* {{替换：副标题}} */}时光里的温柔诗篇</Text>
+    </Box>
+  </Box>
+</Slide>

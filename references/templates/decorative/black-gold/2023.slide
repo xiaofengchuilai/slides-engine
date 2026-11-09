@@ -1,0 +1,25 @@
+<Slide>
+  {/* decorative/black-gold/2023 黑金风-金属小线条：纯黑底 + 金色线条/竖条/方框装饰 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center', gap: 32 }}>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Box style={{ width: 48, height: 2, background: 'linear-gradient(90deg, #CA8A04 0%, #EAB308 50%, #CA8A04 100%)' }} />
+        <Box style={{ flexDirection: 'row', gap: 4, alignItems: 'center' }}>
+          <Box style={{ width: 12, height: 32, background: 'linear-gradient(180deg, #EAB308 0%, #B45309 100%)' }} />
+          <Box style={{ width: 12, height: 24, background: 'linear-gradient(180deg, #EAB308 0%, #B45309 100%)' }} />
+          <Box style={{ width: 12, height: 40, background: 'linear-gradient(180deg, #EAB308 0%, #B45309 100%)' }} />
+        </Box>
+        <Box style={{ width: 2, height: 48, background: 'linear-gradient(180deg, rgba(234,179,8,0) 0%, #EAB308 50%, rgba(234,179,8,0) 100%)' }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Box style={{ width: 40, height: 40, border: '2px solid #C9A227', rotate: 45 }} />
+        <Box style={{ flexDirection: 'column', gap: 4 }}>
+          <Box style={{ width: 48, height: 2, background: '#C9A227' }} />
+          <Box style={{ width: 48, height: 2, background: '#C9A227' }} />
+          <Box style={{ width: 48, height: 2, background: '#C9A227' }} />
+        </Box>
+        <Box style={{ width: 48, height: 2, background: 'linear-gradient(90deg, rgba(251,191,36,0) 0%, #C9A227 100%)' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,28 @@
+<Slide>
+  {/* ending/black-gold/1015 黑金风-奢华致谢：黑底渐变 + 双金环 + 渐变金字 + 双联系卡 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #111827 0%, #000000 50%, #111827 100%)' }}>
+    {/* 装饰光环（同心圆环） */}
+    <Box style={{ position: 'absolute', top: 150, left: 430, width: 420, height: 420, borderRadius: 210, border: '1px solid #C9A227', opacity: 0.5 }} />
+    <Box style={{ position: 'absolute', top: 190, left: 470, width: 340, height: 340, borderRadius: 170, border: '1px solid #D4AF37', opacity: 0.3 }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center', gap: 'lg' }}>
+      {/* 星形装饰降级为小方块 */}
+      <Box style={{ width: 16, height: 16, background: '#D4AF37', opacity: 0.8 }} />
+      <Text style={{ fontSize: 'hero', bold: true, letterSpacing: 2, backgroundClip: 'text', backgroundImage: 'linear-gradient(90deg, #FACC15 0%, #EAB308 50%, #CA8A04 100%)', color: '#EAB308' }}>{/* {{替换：主标题}} */}THANK YOU</Text>
+      {/* 金色分隔线 */}
+      <Box style={{ width: 160, height: 1, background: '#EAB308', opacity: 0.8 }} />
+      <Text style={{ fontSize: 'card', color: '#D4AF37' }}>{/* {{替换：致谢语}} */}感谢您的宝贵时间</Text>
+      {/* 双联系卡（半透明底用深色 hex 双层） */}
+      <Box style={{ flexDirection: 'row', gap: 'xl', marginTop: 'md' }}>
+        <Box style={{ width: 320, padding: 'lg xl', border: '2px solid #D4AF37', background: '#000000' }}>
+          <Text style={{ fontSize: 'label', color: '#EAB308', marginBottom: 'xs' }}>{/* {{替换：标签}} */}联系邮箱</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：联系内容}} */}vip@luxury.com</Text>
+        </Box>
+        <Box style={{ width: 320, padding: 'lg xl', border: '2px solid #D4AF37', background: '#000000' }}>
+          <Text style={{ fontSize: 'label', color: '#EAB308', marginBottom: 'xs' }}>{/* {{替换：标签}} */}联系电话</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：联系内容}} */}400-800-8888</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

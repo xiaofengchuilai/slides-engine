@@ -1,0 +1,44 @@
+<Slide>
+  {/* minimalist/1501 简约两栏：左核心观点+金句，右实施要点(4条编号)+数据来源 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl', flexDirection: 'row', gap: 'xxl' }}>
+    {/* 左栏：核心观点 */}
+    <Box style={{ flex: 1, gap: 'lg' }}>
+      <Box style={{ gap: 'sm' }}>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：标题}} */}核心观点阐述</Text>
+        <Box style={{ height: 2, background: 'line', marginTop: 'sm' }} />
+        <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.7, marginTop: 'md' }}>{/* {{替换：观点段1}} */}在当今快速变化的商业环境中，企业需要建立敏捷的响应机制来应对市场挑战。传统的层级式管理结构正在向扁平化、网络化的组织形态演进。</Text>
+        <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.7, marginTop: 'md' }}>{/* {{替换：观点段2}} */}数字化转型不仅是技术的升级，更是组织文化和思维方式的根本性变革。</Text>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 'md', alignItems: 'stretch', marginTop: 'lg' }}>
+        <Box style={{ width: 4, background: 'muted', borderRadius: 2 }} />
+        <Box style={{ flex: 1, gap: 'sm' }}>
+          <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.7 }}>{/* {{替换：金句}} */}“变革的关键不在于技术本身，而在于人们是否愿意接受新的思维方式和工作模式。”</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：署名}} */}— 彼得·德鲁克</Text>
+        </Box>
+      </Box>
+    </Box>
+    {/* 右栏：实施要点 */}
+    <Box style={{ flex: 1, gap: 'lg' }}>
+      <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{替换：栏标题}} */}实施要点</Text>
+      <Box style={{ gap: 'md' }}>
+        {[
+          '建立跨部门协作机制，打破信息孤岛',
+          '引入敏捷开发方法论，提升响应速度',
+          '投资员工技能培训，构建学习型组织',
+          '建立数据驱动的决策文化和体系',
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', gap: 'md', alignItems: 'flex-start' }}>
+            <Box style={{ width: 32, height: 32, borderRadius: 16, background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{i + 1}</Text>
+            </Box>
+            <Text style={{ flex: 1, fontSize: 'body', color: 'text', lineHeight: 1.7 }}>{/* {{替换：要点}} */}{x}</Text>
+          </Box>
+        ))}
+      </Box>
+      <Box style={{ background: 'cardBg', padding: 'xl', borderRadius: 'sm', border: '1px solid line', gap: 'xs', marginTop: 'lg' }}>
+        <Text style={{ fontSize: 'label', color: 'muted', lineHeight: 1.6 }}>{/* {{替换：数据来源}} */}数据来源：2024年全球数字化转型报告</Text>
+        <Text style={{ fontSize: 'label', color: 'muted', lineHeight: 1.6 }}>{/* {{替换：样本说明}} */}*样本覆盖全球500强企业中的328家</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

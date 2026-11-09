@@ -1,0 +1,21 @@
+<Slide>
+  {/* ending/geometric 1068 箭头装饰结尾：粉黄渐变底 + 四角箭头 + 中心几何框 + 小箭头 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #FA709A 0%, #FEE140 100%)' }}>
+    {/* 四角箭头装饰 */}
+    <Shape type="rightArrow" style={{ position: 'absolute', top: 108, left: 128, width: 80, height: 60, fill: '#FFFFFF', opacity: 0.2 }} />
+    <Shape type="upArrow" style={{ position: 'absolute', top: 360, right: 102, width: 90, height: 70, fill: '#FFFFFF', opacity: 0.18 }} />
+    <Shape type="downArrow" style={{ position: 'absolute', bottom: 86, left: 192, width: 85, height: 65, fill: '#FFFFFF', opacity: 0.22 }} />
+    <Shape type="leftArrow" style={{ position: 'absolute', bottom: 130, right: 154, width: 75, height: 55, fill: '#FFFFFF', opacity: 0.15 }} />
+    {/* 中心几何框（矩形 + 菱形） */}
+    <Box style={{ position: 'absolute', top: '50%', left: '50%', width: 350, height: 280, border: '3px solid #FFFFFF', opacity: 0.35 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: '50%', left: '50%', width: 250, height: 250, line: { color: '#FFFFFF', width: 2 }, opacity: 0.25 }} />
+    {/* 小箭头指示 */}
+    <Shape type="rightArrow" style={{ position: 'absolute', top: 216, left: 320, width: 40, height: 30, fill: '#FFFFFF', opacity: 0.3 }} />
+    <Shape type="upArrow" style={{ position: 'absolute', top: 432, right: 358, width: 45, height: 35, fill: '#FFFFFF', opacity: 0.28 }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: '#FFFFFF', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}谢谢</Text>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', textAlign: 'center' }}>{/* {{副标题}} */}感谢您的耐心聆听</Text>
+    </Box>
+  </Box>
+</Slide>

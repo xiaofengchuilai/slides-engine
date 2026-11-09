@@ -1,0 +1,28 @@
+<Slide>
+  {/* minimalist/1506 发展历程：标题 + 4 节点横向时间线（圆形编号锚点） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl', alignItems: 'center', justifyContent: 'center' }}>
+    <Box style={{ alignItems: 'center', marginBottom: 'xxl' }}>
+      <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{替换：页面标题}} */}发展历程</Text>
+      <Box style={{ width: 128, height: 2, background: '#0F172A', marginTop: 'md' }} />
+    </Box>
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-start', width: '100%' }}>
+      {[
+        ['01', '2018', '公司成立'],
+        ['02', '2020', '首轮融资'],
+        ['03', '2022', '市场领先'],
+        ['04', '2024', '国际化布局'],
+      ].map((n, i) => (
+        <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', flex: 1 }}>
+          <Box style={{ flex: 1, alignItems: 'center' }}>
+            <Box style={{ width: 96, height: 96, borderRadius: 48, background: 'cardBg', border: '1px solid #E2E8F0', alignItems: 'center', justifyContent: 'center', marginBottom: 'md', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+              <Text style={{ fontSize: 32, color: 'text', bold: true }}>{/* {{替换：编号}} */}{n[0]}</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'xs' }}>{/* {{替换：年份}} */}{n[1]}</Text>
+            <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{替换：里程碑事件}} */}{n[2]}</Text>
+          </Box>
+          {i < 3 && <Box style={{ flex: 1, height: 2, background: '#E2E8F0', marginTop: 47 }} />}
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

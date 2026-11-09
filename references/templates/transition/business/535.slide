@@ -1,0 +1,10 @@
+<Slide>
+  {/* transition/business/535 双色分割：全幅深蓝渐变底 + 白字章节（原 clip-path 斜切降级为整幅渐变） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(90deg, #1D4ED8 0%, #312E81 100%)', alignItems: 'center', justifyContent: 'center', padding: '0 48px' }}>
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章标签}} */}第一章</Text>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+      <Text style={{ fontSize: 'body', color: '#BFDBFE', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+    </Box>
+  </Box>
+</Slide>

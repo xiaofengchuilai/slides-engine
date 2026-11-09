@@ -1,0 +1,85 @@
+<Slide>
+  {/* flat/1567 响应式设计：渐变标题 + 三设备示意图(台式/平板/手机) + 特性标签 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #CFFAFE 0%, #DBEAFE 50%, #E0E7FF 100%)', padding: 'xxl xl' }}>
+    <Text style={{ fontSize: 'title', color: 'text', bold: true, textAlign: 'center', marginBottom: 'xl' }}>{/* {{替换：标题}} */}响应式设计</Text>
+    {/* 设备展示区 */}
+    <Box style={{ position: 'relative', flex: 1, marginTop: 'sm' }}>
+      {/* 台式机（左） */}
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 340 }}>
+        <Box style={{ background: '#1F2937', borderRadius: 'lg lg 0 0', padding: 'xs' }}>
+          <Box style={{ background: 'linear-gradient(135deg, #06B6D4 0%, #2563EB 100%)', borderRadius: 'sm', height: 180, padding: 'sm', gap: 'sm' }}>
+            <Box style={{ background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm', padding: 'xs', gap: 'xs' }}>
+              <Box style={{ flexDirection: 'row', gap: 'xs' }}>
+                <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#FFFFFF' }} />
+                <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#FFFFFF' }} />
+                <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#FFFFFF' }} />
+              </Box>
+              <Box style={{ width: '75%', height: 6, background: '#FFFFFF', opacity: 0.6, borderRadius: 3 }} />
+              <Box style={{ width: '50%', height: 6, background: '#FFFFFF', opacity: 0.4, borderRadius: 3 }} />
+            </Box>
+            <Box style={{ flexDirection: 'row', gap: 'xs', flex: 1 }}>
+              <Box style={{ flex: 1, background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm' }} />
+              <Box style={{ flex: 1, background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm' }} />
+              <Box style={{ flex: 1, background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm' }} />
+            </Box>
+          </Box>
+        </Box>
+        <Box style={{ background: '#1F2937', height: 8, borderRadius: '0 0 lg lg' }} />
+        <Box style={{ background: '#374151', height: 4, width: 96, marginLeft: 'auto', marginRight: 'auto', borderRadius: '0 0 sm sm' }} />
+        <Text style={{ fontSize: 'body', color: '#0E7490', bold: true, textAlign: 'center', marginTop: 'xs' }}>{/* {{替换：设备1}} */}Desktop - 灵活</Text>
+      </Box>
+      {/* 平板（中） */}
+      <Box style={{ position: 'absolute', top: 80, left: 380, width: 200 }}>
+        <Box style={{ background: '#1F2937', borderRadius: 'lg', padding: 'xs' }}>
+          <Box style={{ background: 'linear-gradient(135deg, #3B82F6 0%, #4F46E5 100%)', borderRadius: 'sm', height: 200, padding: 'xs', gap: 'xs' }}>
+            <Box style={{ background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm', padding: 'xs', gap: 'xs' }}>
+              <Box style={{ width: '67%', height: 6, background: '#FFFFFF', opacity: 0.6, borderRadius: 3 }} />
+              <Box style={{ width: '50%', height: 6, background: '#FFFFFF', opacity: 0.4, borderRadius: 3 }} />
+            </Box>
+            <Box style={{ flex: 1, gap: 'xs' }}>
+              <Box style={{ flex: 1, background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm' }} />
+              <Box style={{ flex: 1, background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm' }} />
+              <Box style={{ flex: 1, background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm' }} />
+            </Box>
+          </Box>
+        </Box>
+        <Text style={{ fontSize: 'label', color: '#1D4ED8', bold: true, textAlign: 'center', marginTop: 'xs' }}>{/* {{替换：设备2}} */}Tablet - 流畅</Text>
+      </Box>
+      {/* 手机（右） */}
+      <Box style={{ position: 'absolute', top: 40, right: 120, width: 140 }}>
+        <Box style={{ background: '#111827', borderRadius: 'lg', padding: 'xs' }}>
+          <Box style={{ background: '#111827', borderRadius: 'sm sm 0 0', paddingTop: 'xs', alignItems: 'center' }}>
+            <Box style={{ width: 48, height: 4, background: '#374151', borderRadius: 2 }} />
+          </Box>
+          <Box style={{ background: 'linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)', borderRadius: 'sm', height: 220, padding: 'xs', gap: 'xs' }}>
+            <Box style={{ background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm', padding: 'xs', gap: 'xs' }}>
+              <Box style={{ width: '75%', height: 4, background: '#FFFFFF', opacity: 0.6, borderRadius: 2 }} />
+              <Box style={{ width: '50%', height: 4, background: '#FFFFFF', opacity: 0.4, borderRadius: 2 }} />
+            </Box>
+            <Box style={{ flex: 1, gap: 'xs' }}>
+              <Box style={{ flex: 1, background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm' }} />
+              <Box style={{ flex: 1, background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm' }} />
+              <Box style={{ flex: 1, background: '#FFFFFF', opacity: 0.2, borderRadius: 'sm' }} />
+            </Box>
+          </Box>
+          <Box style={{ background: '#111827', borderRadius: '0 0 sm sm', paddingTop: 'xs', alignItems: 'center' }}>
+            <Box style={{ width: 32, height: 32, borderRadius: 16, border: '2px solid #374151' }} />
+          </Box>
+        </Box>
+        <Text style={{ fontSize: 'label', color: '#4338CA', bold: true, textAlign: 'center', marginTop: 'xs' }}>{/* {{替换：设备3}} */}Mobile - 一致</Text>
+      </Box>
+      {/* 特性标签 */}
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, right: 0, flexDirection: 'row', justifyContent: 'center', gap: 'sm' }}>
+        {[
+          ['适配多种设备', '#67E8F9'],
+          ['交互自然顺滑', '#93C5FD'],
+          ['体验保持统一', '#A5B4FC'],
+        ].map((x, i) => (
+          <Box key={i} style={{ background: 'cardBg', borderRadius: 999, padding: 'xs lg', border: '2px solid ' + x[1], boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Text style={{ fontSize: 'label', color: 'text', bold: true }}>{x[0]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

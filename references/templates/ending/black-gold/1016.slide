@@ -1,0 +1,47 @@
+<Slide>
+  {/* ending/black-gold/1016 黑金风-高端简约：纯黑底 + 四角金框 + 金色分隔线 + 居中联系 */}
+  <Box style={{ width: 1280, height: 720, background: '#000000' }}>
+    {/* 金色装饰角（四角 L 形细条） */}
+    <Box style={{ position: 'absolute', top: 40, left: 40, width: 96, height: 96, background: 'transparent' }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 96, height: 4, background: '#EAB308' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 4, height: 96, background: '#EAB308' }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 40, right: 40, width: 96, height: 96, background: 'transparent' }}>
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 96, height: 4, background: '#EAB308' }} />
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 4, height: 96, background: '#EAB308' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 40, left: 40, width: 96, height: 96, background: 'transparent' }}>
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 96, height: 4, background: '#EAB308' }} />
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 4, height: 96, background: '#EAB308' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 40, right: 40, width: 96, height: 96, background: 'transparent' }}>
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 96, height: 4, background: '#EAB308' }} />
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 4, height: 96, background: '#EAB308' }} />
+    </Box>
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, marginBottom: 'lg' }}>{/* {{替换：主标题}} */}谢谢</Text>
+      {/* 金色分隔线 + THANK YOU FOR WATCHING */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 'xl' }}>
+        <Box style={{ width: 64, height: 1, background: '#EAB308' }} />
+        <Text style={{ fontSize: 'card', color: '#D4AF37' }}>THANK YOU FOR WATCHING</Text>
+        <Box style={{ width: 64, height: 1, background: '#EAB308' }} />
+      </Box>
+      {/* 联系信息（图标为彩色 emoji） */}
+      <Box style={{ gap: 'sm', alignItems: 'center' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Emoji name="📧" style={{ width: 16, height: 16 }} />
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：联系内容}} */}premium@elite.com</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Emoji name="📱" style={{ width: 16, height: 16 }} />
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：联系内容}} */}+86 010-6666-8888</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Emoji name="🌐" style={{ width: 16, height: 16 }} />
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：联系内容}} */}www.elite.com</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

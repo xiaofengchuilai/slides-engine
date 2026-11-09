@@ -1,0 +1,19 @@
+<Slide>
+  {/* decorative/flat/2021 扁平风-极简小符号：白底 + 八色简单符号文字网格 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 40 }}>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'kpi', color: '#2563EB' }}>{/* {{替换：箭头符号}} */}→</Text>
+        <Text style={{ fontSize: 'kpi', color: '#16A34A' }}>{/* {{替换：对勾符号}} */}✓</Text>
+        <Text style={{ fontSize: 'kpi', color: '#DC2626' }}>{/* {{替换：加号符号}} */}+</Text>
+        <Text style={{ fontSize: 'kpi', color: '#9333EA' }}>{/* {{替换：叉号符号}} */}×</Text>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'kpi', color: '#EA580C' }}>{/* {{替换：播放符号}} */}▶</Text>
+        <Text style={{ fontSize: 'kpi', color: '#0891B2' }}>{/* {{替换：圆点符号}} */}●</Text>
+        <Text style={{ fontSize: 'kpi', color: '#DB2777' }}>{/* {{替换：方块符号}} */}■</Text>
+        <Text style={{ fontSize: 'kpi', color: '#4F46E5' }}>{/* {{替换：三角符号}} */}▲</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

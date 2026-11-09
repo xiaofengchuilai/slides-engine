@@ -1,0 +1,19 @@
+<Slide>
+  {/* hand-drawn/020 胶带拼贴：琥珀→玫瑰渐变 + 双胶带 + 橙边卡 + 相机图标 */}
+  {/* 背景（琥珀→玫瑰渐变） */}
+  <Box style={{ width: 1280, height: 720, position: 'absolute', top: 0, left: 0, background: 'linear-gradient(135deg, #FFFBEB 0%, #FFF1F2 100%)', justifyContent: 'center', alignItems: 'center' }} />
+  {/* 胶带（左上斜贴） */}
+  <Box style={{ position: 'absolute', top: 32, left: 320, width: 192, height: 48, background: '#FEF08A', opacity: 0.6, rotate: -12 }} />
+  {/* 胶带（右下斜贴） */}
+  <Box style={{ position: 'absolute', bottom: 32, right: 320, width: 192, height: 48, background: '#FBCFE8', opacity: 0.6, rotate: 6 }} />
+  {/* 橙色手绘边卡 */}
+  <RoughBox shape="rect" style={{ width: 640, height: 420, stroke: '#FDBA74', strokeWidth: 3, roughness: 2, fill: '#FFFFFF', fillStyle: 'solid', position: 'absolute', left: 320, top: 150 }} />
+  {/* 顶部胶带（卡上方） */}
+  <Box style={{ position: 'absolute', top: 126, left: 590, width: 100, height: 48, background: '#FCD34D', opacity: 0.7, rotate: -1 }} />
+  {/* 主内容区 */}
+  <Box style={{ position: 'absolute', top: 150, left: 320, width: 640, height: 420, justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+    <Emoji name="📸" style={{ width: 72, height: 72, marginBottom: 'md' }} />
+    <Text style={{ fontSize: 'hero', color: '#111827', bold: true, fontFamily: 'hand', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}旅行手账</Text>
+    <Text style={{ fontSize: 'card', color: '#EA580C', fontFamily: 'hand', textAlign: 'center', marginTop: 'lg' }}>{/* {{副标题}} */}Travel Journal</Text>
+  </Box>
+</Slide>

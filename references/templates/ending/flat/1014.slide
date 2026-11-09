@@ -1,0 +1,23 @@
+<Slide>
+  {/* ending/flat 1014 色块分割结尾：白底 + 上下渐变彩条 + THANK YOU + 联系信息卡 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'bg', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 顶部渐变彩条 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 64, background: 'linear-gradient(90deg, #3B82F6 0%, #A855F7 50%, #EC4899 100%)' }} />
+    {/* 底部渐变彩条 */}
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 64, background: 'linear-gradient(90deg, #3B82F6 0%, #A855F7 50%, #EC4899 100%)' }} />
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 88, color: 'text', bold: true, marginBottom: 'md' }}>{/* {{主标题}} */}THANK YOU</Text>
+      <Text style={{ fontSize: 'card', color: 'text', marginBottom: 'lg' }}>{/* {{副标题}} */}谢谢观看</Text>
+      <Box style={{ flexDirection: 'row', gap: 'lg', maxWidth: 560 }}>
+        <Box style={{ flex: 1, background: '#DBEAFE', borderRadius: 'sm', padding: 'lg' }}>
+          <Text style={{ fontSize: 'body', color: '#2563EB', bold: true, marginBottom: 'xs' }}>{/* {{标签一}} */}Email Address</Text>
+          <Text style={{ fontSize: 'body', color: 'text' }}>{/* {{邮箱}} */}info@design.com</Text>
+        </Box>
+        <Box style={{ flex: 1, background: '#F3E8FF', borderRadius: 'sm', padding: 'lg' }}>
+          <Text style={{ fontSize: 'body', color: '#7E22CE', bold: true, marginBottom: 'xs' }}>{/* {{标签二}} */}Phone Number</Text>
+          <Text style={{ fontSize: 'body', color: 'text' }}>{/* {{电话}} */}+86 138-0000-0000</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,18 @@
+<Slide>
+  {/* cartoon/015 爆炸贴纸：黄橙渐变底 + NEW徽章 + 橙边白卡 + 大标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FEF3C7 0%, #FFEDD5 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* NEW 徽章（右上红圆角标签，旋转 12°） */}
+    <Box style={{ position: 'absolute', top: 96, right: 128, background: '#EF4444', borderRadius: 999, padding: 'md xl', rotate: 12, boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>NEW!</Text>
+    </Box>
+    {/* 爆炸星光装饰（左上/右下黄色多边形，降级为圆角色块） */}
+    <Box style={{ position: 'absolute', top: 128, left: 96, width: 64, height: 64, borderRadius: 16, background: '#FBBF24', opacity: 0.6 }} />
+    <Box style={{ position: 'absolute', bottom: 96, right: 96, width: 56, height: 56, borderRadius: 14, background: '#FBBF24', opacity: 0.6 }} />
+    {/* 主卡 */}
+    <Box style={{ background: '#FFFFFF', borderRadius: 'lg', border: '10px solid #FB923C', padding: 'xxl', alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Emoji name="🎉" style={{ width: 72, height: 72, marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'hero', color: '#EA580C', bold: true, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}儿童节特辑</Text>
+      <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{替换：副标题}} */}Children's Day Special</Text>
+    </Box>
+  </Box>
+</Slide>

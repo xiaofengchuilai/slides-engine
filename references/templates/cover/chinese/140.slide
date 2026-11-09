@@ -1,0 +1,22 @@
+<Slide>
+  {/* chinese/140 诗画交融：米红渐变底 + 印章 + 装饰线 + 大标题 + 副标题 + 诗句 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FBF3E8 0%, #FBEDE8 50%, #FBF3E8 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 印章（红块白字） */}
+    <Box style={{ position: 'absolute', top: 64, right: 96, width: 64, height: 64, background: '#A81810', opacity: 0.8, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>雅</Text>
+    </Box>
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      {/* 装饰线：短线 + 圆点 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', marginBottom: 'xl' }}>
+        <Box style={{ width: 80, height: 2, background: '#7F1D1D' }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#7F1D1D' }} />
+        <Box style={{ width: 80, height: 2, background: '#B45309' }} />
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#78350F', bold: true, letterSpacing: 4, lineHeight: 1.3, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}诗词歌赋</Text>
+      <Text style={{ fontSize: 'card', color: '#92400E', letterSpacing: 3, marginBottom: 'xl' }}>{/* {{替换：副标题}} */}诗以言志·词以抒情</Text>
+      <Text style={{ fontSize: 'body', color: 'rgba(146,64,14,0.7)', marginBottom: 'xxl' }}>{/* {{替换：诗句}} */}笔墨纸砚承古韵 · 诗书画意传新声</Text>
+      <Text style={{ fontSize: 'body', color: '#92400E', letterSpacing: 2 }}>{/* {{替换：落款}} */}文学院 | 诗词大会</Text>
+    </Box>
+  </Box>
+</Slide>

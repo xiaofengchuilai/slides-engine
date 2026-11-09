@@ -1,0 +1,77 @@
+<Slide>
+  {/* minimalist/1615 数据安全体系：标题栏 / 左大图 + 右 2x2 画廊卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 标题栏 */}
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'lg' }}>
+      <Box>
+        <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{标题}} */}数据安全体系</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>Data Security Framework</Text>
+      </Box>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'lg' }}>
+        <Box>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>安全等级</Text>
+          <Text style={{ fontSize: 'kpi', color: 'text', bold: true }}>Level 4</Text>
+        </Box>
+        <Box style={{ width: 64, height: 64, borderRadius: 32, background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true, textAlign: 'center' }}>ISO<br />27001</Text>
+        </Box>
+      </Box>
+    </Box>
+
+    {/* 画廊主体：左大图 + 右 2x2 */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1, alignItems: 'stretch' }}>
+      {/* 左大图（含底部数据标签） */}
+      <Box style={{ flex: 1.2, background: 'cardBg', borderRadius: 'md', padding: 'md', gap: 'sm', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+        {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/encryption.png" style={{ width: 330, height: 200, objectFit: 'cover' }} />
+        <Box style={{ flexDirection: 'row', justifyContent: 'space-between', background: '#FFFFFF', padding: 'md', borderRadius: 'sm', width: '100%' }}>
+          <Box>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>加密强度</Text>
+            <Text style={{ fontSize: 'card', color: 'text', bold: true }}>AES-256</Text>
+          </Box>
+          <Box>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>数据传输</Text>
+            <Text style={{ fontSize: 'card', color: 'text', bold: true }}>TLS 1.3</Text>
+          </Box>
+        </Box>
+      </Box>
+
+      {/* 右 2x2 */}
+      <Box style={{ flex: 1.6, gap: 'md' }}>
+        <Box style={{ flexDirection: 'row', gap: 'md', flex: 1 }}>
+          <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', border: '1px solid #E5E7EB', justifyContent: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs', marginBottom: 'sm' }}>
+              <Box style={{ width: 8, height: 8, borderRadius: 4, background: 'primary' }} />
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>访问控制</Text>
+            </Box>
+            <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>多因素身份认证<br />最小权限原则<br />访问行为审计</Text>
+          </Box>
+          <Box style={{ flex: 1, background: 'primary', borderRadius: 'md', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>99.99%</Text>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.8 }}>数据可用性</Text>
+          </Box>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 'md', flex: 1 }}>
+          <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', border: '1px solid #E5E7EB', justifyContent: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs', marginBottom: 'sm' }}>
+              <Box style={{ width: 8, height: 8, borderRadius: 4, background: 'primary' }} />
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>灾备恢复</Text>
+            </Box>
+            <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>多地域备份<br />自动故障切换<br />RTO &lt; 1小时</Text>
+          </Box>
+          <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+            {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+            <Image src="assets/images/soc.png" style={{ width: 200, height: 120, objectFit: 'cover' }} />
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+
+    {/* 底部条 */}
+    <Box style={{ height: 2, background: '#E5E7EB', marginTop: 'md', marginBottom: 'sm' }} />
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>合规认证：ISO 27001, SOC 2 Type II, GDPR</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>最后安全审计：2024年11月</Text>
+    </Box>
+  </Box>
+</Slide>

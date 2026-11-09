@@ -1,0 +1,39 @@
+<Slide>
+  {/* geometric/1544 层次结构：同心圆系统（3 圈圆环 + 6 层级节点） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F3F4F6 0%, #E2E8F0 100%)', padding: 'xl', alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 'title', color: '#111827', bold: true, textAlign: 'center', marginBottom: 'xs' }}>{/* {{替换：页面标题}} */}层次结构</Text>
+    <Text style={{ fontSize: 'body', color: '#4B5563', textAlign: 'center', marginBottom: 'lg' }}>{/* {{替换：副标题}} */}从核心向外辐射的同心圆设计原理</Text>
+    {/* 同心圆画布 460x460 */}
+    <Box style={{ position: 'relative', width: 460, height: 460 }}>
+      {/* 最外圈圆环 */}
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 460, height: 460, borderRadius: 230, border: '4px solid #C7D2FE' }} />
+      {/* 外圈节点：上/右/下/左 */}
+      <Box style={{ position: 'absolute', top: 0, left: 210, width: 40, height: 40, marginLeft: -20, marginTop: -20, background: 'linear-gradient(135deg, #3B82F6 0%, #06B6D4 100%)', borderRadius: 20, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>6</Text>
+      </Box>
+      <Box style={{ position: 'absolute', top: 190, left: 440, width: 40, height: 40, marginLeft: -20, marginTop: -20, background: 'linear-gradient(135deg, #A855F7 0%, #EC4899 100%)', borderRadius: 20, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>5</Text>
+      </Box>
+      <Box style={{ position: 'absolute', top: 440, left: 210, width: 40, height: 40, marginLeft: -20, marginTop: -20, background: 'linear-gradient(135deg, #F59E0B 0%, #F97316 100%)', borderRadius: 20, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>4</Text>
+      </Box>
+      <Box style={{ position: 'absolute', top: 190, left: 0, width: 40, height: 40, marginLeft: -20, marginTop: -20, background: 'linear-gradient(135deg, #22C55E 0%, #10B981 100%)', borderRadius: 20, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>3</Text>
+      </Box>
+      {/* 中圈圆环 */}
+      <Box style={{ position: 'absolute', top: 60, left: 60, width: 340, height: 340, borderRadius: 170, border: '4px solid #E9D5FF' }} />
+      {/* 中圈节点：右上/左下 */}
+      <Box style={{ position: 'absolute', top: 50, left: 360, width: 36, height: 36, marginLeft: -18, marginTop: -18, background: 'linear-gradient(135deg, #F43F5E 0%, #EF4444 100%)', borderRadius: 18, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>2</Text>
+      </Box>
+      <Box style={{ position: 'absolute', top: 374, left: 74, width: 36, height: 36, marginLeft: -18, marginTop: -18, background: 'linear-gradient(135deg, #14B8A6 0%, #06B6D4 100%)', borderRadius: 18, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>1</Text>
+      </Box>
+      {/* 核心圆 */}
+      <Box style={{ position: 'absolute', top: 150, left: 150, width: 160, height: 160, borderRadius: 80, background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 50%, #DB2777 100%)', border: '4px solid #FFFFFF', alignItems: 'center', justifyContent: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{替换：核心名}} */}核心</Text>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.9 }}>{/* {{替换：核心说明}} */}Core System</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

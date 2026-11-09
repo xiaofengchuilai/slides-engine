@@ -1,0 +1,59 @@
+<Slide>
+  {/* tech/1682 数据安全体系：左大图+安全等级角标，右加密/权限，底部审计数据 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题区 */}
+    <Box style={{ marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{标题}} */}数据安全体系</Text>
+      <Text style={{ fontSize: 18, color: 'muted' }}>{/* {{副题}} */}全方位的数据安全防护能力</Text>
+    </Box>
+
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+      {/* 左侧大区域 */}
+      <Box style={{ width: 480, flexDirection: 'column' }}>
+        <Box style={{ flex: 1, borderRadius: 'md', position: 'relative' }}>
+          {/* {{图片：有图填 assets/images/1682.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1682.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          <Box style={{ position: 'absolute', top: 20, left: 20, background: '#1E293B', opacity: 0.92, padding: 'sm lg', borderRadius: 'md' }}>
+            <Text style={{ fontSize: 'label', color: 'muted', marginBottom: 'xs' }}>安全等级</Text>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{等级}} */}等保三级</Text>
+          </Box>
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6, marginTop: 'md' }}>{/* {{配图说明}} */}通过国家等保三级认证，具备完善的安全管理体系与技术防护能力。</Text>
+      </Box>
+
+      {/* 右侧内容 */}
+      <Box style={{ flex: 1, flexDirection: 'column', gap: 'xl' }}>
+        <Box>
+          <Text style={{ fontSize: 24, color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{小标题}} */}数据加密</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}支持传输加密（TLS 1.3）与存储加密（AES-256），敏感数据自动识别与脱敏处理。</Text>
+        </Box>
+        <Box>
+          <Text style={{ fontSize: 24, color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{小标题}} */}权限管控</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}基于RBAC的细粒度权限控制，支持行列级数据权限，满足最小权限原则。</Text>
+        </Box>
+      </Box>
+    </Box>
+
+    {/* 底部 */}
+    <Box style={{ flexDirection: 'row', paddingTop: 'lg', marginTop: 'lg' }}>
+      <Box style={{ height: 1, width: '100%', background: '#334155', position: 'absolute', top: 0, left: 0 }} />
+      <Box style={{ flex: 1 }}>
+        <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6, marginBottom: 'sm' }}>{/* {{描述}} */}完整的操作审计与风险监控，所有数据访问行为可追溯、可审计。</Text>
+        <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+          {[
+            ['审计日志保留', '180天'],
+            ['安全告警响应', '<5分钟'],
+          ].map((x, i) => (
+            <Box key={i} style={{ alignItems: 'center' }}>
+              <Text style={{ fontSize: 'label', color: 'muted', marginBottom: 'xs' }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

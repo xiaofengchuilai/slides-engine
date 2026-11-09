@@ -1,0 +1,65 @@
+<Slide>
+  {/* educational/1665 修辞手法·比喻拟人：标题 + 双栏对比(比喻句/拟人句) */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Text style={{ fontSize: 'title', color: '#1F2937', bold: true }}>{/* {{替换：标题}} */}修辞手法</Text>
+      <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：副标题}} */}让语言更生动</Text>
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'lg' }}>
+      {/* 比喻句 */}
+      <Box style={{ flex: 1, background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg', gap: 'md' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+          <Box style={{ width: 56, height: 56, background: '#374151', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：标签}} */}比喻</Text>
+          </Box>
+          <Box>
+            <Text style={{ fontSize: 'card', color: '#1F2937', bold: true }}>{/* {{替换：标题}} */}比喻句</Text>
+            <Text style={{ fontSize: 'label', color: '#6B7280' }}>{/* {{替换：说明}} */}用相似的事物来打比方</Text>
+          </Box>
+        </Box>
+        <Box style={{ gap: 'sm' }}>
+          {[
+            ['小草像绿色的地毯。', '本体: 小草 | 比喻词: 像 | 喻体: 地毯'],
+            ['弯弯的月亮好像小船。', '本体: 月亮 | 比喻词: 好像 | 喻体: 小船'],
+            ['她的脸仿佛红苹果。', '本体: 脸 | 比喻词: 仿佛 | 喻体: 苹果'],
+          ].map((x, i) => (
+            <Box key={i} style={{ background: '#F9FAFB', border: '2px solid #9CA3AF', borderRadius: 'sm', padding: 'sm' }}>
+              <Text style={{ fontSize: 'body', color: '#374151', marginBottom: 'xs' }}>{/* {{替换：例句}} */}{x[0]}</Text>
+              <Text style={{ fontSize: 'label', color: '#6B7280' }}>{/* {{替换：解析}} */}{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+        <Box style={{ background: '#F3F4F6', borderRadius: 'sm', padding: 'sm' }}>
+          <Text style={{ fontSize: 'body', color: '#374151', bold: true }}>{/* {{替换：小结}} */}常见比喻词: 像、好像、仿佛、似乎、如同</Text>
+        </Box>
+      </Box>
+      {/* 拟人句 */}
+      <Box style={{ flex: 1, background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg', gap: 'md' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+          <Box style={{ width: 56, height: 56, background: '#4B5563', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：标签}} */}拟人</Text>
+          </Box>
+          <Box>
+            <Text style={{ fontSize: 'card', color: '#1F2937', bold: true }}>{/* {{替换：标题}} */}拟人句</Text>
+            <Text style={{ fontSize: 'label', color: '#6B7280' }}>{/* {{替换：说明}} */}把事物当作人来写</Text>
+          </Box>
+        </Box>
+        <Box style={{ gap: 'sm' }}>
+          {[
+            ['春天来了，小草探出了头。', '赋予小草"探出头"的人类动作'],
+            ['风儿唱着歌，在树林里散步。', '赋予风"唱歌"和"散步"的行为'],
+            ['太阳公公笑眯咪地看着大地。', '赋予太阳"笑"和"看"的表情动作'],
+          ].map((x, i) => (
+            <Box key={i} style={{ background: '#F9FAFB', border: '2px solid #6B7280', borderRadius: 'sm', padding: 'sm' }}>
+              <Text style={{ fontSize: 'body', color: '#374151', marginBottom: 'xs' }}>{/* {{替换：例句}} */}{x[0]}</Text>
+              <Text style={{ fontSize: 'label', color: '#6B7280' }}>{/* {{替换：解析}} */}{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+        <Box style={{ background: '#F3F4F6', borderRadius: 'sm', padding: 'sm' }}>
+          <Text style={{ fontSize: 'body', color: '#374151', bold: true }}>{/* {{替换：小结}} */}要点: 用人的动作、神态、语言来描写事物</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

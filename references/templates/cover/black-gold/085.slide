@@ -1,0 +1,18 @@
+<Slide>
+  {/* black-gold/085 金属质感：深黑渐变底 + 金光线 + 金字标题 + 副标题 + 金线 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #1A1A1A 0%, #0A0A0A 50%, #1A1A1A 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 金色条纹装饰（上/下金线） */}
+    <Box style={{ position: 'absolute', top: 180, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, rgba(234,179,8,0) 0%, #EAB308 50%, rgba(234,179,8,0) 100%)', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', bottom: 180, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, rgba(212,175,55,0) 0%, #D4AF37 50%, rgba(212,175,55,0) 100%)', opacity: 0.3 }} />
+    {/* 左右金竖条 */}
+    <Box style={{ position: 'absolute', top: 240, left: 56, width: 4, height: 192, background: 'linear-gradient(180deg, rgba(234,179,8,0) 0%, #EAB308 50%, rgba(234,179,8,0) 100%)', boxShadow: '0 0 20px rgba(255,215,0,0.5)' }} />
+    <Box style={{ position: 'absolute', top: 240, right: 56, width: 4, height: 192, background: 'linear-gradient(180deg, rgba(234,179,8,0) 0%, #EAB308 50%, rgba(234,179,8,0) 100%)', boxShadow: '0 0 20px rgba(255,215,0,0.5)' }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}名车品鉴盛宴</Text>
+      <Text style={{ fontSize: 'card', color: '#C9A961', marginBottom: 'xl' }}>{/* {{替换：副标题}} */}顶级座驾·卓越性能·尊享驾驭</Text>
+      <Box style={{ width: 160, height: 3, background: 'linear-gradient(90deg, rgba(234,179,8,0) 0%, #EAB308 50%, rgba(234,179,8,0) 100%)', marginBottom: 'xl', boxShadow: '0 0 10px rgba(255,215,0,0.5)' }} />
+      <Text style={{ fontSize: 'body', color: '#9CA3AF' }}>{/* {{替换：落款}} */}汽车事业部 | 新车发布会</Text>
+    </Box>
+  </Box>
+</Slide>

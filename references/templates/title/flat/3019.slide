@@ -1,0 +1,17 @@
+<Slide>
+  {/* title/flat/3019 扁平风-纯色色块：白底 + 蓝色编号块 + 黑字大标题 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 'xl' }}>
+    <Box style={{ height: '100%', justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'stretch', borderRadius: 'sm', background: 'cardBg', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        {/* 蓝色编号块 */}
+        <Box style={{ width: 128, background: 'secondary', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：编号}} */}01</Text>
+        </Box>
+        {/* 标题区 */}
+        <Box style={{ background: 'bg', paddingLeft: 'xl', paddingRight: 'xl', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：主标题}} */}产品设计方法论</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

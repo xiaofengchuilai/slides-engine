@@ -1,0 +1,27 @@
+<Slide>
+  {/* transition/chinese/528 中国风-梅兰竹菊：米灰渐变底 + 四角花点 + 居中章节 + 印章 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF8F3 0%, #E8E4D8 100%)', padding: 48, position: 'relative' }}>
+    {/* 四角花点（梅/兰/竹/菊降级为圆点+线） */}
+    <Box style={{ position: 'absolute', top: 40, left: 40, flexDirection: 'row', gap: 6, opacity: 0.3 }}>
+      <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#C41E3A' }} />
+      <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#C41E3A' }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 40, right: 40, width: 12, height: 12, borderRadius: 6, background: '#d4af37', opacity: 0.3 }} />
+    <Box style={{ position: 'absolute', bottom: 40, left: 40, width: 4, height: 64, background: '#4b5563', borderRadius: 2, opacity: 0.3 }} />
+    <Box style={{ position: 'absolute', bottom: 40, right: 40, flexDirection: 'row', gap: 6, opacity: 0.3 }}>
+      <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#d4af37' }} />
+      <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#4b5563' }} />
+    </Box>
+    {/* 印章（右侧） */}
+    <Box style={{ position: 'absolute', top: 296, right: 48, width: 64, height: 64, background: 'linear-gradient(135deg, #C41E3A 0%, #8B1428 100%)', alignItems: 'center', justifyContent: 'center', opacity: 0.6, rotate: 12 }}>
+      <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>{/* {{印章字}} */}雅</Text>
+    </Box>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'card', color: '#8b4513', letterSpacing: 8, fontFamily: 'serif', marginBottom: 24 }}>{/* {{替换：章序号}} */}第一章</Text>
+        <Text style={{ fontSize: 'title', color: '#2d2d2d', bold: true, letterSpacing: 4, fontFamily: 'serif', marginBottom: 24 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#666666', fontFamily: 'serif' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

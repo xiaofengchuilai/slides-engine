@@ -1,0 +1,30 @@
+<Slide>
+  {/* content/argument：论点 + 3-4 论据（左大锚点 + 右论据列表） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: '56px 80px' }}>
+    {/* A 区标题：完整结论句 */}
+    <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：完整结论句标题}} */}聚焦核心业务是增长的最优解</Text>
+    <Box style={{ flexDirection: 'row', flex: 1, marginTop: 32, gap: 48 }}>
+      {/* 左：大锚点（巨型数字/结论词） */}
+      <Box style={{ width: 360, background: 'primary', borderRadius: 16, padding: '40px 30px', justifyContent: 'center', alignItems: 'center' }}>
+        <Text style={{ fontSize: 96, color: 'accent', bold: true, lineHeight: 1 }}>{/* {{替换：核心数字}} */}80%</Text>
+        <Text style={{ fontSize: 20, color: '#FFFFFF', lineHeight: 1.5, marginTop: 16, textAlign: 'center' }}>{/* {{替换：数字含义}} */}增长来自关键决策</Text>
+      </Box>
+      {/* 右：论据列表 */}
+      <Box style={{ flex: 1, justifyContent: 'center', gap: 20 }}>
+        {[
+          { no: '01', title: '资源有限，聚焦才能穿透', body: '集中资源在核心产品，比平均用力更容易建立壁垒。' },
+          { no: '02', title: '复利来自持续深耕', body: '同一领域的长期投入，才能积累不可替代的经验与口碑。' },
+          { no: '03', title: '决策成本随复杂度上升', body: '业务越聚焦，决策链条越短，响应市场越快。' },
+        ].map((item, i) => (
+          <Box key={i} style={{ flexDirection: 'row', gap: 16, alignItems: 'flex-start' }}>
+            <Text style={{ fontSize: 'card', color: 'accent', bold: true, width: 44 }}>{item.no}</Text>
+            <Box style={{ flex: 1 }}>
+              <Text style={{ fontSize: 20, color: 'text', bold: true }}>{/* {{替换：论据标题}} */}{item.title}</Text>
+              <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6, marginTop: 4 }}>{/* {{替换：论据正文}} */}{item.body}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

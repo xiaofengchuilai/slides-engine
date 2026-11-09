@@ -1,0 +1,30 @@
+<Slide>
+  {/* ending/geometric 1010 抽象图形结尾：深靛紫渐变底 + 六边形大图形 + 联系信息卡 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #312E81 0%, #581C87 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 背景大六边形（淡色） */}
+    <Shape type="hexagon" style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, fill: '#818CF8', opacity: 0.18 }} />
+    {/* 主内容 */}
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 88, color: '#FFFFFF', bold: true, marginBottom: 'xl' }}>{/* {{主标题}} */}THANK YOU</Text>
+      {/* 分隔装饰：线-方块-圆-方块-线 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xl' }}>
+        <Box style={{ width: 56, height: 4, background: 'linear-gradient(90deg, rgba(192,132,252,0) 0%, #A78BFA 100%)' }} />
+        <Shape type="diamond" style={{ width: 12, height: 12, fill: '#A78BFA' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#F472B6' }} />
+        <Box style={{ width: 12, height: 12, background: '#60A5FA' }} />
+        <Box style={{ width: 56, height: 4, background: 'linear-gradient(270deg, rgba(96,165,250,0) 0%, #60A5FA 100%)' }} />
+      </Box>
+      {/* 联系信息双卡 */}
+      <Box style={{ flexDirection: 'row', gap: 'xl', maxWidth: 640 }}>
+        <Box style={{ flex: 1, background: 'rgba(0,0,0,0.3)', border: '2px solid #C084FC', borderRadius: 'sm', padding: 'lg' }}>
+          <Text style={{ fontSize: 'label', color: '#C084FC', marginBottom: 'xs' }}>{/* {{标签一}} */}Contact Email</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{邮箱}} */}contact@creative.com</Text>
+        </Box>
+        <Box style={{ flex: 1, background: 'rgba(0,0,0,0.3)', border: '2px solid #F472B6', borderRadius: 'sm', padding: 'lg' }}>
+          <Text style={{ fontSize: 'label', color: '#F472B6', marginBottom: 'xs' }}>{/* {{标签二}} */}Contact Phone</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{电话}} */}400-123-4567</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

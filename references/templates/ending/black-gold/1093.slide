@@ -1,0 +1,21 @@
+<Slide>
+  {/* ending/black-gold/1093 黑金风-金色丝带：深灰渐变 + 金色丝带曲线 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #1E293B 0%, #334155 50%, #1E293B 100%)' }}>
+    {/* 金色丝带装饰（降级为曲线/斜线） */}
+    <Shape type="line" style={{ width: 400, height: 0, position: 'absolute', top: 90, left: 0, line: { color: '#D4AF37', width: 14 }, rotate: -8, opacity: 0.6 }} />
+    <Shape type="line" style={{ width: 400, height: 0, position: 'absolute', top: 90, left: 0, line: { color: '#FFD700', width: 6 }, rotate: -8, opacity: 0.4 }} />
+    <Shape type="line" style={{ width: 400, height: 0, position: 'absolute', bottom: 90, right: 0, line: { color: '#D4AF37', width: 14 }, rotate: 8, opacity: 0.6 }} />
+    <Shape type="line" style={{ width: 400, height: 0, position: 'absolute', bottom: 90, right: 0, line: { color: '#FFD700', width: 6 }, rotate: 8, opacity: 0.4 }} />
+    {/* 金色飘带细节（小斜块 + 阴影） */}
+    <Box style={{ position: 'absolute', top: 200, right: 165, width: 60, height: 28, background: '#D4AF37', opacity: 0.4, boxShadow: '0 5px 20px rgba(255,215,0,0.3)' }} />
+    <Box style={{ position: 'absolute', bottom: 240, left: 205, width: 60, height: 28, background: '#DAA520', opacity: 0.35, boxShadow: '0 5px 20px rgba(212,175,55,0.3)' }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#EAB308', bold: true, marginBottom: 'md' }}>{/* {{替换：主标题}} */}谢谢观看</Text>
+      <Text style={{ fontSize: 'title', color: '#D4AF37' }}>{/* {{替换：致谢语}} */}期待您的宝贵意见</Text>
+    </Box>
+    {/* 金色亮点 */}
+    <Box style={{ position: 'absolute', top: 165, left: 230, width: 8, height: 8, borderRadius: 4, background: '#EAB308', opacity: 0.85 }} />
+    <Box style={{ position: 'absolute', bottom: 200, right: 295, width: 10, height: 10, borderRadius: 5, background: '#D4AF37', opacity: 0.8 }} />
+  </Box>
+</Slide>

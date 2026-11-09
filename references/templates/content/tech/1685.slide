@@ -1,0 +1,77 @@
+<Slide>
+  {/* tech/1685 产品竞争优势：两行（图+文+侧卡）+ 底部客户认可数据 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题区 */}
+    <Box style={{ marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{标题}} */}产品竞争优势</Text>
+      <Box style={{ width: 128, height: 4, background: 'secondary' }} />
+    </Box>
+
+    <Box style={{ flex: 1, flexDirection: 'column', gap: 'lg' }}>
+      {/* 第一行 */}
+      <Box style={{ flex: 1, flexDirection: 'row', alignItems: 'flex-start', gap: 'xl' }}>
+        <Box style={{ width: 600, flexDirection: 'row', gap: 'lg', alignItems: 'center' }}>
+          <Box style={{ width: 220, height: 160, borderRadius: 'md', position: 'relative' }}>
+            {/* {{图片：有图填 assets/images/1685a.png，无图删掉整个 <Image>}} */}
+            <Image src="assets/images/1685a.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <Box style={{ position: 'absolute', top: 12, right: 12, background: '#1E293B', opacity: 0.9, padding: 'xs sm', borderRadius: 'sm' }}>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{角标}} */}10x性能</Text>
+            </Box>
+          </Box>
+          <Box style={{ flex: 1 }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{优势名}} */}卓越性能</Text>
+            <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}基于自研计算引擎，查询性能相比开源方案提升10倍，支持PB级数据秒级响应。</Text>
+          </Box>
+        </Box>
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{优势名}} */}极简运维</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{描述}} */}全托管服务，无需关注底层基础设施，专注业务价值创造，运维成本降低80%。</Text>
+        </Box>
+      </Box>
+
+      {/* 第二行 */}
+      <Box style={{ flex: 1, flexDirection: 'row', alignItems: 'flex-start', gap: 'xl' }}>
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{优势名}} */}弹性扩展</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6, textAlign: 'right' }}>{/* {{描述}} */}按需使用，秒级扩缩容，业务高峰期自动扩展资源，低谷期自动释放，成本优化30%。</Text>
+        </Box>
+        <Box style={{ width: 600, flexDirection: 'row', gap: 'lg', alignItems: 'center' }}>
+          <Box style={{ flex: 1 }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{优势名}} */}开放生态</Text>
+            <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}全面兼容主流开源标准，支持SQL、Python、Spark等多种开发方式，无缝对接现有技术栈。</Text>
+          </Box>
+          <Box style={{ width: 220, height: 160, borderRadius: 'md', position: 'relative' }}>
+            {/* {{图片：有图填 assets/images/1685b.png，无图删掉整个 <Image>}} */}
+            <Image src="assets/images/1685b.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <Box style={{ position: 'absolute', top: 12, left: 12, background: '#1E293B', opacity: 0.9, padding: 'xs sm', borderRadius: 'sm' }}>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{角标}} */}100%兼容</Text>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+
+      {/* 底部数据 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', paddingTop: 'md' }}>
+        <Box style={{ height: 1, width: '100%', background: '#334155', position: 'absolute', top: 0, left: 0 }} />
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 24, color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{小标题}} */}客户认可</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}已服务500+企业客户，覆盖金融、零售、制造等多个行业，客户满意度达98%。</Text>
+        </Box>
+        <Box style={{ width: 240, flexDirection: 'row', gap: 'sm' }}>
+          {[
+            ['客户数量', '500+'],
+            ['满意度', '98%'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flex: 1, alignItems: 'center', padding: 'md', background: 'cardBg', borderRadius: 'md' }}>
+              <Text style={{ fontSize: 'label', color: 'muted', marginBottom: 'xs' }}>{x[0]}</Text>
+              <Text style={{ fontSize: 32, color: '#FFFFFF', bold: true }}>{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

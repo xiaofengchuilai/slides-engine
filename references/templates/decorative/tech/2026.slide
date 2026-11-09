@@ -1,0 +1,53 @@
+<Slide>
+  {/* decorative/tech/2026 科技风-电路小纹路：黑底 + 电路折线/节点/方框装饰 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center', gap: 32 }}>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        {/* 电路折线 */}
+        <Box style={{ width: 120, height: 60, position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 30, left: 0, width: 40, height: 2, background: '#22d3ee' }} />
+          <Box style={{ position: 'absolute', top: 0, left: 40, width: 2, height: 60, background: '#22d3ee' }} />
+          <Box style={{ position: 'absolute', top: 30, left: 40, width: 40, height: 2, background: '#22d3ee' }} />
+          <Box style={{ position: 'absolute', top: 26, left: 36, width: 8, height: 8, borderRadius: 4, background: '#22d3ee' }} />
+        </Box>
+        {/* 十字节点 */}
+        <Box style={{ width: 48, height: 48, position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 23, left: 0, width: 48, height: 2, background: 'rgba(59,130,246,0.5)' }} />
+          <Box style={{ position: 'absolute', top: 0, left: 23, width: 2, height: 48, background: 'rgba(59,130,246,0.5)' }} />
+          <Box style={{ position: 'absolute', top: 18, left: 18, width: 12, height: 12, borderRadius: 6, background: '#3b82f6' }} />
+        </Box>
+        {/* 三格线 */}
+        <Box style={{ flexDirection: 'row', gap: 4, alignItems: 'center' }}>
+          <Box style={{ width: 8, height: 8, border: '1px solid #22d3ee' }} />
+          <Box style={{ width: 8, height: 1, background: '#22d3ee' }} />
+          <Box style={{ width: 8, height: 8, border: '1px solid #22d3ee' }} />
+        </Box>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        {/* 方框带引脚 */}
+        <Box style={{ width: 48, height: 48, border: '2px solid #8b5cf6', position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 0, left: 22, width: 2, height: 12, background: '#8b5cf6' }} />
+          <Box style={{ position: 'absolute', bottom: 0, left: 22, width: 2, height: 12, background: '#8b5cf6' }} />
+          <Box style={{ position: 'absolute', left: 0, top: 22, width: 12, height: 2, background: '#8b5cf6' }} />
+          <Box style={{ position: 'absolute', right: 0, top: 22, width: 12, height: 2, background: '#8b5cf6' }} />
+        </Box>
+        {/* 节点链 */}
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+          <Box style={{ width: 8, height: 8, background: '#22d3ee' }} />
+          <Box style={{ width: 16, height: 1, background: '#22d3ee' }} />
+          <Box style={{ width: 8, height: 8, background: '#3b82f6' }} />
+          <Box style={{ width: 16, height: 1, background: '#3b82f6' }} />
+          <Box style={{ width: 8, height: 8, background: '#a855f7' }} />
+        </Box>
+        {/* 折线 */}
+        <Box style={{ width: 96, height: 48, position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 24, left: 0, width: 24, height: 2, background: '#22d3ee' }} />
+          <Box style={{ position: 'absolute', top: 12, left: 24, width: 2, height: 24, background: '#22d3ee' }} />
+          <Box style={{ position: 'absolute', top: 12, left: 24, width: 24, height: 2, background: '#22d3ee' }} />
+          <Box style={{ position: 'absolute', top: 12, left: 48, width: 2, height: 24, background: '#22d3ee' }} />
+          <Box style={{ position: 'absolute', top: 24, left: 48, width: 24, height: 2, background: '#22d3ee' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

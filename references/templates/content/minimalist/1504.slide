@@ -1,0 +1,32 @@
+<Slide>
+  {/* minimalist/1504 关键指标：左竖标题 + 右4组大数字指标 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl', flexDirection: 'row' }}>
+    <Box style={{ width: 380, justifyContent: 'center', gap: 'lg', paddingRight: 'xxl' }}>
+      <Box style={{ gap: 0 }}>
+        <Text style={{ fontSize: 'title', color: 'text', lineHeight: 1.1 }}>{/* {{替换：标题行1}} */}关键</Text>
+        <Text style={{ fontSize: 'title', color: 'text', lineHeight: 1.1 }}>{/* {{替换：标题行2}} */}指标</Text>
+      </Box>
+      <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.7 }}>{/* {{替换：说明}} */}通过数据驱动的方式，持续优化产品体验与业务效率</Text>
+    </Box>
+    <Box style={{ width: 1, background: 'line' }} />
+    <Box style={{ flex: 1, paddingLeft: 'xxl', justifyContent: 'center', gap: 'lg' }}>
+      {[
+        { num: '85%', title: '用户满意度提升', desc: '较上季度增长12个百分点' },
+        { num: '3.2x', title: '转化率优化', desc: '通过A/B测试验证' },
+        { num: '60%', title: '成本降低', desc: '自动化流程优化结果' },
+        { num: '24/7', title: '服务可用性', desc: '全年无故障运行' },
+      ].map((x, i) => (
+        <Box key={i} style={{ gap: 'md' }}>
+          {i > 0 && <Box style={{ height: 1, background: 'line', marginBottom: 'md' }} />}
+          <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 'md' }}>
+            <Text style={{ fontSize: 'kpi', color: 'text', bold: true, width: 140, lineHeight: 1 }}>{/* {{替换：指标值}} */}{x.num}</Text>
+            <Box style={{ flex: 1, gap: 'xs' }}>
+              <Text style={{ fontSize: 'card', color: 'text' }}>{/* {{替换：指标名}} */}{x.title}</Text>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：指标说明}} */}{x.desc}</Text>
+            </Box>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,24 @@
+<Slide>
+  {/* content/data：数据标题 + 4-6 指标卡（大数字锚点） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: '56px 80px' }}>
+    <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：数据标题（结论句）}} */}全年营收突破 2.8 亿</Text>
+    <Text style={{ fontSize: 'label', color: 'muted', marginTop: 6 }}>{/* {{替换：数据说明一句}} */}同比增长 35%，核心业务贡献 72%</Text>
+    {/* 4 指标卡 */}
+    <Box style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 20, marginTop: 40 }}>
+      {[
+        { num: '2.8亿', label: '年度营收', trend: '+35%' },
+        { num: '120万', label: '活跃用户', trend: '+52%' },
+        { num: '4.6', label: '客户留存', trend: '↑0.8' },
+        { num: '18个', label: '新增客户', trend: '+6' },
+      ].map((k, i) => (
+        <Box key={i} style={{ width: 548, height: 150, borderRadius: 16, background: 'cardBg', padding: '22px 24px', justifyContent: 'space-between' }}>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：指标名}} */}{k.label}</Text>
+          <Box style={{ flexDirection: 'row', alignItems: 'baseline', justifyContent: 'space-between' }}>
+            <Text style={{ fontSize: 'kpi', color: 'primary', bold: true, lineHeight: 1 }}>{/* {{替换：指标数值}} */}{k.num}</Text>
+            <Text style={{ fontSize: 'card', color: 'accent', bold: true }}>{/* {{替换：同比/趋势}} */}{k.trend}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,21 @@
+<Slide>
+  {/* minimalist/1020 线框装饰：居中边框 + 四角装饰线 + 居中小标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'cardBg' }}>
+    {/* 居中边框（四边等宽） */}
+    <Box style={{ position: 'absolute', top: 50, left: 50, width: 1180, height: 620, border: '2px solid #D1D5DB' }} />
+    {/* 四角装饰：各由两根细线拼成 L 形（绝对定位） */}
+    <Box style={{ position: 'absolute', top: 40, left: 40, width: 3, height: 35, background: 'text' }} />
+    <Box style={{ position: 'absolute', top: 40, left: 40, width: 35, height: 3, background: 'text' }} />
+    <Box style={{ position: 'absolute', top: 40, right: 40, width: 3, height: 35, background: 'text' }} />
+    <Box style={{ position: 'absolute', top: 40, right: 40, width: 35, height: 3, background: 'text' }} />
+    <Box style={{ position: 'absolute', bottom: 40, left: 40, width: 3, height: 35, background: 'text' }} />
+    <Box style={{ position: 'absolute', bottom: 40, left: 40, width: 35, height: 3, background: 'text' }} />
+    <Box style={{ position: 'absolute', bottom: 40, right: 40, width: 3, height: 35, background: 'text' }} />
+    <Box style={{ position: 'absolute', bottom: 40, right: 40, width: 35, height: 3, background: 'text' }} />
+    {/* 中央内容 */}
+    <Box style={{ height: 720, alignItems: 'center', justifyContent: 'center', gap: 'md' }}>
+      <Text style={{ fontSize: 'title', color: 'text', letterSpacing: 4 }}>{/* {{替换：致谢标题}} */}感谢聆听</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{替换：副文}} */}期待与您再次相见</Text>
+    </Box>
+  </Box>
+</Slide>

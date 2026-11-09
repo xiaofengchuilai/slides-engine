@@ -1,0 +1,35 @@
+<Slide>
+  {/* cover/flat 068 彩虹条带封面：上下七彩条 + 中央标题 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'bg', justifyContent: 'space-between' }}>
+    {/* 顶部七彩条 */}
+    <Box style={{ flexDirection: 'row', height: 24 }}>
+      <Box style={{ flex: 1, background: '#EF4444' }} />
+      <Box style={{ flex: 1, background: '#F97316' }} />
+      <Box style={{ flex: 1, background: '#EAB308' }} />
+      <Box style={{ flex: 1, background: '#22C55E' }} />
+      <Box style={{ flex: 1, background: '#3B82F6' }} />
+      <Box style={{ flex: 1, background: '#6366F1' }} />
+      <Box style={{ flex: 1, background: '#A855F7' }} />
+    </Box>
+    {/* 中央内容 */}
+    <Box style={{ alignItems: 'center', padding: '0 xl' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'xxl', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}创意工作坊</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', marginBottom: 'xxl', textAlign: 'center' }}>{/* {{副标题}} */}激发灵感·碰撞创意·共创未来</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        <Text style={{ fontSize: 'card', color: 'text' }}>{/* {{落款一}} */}创新实验室</Text>
+        <Text style={{ fontSize: 'body', color: 'text', opacity: 0.5 }}>·</Text>
+        <Text style={{ fontSize: 'card', color: 'text' }}>{/* {{落款二}} */}团队共创活动</Text>
+      </Box>
+    </Box>
+    {/* 底部七彩条（反向） */}
+    <Box style={{ flexDirection: 'row', height: 24 }}>
+      <Box style={{ flex: 1, background: '#A855F7' }} />
+      <Box style={{ flex: 1, background: '#6366F1' }} />
+      <Box style={{ flex: 1, background: '#3B82F6' }} />
+      <Box style={{ flex: 1, background: '#22C55E' }} />
+      <Box style={{ flex: 1, background: '#EAB308' }} />
+      <Box style={{ flex: 1, background: '#F97316' }} />
+      <Box style={{ flex: 1, background: '#EF4444' }} />
+    </Box>
+  </Box>
+</Slide>

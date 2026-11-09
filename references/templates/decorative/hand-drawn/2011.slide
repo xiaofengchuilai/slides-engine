@@ -1,0 +1,27 @@
+<Slide>
+  {/* decorative/hand-drawn/2011 淡彩小墨迹：浅底 + 低透明度彩色圆角墨点/墨条（blur 降级为透明度） */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #FAFAF9 0%, #F5F5F4 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', alignItems: 'center', gap: 'xxl' }}>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center' }}>
+        {/* 琥珀色墨点 */}
+        <Box style={{ width: 48, height: 48, borderRadius: 24, background: '#FDE68A', opacity: 0.6 }} />
+        {/* 蓝色椭圆墨点 */}
+        <Box style={{ width: 64, height: 44, borderRadius: 22, background: '#BFDBFE', opacity: 0.5 }} />
+        {/* 粉色竖墨点 */}
+        <Box style={{ width: 44, height: 64, borderRadius: 10, background: '#FBCFE8', opacity: 0.6 }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center' }}>
+        {/* 绿色墨点 */}
+        <Box style={{ width: 48, height: 48, borderRadius: 24, background: '#BBF7D0', opacity: 0.5 }} />
+        {/* 紫色渐变墨条（径向降级为线性） */}
+        <Box style={{ width: 72, height: 18, borderRadius: 9, background: 'linear-gradient(90deg, #DDD6FE 0%, rgba(221,214,254,0) 100%)', opacity: 0.6 }} />
+        {/* 黄色递减圆点组 */}
+        <Box style={{ flexDirection: 'row', gap: 10, alignItems: 'center' }}>
+          <Box style={{ width: 20, height: 20, borderRadius: 10, background: '#FEF08A', opacity: 0.6 }} />
+          <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#FEF08A', opacity: 0.5 }} />
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#FEF08A', opacity: 0.4 }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,36 @@
+<Slide>
+  {/* cover/business/043 商务风-深蓝高端：深底 + 斜纹网格装饰 + 居中胶囊标签/巨标题/分隔线/英文副标 */}
+  <Box style={{ height: 720, width: 1280, background: '#0F172A', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 斜纹网格装饰降级为画布内竖线纹理（细线不能 rotate，用阵列模拟质感） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, opacity: 0.05 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 60, width: 2, height: 720, background: '#334155' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 180, width: 2, height: 720, background: '#334155' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 300, width: 2, height: 720, background: '#334155' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 420, width: 2, height: 720, background: '#334155' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 540, width: 2, height: 720, background: '#334155' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 660, width: 2, height: 720, background: '#334155' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 780, width: 2, height: 720, background: '#334155' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 900, width: 2, height: 720, background: '#334155' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 1020, width: 2, height: 720, background: '#334155' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 1140, width: 2, height: 720, background: '#334155' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 1260, width: 2, height: 720, background: '#334155' }} />
+    </Box>
+    {/* 右下大圆装饰（画布内） */}
+    <Box style={{ position: 'absolute', right: 40, bottom: 40, width: 320, height: 320, borderRadius: 160, background: '#1E3A8A', opacity: 0.2 }} />
+    {/* 内容区（相对 z-10，位于装饰之上） */}
+    <Box style={{ alignItems: 'center', maxWidth: 1100, padding: '0 96px' }}>
+      {/* 胶囊标签：描边圆角 */}
+      <Box style={{ border: '2px solid #3B82F6', borderRadius: 24, padding: '12px 40px', marginBottom: 48, opacity: 0.85 }}>
+        <Text style={{ fontSize: 16, color: '#60A5FA', bold: true, letterSpacing: 4 }}>{/* {{替换：顶部标签}} */}CORPORATE STRATEGY</Text>
+      </Box>
+      <Text style={{ fontSize: 88, color: '#FFFFFF', bold: true, lineHeight: 1.1, marginBottom: 40, textAlign: 'center' }}>{/* {{替换：主标题}} */}数字化转型战略</Text>
+      {/* 分隔线：两侧短线 + 中间圆点 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'lg', marginBottom: 48 }}>
+        <Box style={{ width: 112, height: 2, background: '#3B82F6', opacity: 0.6 }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#3B82F6' }} />
+        <Box style={{ width: 112, height: 2, background: '#3B82F6', opacity: 0.6 }} />
+      </Box>
+      <Text style={{ fontSize: 24, color: '#9CA3AF', fontWeight: 300, letterSpacing: 2 }}>{/* {{替换：英文副标题}} */}Digital Transformation Strategy 2025</Text>
+    </Box>
+  </Box>
+</Slide>

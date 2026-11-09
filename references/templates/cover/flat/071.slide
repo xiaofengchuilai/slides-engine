@@ -1,0 +1,14 @@
+<Slide>
+  {/* cover/flat 071 紫粉渐变封面：全屏渐变 + 居中标题 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #A855F7 0%, #EC4899 100%)', alignItems: 'center', justifyContent: 'center', padding: 'xl' }}>
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xxl', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}内容营销策略</Text>
+      <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.9, marginBottom: 'xxl', textAlign: 'center' }}>{/* {{副标题}} */}优质内容·精准触达·深度连接</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF' }}>{/* {{落款一}} */}内容运营部</Text>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF' }}>·</Text>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF' }}>{/* {{落款二}} */}营销策略分享</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

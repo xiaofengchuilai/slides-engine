@@ -1,0 +1,45 @@
+<Slide>
+  {/* tech/3577 科技风-神经网络：紫黑渐变底 + 紫色渐变标题 + 左右分栏章节列表 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #1a0033 0%, #0d001a 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Box style={{ marginBottom: 32 }}>
+        <Text style={{ fontSize: 'title', color: '#c084fc', bold: true, letterSpacing: 2 }}>{/* {{标题}} */}NEURAL NETWORK</Text>
+        <Box style={{ flexDirection: 'row', gap: 12, marginTop: 16 }}>
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#a855f7' }} />
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#d946ef' }} />
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#ec4899' }} />
+        </Box>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 32 }}>
+        <Box style={{ flex: 1, gap: 20 }}>
+          {[
+            ['01', '项目背景', '了解项目的起源与目标'],
+            ['02', '核心功能', '产品的主要功能介绍'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', gap: 16, alignItems: 'center', border: '1px solid rgba(168,85,247,0.3)', background: 'rgba(168,85,247,0.05)', padding: 20 }}>
+              <Text style={{ fontSize: 'kpi', color: '#c084fc', bold: true, width: 64 }}>{/* {{章节编号}} */}{x[0]}</Text>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'card', color: '#e9d5ff', bold: true, marginBottom: 4 }}>{/* {{章节名}} */}{x[1]}</Text>
+                <Text style={{ fontSize: 'body', color: '#c084fc' }}>{/* {{章节副标题}} */}{x[2]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+        <Box style={{ flex: 1, gap: 20 }}>
+          {[
+            ['03', '技术架构', '系统设计与技术选型'],
+            ['04', '实施计划', '项目的推进与时间安排'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', gap: 16, alignItems: 'center', border: '1px solid rgba(168,85,247,0.3)', background: 'rgba(168,85,247,0.05)', padding: 20 }}>
+              <Text style={{ fontSize: 'kpi', color: '#c084fc', bold: true, width: 64 }}>{/* {{章节编号}} */}{x[0]}</Text>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'card', color: '#e9d5ff', bold: true, marginBottom: 4 }}>{/* {{章节名}} */}{x[1]}</Text>
+                <Text style={{ fontSize: 'body', color: '#c084fc' }}>{/* {{章节副标题}} */}{x[2]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

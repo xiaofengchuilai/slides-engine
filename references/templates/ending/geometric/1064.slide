@@ -1,0 +1,21 @@
+<Slide>
+  {/* ending/geometric 1064 五边形装饰结尾：粉白渐变底 + 五边形 + 中心五边形框 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #FF9A9E 0%, #FECFEF 50%, #FFD1FF 100%)' }}>
+    {/* 五边形装饰 */}
+    <Shape type="pentagon" style={{ position: 'absolute', top: 72, left: 102, width: 100, height: 100, fill: '#FFFFFF', opacity: 0.15 }} />
+    <Shape type="pentagon" style={{ position: 'absolute', top: 432, right: 128, width: 120, height: 120, fill: '#FFFFFF', opacity: 0.12 }} />
+    <Shape type="pentagon" style={{ position: 'absolute', bottom: 58, left: 192, width: 90, height: 90, fill: '#FFFFFF', opacity: 0.18 }} />
+    {/* 中心五边形框 */}
+    <Shape type="pentagon" style={{ position: 'absolute', top: '50%', left: '50%', width: 250, height: 250, fill: '#FFFFFF', opacity: 0.08 }} />
+    <Shape type="pentagon" style={{ position: 'absolute', top: '50%', left: '50%', width: 250, height: 250, line: { color: '#FFFFFF', width: 3 }, opacity: 0.35 }} />
+    {/* 小五边形装饰 */}
+    <Shape type="pentagon" style={{ position: 'absolute', top: 216, left: 256, width: 50, height: 50, fill: '#FFFFFF', opacity: 0.22 }} />
+    <Shape type="pentagon" style={{ position: 'absolute', top: 288, right: 320, width: 60, height: 60, fill: '#FFFFFF', opacity: 0.2 }} />
+    <Shape type="pentagon" style={{ position: 'absolute', bottom: 180, left: 384, width: 55, height: 55, fill: '#FFFFFF', opacity: 0.25 }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: '#FFFFFF', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}感谢</Text>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', textAlign: 'center' }}>{/* {{副标题}} */}感谢您的聆听与关注</Text>
+    </Box>
+  </Box>
+</Slide>

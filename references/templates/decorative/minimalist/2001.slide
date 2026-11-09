@@ -1,0 +1,17 @@
+<Slide>
+  {/* decorative/minimalist/2001 简约风-细线条小几何：白底 + 灰细线圆/方/三角/六边形元素网格 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 40 }}>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 64, height: 64, borderRadius: 32, border: '1px solid #D1D5DB' }} />
+        <Box style={{ width: 64, height: 64, border: '1px solid #D1D5DB', rotate: 45 }} />
+        <Shape type="triangle" style={{ width: 64, height: 64, line: { color: '#D1D5DB', width: 1 } }} />
+        <Shape type="diamond" style={{ width: 64, height: 64, line: { color: '#D1D5DB', width: 1 } }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        <Shape type="hexagon" style={{ width: 64, height: 64, line: { color: '#D1D5DB', width: 2 } }} />
+        <Box style={{ width: 48, height: 48, borderRadius: 24, border: '2px solid #D1D5DB' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

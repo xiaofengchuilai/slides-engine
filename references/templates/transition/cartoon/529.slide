@@ -1,0 +1,21 @@
+<Slide>
+  {/* transition/cartoon/529 卡通风-气球标题：粉紫蓝渐变底 + 气球装饰 + 白卡章节块 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FCE7F3 0%, #EDE9FE 50%, #DBEAFE 100%)', padding: 48, position: 'relative' }}>
+    {/* 气球装饰 */}
+    <Emoji name="🎈" style={{ position: 'absolute', top: 16, left: 40, width: 40, height: 48 }} />
+    <Emoji name="🎈" style={{ position: 'absolute', top: 32, right: 64, width: 32, height: 40 }} />
+    <Emoji name="🎈" style={{ position: 'absolute', bottom: 32, left: 24, width: 28, height: 36 }} />
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ background: '#FFFFFF', border: '4px solid #f472b6', borderRadius: 24, padding: 32, paddingLeft: 48, paddingRight: 48, alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Box style={{ width: 64, height: 64, borderRadius: 32, background: '#f472b6', alignItems: 'center', justifyContent: 'center', marginBottom: 12 }}>
+            <Emoji name="🎉" style={{ width: 36, height: 36 }} />
+          </Box>
+          <Text style={{ fontSize: 'title', color: '#ec4899', bold: true, marginBottom: 8 }}>{/* {{替换：章序号}} */}第一章</Text>
+          <Text style={{ fontSize: 'title', color: '#374151', bold: true, marginBottom: 8 }}>{/* {{替换：章节名}} */}项目背景</Text>
+          <Text style={{ fontSize: 'body', color: '#7c3aed' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

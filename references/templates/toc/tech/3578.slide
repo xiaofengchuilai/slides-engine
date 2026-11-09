@@ -1,0 +1,40 @@
+<Slide>
+  {/* tech/3578 科技风-量子计算：深蓝紫底 + 粒子点缀 + 3 列量子章节卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0a0e27 0%, #1a1a3e 100%)', padding: 48, position: 'relative' }}>
+    {/* 量子粒子点缀 */}
+    <Box style={{ position: 'absolute', top: 100, left: 80, width: 6, height: 6, borderRadius: 3, background: '#60a5fa', opacity: 0.6, boxShadow: '0 0 15px #60a5fa' }} />
+    <Box style={{ position: 'absolute', top: 180, right: 120, width: 8, height: 8, borderRadius: 4, background: '#818cf8', opacity: 0.5, boxShadow: '0 0 18px #818cf8' }} />
+    <Box style={{ position: 'absolute', bottom: 140, left: 160, width: 7, height: 7, borderRadius: 3.5, background: '#a78bfa', opacity: 0.7, boxShadow: '0 0 16px #a78bfa' }} />
+    <Box style={{ position: 'absolute', bottom: 210, right: 96, width: 5, height: 5, borderRadius: 2.5, background: '#c084fc', opacity: 0.6, boxShadow: '0 0 14px #c084fc' }} />
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center', marginBottom: 32 }}>
+        <Text style={{ fontSize: 'title', color: '#93c5fd', bold: true, letterSpacing: 3 }}>{/* {{标题}} */}QUANTUM INDEX</Text>
+        <Box style={{ flexDirection: 'row', gap: 8, marginTop: 16 }}>
+          <Box style={{ width: 64, height: 2, background: 'linear-gradient(90deg, rgba(96,165,250,0) 0%, #60a5fa 100%)' }} />
+          <Box style={{ width: 64, height: 2, background: 'linear-gradient(90deg, #a78bfa 0%, rgba(167,139,250,0) 100%)' }} />
+        </Box>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 24 }}>
+        {[
+          ['1', '项目背景', '了解项目的起源与目标'],
+          ['2', '核心功能', '产品的主要功能介绍'],
+          ['3', '技术架构', '系统设计与技术选型'],
+          ['4', '实施计划', '项目的推进与时间安排'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, border: '2px solid rgba(96,165,250,0.6)', background: 'linear-gradient(135deg, rgba(96,165,250,0.08) 0%, rgba(167,139,250,0.08) 100%)', padding: 24, alignItems: 'center', position: 'relative' }}>
+            {/* 四角量子标记 */}
+            <Box style={{ position: 'absolute', top: 0, left: 0, width: 10, height: 10, background: '#60a5fa' }} />
+            <Box style={{ position: 'absolute', top: 0, right: 0, width: 10, height: 10, background: '#818cf8' }} />
+            <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 10, height: 10, background: '#a78bfa' }} />
+            <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 10, height: 10, background: '#c084fc' }} />
+            <Box style={{ width: 60, height: 60, borderRadius: 30, background: 'rgba(96,165,250,0.25)', border: '2px solid #60a5fa', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+              <Text style={{ fontSize: 'kpi', color: '#93c5fd', bold: true }}>{/* {{章节编号}} */}{x[0]}</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#93c5fd', bold: true, marginBottom: 8, textAlign: 'center' }}>{/* {{章节名}} */}{x[1]}</Text>
+            <Text style={{ fontSize: 'body', color: '#c4b5fd', textAlign: 'center' }}>{/* {{章节副标题}} */}{x[2]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

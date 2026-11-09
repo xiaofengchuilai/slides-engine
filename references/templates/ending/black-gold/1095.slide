@@ -1,0 +1,26 @@
+<Slide>
+  {/* ending/black-gold/1095 黑金风-金色粒子：深紫黑渐变 + 粒子群 + 中心圆环 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #1A1A2E 0%, #000000 100%)' }}>
+    {/* 金色粒子群（静态圆点） */}
+    <Box style={{ position: 'absolute', top: 108, left: 155, width: 3, height: 3, borderRadius: 1, background: '#EAB308', opacity: 0.85 }} />
+    <Box style={{ position: 'absolute', top: 180, left: 260, width: 4, height: 4, borderRadius: 2, background: '#D4AF37', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 250, left: 190, width: 2, height: 2, borderRadius: 1, background: '#EAB308', opacity: 0.75 }} />
+    <Box style={{ position: 'absolute', top: 325, left: 320, width: 5, height: 5, borderRadius: 2, background: '#DAA520', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 145, right: 190, width: 4, height: 4, borderRadius: 2, background: '#EAB308', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 215, right: 280, width: 3, height: 3, borderRadius: 1, background: '#D4AF37', opacity: 0.75 }} />
+    <Box style={{ position: 'absolute', top: 290, right: 230, width: 5, height: 5, borderRadius: 2, background: '#EAB308', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 360, right: 320, width: 2, height: 2, borderRadius: 1, background: '#DAA520', opacity: 0.7 }} />
+    <Box style={{ position: 'absolute', bottom: 145, left: 230, width: 3, height: 3, borderRadius: 1, background: '#EAB308', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', bottom: 215, left: 360, width: 4, height: 4, borderRadius: 2, background: '#D4AF37', opacity: 0.75 }} />
+    <Box style={{ position: 'absolute', bottom: 180, right: 260, width: 5, height: 5, borderRadius: 2, background: '#EAB308', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', bottom: 250, right: 360, width: 3, height: 3, borderRadius: 1, background: '#DAA520', opacity: 0.7 }} />
+    {/* 中心圆环 */}
+    <Box style={{ position: 'absolute', top: 220, left: 500, width: 280, height: 280, borderRadius: 140, border: '1px solid #D4AF37', opacity: 0.35 }} />
+    <Box style={{ position: 'absolute', top: 245, left: 525, width: 230, height: 230, borderRadius: 115, border: '1px solid #FFD700', opacity: 0.3 }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#EAB308', bold: true, marginBottom: 'md' }}>{/* {{替换：主标题}} */}谢谢</Text>
+      <Text style={{ fontSize: 'title', color: '#D4AF37' }}>{/* {{替换：致谢语}} */}感谢您的宝贵时间</Text>
+    </Box>
+  </Box>
+</Slide>

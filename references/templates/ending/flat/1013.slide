@@ -1,0 +1,25 @@
+<Slide>
+  {/* ending/flat 1013 纯色背景结尾：绿蓝渐变底 + THANKS 大标题 + 联系信息 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(90deg, #22C55E 0%, #3B82F6 100%)', alignItems: 'center', justifyContent: 'center', padding: 'xxl xl' }}>
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 88, color: '#FFFFFF', bold: true, marginBottom: 'md', letterSpacing: 4 }}>{/* {{主标题}} */}THANKS</Text>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', marginBottom: 'xl' }}>{/* {{副标题}} */}感谢观看</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        <Box style={{ alignItems: 'center' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.75, marginBottom: 'xs' }}>{/* {{标签一}} */}EMAIL</Text>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{邮箱}} */}hello@flat.com</Text>
+        </Box>
+        <Box style={{ width: 1, height: 48, background: '#FFFFFF', opacity: 0.5 }} />
+        <Box style={{ alignItems: 'center' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.75, marginBottom: 'xs' }}>{/* {{标签二}} */}PHONE</Text>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{电话}} */}138-0000-0000</Text>
+        </Box>
+        <Box style={{ width: 1, height: 48, background: '#FFFFFF', opacity: 0.5 }} />
+        <Box style={{ alignItems: 'center' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.75, marginBottom: 'xs' }}>{/* {{标签三}} */}WEBSITE</Text>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{网址}} */}www.flat.com</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

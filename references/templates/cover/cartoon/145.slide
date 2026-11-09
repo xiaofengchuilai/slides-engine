@@ -1,0 +1,23 @@
+<Slide>
+  {/* cartoon/145 海洋冒险：青蓝渐变底 + 气泡 + 波浪条 + 白字标题 + 白色小卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #67E8F9 0%, #60A5FA 50%, #2563EB 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 海洋气泡装饰 */}
+    <Box style={{ position: 'absolute', top: 112, left: 160, width: 32, height: 32, borderRadius: 16, border: '3px solid rgba(255,255,255,0.6)' }} />
+    <Box style={{ position: 'absolute', top: 176, left: 224, width: 20, height: 20, borderRadius: 10, border: '2px solid rgba(255,255,255,0.5)' }} />
+    <Box style={{ position: 'absolute', top: 128, right: 192, width: 24, height: 24, borderRadius: 12, border: '2px solid rgba(255,255,255,0.7)' }} />
+    <Box style={{ position: 'absolute', bottom: 144, left: 192, width: 28, height: 28, borderRadius: 14, border: '2px solid rgba(255,255,255,0.4)' }} />
+    <Box style={{ position: 'absolute', bottom: 176, right: 160, width: 16, height: 16, borderRadius: 8, border: '2px solid rgba(255,255,255,0.6)' }} />
+    {/* 波浪装饰（底部浅蓝色条） */}
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 24, background: 'rgba(29,78,216,0.5)' }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, marginBottom: 'xl', textShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>{/* {{替换：主标题}} */}海洋探秘之旅</Text>
+      <Text style={{ fontSize: 'card', color: '#CFFAFE', bold: true, marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}深海奇遇·奇妙世界</Text>
+      {/* 白色小卡 */}
+      <Box style={{ background: 'rgba(255,255,255,0.9)', borderRadius: 'md', padding: 'md xl', alignItems: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Text style={{ fontSize: 'body', color: '#2563EB', bold: true }}>{/* {{替换：主办方}} */}海洋科普馆</Text>
+        <Text style={{ fontSize: 'label', color: '#6B7280' }}>{/* {{替换：活动}} */}暑期研学活动</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

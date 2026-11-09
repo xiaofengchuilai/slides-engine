@@ -1,0 +1,22 @@
+<Slide>
+  {/* ending/chinese/1033 中国风-窗格剪影：米底+木色窗格边框+十字分割、红流苏细条，大标题+红分隔线+副题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #F5F0E8 0%, #E5DDD0 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 窗格框架：外框 + 横竖分割 */}
+    <Box style={{ position: 'absolute', top: 108, left: 160, width: 960, height: 468, border: '4px solid #6B5A43', background: 'rgba(255,255,255,0.5)' }} />
+    <Box style={{ position: 'absolute', top: 340, left: 160, width: 960, height: 3, background: '#6B5A43' }} />
+    <Box style={{ position: 'absolute', top: 108, left: 638, width: 3, height: 468, background: '#6B5A43' }} />
+    {/* 流苏装饰（底部红细条组） */}
+    <Box style={{ position: 'absolute', bottom: 60, left: 600, width: 3, height: 60, background: '#A81810' }} />
+    <Box style={{ position: 'absolute', bottom: 70, left: 625, width: 3, height: 50, background: '#A81810' }} />
+    <Box style={{ position: 'absolute', bottom: 65, left: 650, width: 3, height: 55, background: '#A81810' }} />
+    <Box style={{ position: 'absolute', bottom: 70, left: 675, width: 3, height: 50, background: '#A81810' }} />
+    <Box style={{ position: 'absolute', bottom: 60, left: 700, width: 3, height: 60, background: '#A81810' }} />
+    {/* 蝴蝶装饰（彩色 emoji，右上） */}
+    <Emoji name="🦋" style={{ position: 'absolute', top: 72, right: 155, width: 44, height: 44 }} />
+    <Box style={{ alignItems: 'center', gap: 'md' }}>
+      <Text style={{ fontSize: 62, color: '#2C2C2C', letterSpacing: 12 }}>{/* {{替换：致谢标题}} */}感谢</Text>
+      <Box style={{ width: 100, height: 2, background: '#A81810' }} />
+      <Text style={{ fontSize: 'card', color: '#666666', letterSpacing: 3 }}>{/* {{替换：副题}} */}期盼指正赐教</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,30 @@
+<Slide>
+  {/* minimalist/3526 简约风-网格卡片：左侧标题区 + 右侧 2x2 卡片（大号水印编号） */}
+  <Box style={{ height: 720, width: 1280, background: 'cardBg', padding: 48 }}>
+    <Box style={{ height: 624, flexDirection: 'row', alignItems: 'center' }}>
+      <Box style={{ width: 288, paddingRight: 48 }}>
+        <Text style={{ fontSize: 'kpi', color: 'text', fontWeight: 300 }}>目</Text>
+        <Text style={{ fontSize: 'kpi', color: 'text', fontWeight: 300 }}>录</Text>
+        <Box style={{ width: 48, height: 2, background: 'text', marginTop: 16 }} />
+        <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 4, marginTop: 16 }}>CONTENTS</Text>
+      </Box>
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 24, flexWrap: 'wrap' }}>
+        {[
+          ['01', '项目背景', '了解项目的起源与发展目标'],
+          ['02', '核心功能', '产品的主要功能与特性介绍'],
+          ['03', '技术架构', '系统设计与技术选型方案'],
+          ['04', '实施计划', '项目推进时间与里程碑'],
+        ].map((x, i) => (
+          <Box key={i} style={{ width: 436, background: 'bg', padding: 32, position: 'relative', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+            <Box style={{ position: 'absolute', top: 0, left: 0, bottom: 0, width: 4, background: 'text' }} />
+            <Text style={{ position: 'absolute', top: -8, right: -8, fontSize: 64, color: 'line', fontWeight: 300 }}>{x[0]}</Text>
+            <Box>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 8 }}>{/* {{章节名}} */}{x[1]}</Text>
+              <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{章节导语}} */}{x[2]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,26 @@
+<Slide>
+  {/* ending/business/1050 浅灰极简：左侧色条 + 顶部色条 + 左下交叉线装饰 + 居中感谢聆听 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #f5f5f5 0%, #e8e8e8 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 左侧色条 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, bottom: 0, width: 8, background: 'linear-gradient(180deg, #4a5568 0%, #2d3748 100%)' }} />
+    {/* 顶部色条 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: 'linear-gradient(90deg, #4a5568 0%, #718096 100%)' }} />
+    {/* 右下角装饰（半透明斜切块 + 边框方框） */}
+    <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 300, height: 300, background: 'rgba(74,85,104,0.05)' }} />
+    <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 250, height: 250, border: '2px solid rgba(74,85,104,0.15)' }} />
+    {/* 左上角交叉线装饰 */}
+    <Box style={{ position: 'absolute', top: 108, left: 128, width: 80, height: 2, background: '#4a5568' }} />
+    <Box style={{ position: 'absolute', top: 108, left: 128, width: 2, height: 80, background: '#4a5568' }} />
+    {/* 主要内容 */}
+    <Box style={{ alignItems: 'center', maxWidth: 960 }}>
+      <Text style={{ fontSize: 56, color: '#2d3748', letterSpacing: 6, textAlign: 'center', marginBottom: 40 }}>{/* {{替换：主标题}} */}感谢聆听</Text>
+      {/* 分隔装饰：细线 + 方块 + 细线 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 20, marginBottom: 38 }}>
+        <Box style={{ width: 60, height: 1, background: '#4a5568' }} />
+        <Box style={{ width: 8, height: 8, background: '#4a5568', rotate: 45 }} />
+        <Box style={{ width: 60, height: 1, background: '#4a5568' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#718096', letterSpacing: 2, lineHeight: 1.8, textAlign: 'center' }}>{/* {{替换：致谢语}} */}期待与您再次相见</Text>
+    </Box>
+  </Box>
+</Slide>

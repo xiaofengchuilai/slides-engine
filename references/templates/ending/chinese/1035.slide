@@ -1,0 +1,22 @@
+<Slide>
+  {/* ending/chinese/1035 中国风-水墨留白：米底+水墨晕染角、红方章角标、大标题+装饰线+英文副题+诗句 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #F8F6F1 0%, #EBE7DD 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 水墨晕染背景（右上/左下） */}
+    <Box style={{ position: 'absolute', top: 0, right: 0, width: 500, height: 400, borderRadius: 'sm', background: 'rgba(74,85,104,0.07)', opacity: 0.7 }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 400, height: 300, borderRadius: 'sm', background: 'rgba(74,85,104,0.06)', opacity: 0.7 }} />
+    {/* 印章（左下角） */}
+    <Box style={{ position: 'absolute', bottom: 80, left: 80, width: 64, height: 64, border: '2px solid #A81810', alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 28, color: '#A81810' }}>谢</Text>
+    </Box>
+    <Box style={{ alignItems: 'center', gap: 'md' }}>
+      <Text style={{ fontSize: 56, color: '#2D3748', letterSpacing: 16 }}>{/* {{替换：致谢标题}} */}谢谢观看</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginTop: 'sm' }}>
+        <Box style={{ width: 80, height: 2, background: 'linear-gradient(90deg, #EBE7DD 0%, #8B7355 100%)' }} />
+        <Box style={{ width: 8, height: 8, borderRadius: 'sm', background: '#8B7355' }} />
+        <Box style={{ width: 80, height: 2, background: 'linear-gradient(90deg, #8B7355 0%, #EBE7DD 100%)' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#718096', letterSpacing: 8 }}>THANK YOU</Text>
+      <Text style={{ fontSize: 'card', color: '#5A6776', letterSpacing: 4 }}>{/* {{替换：诗句}} */}山水有相逢，来日皆可期</Text>
+    </Box>
+  </Box>
+</Slide>

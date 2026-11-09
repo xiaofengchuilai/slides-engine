@@ -1,0 +1,20 @@
+<Slide>
+  {/* ending/black-gold/1090 黑金风-金箔质感：深紫底 + 金色光晕圆 + 金边 + 渐变金字 */}
+  <Box style={{ width: 1280, height: 720, background: '#1A1A2E' }}>
+    {/* 金箔光晕（低透明圆斑） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 320, height: 320, borderRadius: 160, background: '#D4AF37', opacity: 0.15 }} />
+    <Box style={{ position: 'absolute', top: 200, right: 0, width: 360, height: 360, borderRadius: 180, background: '#FFD700', opacity: 0.12 }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 360, width: 300, height: 300, borderRadius: 150, background: '#DAA520', opacity: 0.13 }} />
+    {/* 金色碎片装饰（降级为小方块） */}
+    <Box style={{ position: 'absolute', top: 130, left: 170, width: 14, height: 14, background: '#D4AF37', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 455, right: 205, width: 12, height: 12, background: '#DAA520', opacity: 0.35 }} />
+    <Box style={{ position: 'absolute', bottom: 145, left: 295, width: 13, height: 13, background: '#B8860B', opacity: 0.38 }} />
+    {/* 金色边框 */}
+    <Box style={{ position: 'absolute', top: 72, left: 72, right: 72, bottom: 72, border: '1px solid #D4AF37', opacity: 0.4 }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', bold: true, marginBottom: 'md', backgroundClip: 'text', backgroundImage: 'linear-gradient(135deg, #FFD700 0%, #D4AF37 100%)', color: '#FFD700' }}>{/* {{替换：主标题}} */}感谢聆听</Text>
+      <Text style={{ fontSize: 'title', color: '#D4AF37' }}>{/* {{替换：致谢语}} */}期待与您再次相见</Text>
+    </Box>
+  </Box>
+</Slide>

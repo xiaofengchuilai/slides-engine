@@ -1,0 +1,39 @@
+<Slide>
+  {/* chinese/1623 上下布局·儒家思想：上标题+导语，下左图+右三要点 */}
+  <Box style={{ height: 720, width: 1280, background: '#FAF9F6', padding: 'xxl xl' }}>
+    {/* 上部文字区 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'xl' }}>
+      <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true, letterSpacing: 2 }}>{/* {{替换：主标题}} */}儒家思想</Text>
+      <Box style={{ width: 128, height: 2, background: 'rgba(168, 24, 16, 0.3)', marginTop: 'md', marginBottom: 'lg' }} />
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.8, textAlign: 'center', maxWidth: 760 }}>{/* {{替换：导语}} */}
+        儒家思想是中国传统文化的核心，强调“仁、义、礼、智、信”，倡导修身齐家治国平天下的人生理想。
+      </Text>
+    </Box>
+    {/* 下部图文混合 */}
+    <Box style={{ flex: 1, flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+      {/* 左图 */}
+      <Box style={{ width: 256, height: 256, alignItems: 'center', justifyContent: 'center' }}>
+        {/* {{图片：有图填 assets/images/confucius.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/confucius.png" style={{ objectFit: 'cover', width: 256, height: 256 }} />
+      </Box>
+      {/* 右文 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'md' }}>
+        <Box style={{ width: 2, background: 'rgba(168, 24, 16, 0.2)' }} />
+        <Box style={{ flex: 1, gap: 'md' }}>
+          {[
+            ['仁', '仁者爱人，推己及人'],
+            ['礼', '克己复礼，规范言行'],
+            ['和', '和而不同，和谐共处'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', gap: 'lg', alignItems: 'flex-start' }}>
+              <Text style={{ fontSize: 'card', color: '#A81810', bold: true }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+    {/* 功能文字 */}
+    <Text style={{ fontSize: 'label', color: 'muted', position: 'absolute', left: 96, bottom: 24 }}>{/* {{替换：参考}} */}参考：《论语》《孟子》《大学》《中庸》</Text>
+  </Box>
+</Slide>

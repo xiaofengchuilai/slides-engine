@@ -1,0 +1,59 @@
+<Slide>
+  {/* literary/3560 文艺风-复古书页：墨绿深底 + 书脊 + 左右两页（白底）章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #2c3e50 0%, #1a252f 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 书脊 */}
+    <Box style={{ width: 36, height: 600, background: 'linear-gradient(90deg, #4a6741 0%, #5d8a54 50%, #4a6741 100%)', borderRadius: 5, position: 'absolute', left: 190, top: 60 }}>
+      <Box style={{ position: 'absolute', top: 32, left: 8, width: 20, height: 64, background: 'linear-gradient(180deg, #c9a86c 0%, #a68b4d 100%)', borderRadius: 2 }} />
+      <Box style={{ position: 'absolute', bottom: 32, left: 8, width: 20, height: 64, background: 'linear-gradient(180deg, #c9a86c 0%, #a68b4d 100%)', borderRadius: 2 }} />
+    </Box>
+    <Box style={{ flexDirection: 'row', width: 964, height: 600, position: 'relative' }}>
+      {/* 左页 */}
+      <Box style={{ width: 482, background: 'linear-gradient(135deg, #FAF8F5 0%, #F0EBE3 100%)', padding: 48, justifyContent: 'center', border: '1px solid #E5E0D8' }}>
+        <Box style={{ alignItems: 'center', marginBottom: 24 }}>
+          <Text style={{ fontSize: 'title', color: '#3d5a3a', bold: true, letterSpacing: 8, fontFamily: 'serif' }}>{/* {{标题}} */}目 录</Text>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 12 }}>
+            <Box style={{ width: 40, height: 1, background: 'linear-gradient(90deg, rgba(93,138,84,0) 0%, #5d8a54 100%)' }} />
+            <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#5d8a54' }} />
+            <Box style={{ width: 40, height: 1, background: 'linear-gradient(90deg, #5d8a54 0%, rgba(93,138,84,0) 100%)' }} />
+          </Box>
+        </Box>
+        <Box style={{ gap: 12 }}>
+          {[
+            ['壹', '项目背景', '了解项目的起源与目标'],
+            ['贰', '核心功能', '产品的主要功能介绍'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', gap: 16, alignItems: 'center', background: 'rgba(93,138,84,0.08)', borderRadius: 8, padding: 12 }}>
+              <Box style={{ width: 44, height: 44, borderRadius: 22, background: 'linear-gradient(135deg, #5d8a54 0%, #3d5a3a 100%)', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(93,138,84,0.3)' }}>
+                <Text style={{ fontSize: 'card', color: '#FAF8F5', fontFamily: 'serif' }}>{/* {{章节编号}} */}{x[0]}</Text>
+              </Box>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'card', color: '#3d5a3a', fontFamily: 'serif', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+                <Text style={{ fontSize: 'label', color: '#7a8b76', fontFamily: 'serif', marginTop: 2 }}>{/* {{章节副标题}} */}{x[2]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 右页 */}
+      <Box style={{ flex: 1, background: 'linear-gradient(135deg, #FAF8F5 0%, #F0EBE3 100%)', padding: 48, border: '1px solid #E5E0D8' }}>
+        <Box style={{ gap: 12, marginTop: 48 }}>
+          {[
+            ['叁', '技术架构', '系统设计与技术选型'],
+            ['肆', '实施计划', '项目推进与时间安排'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', gap: 16, alignItems: 'center', background: 'rgba(93,138,84,0.08)', borderRadius: 8, padding: 12 }}>
+              <Box style={{ width: 44, height: 44, borderRadius: 22, background: 'linear-gradient(135deg, #5d8a54 0%, #3d5a3a 100%)', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(93,138,84,0.3)' }}>
+                <Text style={{ fontSize: 'card', color: '#FAF8F5', fontFamily: 'serif' }}>{/* {{章节编号}} */}{x[0]}</Text>
+              </Box>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'card', color: '#3d5a3a', fontFamily: 'serif', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+                <Text style={{ fontSize: 'label', color: '#7a8b76', fontFamily: 'serif', marginTop: 2 }}>{/* {{章节副标题}} */}{x[2]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+        <Text style={{ position: 'absolute', bottom: 24, right: 48, fontSize: 'label', color: '#7a8b76', fontFamily: 'serif' }}>- 1 -</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,17 @@
+<Slide>
+  {/* cover/minimalist/094 圆形点缀：右上双圆 + 左下小圆 + 居中标题 + 主装饰圆 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ position: 'absolute', top: 86, right: 128, width: 144, height: 144, borderRadius: 72, border: '1px solid #D1D5DB' }}>
+      <Box style={{ position: 'absolute', top: 16, left: 16, width: 112, height: 112, borderRadius: 56, background: 'cardBg' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 130, left: 154, width: 80, height: 80, borderRadius: 40, border: '1px solid #E5E7EB' }} />
+    <Box style={{ alignItems: 'center', gap: 'xl' }}>
+      <Text style={{ fontSize: 'hero', color: 'text', lineHeight: 1.15, letterSpacing: 1 }}>{/* {{替换：主标题}} */}服务升级计划</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 3 }}>{/* {{替换：副标题}} */}优化体验·创造价值</Text>
+      <Box style={{ width: 56, height: 56, borderRadius: 28, border: '2px solid text', alignItems: 'center', justifyContent: 'center', marginTop: 'md' }}>
+        <Box style={{ width: 28, height: 28, borderRadius: 14, background: 'text' }} />
+      </Box>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2 }}>{/* {{替换：部门/主题}} */}客户服务部 | 服务提升方案</Text>
+    </Box>
+  </Box>
+</Slide>

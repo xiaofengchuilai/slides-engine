@@ -1,0 +1,33 @@
+<Slide>
+  {/* content/comparison：对比矩阵（A/B/C 选项 + 维度 + 建议） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: '56px 80px' }}>
+    <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：对比标题}} */}三种方案，谁更合适</Text>
+    {/* 对比矩阵：表头 + 3 列 */}
+    <Box style={{ flexDirection: 'row', gap: 20, marginTop: 36, flex: 1 }}>
+      {[
+        { name: '方案 A', tag: '稳健', desc: '沿用现有架构，增量优化', best: '适合预算有限', limit: '天花板明显' },
+        { name: '方案 B', tag: '推荐', desc: '核心模块重构，兼顾当下与未来', best: '性价比最高', limit: '需 3 个月过渡' },
+        { name: '方案 C', tag: '激进', desc: '全面推倒重建', best: '上限最高', limit: '风险与成本高' },
+      ].map((opt, i) => (
+        <Box key={i} style={{ flex: 1, borderRadius: 14, background: i === 1 ? 'primary' : 'light', padding: '24px', justifyContent: 'space-between' }}>
+          <Box>
+            <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+              <Text style={{ fontSize: 'card', color: i === 1 ? '#FFFFFF' : 'text', bold: true }}>{/* {{替换：方案名}} */}{opt.name}</Text>
+              <Text style={{ fontSize: 'label', color: i === 1 ? 'accent' : 'accent', bold: true }}>{/* {{替换：标签}} */}{opt.tag}</Text>
+            </Box>
+            <Text style={{ fontSize: 'body', color: i === 1 ? '#FFFFFF' : 'muted', lineHeight: 1.6, marginTop: 12, opacity: i === 1 ? 0.9 : 1 }}>{/* {{替换：描述}} */}{opt.desc}</Text>
+          </Box>
+          <Box style={{ marginTop: 16, gap: 8 }}>
+            <Text style={{ fontSize: 'label', color: i === 1 ? 'accent' : 'success', bold: true }}>✓ {opt.best}</Text>
+            <Text style={{ fontSize: 'label', color: i === 1 ? '#FFFFFF' : 'danger', opacity: i === 1 ? 0.85 : 1 }}>△ {opt.limit}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+    {/* 建议 */}
+    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 28 }}>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{替换：建议标签}} */}建议：</Text>
+      <Text style={{ fontSize: 20, color: 'accent', bold: true }}>{/* {{替换：推荐结论}} */}选方案 B，先小范围试点再推广</Text>
+    </Box>
+  </Box>
+</Slide>

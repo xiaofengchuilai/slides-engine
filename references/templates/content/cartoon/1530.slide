@@ -1,0 +1,71 @@
+<Slide>
+  {/* cartoon/1530 我的成长故事：标题 + 时间轴四节点 + 未来展望 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #E0E7FF 0%, #FAF5FF 50%, #FCE7F3 100%)', padding: 'xl' }}>
+    {/* 装饰星星 */}
+    <Box style={{ position: 'absolute', top: 56, right: 80, opacity: 0.9 }}>
+      <Emoji name="⭐" style={{ width: 40, height: 40 }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 160, right: 200, opacity: 0.9 }}>
+      <Emoji name="✨" style={{ width: 32, height: 32 }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 80, left: 120, opacity: 0.9 }}>
+      <Emoji name="💫" style={{ width: 40, height: 40 }} />
+    </Box>
+    {/* 标题 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'md' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xs' }}>
+        <Text style={{ fontSize: 'title', color: '#7C3AED', bold: true }}>{/* {{替换：标题}} */}我的成长故事</Text>
+        <Emoji name="📖" style={{ width: 32, height: 32 }} />
+      </Box>
+      <Text style={{ fontSize: 'label', color: '#4B5563', bold: true }}>{/* {{替换：副标题}} */}A Journey of Growth</Text>
+    </Box>
+    {/* 时间轴区域（固定高度，四节点等分） */}
+    <Box style={{ position: 'relative', height: 440 }}>
+      {/* 中心线 */}
+      <Box style={{ position: 'absolute', left: '50%', top: 16, bottom: 16, width: 4, background: 'linear-gradient(180deg, #A855F7 0%, #EC4899 50%, #60A5FA 100%)' }} />
+      {[
+        ['2020年', '开始学习编程，充满好奇和期待～', '#A855F7', true, '🌱'],
+        ['2021年', '完成第一个项目！解决问题的成就感让我爱上了编程！', '#EC4899', false, '🚀'],
+        ['2022年', '加入开源社区，与全球开发者协作，技术快速提升！', '#3B82F6', true, '💻'],
+        ['2023年', '获得技术竞赛奖项，同时开始指导新人！', '#22C55E', false, '🏆'],
+      ].map((x, i) => (
+        <Box key={i} style={{ position: 'absolute', top: 8 + i * 106, left: 0, right: 0, flexDirection: 'row', alignItems: 'flex-start' }}>
+          {x[3] ? (
+            <Box style={{ flex: 1, alignItems: 'flex-end', paddingRight: 72 }}>
+              <Box style={{ background: 'linear-gradient(90deg, ' + x[2] + ' 0%, ' + x[2] + ' 100%)', borderRadius: 'md', padding: 'sm md', width: 420, boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', gap: 'sm', marginBottom: 'xs' }}>
+                  <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：年份}} */}{x[0]}</Text>
+                  <Emoji name={x[4]} style={{ width: 24, height: 24 }} />
+                </Box>
+                <Text style={{ fontSize: 'label', color: 'rgba(255,255,255,0.95)', lineHeight: 1.6, textAlign: 'right' }}>{/* {{替换：事件}} */}{x[1]}</Text>
+              </Box>
+            </Box>
+          ) : (
+            <Box style={{ flex: 1, alignItems: 'flex-start', paddingLeft: 72 }}>
+              <Box style={{ background: 'linear-gradient(90deg, ' + x[2] + ' 0%, ' + x[2] + ' 100%)', borderRadius: 'md', padding: 'sm md', width: 420, boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xs' }}>
+                  <Emoji name={x[4]} style={{ width: 24, height: 24 }} />
+                  <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：年份}} */}{x[0]}</Text>
+                </Box>
+                <Text style={{ fontSize: 'label', color: 'rgba(255,255,255,0.95)', lineHeight: 1.6 }}>{/* {{替换：事件}} */}{x[1]}</Text>
+              </Box>
+            </Box>
+          )}
+          <Box style={{ position: 'absolute', left: '50%', width: 44, height: 44, borderRadius: 22, background: x[2], alignItems: 'center', justifyContent: 'center', marginLeft: -22, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{['1️⃣', '2️⃣', '3️⃣', '4️⃣'][i]}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+    {/* 未来展望 */}
+    <Box style={{ alignItems: 'center', marginTop: 'md' }}>
+      <Box style={{ width: 52, height: 52, borderRadius: 26, background: 'linear-gradient(135deg, #FBBF24 0%, #F97316 100%)', alignItems: 'center', justifyContent: 'center', marginBottom: 'sm', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Emoji name="✨" style={{ width: 26, height: 26 }} />
+      </Box>
+      <Box style={{ background: 'linear-gradient(90deg, #FCD34D 0%, #FDBA74 50%, #FCA5A5 100%)', borderRadius: 'lg', padding: 'sm lg', alignItems: 'center', maxWidth: 600, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{替换：展望年份}} */}2024年 · 继续前进！</Text>
+        <Text style={{ fontSize: 'body', color: 'rgba(255,255,255,0.95)', lineHeight: 1.6 }}>{/* {{替换：展望内容}} */}学无止境，永远保持好奇心和学习热情。下一个目标：成为全栈工程师！💪🚀</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

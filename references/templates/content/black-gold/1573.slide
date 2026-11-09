@@ -1,0 +1,47 @@
+<Slide>
+  {/* black-gold/1573 尊贵荣誉：证书双边框 + 徽章 + 标题 + 签名区 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 'xl' }}>
+    {/* 证书双边框 */}
+    <Box style={{ position: 'absolute', top: 24, left: 24, right: 24, bottom: 24, border: '8px double #D4AF37' }} />
+    <Box style={{ position: 'absolute', top: 40, left: 40, right: 40, bottom: 40, border: '4px solid #B8860B' }} />
+    {/* 四角装饰 */}
+    {[
+      { top: 8, left: 8 },
+      { top: 8, right: 8 },
+      { bottom: 8, left: 8 },
+      { bottom: 8, right: 8 },
+    ].map((pos, i) => (
+      <Box key={i} style={{ position: 'absolute', ...pos, width: 56, height: 56 }}>
+        <Box style={{ position: 'absolute', top: 0, left: 0, width: 24, height: 24, background: '#D4AF37', borderRadius: 2 }} />
+        <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 24, height: 24, background: '#D4AF37', borderRadius: 2 }} />
+      </Box>
+    ))}
+    <Box style={{ height: '100%', alignItems: 'center', justifyContent: 'center' }}>
+      {/* 顶部徽章 */}
+      <Box style={{ width: 104, height: 104, borderRadius: 52, border: '4px solid #D4AF37', alignItems: 'center', justifyContent: 'center', marginBottom: 'md' }}>
+        <Box style={{ width: 72, height: 72, borderRadius: 36, background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%)', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#000000', bold: true }}>{/* {{替换：徽章文字}} */}VIP</Text>
+        </Box>
+      </Box>
+      <Text style={{ fontSize: 'title', color: '#FBBF24', bold: true, fontFamily: 'serif', marginBottom: 'sm' }}>{/* {{替换：证书标题}} */}尊贵荣誉</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'lg', marginBottom: 'lg' }}>
+        <Box style={{ width: 112, height: 2, background: 'linear-gradient(90deg, rgba(234,179,8,0) 0%, #EAB308 100%)' }} />
+        <Text style={{ fontSize: 'label', color: '#FBBF24', letterSpacing: 2 }}>{/* {{替换：副标题}} */}CERTIFICATE OF EXCELLENCE</Text>
+        <Box style={{ width: 112, height: 2, background: 'linear-gradient(270deg, rgba(234,179,8,0) 0%, #EAB308 100%)' }} />
+      </Box>
+      {/* 证书内容 */}
+      <Box style={{ maxWidth: 720, alignItems: 'center', marginBottom: 'lg' }}>
+        <Text style={{ fontSize: 'body', color: '#D1D5DB', lineHeight: 1.8, textAlign: 'center' }}>{/* {{替换：证书正文}} */}兹证明持有者已达成卓越成就标准，展现出非凡的专业能力与杰出的领导才华，特此颁发此荣誉证书以资鼓励，并祝愿未来再创辉煌。</Text>
+      </Box>
+      {/* 签名区 */}
+      <Box style={{ flexDirection: 'row', gap: 'xxl' }}>
+        {['授权签名', '颁发日期'].map((t, i) => (
+          <Box key={i} style={{ alignItems: 'center' }}>
+            <Box style={{ width: 176, height: 2, background: '#EAB308', marginBottom: 'xs' }} />
+            <Text style={{ fontSize: 'label', color: '#FBBF24', letterSpacing: 1 }}>{/* {{替换：签名项}} */}{t}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

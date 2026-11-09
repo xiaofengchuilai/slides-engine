@@ -1,0 +1,21 @@
+<Slide>
+  {/* ending/geometric 1063 矩形穿插结尾：深蓝粉渐变底 + 斜向矩形 + 中心矩形框 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #2D3561 0%, #C05C7E 100%)' }}>
+    {/* 斜向矩形装饰 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 250, height: 180, background: '#FFFFFF', opacity: 0.08 }} />
+    <Box style={{ position: 'absolute', top: 144, right: 0, width: 200, height: 280, background: '#FFFFFF', opacity: 0.1 }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 128, width: 300, height: 200, background: '#FFFFFF', opacity: 0.12 }} />
+    <Box style={{ position: 'absolute', bottom: 108, right: 0, width: 220, height: 160, background: '#FFFFFF', opacity: 0.09 }} />
+    {/* 中心矩形框架（边框矩形 + 旋转 ±5°） */}
+    <Box style={{ position: 'absolute', top: '50%', left: '50%', width: 400, height: 250, border: '3px solid #FFFFFF', opacity: 0.3, rotate: 5 }} />
+    <Box style={{ position: 'absolute', top: '50%', left: '50%', width: 350, height: 220, border: '2px solid #FFFFFF', opacity: 0.25, rotate: -5 }} />
+    {/* 小矩形装饰（旋转 45° 菱形） */}
+    <Box style={{ position: 'absolute', top: 108, left: 154, width: 60, height: 60, background: '#FFFFFF', opacity: 0.2, rotate: 45 }} />
+    <Box style={{ position: 'absolute', top: 504, right: 192, width: 50, height: 50, background: '#FFFFFF', opacity: 0.18, rotate: 45 }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: '#FFFFFF', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}谢谢观看</Text>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', textAlign: 'center' }}>{/* {{副标题}} */}期待您的宝贵意见</Text>
+    </Box>
+  </Box>
+</Slide>

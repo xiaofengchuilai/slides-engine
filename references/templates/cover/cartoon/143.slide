@@ -1,0 +1,21 @@
+<Slide>
+  {/* cartoon/143 星空穿梭：靛紫粉渐变底 + 星点 + 大标题 + 白色小卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #818CF8 0%, #A78BFA 50%, #F9A8D4 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 星空星点装饰 */}
+    <Box style={{ position: 'absolute', top: 80, left: 128, width: 12, height: 12, borderRadius: 6, background: '#FFFFFF', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 144, left: 208, width: 8, height: 8, borderRadius: 4, background: '#FEF08A', opacity: 0.7 }} />
+    <Box style={{ position: 'absolute', top: 112, right: 192, width: 16, height: 16, borderRadius: 8, background: '#FFFFFF', opacity: 0.9 }} />
+    <Box style={{ position: 'absolute', bottom: 128, left: 176, width: 8, height: 8, borderRadius: 4, background: '#FFFFFF', opacity: 0.6 }} />
+    <Box style={{ position: 'absolute', bottom: 192, right: 144, width: 12, height: 12, borderRadius: 6, background: '#FEF08A', opacity: 0.75 }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, marginBottom: 'xxl', textShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>{/* {{替换：主标题}} */}星际探险之旅</Text>
+      <Text style={{ fontSize: 'card', color: '#FEF08A', bold: true, marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}探索宇宙·追逐梦想</Text>
+      {/* 白色小卡 */}
+      <Box style={{ background: 'rgba(255,255,255,0.9)', borderRadius: 'md', padding: 'md xl', alignItems: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Text style={{ fontSize: 'body', color: '#9333EA', bold: true }}>{/* {{替换：主办方}} */}科学探索馆</Text>
+        <Text style={{ fontSize: 'label', color: '#6B7280' }}>{/* {{替换：活动}} */}天文科普讲座</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

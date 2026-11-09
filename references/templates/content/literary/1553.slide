@@ -1,0 +1,36 @@
+<Slide>
+  {/* literary/1553 书籍翻页：左页艺术标题+引用，右页正文，书脊装饰 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FEF3C7 0%, #FEF9C3 100%)', padding: 'xxl xl' }}>
+    <Box style={{ flexDirection: 'row', height: '100%', background: 'linear-gradient(135deg, #FFFBEB 0%, #FEFCE8 100%)', borderRadius: 'md', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      {/* 左页 */}
+      <Box style={{ flex: 1, padding: 'xxl xl', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'label', color: '#F59E0B', marginBottom: 'md' }}>{/* {{替换：章节}} */}第一章</Text>
+        <Text style={{ fontSize: 'title', color: '#374151', fontFamily: 'serif', bold: true, lineHeight: 1.2, marginBottom: 'lg' }}>{/* {{替换：标题}} */}文学<br />之美</Text>
+        <Box style={{ width: 96, height: 3, background: 'linear-gradient(90deg, #F59E0B 0%, #FDE68A 100%)', marginBottom: 'lg' }} />
+        <Box style={{ flexDirection: 'row' }}>
+          <Box style={{ width: 4, background: '#F59E0B', marginRight: 'md' }} />
+          <Box style={{ flex: 1 }}>
+            <Text style={{ fontSize: 'card', color: '#374151', fontFamily: 'serif', lineHeight: 1.6 }}>{/* {{替换：引用}} */}"书籍是人类进步的阶梯"</Text>
+            <Text style={{ fontSize: 'label', color: '#6B7280', marginTop: 'xs' }}>{/* {{替换：署名}} */}— 高尔基</Text>
+          </Box>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 'xs', marginTop: 'xl', opacity: 0.6 }}>
+          <Box style={{ width: 36, height: 48, background: '#D97706', borderRadius: 2, boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+          <Box style={{ width: 36, height: 48, background: '#EA580C', borderRadius: 2, boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+          <Box style={{ width: 36, height: 48, background: '#CA8A04', borderRadius: 2, boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+        </Box>
+      </Box>
+      {/* 书脊 */}
+      <Box style={{ width: 24, background: 'linear-gradient(90deg, rgba(146,64,14,0.25) 0%, rgba(180,83,9,0.1) 50%, rgba(146,64,14,0.25) 100%)' }} />
+      {/* 右页 */}
+      <Box style={{ flex: 1, padding: 'xxl xl', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.8, marginBottom: 'md' }}>{/* {{替换：正文段1}} */}在文字与思想的海洋中徜徉，品味文学的永恒魅力。每一页纸张，都承载着作者的心血与智慧。</Text>
+        <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.8, marginBottom: 'md' }}>{/* {{替换：正文段2}} */}阅读，是与伟大灵魂的对话，是穿越时空的旅行，是心灵的滋养。</Text>
+        <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.8 }}>{/* {{替换：正文段3}} */}让我们打开书本，倾听文字的声音，感受思想的力量。</Text>
+        <Box style={{ alignItems: 'center', marginTop: 'xl', opacity: 0.45 }}>
+          <FAIcon name="book-open" style={{ fill: '#D97706', width: 40, height: 40 }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

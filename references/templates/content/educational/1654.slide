@@ -1,0 +1,63 @@
+<Slide>
+  {/* educational/1654 趣味拼音·声调练习：标题 + 4声调卡(多色) + 声调儿歌/手势记忆法 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FEF9C3 0%, #FEF08A 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+        <Text style={{ fontSize: 'title', color: '#713F12', bold: true }}>{/* {{替换：标题}} */}四声调练习</Text>
+        <Emoji name="🎵" style={{ width: 28, height: 28 }} />
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#A16207' }}>{/* {{替换：副标题}} */}妈 má mǎ mà · 声调歌</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+      {[
+        ['mā', '妈妈', '一声平', '平平的，不升不降', '#DC2626', '#FEE2E2', '👩'],
+        ['má', '麻绳', '二声扬', '从低往高升', '#16A34A', '#DCFCE7', '🌱'],
+        ['mǎ', '马儿', '三声拐弯', '先降后升', '#2563EB', '#DBEAFE', '🐴'],
+        ['mà', '骂人', '四声降', '从高往低降', '#9333EA', '#F3E8FF', '😠'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: '#FFFFFF', border: `4px solid ${x[4]}`, borderRadius: 'md', padding: 'lg', alignItems: 'center', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          {i !== 0 && <Emoji name={x[6]} style={{ width: 32, height: 32, marginBottom: 'xs' }} />}
+          {i === 0 && <Text style={{ fontSize: 28, marginBottom: 'xs' }}>{x[6]}</Text>}
+          <Text style={{ fontSize: 'kpi', color: x[4], bold: true }}>{/* {{替换：拼音}} */}{x[0]}</Text>
+          <Text style={{ fontSize: 'card', color: x[4], bold: true, marginTop: 'sm' }}>{/* {{替换：例词}} */}{x[1]}</Text>
+          <Box style={{ width: '100%', background: x[5], borderRadius: 'sm', padding: 'sm', marginTop: 'md', alignItems: 'center' }}>
+            <Text style={{ fontSize: 'body', color: x[4], bold: true }}>{/* {{替换：声调名}} */}{x[2]}</Text>
+            <Text style={{ fontSize: 'label', color: '#4B5563', marginTop: 'xs' }}>{/* {{替换：声调说明}} */}{x[3]}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'lg' }}>
+      <Box style={{ flex: 1, background: 'linear-gradient(135deg, #FEF9C3 0%, #FFEDD5 100%)', border: '2px solid #FACC15', borderRadius: 'md', padding: 'lg' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+          <Emoji name="🎵" style={{ width: 18, height: 18 }} />
+          <Text style={{ fontSize: 'body', color: '#713F12', bold: true }}>{/* {{替换：标题}} */}声调儿歌</Text>
+        </Box>
+        <Box style={{ gap: 'xs' }}>
+          <Text style={{ fontSize: 'body', color: '#374151', fontFamily: 'serif' }}>一声平平左到右：妈妈好</Text>
+          <Text style={{ fontSize: 'body', color: '#374151', fontFamily: 'serif' }}>二声就像上山坡：麻绳长</Text>
+          <Text style={{ fontSize: 'body', color: '#374151', fontFamily: 'serif' }}>三声下坡又上坡：骑马跑</Text>
+          <Text style={{ fontSize: 'body', color: '#374151', fontFamily: 'serif' }}>四声就像下山坡：不骂人</Text>
+        </Box>
+      </Box>
+      <Box style={{ flex: 1, background: 'linear-gradient(135deg, #FDF2F8 0%, #FFE4E6 100%)', border: '2px solid #F9A8D4', borderRadius: 'md', padding: 'lg' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+          <Emoji name="✋" style={{ width: 18, height: 18 }} />
+          <Text style={{ fontSize: 'body', color: '#881337', bold: true }}>{/* {{替换：标题}} */}手势记忆法</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 'sm', flexWrap: 'wrap' }}>
+          {[
+            ['一声：平伸', '#DC2626'],
+            ['二声：向上', '#16A34A'],
+            ['三声：拐弯', '#2563EB'],
+            ['四声：向下', '#9333EA'],
+          ].map((x, i) => (
+            <Box key={i} style={{ width: '48%', background: '#FFFFFF', borderRadius: 'sm', padding: 'sm', alignItems: 'center' }}>
+              <Text style={{ fontSize: 'body', color: x[1], bold: true }}>{/* {{替换：手势}} */}{x[0]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

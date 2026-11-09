@@ -1,0 +1,33 @@
+<Slide>
+  {/* educational/1659 古诗词赏析·意象解读：标题 + 诗文卡 + 4意象卡 + 情感分析 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Text style={{ fontSize: 'title', color: '#4C1D95', fontFamily: 'serif', bold: true }}>{/* {{替换：标题}} */}《静夜思》意象分析</Text>
+      <Text style={{ fontSize: 'body', color: '#7C3AED' }}>{/* {{替换：作者}} */}唐·李白</Text>
+    </Box>
+    <Box style={{ background: '#FFFFFF', border: '2px solid #DDD6FE', borderRadius: 'md', padding: 'lg', alignItems: 'center' }}>
+      <Box style={{ gap: 'sm', alignItems: 'center' }}>
+        <Text style={{ fontSize: 'title', color: '#1F2937', fontFamily: 'serif' }}>床前明月光，疑是地上霜。</Text>
+        <Text style={{ fontSize: 'title', color: '#1F2937', fontFamily: 'serif' }}>举头望明月，低头思故乡。</Text>
+      </Box>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+      {[
+        ['明月', '象征思念、团圆、离别愁绪', '#F59E0B', 'rgba(245,158,11,0.15)', '🌕'],
+        ['霜', '象征寒冷、孤独、凄清', '#3B82F6', 'rgba(59,130,246,0.15)', '❄'],
+        ['夜', '象征思乡时刻、孤寂环境', '#A855F7', 'rgba(168,85,247,0.15)', '🌃'],
+        ['故乡', '象征归宿、亲情、温暖', '#22C55E', 'rgba(34,197,94,0.15)', '🏡'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: x[3], border: `2px solid ${x[2]}`, borderRadius: 'md', padding: 'lg', alignItems: 'center' }}>
+          <Emoji name={x[4]} style={{ width: 32, height: 32, marginBottom: 'sm' }} />
+          <Text style={{ fontSize: 'card', color: x[2], bold: true, marginBottom: 'sm' }}>{/* {{替换：意象名}} */}{x[0]}</Text>
+          <Text style={{ fontSize: 'label', color: '#4B5563', textAlign: 'center', lineHeight: 1.6 }}>{/* {{替换：意象释义}} */}{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ background: 'linear-gradient(90deg, #EDE9FE 0%, #F3E8FF 100%)', border: '2px solid #C4B5FD', borderRadius: 'md', padding: 'lg' }}>
+      <Text style={{ fontSize: 'card', color: '#5B21B6', bold: true, marginBottom: 'sm' }}>{/* {{替换：标题}} */}情感分析</Text>
+      <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.7 }}>{/* {{替换：分析}} */}通过"月光如霜"的视觉错觉，营造凄清氛围；"望"与"思"两个动作，表达深沉的思乡之情。全诗语言质朴，意境深远。</Text>
+    </Box>
+  </Box>
+</Slide>

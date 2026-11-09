@@ -1,0 +1,14 @@
+<Slide>
+  {/* cover/literary/024 文艺风-书签装饰：浅靛紫渐变底 + 书签卡片 + 标签 + 主标题 + 副标题 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #EEF2FF 0%, #F5F3FF 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 书签装饰条（右侧竖条 + 黄色小块，旋转 12° + 阴影） */}
+    <Box style={{ position: 'absolute', top: 60, right: 220, width: 64, height: 384, background: 'linear-gradient(180deg, #9333EA 0%, #4F46E5 100%)', rotate: 12, boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }} />
+    <Box style={{ position: 'absolute', top: 84, right: 236, width: 32, height: 32, background: '#FBBF24', rotate: 12 }} />
+    {/* 主卡片 */}
+    <Box style={{ border: '1px solid #E9D5FF', background: '#FFFFFF', borderRadius: 'md', padding: 'xxl', justifyContent: 'center', alignItems: 'center', maxWidth: 700, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Text style={{ fontSize: 'label', color: '#9333EA', letterSpacing: 6, marginBottom: 'md', textAlign: 'center' }}>ESSAYS</Text>
+      <Text style={{ fontSize: 'hero', color: '#111827', fontFamily: 'serif', letterSpacing: 2, textAlign: 'center', marginBottom: 'lg' }}>{/* {{替换：主标题}} */}随笔集</Text>
+      <Text style={{ fontSize: 'body', color: '#374151', fontWeight: 300, textAlign: 'center' }}>{/* {{替换：副标题}} */}A Collection of Thoughts</Text>
+    </Box>
+  </Box>
+</Slide>

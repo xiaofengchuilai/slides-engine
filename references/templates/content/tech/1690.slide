@@ -1,0 +1,47 @@
+<Slide>
+  {/* tech/1690 总结与展望：中心圆盘 + 四角成果/价值/沉淀/规划 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题 */}
+    <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, textAlign: 'center', marginBottom: 'xl' }}>{/* {{标题}} */}总结与展望</Text>
+
+    {/* 中心布局 */}
+    <Box style={{ flex: 1, position: 'relative' }}>
+      {/* 中心焦点圆盘 */}
+      <Box style={{ position: 'absolute', left: '50%', top: '50%', width: 380, height: 380, marginLeft: -190, marginTop: -190, borderRadius: 190, background: 'cardBg', border: '2px solid #334155', alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 280, height: 160, borderRadius: 'md', marginBottom: 'md' }}>
+          {/* {{图片：有图填 assets/images/1690.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1690.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </Box>
+        <Text style={{ fontSize: 24, color: '#FFFFFF', bold: true, textAlign: 'center' }}>{/* {{主题}} */}数据驱动未来</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center', marginTop: 'xs' }}>{/* {{副题}} */}构建智能数据基础设施</Text>
+      </Box>
+
+      {/* 左上区域 */}
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 340 }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{小标题}} */}核心成果</Text>
+        <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}建立统一数据平台，实现数据资产化管理，数据处理效率提升300%。</Text>
+      </Box>
+
+      {/* 右上区域 */}
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 340 }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{小标题}} */}业务价值</Text>
+        <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}支撑精准营销、风控决策等核心业务场景，预计年化收益提升5000万。</Text>
+      </Box>
+
+      {/* 左下区域 */}
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 340 }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{小标题}} */}技术沉淀</Text>
+        <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}积累数据开发、治理、应用全链路能力，培养专业数据人才团队。</Text>
+      </Box>
+
+      {/* 右下区域 */}
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 340 }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{小标题}} */}未来规划</Text>
+        <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}持续引入AI能力，打造智能化数据平台，实现数据价值最大化。</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

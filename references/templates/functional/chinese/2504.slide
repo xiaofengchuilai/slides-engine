@@ -1,0 +1,44 @@
+<Slide>
+  {/* functional/chinese/2504 中国风-变体2：米白底 + 红标签/面包屑/三联按钮/双语页脚 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFFFFF 0%, #FFF9F0 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 24 }}>
+      {/* 导航 - 章节标签 + 面包屑 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24, border: '1px solid #E5E7EB', background: '#FAFAF9', padding: 20 }}>
+        <Box style={{ background: '#b91c1c', borderRadius: 8, padding: 8, paddingLeft: 16, paddingRight: 16 }}>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>{/* {{替换：章序号}} */}第三章</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Text style={{ fontSize: 'body', color: '#6b7280', fontFamily: 'serif' }}>{/* {{替换：面包屑1}} */}目录</Text>
+          <Text style={{ fontSize: 'body', color: '#ef4444' }}>→</Text>
+          <Text style={{ fontSize: 'body', color: '#b91c1c', bold: true, fontFamily: 'serif' }}>{/* {{替换：面包屑2}} */}古典诗词</Text>
+          <Text style={{ fontSize: 'body', color: '#ef4444' }}>→</Text>
+          <Text style={{ fontSize: 'body', color: '#6b7280', fontFamily: 'serif' }}>{/* {{替换：面包屑3}} */}现代解读</Text>
+        </Box>
+      </Box>
+      {/* 行动 - 三联方形按钮 */}
+      <Box style={{ flexDirection: 'row', gap: 24, justifyContent: 'center', border: '1px solid #E5E7EB', background: '#FAFAF9', padding: 20, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        {[
+          ['#fee2e2', '#fca5a5', '📚', '阅读原文'],
+          ['#fef3c7', '#fcd34d', '💬', '参与讨论'],
+          ['#fef9c3', '#fde047', '⭐', '收藏分享'],
+        ].map((x, i) => (
+          <Box key={i} style={{ alignItems: 'center', gap: 8 }}>
+            <Box style={{ width: 64, height: 64, background: x[0], border: '2px solid ' + x[1], borderRadius: 8, alignItems: 'center', justifyContent: 'center' }}>
+              <Emoji name={x[2]} style={{ width: 30, height: 30 }} />
+            </Box>
+            <Text style={{ fontSize: 'label', color: '#881337', bold: true, fontFamily: 'serif' }}>{/* {{替换：按钮文字}} */}{x[3]}</Text>
+          </Box>
+        ))}
+      </Box>
+      {/* 页脚 - 中英双语 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, padding: 12, background: '#FAFAF9', border: '1px solid #FECACA' }}>
+        <Text style={{ flex: 1, fontSize: 'body', color: '#991b1b', fontFamily: 'serif' }}>{/* {{替换：页脚左}} */}中华文化研究中心 · Cultural Research</Text>
+        <Text style={{ fontSize: 'label', color: '#dc2626', fontFamily: 'serif' }}>{/* {{替换：页脚中}} */}本内容受著作权保护</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'baseline', gap: 4 }}>
+          <Text style={{ fontSize: 'body', color: '#b91c1c', bold: true, fontFamily: 'serif' }}>{/* {{替换：页码}} */}3</Text>
+          <Text style={{ fontSize: 'label', color: '#ef4444', fontFamily: 'serif' }}>{/* {{替换：总页数}} */}/ 18</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

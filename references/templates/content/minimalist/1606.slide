@@ -1,0 +1,53 @@
+<Slide>
+  {/* minimalist/1606 对角线式：左上标题+小图 + 右下大图+数据卡片组 + 底部注释 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, justifyContent: 'space-between' }}>
+      {/* 左上区：标题 + 小图 */}
+      <Box style={{ flexDirection: 'row', gap: 'xl', alignItems: 'flex-start' }}>
+        <Box style={{ flex: 1 }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+            <Box style={{ width: 32, height: 32, borderRadius: 16, background: 'primary' }} />
+            <Text style={{ fontSize: 'label', color: 'muted' }}>STRATEGY</Text>
+          </Box>
+          <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'md' }}>{/* {{标题}} */}数字营销策略矩阵</Text>
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6, marginBottom: 'sm' }}>{/* {{段落1}} */}基于用户生命周期的全链路营销体系，实现精准触达和高效转化。</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{段落2}} */}整合线上线下资源，构建立体化营销网络。</Text>
+        </Box>
+        <Box style={{ width: 192, height: 160, background: 'primary', borderRadius: 'md', alignItems: 'center', justifyContent: 'center', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>转化漏斗</Text>
+        </Box>
+      </Box>
+      {/* 右下区：大图 + 数据卡片组 */}
+      <Box style={{ flexDirection: 'row', gap: 'xl', alignItems: 'flex-end' }}>
+        <Box style={{ flex: 1, height: 288, position: 'relative', borderRadius: 'md', background: 'cardBg' }}>
+          {/* {{图片：营销渠道分布，有图填 assets/images/1606_main.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1606_main.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+          <Box style={{ position: 'absolute', top: 20, right: 20, background: 'bg', padding: 'sm md', borderRadius: 'sm', border: '1px solid #E5E7EB', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>总触达人数</Text>
+            <Text style={{ fontSize: 'kpi', color: 'text', bold: true, lineHeight: 1 }}>1200万+</Text>
+          </Box>
+        </Box>
+        <Box style={{ width: 256, gap: 'md' }}>
+          {[
+            { bar: 'primary', label: '转化率', value: '8.5%', note: '较上季度提升2.3%', noteColor: '#16A34A' },
+            { bar: 'muted', label: '获客成本', value: '¥58', note: '降低15%', noteColor: '#16A34A' },
+          ].map((c, i) => (
+            <Box key={i} style={{ flexDirection: 'row', background: 'bg', padding: 'md', borderRadius: 'sm', border: '1px solid #E5E7EB', gap: 'md', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+              <Box style={{ width: 4, alignSelf: 'stretch', background: c.bar, borderRadius: 2 }} />
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'label', color: 'muted', marginBottom: 'xs' }}>{c.label}</Text>
+                <Text style={{ fontSize: 'kpi', color: 'text', bold: true, lineHeight: 1 }}>{c.value}</Text>
+                <Text style={{ fontSize: 'label', color: c.noteColor, marginTop: 'xs' }}>{c.note}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+    {/* 底部注释 */}
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', paddingTop: 'md', marginTop: 'lg' }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>*数据统计周期：2024年Q1-Q3 | 样本：15个营销活动</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>分析工具：Google Analytics + 自建数据平台</Text>
+    </Box>
+  </Box>
+</Slide>

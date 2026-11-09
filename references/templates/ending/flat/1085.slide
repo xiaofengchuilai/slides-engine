@@ -1,0 +1,26 @@
+<Slide>
+  {/* ending/flat 1085 彩虹渐变结尾：白底 + 上下彩虹弧形 + 彩色圆点 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'bg' }}>
+    {/* 顶部彩虹弧（多层椭圆弧近似） */}
+    <Shape type="ellipse" style={{ position: 'absolute', top: 32, left: 240, width: 800, height: 360, line: { color: '#FF6B6B', width: 28 }, opacity: 0.5 }} />
+    <Shape type="ellipse" style={{ position: 'absolute', top: 40, left: 248, width: 784, height: 344, line: { color: '#FF8B94', width: 26 }, opacity: 0.5 }} />
+    <Shape type="ellipse" style={{ position: 'absolute', top: 48, left: 256, width: 768, height: 328, line: { color: '#FFD93D', width: 24 }, opacity: 0.5 }} />
+    <Shape type="ellipse" style={{ position: 'absolute', top: 56, left: 264, width: 752, height: 312, line: { color: '#A8E6CF', width: 22 }, opacity: 0.5 }} />
+    <Shape type="ellipse" style={{ position: 'absolute', top: 64, left: 272, width: 736, height: 296, line: { color: '#4ECDC4', width: 20 }, opacity: 0.5 }} />
+    {/* 底部彩虹弧（反向近似） */}
+    <Shape type="ellipse" style={{ position: 'absolute', bottom: 32, left: 240, width: 800, height: 360, line: { color: '#667EEA', width: 24 }, opacity: 0.4 }} />
+    <Shape type="ellipse" style={{ position: 'absolute', bottom: 40, left: 248, width: 784, height: 344, line: { color: '#764BA2', width: 22 }, opacity: 0.4 }} />
+    <Shape type="ellipse" style={{ position: 'absolute', bottom: 48, left: 256, width: 768, height: 328, line: { color: '#F093FB', width: 20 }, opacity: 0.4 }} />
+    <Shape type="ellipse" style={{ position: 'absolute', bottom: 56, left: 264, width: 752, height: 312, line: { color: '#F5576C', width: 18 }, opacity: 0.4 }} />
+    {/* 彩色圆点装饰 */}
+    <Box style={{ position: 'absolute', top: 180, left: 256, width: 30, height: 30, borderRadius: 15, background: '#F87171' }} />
+    <Box style={{ position: 'absolute', top: 216, right: 282, width: 35, height: 35, borderRadius: 18, background: '#2DD4BF' }} />
+    <Box style={{ position: 'absolute', bottom: 202, left: 320, width: 28, height: 28, borderRadius: 14, background: '#FDE047' }} />
+    <Box style={{ position: 'absolute', bottom: 230, right: 256, width: 32, height: 32, borderRadius: 16, background: '#86EFAC' }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: 'text', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}谢谢</Text>
+      <Text style={{ fontSize: 'card', color: 'text', textAlign: 'center' }}>{/* {{副标题}} */}感谢您的宝贵时间</Text>
+    </Box>
+  </Box>
+</Slide>

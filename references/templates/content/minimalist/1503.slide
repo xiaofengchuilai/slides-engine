@@ -1,0 +1,20 @@
+<Slide>
+  {/* minimalist/1503 极简主义：大标题+细横线，3列大数字编号 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 'kpi', color: 'text' }}>{/* {{替换：标题}} */}极简主义</Text>
+    <Box style={{ width: 160, height: 4, background: 'primary', marginTop: 'lg', marginBottom: 'xxl' }} />
+    <Box style={{ flexDirection: 'row', gap: 'xxl' }}>
+      {[
+        { no: '01', title: '少即是多', body: '通过减少不必要的元素，聚焦核心价值，让信息传达更加清晰有力。' },
+        { no: '02', title: '留白艺术', body: '适当的空间能够给予内容呼吸的空间，提升整体的视觉美感。' },
+        { no: '03', title: '功能优先', body: '设计应当服务于功能，避免过度装饰影响用户体验。' },
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, gap: 'md' }}>
+          <Text style={{ fontSize: 'hero', color: 'muted' }}>{x.no}</Text>
+          <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{替换：要点标题}} */}{x.title}</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.7 }}>{/* {{替换：要点说明}} */}{x.body}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

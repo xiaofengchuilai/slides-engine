@@ -1,0 +1,23 @@
+<Slide>
+  {/* cover/tech/055 科技风-量子粒子：深紫渐变底 + 光点装饰 + 主标题 + 副标题 + 落款 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #2E1065 0%, #0F172A 50%, #1E1B4B 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 量子粒子光点装饰 */}
+    <Box style={{ position: 'absolute', top: 180, left: 320, width: 96, height: 96, borderRadius: 48, background: '#A855F7', opacity: 0.12 }} />
+    <Box style={{ position: 'absolute', top: 240, right: 320, width: 80, height: 80, borderRadius: 40, background: '#8B5CF6', opacity: 0.12 }} />
+    <Box style={{ position: 'absolute', bottom: 240, left: 426, width: 112, height: 112, borderRadius: 56, background: '#6366F1', opacity: 0.12 }} />
+    <Box style={{ position: 'absolute', bottom: 180, right: 426, width: 64, height: 64, borderRadius: 32, background: '#A855F7', opacity: 0.12 }} />
+    {/* 旋转光柱装饰（三条渐变斜线） */}
+    <Box style={{ position: 'absolute', top: 180, left: 320, width: 1, height: 128, background: 'linear-gradient(180deg, #A855F7 0%, rgba(168,85,247,0) 100%)', rotate: 45 }} />
+    <Box style={{ position: 'absolute', top: 240, right: 320, width: 1, height: 128, background: 'linear-gradient(180deg, #8B5CF6 0%, rgba(139,92,246,0) 100%)', rotate: -45 }} />
+    <Box style={{ position: 'absolute', bottom: 240, left: 426, width: 1, height: 128, background: 'linear-gradient(180deg, #6366F1 0%, rgba(99,102,241,0) 100%)', rotate: 12 }} />
+    <Box style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, letterSpacing: 4, textAlign: 'center', lineHeight: 1.1, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}人工智能应用实践</Text>
+      <Text style={{ fontSize: 'card', color: '#C4B5FD', fontWeight: 300, letterSpacing: 2, textAlign: 'center', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}大模型赋能业务创新</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'body', color: '#DDD6FE' }}>{/* {{替换：落款一}} */}AI研发部</Text>
+        <Text style={{ fontSize: 'body', color: '#DDD6FE', opacity: 0.5 }}>·</Text>
+        <Text style={{ fontSize: 'body', color: '#DDD6FE' }}>{/* {{替换：落款二}} */}产品发布会</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,15 @@
+<Slide>
+  {/* transition/business/538 垂直条纹：四边竖条装饰 + 居中大章节号（横条替代原单边 border） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(90deg, #F1F5F9 0%, #FFFFFF 50%, #F1F5F9 100%)', position: 'relative', alignItems: 'center', justifyContent: 'center' }}>
+    <Box style={{ position: 'absolute', top: 0, bottom: 0, left: 0, width: 8, background: '#1D4ED8' }} />
+    <Box style={{ position: 'absolute', top: 0, bottom: 0, left: 40, width: 4, background: '#94A3B8' }} />
+    <Box style={{ position: 'absolute', top: 0, bottom: 0, right: 40, width: 4, background: '#94A3B8' }} />
+    <Box style={{ position: 'absolute', top: 0, bottom: 0, right: 0, width: 8, background: '#1D4ED8' }} />
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: 'text', bold: true, textAlign: 'center' }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+      <Box style={{ width: 160, height: 4, background: '#1D4ED8', marginTop: 16, marginBottom: 24 }} />
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+    </Box>
+  </Box>
+</Slide>

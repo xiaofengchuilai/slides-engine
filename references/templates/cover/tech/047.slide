@@ -1,0 +1,27 @@
+<Slide>
+  {/* cover/tech/047 科技风-电路板纹理：深色底 + 电路线网格 + 芯片图标 + 主标题 + 副标题 + 胶囊落款 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 电路板纹理（横竖线降级） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, opacity: 0.1 }}>
+      <Box style={{ position: 'absolute', top: 180, left: 0, width: 1280, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 360, left: 0, width: 1280, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 540, left: 0, width: 1280, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 320, width: 2, height: 720, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 640, width: 2, height: 720, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 960, width: 2, height: 720, background: '#06B6D4' }} />
+    </Box>
+    <Box style={{ justifyContent: 'center', alignItems: 'center', maxWidth: 1100 }}>
+      {/* 芯片图标（外框 + 内框） */}
+      <Box style={{ width: 96, height: 96, borderRadius: 'md', border: '3px solid #06B6D4', background: '#123C46', justifyContent: 'center', alignItems: 'center', marginBottom: 'xxl' }}>
+        <Box style={{ width: 48, height: 48, border: '2px solid #22D3EE' }} />
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, letterSpacing: 3, textAlign: 'center', lineHeight: 1.1, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}芯片技术研发</Text>
+      <Text style={{ fontSize: 'card', color: '#67E8F9', fontWeight: 300, letterSpacing: 3, textAlign: 'center', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}CHIP TECHNOLOGY DEVELOPMENT</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', borderRadius: 100, border: '2px solid #0E7490', background: '#111827', padding: 'md xl' }}>
+        <Text style={{ fontSize: 'body', color: '#D1D5DB' }}>{/* {{替换：落款一}} */}研发中心</Text>
+        <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#06B6D4' }} />
+        <Text style={{ fontSize: 'body', color: '#D1D5DB' }}>{/* {{替换：落款二}} */}2025/01/20</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,33 @@
+<Slide>
+  {/* chinese/106 古典纹样：灰米底 + 上下回纹条 + 右侧如意纹 + 主标题 + 副标题 + 金线 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #E7E5E4 0%, #D6D3D1 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 回纹装饰顶部：金线 + 两段方块 */}
+    <Box style={{ position: 'absolute', top: 64, left: 0, width: 1280, height: 40, opacity: 0.15 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 128, right: 128, height: 4, background: '#78350F' }} />
+      <Box style={{ position: 'absolute', top: 8, left: 154, width: 20, height: 20, border: '3px solid #78350F' }} />
+      <Box style={{ position: 'absolute', top: 8, left: 192, width: 20, height: 20, border: '3px solid #78350F' }} />
+      <Box style={{ position: 'absolute', top: 8, left: 230, width: 20, height: 20, border: '3px solid #78350F' }} />
+      <Box style={{ position: 'absolute', top: 8, right: 154, width: 20, height: 20, border: '3px solid #78350F' }} />
+      <Box style={{ position: 'absolute', top: 8, right: 192, width: 20, height: 20, border: '3px solid #78350F' }} />
+    </Box>
+    {/* 回纹装饰底部 */}
+    <Box style={{ position: 'absolute', bottom: 64, left: 0, width: 1280, height: 40, opacity: 0.15 }}>
+      <Box style={{ position: 'absolute', bottom: 0, left: 128, right: 128, height: 4, background: '#78350F' }} />
+      <Box style={{ position: 'absolute', bottom: 8, left: 154, width: 20, height: 20, border: '3px solid #78350F' }} />
+      <Box style={{ position: 'absolute', bottom: 8, left: 192, width: 20, height: 20, border: '3px solid #78350F' }} />
+      <Box style={{ position: 'absolute', bottom: 8, right: 154, width: 20, height: 20, border: '3px solid #78350F' }} />
+    </Box>
+    {/* 如意纹装饰（右侧：拱形 + 竖线） */}
+    <Box style={{ position: 'absolute', top: 264, right: 128, width: 80, height: 128, opacity: 0.12 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 20, width: 40, height: 40, border: '3px solid #92400E', borderRadius: 20 }} />
+      <Box style={{ position: 'absolute', top: 36, left: 40, width: 4, height: 96, background: '#92400E' }} />
+    </Box>
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#1C1917', bold: true, lineHeight: 1.3, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}传统纹样研究</Text>
+      <Text style={{ fontSize: 'card', color: '#92400E', marginBottom: 'xxl', letterSpacing: 2 }}>{/* {{替换：副标题}} */}纹以载道·意蕴深远</Text>
+      <Box style={{ width: 128, height: 2, background: '#78350F', marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：落款}} */}设计研究院 | 纹样图典发布</Text>
+    </Box>
+  </Box>
+</Slide>

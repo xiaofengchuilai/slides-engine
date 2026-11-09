@@ -1,0 +1,26 @@
+<Slide>
+  {/* ending/literary/1077 文艺风-月光星辰：深蓝渐变 + 月亮 + 星星 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(180deg, #1A2332 0%, #2D3E5F 50%, #3A5278 100%)' }}>
+    {/* 月亮（圆点+光晕） */}
+    <Box style={{ position: 'absolute', top: 108, right: 190, width: 120, height: 120, borderRadius: 60, background: '#FEF9E7', opacity: 0.9, boxShadow: '0 0 40px rgba(254,249,231,0.5)' }} />
+    <Box style={{ position: 'absolute', top: 70, right: 152, width: 196, height: 196, borderRadius: 98, background: '#FEF9E7', opacity: 0.15 }} />
+    {/* 星星装饰（小圆点 + 光晕） */}
+    <Box style={{ position: 'absolute', top: 85, left: 260, width: 3, height: 3, borderRadius: 1, background: '#FFFFFF', opacity: 0.8, boxShadow: '0 0 8px rgba(255,255,255,0.8)' }} />
+    <Box style={{ position: 'absolute', top: 180, left: 190, width: 2, height: 2, borderRadius: 1, background: '#FFFFFF', opacity: 0.7, boxShadow: '0 0 6px rgba(255,255,255,0.7)' }} />
+    <Box style={{ position: 'absolute', top: 215, left: 380, width: 3, height: 3, borderRadius: 1, background: '#FFFFFF', opacity: 0.75, boxShadow: '0 0 7px rgba(255,255,255,0.75)' }} />
+    <Box style={{ position: 'absolute', top: 130, left: 510, width: 2, height: 2, borderRadius: 1, background: '#FFFFFF', opacity: 0.7, boxShadow: '0 0 6px rgba(255,255,255,0.7)' }} />
+    <Box style={{ position: 'absolute', top: 250, right: 320, width: 3, height: 3, borderRadius: 1, background: '#FFFFFF', opacity: 0.8, boxShadow: '0 0 8px rgba(255,255,255,0.8)' }} />
+    <Box style={{ position: 'absolute', bottom: 250, left: 230, width: 3, height: 3, borderRadius: 1, background: '#FFFFFF', opacity: 0.75, boxShadow: '0 0 7px rgba(255,255,255,0.75)' }} />
+    <Box style={{ position: 'absolute', bottom: 200, right: 380, width: 2, height: 2, borderRadius: 1, background: '#FFFFFF', opacity: 0.7, boxShadow: '0 0 6px rgba(255,255,255,0.7)' }} />
+    {/* 云朵装饰（低透明圆角条） */}
+    <Box style={{ position: 'absolute', bottom: 145, left: 130, width: 150, height: 50, borderRadius: 25, background: '#FFFFFF', opacity: 0.05 }} />
+    <Box style={{ position: 'absolute', bottom: 108, right: 155, width: 180, height: 60, borderRadius: 30, background: '#FFFFFF', opacity: 0.04 }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#E8DCC8', fontFamily: 'serif', marginBottom: 'xl' }}>{/* {{替换：主标题}} */}感谢聆听</Text>
+      <Text style={{ fontSize: 'title', color: '#D4C9B8', fontFamily: 'serif', lineHeight: 1.8 }}>{/* {{替换：致谢语}} */}期待下次再见</Text>
+    </Box>
+    {/* 月光诗句 */}
+    <Text style={{ position: 'absolute', bottom: 100, left: 0, right: 0, textAlign: 'center', fontSize: 'body', color: '#E8DCC8', fontFamily: 'serif', letterSpacing: 2, opacity: 0.4 }}>· 月光如水 ·</Text>
+  </Box>
+</Slide>

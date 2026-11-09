@@ -1,0 +1,20 @@
+<Slide>
+  {/* ending/flat 1087 卡片堆叠结尾：淡紫渐变底 + 左右白卡堆叠 + 彩色圆点 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #E9D5FF 0%, #F3E8FF 50%, #DBEAFE 100%)' }}>
+    {/* 左侧白卡堆叠（三张错落 + 阴影 + 旋转） */}
+    <Box style={{ position: 'absolute', top: 40, left: 40, width: 280, height: 200, background: 'bg', borderRadius: 'md', opacity: 0.7, boxShadow: '0 16px 48px rgba(0,0,0,0.28)', rotate: -8 }} />
+    <Box style={{ position: 'absolute', top: 80, left: 80, width: 280, height: 200, background: 'bg', borderRadius: 'md', opacity: 0.8, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }} />
+    <Box style={{ position: 'absolute', top: 100, left: 100, width: 280, height: 200, background: 'bg', borderRadius: 'md', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }} />
+    {/* 右侧白卡堆叠（两张错落 + 阴影 + 旋转） */}
+    <Box style={{ position: 'absolute', bottom: 80, right: 80, width: 260, height: 180, background: 'bg', borderRadius: 'md', opacity: 0.7, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }} />
+    <Box style={{ position: 'absolute', bottom: 100, right: 100, width: 260, height: 180, background: 'bg', borderRadius: 'md', opacity: 0.85, boxShadow: '0 16px 48px rgba(0,0,0,0.28)', rotate: 5 }} />
+    {/* 彩色装饰圆点 */}
+    <Box style={{ position: 'absolute', top: 252, left: 576, width: 50, height: 50, borderRadius: 25, background: '#F87171' }} />
+    <Box style={{ position: 'absolute', bottom: 274, right: 538, width: 45, height: 45, borderRadius: 23, background: '#2DD4BF' }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: 'text', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}感谢聆听</Text>
+      <Text style={{ fontSize: 'card', color: 'text', textAlign: 'center' }}>{/* {{副标题}} */}期待下次再见</Text>
+    </Box>
+  </Box>
+</Slide>

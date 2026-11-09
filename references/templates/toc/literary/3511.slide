@@ -1,0 +1,28 @@
+<Slide>
+  {/* literary/3511 文艺风-手写笔记：琥珀米渐变底 + 手写标题 + 左侧色条章节列表 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFFBEB 0%, #FFF7ED 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'title', color: '#374151', bold: true, marginBottom: 8, fontFamily: 'serif' }}>{/* {{标题}} */}Contents</Text>
+      <Text style={{ fontSize: 'body', color: '#6b7280', marginBottom: 32, fontFamily: 'serif' }}>{/* {{副标题}} */}— 让我们一起探索精彩内容 —</Text>
+      <Box style={{ gap: 20 }}>
+        {[
+          ['①', '#fde68a', '序章·初见', '开启一段全新的旅程'],
+          ['②', '#fed7aa', '探索·发现', '深入挖掘核心价值'],
+          ['③', '#fecdd3', '实践·行动', '将想法化为现实'],
+          ['④', '#e9d5ff', '终章·回望', '收获与展望未来'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', gap: 20, alignItems: 'flex-start' }}>
+            <Box style={{ width: 56, height: 56, borderRadius: 28, background: x[1], alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: '#78350f', bold: true }}>{/* {{章节编号}} */}{x[0]}</Text>
+            </Box>
+            <Box style={{ flex: 1, paddingLeft: 20, paddingTop: 8, paddingBottom: 8, position: 'relative' }}>
+              <Box style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 4, background: x[1] }} />
+              <Text style={{ fontSize: 'card', color: '#374151', bold: true, marginBottom: 4 }}>{/* {{章节名}} */}{x[2]}</Text>
+              <Text style={{ fontSize: 'body', color: '#6b7280', fontFamily: 'serif' }}>{/* {{章节副标题}} */}{x[3]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

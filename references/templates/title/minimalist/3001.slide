@@ -1,0 +1,11 @@
+<Slide>
+  {/* title/minimalist/3001 简约风-细线分隔：浅灰底 + 细字大标题 + 深色短分隔线 */}
+  <Box style={{ width: 1280, height: 720, background: '#FAFAFA', position: 'absolute', top: 0, left: 0, padding: 'xl' }}>
+    <Box style={{ height: '100%', justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'kpi', color: 'text', bold: false, fontWeight: 300, letterSpacing: 2 }}>{/* {{替换：主标题}} */}用户体验设计</Text>
+        <Box style={{ width: 64, height: 2, background: 'text', marginTop: 'md' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

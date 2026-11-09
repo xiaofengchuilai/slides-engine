@@ -1,0 +1,42 @@
+<Slide>
+  {/* functional/minimalist/2501 简约风-变体1：白底 + 页码/面包屑/下一节/扫码卡/公司信息栏 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 20 }}>
+      {/* 导航 - 页码指示 */}
+      <Box style={{ border: '1px solid #E5E7EB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        <Text style={{ fontSize: 'card', color: 'muted' }}>{/* {{替换：页码}} */}01 / 05</Text>
+      </Box>
+      {/* 导航 - 面包屑导航 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8, border: '1px solid #E5E7EB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：面包屑1}} */}目录</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>→</Text>
+        <Text style={{ fontSize: 'label', color: 'text', bold: true }}>{/* {{替换：面包屑2}} */}核心理念</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>→</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：面包屑3}} */}实施方案</Text>
+      </Box>
+      {/* 导航 - 下一节链接 */}
+      <Box style={{ border: '1px solid #E5E7EB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{替换：下一节链接}} */}下一节：实施方案详解 →</Text>
+      </Box>
+      {/* 行动 - 扫码引导卡片 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, border: '1px solid #E5E7EB', background: '#F9FAFB', padding: 16, borderRadius: 'sm', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Box style={{ width: 80, height: 80, background: '#E5E7EB', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：扫码文字}} */}QR</Text>
+        </Box>
+        <Box>
+          <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：主文案}} */}扫码了解更多详情</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：副文案}} */}Scan to learn more</Text>
+        </Box>
+      </Box>
+      {/* 页脚 - 公司信息栏 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', border: '1px solid #E5E7EB', background: '#F9FAFB', padding: 12, borderRadius: 'sm' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+          <Box style={{ width: 32, height: 32, background: '#1F2937', borderRadius: 'sm' }} />
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：品牌名}} */}Company Name</Text>
+        </Box>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：版权}} */}© 2024 All Rights Reserved</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：页码}} */}Page 3</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

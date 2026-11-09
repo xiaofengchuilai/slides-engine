@@ -1,0 +1,34 @@
+<Slide>
+  {/* chinese/1511 中轴对称·纯文字：顶部细线 + 标题 + 三段式对称 + 底部细线 + 角落印章降级为色块 */}
+  <Box style={{ height: 720, width: 1280, background: '#FBF7F0', padding: 'xxl xl', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 顶部装饰细线 */}
+    <Box style={{ width: 160, height: 2, background: 'rgba(168, 24, 16, 0.35)', marginBottom: 'xl' }} />
+    {/* 标题区 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'xl' }}>
+      <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true, letterSpacing: 4 }}>{/* {{替换：主标题}} */}传统文化的当代价值</Text>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 4, marginTop: 'sm' }}>{/* {{替换：英文副标}} */}CONTEMPORARY VALUE OF TRADITION</Text>
+    </Box>
+    {/* 主内容 */}
+    <Box style={{ width: 800, gap: 'xl' }}>
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.8, textAlign: 'center' }}>{/* {{替换：导语段落}} */}
+        中华传统文化源远流长，其核心价值观念如“仁义礼智信”不仅是古代社会的道德准则，在当代社会中依然具有重要的指导意义。
+      </Text>
+      <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+        {[
+          ['一', '道德修养', '人格完善'],
+          ['二', '和谐共生', '社会关系'],
+          ['三', '天人合一', '生态智慧'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, alignItems: 'center', gap: 'sm' }}>
+            <Text style={{ fontSize: 'kpi', color: '#A81810', bold: true }}>{x[0]}</Text>
+            <Text style={{ fontSize: 'body', color: 'text', textAlign: 'center', lineHeight: 1.6 }}>{x[1]}<br />{x[2]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    {/* 底部装饰细线 */}
+    <Box style={{ width: 160, height: 2, background: 'rgba(168, 24, 16, 0.35)', marginTop: 'xl' }} />
+    {/* 功能文字 */}
+    <Text style={{ fontSize: 'label', color: 'muted', position: 'absolute', right: 64, bottom: 24 }}>{/* {{替换：参考来源}} */}参考：《中国传统文化概论》</Text>
+  </Box>
+</Slide>

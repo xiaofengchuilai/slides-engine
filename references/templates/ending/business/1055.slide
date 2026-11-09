@@ -1,0 +1,18 @@
+<Slide>
+  {/* ending/business/1055 左侧深蓝渐变块 + 右侧谢谢：左右分栏致谢页 */}
+  <Box style={{ height: 720, width: 1280, background: '#f8f9fa', flexDirection: 'row' }}>
+    {/* 左侧色块（深蓝渐变 + 装饰线/方块） */}
+    <Box style={{ width: 512, background: 'linear-gradient(135deg, #2c5282 0%, #1a365d 100%)', position: 'relative' }}>
+      <Box style={{ position: 'absolute', top: 144, left: 77, right: 77, height: 1, background: 'rgba(255,255,255,0.3)' }} />
+      <Box style={{ position: 'absolute', bottom: 144, left: 77, width: 307, height: 1, background: 'rgba(255,255,255,0.3)' }} />
+      <Box style={{ position: 'absolute', top: 180, right: 51, width: 60, height: 60, border: '2px solid rgba(255,255,255,0.2)', rotate: 45 }} />
+      <Box style={{ position: 'absolute', bottom: 180, left: 51, width: 50, height: 50, border: '2px solid rgba(255,255,255,0.2)', rotate: 45 }} />
+    </Box>
+    {/* 右侧内容区 */}
+    <Box style={{ flex: 1, justifyContent: 'center', padding: '0 60px' }}>
+      <Text style={{ fontSize: 56, color: '#2d3748', letterSpacing: 6, marginBottom: 40 }}>{/* {{替换：主标题}} */}谢谢</Text>
+      <Box style={{ width: 120, height: 4, background: 'linear-gradient(90deg, #2c5282 0%, #4299e1 100%)', marginBottom: 40 }} />
+      <Text style={{ fontSize: 'card', color: '#718096', letterSpacing: 2, lineHeight: 1.8 }}>{/* {{替换：致谢语}} */}感谢您的宝贵时间</Text>
+    </Box>
+  </Box>
+</Slide>

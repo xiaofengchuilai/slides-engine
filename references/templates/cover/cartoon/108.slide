@@ -1,0 +1,31 @@
+<Slide>
+  {/* cartoon/108 云朵飘飘：天蓝渐变底 + 云朵组 + 太阳 + 白字标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #38BDF8 0%, #7DD3FC 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 云朵装饰（左上，白色圆角叠加） */}
+    <Box style={{ position: 'absolute', top: 112, left: 128, flexDirection: 'row', alignItems: 'flex-end' }}>
+      <Box style={{ width: 56, height: 40, borderRadius: 28, background: '#FFFFFF' }} />
+      <Box style={{ width: 64, height: 48, borderRadius: 32, background: '#FFFFFF', marginLeft: -12 }} />
+      <Box style={{ width: 48, height: 32, borderRadius: 24, background: '#FFFFFF', marginLeft: -12 }} />
+    </Box>
+    {/* 云朵装饰（右上） */}
+    <Box style={{ position: 'absolute', top: 224, right: 144, flexDirection: 'row', alignItems: 'flex-end' }}>
+      <Box style={{ width: 44, height: 32, borderRadius: 22, background: '#FFFFFF' }} />
+      <Box style={{ width: 56, height: 40, borderRadius: 28, background: '#FFFFFF', marginLeft: -8 }} />
+      <Box style={{ width: 40, height: 28, borderRadius: 20, background: '#FFFFFF', marginLeft: -8 }} />
+    </Box>
+    {/* 云朵装饰（左下） */}
+    <Box style={{ position: 'absolute', bottom: 144, left: 208, flexDirection: 'row', alignItems: 'flex-end' }}>
+      <Box style={{ width: 48, height: 36, borderRadius: 24, background: '#FFFFFF' }} />
+      <Box style={{ width: 56, height: 44, borderRadius: 28, background: '#FFFFFF', marginLeft: -12 }} />
+      <Box style={{ width: 44, height: 32, borderRadius: 22, background: '#FFFFFF', marginLeft: -12 }} />
+    </Box>
+    {/* 太阳装饰（右上，黄色圆） */}
+    <Box style={{ position: 'absolute', top: 80, right: 176, width: 80, height: 80, borderRadius: 40, background: '#FACC15' }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}梦想飞翔日</Text>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}放飞梦想·拥抱蓝天</Text>
+      <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：落款}} */}创意工作室 | 儿童节特别活动</Text>
+    </Box>
+  </Box>
+</Slide>

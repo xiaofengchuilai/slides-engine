@@ -1,0 +1,26 @@
+<Slide>
+  {/* business/065 白底封面：右上/左下同心圆环装饰 + 居中内容 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'relative' }}>
+    {/* 右上同心圆环（500 → 内 300 → 最内 100 实心） */}
+    <Box style={{ position: 'absolute', top: 0, right: 0, width: 400, height: 400 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 400, height: 400, borderRadius: 200, background: '#DBEAFE', opacity: 0.55 }} />
+      <Box style={{ position: 'absolute', top: 40, left: 40, width: 320, height: 320, borderRadius: 160, background: '#BFDBFE', opacity: 0.7 }} />
+      <Box style={{ position: 'absolute', top: 80, left: 80, width: 240, height: 240, background: 'linear-gradient(135deg, #3B82F6 0%, #4F46E5 100%)', borderRadius: 120, opacity: 0.12 }} />
+    </Box>
+    {/* 左下同心圆环（400 → 内 320） */}
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 360, height: 360 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 360, height: 360, borderRadius: 180, background: '#F3F4F6', opacity: 0.8 }} />
+      <Box style={{ position: 'absolute', top: 40, left: 40, width: 280, height: 280, borderRadius: 140, background: '#E5E7EB', opacity: 0.9 }} />
+    </Box>
+    {/* 主内容区 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, justifyContent: 'center', alignItems: 'center', padding: 'xxl xl' }}>
+      <Text style={{ fontSize: 'hero', color: 'text', bold: true, textAlign: 'center', lineHeight: 1.2, marginBottom: 'xxl' }}>{/* {{主标题}} */}产品创新策略</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center', lineHeight: 1.5, marginBottom: 'xxl' }}>{/* {{副标题}} */}洞察需求·引领创新·赢得市场</Text>
+      <Box style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 'lg' }}>
+        <Text style={{ fontSize: 'label', color: 'text', letterSpacing: 1 }}>{/* {{落款一}} */}产品研发中心</Text>
+        <Text style={{ fontSize: 'body', color: 'text', opacity: 0.5 }}>·</Text>
+        <Text style={{ fontSize: 'label', color: 'text', letterSpacing: 1 }}>{/* {{落款二}} */}产品规划评审</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,15 @@
+<Slide>
+  {/* minimalist/1022 圆形点缀：四角空心圆装饰 + 居中标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'cardBg' }}>
+    {/* 圆形装饰（空心圆环，绝对定位） */}
+    <Box style={{ position: 'absolute', top: 72, left: 192, width: 70, height: 70, borderRadius: 35, border: '2px solid #D1D5DB' }} />
+    <Box style={{ position: 'absolute', top: 144, right: 256, width: 105, height: 105, borderRadius: 53, border: '2px solid #D1D5DB' }} />
+    <Box style={{ position: 'absolute', bottom: 108, left: 230, width: 88, height: 88, borderRadius: 44, border: '2px solid #D1D5DB' }} />
+    <Box style={{ position: 'absolute', bottom: 180, right: 154, width: 78, height: 78, borderRadius: 39, border: '2px solid #D1D5DB' }} />
+    {/* 中央内容 */}
+    <Box style={{ height: 720, alignItems: 'center', justifyContent: 'center', gap: 'md' }}>
+      <Text style={{ fontSize: 'title', color: 'text', letterSpacing: 4 }}>{/* {{替换：致谢标题}} */}致谢</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{替换：副文}} */}欢迎交流与指导</Text>
+    </Box>
+  </Box>
+</Slide>

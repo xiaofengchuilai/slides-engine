@@ -1,0 +1,17 @@
+<Slide>
+  {/* cover/minimalist/093 网格辅助：浅灰底 + 淡网格线装饰 + 居中标题（网格纹理降级为淡细线） */}
+  <Box style={{ height: 720, width: 1280, background: 'cardBg', justifyContent: 'center', alignItems: 'center' }}>
+    {[80, 180, 280, 380, 480, 580, 680].map((y) => (
+      <Box key={y} style={{ position: 'absolute', top: y, left: 0, width: 1280, height: 1, background: '#0F172A', opacity: 0.05 }} />
+    ))}
+    {[80, 240, 400, 560, 720, 880, 1040, 1200].map((x) => (
+      <Box key={x} style={{ position: 'absolute', top: 0, left: x, width: 1, height: 720, background: '#0F172A', opacity: 0.05 }} />
+    ))}
+    <Box style={{ alignItems: 'center', gap: 'xl' }}>
+      <Text style={{ fontSize: 'hero', color: 'text', lineHeight: 1.15, letterSpacing: 1 }}>{/* {{替换：主标题}} */}信息架构设计</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 3 }}>{/* {{替换：副标题}} */}结构清晰·层次分明</Text>
+      <Box style={{ width: 112, height: 2, background: 'text' }} />
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginTop: 'md' }}>{/* {{替换：部门/主题}} */}架构设计部 | 设计方法论</Text>
+    </Box>
+  </Box>
+</Slide>

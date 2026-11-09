@@ -1,0 +1,19 @@
+<Slide>
+  {/* transition/cartoon/506 卡通风-对话框式：青蓝渐变底 + 白对话框 + 渐变章序 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(90deg, #CFFAFE 0%, #BFDBFE 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ width: 72, height: 72, borderRadius: 36, background: '#3b82f6', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+          <Emoji name="💬" style={{ width: 44, height: 44 }} />
+        </Box>
+        <Box style={{ background: '#FFFFFF', borderRadius: 24, border: '6px solid #60a5fa', padding: 32, paddingLeft: 64, paddingRight: 64, alignItems: 'center', position: 'relative', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Box style={{ background: 'linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%)', borderRadius: 999, padding: 8, paddingLeft: 24, paddingRight: 24, marginBottom: 12 }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：章序号}} */}第一章</Text>
+          </Box>
+          <Text style={{ fontSize: 'title', color: '#374151', bold: true, marginBottom: 8 }}>{/* {{替换：章节名}} */}项目背景</Text>
+          <Text style={{ fontSize: 'body', color: '#6b7280' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,28 @@
+<Slide>
+  {/* chinese/1513 竖排意境·纯文字：诗词横排化 + 细线分隔 + 解读区 */}
+  <Box style={{ height: 720, width: 1280, background: '#FAF9F6', padding: 'xxl xl', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 'xl' }}>
+    {/* 左：诗词区（竖排改横排） */}
+    <Box style={{ alignItems: 'center', gap: 'lg' }}>
+      <Box style={{ gap: 'md', alignItems: 'center' }}>
+        <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true, letterSpacing: 4 }}>{/* {{替换：诗句一}} */}君子和而不同</Text>
+        <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true, letterSpacing: 4 }}>{/* {{替换：诗句二}} */}小人同而不和</Text>
+      </Box>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2 }}>{/* {{替换：出处}} */}——《论语·子路》</Text>
+    </Box>
+    {/* 细线分隔 */}
+    <Box style={{ width: 2, height: 360, background: 'rgba(168, 24, 16, 0.2)' }} />
+    {/* 右：解读区 */}
+    <Box style={{ width: 560, gap: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true }}>{/* {{替换：小标题}} */}和而不同</Text>
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.8 }}>{/* {{替换：解读段落}} */}
+        君子能够与他人和谐相处，但不盲从附和，保持独立思考。这是中国传统文化中“和”的精髓——追求和谐统一，但尊重差异，不强求一致。
+      </Text>
+      <Box style={{ flexDirection: 'row', gap: 'md', alignItems: 'stretch' }}>
+        <Box style={{ width: 6, background: 'rgba(168, 24, 16, 0.25)' }} />
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.8 }}>{/* {{替换：点睛句}} */}
+          和谐不等于同一，差异之中求统一，这是中华文化包容性的体现。
+        </Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

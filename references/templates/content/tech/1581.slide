@@ -1,0 +1,63 @@
+<Slide>
+  {/* tech/1581 AI 技术革命：顶部深色信息卡 + 左下2x2技术卡 + 右侧金句/注释 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xl' }}>
+    {/* 网格背景装饰：低透明度细线 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'row', justifyContent: 'space-between', opacity: 0.06 }}>
+      {[160, 320, 480, 640, 800, 960, 1120].map((x) => (
+        <Box key={x} style={{ width: 1, height: 720, background: '#3B82F6' }} />
+      ))}
+    </Box>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'column', justifyContent: 'space-between', opacity: 0.06 }}>
+      {[120, 240, 360, 480, 600].map((y) => (
+        <Box key={y} style={{ width: 1280, height: 1, background: '#3B82F6' }} />
+      ))}
+    </Box>
+    <Box style={{ flex: 1, gap: 'xl' }}>
+      {/* 顶部主卡 */}
+      <Box style={{ background: 'cardBg', borderRadius: 'md', padding: 'xl', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 'md' }}>
+          <Box style={{ width: 44, height: 44, background: 'primary', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>&lt;/&gt;</Text>
+          </Box>
+          <Text style={{ fontSize: 'title', color: '#22D3EE', bold: true }}>{/* {{标题}} */}AI技术革命与未来展望</Text>
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#E2E8F0', lineHeight: 1.6, marginBottom: 'sm' }}>{/* {{摘要段1}} */}人工智能技术正在以前所未有的速度改变着世界。从自然语言处理到计算机视觉，从自动驾驶到智能制造，AI的应用场景不断拓展。深度学习算法的突破性进展，使得机器能够完成越来越复杂的任务。</Text>
+        <Text style={{ fontSize: 'body', color: '#E2E8F0', lineHeight: 1.6 }}>{/* {{摘要段2}} */}未来十年，AI将与物联网、5G、区块链等技术深度融合，构建起智能化的数字世界基础设施。</Text>
+      </Box>
+      {/* 下区：左侧 2x2 技术卡 + 右侧金句/注释 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+        <Box style={{ flex: 2, flexDirection: 'row', flexWrap: 'wrap', gap: 'lg' }}>
+          {[
+            { no: '01', title: 'Machine Learning', desc: '模型训练与预测', color: '#3B82F6' },
+            { no: '02', title: 'Neural Networks', desc: '深度学习架构', color: '#22D3EE' },
+            { no: '03', title: 'Computer Vision', desc: '图像识别分析', color: '#14B8A6' },
+            { no: '04', title: 'NLP Processing', desc: '自然语言理解', color: '#22C55E' },
+          ].map((x) => (
+            <Box key={x.no} style={{ width: '48%', background: 'rgba(59,130,246,0.12)', borderRadius: 'sm', padding: 'lg', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+              <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+                <Box style={{ width: 32, height: 32, background: x.color, borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+                  <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{x.no}</Text>
+                </Box>
+                <Text style={{ fontSize: 'card', color: x.color, bold: true }}>{x.title}</Text>
+              </Box>
+              <Text style={{ fontSize: 'body', color: '#CBD5E1' }}>{x.desc}</Text>
+            </Box>
+          ))}
+        </Box>
+        <Box style={{ flex: 1, gap: 'lg' }}>
+          <Box style={{ background: '#020617', border: '2px solid #3B82F6', borderRadius: 'md', padding: 'lg', flex: 1, justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'body', color: '#22D3EE', lineHeight: 1.6, marginBottom: 'sm' }}>“The future is already here — it's just not evenly distributed.”</Text>
+            <Text style={{ fontSize: 'label', color: '#94A3B8' }}>— William Gibson</Text>
+          </Box>
+          <Box style={{ background: 'rgba(30,58,138,0.4)', border: '1px solid rgba(59,130,246,0.35)', borderRadius: 'sm', padding: 'md' }}>
+            <Box style={{ flexDirection: 'row', gap: 'xs', marginBottom: 'xs' }}>
+              <Text style={{ fontSize: 'label', color: '#60A5FA', bold: true }}>// NOTE:</Text>
+              <Text style={{ fontSize: 'label', color: '#93C5FD' }}>Data Source: AI Research Institute 2024</Text>
+            </Box>
+            <Text style={{ fontSize: 'label', color: '#60A5FA' }}>// Sample: 10K+ papers analyzed</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

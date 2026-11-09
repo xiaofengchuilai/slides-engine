@@ -1,0 +1,15 @@
+<Slide>
+  {/* transition/big-number：章节巨号 + 章节名（全篇转场统一用这个） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: '0 90px', justifyContent: 'center' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 60 }}>
+      {/* 巨号章节数 */}
+      <Text style={{ fontSize: 160, color: 'primary', bold: true, lineHeight: 1 }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+      <Box style={{ width: 1, height: 240, background: 'line' }} />
+      <Box>
+        <Text style={{ fontSize: 'body', color: 'accent', letterSpacing: 3 }}>CHAPTER</Text>
+        <Text style={{ fontSize: 52, color: 'text', bold: true, marginTop: 12 }}>{/* {{替换：章节名}} */}市场与机会</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5, marginTop: 16 }}>{/* {{替换：一句章节导语}} */}看懂趋势，才能押对方向</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

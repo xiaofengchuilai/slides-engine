@@ -1,0 +1,37 @@
+<Slide>
+  {/* cartoon/114 小怪兽：蓝渐变底 + 怪兽色块装饰 + 大标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 小怪兽装饰（左下：紫圆身 + 眼睛 + 触角） */}
+    <Box style={{ position: 'absolute', bottom: 80, left: 80, width: 128, height: 160 }}>
+      <Box style={{ position: 'absolute', bottom: 0, left: 16, width: 96, height: 96, borderRadius: 48, background: '#8B5CF6' }} />
+      <Box style={{ position: 'absolute', bottom: 64, left: 32, width: 20, height: 28, borderRadius: 10, background: '#FFFFFF' }}>
+        <Box style={{ position: 'absolute', bottom: 4, left: 6, width: 8, height: 8, borderRadius: 4, background: '#1F2937' }} />
+      </Box>
+      <Box style={{ position: 'absolute', bottom: 64, right: 32, width: 20, height: 28, borderRadius: 10, background: '#FFFFFF' }}>
+        <Box style={{ position: 'absolute', bottom: 4, left: 6, width: 8, height: 8, borderRadius: 4, background: '#1F2937' }} />
+      </Box>
+      <Box style={{ position: 'absolute', top: 0, left: 40, width: 4, height: 56, background: '#8B5CF6', rotate: 12 }}>
+        <Box style={{ position: 'absolute', top: -8, left: 2, width: 12, height: 12, borderRadius: 6, background: '#F472B6' }} />
+      </Box>
+      <Box style={{ position: 'absolute', top: 0, right: 40, width: 4, height: 56, background: '#8B5CF6', rotate: -12 }}>
+        <Box style={{ position: 'absolute', top: -8, left: 2, width: 12, height: 12, borderRadius: 6, background: '#F472B6' }} />
+      </Box>
+    </Box>
+    {/* 小怪兽装饰（右上：青圆） */}
+    <Box style={{ position: 'absolute', top: 112, right: 128, width: 96, height: 112 }}>
+      <Box style={{ position: 'absolute', bottom: 0, left: 8, width: 80, height: 80, borderRadius: 40, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', bottom: 48, left: 22, width: 16, height: 20, borderRadius: 8, background: '#FFFFFF' }}>
+        <Box style={{ position: 'absolute', bottom: 2, left: 5, width: 6, height: 6, borderRadius: 3, background: '#1F2937' }} />
+      </Box>
+      <Box style={{ position: 'absolute', bottom: 48, right: 22, width: 16, height: 20, borderRadius: 8, background: '#FFFFFF' }}>
+        <Box style={{ position: 'absolute', bottom: 2, left: 5, width: 6, height: 6, borderRadius: 3, background: '#1F2937' }} />
+      </Box>
+    </Box>
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#8B5CF6', bold: true, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}奇趣探险记</Text>
+      <Text style={{ fontSize: 'card', color: '#EC4899', bold: true, marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}发现惊喜·创意无限</Text>
+      <Text style={{ fontSize: 'body', color: '#4B5563', bold: true }}>{/* {{替换：落款}} */}儿童创想馆 | 想象力工作坊</Text>
+    </Box>
+  </Box>
+</Slide>

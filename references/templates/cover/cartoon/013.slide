@@ -1,0 +1,12 @@
+<Slide>
+  {/* cartoon/013 彩虹边框：白底 + 彩虹渐变边框 + 圆顶图标 + 渐变标题 */}
+  <Box style={{ height: 720, width: 1280, background: '#FFFFFF', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 彩虹边框（渐变底 + 内白卡） */}
+    <Box style={{ position: 'absolute', top: 32, left: 32, right: 32, bottom: 32, background: 'linear-gradient(90deg, #FF6B6B 0%, #FFD93D 25%, #6BCF7F 50%, #4ECDC4 75%, #A78BFA 100%)', borderRadius: 'lg', padding: 8 }} />
+    <Box style={{ position: 'absolute', top: 40, left: 40, right: 40, bottom: 40, background: '#FFFFFF', borderRadius: 'lg', alignItems: 'center', justifyContent: 'center' }}>
+      <Emoji name="🎪" style={{ width: 72, height: 72, marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'hero', color: '#DB2777', bold: true, marginBottom: 'md' }}>{/* {{替换：主标题}} */}欢乐时光</Text>
+      <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{替换：副标题}} */}Happy Time Together!</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,23 @@
+<Slide>
+  {/* cover/flat 069 色块漂浮封面：灰底 + 四角彩色方块 + 中央白卡 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'cardBg', alignItems: 'center', justifyContent: 'center', padding: 'xxl' }}>
+    {/* 左上装饰方块 */}
+    <Box style={{ position: 'absolute', top: 48, left: 48, width: 160, height: 160, background: '#3B82F6', borderRadius: 'md' }} />
+    <Box style={{ position: 'absolute', top: 96, left: 192, width: 128, height: 128, background: '#22C55E', borderRadius: 'md' }} />
+    {/* 右下装饰方块 */}
+    <Box style={{ position: 'absolute', bottom: 48, right: 48, width: 160, height: 160, background: '#F97316', borderRadius: 'md' }} />
+    <Box style={{ position: 'absolute', bottom: 96, right: 192, width: 128, height: 128, background: '#A855F7', borderRadius: 'md' }} />
+    {/* 中央白卡 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center', padding: 'xxl' }}>
+      <Box style={{ background: 'bg', borderRadius: 'lg', padding: 'xxl', alignItems: 'center', maxWidth: 960, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'xxl', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}敏捷开发实践</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', marginBottom: 'xxl', textAlign: 'center' }}>{/* {{副标题}} */}快速迭代·持续交付·高效协作</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+          <Text style={{ fontSize: 'card', color: 'text' }}>{/* {{落款一}} */}研发中心</Text>
+          <Text style={{ fontSize: 'body', color: 'text', opacity: 0.5 }}>·</Text>
+          <Text style={{ fontSize: 'card', color: 'text' }}>{/* {{落款二}} */}技术培训分享</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

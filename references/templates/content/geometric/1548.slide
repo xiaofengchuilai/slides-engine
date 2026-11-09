@@ -1,0 +1,33 @@
+<Slide>
+  {/* geometric/1548 三角分割：浅灰底 + 上 3 下 2 三角形模块 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F8FAFC 0%, #F3F4F6 100%)', padding: 'xl', alignItems: 'center' }}>
+    <Text style={{ fontSize: 'title', color: '#111827', bold: true, textAlign: 'center', marginBottom: 'xs' }}>{/* {{替换：页面标题}} */}三角分割</Text>
+    <Text style={{ fontSize: 'body', color: '#4B5563', textAlign: 'center', marginBottom: 'lg' }}>{/* {{替换：副标题}} */}多边形网格系统的空间划分艺术</Text>
+    {/* 三角网格画布 1100x500 */}
+    <Box style={{ position: 'relative', width: 1100, height: 500 }}>
+      {/* 第一行 3 个三角形 */}
+      {[
+        [0, '策略规划', 'Strategic Planning', 'linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)'],
+        [380, '执行实施', 'Implementation', 'linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%)'],
+        [760, '效果评估', 'Evaluation', 'linear-gradient(135deg, #EC4899 0%, #BE185D 100%)'],
+      ].map((m, i) => (
+        <Box key={i} style={{ position: 'absolute', left: m[0], top: 0, width: 340, height: 290, alignItems: 'center', justifyContent: 'center' }}>
+          <Shape type="triangle" style={{ position: 'absolute', top: 0, left: 0, width: 340, height: 290, fill: m[3], boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{替换：模块名}} */}{m[1]}</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.9 }}>{m[2]}</Text>
+        </Box>
+      ))}
+      {/* 第二行 2 个倒三角（引擎无倒置三角形预设，用菱形近似） */}
+      {[
+        [190, '协同合作', 'Collaboration', 'linear-gradient(135deg, #10B981 0%, #047857 100%)'],
+        [570, '持续优化', 'Optimization', 'linear-gradient(135deg, #F59E0B 0%, #D97706 100%)'],
+      ].map((m, i) => (
+        <Box key={i} style={{ position: 'absolute', left: m[0], top: 240, width: 340, height: 260, alignItems: 'center', justifyContent: 'center' }}>
+          <Shape type="diamond" style={{ position: 'absolute', top: 0, left: 0, width: 340, height: 260, fill: m[3], boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{替换：模块名}} */}{m[1]}</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.9 }}>{m[2]}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

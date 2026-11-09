@@ -1,0 +1,38 @@
+<Slide>
+  {/* cartoon/1524 今日任务清单：标题便签 + 六色便签网格 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #CCFBF1 0%, #ECFEFF 50%, #DBEAFE 100%)', padding: 'xl' }}>
+    {/* 装饰回形针 */}
+    <Box style={{ position: 'absolute', top: 60, left: 60, opacity: 0.4, rotate: -15 }}>
+      <Emoji name="📎" style={{ width: 44, height: 44 }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 80, right: 80, opacity: 0.4, rotate: 12 }}>
+      <Emoji name="📌" style={{ width: 52, height: 52 }} />
+    </Box>
+    {/* 标题便签 */}
+    <Box style={{ background: '#FEF3C7', borderRadius: 'sm', padding: 'lg', alignItems: 'center', marginBottom: 'xl', boxShadow: '0 8px 24px rgba(0,0,0,0.18)', rotate: -1 }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+        <Emoji name="📝" style={{ width: 32, height: 32 }} />
+        <Text style={{ fontSize: 'title', color: '#713F12', bold: true }}>{/* {{替换：标题}} */}今日任务清单</Text>
+      </Box>
+    </Box>
+    {/* 便签网格 */}
+    <Box style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 'lg', flex: 1 }}>
+      {[
+        ['晨会讨论', '和团队一起分享昨天的进展，讨论今天的计划～', '#FBCFE8', '#9D174D', '☕', 2],
+        ['代码优化', '重构核心模块，提升系统性能和可维护性！', '#BFDBFE', '#1E40AF', '💻', -1],
+        ['学习时间', '看一章新技术书，做好笔记，理论结合实践～', '#A7F3D0', '#065F46', '📚', 1],
+        ['项目演示', '准备下周的项目演示PPT，展示我们的成果！', '#E9D5FF', '#5B21B6', '🎯', -2],
+        ['团队建设', '下午茶时间～和小伙伴们聊聊天，增进感情！', '#FED7AA', '#9A3412', '🤝', 1],
+        ['运动打卡', '晚上去跑步，保持健康的身体才能更好工作！', '#FECACA', '#991B1B', '🏃', -1],
+      ].map((x, i) => (
+        <Box key={i} style={{ width: 386, background: x[2], borderRadius: 'sm', padding: 'lg', boxShadow: '0 12px 36px rgba(0,0,0,0.22)', rotate: x[5] }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 'sm' }}>
+            <Emoji name={x[4]} style={{ width: 30, height: 30 }} />
+          </Box>
+          <Text style={{ fontSize: 'card', color: x[3], bold: true, marginBottom: 'xs' }}>{/* {{替换：任务名}} */}{x[0]}</Text>
+          <Text style={{ fontSize: 'body', color: x[3], opacity: 0.85, lineHeight: 1.6 }}>{/* {{替换：任务描述}} */}{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,29 @@
+<Slide>
+  {/* flat/3571 扁平风-撞色块：2x2 撞色卡片（玫红/青/琥珀/紫），白数字块+白字 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg' }}>
+    <Box style={{ height: 720, justifyContent: 'center', padding: 'xxl xl' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 40, textAlign: 'center' }}>{/* {{替换：标题}} */}目录</Text>
+      {[
+        ['1', '项目背景', '#F43F5E'],
+        ['2', '核心功能', '#06B6D4'],
+        ['3', '技术架构', '#F59E0B'],
+        ['4', '实施计划', '#8B5CF6'],
+      ].reduce((rows, item, idx) => {
+        if (idx % 2 === 0) rows.push([]);
+        rows[rows.length - 1].push(item);
+        return rows;
+      }, []).map((row, ri) => (
+        <Box key={ri} style={{ flexDirection: 'row', gap: 'lg', marginBottom: 24 }}>
+          {row.map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: x[2], borderRadius: 'lg', padding: 'xl', flexDirection: 'row', alignItems: 'center', gap: 'lg', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+              <Box style={{ width: 64, height: 64, background: '#FFFFFF', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'card', color: x[2], bold: true }}>{x[0]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,17 @@
+<Slide>
+  {/* hand-drawn/016 涂鸦笔记：黄底 + 手绘虚线卡 + 波浪下划线 + 红斜条装饰 */}
+  {/* 背景（奶油黄） */}
+  <Box style={{ width: 1280, height: 720, position: 'absolute', top: 0, left: 0, background: '#FEF9C3', justifyContent: 'center', alignItems: 'center' }} />
+  {/* 装饰斜条（右上，红，低透明度） */}
+  <Box style={{ position: 'absolute', top: 36, right: 36, width: 160, height: 32, background: '#F87171', opacity: 0.45, rotate: -6 }} />
+  {/* 手绘虚线边框卡（主体，白色纯底 + 橙虚线边框） */}
+  <RoughBox shape="rect" style={{ width: 720, height: 420, stroke: '#D97706', strokeWidth: 3, roughness: 2, fill: '#FFFFFF', fillStyle: 'solid', dash: [8, 6], position: 'absolute', left: 280, top: 150 }} />
+  {/* 主内容区 */}
+  <Box style={{ position: 'absolute', top: 150, left: 280, width: 720, height: 420, justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+    <Emoji name="📝" style={{ width: 72, height: 72, marginBottom: 'md' }} />
+    <Text style={{ fontSize: 'hero', color: '#111827', bold: true, fontFamily: 'hand', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}创意笔记</Text>
+    {/* 标题下波浪线（幅度 ±18px 的波浪） */}
+    <RoughBox shape="path" path="M 10 20 Q 60 2, 110 20 T 210 20 T 310 20 T 410 20 T 530 20" style={{ width: 560, height: 40, stroke: '#F59E0B', strokeWidth: 4, roughness: 1.5, marginTop: 'sm', marginBottom: 'lg' }} />
+    <Text style={{ fontSize: 'title', color: '#374151', fontFamily: 'hand', textAlign: 'center' }}>{/* {{副标题}} */}Creative Notes</Text>
+  </Box>
+</Slide>

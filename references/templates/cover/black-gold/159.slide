@@ -1,0 +1,26 @@
+<Slide>
+  {/* black-gold/159 尊贵典雅：深黑渐变底 + 光晕 + 上下金饰 + 金字标题 + 副标题 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0D0D0D 0%, #1A1612 50%, #0A0A0A 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 微妙光晕（左上/右下） */}
+    <Box style={{ position: 'absolute', top: 144, left: 320, width: 400, height: 400, borderRadius: 200, background: 'rgba(255,215,0,0.05)' }} />
+    <Box style={{ position: 'absolute', bottom: 144, right: 320, width: 350, height: 350, borderRadius: 175, background: 'rgba(218,165,32,0.04)' }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      {/* 金色上装饰 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xl' }}>
+        <Box style={{ width: 32, height: 2, background: 'rgba(255,215,0,0.6)' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, border: '1px solid rgba(255,215,0,0.6)', boxShadow: '0 0 10px rgba(255,215,0,0.4)' }} />
+        <Box style={{ width: 48, height: 2, background: 'rgba(255,215,0,0.4)' }} />
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, letterSpacing: 2, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}高端定制服务</Text>
+      {/* 金色下装饰 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xl' }}>
+        <Box style={{ width: 64, height: 2, background: 'rgba(255,215,0,0.5)', boxShadow: '0 0 10px rgba(255,215,0,0.3)' }} />
+        <Box style={{ width: 8, height: 8, borderRadius: 4, background: 'rgba(255,223,77,0.8)' }} />
+        <Box style={{ width: 64, height: 2, background: 'rgba(255,215,0,0.5)', boxShadow: '0 0 10px rgba(255,215,0,0.3)' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#C9A961', letterSpacing: 2, marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}尊贵典雅·专属礼遇</Text>
+      <Text style={{ fontSize: 'body', color: '#B8956F' }}>{/* {{替换：落款}} */}私人管家部 | 贵宾服务方案</Text>
+    </Box>
+  </Box>
+</Slide>

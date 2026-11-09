@@ -1,0 +1,17 @@
+<Slide>
+  {/* cover/flat 028 渐变分层封面：上下渐变带 + 中央白卡 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'bg' }}>
+    {/* 顶部渐变带 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 240, background: 'linear-gradient(135deg, #22D3EE 0%, #3B82F6 100%)' }} />
+    {/* 底部渐变带 */}
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 240, background: 'linear-gradient(135deg, #C084FC 0%, #EC4899 100%)' }} />
+    {/* 中央白卡 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ width: 800, background: 'bg', borderRadius: 'lg', padding: 'xxl', alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 'label', color: 'secondary', bold: true, letterSpacing: 4, marginBottom: 'md' }}>{/* {{栏目名}} */}DESIGN SHOWCASE</Text>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'lg', textAlign: 'center' }}>{/* {{主标题}} */}视觉作品集</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center' }}>{/* {{副标题}} */}Visual Portfolio 2025</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

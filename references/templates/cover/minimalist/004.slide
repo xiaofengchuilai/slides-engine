@@ -1,0 +1,16 @@
+<Slide>
+  {/* cover/minimalist/004 对称布局：浅渐变底 + 方块三连(方·方·方) + 标题 + 英文副标题 + 日期 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F8FAFC 0%, #F9FAFB 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ alignItems: 'center', gap: 'xl' }}>
+      <Box style={{ flexDirection: 'row', gap: 'xxl', alignItems: 'center', marginBottom: 'lg' }}>
+        <Box style={{ width: 72, height: 72, border: '2px solid text' }} />
+        {/* 原中间方块 rotate-45（菱形），回填 rotate */}
+        <Box style={{ width: 72, height: 72, border: '2px solid text', background: 'cardBg', rotate: 45 }} />
+        <Box style={{ width: 72, height: 72, border: '2px solid text' }} />
+      </Box>
+      <Text style={{ fontSize: 'hero', color: 'text', lineHeight: 1.15, letterSpacing: 2 }}>{/* {{替换：主标题}} */}用户研究</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 2 }}>{/* {{替换：英文副标题}} */}User Research Report</Text>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 4, marginTop: 'sm' }}>{/* {{替换：日期}} */}2025 · Q1</Text>
+    </Box>
+  </Box>
+</Slide>

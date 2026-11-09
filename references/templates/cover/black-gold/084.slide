@@ -1,0 +1,29 @@
+<Slide>
+  {/* black-gold/084 华丽边框：深黑底 + 双层金框 + 四角金角 + 金字标题 + 副标题 + 装饰 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: '#0D0D0D', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 外层金框 */}
+    <Box style={{ position: 'absolute', top: 40, left: 40, right: 40, bottom: 40, border: '3px solid #EAB308', boxShadow: '0 0 40px rgba(255,215,0,0.4)' }} />
+    {/* 内层金框 */}
+    <Box style={{ position: 'absolute', top: 56, left: 56, right: 56, bottom: 56, border: '1px solid #D4AF37', opacity: 0.6 }} />
+    {/* 四角金角（L 形，降级为两短线） */}
+    <Box style={{ position: 'absolute', top: 28, left: 28, width: 40, height: 3, background: '#EAB308' }} />
+    <Box style={{ position: 'absolute', top: 28, left: 28, width: 3, height: 40, background: '#EAB308' }} />
+    <Box style={{ position: 'absolute', top: 28, right: 28, width: 40, height: 3, background: '#EAB308' }} />
+    <Box style={{ position: 'absolute', top: 28, right: 28, width: 3, height: 40, background: '#EAB308' }} />
+    <Box style={{ position: 'absolute', bottom: 28, left: 28, width: 40, height: 3, background: '#EAB308' }} />
+    <Box style={{ position: 'absolute', bottom: 28, left: 28, width: 3, height: 40, background: '#EAB308' }} />
+    <Box style={{ position: 'absolute', bottom: 28, right: 28, width: 40, height: 3, background: '#EAB308' }} />
+    <Box style={{ position: 'absolute', bottom: 28, right: 28, width: 3, height: 40, background: '#EAB308' }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}豪宅项目推介</Text>
+      <Text style={{ fontSize: 'card', color: '#D4AF37', marginBottom: 'xl' }}>{/* {{替换：副标题}} */}顶级地段·稀缺资源·尊贵身份</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 'xl' }}>
+        <Box style={{ width: 48, height: 2, background: '#EAB308' }} />
+        <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#EAB308' }} />
+        <Box style={{ width: 48, height: 2, background: '#EAB308' }} />
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#9CA3AF' }}>{/* {{替换：落款}} */}地产事业部 | 项目发布会</Text>
+    </Box>
+  </Box>
+</Slide>

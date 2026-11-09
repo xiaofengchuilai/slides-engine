@@ -1,0 +1,46 @@
+<Slide>
+  {/* black-gold/3515 黑金风-奢华对称：黑金渐变底 + 上下金线 + 居中标题 + 2x2 金圈章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #111827 0%, #000000 50%, #111827 100%)', padding: 48, position: 'relative' }}>
+    {/* 上下金色装饰线 */}
+    <Box style={{ position: 'absolute', top: 24, left: 24, right: 24, height: 1, background: 'linear-gradient(90deg, rgba(201,162,39,0) 0%, #C9A227 50%, rgba(201,162,39,0) 100%)' }} />
+    <Box style={{ position: 'absolute', bottom: 24, left: 24, right: 24, height: 1, background: 'linear-gradient(90deg, rgba(201,162,39,0) 0%, #C9A227 50%, rgba(201,162,39,0) 100%)' }} />
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'title', color: '#C9A227', bold: true, letterSpacing: 4, marginBottom: 12 }}>{/* {{标题}} */}CONTENTS</Text>
+      <Box style={{ width: 128, height: 3, background: 'linear-gradient(90deg, rgba(201,162,39,0) 0%, #C9A227 50%, rgba(201,162,39,0) 100%)', marginBottom: 48 }} />
+      <Box style={{ width: 900, gap: 24 }}>
+        <Box style={{ flexDirection: 'row', gap: 56 }}>
+          <Box style={{ flex: 1, alignItems: 'center' }}>
+            <Box style={{ width: 64, height: 64, background: 'linear-gradient(135deg, #EAB308 0%, #CA8A04 100%)', borderRadius: 32, alignItems: 'center', justifyContent: 'center', marginBottom: 12 }}>
+              <Text style={{ fontSize: 'card', color: '#000000', bold: true }}>{/* {{章节编号}} */}01</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节名}} */}企业愿景</Text>
+            <Text style={{ fontSize: 'label', color: '#9ca3af', marginTop: 4 }}>{/* {{章节副标题}} */}Corporate Vision</Text>
+          </Box>
+          <Box style={{ flex: 1, alignItems: 'center' }}>
+            <Box style={{ width: 64, height: 64, background: 'linear-gradient(135deg, #EAB308 0%, #CA8A04 100%)', borderRadius: 32, alignItems: 'center', justifyContent: 'center', marginBottom: 12 }}>
+              <Text style={{ fontSize: 'card', color: '#000000', bold: true }}>{/* {{章节编号}} */}02</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节名}} */}战略布局</Text>
+            <Text style={{ fontSize: 'label', color: '#9ca3af', marginTop: 4 }}>{/* {{章节副标题}} */}Strategic Layout</Text>
+          </Box>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 56 }}>
+          <Box style={{ flex: 1, alignItems: 'center' }}>
+            <Box style={{ width: 64, height: 64, background: 'linear-gradient(135deg, #EAB308 0%, #CA8A04 100%)', borderRadius: 32, alignItems: 'center', justifyContent: 'center', marginBottom: 12 }}>
+              <Text style={{ fontSize: 'card', color: '#000000', bold: true }}>{/* {{章节编号}} */}03</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节名}} */}核心优势</Text>
+            <Text style={{ fontSize: 'label', color: '#9ca3af', marginTop: 4 }}>{/* {{章节副标题}} */}Core Advantages</Text>
+          </Box>
+          <Box style={{ flex: 1, alignItems: 'center' }}>
+            <Box style={{ width: 64, height: 64, background: 'linear-gradient(135deg, #EAB308 0%, #CA8A04 100%)', borderRadius: 32, alignItems: 'center', justifyContent: 'center', marginBottom: 12 }}>
+              <Text style={{ fontSize: 'card', color: '#000000', bold: true }}>{/* {{章节编号}} */}04</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节名}} */}发展蓝图</Text>
+            <Text style={{ fontSize: 'label', color: '#9ca3af', marginTop: 4 }}>{/* {{章节副标题}} */}Development Plan</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

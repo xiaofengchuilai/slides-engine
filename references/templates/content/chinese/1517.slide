@@ -1,0 +1,41 @@
+<Slide>
+  {/* chinese/1517 三段式留白·戏曲艺术：标题 + 主内容（四功）+ 引文 + 印章降级为色块 */}
+  <Box style={{ height: 720, width: 1280, background: '#FAF9F6', padding: 'xxl xl', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 上段：标题 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'xxl' }}>
+      <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true, letterSpacing: 3 }}>{/* {{替换：主标题}} */}戏曲艺术</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'lg', marginTop: 'lg' }}>
+        <Box style={{ width: 56, height: 2, background: 'rgba(168, 24, 16, 0.2)' }} />
+        <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 3 }}>{/* {{替换：英文副标}} */}TRADITIONAL OPERA</Text>
+        <Box style={{ width: 56, height: 2, background: 'rgba(168, 24, 16, 0.2)' }} />
+      </Box>
+    </Box>
+    {/* 中段：主内容 */}
+    <Box style={{ width: 900, alignItems: 'center', gap: 'xl', marginBottom: 'xl' }}>
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.8, textAlign: 'center' }}>{/* {{替换：段落}} */}
+        中国戏曲是集文学、音乐、舞蹈、美术、武术等于一体的综合性艺术，具有独特的表现形式和审美价值。
+      </Text>
+      <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+        {[
+          ['唱', '声腔音韵'],
+          ['念', '韵白道白'],
+          ['做', '身段表演'],
+          ['打', '武打技艺'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, alignItems: 'center', gap: 'sm' }}>
+            <Text style={{ fontSize: 'kpi', color: '#A81810', bold: true }}>{x[0]}</Text>
+            <Text style={{ fontSize: 'label', color: 'text' }}>{x[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    {/* 下段：引文 */}
+    <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center' }}>{/* {{替换：引文}} */}“无声不歌，无动不舞”</Text>
+    {/* 印章降级：右下角红块 */}
+    <Box style={{ position: 'absolute', right: 56, bottom: 56, width: 56, height: 56, background: '#A81810', borderRadius: 2, alignItems: 'center', justifyContent: 'center', opacity: 0.6 }}>
+      <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>戏</Text>
+    </Box>
+    {/* 功能文字 */}
+    <Text style={{ fontSize: 'label', color: 'muted', position: 'absolute', left: 56, bottom: 24 }}>{/* {{替换：说明}} */}UNESCO人类非物质文化遗产代表作名录</Text>
+  </Box>
+</Slide>

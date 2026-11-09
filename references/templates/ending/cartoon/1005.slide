@@ -1,0 +1,30 @@
+<Slide>
+  {/* ending/cartoon/1005 卡通风-星星感谢：黄粉紫渐变底+彩点装饰、粉红标题+白卡+联系卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFF8E1 0%, #FFE4F0 50%, #EDE4FF 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 星星/闪光装饰：彩色 emoji（回填） */}
+    <Emoji name="⭐" style={{ position: 'absolute', top: 100, left: 360, width: 22, height: 22 }} />
+    <Emoji name="✨" style={{ position: 'absolute', top: 150, right: 400, width: 16, height: 16 }} />
+    <Emoji name="💫" style={{ position: 'absolute', bottom: 110, left: 440, width: 16, height: 16 }} />
+    <Emoji name="🌟" style={{ position: 'absolute', bottom: 150, right: 420, width: 22, height: 22 }} />
+    <Box style={{ alignItems: 'center', gap: 'lg' }}>
+      {/* 主视觉：笑脸圆 */}
+      <Box style={{ width: 96, height: 96, borderRadius: 'sm', background: 'linear-gradient(135deg, #FFD93D 0%, #FFB347 100%)', alignItems: 'center', justifyContent: 'center' }}>
+        <Emoji name="🎉" style={{ width: 48, height: 48 }} />
+      </Box>
+      <Text style={{ fontSize: 64, color: '#FF6B9D', bold: true, letterSpacing: 2 }}>THANK YOU!</Text>
+      <Box style={{ background: '#FFFFFF', borderRadius: 'lg', border: '4px solid #FF9EC5', padding: 'md xxl', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+        <Text style={{ fontSize: 'card', color: '#2D3748', bold: true }}>{/* {{替换：致谢语}} */}感谢观看</Text>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+        <Box style={{ background: '#FFFFFF', borderRadius: 'md', border: '3px solid #8FD3FF', padding: 'sm lg', alignItems: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'label', color: '#718096' }}>Email</Text>
+          <Text style={{ fontSize: 'body', color: '#2D3748', bold: true }}>{/* {{替换：邮箱}} */}hello@fun.com</Text>
+        </Box>
+        <Box style={{ background: '#FFFFFF', borderRadius: 'md', border: '3px solid #A5E6B8', padding: 'sm lg', alignItems: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'label', color: '#718096' }}>WeChat</Text>
+          <Text style={{ fontSize: 'body', color: '#2D3748', bold: true }}>{/* {{替换：微信号}} */}HelloFun123</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

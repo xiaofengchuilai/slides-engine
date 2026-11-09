@@ -1,0 +1,15 @@
+<Slide>
+  {/* transition/minimalist/521 斜线装饰：蓝色大章节号 + 章节名/导语 + 斜线装饰条 */}
+  <Box style={{ height: 720, width: 1280, background: 'cardBg', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+    {/* 斜线装饰（rotate 45） */}
+    <Box style={{ position: 'absolute', top: 48, left: 120, width: 120, height: 6, background: 'secondary', rotate: -45 }} />
+    <Box style={{ position: 'absolute', bottom: 96, right: 120, width: 120, height: 6, background: '#9CA3AF', rotate: -45 }} />
+    <Box style={{ alignItems: 'center' }}>
+      <Box style={{ width: 160, height: 4, background: 'secondary', marginBottom: 32 }} />
+      <Text style={{ fontSize: 'hero', color: 'secondary', bold: true, marginBottom: 16 }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 12, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      <Box style={{ width: 112, height: 4, background: '#9CA3AF', marginTop: 32 }} />
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,77 @@
+<Slide>
+  {/* tech/1588 全息数据展示：中央球体 + 四角数据面板 + 底部说明 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xl', position: 'relative' }}>
+    {/* 全息网格背景 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'row', justifyContent: 'space-between', opacity: 0.06 }}>
+      {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+        <Box key={i} style={{ width: 1, height: 720, background: '#22D3EE' }} />
+      ))}
+    </Box>
+    <Text style={{ fontSize: 'title', color: '#22D3EE', bold: true, textAlign: 'center', backgroundImage: 'linear-gradient(90deg, #22D3EE 0%, #60A5FA 50%, #C084FC 100%)', backgroundClip: 'text', marginBottom: 'lg' }}>{/* {{标题}} */}全息数据展示</Text>
+    <Box style={{ flex: 1, position: 'relative', alignItems: 'center', justifyContent: 'center' }}>
+      {/* 中央球体（同心圆环） */}
+      <Box style={{ width: 320, height: 320, borderRadius: 160, border: '2px solid rgba(34,211,238,0.6)', alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 260, height: 260, borderRadius: 130, border: '1px solid rgba(34,211,238,0.5)', alignItems: 'center', justifyContent: 'center' }}>
+          <Box style={{ width: 200, height: 200, borderRadius: 100, border: '1px solid rgba(34,211,238,0.4)', alignItems: 'center', justifyContent: 'center' }}>
+            <Box style={{ width: 60, height: 60, borderRadius: 30, background: '#22D3EE', opacity: 0.9 }} />
+          </Box>
+        </Box>
+      </Box>
+      {/* 四角数据面板 */}
+      <Box style={{ position: 'absolute', top: 30, left: 30, width: 230, background: 'rgba(34,211,238,0.1)', border: '1px solid rgba(34,211,238,0.4)', borderRadius: 'sm', padding: 'md' }}>
+        <Text style={{ fontSize: 'body', color: '#22D3EE', bold: true, marginBottom: 'sm' }}>实时数据流</Text>
+        {[
+          ['吞吐量', '2.5 GB/s', '#67E8F9'],
+          ['延迟', '3.2 ms', '#4ADE80'],
+          ['连接数', '12,456', '#C084FC'],
+        ].map((r) => (
+          <Box key={r[0]} style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 'xs' }}>
+            <Text style={{ fontSize: 'label', color: '#94A3B8' }}>{r[0]}</Text>
+            <Text style={{ fontSize: 'label', color: r[2], bold: true }}>{r[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+      <Box style={{ position: 'absolute', top: 30, right: 30, width: 230, background: 'rgba(168,85,247,0.1)', border: '1px solid rgba(168,85,247,0.4)', borderRadius: 'sm', padding: 'md' }}>
+        <Text style={{ fontSize: 'body', color: '#C084FC', bold: true, marginBottom: 'sm' }}>系统状态</Text>
+        {[
+          ['CPU使用率', '45%', '#FBBF24'],
+          ['内存占用', '8.2 GB', '#67E8F9'],
+          ['在线节点', '256/256', '#4ADE80'],
+        ].map((r) => (
+          <Box key={r[0]} style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 'xs' }}>
+            <Text style={{ fontSize: 'label', color: '#94A3B8' }}>{r[0]}</Text>
+            <Text style={{ fontSize: 'label', color: r[2], bold: true }}>{r[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+      <Box style={{ position: 'absolute', bottom: 30, left: 30, width: 210, background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.4)', borderRadius: 'sm', padding: 'md' }}>
+        <Text style={{ fontSize: 'body', color: '#34D399', bold: true, marginBottom: 'sm' }}>安全防护</Text>
+        {[
+          ['防御等级', 'AAA+', '#4ADE80'],
+          ['拦截攻击', '1,234', '#F87171'],
+        ].map((r) => (
+          <Box key={r[0]} style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 'xs' }}>
+            <Text style={{ fontSize: 'label', color: '#94A3B8' }}>{r[0]}</Text>
+            <Text style={{ fontSize: 'label', color: r[2], bold: true }}>{r[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+      <Box style={{ position: 'absolute', bottom: 30, right: 30, width: 210, background: 'rgba(251,191,36,0.1)', border: '1px solid rgba(251,191,36,0.4)', borderRadius: 'sm', padding: 'md' }}>
+        <Text style={{ fontSize: 'body', color: '#FBBF24', bold: true, marginBottom: 'sm' }}>性能指标</Text>
+        {[
+          ['响应时间', '45ms', '#67E8F9'],
+          ['成功率', '99.99%', '#4ADE80'],
+        ].map((r) => (
+          <Box key={r[0]} style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 'xs' }}>
+            <Text style={{ fontSize: 'label', color: '#94A3B8' }}>{r[0]}</Text>
+            <Text style={{ fontSize: 'label', color: r[2], bold: true }}>{r[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    <Box style={{ alignItems: 'center', marginTop: 'sm' }}>
+      <Text style={{ fontSize: 'label', color: '#22D3EE', letterSpacing: 2, marginBottom: 'xs' }}>HOLOGRAPHIC DATA VISUALIZATION SYSTEM</Text>
+      <Text style={{ fontSize: 'label', color: '#94A3B8' }}>{/* {{副题}} */}实时 · 立体 · 交互</Text>
+    </Box>
+  </Box>
+</Slide>

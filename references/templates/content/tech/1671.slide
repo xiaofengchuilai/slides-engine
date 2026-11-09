@@ -1,0 +1,39 @@
+<Slide>
+  {/* tech/1671 智能数据分析平台架构：左图右文 + 底部数据 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    <Box style={{ marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'sm' }}>{/* {{标题}} */}智能数据分析平台架构</Text>
+      <Box style={{ width: 80, height: 4, background: '#CBD5E1' }} />
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+      {/* 左侧图片（可选结构） */}
+      {/* {{图片：有图填 assets/images/platform.png，无图删掉整个 <Image>}} */}
+      <Image src="assets/images/platform.png" style={{ width: 460, height: 360, objectFit: 'cover' }} />
+      {/* 右侧三层说明 */}
+      <Box style={{ flex: 1, gap: 'lg', justifyContent: 'center' }}>
+        {[
+          { title: '数据采集层', desc: '支持多源异构数据接入，包括结构化数据库、实时流数据、日志文件等，实现统一的数据采集与预处理。' },
+          { title: '计算处理层', desc: '基于分布式计算框架，提供批处理与流处理双引擎，满足离线分析与实时计算的业务需求。' },
+          { title: '应用服务层', desc: '提供可视化报表、智能告警、API接口等服务能力，支撑上层业务应用的快速构建与迭代。' },
+        ].map((x) => (
+          <Box key={x.title}>
+            <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'xs' }}>{x.title}</Text>
+            <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{x.desc}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'xxl', paddingTop: 'lg', marginTop: 'auto' }}>
+      {[
+        { val: '99.9%', label: '系统可用性' },
+        { val: '50ms', label: '平均响应时间' },
+        { val: '10TB+', label: '日处理数据量' },
+      ].map((x) => (
+        <Box key={x.label} style={{ alignItems: 'center' }}>
+          <Text style={{ fontSize: 'kpi', color: 'text', bold: true }}>{x.val}</Text>
+          <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>{x.label}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

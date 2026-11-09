@@ -1,0 +1,40 @@
+<Slide>
+  {/* educational/1644 古文字词解析·一词多义：大字标题 + 4用法卡(多色) + 学习方法 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF5FF 0%, #F3E8FF 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Text style={{ fontSize: 'hero', color: '#581C87', fontFamily: 'serif', bold: true }}>{/* {{替换：字}} */}之</Text>
+      <Text style={{ fontSize: 'body', color: '#7E22CE', letterSpacing: 3 }}>{/* {{替换：副标题}} */}文言虚词 · 一词多义</Text>
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'lg', flexWrap: 'wrap' }}>
+      {[
+        ['结构助词"的"', '予独爱莲之出淤泥而不染', '译：我唯独喜爱莲花的从淤泥里长出却不沾染污秽', '#8B5CF6', '#A78BFA'],
+        ['代词"它/他"', '学而时习之，不亦说乎', '译：学习并且按时复习它，不也是很愉快吗', '#6366F1', '#818CF8'],
+        ['动词"到...去"', '辍耕之垄上', '译：停止耕做到田埂上', '#7C3AED', '#A78BFA'],
+        ['音节助词(无义)', '久之，目似瞑', '译：过了很久，(狼的)眼睛好像闭上了', '#C026D3', '#F0ABFC'],
+      ].map((x, i) => (
+        <Box key={i} style={{ width: '48%', flexDirection: 'row', alignItems: 'stretch', background: 'rgba(255,255,255,0.85)', borderRadius: 'sm', padding: 'lg' }}>
+          <Box style={{ width: 4, background: x[4], borderRadius: 2, marginRight: 'md' }} />
+          <Box style={{ flex: 1 }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+              <Box style={{ width: 40, height: 40, background: x[4], borderRadius: 'sm', alignItems: 'center', justifyContent: 'center', opacity: 0.25 }}>
+                <Text style={{ fontSize: 'body', color: x[3], bold: true }}>{i + 1}</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: x[3], bold: true }}>{/* {{替换：用法名}} */}{x[0]}</Text>
+            </Box>
+            <Box style={{ background: x[4], borderRadius: 'sm', padding: 'md', opacity: 0.12 }}>
+              <Text style={{ fontSize: 'body', color: '#111827', fontFamily: 'serif', lineHeight: 1.6 }}>{/* {{替换：例句}} */}{x[1]}</Text>
+              <Text style={{ fontSize: 'label', color: '#4B5563', marginTop: 'xs' }}>{/* {{替换：译文}} */}{x[2]}</Text>
+            </Box>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ background: 'linear-gradient(90deg, #FAF5FF 0%, #EEF2FF 100%)', border: '1px solid #E9D5FF', borderRadius: 'md', padding: 'md' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xs' }}>
+        <FAIcon name="graduation-cap" style={{ fill: '#7E22CE', width: 18, height: 18 }} />
+        <Text style={{ fontSize: 'body', color: '#6B21A8', bold: true }}>{/* {{替换：方法标题}} */}学习方法</Text>
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.6 }}>{/* {{替换：方法说明}} */}理解"之"的用法关键在于语境判断：看前后文关系，判断是修饰还是指代。建议通过大量阅读积累语感。</Text>
+    </Box>
+  </Box>
+</Slide>

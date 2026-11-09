@@ -1,0 +1,19 @@
+<Slide>
+  {/* ending/geometric 1061 菱形网格结尾：蓝青渐变底 + 大小菱形嵌套 + 小菱形点缀 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #4FACFE 0%, #00F2FE 100%)' }}>
+    {/* 中心大菱形嵌套 */}
+    <Shape type="diamond" style={{ position: 'absolute', top: '50%', left: '50%', width: 250, height: 250, fill: '#FFFFFF', opacity: 0.08 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: '50%', left: '50%', width: 250, height: 250, line: { color: '#FFFFFF', width: 3 }, opacity: 0.25 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: '50%', left: '50%', width: 180, height: 180, fill: '#FFFFFF', opacity: 0.06 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: '50%', left: '50%', width: 180, height: 180, line: { color: '#FFFFFF', width: 2 }, opacity: 0.2 }} />
+    {/* 小菱形装饰 */}
+    <Shape type="diamond" style={{ position: 'absolute', top: 86, left: 102, width: 50, height: 50, fill: '#FFFFFF', opacity: 0.2 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: 540, right: 154, width: 60, height: 60, fill: '#FFFFFF', opacity: 0.15 }} />
+    <Shape type="diamond" style={{ position: 'absolute', bottom: 72, left: 192, width: 45, height: 45, fill: '#FFFFFF', opacity: 0.18 }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: '#FFFFFF', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}谢谢</Text>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', textAlign: 'center' }}>{/* {{副标题}} */}感谢您的关注与支持</Text>
+    </Box>
+  </Box>
+</Slide>

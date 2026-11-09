@@ -1,0 +1,28 @@
+<Slide>
+  {/* cartoon/111 音符跳动：青蓝渐变底 + 音符装饰 + 波浪线 + 大标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #ECFEFF 0%, #A5F3FC 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 音符装饰（左上：圆点 + 竖杆） */}
+    <Box style={{ position: 'absolute', top: 112, left: 176, width: 32, height: 32, borderRadius: 16, background: '#F472B6' }} />
+    <Box style={{ position: 'absolute', top: 140, left: 200, width: 4, height: 56, background: '#F472B6' }} />
+    {/* 音符装饰（右上：双圆点 + 横梁） */}
+    <Box style={{ position: 'absolute', top: 176, right: 208, width: 28, height: 28, borderRadius: 14, background: '#22D3EE' }} />
+    <Box style={{ position: 'absolute', top: 200, right: 228, width: 28, height: 28, borderRadius: 14, background: '#22D3EE' }} />
+    <Box style={{ position: 'absolute', top: 176, right: 208, width: 4, height: 64, background: '#22D3EE' }} />
+    <Box style={{ position: 'absolute', top: 156, right: 208, width: 64, height: 4, background: '#22D3EE' }} />
+    {/* 音符装饰（左下） */}
+    <Box style={{ position: 'absolute', bottom: 144, left: 256, width: 28, height: 28, borderRadius: 14, background: '#FCD34D' }} />
+    <Box style={{ position: 'absolute', bottom: 168, left: 276, width: 4, height: 48, background: '#FCD34D' }} />
+    {/* 波浪线（中部，虚线降级为分段短线） */}
+    <Box style={{ position: 'absolute', top: 340, left: 128, right: 128, flexDirection: 'row', opacity: 0.3 }}>
+      {Array.from({ length: 12 }).map((_, i) => (
+        <Box key={i} style={{ width: 24, height: 4, background: '#EC4899', marginRight: 12 }} />
+      ))}
+    </Box>
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#F472B6', bold: true, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}音乐启蒙课</Text>
+      <Text style={{ fontSize: 'card', color: '#22D3EE', bold: true, marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}悦动旋律·童年欢歌</Text>
+      <Text style={{ fontSize: 'body', color: '#4B5563', bold: true }}>{/* {{替换：落款}} */}艺术培训中心 | 音乐素养培养</Text>
+    </Box>
+  </Box>
+</Slide>

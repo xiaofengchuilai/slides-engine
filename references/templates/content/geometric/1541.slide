@@ -1,0 +1,58 @@
+<Slide>
+  {/* geometric/1541 几何设计原理：标题卡 + 4 渐变卡(几何符号) + 金句卡/提示卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #EEF2FF 0%, #FAF5FF 50%, #FDF2F8 100%)', padding: 'xxl xl' }}>
+    {/* 背景装饰 */}
+    <Box style={{ position: 'absolute', top: 40, left: 40, width: 80, height: 80, borderRadius: 8, background: '#A5B4FC', opacity: 0.25, rotate: 45 }} />
+    <Box style={{ position: 'absolute', bottom: 40, right: 40, width: 200, height: 200, borderRadius: 999, background: '#C084FC', opacity: 0.2 }} />
+    {/* 标题卡 */}
+    <Box style={{ background: '#FFFFFF', opacity: 0.9, borderRadius: 'sm', padding: 'xxl', marginBottom: 'lg', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 'md' }}>
+        <Shape type="hexagon" style={{ width: 48, height: 48, fill: '#7C3AED' }} />
+        <Text style={{ fontSize: 'title', color: '#312E81', bold: true }}>{/* {{替换：页面标题}} */}几何设计原理</Text>
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.6, marginBottom: 'sm' }}>{/* {{替换：介绍段1}} */}几何图形是设计中最基本的视觉元素，通过简单形状的组合与变化，可以创造出无限丰富的视觉效果。圆形代表完整与和谐，三角形象征稳定与力量。</Text>
+      <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.6 }}>{/* {{替换：介绍段2}} */}在实际应用中，几何设计不仅追求视觉美感，更要服务于信息传达的功能性需求。</Text>
+    </Box>
+    {/* 下方：左 2x2 渐变卡 + 右 金句/提示 */}
+    <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+      <Box style={{ flex: 2, gap: 'lg' }}>
+        {[
+          ['triangle', '对称与平衡', '视觉元素的重量分布', 'linear-gradient(135deg, #6366F1 0%, #818CF8 100%)'],
+          ['rect', '网格系统', '规范化的布局框架', 'linear-gradient(135deg, #A855F7 0%, #C084FC 100%)'],
+          ['diamond', '层次关系', '信息的优先级排序', 'linear-gradient(135deg, #EC4899 0%, #F472B6 100%)'],
+          ['ellipse', '韵律节奏', '重复与变化的组合', 'linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)'],
+        ].reduce((rows, x, i) => {
+          if (i % 2 === 0) rows.push([x]);
+          else rows[rows.length - 1].push(x);
+          return rows;
+        }, []).map((row, r) => (
+          <Box key={r} style={{ flexDirection: 'row', gap: 'lg' }}>
+            {row.map((x, i) => (
+              <Box key={i} style={{ flex: 1, background: x[3], borderRadius: 'sm', padding: 'lg', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+                <Box style={{ width: 40, height: 40, borderRadius: 999, background: 'rgba(255,255,255,0.3)', alignItems: 'center', justifyContent: 'center', marginBottom: 'sm' }}>
+                  <Shape type={x[0]} style={{ width: 18, height: 18, fill: '#1E293B' }} />
+                </Box>
+                <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{替换：卡标题}} */}{x[1]}</Text>
+                <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.9 }}>{/* {{替换：卡说明}} */}{x[2]}</Text>
+              </Box>
+            ))}
+          </Box>
+        ))}
+      </Box>
+      <Box style={{ flex: 1, gap: 'xl' }}>
+        <Box style={{ background: 'linear-gradient(135deg, #1F2937 0%, #374151 100%)', borderRadius: 'sm', padding: 'lg', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'body', color: '#A5B4FC', lineHeight: 1.6, marginBottom: 'sm' }}>{/* {{替换：金句}} */}"简洁是复杂的最终形式。"</Text>
+          <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>— 达芬奇</Text>
+        </Box>
+        <Box style={{ background: '#EEF2FF', borderRadius: 'sm', padding: 'md', border: '2px solid #C7D2FE', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs', marginBottom: 'xs' }}>
+            <FAIcon name="circle-exclamation" style={{ fill: '#4F46E5', width: 16, height: 16 }} />
+            <Text style={{ fontSize: 'label', color: '#312E81', bold: true }}>注意：</Text>
+          </Box>
+          <Text style={{ fontSize: 'label', color: '#3730A3', lineHeight: 1.6, marginBottom: 'xs' }}>{/* {{替换：注意内容}} */}几何元素的使用需注意视觉平衡。</Text>
+          <Text style={{ fontSize: 'label', color: '#4338CA' }}>参考：《几何设计原理》</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,98 @@
+<Slide>
+  {/* tech/3583 科技风-控制台：深青蓝渐变底 + 状态灯 + 2x2 控制台章节卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)', padding: 48, position: 'relative' }}>
+    {/* 状态指示灯 */}
+    <Box style={{ position: 'absolute', top: 40, right: 48, flexDirection: 'row', gap: 8 }}>
+      <Box style={{ width: 10, height: 10, borderRadius: 5, background: '#4ade80', boxShadow: '0 0 10px #4ade80' }} />
+      <Box style={{ width: 10, height: 10, borderRadius: 5, background: '#60a5fa', boxShadow: '0 0 10px #60a5fa' }} />
+      <Box style={{ width: 10, height: 10, borderRadius: 5, background: '#fbbf24', boxShadow: '0 0 10px #fbbf24' }} />
+    </Box>
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Box style={{ marginBottom: 32 }}>
+        <Text style={{ fontSize: 'title', color: '#4ade80', bold: true, letterSpacing: 2 }}>{/* {{标题}} */}&gt; COMMAND CENTER_</Text>
+        <Box style={{ flexDirection: 'row', gap: 8, marginTop: 16 }}>
+          <Box style={{ width: 60, height: 3, background: 'linear-gradient(90deg, #4ade80 0%, rgba(74,222,128,0) 100%)' }} />
+          <Box style={{ width: 8, height: 3, background: '#4ade80' }} />
+        </Box>
+      </Box>
+      <Box style={{ gap: 24 }}>
+        <Box style={{ flexDirection: 'row', gap: 32 }}>
+          <Box style={{ flex: 1, border: '2px solid #4ade80', background: 'rgba(74,222,128,0.05)', padding: 22, position: 'relative', boxShadow: '0 0 15px rgba(74,222,128,0.3)' }}>
+            <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: 'linear-gradient(90deg, #4ade80 0%, #60a5fa 100%)', opacity: 0.6 }} />
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 16, marginBottom: 16 }}>
+              <Box style={{ width: 55, height: 55, border: '2px solid #4ade80', background: 'rgba(74,222,128,0.15)', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'card', color: '#4ade80', bold: true }}>{/* {{章节编号}} */}1</Text>
+              </Box>
+              <Box style={{ flex: 1, gap: 6 }}>
+                <Box style={{ height: 2, background: 'repeating-linear-gradient(90deg, #4ade80 0px, #4ade80 6px, rgba(0,0,0,0) 6px, rgba(0,0,0,0) 10px)' }} />
+                <Box style={{ height: 2, background: 'repeating-linear-gradient(90deg, #60a5fa 0px, #60a5fa 4px, rgba(0,0,0,0) 4px, rgba(0,0,0,0) 8px)' }} />
+              </Box>
+              <Box style={{ width: 12, height: 12, background: '#4ade80' }} />
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#4ade80', bold: true, marginBottom: 8 }}>{/* {{章节名}} */}&gt; 项目背景</Text>
+            <Text style={{ fontSize: 'body', color: '#93c5fd' }}>{/* {{章节副标题}} */}// 了解项目的起源与目标</Text>
+            <Box style={{ position: 'absolute', bottom: 10, left: 22, right: 22, height: 2, background: 'rgba(74,222,128,0.3)' }}>
+              <Box style={{ width: '60%', height: 2, background: '#4ade80' }} />
+            </Box>
+          </Box>
+          <Box style={{ flex: 1, border: '2px solid #4ade80', background: 'rgba(74,222,128,0.05)', padding: 22, position: 'relative', boxShadow: '0 0 15px rgba(74,222,128,0.3)' }}>
+            <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: 'linear-gradient(90deg, #4ade80 0%, #60a5fa 100%)', opacity: 0.6 }} />
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 16, marginBottom: 16 }}>
+              <Box style={{ width: 55, height: 55, border: '2px solid #4ade80', background: 'rgba(74,222,128,0.15)', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'card', color: '#4ade80', bold: true }}>{/* {{章节编号}} */}2</Text>
+              </Box>
+              <Box style={{ flex: 1, gap: 6 }}>
+                <Box style={{ height: 2, background: 'repeating-linear-gradient(90deg, #4ade80 0px, #4ade80 6px, rgba(0,0,0,0) 6px, rgba(0,0,0,0) 10px)' }} />
+                <Box style={{ height: 2, background: 'repeating-linear-gradient(90deg, #60a5fa 0px, #60a5fa 4px, rgba(0,0,0,0) 4px, rgba(0,0,0,0) 8px)' }} />
+              </Box>
+              <Box style={{ width: 12, height: 12, background: '#4ade80' }} />
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#4ade80', bold: true, marginBottom: 8 }}>{/* {{章节名}} */}&gt; 核心功能</Text>
+            <Text style={{ fontSize: 'body', color: '#93c5fd' }}>{/* {{章节副标题}} */}// 产品的主要功能介绍</Text>
+            <Box style={{ position: 'absolute', bottom: 10, left: 22, right: 22, height: 2, background: 'rgba(74,222,128,0.3)' }}>
+              <Box style={{ width: '60%', height: 2, background: '#4ade80' }} />
+            </Box>
+          </Box>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 32 }}>
+          <Box style={{ flex: 1, border: '2px solid #4ade80', background: 'rgba(74,222,128,0.05)', padding: 22, position: 'relative', boxShadow: '0 0 15px rgba(74,222,128,0.3)' }}>
+            <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: 'linear-gradient(90deg, #4ade80 0%, #60a5fa 100%)', opacity: 0.6 }} />
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 16, marginBottom: 16 }}>
+              <Box style={{ width: 55, height: 55, border: '2px solid #4ade80', background: 'rgba(74,222,128,0.15)', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'card', color: '#4ade80', bold: true }}>{/* {{章节编号}} */}3</Text>
+              </Box>
+              <Box style={{ flex: 1, gap: 6 }}>
+                <Box style={{ height: 2, background: 'repeating-linear-gradient(90deg, #4ade80 0px, #4ade80 6px, rgba(0,0,0,0) 6px, rgba(0,0,0,0) 10px)' }} />
+                <Box style={{ height: 2, background: 'repeating-linear-gradient(90deg, #60a5fa 0px, #60a5fa 4px, rgba(0,0,0,0) 4px, rgba(0,0,0,0) 8px)' }} />
+              </Box>
+              <Box style={{ width: 12, height: 12, background: '#4ade80' }} />
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#4ade80', bold: true, marginBottom: 8 }}>{/* {{章节名}} */}&gt; 技术架构</Text>
+            <Text style={{ fontSize: 'body', color: '#93c5fd' }}>{/* {{章节副标题}} */}// 系统设计与技术选型</Text>
+            <Box style={{ position: 'absolute', bottom: 10, left: 22, right: 22, height: 2, background: 'rgba(74,222,128,0.3)' }}>
+              <Box style={{ width: '60%', height: 2, background: '#4ade80' }} />
+            </Box>
+          </Box>
+          <Box style={{ flex: 1, border: '2px solid #4ade80', background: 'rgba(74,222,128,0.05)', padding: 22, position: 'relative', boxShadow: '0 0 15px rgba(74,222,128,0.3)' }}>
+            <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: 'linear-gradient(90deg, #4ade80 0%, #60a5fa 100%)', opacity: 0.6 }} />
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 16, marginBottom: 16 }}>
+              <Box style={{ width: 55, height: 55, border: '2px solid #4ade80', background: 'rgba(74,222,128,0.15)', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'card', color: '#4ade80', bold: true }}>{/* {{章节编号}} */}4</Text>
+              </Box>
+              <Box style={{ flex: 1, gap: 6 }}>
+                <Box style={{ height: 2, background: 'repeating-linear-gradient(90deg, #4ade80 0px, #4ade80 6px, rgba(0,0,0,0) 6px, rgba(0,0,0,0) 10px)' }} />
+                <Box style={{ height: 2, background: 'repeating-linear-gradient(90deg, #60a5fa 0px, #60a5fa 4px, rgba(0,0,0,0) 4px, rgba(0,0,0,0) 8px)' }} />
+              </Box>
+              <Box style={{ width: 12, height: 12, background: '#4ade80' }} />
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#4ade80', bold: true, marginBottom: 8 }}>{/* {{章节名}} */}&gt; 实施计划</Text>
+            <Text style={{ fontSize: 'body', color: '#93c5fd' }}>{/* {{章节副标题}} */}// 项目的推进与时间安排</Text>
+            <Box style={{ position: 'absolute', bottom: 10, left: 22, right: 22, height: 2, background: 'rgba(74,222,128,0.3)' }}>
+              <Box style={{ width: '60%', height: 2, background: '#4ade80' }} />
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

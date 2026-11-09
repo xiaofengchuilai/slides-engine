@@ -1,0 +1,17 @@
+<Slide>
+  {/* decorative/business/2028 商务风-金属细边小边框：白底 + 描边小方框元素网格 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 40 }}>
+      <Box style={{ flexDirection: 'row', gap: 64, alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 48, height: 48, border: '1px solid #94A3B8', rotate: 45 }} />
+        <Box style={{ width: 40, height: 40, border: '2px solid #64748B' }} />
+        <Box style={{ width: 48, height: 48, border: '1px solid #94A3B8', borderRadius: 'sm' }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 64, alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 40, height: 40, border: '2px solid #2563EB' }} />
+        <Shape type="diamond" style={{ width: 40, height: 40, line: { color: '#94A3B8', width: 1 } }} />
+        <Box style={{ width: 48, height: 32, border: '1px solid #64748B', borderRadius: 'sm' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

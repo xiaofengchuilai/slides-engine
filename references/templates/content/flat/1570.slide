@@ -1,0 +1,43 @@
+<Slide>
+  {/* flat/1570 极简主义单页：深紫渐变底 + 居中标题区(图标/标题/分隔线/副题) + 三原则卡(纯粹/克制/优雅) + 底部箴言 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #6366F1 0%, #8B5CF6 50%, #EC4899 100%)', padding: 'xxl xl', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 主内容区 */}
+    <Box style={{ maxWidth: 1080, width: '100%', gap: 'xl', alignItems: 'center' }}>
+      {/* 核心标题区 */}
+      <Box style={{ alignItems: 'center', gap: 'sm' }}>
+        {/* 图标块 */}
+        <Box style={{ width: 96, height: 96, background: '#FFFFFF', opacity: 0.15, borderRadius: 'lg', alignItems: 'center', justifyContent: 'center', border: '1px solid #FFFFFF', marginBottom: 'sm', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Emoji name="💎" style={{ width: 44, height: 44 }} />
+        </Box>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true }}>{/* {{替换：标题}} */}极致简约</Text>
+        {/* 分隔线 + 圆点 */}
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Box style={{ width: 40, height: 2, background: '#FFFFFF', opacity: 0.6, borderRadius: 1 }} />
+          <Box style={{ width: 10, height: 10, background: '#FFFFFF', borderRadius: 5 }} />
+          <Box style={{ width: 40, height: 2, background: '#FFFFFF', opacity: 0.6, borderRadius: 1 }} />
+        </Box>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', opacity: 0.9 }}>{/* {{替换：副标题}} */}Minimalism</Text>
+      </Box>
+      {/* 三大原则卡片 */}
+      <Box style={{ flexDirection: 'row', gap: 'lg', width: '100%' }}>
+        {[
+          ['纯粹', '回归设计本质\n剔除一切多余\n保留核心价值', '💎'],
+          ['克制', '避免过度设计\n保持适度留白\n追求恰到好处', '⚖️'],
+          ['优雅', '简约而不简单\n精致而有品味\n传达高级感受', '✨'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, background: '#FFFFFF', opacity: 0.12, borderRadius: 'lg', padding: 'xl', alignItems: 'center', border: '1px solid #FFFFFF', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+            <Box style={{ width: 64, height: 64, background: 'cardBg', borderRadius: 'lg', alignItems: 'center', justifyContent: 'center', marginBottom: 'sm', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+              <Emoji name={x[2]} style={{ width: 32, height: 32 }} />
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{x[0]}</Text>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.85, textAlign: 'center', lineHeight: 1.8 }}>{x[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+      {/* 底部箴言 */}
+      <Box style={{ background: '#FFFFFF', opacity: 0.15, borderRadius: 999, padding: 'sm xl', border: '1px solid #FFFFFF', marginTop: 'sm', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF' }}>{/* {{替换：箴言}} */}"Less is More"</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

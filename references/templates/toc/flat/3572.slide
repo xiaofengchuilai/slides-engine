@@ -1,0 +1,36 @@
+<Slide>
+  {/* flat/3572 扁平风-阶梯式：左侧大标题区 + 右侧阶梯右移的渐变色块行（阶梯用外层左偏移实现） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', position: 'relative' }}>
+    {/* 右下角装饰大数字 */}
+    <Text style={{ position: 'absolute', right: 64, bottom: 40, fontSize: 112, color: '#E2E8F0', opacity: 0.5, bold: true }}>04</Text>
+    <Box style={{ height: 720, flexDirection: 'row', alignItems: 'center', padding: 'xxl xl' }}>
+      <Box style={{ width: 320, flexShrink: 0 }}>
+        <Text style={{ fontSize: 56, color: 'text', bold: true }}>{/* {{替换：标题}} */}目录</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', marginTop: 12 }}>{/* {{替换：英文标题}} */}CONTENTS</Text>
+        <Box style={{ flexDirection: 'row', gap: 8, marginTop: 16 }}>
+          <Box style={{ width: 48, height: 6, borderRadius: 3, background: '#6366F1' }} />
+          <Box style={{ width: 24, height: 6, borderRadius: 3, background: '#8B5CF6' }} />
+          <Box style={{ width: 12, height: 6, borderRadius: 3, background: '#06B6D4' }} />
+        </Box>
+      </Box>
+      <Box style={{ flex: 1, flexDirection: 'column', gap: 16 }}>
+        {[
+          ['01', '项目背景', '了解项目的起源与发展目标', 'linear-gradient(135deg, #6366F1 0%, #4F46E5 100%)', 0],
+          ['02', '核心功能', '产品的主要功能与特性介绍', 'linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)', 40],
+          ['03', '技术架构', '系统设计与技术选型方案', 'linear-gradient(135deg, #06B6D4 0%, #0891B2 100%)', 80],
+          ['04', '实施计划', '项目推进时间与里程碑', 'linear-gradient(135deg, #10B981 0%, #059669 100%)', 120],
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', marginLeft: x[4] }}>
+            <Box style={{ width: 80, background: x[3], alignItems: 'center', justifyContent: 'center', borderRadius: 16 }}>
+              <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+            </Box>
+            <Box style={{ flex: 1, background: '#FFFFFF', border: '2px solid #E0E7FF', borderRadius: 16, padding: 'md', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+              <Text style={{ fontSize: 'body', color: 'muted', marginTop: 4 }}>{/* {{章节副标题}} */}{x[2]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

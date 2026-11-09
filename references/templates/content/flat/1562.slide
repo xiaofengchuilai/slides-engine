@@ -1,0 +1,53 @@
+<Slide>
+  {/* flat/1562 敏捷开发实践：标题区(绿块+标题) + 4个流程色卡 + 三支柱/金句+注记 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    {/* 标题区 */}
+    <Box style={{ background: 'cardBg', borderRadius: 'sm', padding: 'xl', gap: 'md', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+        <Box style={{ width: 48, height: 48, background: 'success', borderRadius: 'sm' }} />
+        <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：标题}} */}敏捷开发实践</Text>
+      </Box>
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6 }}>{/* {{替换：导语}} */}敏捷开发是一种以人为核心、迭代、循序渐进的开发方法。通过短周期的迭代，团队能够快速响应需求变化，持续交付有价值的软件产品。</Text>
+    </Box>
+    {/* 4个流程色卡 */}
+    <Box style={{ flexDirection: 'row', gap: 'md' }}>
+      {[
+        ['Sprint Planning', '迭代计划会议', '#EF4444', '🎯'],
+        ['Daily Standup', '每日站会同步', '#F97316', '📊'],
+        ['Sprint Review', '迭代评审展示', '#EAB308', '🔄'],
+        ['Retrospective', '迭代回顾改进', '#22C55E', '💡'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: x[2], borderRadius: 'sm', padding: 'md', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+          <Emoji name={x[3]} style={{ width: 30, height: 30 }} />
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true, marginTop: 'xs' }}>{x[0]}</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.85, marginTop: 'xs' }}>{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 三支柱 + 金句/注记 */}
+    <Box style={{ flexDirection: 'row', gap: 'md', flex: 1 }}>
+      <Box style={{ flex: 1, gap: 'md' }}>
+        {[
+          ['透明化', '信息公开共享', '#3B82F6'],
+          ['检查', '定期审视进度', '#14B8A6'],
+          ['适应', '灵活调整策略', '#06B6D4'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, background: x[2], borderRadius: 'sm', padding: 'md', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.85, marginTop: 'xs' }}>{x[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+      <Box style={{ flex: 1, gap: 'md' }}>
+        <Box style={{ flex: 1, background: 'primary', borderRadius: 'sm', padding: 'md', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true, lineHeight: 1.6 }}>{/* {{替换：金句}} */}"拥抱变化，快速交付价值。"</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.7, marginTop: 'xs' }}>{/* {{替换：署名}} */}— 敏捷宣言</Text>
+        </Box>
+        <Box style={{ background: 'success', opacity: 0.25, borderRadius: 'sm', padding: 'md', flexDirection: 'row', alignItems: 'center', gap: 'xs' }}>
+          <Box style={{ width: 4, background: 'success', borderRadius: 2, alignSelf: 'stretch' }} />
+          <Text style={{ fontSize: 'label', color: '#065F46', bold: true }}>{/* {{替换：注记}} */}注：基于Scrum框架整理</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,20 @@
+<Slide>
+  {/* cover/flat 153 圆润交错封面：浅青渐变底 + 圆润胶囊形装饰 + 居中标题 + 白卡落款 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #ECFEFF 0%, #F0F9FF 50%, #DBEAFE 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 圆润胶囊装饰 */}
+    <Box style={{ position: 'absolute', top: 96, left: 160, width: 128, height: 80, background: '#67E8F9', opacity: 0.45, borderRadius: 40 }} />
+    <Box style={{ position: 'absolute', top: 144, right: 192, width: 112, height: 64, background: '#7DD3FC', opacity: 0.4, borderRadius: 32 }} />
+    <Box style={{ position: 'absolute', bottom: 128, left: 208, width: 96, height: 56, background: '#93C5FD', opacity: 0.35, borderRadius: 28 }} />
+    <Box style={{ position: 'absolute', bottom: 176, right: 176, width: 80, height: 48, background: '#22D3EE', opacity: 0.3, borderRadius: 24 }} />
+    {/* 主内容 */}
+    <Box style={{ alignItems: 'center', padding: '0 xl', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'md', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}移动端设计规范</Text>
+      <Text style={{ fontSize: 'card', color: 'text', marginBottom: 'lg', textAlign: 'center' }}>{/* {{副标题}} */}圆润友好·舒适体验</Text>
+      {/* 白卡落款 */}
+      <Box style={{ background: 'bg', borderRadius: 'md', padding: 'md xl', alignItems: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+        <Text style={{ fontSize: 'body', color: '#0891B2', bold: true }}>{/* {{落款一}} */}产品设计部</Text>
+        <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>{/* {{落款二}} */}APP设计指南</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

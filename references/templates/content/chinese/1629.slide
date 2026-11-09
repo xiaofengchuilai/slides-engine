@@ -1,0 +1,32 @@
+<Slide>
+  {/* chinese/1629 图文·双图左右：居中标题 + 左右双图夹细线 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF9F6 0%, #F0EBE1 100%)', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center', gap: 'xl' }}>
+      {/* 顶部标题 */}
+      <Box style={{ alignItems: 'center', marginBottom: 'md' }}>
+        <Text style={{ fontSize: 'title', color: '#7A1F1F', bold: true, fontFamily: 'serif', marginBottom: 'sm' }}>{/* {{替换：标题}} */}汉字文化</Text>
+        <Box style={{ width: 96, height: 1, background: '#7A1F1F', opacity: 0.3, marginBottom: 'md' }} />
+        <Text style={{ fontSize: 'body', color: '#4A4A4A', lineHeight: 1.8, textAlign: 'center', letterSpacing: 1 }}>
+          {/* {{替换：导语}} */}
+          {'汉字是世界上最古老的文字之一，承载着中华文明的深厚底蕴，\n是连接古今、沟通中外的文化纽带。'}
+        </Text>
+      </Box>
+      {/* 左右双图 */}
+      <Box style={{ flexDirection: 'row', gap: 'xxl', alignItems: 'center' }}>
+        <Box style={{ width: 320, height: 320, borderRadius: 'sm', background: '#FFFFFF', alignItems: 'center', justifyContent: 'center', border: '1px solid #E5E7EB' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/chinese-1629-a.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </Box>
+        <Box style={{ width: 1, height: 224, background: '#7A1F1F', opacity: 0.2 }} />
+        <Box style={{ width: 320, height: 320, borderRadius: 'sm', background: '#FFFFFF', alignItems: 'center', justifyContent: 'center', border: '1px solid #E5E7EB' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/chinese-1629-b.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+  {/* 底部功能文字 */}
+  <Box style={{ position: 'absolute', bottom: 24, left: 0, right: 0, alignItems: 'center' }}>
+    <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>UNESCO人类非物质文化遗产 · 中国书法</Text>
+  </Box>
+</Slide>

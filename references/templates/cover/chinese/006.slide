@@ -1,0 +1,22 @@
+<Slide>
+  {/* chinese/006 水墨印章：米底 + 竖条纹理 + 印章块 + 主标题 + 副标题 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FBF7F0 0%, #F6EEE0 55%, #FBEDE8 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 背景细线纹理（原 repeating-linear-gradient 红色细线，降级为浅红竖条组） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'row', justifyContent: 'space-around', opacity: 0.08 }}>
+      {[0, 80, 160, 240, 320, 400, 480, 560, 640, 720, 800, 880, 960, 1040, 1120, 1200].map((x) => (
+        <Box key={x} style={{ width: 2, height: 720, background: '#A81810' }} />
+      ))}
+    </Box>
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center' }}>
+      {/* 印章（旋转 6°，红块 + 白字） */}
+      <Box style={{ width: 80, height: 80, background: '#A81810', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center', border: '3px solid #7F1D1D', marginBottom: 'xxl', rotate: 6, boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true }}>壹</Text>
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#7F1D1D', bold: true, letterSpacing: 8, lineHeight: 1.2, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}诗词鉴赏</Text>
+      <Box style={{ width: 128, height: 4, background: '#A81810', marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'card', color: '#4B5563', lineHeight: 1.5, marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}品味千古流传的文学经典</Text>
+      <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：落款}} */}授课教师: 李明 · 2025年春季学期</Text>
+    </Box>
+  </Box>
+</Slide>

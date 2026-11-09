@@ -1,0 +1,49 @@
+<Slide>
+  {/* educational/1643 拼音教学·声母表：标题 + 四组声母卡(分组色) + 学习小贴士 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%)', padding: 'xxl xl', gap: 'lg', position: 'relative' }}>
+    <Box style={{ position: 'absolute', top: 40, right: 40, opacity: 0.5 }}>
+      <Emoji name="🎵" style={{ width: 42, height: 42 }} />
+    </Box>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Text style={{ fontSize: 'title', color: '#0C4A6E', bold: true }}>{/* {{替换：标题}} */}汉语拼音 · 声母表</Text>
+      <Text style={{ fontSize: 'body', color: '#0284C7', letterSpacing: 2 }}>{/* {{替换：副标题}} */}23个声母 | 发音练习</Text>
+    </Box>
+    <Box style={{ flex: 1, gap: 'md', justifyContent: 'center' }}>
+      {[
+        ['唇音组', ['b', 'p', 'm', 'f'], '#7DD3FC', '#0369A1'],
+        ['舌尖音', ['d', 't', 'n', 'l'], '#6EE7B7', '#047857'],
+        ['舌根音', ['g', 'k', 'h'], '#C4B5FD', '#6D28D9'],
+        ['舌面音', ['j', 'q', 'x'], '#FDA4AF', '#BE123C'],
+      ].map((g, gi) => (
+        <Box key={gi} style={{ flexDirection: 'row', alignItems: 'center', gap: 'lg', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'body', color: '#6B7280', width: 72, textAlign: 'right' }}>{/* {{替换：组名}} */}{g[0]}</Text>
+          <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+            {g[1].map((c, ci) => (
+              <Box key={ci} style={{ width: 64, height: 64, background: '#FFFFFF', border: `2px solid ${g[2]}`, borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'card', color: g[3], bold: true }}>{/* {{替换：声母}} */}{c}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ background: 'rgba(224,242,254,0.85)', border: '1px solid #BAE6FD', borderRadius: 'md', padding: 'lg' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+        <Emoji name="💡" style={{ width: 20, height: 20 }} />
+        <Text style={{ fontSize: 'body', color: '#0C4A6E', bold: true }}>{/* {{替换：小贴士标题}} */}学习小贴士</Text>
+      </Box>
+      <Box style={{ gap: 'xs' }}>
+        {[
+          '相同颜色的声母发音部位相近，可以一起记忆',
+          'b-p、d-t、g-k 成对出现，前者不送气，后者送气',
+          'j、q、x 只能和 i、ü 开头的韵母相拼',
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+            <Text style={{ fontSize: 'body', color: '#0284C7', bold: true }}>▸</Text>
+            <Text style={{ fontSize: 'body', color: '#374151' }}>{/* {{替换：贴士内容}} */}{x}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

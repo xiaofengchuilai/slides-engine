@@ -1,0 +1,21 @@
+<Slide>
+  {/* ending/business/1049 深蓝渐变几何：四角旋转方框装饰 + 居中谢谢观看 + 上下渐变线 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #1a2a4e 0%, #0d1b3e 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 几何装饰 - 左上（旋转方框，尺寸适配画布避免溢出） */}
+    <Box style={{ position: 'absolute', top: 8, left: 8, width: 140, height: 140, border: '2px solid rgba(82,139,255,0.2)', rotate: 45 }} />
+    <Box style={{ position: 'absolute', top: 24, left: 24, width: 120, height: 120, border: '1px solid rgba(82,139,255,0.15)', rotate: 45 }} />
+    {/* 几何装饰 - 右下（内移避免旋转溢出） */}
+    <Box style={{ position: 'absolute', bottom: 60, right: 60, width: 140, height: 140, border: '2px solid rgba(82,139,255,0.2)', rotate: 45 }} />
+    <Box style={{ position: 'absolute', bottom: 76, right: 76, width: 120, height: 120, border: '1px solid rgba(82,139,255,0.15)', rotate: 45 }} />
+    {/* 顶部装饰线（左→透明） */}
+    <Box style={{ position: 'absolute', top: 86, left: 0, width: 200, height: 3, background: 'linear-gradient(90deg, #528bff 0%, rgba(82,139,255,0) 100%)' }} />
+    {/* 底部装饰线（右→透明） */}
+    <Box style={{ position: 'absolute', bottom: 86, right: 0, width: 200, height: 3, background: 'linear-gradient(270deg, #528bff 0%, rgba(82,139,255,0) 100%)' }} />
+    {/* 主要内容 */}
+    <Box style={{ alignItems: 'center', maxWidth: 960 }}>
+      <Text style={{ fontSize: 56, color: '#FFFFFF', letterSpacing: 8, textAlign: 'center', marginBottom: 40 }}>{/* {{替换：主标题}} */}谢谢观看</Text>
+      <Box style={{ width: 150, height: 2, background: 'linear-gradient(90deg, rgba(82,139,255,0) 0%, #528bff 50%, rgba(82,139,255,0) 100%)', marginBottom: 40 }} />
+      <Text style={{ fontSize: 'card', color: '#a8b8d8', letterSpacing: 2, lineHeight: 1.8, textAlign: 'center' }}>{/* {{替换：致谢语}} */}感谢您的聆听</Text>
+    </Box>
+  </Box>
+</Slide>

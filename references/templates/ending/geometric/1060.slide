@@ -1,0 +1,18 @@
+<Slide>
+  {/* ending/geometric 1060 六边形网格结尾：粉红渐变底 + 大六边形 + 小六边形点缀 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #F093FB 0%, #F5576C 100%)' }}>
+    {/* 大六边形装饰（中心偏后） */}
+    <Shape type="hexagon" style={{ position: 'absolute', top: '50%', left: '50%', width: 300, height: 300, fill: '#FFFFFF', opacity: 0.1 }} />
+    <Shape type="hexagon" style={{ position: 'absolute', top: '50%', left: '50%', width: 260, height: 260, line: { color: '#FFFFFF', width: 2 }, opacity: 0.3 }} />
+    {/* 小六边形装饰 */}
+    <Shape type="hexagon" style={{ position: 'absolute', top: 108, left: 128, width: 60, height: 60, fill: '#FFFFFF', opacity: 0.2 }} />
+    <Shape type="hexagon" style={{ position: 'absolute', top: 180, right: 192, width: 50, height: 50, fill: '#FFFFFF', opacity: 0.25 }} />
+    <Shape type="hexagon" style={{ position: 'absolute', bottom: 144, left: 256, width: 70, height: 70, fill: '#FFFFFF', opacity: 0.18 }} />
+    <Shape type="hexagon" style={{ position: 'absolute', bottom: 108, right: 128, width: 55, height: 55, fill: '#FFFFFF', opacity: 0.22 }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: '#FFFFFF', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}感谢聆听</Text>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', textAlign: 'center' }}>{/* {{副标题}} */}期待与您再次相见</Text>
+    </Box>
+  </Box>
+</Slide>

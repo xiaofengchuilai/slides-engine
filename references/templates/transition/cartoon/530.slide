@@ -1,0 +1,17 @@
+<Slide>
+  {/* transition/cartoon/530 卡通风-星星框架：黄橙粉渐变底 + 四角星 + 白卡章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FEF08A 0%, #FED7AA 50%, #FBCFE8 100%)', padding: 48, position: 'relative' }}>
+    {/* 四角星 */}
+    <Emoji name="⭐" style={{ position: 'absolute', top: 16, left: 24, width: 40, height: 40 }} />
+    <Emoji name="⭐" style={{ position: 'absolute', top: 24, right: 24, width: 32, height: 32 }} />
+    <Emoji name="⭐" style={{ position: 'absolute', bottom: 24, left: 40, width: 32, height: 32 }} />
+    <Emoji name="⭐" style={{ position: 'absolute', bottom: 16, right: 24, width: 40, height: 40 }} />
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ background: 'rgba(255,255,255,0.9)', border: '4px solid #facc15', borderRadius: 24, padding: 40, paddingLeft: 64, paddingRight: 64, alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 'hero', color: '#f97316', bold: true, marginBottom: 16 }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Text style={{ fontSize: 'title', color: '#374151', bold: true, marginBottom: 12 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#ea580c' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

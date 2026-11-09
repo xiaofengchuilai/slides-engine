@@ -1,0 +1,35 @@
+<Slide>
+  {/* ending/tech/1107 科技风-代码编辑器：深色渐变 + 代码流背景 + 编辑器框架 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0D1117 0%, #161B22 100%)' }}>
+    {/* 代码流背景（两处静态代码行） */}
+    <Box style={{ position: 'absolute', top: 60, left: 60, opacity: 0.15 }}>
+      <Text style={{ fontSize: 14, color: '#58A6FF', fontFamily: 'Courier New', lineHeight: 1.6 }}>const app = express();</Text>
+      <Text style={{ fontSize: 14, color: '#58A6FF', fontFamily: 'Courier New', lineHeight: 1.6 }}>function goodbye() {}</Text>
+      <Text style={{ fontSize: 14, color: '#58A6FF', fontFamily: 'Courier New', lineHeight: 1.6 }}>class EndPage {}</Text>
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 60, right: 60, opacity: 0.15 }}>
+      <Text style={{ fontSize: 14, color: '#58A6FF', fontFamily: 'Courier New', lineHeight: 1.6 }}>render(&lt;End /&gt;)</Text>
+      <Text style={{ fontSize: 14, color: '#58A6FF', fontFamily: 'Courier New', lineHeight: 1.6 }}>// see you next time</Text>
+      <Text style={{ fontSize: 14, color: '#58A6FF', fontFamily: 'Courier New', lineHeight: 1.6 }}>goodbye()</Text>
+    </Box>
+    {/* 代码编辑器风格框架 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ width: 900, background: '#0D1117', border: '1px solid #30363D', borderRadius: 'sm', boxShadow: '0 0 50px rgba(88,166,255,0.2)' }}>
+        {/* 编辑器头部（三个圆点 + 文件名） */}
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', padding: 'sm md', background: '#161B22' }}>
+          <Box style={{ width: 12, height: 12, borderRadius: 'sm', background: '#FF5F56' }} />
+          <Box style={{ width: 12, height: 12, borderRadius: 'sm', background: '#FFBD2E' }} />
+          <Box style={{ width: 12, height: 12, borderRadius: 'sm', background: '#27C93F' }} />
+          <Box style={{ flex: 1, alignItems: 'center' }}>
+            <Text style={{ textAlign: 'center', fontSize: 'label', color: '#8B949E', fontFamily: 'Courier New' }}>ending.jsx</Text>
+          </Box>
+        </Box>
+        {/* 代码内容区 */}
+        <Box style={{ padding: 'xl xxl', alignItems: 'center' }}>
+          <Text style={{ fontSize: 'kpi', color: '#58A6FF', bold: true, letterSpacing: 5, marginBottom: 'md' }}>{/* {{替换：主标题}} */}感谢聆听</Text>
+          <Text style={{ fontSize: 'card', color: '#A5D6FF', letterSpacing: 3 }}>{/* {{替换：致谢语}} */}期待下次再见</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

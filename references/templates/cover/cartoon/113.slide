@@ -1,0 +1,24 @@
+<Slide>
+  {/* cartoon/113 冰淇淋：粉渐变底 + 圆球冰淇淋装饰 + 大标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FDF2F8 0%, #FFE4E6 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 冰淇淋装饰（右上：三色圆球叠放 + 锥形底） */}
+    <Box style={{ position: 'absolute', top: 64, right: 96, width: 96, height: 144 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 20, width: 56, height: 56, borderRadius: 28, background: '#F472B6' }} />
+      <Box style={{ position: 'absolute', top: 40, left: 24, width: 48, height: 48, borderRadius: 24, background: '#FCD34D' }} />
+      <Box style={{ position: 'absolute', top: 76, left: 24, width: 48, height: 48, borderRadius: 24, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', bottom: 0, left: 28, width: 40, height: 32, background: '#D97706', borderRadius: 8 }} />
+    </Box>
+    {/* 冰淇淋装饰（左下） */}
+    <Box style={{ position: 'absolute', bottom: 80, left: 96, width: 72, height: 112 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 12, width: 48, height: 48, borderRadius: 24, background: '#BBF7D0' }} />
+      <Box style={{ position: 'absolute', top: 32, left: 16, width: 40, height: 40, borderRadius: 20, background: '#F9A8D4' }} />
+      <Box style={{ position: 'absolute', bottom: 0, left: 20, width: 32, height: 24, background: '#D97706', borderRadius: 6 }} />
+    </Box>
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 800 }}>
+      <Text style={{ fontSize: 'hero', color: '#F472B6', bold: true, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}甜蜜下午茶</Text>
+      <Text style={{ fontSize: 'card', color: '#22D3EE', bold: true, marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}清凉一夏·甜蜜时光</Text>
+      <Text style={{ fontSize: 'body', color: '#4B5563', bold: true }}>{/* {{替换：落款}} */}美食工坊 | 夏日特饮制作</Text>
+    </Box>
+  </Box>
+</Slide>

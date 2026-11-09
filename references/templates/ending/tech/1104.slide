@@ -1,0 +1,26 @@
+<Slide>
+  {/* ending/tech/1104 科技风-粒子流：深紫渐变 + 流动光线 + 粒子装饰 + 渐变标题 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #1A1A3E 0%, #0A0A1A 100%)' }}>
+    {/* 流动光线装饰（三条横向渐变细条） */}
+    <Box style={{ position: 'absolute', top: 180, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, #0A0A1A 0%, #00FFFF 50%, #0A0A1A 100%)', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 360, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, #0A0A1A 0%, #FF00FF 50%, #0A0A1A 100%)', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 540, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, #0A0A1A 0%, #FFFF00 50%, #0A0A1A 100%)', opacity: 0.4 }} />
+    {/* 粒子装饰 */}
+    <Box style={{ position: 'absolute', top: 60, left: 50, width: 3, height: 3, borderRadius: 'sm', background: '#00FFFF', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 160, left: 130, width: 4, height: 4, borderRadius: 'sm', background: '#FF00FF', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 250, left: 80, width: 2, height: 2, borderRadius: 'sm', background: '#FFFF00', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 360, left: 170, width: 3, height: 3, borderRadius: 'sm', background: '#00FF00', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 470, left: 100, width: 4, height: 4, borderRadius: 'sm', background: '#FF6600', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 575, left: 65, width: 3, height: 3, borderRadius: 'sm', background: '#00CCFF', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 85, right: 230, width: 2, height: 2, borderRadius: 'sm', background: '#FF3399', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 325, right: 280, width: 4, height: 4, borderRadius: 'sm', background: '#00FFAA', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 540, right: 255, width: 3, height: 3, borderRadius: 'sm', background: '#FFAA00', opacity: 0.8 }} />
+    {/* 中心内容框（半透明底用深色 hex 双层：底层装饰、上层内容） */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ position: 'relative', border: '2px solid #00FFFF', padding: 'xl xxl', borderRadius: 'sm', background: '#1A1A3E', boxShadow: '0 0 60px rgba(0,255,255,0.4)' }}>
+        <Text style={{ fontSize: 'kpi', bold: true, letterSpacing: 5, marginBottom: 'md', backgroundClip: 'text', backgroundImage: 'linear-gradient(135deg, #00FFFF 0%, #FF00FF 50%, #FFFF00 100%)', color: '#00FFFF' }}>{/* {{替换：主标题}} */}感谢</Text>
+        <Text style={{ fontSize: 'card', color: '#00FFFF', letterSpacing: 3 }}>{/* {{替换：致谢语}} */}感谢您的聆听与关注</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

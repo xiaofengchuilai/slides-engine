@@ -1,0 +1,69 @@
+<Slide>
+  {/* minimalist/1600 居中标题 + 引文卡 + 三栏小图文字 + 底部信息 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 左上装饰点阵 */}
+    <Box style={{ position: 'absolute', left: 48, top: 300, gap: 'sm' }}>
+      <Box style={{ width: 8, height: 8, borderRadius: 4, background: 'primary' }} />
+      <Box style={{ width: 8, height: 8, borderRadius: 4, background: 'muted' }} />
+      <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#E5E7EB' }} />
+    </Box>
+
+    <Box style={{ flex: 1, gap: 'xl' }}>
+      {/* 顶部标题区 */}
+      <Box style={{ alignItems: 'center', gap: 'sm' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+          <Box style={{ width: 32, height: 2, background: 'muted' }} />
+          <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2 }}>{/* {{眉题}} */}FUTURE VISION</Text>
+          <Box style={{ width: 32, height: 2, background: 'muted' }} />
+        </Box>
+        <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{标题}} */}未来展望与愿景</Text>
+        <Box style={{ width: 64, height: 2, background: 'primary' }} />
+      </Box>
+
+      {/* 引文卡 */}
+      <Box style={{ background: 'cardBg', padding: 'xl', borderRadius: 'md', gap: 'sm', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+        <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6 }}>{/* {{引文1}} */}面向未来，我们致力于打造行业领先的数字化平台，通过技术创新和生态建设，为客户创造持续价值。我们相信，唯有不断进化，才能在快速变化的市场中保持竞争力。</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{引文2}} */}我们的愿景是成为全球领先的解决方案提供商，让技术真正服务于人，让创新惠及更多用户。</Text>
+      </Box>
+
+      {/* 三栏小图 + 文字 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+        {[
+          ['技术驱动', '持续投入核心技术研发，保持技术领先优势。'],
+          ['生态共赢', '构建开放平台，与合作伙伴共同成长。'],
+          ['全球布局', '拓展国际市场，服务全球用户。'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, gap: 'md' }}>
+            <Box style={{ height: 112, alignItems: 'center', justifyContent: 'center', borderRadius: 'sm' }}>
+              {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+              <Image src={`assets/images/1600-${i + 1}.png`} style={{ width: 320, height: 112, objectFit: 'contain' }} />
+            </Box>
+            <Box style={{ gap: 'xs' }}>
+              <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{栏标题}} */}{x[0]}</Text>
+              <Text style={{ fontSize: 'label', color: 'muted', lineHeight: 1.6 }}>{/* {{栏说明}} */}{x[1]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+
+      {/* 底部功能区 */}
+      <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+        <Box style={{ gap: 'xs' }}>
+          <Box style={{ width: 300, height: 2, background: '#E5E7EB', marginBottom: 'sm' }} />
+          <Box style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <Text style={{ fontSize: 'label', color: 'text', bold: true }}>战略周期：</Text>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{周期}} */}2024-2028年（五年规划）</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <Text style={{ fontSize: 'label', color: 'text', bold: true }}>投资承诺：</Text>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{投资}} */}累计投入超过10亿元人民币</Text>
+          </Box>
+        </Box>
+        <Box style={{ gap: 'xs', alignItems: 'flex-end' }}>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{发布日期}} */}发布日期：2024年1月</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{文件编号}} */}董事会批准文件编号：BD-2024-001</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

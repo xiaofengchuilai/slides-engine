@@ -1,0 +1,52 @@
+<Slide>
+  {/* tech/1582 量子计算：顶部徽章+渐变标题+副题 + 中部文字卡 + 三特性卡 + 底部金句/参考 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xl', alignItems: 'center', justifyContent: 'center', gap: 'lg' }}>
+    {/* 垂直霓虹细线装饰 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'row', justifyContent: 'space-evenly', opacity: 0.12 }}>
+      {[0, 1, 2, 3].map((i) => (
+        <Box key={i} style={{ width: 1, height: 720, background: '#22D3EE' }} />
+      ))}
+    </Box>
+    <Box style={{ alignItems: 'center' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', background: 'rgba(34,211,238,0.15)', padding: 'xs lg', borderRadius: 20, marginBottom: 'md', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+        <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#22D3EE' }} />
+        <Text style={{ fontSize: 'label', color: '#22D3EE', letterSpacing: 2 }}>SYSTEM ONLINE</Text>
+      </Box>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, backgroundImage: 'linear-gradient(90deg, #22D3EE 0%, #60A5FA 50%, #C084FC 100%)', backgroundClip: 'text', textAlign: 'center', marginBottom: 'xs' }}>{/* {{标题}} */}量子计算时代来临</Text>
+      <Text style={{ fontSize: 'label', color: '#94A3B8', letterSpacing: 3 }}>QUANTUM COMPUTING ERA</Text>
+    </Box>
+    <Box style={{ width: '100%', maxWidth: 1000, background: 'rgba(15,23,42,0.85)', border: '1px solid rgba(34,211,238,0.3)', borderRadius: 'md', padding: 'lg' }}>
+      <Text style={{ fontSize: 'body', color: '#E2E8F0', lineHeight: 1.6, marginBottom: 'sm' }}>{/* {{说明段1}} */}量子计算利用量子力学原理，通过量子比特（qubit）的叠加态和纠缠态，实现了对经典计算机无法处理的复杂问题的求解能力。这项技术将在密码学、药物研发、金融建模等领域带来革命性突破。</Text>
+      <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{说明段2}} */}当前，全球科技巨头和研究机构正在加速量子计算硬件和算法的研发。预计在未来5-10年内，量子优越性将在更多实际应用场景中得到验证。</Text>
+    </Box>
+    <Box style={{ width: '100%', flexDirection: 'row', gap: 'lg' }}>
+      {[
+        { icon: 'atom', title: 'Superposition', desc: '量子叠加态', color: '#22D3EE' },
+        { icon: 'link', title: 'Entanglement', desc: '量子纠缠', color: '#60A5FA' },
+        { icon: 'infinity', title: 'Interference', desc: '量子干涉', color: '#C084FC' },
+      ].map((x) => (
+        <Box key={x.title} style={{ flex: 1, background: 'rgba(34,211,238,0.12)', borderRadius: 'sm', padding: 'lg', alignItems: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+          {x.icon === 'atom' && <Emoji name="⚛" style={{ width: 36, height: 36, marginBottom: 'sm' }} />}
+          {x.icon === 'link' && <Emoji name="🔗" style={{ width: 36, height: 36, marginBottom: 'sm' }} />}
+          {x.icon === 'infinity' && <Text style={{ fontSize: 36, color: x.color, bold: true, marginBottom: 'sm' }}>∞</Text>}
+          <Text style={{ fontSize: 'card', color: x.color, bold: true, marginBottom: 'xs' }}>{x.title}</Text>
+          <Text style={{ fontSize: 'label', color: '#94A3B8' }}>{x.desc}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ width: '100%', flexDirection: 'row', gap: 'lg' }}>
+      <Box style={{ flex: 1, background: '#020617', border: '2px solid #A855F7', borderRadius: 'md', padding: 'lg', flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+        <Text style={{ fontSize: 'card', color: '#C084FC', lineHeight: 1.2 }}>»</Text>
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'body', color: '#D8B4FE', lineHeight: 1.6, marginBottom: 'xs' }}>“Quantum mechanics makes absolutely no sense.”</Text>
+          <Text style={{ fontSize: 'label', color: '#94A3B8' }}>— Richard Feynman</Text>
+        </Box>
+      </Box>
+      <Box style={{ flex: 1, background: 'rgba(88,28,135,0.4)', border: '1px solid rgba(168,85,247,0.35)', borderRadius: 'md', padding: 'lg' }}>
+        <Text style={{ fontSize: 'label', color: '#C084FC', bold: true, marginBottom: 'xs' }}>/* REFERENCE */</Text>
+        <Text style={{ fontSize: 'label', color: '#CBD5E1', lineHeight: 1.5 }}>{/* {{参考来源}} */}Source: Quantum Computing Report 2024</Text>
+        <Text style={{ fontSize: 'label', color: '#CBD5E1' }}>Research: MIT, IBM, Google Quantum AI</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

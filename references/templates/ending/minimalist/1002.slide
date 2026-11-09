@@ -1,0 +1,25 @@
+<Slide>
+  {/* minimalist/1002 留白致谢：斜体引言 + 超大 Q&A + 三栏联系信息（竖线分隔） */}
+  <Box style={{ height: 720, width: 1280, background: 'cardBg', alignItems: 'center', justifyContent: 'center' }}>
+    <Box style={{ alignItems: 'center', gap: 'xl', width: 1000 }}>
+      <Text style={{ fontSize: 'card', color: 'muted', fontFamily: 'serif' }}>{/* {{替换：引言}} */}感谢您的聆听</Text>
+      <Text style={{ fontSize: 'kpi', color: 'text', bold: true }}>Q &amp; A</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xxl', marginTop: 'sm' }}>
+        <Box style={{ alignItems: 'center', gap: 'xs' }}>
+          <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2 }}>EMAIL</Text>
+          <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：邮箱}} */}contact@company.com</Text>
+        </Box>
+        <Box style={{ width: 1, height: 40, background: '#D1D5DB' }} />
+        <Box style={{ alignItems: 'center', gap: 'xs' }}>
+          <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2 }}>PHONE</Text>
+          <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：电话}} */}400-888-8888</Text>
+        </Box>
+        <Box style={{ width: 1, height: 40, background: '#D1D5DB' }} />
+        <Box style={{ alignItems: 'center', gap: 'xs' }}>
+          <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2 }}>WEBSITE</Text>
+          <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：网站}} */}www.company.com</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

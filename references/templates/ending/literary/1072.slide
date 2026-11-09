@@ -1,0 +1,27 @@
+<Slide>
+  {/* ending/literary/1072 文艺风-淡雅简约：米白渐变 + 装饰线 + 圆形装饰 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(180deg, #FAF8F3 0%, #F5F0E8 100%)' }}>
+    {/* 淡雅装饰线 */}
+    <Box style={{ position: 'absolute', top: 216, left: 190, width: 150, height: 1, background: '#D4C5B0', opacity: 0.5 }} />
+    <Box style={{ position: 'absolute', bottom: 250, right: 230, width: 180, height: 1, background: '#D4C5B0', opacity: 0.5 }} />
+    {/* 简约圆形装饰 */}
+    <Box style={{ position: 'absolute', top: 140, left: 150, width: 40, height: 40, borderRadius: 20, border: '1px solid #B4A082', opacity: 0.3 }} />
+    <Box style={{ position: 'absolute', top: 160, left: 180, width: 20, height: 20, borderRadius: 10, background: '#B4A082', opacity: 0.1 }} />
+    <Box style={{ position: 'absolute', bottom: 180, right: 190, width: 50, height: 50, borderRadius: 25, border: '1px solid #B4A082', opacity: 0.35 }} />
+    <Box style={{ position: 'absolute', bottom: 195, right: 220, width: 25, height: 25, borderRadius: 12, background: '#B4A082', opacity: 0.12 }} />
+    {/* 引号装饰降级为文字 */}
+    <Text style={{ position: 'absolute', top: 130, right: 260, fontSize: 'kpi', color: '#B4A082', fontFamily: 'serif', opacity: 0.2 }}>“</Text>
+    <Text style={{ position: 'absolute', bottom: 200, left: 280, fontSize: 'kpi', color: '#B4A082', fontFamily: 'serif', opacity: 0.2 }}>”</Text>
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#7D6E5F', fontFamily: 'serif', letterSpacing: 3, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}致谢</Text>
+      <Box style={{ width: 80, height: 1, background: '#B4A082', opacity: 0.4, marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'title', color: '#A0917F', fontFamily: 'serif', lineHeight: 2 }}>{/* {{替换：致谢语}} */}欢迎交流与指导</Text>
+    </Box>
+    {/* 落款装饰 */}
+    <Box style={{ position: 'absolute', bottom: 100, right: 120, flexDirection: 'row', alignItems: 'center', gap: 'sm', opacity: 0.3 }}>
+      <Box style={{ width: 30, height: 1, background: '#B4A082' }} />
+      <Box style={{ width: 6, height: 6, borderRadius: 3, background: '#B4A082' }} />
+    </Box>
+  </Box>
+</Slide>

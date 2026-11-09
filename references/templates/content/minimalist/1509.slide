@@ -1,0 +1,27 @@
+<Slide>
+  {/* minimalist/1509 设计原则：深色圆点锚 + 居中标题段落 + 三关键词 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl', alignItems: 'center', justifyContent: 'center' }}>
+    <Box style={{ alignItems: 'center' }}>
+      <Box style={{ width: 112, height: 112, borderRadius: 56, background: '#0F172A', marginBottom: 'xl', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+      <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{替换：页面标题}} */}设计原则</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6, marginTop: 'xl', textAlign: 'center' }}>{/* {{替换：核心理念}} */}简约不是简单，而是在复杂中提炼本质。</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6, textAlign: 'center' }}>{/* {{替换：核心理念}} */}通过减法设计，让每个元素都有其存在的意义。</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', marginTop: 'xxl' }}>
+        <Box style={{ alignItems: 'center' }}>
+          <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：关键词}} */}清晰</Text>
+          <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>Clear</Text>
+        </Box>
+        <Box style={{ width: 2, height: 48, background: '#CBD5E1', marginLeft: 'xxl', marginRight: 'xxl' }} />
+        <Box style={{ alignItems: 'center' }}>
+          <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：关键词}} */}简洁</Text>
+          <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>Simple</Text>
+        </Box>
+        <Box style={{ width: 2, height: 48, background: '#CBD5E1', marginLeft: 'xxl', marginRight: 'xxl' }} />
+        <Box style={{ alignItems: 'center' }}>
+          <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：关键词}} */}优雅</Text>
+          <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>Elegant</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,41 @@
+<Slide>
+  {/* ending/flat 1088 圆点矩阵结尾：橙粉渐变底 + 彩色圆点矩阵 + 大圆点 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #FFEDD5 0%, #FECDD3 100%)' }}>
+    {/* 圆点矩阵装饰（左上区 3x3） */}
+    <Box style={{ position: 'absolute', top: 40, left: 40, gap: 'sm' }}>
+      <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#FF6B6B', opacity: 0.5 }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#4ECDC4', opacity: 0.5 }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#FFE66D', opacity: 0.5 }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#A8E6CF', opacity: 0.5 }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#FF8B94', opacity: 0.5 }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#95E1D3', opacity: 0.5 }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#FFD93D', opacity: 0.5 }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#6BCF7F', opacity: 0.5 }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#F38181', opacity: 0.5 }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#FF6B6B', opacity: 0.5 }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#4ECDC4', opacity: 0.5 }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#FFE66D', opacity: 0.5 }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#A8E6CF', opacity: 0.5 }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#FF8B94', opacity: 0.5 }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: '#95E1D3', opacity: 0.5 }} />
+      </Box>
+    </Box>
+    {/* 大圆点装饰（+ 阴影） */}
+    <Box style={{ position: 'absolute', top: 94, right: 166, width: 72, height: 72, borderRadius: 36, background: '#FF6B6B', opacity: 0.6, boxShadow: '0 10px 30px rgba(255,107,107,0.3)' }} />
+    <Box style={{ position: 'absolute', top: 418, right: 128, width: 90, height: 90, borderRadius: 45, background: '#4ECDC4', opacity: 0.6, boxShadow: '0 10px 30px rgba(78,205,196,0.3)' }} />
+    <Box style={{ position: 'absolute', bottom: 115, left: 230, width: 80, height: 80, borderRadius: 40, background: '#FFE66D', opacity: 0.6, boxShadow: '0 10px 30px rgba(255,230,109,0.3)' }} />
+    {/* 中圆点 */}
+    <Box style={{ position: 'absolute', top: 274, left: 422, width: 46, height: 46, borderRadius: 23, background: '#A8E6CF', opacity: 0.7 }} />
+    <Box style={{ position: 'absolute', bottom: 238, right: 358, width: 55, height: 55, borderRadius: 28, background: '#FF8B94', opacity: 0.7 }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: 'text', bold: true, marginBottom: 'lg', textAlign: 'center' }}>{/* {{主标题}} */}谢谢</Text>
+      <Text style={{ fontSize: 'card', color: 'text', textAlign: 'center' }}>{/* {{副标题}} */}感谢您的耐心聆听</Text>
+    </Box>
+  </Box>
+</Slide>

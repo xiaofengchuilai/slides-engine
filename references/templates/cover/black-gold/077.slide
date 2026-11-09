@@ -1,0 +1,20 @@
+<Slide>
+  {/* black-gold/077 钻石光泽：黑灰渐变底 + 金色圆点光晕 + 装饰线 + 金字标题 + 副标题 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #000000 0%, #1F2937 50%, #000000 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 金色光晕（左上/右下） */}
+    <Box style={{ position: 'absolute', top: 40, left: 40, width: 192, height: 192, borderRadius: 96, background: '#EAB308', opacity: 0.05 }} />
+    <Box style={{ position: 'absolute', bottom: 40, right: 40, width: 256, height: 256, borderRadius: 128, background: '#EAB308', opacity: 0.05 }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      {/* 装饰线：短线 + 圆点 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', marginBottom: 'xl' }}>
+        <Box style={{ width: 96, height: 2, background: '#EAB308' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#EAB308', boxShadow: '0 0 20px rgba(255,215,0,0.6)' }} />
+        <Box style={{ width: 96, height: 2, background: '#EAB308' }} />
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}奢侈品牌战略</Text>
+      <Text style={{ fontSize: 'card', color: '#CA8A04', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}打造高端品牌形象与市场定位</Text>
+      <Text style={{ fontSize: 'body', color: '#9CA3AF' }}>{/* {{替换：落款}} */}品牌战略部 | 年度品牌规划</Text>
+    </Box>
+  </Box>
+</Slide>

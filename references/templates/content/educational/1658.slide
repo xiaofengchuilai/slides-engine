@@ -1,0 +1,63 @@
+<Slide>
+  {/* educational/1658 数学口诀·九九乘法表：标题 + 9x9 乘法表(渐变彩卡) + 口诀儿歌/记忆技巧 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+        <Text style={{ fontSize: 'title', color: '#1E3A8A', bold: true }}>{/* {{替换：标题}} */}九九乘法表</Text>
+        <Emoji name="✖" style={{ width: 26, height: 26 }} />
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#2563EB' }}>{/* {{替换：副标题}} */}熟记口诀 · 快速计算</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'sm', flexWrap: 'wrap' }}>
+      {[
+        ['#EF4444', '#DC2626'], ['#F97316', '#EA580C'], ['#F59E0B', '#D97706'], ['#EAB308', '#CA8A04'], ['#84CC16', '#65A30D'], ['#22C55E', '#16A34A'], ['#14B8A6', '#0D9488'], ['#06B6D4', '#0891B2'], ['#3B82F6', '#2563EB'],
+      ].map((c, ci) => (
+        <Box key={ci} style={{ width: 122, height: 68, background: `linear-gradient(135deg, ${c[0]} 0%, ${c[1]} 100%)`, borderRadius: 'sm', alignItems: 'center', justifyContent: 'center', marginBottom: 'sm', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{替换：算式}} */}{ci + 1}x1</Text>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{ci + 1}</Text>
+        </Box>
+      ))}
+      {[
+        ['2x2', '4'], ['3x2', '6'], ['4x2', '8'], ['5x2', '10'], ['6x2', '12'], ['7x2', '14'], ['8x2', '16'], ['9x2', '18'],
+      ].map((x, i) => (
+        <Box key={i} style={{ width: 122, height: 68, background: `linear-gradient(135deg, ${['#F97316', '#F59E0B', '#EAB308', '#84CC16', '#22C55E', '#14B8A6', '#06B6D4', '#3B82F6'][i]} 0%, ${['#EA580C', '#D97706', '#CA8A04', '#65A30D', '#16A34A', '#0D9488', '#0891B2', '#2563EB'][i]} 100%)`, borderRadius: 'sm', alignItems: 'center', justifyContent: 'center', marginBottom: 'sm', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{替换：算式}} */}{x[0]}</Text>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：积}} */}{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'lg' }}>
+      <Box style={{ flex: 1, background: '#FFFFFF', border: '2px solid #93C5FD', borderRadius: 'md', padding: 'lg' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+          <Emoji name="🎵" style={{ width: 18, height: 18 }} />
+          <Text style={{ fontSize: 'body', color: '#1E3A8A', bold: true }}>{/* {{替换：标题}} */}口诀儿歌</Text>
+        </Box>
+        <Box style={{ gap: 'xs' }}>
+          <Text style={{ fontSize: 'body', color: '#374151' }}>一一得一，二二得四</Text>
+          <Text style={{ fontSize: 'body', color: '#374151' }}>三三得九，四四十六</Text>
+          <Text style={{ fontSize: 'body', color: '#374151' }}>五五二十五，六六三十六</Text>
+          <Text style={{ fontSize: 'body', color: '#374151' }}>七七四十九，八八六十四，九九八十一</Text>
+        </Box>
+      </Box>
+      <Box style={{ flex: 1, background: '#FFFFFF', border: '2px solid #93C5FD', borderRadius: 'md', padding: 'lg' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+          <Emoji name="💡" style={{ width: 18, height: 18 }} />
+          <Text style={{ fontSize: 'body', color: '#1E3A8A', bold: true }}>{/* {{替换：标题}} */}记忆技巧</Text>
+        </Box>
+        <Box style={{ gap: 'xs' }}>
+          {[
+            '从小到大，每天背1-2行',
+            '用手指比划，边做边记',
+            '找规律：5的倍数尾数是0或5',
+            '反复练习，做口算题巩固',
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+              <Text style={{ fontSize: 'label', color: '#2563EB', bold: true }}>{i + 1}.</Text>
+              <Text style={{ fontSize: 'label', color: '#374151' }}>{/* {{替换：技巧}} */}{x}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

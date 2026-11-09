@@ -1,0 +1,25 @@
+<Slide>
+  {/* transition/tech/517 科技风-扫描线：深蓝渐变底 + 网格 + 扫描线 + 居中章节号/名/导语 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 50%, #0F172A 100%)', padding: 48, position: 'relative' }}>
+    {/* 网格背景 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'repeating-linear-gradient(0deg, rgba(0,255,255,0.08) 0px, rgba(0,255,255,0.08) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 40px)', opacity: 0.5 }} />
+    <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'repeating-linear-gradient(90deg, rgba(0,255,255,0.08) 0px, rgba(0,255,255,0.08) 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 40px)', opacity: 0.5 }} />
+    {/* 扫描线 */}
+    <Box style={{ position: 'absolute', top: 360, left: 0, right: 0, height: 2, background: 'linear-gradient(90deg, rgba(0,255,255,0) 0%, #22d3ee 50%, rgba(0,255,255,0) 100%)' }} />
+    <Box style={{ position: 'absolute', top: 320, left: 0, right: 0, height: 80, background: 'linear-gradient(180deg, rgba(34,211,238,0.15) 0%, rgba(0,0,0,0) 50%, rgba(34,211,238,0.15) 100%)' }} />
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ border: '2px solid #22d3ee', padding: 12, paddingLeft: 24, paddingRight: 24, marginBottom: 24 }}>
+          <Text style={{ fontSize: 'kpi', color: '#22d3ee', bold: true }}>{/* {{替换：章节号 01-0N}} */}&lt; 01 /&gt;</Text>
+        </Box>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 12 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#22d3ee' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+        <Box style={{ flexDirection: 'row', gap: 8, marginTop: 24 }}>
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#22d3ee' }} />
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#22d3ee' }} />
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#22d3ee' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

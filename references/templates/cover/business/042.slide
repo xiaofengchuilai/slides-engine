@@ -1,0 +1,27 @@
+<Slide>
+  {/* cover/business/042 商务风-灰色简约：左深色大数字栏 + 右标题信息栏 */}
+  <Box style={{ flexDirection: 'row', height: 720, width: 1280 }}>
+    {/* 左栏：深灰底 + 斜纹装饰 + 大年份 */}
+    <Box style={{ width: 512, height: 720, background: '#1E293B', alignItems: 'center', justifyContent: 'center' }}>
+      {/* 斜纹装饰：两条细线模拟 repeating-linear-gradient（低透明度） */}
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 512, height: 720, opacity: 0.1 }}>
+        <Box style={{ position: 'absolute', top: 0, left: 180, width: 2, height: 720, background: '#FFFFFF' }} />
+        <Box style={{ position: 'absolute', top: 0, left: 280, width: 2, height: 720, background: '#FFFFFF' }} />
+        <Box style={{ position: 'absolute', top: 0, left: 380, width: 2, height: 720, background: '#FFFFFF' }} />
+      </Box>
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 96, color: '#FFFFFF', bold: true, lineHeight: 1 }}>{/* {{替换：年份}} */}2025</Text>
+        <Text style={{ fontSize: 24, color: '#FFFFFF', fontWeight: 300, letterSpacing: 10, marginTop: 'lg' }}>{/* {{替换：期数}} */}Q1 REPORT</Text>
+      </Box>
+    </Box>
+    {/* 右栏：白底标题信息 */}
+    <Box style={{ flex: 1, height: 720, background: 'bg', padding: '80px 70px', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 16, color: '#475569', bold: true, letterSpacing: 4, marginBottom: 'md' }}>{/* {{替换：顶部英文标签}} */}QUARTERLY BUSINESS REVIEW</Text>
+      <Text style={{ fontSize: 72, color: '#0F172A', bold: true, lineHeight: 1.1, marginBottom: 32 }}>{/* {{替换：主标题}} */}季度业务回顾</Text>
+      {/* 短横线（原 w-32 h-[3px]） */}
+      <Box style={{ width: 128, height: 3, background: '#1E293B', marginBottom: 40 }} />
+      <Text style={{ fontSize: 22, color: '#475569', marginBottom: 32 }}>{/* {{替换：副标题}} */}运营数据与战略执行总结</Text>
+      <Text style={{ fontSize: 16, color: '#64748B' }}>{/* {{替换：落款}} */}主讲人: 张经理 | 战略规划部</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,26 @@
+<Slide>
+  {/* minimalist/3502 简约风-垂直线条：左标题 + 右侧竖线章节列表 */}
+  <Box style={{ height: 720, width: 1280, background: 'cardBg', padding: 48 }}>
+    <Box style={{ height: 624, flexDirection: 'row' }}>
+      <Box style={{ width: 400, alignItems: 'center' }}>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{标题}} */}目录</Text>
+      </Box>
+      <Box style={{ flex: 1, justifyContent: 'center', gap: 20 }}>
+        {[
+          ['Chapter 01', '项目概述'],
+          ['Chapter 02', '核心价值'],
+          ['Chapter 03', '落地方案'],
+          ['Chapter 04', '总结展望'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', gap: 16, alignItems: 'center' }}>
+            <Box style={{ width: 4, height: 56, background: 'line', borderRadius: 2 }} />
+            <Box>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

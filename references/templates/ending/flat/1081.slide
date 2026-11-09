@@ -1,0 +1,25 @@
+<Slide>
+  {/* ending/flat 1081 条纹装饰结尾：白底 + 顶部红黄条纹 + 侧边青绿条 + 底部条纹 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'bg' }}>
+    {/* 顶部红黄渐变条纹 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 15, background: 'linear-gradient(90deg, #F87171 0%, #EF4444 50%, #FACC15 100%)' }} />
+    {/* 左侧青绿竖条 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 8, height: 720, background: 'linear-gradient(180deg, #2DD4BF 0%, #0D9488 50%, #0F766E 100%)' }} />
+    {/* 右侧浅绿竖条 */}
+    <Box style={{ position: 'absolute', top: 0, right: 0, width: 8, height: 720, background: 'linear-gradient(180deg, #86EFAC 0%, #5EEAD4 50%, #2DD4BF 100%)' }} />
+    {/* 装饰横线 */}
+    <Box style={{ position: 'absolute', top: 220, left: 192, width: 200, height: 4, background: '#F87171', opacity: 0.3 }} />
+    <Box style={{ position: 'absolute', top: 500, right: 192, width: 220, height: 4, background: '#2DD4BF', opacity: 0.3 }} />
+    {/* 彩色小方块点缀 */}
+    <Box style={{ position: 'absolute', top: 144, left: 154, width: 30, height: 30, background: '#FDE047' }} />
+    <Box style={{ position: 'absolute', top: 504, right: 192, width: 35, height: 35, background: '#5EEAD4' }} />
+    <Box style={{ position: 'absolute', bottom: 144, left: 230, width: 25, height: 25, background: '#F9A8D4' }} />
+    {/* 底部渐变条纹 */}
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 15, background: 'linear-gradient(90deg, #86EFAC 0%, #5EEAD4 50%, #0D9488 100%)' }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: 'text', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}谢谢</Text>
+      <Text style={{ fontSize: 'card', color: 'text', textAlign: 'center' }}>{/* {{副标题}} */}感谢您的关注与支持</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,32 @@
+<Slide>
+  {/* minimalist/1028 极简网格：细线网格背景 + 中央白底卡片标题（引擎无 repeating-gradient，用横纵细线拼网格） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg' }}>
+    {/* 纵向网格线（每 100px 一条，浅灰） */}
+    <Box style={{ position: 'absolute', left: 100, top: 0, width: 1, height: 720, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 200, top: 0, width: 1, height: 720, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 300, top: 0, width: 1, height: 720, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 400, top: 0, width: 1, height: 720, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 500, top: 0, width: 1, height: 720, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 600, top: 0, width: 1, height: 720, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 700, top: 0, width: 1, height: 720, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 800, top: 0, width: 1, height: 720, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 900, top: 0, width: 1, height: 720, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 1000, top: 0, width: 1, height: 720, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 1100, top: 0, width: 1, height: 720, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 1200, top: 0, width: 1, height: 720, background: '#F0F0F0' }} />
+    {/* 横向网格线（每 100px 一条，浅灰） */}
+    <Box style={{ position: 'absolute', left: 0, top: 100, width: 1280, height: 1, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 0, top: 200, width: 1280, height: 1, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 0, top: 300, width: 1280, height: 1, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 0, top: 400, width: 1280, height: 1, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 0, top: 500, width: 1280, height: 1, background: '#F0F0F0' }} />
+    <Box style={{ position: 'absolute', left: 0, top: 600, width: 1280, height: 1, background: '#F0F0F0' }} />
+    {/* 中央白底卡片（近不透明白底 + 标题/副文） */}
+    <Box style={{ height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ background: '#FFFFFF', padding: 'xl xxl', alignItems: 'center', gap: 'sm', opacity: 0.95, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Text style={{ fontSize: 'title', color: 'text', letterSpacing: 4 }}>{/* {{替换：致谢标题}} */}谢谢</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{替换：副文}} */}感谢您的耐心聆听</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

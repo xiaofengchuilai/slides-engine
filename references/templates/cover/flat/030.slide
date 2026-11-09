@@ -1,0 +1,17 @@
+<Slide>
+  {/* cover/flat 030 圆形装饰封面：青蓝渐变底 + 白色圆点 + 居中标题 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #2DD4BF 0%, #06B6D4 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 装饰圆（右上） */}
+    <Box style={{ position: 'absolute', top: 64, right: 128, width: 256, height: 256, borderRadius: 128, background: '#FFFFFF', opacity: 0.2 }} />
+    {/* 装饰圆（左下） */}
+    <Box style={{ position: 'absolute', bottom: 96, left: 128, width: 320, height: 320, borderRadius: 160, background: '#FFFFFF', opacity: 0.1 }} />
+    {/* 装饰圆（左中） */}
+    <Box style={{ position: 'absolute', top: 360, left: 320, width: 192, height: 192, borderRadius: 96, background: '#FFFFFF', opacity: 0.05 }} />
+    {/* 主内容（最后渲染，自然在最上层） */}
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true, letterSpacing: 6, marginBottom: 'xl', opacity: 0.9 }}>{/* {{栏目名}} */}ANNUAL REPORT</Text>
+      <Text style={{ fontSize: 88, color: '#FFFFFF', bold: true, marginBottom: 'xl', lineHeight: 1 }}>{/* {{年份}} */}2025</Text>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', letterSpacing: 2 }}>{/* {{副标题}} */}年度总结报告</Text>
+    </Box>
+  </Box>
+</Slide>

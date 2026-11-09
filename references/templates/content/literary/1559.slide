@@ -1,0 +1,65 @@
+<Slide>
+  {/* literary/1559 摄影瞬间：取景器 + 信息条 + 拍摄模式 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #1F2937 0%, #111827 50%, #1F2937 100%)', padding: 'xl xxl', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 取景器外框 */}
+    <Box style={{ width: 1100, background: '#000000', borderRadius: 'lg', padding: 'lg', position: 'relative', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      {/* 顶部信息条 */}
+      <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 'xs md', background: 'rgba(0,0,0,0.9)' }}>
+        <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>📷 CAMERA</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>F/2.8</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>ISO 400</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>1/125s</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 'md' }}>
+          <Text style={{ fontSize: 'label', color: '#F87171', bold: true }}>[●REC]</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>AF-S</Text>
+        </Box>
+      </Box>
+      {/* 主画面 */}
+      <Box style={{ height: 430, margin: 'md', background: 'linear-gradient(135deg, #1E3A8A 0%, #6D28D9 50%, #9D174D 100%)', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+        {/* 九宫格辅助线 */}
+        <Box style={{ position: 'absolute', left: '33%', top: 0, bottom: 0, width: 1, background: 'rgba(99,102,241,0.3)' }} />
+        <Box style={{ position: 'absolute', left: '66%', top: 0, bottom: 0, width: 1, background: 'rgba(99,102,241,0.3)' }} />
+        <Box style={{ position: 'absolute', top: '33%', left: 0, right: 0, height: 1, background: 'rgba(99,102,241,0.3)' }} />
+        <Box style={{ position: 'absolute', top: '66%', left: 0, right: 0, height: 1, background: 'rgba(99,102,241,0.3)' }} />
+        {/* 中心焦点框 */}
+        <Box style={{ position: 'absolute', width: 220, height: 160, border: '4px solid #06B6D4', opacity: 0.8 }} />
+        {/* 主体内容 */}
+        <Box style={{ alignItems: 'center', padding: 'xl' }}>
+          <Emoji name="📷" style={{ width: 42, height: 42, marginBottom: 'md' }} />
+          <Text style={{ fontSize: 'title', color: '#FFFFFF', fontFamily: 'serif', marginBottom: 'lg' }}>{/* {{替换：标题}} */}摄影瞬间</Text>
+          <Box style={{ background: 'rgba(0,0,0,0.5)', borderRadius: 'md', padding: 'lg', alignItems: 'center', marginBottom: 'md' }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', fontFamily: 'serif', lineHeight: 1.6, marginBottom: 'sm' }}>{/* {{替换：金句}} */}"摄影是光与影<br />的艺术"</Text>
+            <Box style={{ width: 88, height: 1, background: '#22D3EE', marginBottom: 'sm' }} />
+            <Text style={{ fontSize: 'body', color: '#D1D5DB', lineHeight: 1.6 }}>{/* {{替换：副句}} */}捕捉转瞬即逝的美好<br />定格永恒的记忆</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+            {['人像模式', '大光圈', '逆光补偿'].map((m, i) => (
+              <Box key={i} style={{ background: 'rgba(0,0,0,0.4)', borderRadius: 16, padding: 'xs md', border: '1px solid rgba(34,211,238,0.3)' }}>
+                <Text style={{ fontSize: 'label', color: '#22D3EE' }}>{/* {{替换：模式}} */}{m}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+      {/* 底部信息条 */}
+      <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 'xs md', background: 'rgba(0,0,0,0.9)' }}>
+        <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>RAW+JPEG</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>AWB</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>Adobe RGB</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Box style={{ flexDirection: 'row', gap: 3 }}>
+            <Box style={{ width: 6, height: 12, background: '#22C55E' }} />
+            <Box style={{ width: 6, height: 12, background: '#22C55E' }} />
+            <Box style={{ width: 6, height: 12, background: '#22C55E' }} />
+            <Box style={{ width: 6, height: 12, background: '#4B5563' }} />
+          </Box>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>{/* {{替换：帧数}} */}2456/9999</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

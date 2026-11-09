@@ -1,0 +1,26 @@
+<Slide>
+  {/* minimalist/3520 简约风-横向进度条：标题 + 4 条章节进度条 */}
+  <Box style={{ height: 720, width: 1280, background: 'cardBg', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 40 }}>{/* {{标题}} */}目录</Text>
+      <Box style={{ gap: 32 }}>
+        {[
+          ['开篇引言', 'Step 1', 0.25],
+          ['核心内容', 'Step 2', 0.5],
+          ['案例分析', 'Step 3', 0.75],
+          ['总结归纳', 'Step 4', 1],
+        ].map((x, i) => (
+          <Box key={i}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[0]}</Text>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{x[1]}</Text>
+            </Box>
+            <Box style={{ height: 8, background: 'line', borderRadius: 4, flexDirection: 'row' }}>
+              <Box style={{ width: `${x[2] * 100}%`, height: 8, background: 'text', borderRadius: 4 }} />
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

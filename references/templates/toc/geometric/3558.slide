@@ -1,0 +1,37 @@
+<Slide>
+  {/* geometric/3558 几何风-星形爆炸：黄橙红底，2x2 白卡+星形(Shape star5)渐变数字块 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FEF9C3 0%, #FFEDD5 50%, #FEE2E2 100%)', position: 'relative' }}>
+    {/* 放射线装饰：细长矩形 */}
+    <Box style={{ position: 'absolute', top: 0, left: 640, width: 2, height: 720, background: '#F97316', opacity: 0.08 }} />
+    <Box style={{ position: 'absolute', top: 360, left: 0, width: 1280, height: 2, background: '#F97316', opacity: 0.08 }} />
+    <Box style={{ height: 720, justifyContent: 'center', padding: 'xxl xl' }}>
+      <Box style={{ alignItems: 'center', marginBottom: 40 }}>
+        <Box style={{ background: '#FFFFFF', paddingTop: 20, paddingBottom: 20, paddingLeft: 40, paddingRight: 40, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Text style={{ fontSize: 'title', color: '#9A3412', bold: true, textAlign: 'center' }}>{/* {{替换：标题}} */}目录</Text>
+        </Box>
+      </Box>
+      {[
+        ['1', '项目背景'],
+        ['2', '核心功能'],
+        ['3', '技术架构'],
+        ['4', '实施计划'],
+      ].reduce((rows, item, idx) => {
+        if (idx % 2 === 0) rows.push([]);
+        rows[rows.length - 1].push(item);
+        return rows;
+      }, []).map((row, ri) => (
+        <Box key={ri} style={{ flexDirection: 'row', gap: 'lg', marginBottom: 24 }}>
+          {row.map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: '#FFFFFF', padding: 'xl', flexDirection: 'row', alignItems: 'center', gap: 'lg', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+              <Box style={{ width: 80, height: 80, alignItems: 'center', justifyContent: 'center' }}>
+                <Shape type="star5" style={{ position: 'absolute', top: 0, left: 0, width: 80, height: 80, fill: 'linear-gradient(135deg, #EAB308 0%, #F97316 50%, #EF4444 100%)', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+                <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,13 @@
+<Slide>
+  {/* minimalist/1025 双色块：左深色（2/5）右白色（3/5），左右分栏致谢 */}
+  <Box style={{ height: 720, width: 1280, flexDirection: 'row' }}>
+    {/* 左侧深色区域 */}
+    <Box style={{ flex: 2, background: '#1F2937', alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', letterSpacing: 4 }}>{/* {{替换：致谢标题}} */}谢谢</Text>
+    </Box>
+    {/* 右侧白色区域 */}
+    <Box style={{ flex: 3, background: 'bg', alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'card', color: 'muted', textAlign: 'center', lineHeight: 1.6 }}>{/* {{替换：副文}} */}感谢您的宝贵时间</Text>
+    </Box>
+  </Box>
+</Slide>

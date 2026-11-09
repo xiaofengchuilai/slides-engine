@@ -1,0 +1,49 @@
+<Slide>
+  {/* minimalist/1596 居中标题 + 上图下文：配图(时间轴) + 三卡阶段 + 底部信息 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 顶部装饰带 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 8, background: 'primary' }} />
+    {/* 右侧装饰矩形 */}
+    <Box style={{ position: 'absolute', right: 64, top: 320, width: 4, height: 128, background: 'muted' }} />
+
+    <Box style={{ flex: 1, gap: 'xl' }}>
+      {/* 标题 */}
+      <Box style={{ alignItems: 'center', gap: 'sm' }}>
+        <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{标题}} */}战略规划路线图</Text>
+        <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{副标题}} */}Strategic Planning Roadmap 2024-2026</Text>
+      </Box>
+
+      {/* 图片区域 */}
+      <Box style={{ height: 200, alignItems: 'center', justifyContent: 'center', borderRadius: 'md', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+        {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/1596.png" style={{ width: 1216, height: 200, objectFit: 'cover' }} />
+      </Box>
+
+      {/* 三卡阶段 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+        {[
+          ['1', '基础建设', '完善基础设施，建立标准化流程体系，为后续发展奠定坚实基础。'],
+          ['2', '能力提升', '深化技术创新，提升核心竞争力，扩大市场份额和品牌影响力。'],
+          ['3', '生态构建', '打造开放生态系统，实现产业链上下游协同，创造更大价值。'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, background: 'cardBg', padding: 'xl', borderRadius: 'sm', gap: 'sm', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+              <Box style={{ width: 32, height: 32, borderRadius: 'sm', background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{序号}} */}{x[0]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{卡标题}} */}{x[1]}</Text>
+            </Box>
+            <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{卡正文}} */}{x[2]}</Text>
+          </Box>
+        ))}
+      </Box>
+
+      {/* 底部信息 */}
+      <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box style={{ height: 2, background: '#E5E7EB', flex: 1, marginRight: 'md' }} />
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{周期}} */}战略周期：36个月 | 里程碑节点：12个</Text>
+        <Text style={{ fontSize: 'label', color: 'muted', marginLeft: 'lg' }}>{/* {{状态}} */}审批状态：已通过董事会审批</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

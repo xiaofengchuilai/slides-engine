@@ -1,0 +1,54 @@
+<Slide>
+  {/* functional/business/2508 商务风-变体2：白底 + 标签面包屑/继续按钮/联系方式CTA/简洁页脚组件组 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 20 }}>
+      {/* 导航 - 标签+面包屑组合 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, border: '1px solid #D1D5DB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        <Box style={{ background: '#2563EB', padding: 8, paddingLeft: 16, paddingRight: 16 }}>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：章节标签}} */}SECTION 03</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：面包屑1}} */}Introduction</Text>
+          <Text style={{ fontSize: 'label', color: '#CBD5E1' }}>›</Text>
+          <Text style={{ fontSize: 'label', color: '#2563EB', bold: true }}>{/* {{替换：面包屑2}} */}Analysis</Text>
+          <Text style={{ fontSize: 'label', color: '#CBD5E1' }}>›</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：面包屑3}} */}Conclusion</Text>
+        </Box>
+      </Box>
+      {/* 导航 - 继续按钮 */}
+      <Box style={{ border: '2px solid #2563EB', padding: 8, paddingLeft: 20, paddingRight: 20, alignSelf: 'flex-start' }}>
+        <Text style={{ fontSize: 'body', color: '#2563EB', bold: true }}>{/* {{替换：按钮文字}} */}CONTINUE →</Text>
+      </Box>
+      {/* 行动 - 联系方式+CTA */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', border: '1px solid #D1D5DB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24 }}>
+          <Box style={{ alignItems: 'center' }}>
+            <Box style={{ width: 80, height: 80, border: '2px solid #CBD5E1', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：扫码文字}} */}QR CODE</Text>
+            </Box>
+            <Text style={{ fontSize: 'label', color: 'muted', bold: true, marginTop: 'xs' }}>{/* {{替换：扫码提示}} */}SCAN</Text>
+          </Box>
+          <Box>
+            <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{替换：标题}} */}Get in Touch</Text>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+              <Emoji name="📧" style={{ width: 20, height: 20 }} />
+              <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{替换：邮箱}} */}contact@company.com</Text>
+            </Box>
+          </Box>
+        </Box>
+        <Box style={{ background: 'primary', padding: 12, paddingLeft: 24, paddingRight: 24 }}>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：CTA文字}} */}REQUEST DEMO</Text>
+        </Box>
+      </Box>
+      {/* 页脚 - 简洁商务页脚 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', border: '1px solid #D1D5DB', background: '#F9FAFB', padding: 12, borderRadius: 'sm' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+          <Box style={{ width: 24, height: 24, background: 'primary' }} />
+          <Text style={{ fontSize: 'label', color: 'text', bold: true }}>{/* {{替换：品牌名}} */}COMPANY NAME</Text>
+        </Box>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：版权}} */}© 2024 All Rights Reserved</Text>
+        <Text style={{ fontSize: 'label', color: 'text', bold: true }}>{/* {{替换：页码}} */}3 / 20</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

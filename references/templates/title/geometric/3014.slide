@@ -1,0 +1,19 @@
+<Slide>
+  {/* title/geometric/3014 几何风-多边形组合：浅灰渐变底 + 三斜条 + 英文大标题 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 100%)', position: 'absolute', top: 0, left: 0, padding: 'xl' }}>
+    <Box style={{ height: '100%', justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        {/* 三根斜条（靛/紫/粉） */}
+        <Box style={{ flexDirection: 'row', gap: 'xs' }}>
+          <Box style={{ width: 16, height: 80, background: '#6366F1' }} />
+          <Box style={{ width: 16, height: 80, background: '#8B5CF6' }} />
+          <Box style={{ width: 16, height: 80, background: '#EC4899' }} />
+        </Box>
+        <Box>
+          <Text style={{ fontSize: 'kpi', color: 'text', bold: true, letterSpacing: 2 }}>{/* {{替换：主标题}} */}GEOMETRIC DESIGN</Text>
+          <Text style={{ fontSize: 'card', color: 'muted', marginTop: 'xs' }}>{/* {{替换：副标题}} */}几何美学探索</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,16 @@
+<Slide>
+  {/* ending/tech/1108 科技风-数据流：深色渐变 + 数据流细线 + 青色框致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0A0E1A 0%, #1A1F2E 100%)' }}>
+    {/* 数据流背景（三条横向细线） */}
+    <Box style={{ position: 'absolute', top: 140, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, #0A0E1A 0%, #00FFFF 50%, #0A0E1A 100%)', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 290, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, #0A0E1A 0%, #00FFFF 50%, #0A0E1A 100%)', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 440, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, #0A0E1A 0%, #00FFFF 50%, #0A0E1A 100%)', opacity: 0.4 }} />
+    {/* 中心内容框（半透明底用深色 hex 双层：底层装饰、上层内容） */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ position: 'relative', border: '2px solid #00FFFF', padding: 'xl xxl', borderRadius: 'sm', background: '#0A0E1A', boxShadow: '0 0 50px rgba(0,255,255,0.4)' }}>
+        <Text style={{ fontSize: 'kpi', color: '#00FFFF', bold: true, letterSpacing: 5, marginBottom: 'md' }}>{/* {{替换：主标题}} */}谢谢</Text>
+        <Text style={{ fontSize: 'card', color: '#00FFFF', letterSpacing: 3, fontFamily: 'Courier New' }}>{/* {{替换：致谢语}} */}感谢您的耐心聆听</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,21 @@
+<Slide>
+  {/* cartoon/011 气泡对话：黄粉紫渐变底 + 白色大卡 + 气泡尾巴 + 彩色标题 + 副标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FDE68A 0%, #FBCFE8 50%, #E9D5FF 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 星形装饰（右上，Emoji ⭐） */}
+    <Emoji name="⭐" style={{ position: 'absolute', top: 64, right: 128, width: 56, height: 56, opacity: 0.5 }} />
+    {/* 调色板装饰（左下，Emoji 🎨） */}
+    <Emoji name="🎨" style={{ position: 'absolute', bottom: 96, left: 128, width: 48, height: 48, opacity: 0.5 }} />
+    {/* 气泡卡片 */}
+    <Box style={{ background: '#FFFFFF', borderRadius: 'lg', border: '10px solid #FBBF24', padding: 'xxl', alignItems: 'center', maxWidth: 900, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Text style={{ fontSize: 'hero', color: '#DB2777', bold: true, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}趣味科学</Text>
+      <Text style={{ fontSize: 'card', color: '#374151', bold: true, marginBottom: 'md' }}>{/* {{替换：英文副标题}} */}Fun Science Time!</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        <Emoji name="🌈" style={{ width: 24, height: 24 }} />
+        <Text style={{ fontSize: 'body', color: '#4B5563' }}>{/* {{替换：副标题}} */}探索奇妙的科学世界</Text>
+        <Emoji name="🚀" style={{ width: 24, height: 24 }} />
+      </Box>
+    </Box>
+    {/* 气泡角块（左上白色旋转方块，45°） */}
+    <Box style={{ position: 'absolute', top: 160, left: 220, width: 64, height: 64, background: '#FFFFFF', border: '8px solid #FBBF24', rotate: 45 }} />
+  </Box>
+</Slide>

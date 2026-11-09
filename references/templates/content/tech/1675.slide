@@ -1,0 +1,53 @@
+<Slide>
+  {/* tech/1675 技术方案对比分析：2x2 网格（图文/指标/标签/图文） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    <Box style={{ marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'xs' }}>{/* {{标题}} */}技术方案对比分析</Text>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{副标题}} */}主流技术路线优劣势评估</Text>
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', flexWrap: 'wrap', gap: 'lg' }}>
+      {/* 左上：图文 */}
+      <Box style={{ width: '48%' }}>
+        {/* {{图片：有图填 assets/images/comparison.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/comparison.png" style={{ width: '100%', height: 170, objectFit: 'cover', marginBottom: 'sm' }} />
+        <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'xs' }}>分布式计算框架</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>采用Spark+Flink双引擎架构，兼顾批处理与流处理需求，统一编程模型降低开发门槛。</Text>
+      </Box>
+      {/* 右上：指标卡 */}
+      <Box style={{ width: '48%' }}>
+        <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'xs' }}>存储层选型</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6, marginBottom: 'md' }}>基于数据湖架构，采用对象存储+列式格式方案，存储成本降低60%，查询性能提升5倍。</Text>
+        <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+          {[
+            { val: '60%', label: '成本降低' },
+            { val: '5x', label: '性能提升' },
+          ].map((x) => (
+            <Box key={x.label} style={{ flex: 1, background: 'cardBg', borderRadius: 'sm', padding: 'md', alignItems: 'center' }}>
+              <Text style={{ fontSize: 'kpi', color: 'text', bold: true }}>{x.val}</Text>
+              <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>{x.label}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 左下：标签 */}
+      <Box style={{ width: '48%' }}>
+        <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'xs' }}>调度引擎设计</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6, marginBottom: 'md' }}>自研智能调度引擎，支持DAG任务编排、自动重试、优先级调度，任务成功率达99.5%。</Text>
+        <Box style={{ flexDirection: 'row', gap: 'sm', flexWrap: 'wrap' }}>
+          {['DAG编排', '自动重试', '弹性伸缩'].map((t) => (
+            <Box key={t} style={{ background: 'cardBg', borderRadius: 'sm', padding: 'xs lg' }}>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{t}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 右下：图文 */}
+      <Box style={{ width: '48%' }}>
+        <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'xs' }}>安全架构设计</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6, marginBottom: 'md' }}>端到端数据安全方案，覆盖传输加密、存储加密、细粒度权限控制、操作审计全链路。</Text>
+        {/* {{图片：有图填 assets/images/security.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/security.png" style={{ width: '100%', height: 150, objectFit: 'cover' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

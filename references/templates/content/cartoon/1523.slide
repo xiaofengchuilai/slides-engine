@@ -1,0 +1,36 @@
+<Slide>
+  {/* cartoon/1523 超级惊喜：左大对话框 + 右三个对话气泡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FEF3C7 0%, #FFEDD5 50%, #FCE7F3 100%)', padding: 'xl', flexDirection: 'row', gap: 'xl' }}>
+    {/* 装饰星星 */}
+    <Box style={{ position: 'absolute', top: 80, right: 80, opacity: 0.9 }}>
+      <Emoji name="⭐" style={{ width: 52, height: 52 }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 120, left: 120, opacity: 0.9 }}>
+      <Emoji name="✨" style={{ width: 44, height: 44 }} />
+    </Box>
+    {/* 左大对话框 */}
+    <Box style={{ flex: 1, justifyContent: 'center' }}>
+      <Box style={{ background: '#FFFFFF', borderRadius: 40, padding: 'xl', alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)', rotate: -1 }}>
+        <Emoji name="🎉" style={{ width: 64, height: 64, marginBottom: 'md' }} />
+        <Text style={{ fontSize: 'title', color: '#EA580C', bold: true, marginBottom: 'md' }}>{/* {{替换：标题}} */}超级惊喜！</Text>
+        <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.7 }}>{/* {{替换：正文}} */}今天要和大家分享一个超棒的消息～我们的项目终于完成啦！🎊</Text>
+      </Box>
+    </Box>
+    {/* 右三个对话气泡 */}
+    <Box style={{ width: 480, flexDirection: 'column', gap: 'lg', justifyContent: 'center' }}>
+      {[
+        ['小美说：', '哇！太棒了！辛苦大家了～', 'linear-gradient(90deg, #F472B6 0%, #FB7185 100%)', '#FFFFFF', '😊', 2],
+        ['小明说：', '团队协作真的很重要呢！', 'linear-gradient(90deg, #60A5FA 0%, #22D3EE 100%)', '#FFFFFF', '🤗', -1],
+        ['小红说：', '下次继续加油！Fighting！', 'linear-gradient(90deg, #A78BFA 0%, #818CF8 100%)', '#FFFFFF', '💪', 1],
+      ].map((x, i) => (
+        <Box key={i} style={{ background: x[2], borderRadius: 'lg', padding: 'md', boxShadow: '0 12px 36px rgba(0,0,0,0.22)', rotate: x[5] }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 'xs' }}>
+            <Emoji name={x[4]} style={{ width: 34, height: 34 }} />
+            <Text style={{ fontSize: 'card', color: x[3], bold: true }}>{/* {{替换：人名}} */}{x[0]}</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: 'rgba(255,255,255,0.95)', lineHeight: 1.6 }}>{/* {{替换：对话内容}} */}{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

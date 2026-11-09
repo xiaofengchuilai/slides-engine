@@ -1,0 +1,36 @@
+<Slide>
+  {/* content/case：案例（背景 + 挑战 + 方案 + 结果对比） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: '56px 80px' }}>
+    <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：案例标题}} */}某客户如何 3 个月提效 40%</Text>
+    {/* 案例头部信息 */}
+    <Box style={{ flexDirection: 'row', gap: 32, marginTop: 20 }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：公司/行业}} */}行业：零售</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：规模}} */}规模：500 人</Text>
+    </Box>
+    {/* 挑战 vs 方案 左右对比 */}
+    <Box style={{ flexDirection: 'row', gap: 24, marginTop: 32, flex: 1 }}>
+      <Box style={{ flex: 1, borderRadius: 14, background: 'cardBg', padding: '24px' }}>
+        <Text style={{ fontSize: 'body', color: 'danger', bold: true }}>{/* {{替换：挑战标签}} */}挑战</Text>
+        <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6, marginTop: 12 }}>{/* {{替换：挑战描述}} */}数据分散在 6 个系统，报表靠手工汇总，决策滞后 2 周。</Text>
+      </Box>
+      <Box style={{ flex: 1, borderRadius: 14, background: 'cardBg', padding: '24px' }}>
+        <Text style={{ fontSize: 'body', color: 'success', bold: true }}>{/* {{替换：方案标签}} */}方案</Text>
+        <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6, marginTop: 12 }}>{/* {{替换：方案描述}} */}统一数据中台 + 自动报表 + 指标看板，一键出数。</Text>
+      </Box>
+    </Box>
+    {/* 结果（Before → After） */}
+    <Box style={{ flexDirection: 'row', gap: 24, marginTop: 24 }}>
+      {[
+        { label: '决策周期', before: '2 周', after: '2 天' },
+        { label: '人工成本', before: '80h/月', after: '20h/月' },
+        { label: '数据准确率', before: '92%', after: '99.9%' },
+      ].map((r, i) => (
+        <Box key={i} style={{ flex: 1, borderRadius: 12, background: 'cardBg', padding: '18px' }}>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：指标名}} */}{r.label}</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', textDecoration: 'line-through', marginTop: 8 }}>{r.before}</Text>
+          <Text style={{ fontSize: 'title', color: 'accent', bold: true, marginTop: 4 }}>{r.after}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

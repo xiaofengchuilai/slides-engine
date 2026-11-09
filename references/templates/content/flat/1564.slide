@@ -1,0 +1,46 @@
+<Slide>
+  {/* flat/1564 色彩表达：左侧竖排3色板(对比/和谐/情感) + 右侧理论卡片组 + 色彩样本条 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', flexDirection: 'row' }}>
+    {/* 左侧色板 (30%) */}
+    <Box style={{ width: 384, flexDirection: 'column' }}>
+      {[
+        ['对比', '#8B5CF6', '🎨'],
+        ['和谐', '#EC4899', '🌈'],
+        ['情感', '#F43F5E', '💝'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: x[1], alignItems: 'center', justifyContent: 'center' }}>
+          <Emoji name={x[2]} style={{ width: 40, height: 40 }} />
+          <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>{/* {{替换：色板名}} */}{x[0]}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 右侧主内容区 (70%) */}
+    <Box style={{ flex: 1, background: 'linear-gradient(135deg, #FAF5FF 0%, #FDF2F8 50%, #FFF1F2 100%)', padding: 'xxl xl', gap: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：标题}} */}色彩表达</Text>
+      {/* 色彩理论卡片组 */}
+      <Box style={{ gap: 'md' }}>
+        {[
+          ['A', '强烈视觉冲击', '高对比度的色彩搭配能够快速吸引注意力，突出重要信息', 'linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)'],
+          ['B', '配色科学合理', '遵循色彩理论，运用邻近色或互补色创造和谐的视觉体验', 'linear-gradient(135deg, #EC4899 0%, #BE185D 100%)'],
+          ['C', '色彩传递感受', '不同色彩能够唤起特定情绪，影响用户的心理感受和行为', 'linear-gradient(135deg, #F43F5E 0%, #BE123C 100%)'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', gap: 'md', background: 'cardBg', borderRadius: 'lg', padding: 'md', alignItems: 'flex-start', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Box style={{ width: 64, height: 64, background: x[3], borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+            </Box>
+            <Box style={{ flex: 1 }}>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{x[1]}</Text>
+              <Text style={{ fontSize: 'body', color: 'muted', marginTop: 'xs' }}>{x[2]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+      {/* 色彩样本条 */}
+      <Box style={{ flexDirection: 'row', gap: 'xs', marginTop: 'md' }}>
+        {['#7C3AED', '#8B5CF6', '#EC4899', '#F43F5E', '#BE123C'].map((c, i) => (
+          <Box key={i} style={{ flex: 1, height: 12, background: c, borderRadius: 6 }} />
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,49 @@
+<Slide>
+  {/* functional/tech/2518 科技风-变体2：深靛底 + 量子导航/按钮/操作组/页脚 */}
+  <Box style={{ height: 720, width: 1280, background: '#1E1B4B', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 24 }}>
+      {/* 导航 - 量子模块指示 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24, border: '1px solid rgba(34,211,238,0.4)', background: 'rgba(34,211,238,0.08)', padding: 20 }}>
+        <Box style={{ width: 56, height: 56, border: '2px solid #22d3ee', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#22d3ee', bold: true }}>{/* {{替换：章节号}} */}3</Text>
+        </Box>
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'card', color: '#22d3ee', bold: true }}>{/* {{替换：模块名}} */}MODULE_03.quantum</Text>
+          <Text style={{ fontSize: 'label', color: '#c084fc', marginTop: 4 }}>{/* {{替换：副标签}} */}Quantum Computing</Text>
+        </Box>
+        <Box style={{ border: '2px solid #22d3ee', background: '#0F172A', padding: 10, paddingLeft: 24, paddingRight: 24 }}>
+          <Text style={{ fontSize: 'body', color: '#22d3ee', bold: true }}>{/* {{替换：按钮文字}} */}&gt;&gt; CONTINUE</Text>
+        </Box>
+      </Box>
+      {/* 行动 - 量子按钮组 */}
+      <Box style={{ border: '1px solid rgba(34,211,238,0.3)', background: 'rgba(15,23,42,0.8)', padding: 20, flexDirection: 'row', gap: 16, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        {[
+          ['#22d3ee', '⚛', 'RESEARCH'],
+          ['#3b82f6', '🔗', 'CONNECT'],
+          ['#a855f7', '💡', 'INNOVATE'],
+          ['#ec4899', '🔬', 'SCAN_QR'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, border: '1px solid ' + x[0], background: 'rgba(34,211,238,0.08)', padding: 16, alignItems: 'center' }}>
+            <Emoji name={x[1]} style={{ width: 24, height: 24, marginBottom: 8 }} />
+            <Text style={{ fontSize: 'label', color: x[0], bold: true }}>{/* {{替换：按钮文字}} */}{x[2]}</Text>
+          </Box>
+        ))}
+      </Box>
+      {/* 页脚 - 量子实验室页脚 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24, padding: 12, background: 'rgba(34,211,238,0.05)' }}>
+        <Box style={{ width: 32, height: 32, borderRadius: 16, border: '4px solid #22d3ee' }} />
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'body', color: '#22d3ee', bold: true }}>{/* {{替换：品牌名}} */}QUANTUM_LABS</Text>
+          <Text style={{ fontSize: 'label', color: '#c084fc' }}>{/* {{替换：网址}} */}quantum-research.io</Text>
+        </Box>
+        <Text style={{ fontSize: 'label', color: '#c084fc' }}>{/* {{替换：版权}} */}© 2024 Quantum Labs</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Box style={{ width: 40, height: 40, border: '2px solid #22d3ee', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'body', color: '#22d3ee', bold: true }}>{/* {{替换：页码}} */}3</Text>
+          </Box>
+          <Text style={{ fontSize: 'label', color: '#c084fc' }}>{/* {{替换：总页数}} */}/ 12</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

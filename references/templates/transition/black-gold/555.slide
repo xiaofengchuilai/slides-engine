@@ -1,0 +1,16 @@
+<Slide>
+  {/* transition/black-gold/555 黑金风-皇冠图标：纯黑底 + 皇冠 FAIcon + 居中章节 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ width: 96, height: 96, background: '#C9A227', alignItems: 'center', justifyContent: 'center', marginBottom: 32 }}>
+          <Emoji name="👑" style={{ width: 60, height: 60 }} />
+        </Box>
+        <Text style={{ fontSize: 'hero', color: '#C9A227', bold: true, marginBottom: 32 }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Text style={{ fontSize: 'title', color: '#EAB308', bold: true, marginBottom: 16 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#EAB308' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+        <Box style={{ width: 256, height: 3, background: 'linear-gradient(90deg, rgba(201,162,39,0) 0%, #C9A227 50%, rgba(201,162,39,0) 100%)', marginTop: 32 }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,22 @@
+<Slide>
+  {/* ending/chinese/1030 中国风-竹简卷轴：米底+卷轴上下条、红菱形装饰、大标题+分隔+寄语 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F5F0E8 0%, #E8DCC8 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 卷轴顶（+ 阴影） */}
+    <Box style={{ position: 'absolute', top: 64, left: 512, width: 260, height: 18, background: 'linear-gradient(180deg, #6B5A43 0%, #8B7355 100%)', borderRadius: 'sm', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+    <Box style={{ position: 'absolute', top: 90, left: 520, width: 240, height: 2, background: 'rgba(107,90,67,0.3)' }} />
+    {/* 卷轴底（+ 阴影） */}
+    <Box style={{ position: 'absolute', bottom: 64, left: 512, width: 260, height: 18, background: 'linear-gradient(180deg, #8B7355 0%, #6B5A43 100%)', borderRadius: 'sm', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+    <Box style={{ position: 'absolute', bottom: 90, left: 520, width: 240, height: 2, background: 'rgba(107,90,67,0.3)' }} />
+    {/* 中国结：红菱形（旋转 45°） */}
+    <Box style={{ position: 'absolute', top: 100, left: 620, width: 16, height: 16, background: '#A81810', rotate: 45 }} />
+    <Box style={{ alignItems: 'center', gap: 'md' }}>
+      <Text style={{ fontSize: 56, color: '#2C2C2C', letterSpacing: 12 }}>{/* {{替换：致谢标题}} */}谢谢</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+        <Box style={{ width: 70, height: 2, background: '#8B7355' }} />
+        <Box style={{ width: 8, height: 8, background: '#A81810', borderRadius: 'sm' }} />
+        <Box style={{ width: 70, height: 2, background: '#8B7355' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#666666', letterSpacing: 3 }}>{/* {{替换：寄语}} */}期待与君再相逢</Text>
+    </Box>
+  </Box>
+</Slide>

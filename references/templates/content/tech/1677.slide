@@ -1,0 +1,61 @@
+<Slide>
+  {/* tech/1677 技术实现路径：上层主内容+图，下层三栏（两阶段 + 进度） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题区 */}
+    <Box style={{ marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{标题}} */}技术实现路径</Text>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{副题}} */}分阶段推进的技术演进方案</Text>
+    </Box>
+
+    <Box style={{ flex: 1, flexDirection: 'column', gap: 'xl' }}>
+      {/* 上层: 主内容 + 图片 */}
+      <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+        {/* {{图片：有图填 assets/images/1677a.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/1677a.png" style={{ width: 360, height: 280, objectFit: 'cover' }} />
+        <Box style={{ flex: 1, justifyContent: 'center' }}>
+          <Text style={{ fontSize: 24, color: '#FFFFFF', bold: true, marginBottom: 'md' }}>{/* {{阶段标题}} */}第一阶段：基础能力建设</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6, marginBottom: 'lg' }}>{/* {{阶段描述}} */}搭建统一数据平台底座，完成核心计算引擎、存储系统、调度框架的开发与部署，为上层应用提供稳定可靠的基础设施。</Text>
+          <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+            {['数据采集', '存储计算', '任务调度'].map((t, i) => (
+              <Box key={i} style={{ padding: 'xs md', background: 'cardBg', borderRadius: 'sm' }}>
+                <Text style={{ fontSize: 'label', color: '#CBD5E1' }}>{t}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+
+      {/* 下层: 三栏内容 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xxl' }}>
+        <Box style={{ flex: 1 }}>
+          <Box style={{ width: 56, height: 56, borderRadius: 'md', background: 'primary', alignItems: 'center', justifyContent: 'center', marginBottom: 'md' }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>2</Text>
+          </Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{阶段标题}} */}能力增强阶段</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{阶段描述}} */}引入机器学习能力，提供智能化数据分析、预测建模、自动化运维等高级功能。</Text>
+        </Box>
+        <Box style={{ flex: 1 }}>
+          <Box style={{ width: 56, height: 56, borderRadius: 'md', background: 'secondary', alignItems: 'center', justifyContent: 'center', marginBottom: 'md' }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>3</Text>
+          </Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{阶段标题}} */}生态整合阶段</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{阶段描述}} */}开放API与SDK，建立开发者生态，支持第三方应用接入，构建数据应用市场。</Text>
+        </Box>
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'md' }}>{/* {{小标题}} */}当前进度</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6, marginBottom: 'lg' }}>{/* {{进度说明}} */}已完成基础平台建设，正在推进智能化能力集成。</Text>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+            <Box style={{ flex: 1, height: 12, background: '#334155', borderRadius: 6, flexDirection: 'row' }}>
+              <Box style={{ flex: 3, height: 12, background: 'primary', borderRadius: 6 }} />
+              <Box style={{ flex: 1, height: 12 }} />
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{进度值}} */}75%</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

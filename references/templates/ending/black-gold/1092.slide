@@ -1,0 +1,25 @@
+<Slide>
+  {/* ending/black-gold/1092 黑金风-金色光晕：黑渐变 + 中心金晕 + 三重金环 + 光芒线 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(180deg, #000000 0%, #1A1A1A 50%, #000000 100%)' }}>
+    {/* 中心金色光晕（低透明圆斑） */}
+    <Box style={{ position: 'absolute', top: 175, left: 455, width: 370, height: 370, borderRadius: 185, background: '#FFD700', opacity: 0.18 }} />
+    {/* 金色光环（三重圆环） */}
+    <Box style={{ position: 'absolute', top: 200, left: 480, width: 320, height: 320, borderRadius: 160, border: '2px solid #FFD700', opacity: 0.35 }} />
+    <Box style={{ position: 'absolute', top: 225, left: 505, width: 270, height: 270, borderRadius: 135, border: '1px solid #D4AF37', opacity: 0.3 }} />
+    <Box style={{ position: 'absolute', top: 250, left: 530, width: 220, height: 220, borderRadius: 110, border: '1px solid #FFD700', opacity: 0.25 }} />
+    {/* 光芒装饰（放射细线，用 Shape line + rotate） */}
+    <Shape type="line" style={{ width: 200, height: 0, position: 'absolute', top: 360, left: 540, line: { color: '#FFD700', width: 2 }, rotate: 90, opacity: 0.5 }} />
+    <Shape type="line" style={{ width: 180, height: 0, position: 'absolute', top: 360, left: 550, line: { color: '#D4AF37', width: 2 }, rotate: 135, opacity: 0.4 }} />
+    <Shape type="line" style={{ width: 200, height: 0, position: 'absolute', top: 360, left: 540, line: { color: '#FFD700', width: 2 }, rotate: 45, opacity: 0.5 }} />
+    <Shape type="line" style={{ width: 180, height: 0, position: 'absolute', top: 360, left: 550, line: { color: '#D4AF37', width: 2 }, rotate: 0, opacity: 0.4 }} />
+    {/* 发光粒子 */}
+    <Box style={{ position: 'absolute', top: 130, left: 295, width: 6, height: 6, borderRadius: 3, background: '#EAB308', opacity: 0.9 }} />
+    <Box style={{ position: 'absolute', top: 490, right: 335, width: 5, height: 5, borderRadius: 2, background: '#D4AF37', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', bottom: 165, left: 360, width: 7, height: 7, borderRadius: 3, background: '#EAB308', opacity: 0.85 }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#EAB308', bold: true, marginBottom: 'md' }}>{/* {{替换：主标题}} */}致谢</Text>
+      <Text style={{ fontSize: 'title', color: '#D4AF37' }}>{/* {{替换：致谢语}} */}欢迎交流与指导</Text>
+    </Box>
+  </Box>
+</Slide>

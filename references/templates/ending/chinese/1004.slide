@@ -1,0 +1,30 @@
+<Slide>
+  {/* ending/chinese/1004 中国风-祥云收尾：浅灰米底，大红字标题+红圆点图标联系信息 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #F5F5F0 0%, #E8E8E2 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ alignItems: 'center', gap: 'md' }}>
+      {/* 祥云装饰：顶部彩竹 emoji（回填） */}
+      <Emoji name="🎋" style={{ width: 44, height: 44, marginBottom: 'xs' }} />
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 'sm' }}>
+        <Box style={{ width: 28, height: 28, borderRadius: 'sm', border: '3px solid #A81810' }} />
+        <Box style={{ width: 40, height: 40, borderRadius: 'sm', border: '3px solid #A81810' }} />
+        <Box style={{ width: 28, height: 28, borderRadius: 'sm', border: '3px solid #A81810' }} />
+      </Box>
+      <Text style={{ fontSize: 64, color: '#2D3748', bold: true, letterSpacing: 12 }}>{/* {{替换：致谢标题}} */}谢谢</Text>
+      <Text style={{ fontSize: 'title', color: '#A81810', letterSpacing: 4 }}>{/* {{替换：副标题}} */}· 期待与您再会 ·</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xxl', marginTop: 'lg' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs' }}>
+          <Box style={{ width: 28, height: 28, borderRadius: 'sm', background: '#A81810', alignItems: 'center', justifyContent: 'center' }}>
+            <Emoji name="📧" style={{ width: 14, height: 14 }} />
+          </Box>
+          <Text style={{ fontSize: 'body', color: 'text' }}>{/* {{替换：联系邮箱}} */}contact@example.com</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs' }}>
+          <Box style={{ width: 28, height: 28, borderRadius: 'sm', background: '#A81810', alignItems: 'center', justifyContent: 'center' }}>
+            <Emoji name="📱" style={{ width: 14, height: 14 }} />
+          </Box>
+          <Text style={{ fontSize: 'body', color: 'text' }}>{/* {{替换：联系电话}} */}138-0000-0000</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

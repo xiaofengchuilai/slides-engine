@@ -1,0 +1,24 @@
+<Slide>
+  {/* ending/black-gold/1096 黑金风-钻石切割：深蓝渐变 + 菱形装饰 + 切割线 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0F172A 0%, #1E1B4B 100%)' }}>
+    {/* 钻石切割装饰（降级为菱形 Shape） */}
+    <Shape type="diamond" style={{ width: 110, height: 90, position: 'absolute', top: 85, left: 155, fill: '#FFD700', opacity: 0.3 }} />
+    <Shape type="diamond" style={{ width: 130, height: 105, position: 'absolute', top: 420, right: 130, fill: '#DAA520', opacity: 0.3 }} />
+    <Shape type="diamond" style={{ width: 90, height: 75, position: 'absolute', bottom: 130, left: 230, fill: '#FFD700', opacity: 0.25 }} />
+    {/* 切割线条（对角细线，分段避免旋转溢出） */}
+    <Shape type="line" style={{ width: 480, height: 0, position: 'absolute', top: 360, left: 400, line: { color: '#FFD700', width: 1 }, rotate: 45, opacity: 0.15 }} />
+    <Shape type="line" style={{ width: 480, height: 0, position: 'absolute', top: 360, left: 400, line: { color: '#D4AF37', width: 1 }, rotate: -45, opacity: 0.15 }} />
+    {/* 中心钻石（菱形框） */}
+    <Box style={{ position: 'absolute', top: 290, left: 555, width: 170, height: 140 }}>
+      <Shape type="diamond" style={{ width: 170, height: 140, fill: '#FFD700', opacity: 0.15, line: { color: '#FFD700', width: 2 } }} />
+    </Box>
+    {/* 闪光点 */}
+    <Box style={{ position: 'absolute', top: 200, left: 360, width: 6, height: 6, borderRadius: 3, background: '#FFFFFF', opacity: 0.9 }} />
+    <Box style={{ position: 'absolute', bottom: 275, right: 420, width: 8, height: 8, borderRadius: 4, background: '#FFFFFF', opacity: 0.85 }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#EAB308', bold: true, marginBottom: 'md' }}>{/* {{替换：主标题}} */}谢谢观看</Text>
+      <Text style={{ fontSize: 'title', color: '#D4AF37' }}>{/* {{替换：致谢语}} */}欢迎提出宝贵建议</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,19 @@
+<Slide>
+  {/* black-gold/078 皇冠徽章：黑底 + 角部金框 + 金框标签 + 金字标题 + 副标题 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 角部金框装饰（四角旋转框，降级为不旋转的方框） */}
+    <Box style={{ position: 'absolute', top: 80, left: 80, width: 160, height: 160, border: '1px solid #EAB308', opacity: 0.2, rotate: 12 }} />
+    <Box style={{ position: 'absolute', top: 96, left: 96, width: 128, height: 128, border: '1px solid #EAB308', opacity: 0.2, rotate: 12 }} />
+    <Box style={{ position: 'absolute', bottom: 80, right: 80, width: 192, height: 192, border: '1px solid #EAB308', opacity: 0.2, rotate: -12 }} />
+    <Box style={{ position: 'absolute', bottom: 96, right: 96, width: 160, height: 160, border: '1px solid #EAB308', opacity: 0.2, rotate: -12 }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Box style={{ border: '1px solid #EAB308', padding: 'sm xl', marginBottom: 'xl' }}>
+        <Text style={{ fontSize: 'label', color: '#EAB308', letterSpacing: 6 }}>{/* {{替换：标签}} */}PREMIUM</Text>
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}高端客户服务</Text>
+      <Text style={{ fontSize: 'card', color: '#CA8A04', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}私人定制·专属体验·尊享礼遇</Text>
+      <Text style={{ fontSize: 'body', color: '#9CA3AF' }}>{/* {{替换：落款}} */}VIP服务中心 | 服务体系升级</Text>
+    </Box>
+  </Box>
+</Slide>

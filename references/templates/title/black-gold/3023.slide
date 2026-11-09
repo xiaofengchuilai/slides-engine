@@ -1,0 +1,16 @@
+<Slide>
+  {/* title/black-gold/3023 黑金风-金属质感：黑灰渐变底 + 金色皇冠 + 金框内标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #111827 0%, #000000 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24, background: 'linear-gradient(90deg, #111827 0%, #000000 100%)', border: '1px solid rgba(234,179,8,0.3)', borderRadius: 8, padding: 32, paddingLeft: 48, paddingRight: 48 }}>
+        <Box style={{ width: 72, height: 72, background: '#C9A227', alignItems: 'center', justifyContent: 'center' }}>
+          <Emoji name="👑" style={{ width: 48, height: 48 }} />
+        </Box>
+        <Box style={{ alignItems: 'flex-start' }}>
+          <Text style={{ fontSize: 'title', color: '#EAB308', bold: true }}>{/* {{替换：标题}} */}VIP 专属</Text>
+          <Text style={{ fontSize: 'label', color: 'rgba(234,179,8,0.8)', letterSpacing: 4, marginTop: 8 }}>{/* {{替换：副标题}} */}EXCLUSIVE PRIVILEGE</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

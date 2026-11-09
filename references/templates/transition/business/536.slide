@@ -1,0 +1,13 @@
+<Slide>
+  {/* transition/business/536 边框强调：深色全框 + 左上蓝块 + 居中章节 */}
+  <Box style={{ height: 720, width: 1280, background: '#F8FAFC', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, border: '8px solid #0F172A', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 104, height: 104, background: 'secondary' }} />
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'kpi', color: 'text', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

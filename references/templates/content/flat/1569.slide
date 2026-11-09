@@ -1,0 +1,76 @@
+<Slide>
+  {/* flat/1569 视觉焦点：F型布局(顶部主条/中部两栏/下部导航+正文) + 右侧F型示意图 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FDF2F8 0%, #FFF1F2 50%, #FEF2F2 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'relative', flex: 1 }}>
+      {/* F型内容区 */}
+      <Box style={{ maxWidth: 1080, gap: 'sm', flex: 1 }}>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：标题}} */}视觉焦点</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', marginBottom: 'md' }}>{/* {{替换：副标题}} */}Visual Focus</Text>
+        {/* 第一行：最重要 */}
+        <Box style={{ background: 'linear-gradient(90deg, #EC4899 0%, #F43F5E 100%)', borderRadius: 'lg', padding: 'md', flexDirection: 'row', alignItems: 'center', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Box style={{ flex: 1 }}>
+            <Box style={{ background: '#FFFFFF', opacity: 0.2, borderRadius: 999, padding: 'xs md', alignSelf: 'flex-start', marginBottom: 'xs' }}>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>Priority #1</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：要点1标题}} */}突出重点</Text>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.9, marginTop: 'xs' }}>{/* {{替换：要点1说明}} */}最重要的信息放置在用户视线最容易到达的位置，确保一目了然</Text>
+          </Box>
+          <Box style={{ width: 64, height: 64, background: '#FFFFFF', opacity: 0.2, borderRadius: 'lg', alignItems: 'center', justifyContent: 'center', marginLeft: 'md' }}>
+            <Emoji name="⭐" style={{ width: 28, height: 28 }} />
+          </Box>
+        </Box>
+        {/* 第二行：次重要 */}
+        <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+          <Box style={{ flex: 2, background: 'linear-gradient(90deg, #FB7185 0%, #F472B6 100%)', borderRadius: 'lg', padding: 'md', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Box style={{ background: '#FFFFFF', opacity: 0.2, borderRadius: 999, padding: 'xs md', alignSelf: 'flex-start', marginBottom: 'xs' }}>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>Priority #2</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：要点2标题}} */}引导视线</Text>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.9, marginTop: 'xs' }}>{/* {{替换：要点2说明}} */}通过合理的布局和层次设计，让视线按照预设路径有序流动</Text>
+          </Box>
+          <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'lg', padding: 'md', alignItems: 'center', justifyContent: 'center', border: '2px solid #FBCFE8', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Emoji name="👁️" style={{ width: 24, height: 24 }} />
+            <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：图示}} */}视线路径</Text>
+          </Box>
+        </Box>
+        {/* 第三行：竖杠 + 平衡 */}
+        <Box style={{ flexDirection: 'row', gap: 'sm', flex: 1 }}>
+          <Box style={{ flex: 1, gap: 'xs' }}>
+            {[
+              ['位置1', 'linear-gradient(135deg, #F472B6 0%, #EC4899 100%)', '📍'],
+              ['位置2', 'linear-gradient(135deg, #FB7185 0%, #F43F5E 100%)', '📍'],
+              ['位置3', 'linear-gradient(135deg, #F87171 0%, #EF4444 100%)', '📍'],
+            ].map((x, i) => (
+              <Box key={i} style={{ flex: 1, background: x[1], borderRadius: 'sm', padding: 'sm', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+                <Emoji name={x[2]} style={{ width: 20, height: 20 }} />
+                <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+              </Box>
+            ))}
+          </Box>
+          <Box style={{ flex: 3, background: 'cardBg', borderRadius: 'lg', padding: 'md', border: '2px solid #FBCFE8', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Box style={{ background: 'linear-gradient(90deg, #EC4899 0%, #F43F5E 100%)', borderRadius: 999, padding: 'xs md', alignSelf: 'flex-start', marginBottom: 'sm' }}>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>Priority #3</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'sm' }}>{/* {{替换：要点3标题}} */}平衡整体</Text>
+            <Box style={{ gap: 'xs' }}>
+              {[
+                ['保持视觉重量的平衡分布', '#EC4899'],
+                ['确保内容的可读性和舒适度', '#F43F5E'],
+                ['创造和谐统一的整体感受', '#EF4444'],
+              ].map((x, i) => (
+                <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs' }}>
+                  <Box style={{ width: 8, height: 8, borderRadius: 4, background: x[1] }} />
+                  <Text style={{ fontSize: 'label', color: 'muted' }}>{x[0]}</Text>
+                </Box>
+              ))}
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+      {/* 右侧 F 型示意图（淡色装饰） */}
+      <Box style={{ position: 'absolute', top: 60, right: 0, opacity: 0.1, alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 40, height: 240, background: '#EC4899', borderRadius: 'sm' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

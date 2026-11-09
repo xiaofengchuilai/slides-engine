@@ -1,0 +1,21 @@
+<Slide>
+  {/* chinese/1626 纯文字·极简留白：居中大标题 + 诗联 + 四字点缀 */}
+  <Box style={{ height: 720, width: 1280, background: '#FAF9F6', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'title', color: '#7A1F1F', bold: true, letterSpacing: 6, marginBottom: 'xl', fontFamily: 'serif' }}>{/* {{替换：大标题}} */}传统乐器</Text>
+      <Text style={{ fontSize: 'body', color: '#4A4A4A', lineHeight: 1.8, textAlign: 'center', letterSpacing: 2, marginBottom: 'xl' }}>
+        {/* {{替换：核心内容}} */}
+        {'琴棋书画，文人四艺\n丝竹管弦，雅乐天成'}
+      </Text>
+      <Box style={{ flexDirection: 'row', gap: 'xl', alignItems: 'center', marginTop: 'sm' }}>
+        {['琴', '瑟', '笙', '箫'].map((x, i) => (
+          <Text key={i} style={{ fontSize: 'card', color: '#7A1F1F', fontFamily: 'serif' }}>{/* {{替换：x}} */}{x}</Text>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+  {/* 底部功能文字 */}
+  <Box style={{ position: 'absolute', bottom: 24, left: 0, right: 0, alignItems: 'center' }}>
+    <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>国家级非物质文化遗产项目</Text>
+  </Box>
+</Slide>

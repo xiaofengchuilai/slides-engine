@@ -1,0 +1,13 @@
+<Slide>
+  {/* transition/banner：深色横幅 + 章节导语（深底白字） */}
+  <Box style={{ height: 720, width: 1280, background: 'primary', padding: '0 90px', justifyContent: 'center' }}>
+    {/* 装饰：右侧大圆环 */}
+    <Box style={{ width: 260, height: 260, borderRadius: 130, background: 'secondary', opacity: 0.3, position: 'absolute', right: 60, top: 230 }} />
+    <Box>
+      <Text style={{ fontSize: 'body', color: 'accent', letterSpacing: 3 }}>{/* {{替换：CHAPTER/PART}} */}CHAPTER 02</Text>
+      <Text style={{ fontSize: 60, color: '#FFFFFF', bold: true, lineHeight: 1.1, marginTop: 18 }}>{/* {{替换：章节名}} */}产品与方案</Text>
+      <Box style={{ width: 60, height: 4, background: 'accent', marginTop: 28 }} />
+      <Text style={{ fontSize: 20, color: '#FFFFFF', lineHeight: 1.5, marginTop: 24, opacity: 0.85 }}>{/* {{替换：一句章节导语}} */}好产品，是对痛点的精确回答</Text>
+    </Box>
+  </Box>
+</Slide>

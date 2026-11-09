@@ -1,0 +1,25 @@
+<Slide>
+  {/* minimalist/1508 行动计划：顶部深条 + 4 列步骤卡片 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', flexDirection: 'column' }}>
+    <Box style={{ height: 8, background: '#0F172A' }} />
+    <Box style={{ flex: 1, padding: 'xxl xl', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{替换：页面标题}} */}行动计划</Text>
+      <Box style={{ flexDirection: 'row', gap: 'xxl', marginTop: 'xxl' }}>
+        {[
+          ['1', '需求分析', '深入调研'],
+          ['2', '方案设计', '精心规划'],
+          ['3', '快速开发', '敏捷迭代'],
+          ['4', '持续优化', '完善提升'],
+        ].map((s, i) => (
+          <Box key={i} style={{ flex: 1, alignItems: 'center' }}>
+            <Box style={{ width: '100%', background: 'cardBg', borderRadius: 'md', padding: 'xxl', alignItems: 'center', marginBottom: 'md', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+              <Text style={{ fontSize: 'kpi', color: 'primary' }}>{/* {{替换：步骤序号}} */}{s[0]}</Text>
+              <Text style={{ fontSize: 'body', color: 'text', bold: true, marginTop: 'sm' }}>{/* {{替换：步骤名}} */}{s[1]}</Text>
+            </Box>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：步骤说明}} */}{s[2]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,60 @@
+<Slide>
+  {/* minimalist/1608 错位网格：右标题 + 左侧三步骤卡 + 右上大图 + 右下深色数据块 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1 }}>
+      {/* 标题：偏右上 */}
+      <Box style={{ alignItems: 'flex-end', marginBottom: 'lg' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>CASE STUDY</Text>
+          <Box style={{ width: 48, height: 2, background: 'primary' }} />
+        </Box>
+        <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'xs' }}>{/* {{标题}} */}项目实施方法论</Text>
+        <Text style={{ fontSize: 'body', color: 'muted' }}>Project Implementation Methodology</Text>
+      </Box>
+      {/* 主内容：错位排列 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'lg', alignItems: 'stretch' }}>
+        {/* 左侧三步卡 */}
+        <Box style={{ flex: 5, gap: 'lg' }}>
+          {[
+            { n: 1, bg: 'primary', title: '需求分析', desc: '深入理解客户需求，明确项目目标和成功标准。' },
+            { n: 2, bg: 'secondary', title: '方案设计', desc: '制定详细实施方案，确保可行性和可操作性。' },
+            { n: 3, bg: 'muted', title: '落地执行', desc: '敏捷迭代，快速响应，确保项目按时交付。' },
+          ].map((c, i) => (
+            <Box key={i} style={{ flex: 1, background: 'bg', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg', justifyContent: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+              <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xs' }}>
+                <Box style={{ width: 32, height: 32, borderRadius: 16, background: c.bg, alignItems: 'center', justifyContent: 'center' }}>
+                  <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{c.n}</Text>
+                </Box>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{步骤标题}} */}{c.title}</Text>
+              </Box>
+              <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>{/* {{步骤说明}} */}{c.desc}</Text>
+            </Box>
+          ))}
+        </Box>
+        {/* 右侧：上图下数据 */}
+        <Box style={{ flex: 7, gap: 'lg' }}>
+          <Box style={{ flex: 2, position: 'relative', borderRadius: 'md', background: 'cardBg' }}>
+            {/* {{图片：实施阶段示意图，有图填 assets/images/1608_main.png，无图删掉整个 <Image>}} */}
+            <Image src="assets/images/1608_main.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+            <Box style={{ position: 'absolute', top: 20, left: 20, background: 'bg', padding: 'sm md', borderRadius: 'sm', border: '1px solid #E5E7EB', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>平均项目周期</Text>
+              <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 'xs' }}>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true }}>90</Text>
+                <Text style={{ fontSize: 'body', color: 'muted' }}>天</Text>
+              </Box>
+            </Box>
+          </Box>
+          <Box style={{ flex: 1, background: 'primary', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, lineHeight: 1 }}>100+</Text>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.8, marginTop: 'xs' }}>成功案例</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+    {/* 底部注释 */}
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 'lg' }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>方法论来源：PMI《项目管理知识体系指南》PMBOK第7版</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>*已通过PMP认证专家团队验证</Text>
+    </Box>
+  </Box>
+</Slide>

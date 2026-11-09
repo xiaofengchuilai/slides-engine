@@ -1,0 +1,14 @@
+<Slide>
+  {/* black-gold/080 流光溢彩：灰黑渐变底 + 上下金光线 + 金字标题 + 副标题 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #1F2937 0%, #000000 50%, #1F2937 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 流光装饰（上/下金线） */}
+    <Box style={{ position: 'absolute', top: 80, left: 160, width: 384, height: 2, background: 'linear-gradient(90deg, rgba(234,179,8,0) 0%, #EAB308 50%, rgba(234,179,8,0) 100%)', opacity: 0.6 }} />
+    <Box style={{ position: 'absolute', bottom: 128, right: 160, width: 320, height: 2, background: 'linear-gradient(90deg, rgba(234,179,8,0) 0%, #EAB308 50%, rgba(234,179,8,0) 100%)', opacity: 0.6 }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}私募基金路演</Text>
+      <Text style={{ fontSize: 'card', color: '#CA8A04', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}精选标的·卓越回报·长期共赢</Text>
+      <Text style={{ fontSize: 'body', color: '#9CA3AF' }}>{/* {{替换：落款}} */}投资管理部 | 投资人说明会</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,36 @@
+<Slide>
+  {/* ending/tech/1017 科技风-数字代码：深蓝渐变 + 网格装饰 + 居中主标题 + 双联系卡 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 55%, #0F172A 100%)' }}>
+    {/* 网格背景装饰（细线） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, opacity: 0.16 }}>
+      {[72, 144, 216, 288, 360, 432, 504, 576, 648].map((y, i) => (
+        <Box key={i} style={{ position: 'absolute', top: y, left: 0, width: 1280, height: 1, background: '#22D3EE' }} />
+      ))}
+      {[90, 180, 270, 360, 450, 540, 630, 720, 810, 900, 990, 1080, 1170, 1260].map((x, i) => (
+        <Box key={i} style={{ position: 'absolute', top: 0, left: x, width: 1, height: 720, background: '#22D3EE' }} />
+      ))}
+    </Box>
+    {/* 居中内容区 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center', gap: 'xl' }}>
+      <Text style={{ fontSize: 'title', color: '#22D3EE', fontFamily: 'Courier New', letterSpacing: 4, bold: true }}>{/* {{替换：代码标记}} */}&lt;/ END &gt;</Text>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, letterSpacing: 2 }}>{/* {{替换：主标题}} */}THANK YOU</Text>
+      {/* 脉冲圆点（静态三连点） */}
+      <Box style={{ flexDirection: 'row', gap: 'sm', alignItems: 'center' }}>
+        <Box style={{ width: 12, height: 12, borderRadius: 'sm', background: '#22D3EE', opacity: 0.85 }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 'sm', background: '#22D3EE', opacity: 0.6 }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 'sm', background: '#22D3EE', opacity: 0.4 }} />
+      </Box>
+      {/* 双联系卡（半透明底用深色 hex + 低 opacity 装饰，卡片内容单独层） */}
+      <Box style={{ flexDirection: 'row', gap: 'xl', marginTop: 'md' }}>
+        <Box style={{ width: 360, padding: 'lg xl', border: '2px solid #22D3EE', borderRadius: 'sm', background: '#000000' }}>
+          <Text style={{ fontSize: 'label', color: '#22D3EE', fontFamily: 'Courier New', marginBottom: 'xs' }}>{/* {{替换：标签}} */}// Email</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：联系内容}} */}tech@future.com</Text>
+        </Box>
+        <Box style={{ width: 360, padding: 'lg xl', border: '2px solid #60A5FA', borderRadius: 'sm', background: '#000000' }}>
+          <Text style={{ fontSize: 'label', color: '#60A5FA', fontFamily: 'Courier New', marginBottom: 'xs' }}>{/* {{替换：标签}} */}// Phone</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：联系内容}} */}+86 138-0000-0000</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

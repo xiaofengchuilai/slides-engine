@@ -1,0 +1,23 @@
+<Slide>
+  {/* decorative/hand-drawn/2010 轻笔触小涂鸦：浅底 + 手绘虚线圆/波浪线/三角/圆角方/折线的装饰网格 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #FAFAF9 0%, #F5F5F4 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', alignItems: 'center', gap: 'xxl' }}>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center' }}>
+        {/* 手绘虚线圆（gray-600） */}
+        <RoughBox shape="circle" style={{ width: 72, height: 72, stroke: '#4B5563', strokeWidth: 2, roughness: 2, dash: [4, 4], fill: 'none' }} />
+        {/* 波浪线 */}
+        <RoughBox shape="path" path="M 0 40 Q 18 10, 36 40 T 72 40 T 108 40" style={{ width: 108, height: 64, stroke: '#6B7280', strokeWidth: 2, roughness: 2 }} />
+        {/* S 形曲线 */}
+        <RoughBox shape="path" path="M 0 55 C 16 10, 44 10, 60 55 S 104 90, 120 55" style={{ width: 120, height: 80, stroke: '#4B5563', strokeWidth: 2, roughness: 2 }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center' }}>
+        {/* 手绘三角形 */}
+        <RoughBox shape="polygon" points={[[0, 0], [56, 88], [0, 88]]} style={{ width: 60, height: 92, stroke: '#6B7280', strokeWidth: 2, roughness: 2, fill: 'none' }} />
+        {/* 手绘圆角方 */}
+        <RoughBox shape="rect" style={{ width: 76, height: 76, stroke: '#4B5563', strokeWidth: 2, roughness: 2, fill: 'none' }} />
+        {/* 手绘折线（锯齿） */}
+        <RoughBox shape="linearPath" points={[[0, 45], [30, 5], [60, 50], [90, 5], [120, 45]]} style={{ width: 120, height: 70, stroke: '#6B7280', strokeWidth: 2, roughness: 2 }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

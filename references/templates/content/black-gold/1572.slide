@@ -1,0 +1,39 @@
+<Slide>
+  {/* black-gold/1572 王者之道：标题 + 正文 + 四品质卡 + 格言/注释 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 'xl', justifyContent: 'center' }}>
+    <Box style={{ alignItems: 'center', marginBottom: 'lg' }}>
+      <Box style={{ width: 128, height: 2, background: 'linear-gradient(90deg, rgba(234,179,8,0) 0%, #EAB308 100%)', marginBottom: 'sm' }} />
+      <Text style={{ fontSize: 'title', color: '#FBBF24', bold: true, letterSpacing: 2 }}>{/* {{替换：标题}} */}王者之道</Text>
+      <Box style={{ width: 128, height: 2, background: 'linear-gradient(270deg, rgba(234,179,8,0) 0%, #EAB308 100%)', marginTop: 'sm' }} />
+    </Box>
+    <Box style={{ alignItems: 'center', marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'body', color: '#E5E7EB', lineHeight: 1.8, textAlign: 'center', marginBottom: 'sm' }}>{/* {{替换：正文1}} */}领导力不是职位赋予的权力，而是通过影响力和示范作用赢得的尊重。真正的领导者不是站在团队之上发号施令，而是走在团队前列以身作则。</Text>
+      <Text style={{ fontSize: 'body', color: '#D1D5DB', lineHeight: 1.8, textAlign: 'center' }}>{/* {{替换：正文2}} */}成就卓越，不仅需要战略眼光，更需要坚韧的执行力和永不言败的决心。</Text>
+    </Box>
+    {/* 四品质卡 */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', marginBottom: 'lg' }}>
+      {[
+        ['♔', '远见卓识', '洞察未来趋势', 'linear-gradient(180deg, #CA8A04 0%, #92400E 100%)'],
+        ['♕', '果敢决断', '关键时刻魄力', 'linear-gradient(180deg, #B45309 0%, #9A3412 100%)'],
+        ['♖', '知人善任', '激发团队潜能', 'linear-gradient(180deg, #A16207 0%, #713F12 100%)'],
+        ['♗', '持续进化', '不断自我超越', 'linear-gradient(180deg, #92400E 0%, #78350F 100%)'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: x[3], padding: 'lg', alignItems: 'center', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Text style={{ fontSize: 'kpi', color: '#FFFFFF', marginBottom: 'xs' }}>{x[0]}</Text>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：品质名}} */}{x[1]}</Text>
+          <Text style={{ fontSize: 'label', color: '#FEF3C7', marginTop: 'xs' }}>{/* {{替换：品质描述}} */}{x[2]}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 格言 + 注释 */}
+    <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+      <Box style={{ flex: 1, background: 'linear-gradient(90deg, #111827 0%, #000000 100%)', border: '4px solid #CA8A04', padding: 'md', alignItems: 'center' }}>
+        <Text style={{ fontSize: 'card', color: '#FBBF24', bold: true, fontFamily: 'serif', lineHeight: 1.6, marginBottom: 'xs' }}>{/* {{替换：格言}} */}"登顶之路，唯有勇者方能抵达。"</Text>
+        <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>{/* {{替换：署名}} */}— 领导力格言</Text>
+      </Box>
+      <Box style={{ width: 320, background: 'rgba(113,63,18,0.2)', border: '1px solid rgba(202,138,4,0.3)', padding: 'md' }}>
+        <Text style={{ fontSize: 'label', color: '#FDE68A', lineHeight: 1.6 }}>{/* {{替换：注释}} */}注释：本章节内容综合了现代管理学理论与历史上杰出领导者的实践智慧。</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

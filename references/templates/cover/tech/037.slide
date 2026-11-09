@@ -1,0 +1,19 @@
+<Slide>
+  {/* cover/tech/037 科技风-数据面板：深色底 + 左侧数据模块 + 主标题 + 副标题 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xxl' }}>
+      {/* 数据模块：外框 + 内框 + 数字 */}
+      <Box style={{ width: 128, height: 128 }}>
+        <Box style={{ position: 'absolute', top: 0, left: 0, width: 128, height: 128, borderRadius: 'md', border: '4px solid #06B6D4' }} />
+        <Box style={{ position: 'absolute', top: 8, left: 8, width: 112, height: 112, borderRadius: 'md', border: '2px solid #22D3EE' }} />
+        <Box style={{ position: 'absolute', top: 16, left: 16, width: 96, height: 96, borderRadius: 'md', background: '#164E63', justifyContent: 'center', alignItems: 'center' }}>
+          <Text style={{ fontSize: 'title', color: '#22D3EE', bold: true, letterSpacing: 2 }}>{/* {{替换：编号}} */}01</Text>
+        </Box>
+      </Box>
+      <Box>
+        <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, letterSpacing: 1, lineHeight: 1.1, marginBottom: 'md' }}>{/* {{替换：主标题}} */}量子计算时代</Text>
+        <Text style={{ fontSize: 'card', color: '#22D3EE', letterSpacing: 2 }}>{/* {{替换：副标题}} */}Quantum Computing Era</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

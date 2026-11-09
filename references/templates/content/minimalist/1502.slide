@@ -1,0 +1,31 @@
+<Slide>
+  {/* minimalist/1502 居中：标题+短横线，4列圆点步骤，金句，脚注 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl', alignItems: 'center', justifyContent: 'center', gap: 'xl' }}>
+    <Box style={{ alignItems: 'center', gap: 'md', maxWidth: 900 }}>
+      <Box style={{ width: 80, height: 6, background: 'primary' }} />
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, textAlign: 'center' }}>{/* {{替换：标题}} */}设计思维的本质</Text>
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.7, textAlign: 'center' }}>{/* {{替换：导语}} */}设计思维是一种以人为中心的创新方法论，它强调通过同理心理解用户需求，通过快速原型和迭代测试来验证假设。</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'xxl', width: '100%' }}>
+      {[
+        '共情理解',
+        '问题定义',
+        '创意构思',
+        '原型测试',
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, alignItems: 'center', gap: 'sm' }}>
+          <Box style={{ width: 56, height: 56, borderRadius: 28, background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{i + 1}</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：步骤}} */}{x}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ alignItems: 'center', gap: 'sm', maxWidth: 780 }}>
+      <Text style={{ fontSize: 'kpi', color: 'muted', lineHeight: 1 }}>“</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.7, textAlign: 'center' }}>{/* {{替换：金句}} */}好的设计是显而易见的，伟大的设计是透明的</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：署名}} */}— Joe Sparano</Text>
+    </Box>
+    <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：脚注}} */}*基于斯坦福大学d.school设计思维框架</Text>
+  </Box>
+</Slide>

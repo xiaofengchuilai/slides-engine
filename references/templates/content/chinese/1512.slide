@@ -1,0 +1,35 @@
+<Slide>
+  {/* chinese/1512 左右对称·图文：左图 + 中轴细线 + 右文（书法艺术） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #FAF9F6 0%, #F5F3ED 100%)', padding: 'xxl xl', flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+    {/* 左图区 */}
+    <Box style={{ width: '45%', height: '100%', justifyContent: 'center', alignItems: 'center' }}>
+      {/* {{图片：有图填 assets/images/calligraphy.png，无图删掉整个 <Image>}} */}
+      <Image src="assets/images/calligraphy.png" style={{ objectFit: 'cover', width: '100%', height: 400 }} />
+      <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'lg', textAlign: 'center' }}>{/* {{替换：图片来源}} */}图片来源：中国书法家协会</Text>
+    </Box>
+    {/* 中轴线 */}
+    <Box style={{ width: 2, height: 320, background: 'rgba(168, 24, 16, 0.3)' }} />
+    {/* 右文区 */}
+    <Box style={{ flex: 1, gap: 'xl' }}>
+      <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true }}>{/* {{替换：主标题}} */}书法艺术</Text>
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.8 }}>{/* {{替换：段落}} */}
+        中国书法是一门古老的艺术，以汉字为载体，通过笔墨的运用展现出独特的审美价值。书法不仅是文字的书写，更是心性的表达，体现了“字如其人”的文化内涵。
+      </Text>
+      <Box style={{ gap: 'lg' }}>
+        {[
+          ['篆书', '古朴端庄，源于甲骨文和金文'],
+          ['隶书', '方正平整，汉代官方字体'],
+          ['楷书', '规范严谨，书法基础字体'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'md' }}>
+            <Text style={{ fontSize: 'card', color: '#A81810', bold: true }}>·</Text>
+            <Box style={{ gap: 0 }}>
+              <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6, bold: true }}>{x[0]}：</Text>
+              <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{x[1]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

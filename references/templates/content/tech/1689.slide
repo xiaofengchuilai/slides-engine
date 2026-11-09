@@ -1,0 +1,50 @@
+<Slide>
+  {/* tech/1689 下一步行动计划：左列两周计划+时间节点，右图+后续阶段 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题区 */}
+    <Box style={{ marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{标题}} */}下一步行动计划</Text>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{副题}} */}项目推进的关键步骤与时间节点</Text>
+    </Box>
+
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+      {/* 左侧内容 */}
+      <Box style={{ flex: 1, flexDirection: 'column', gap: 'xl' }}>
+        <Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{计划标题}} */}第一周：需求确认</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}召开需求评审会议，确认功能范围与优先级，明确项目里程碑与交付物。</Text>
+        </Box>
+        <Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{计划标题}} */}第二周：技术方案</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}完成详细技术方案设计，包括架构设计、接口定义、数据模型等核心内容。</Text>
+        </Box>
+        <Box style={{ marginTop: 'auto', flexDirection: 'row', gap: 'xl' }}>
+          {[
+            ['预计启动', '下周一'],
+            ['首期交付', '8周后'],
+          ].map((x, i) => (
+            <Box key={i} style={{ alignItems: 'center' }}>
+              <Text style={{ fontSize: 'label', color: 'muted', marginBottom: 'xs' }}>{x[0]}</Text>
+              <Text style={{ fontSize: 20, color: '#FFFFFF', bold: true }}>{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+
+      {/* 右侧图片区 */}
+      <Box style={{ width: 500, flexDirection: 'column', gap: 'lg' }}>
+        <Box style={{ flex: 1, borderRadius: 'md' }}>
+          {/* {{图片：有图填 assets/images/1689.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1689.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </Box>
+        <Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{小标题}} */}后续阶段</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}按迭代周期推进开发，每两周一次版本发布，持续收集反馈优化产品。</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

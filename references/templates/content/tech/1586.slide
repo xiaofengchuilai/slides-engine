@@ -1,0 +1,64 @@
+<Slide>
+  {/* tech/1586 威胁检测雷达：四象限目标卡 + 底部状态栏 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xl' }}>
+    {/* 雷达同心圆背景装饰 */}
+    <Box style={{ position: 'absolute', top: 100, left: 330, width: 620, height: 620, borderRadius: 310, border: '1px solid rgba(34,211,238,0.25)', opacity: 0.5 }} />
+    <Box style={{ position: 'absolute', top: 175, left: 405, width: 470, height: 470, borderRadius: 235, border: '1px solid rgba(34,211,238,0.3)', opacity: 0.5 }} />
+    <Box style={{ position: 'absolute', top: 250, left: 480, width: 320, height: 320, borderRadius: 160, border: '1px solid rgba(34,211,238,0.4)', opacity: 0.5 }} />
+    <Text style={{ fontSize: 'title', color: '#22D3EE', bold: true, textAlign: 'center', marginBottom: 'lg' }}>{/* {{标题}} */}威胁检测雷达</Text>
+    {/* 雷达目标点 */}
+    <Box style={{ position: 'absolute', top: 140, left: 180, width: 220, flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+      <Box style={{ width: 14, height: 14, borderRadius: 7, background: '#EF4444' }} />
+      <Box style={{ flex: 1, background: 'rgba(2,6,23,0.9)', border: '1px solid #EF4444', borderRadius: 'sm', padding: 'sm' }}>
+        <Text style={{ fontSize: 'body', color: '#F87171', bold: true, marginBottom: 'xs' }}>高危威胁</Text>
+        <Text style={{ fontSize: 'label', color: '#94A3B8' }}>DDoS Attack</Text>
+        <Text style={{ fontSize: 'label', color: '#EF4444', marginTop: 'xs' }}>距离: 2.3km</Text>
+      </Box>
+    </Box>
+    <Box style={{ position: 'absolute', top: 120, right: 160, width: 220, flexDirection: 'row-reverse', alignItems: 'center', gap: 'sm' }}>
+      <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#F59E0B' }} />
+      <Box style={{ flex: 1, background: 'rgba(2,6,23,0.9)', border: '1px solid #F59E0B', borderRadius: 'sm', padding: 'sm' }}>
+        <Text style={{ fontSize: 'body', color: '#FBBF24', bold: true, marginBottom: 'xs' }}>中危警告</Text>
+        <Text style={{ fontSize: 'label', color: '#94A3B8' }}>SQL Injection</Text>
+        <Text style={{ fontSize: 'label', color: '#F59E0B', marginTop: 'xs' }}>距离: 5.7km</Text>
+      </Box>
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 140, left: 180, width: 220, flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+      <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#22C55E' }} />
+      <Box style={{ flex: 1, background: 'rgba(2,6,23,0.9)', border: '1px solid #22C55E', borderRadius: 'sm', padding: 'sm' }}>
+        <Text style={{ fontSize: 'body', color: '#4ADE80', bold: true, marginBottom: 'xs' }}>低危提示</Text>
+        <Text style={{ fontSize: 'label', color: '#94A3B8' }}>Port Scan</Text>
+        <Text style={{ fontSize: 'label', color: '#22C55E', marginTop: 'xs' }}>距离: 8.1km</Text>
+      </Box>
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 140, right: 160, width: 220, flexDirection: 'row-reverse', alignItems: 'center', gap: 'sm' }}>
+      <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#3B82F6' }} />
+      <Box style={{ flex: 1, background: 'rgba(2,6,23,0.9)', border: '1px solid #3B82F6', borderRadius: 'sm', padding: 'sm' }}>
+        <Text style={{ fontSize: 'body', color: '#60A5FA', bold: true, marginBottom: 'xs' }}>已识别</Text>
+        <Text style={{ fontSize: 'label', color: '#94A3B8' }}>Known User</Text>
+        <Text style={{ fontSize: 'label', color: '#3B82F6', marginTop: 'xs' }}>距离: 1.2km</Text>
+      </Box>
+    </Box>
+    {/* 底部状态栏 */}
+    <Box style={{ position: 'absolute', bottom: 40, left: 24, right: 24, background: 'rgba(15,23,42,0.85)', border: '1px solid rgba(34,211,238,0.3)', borderRadius: 'md', padding: 'lg', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+        <Box style={{ width: 10, height: 10, borderRadius: 5, background: '#22C55E' }} />
+        <Text style={{ fontSize: 'body', color: '#4ADE80' }}>SYSTEM ONLINE</Text>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+        {[
+          { val: '3', label: '威胁', color: '#F87171' },
+          { val: '7', label: '警告', color: '#FBBF24' },
+          { val: '245', label: '监控中', color: '#22D3EE' },
+          { val: '99.7%', label: '检测率', color: '#4ADE80' },
+        ].map((x) => (
+          <Box key={x.label} style={{ alignItems: 'center' }}>
+            <Text style={{ fontSize: 'card', color: x.color, bold: true }}>{x.val}</Text>
+            <Text style={{ fontSize: 'label', color: '#94A3B8' }}>{x.label}</Text>
+          </Box>
+        ))}
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#22D3EE' }}>{/* {{时间}} */}14:32:05</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,24 @@
+<Slide>
+  {/* decorative/business/2030 商务风-极简商务小标识：白底 + 色块/三角/描边小标识网格 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 40 }}>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 40, height: 40, background: 'primary' }} />
+        <Box style={{ width: 40, height: 40, background: 'secondary' }} />
+        <Box style={{ width: 32, height: 32, background: '#334155', borderRadius: 'sm', rotate: 45 }} />
+        <Text style={{ fontSize: 'card', color: 'primary', bold: true }}>{/* {{替换：箭头符号}} */}▸</Text>
+        <Box style={{ width: 40, height: 40, border: '2px solid #1E293B' }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 40, height: 40, background: 'linear-gradient(135deg, #475569 0%, #1E293B 100%)' }} />
+        {/* 三竖条 */}
+        <Box style={{ flexDirection: 'row', gap: 4, alignItems: 'flex-end' }}>
+          <Box style={{ width: 8, height: 32, background: '#2563EB' }} />
+          <Box style={{ width: 8, height: 24, background: '#475569' }} />
+          <Box style={{ width: 8, height: 40, background: '#1E293B' }} />
+        </Box>
+        <Shape type="diamond" style={{ width: 40, height: 40, fill: '#1E293B' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,19 @@
+<Slide>
+  {/* flat/3513 扁平风-色块分割：四列纯色块，大编号+章节名+英文副标 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg' }}>
+    <Box style={{ height: 720, flexDirection: 'row', padding: 'xxl xl', gap: 'lg' }}>
+      {[
+        ['01', '项目起源', 'Origin', '#3B82F6'],
+        ['02', '解决方案', 'Solution', '#22C55E'],
+        ['03', '执行方案', 'Execution', '#F97316'],
+        ['04', '未来规划', 'Future', '#A855F7'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: x[3], alignItems: 'center', justifyContent: 'center', padding: 'xl' }}>
+          <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, marginBottom: 16 }}>{/* {{替换：章节号}} */}{x[0]}</Text>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 8 }}>{/* {{章节名}} */}{x[1]}</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.75 }}>{/* {{章节副标题}} */}{x[2]}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

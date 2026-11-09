@@ -1,0 +1,49 @@
+<Slide>
+  {/* geometric/1549 核心价值体系：六边形蜂窝 2-3-2 布局（中心核心 + 6 价值） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F8FAFC 0%, #F3F4F6 100%)', padding: 'xl', alignItems: 'center' }}>
+    {/* 右上装饰圆 */}
+    <Box style={{ position: 'absolute', top: 0, right: 0, width: 280, height: 280, borderRadius: 140, background: 'linear-gradient(135deg, #E0E7FF 0%, #C7D2FE 100%)', opacity: 0.5 }} />
+    {/* 标题 */}
+    <Box style={{ width: 1080, marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: '#1E293B', bold: true, marginBottom: 'xs' }}>{/* {{替换：页面标题}} */}核心价值体系</Text>
+      <Text style={{ fontSize: 'body', color: '#64748B' }}>{/* {{替换：副标题}} */}CORE VALUES SYSTEM</Text>
+    </Box>
+    {/* 蜂窝画布 700x460 居中 */}
+    <Box style={{ position: 'relative', width: 700, height: 460 }}>
+      {/* 第一行 2 个 */}
+      {[
+        [0, '创新', 'Innovation', 0.9],
+        [300, '协作', 'Collaboration', 0.8],
+      ].map((h, i) => (
+        <Box key={i} style={{ position: 'absolute', left: h[0], top: 0, width: 190, height: 210, alignItems: 'center', justifyContent: 'center' }}>
+          <Shape type="hexagon" style={{ position: 'absolute', top: 5, left: 5, width: 180, height: 200, fill: '#6366F1', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{替换：价值名}} */}{h[1]}</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.9 }}>{h[2]}</Text>
+        </Box>
+      ))}
+      {/* 第二行 3 个（中心为核心） */}
+      {[
+        [0, '效率', 'Efficiency', 0.7],
+        [255, '核心', 'Core Values', 1],
+        [510, '品质', 'Quality', 0.7],
+      ].map((h, i) => (
+        <Box key={i} style={{ position: 'absolute', left: h[0], top: 180, width: 190, height: 210, alignItems: 'center', justifyContent: 'center' }}>
+          <Shape type="hexagon" style={{ position: 'absolute', top: 5, left: 5, width: 180, height: 200, fill: '#6366F1', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{替换：价值名}} */}{h[1]}</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.9 }}>{h[2]}</Text>
+        </Box>
+      ))}
+      {/* 第三行 2 个 */}
+      {[
+        [0, '可靠', 'Reliable', 0.6],
+        [300, '可持续', 'Sustainable', 0.5],
+      ].map((h, i) => (
+        <Box key={i} style={{ position: 'absolute', left: h[0], top: 360, width: 190, height: 210, alignItems: 'center', justifyContent: 'center' }}>
+          <Shape type="hexagon" style={{ position: 'absolute', top: 5, left: 5, width: 180, height: 200, fill: '#6366F1', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{替换：价值名}} */}{h[1]}</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.9 }}>{h[2]}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,80 @@
+<Slide>
+  {/* tech/1587 代码矩阵：编辑器窗口 + 底部技术标签 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xl', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 代码雨背景装饰：低透明度列文本 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'row', justifyContent: 'space-around', opacity: 0.06 }}>
+      {['01001010', 'function()', '0xFFA500', 'SELECT *', '<div>', 'if(true)'].map((c) => (
+        <Box key={c} style={{ alignItems: 'center', gap: 'md' }}>
+          <Text style={{ fontSize: 'label', color: '#22C55E', lineHeight: 1.5 }}>{c}</Text>
+          <Text style={{ fontSize: 'label', color: '#22C55E', lineHeight: 1.5 }}>{c}</Text>
+          <Text style={{ fontSize: 'label', color: '#22C55E', lineHeight: 1.5 }}>{c}</Text>
+          <Text style={{ fontSize: 'label', color: '#22C55E', lineHeight: 1.5 }}>{c}</Text>
+          <Text style={{ fontSize: 'label', color: '#22C55E', lineHeight: 1.5 }}>{c}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Text style={{ fontSize: 'title', color: '#22D3EE', bold: true, backgroundImage: 'linear-gradient(90deg, #4ADE80 0%, #22D3EE 50%, #60A5FA 100%)', backgroundClip: 'text', marginBottom: 'lg' }}>&lt;CODE MATRIX /&gt;</Text>
+    <Box style={{ width: '100%', maxWidth: 1020, background: 'rgba(15,23,42,0.92)', border: '1px solid rgba(74,222,128,0.3)', borderRadius: 'md', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      {/* 编辑器标题栏 */}
+      <Box style={{ background: '#1E293B', padding: 'sm lg', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+          <Box style={{ flexDirection: 'row', gap: 'xs' }}>
+            <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#EF4444' }} />
+            <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#F59E0B' }} />
+            <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#22C55E' }} />
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#4ADE80' }}>main.js</Text>
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#4ADE80' }}>UTF-8 | JavaScript</Text>
+      </Box>
+      {/* 代码区 */}
+      <Box style={{ padding: 'lg', flexDirection: 'row', gap: 'md' }}>
+        <Box style={{ gap: 'xs' }}>
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((n) => (
+            <Text key={n} style={{ fontSize: 'body', color: '#64748B' }}>{n}</Text>
+          ))}
+        </Box>
+        <Box style={{ flex: 1, gap: 'xs' }}>
+          <Text style={{ fontSize: 'body', color: '#A78BFA', lineHeight: 1.5 }}>require AI from '@future/intelligence';</Text>
+          <Text style={{ fontSize: 'body', color: '#A78BFA', lineHeight: 1.5 }}>require Quantum from '@quantum/compute';</Text>
+          <Text style={{ fontSize: 'body', color: '#94A3B8', lineHeight: 1.5 }}>&nbsp;</Text>
+          <Text style={{ fontSize: 'body', color: '#A78BFA', lineHeight: 1.5 }}>class FutureTech {'{'}</Text>
+          <Text style={{ fontSize: 'body', color: '#94A3B8', lineHeight: 1.5 }}>  constructor() {'{'}</Text>
+          <Text style={{ fontSize: 'body', color: '#94A3B8', lineHeight: 1.5 }}>    this.ai = new AI();</Text>
+          <Text style={{ fontSize: 'body', color: '#94A3B8', lineHeight: 1.5 }}>    this.quantum = new Quantum();</Text>
+          <Text style={{ fontSize: 'body', color: '#94A3B8', lineHeight: 1.5 }}>  {'}'}</Text>
+          <Text style={{ fontSize: 'body', color: '#94A3B8', lineHeight: 1.5 }}>{'}'}</Text>
+          <Text style={{ fontSize: 'body', color: '#94A3B8', lineHeight: 1.5 }}>&nbsp;</Text>
+          <Text style={{ fontSize: 'body', color: '#A78BFA', lineHeight: 1.5 }}>FutureTech main();</Text>
+        </Box>
+      </Box>
+      {/* 状态栏 */}
+      <Box style={{ background: '#1E293B', padding: 'xs lg', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+        <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+          <Text style={{ fontSize: 'label', color: '#94A3B8' }}>Ln 5, Col 12</Text>
+          <Text style={{ fontSize: 'label', color: '#94A3B8' }}>Spaces: 2</Text>
+          <Text style={{ fontSize: 'label', color: '#4ADE80' }}>● Auto Save</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+          <Text style={{ fontSize: 'label', color: '#94A3B8' }}>⚡ Performance: 99.9%</Text>
+          <Text style={{ fontSize: 'label', color: '#94A3B8' }}>🔒 Secure</Text>
+          <Text style={{ fontSize: 'label', color: '#22D3EE' }}>✓ Build Success</Text>
+        </Box>
+      </Box>
+    </Box>
+    {/* 底部技术标签 */}
+    <Box style={{ flexDirection: 'row', gap: 'md', marginTop: 'lg' }}>
+      {[
+        { label: 'JavaScript', color: '#4ADE80' },
+        { label: 'TypeScript', color: '#22D3EE' },
+        { label: 'Python', color: '#60A5FA' },
+        { label: 'Rust', color: '#C084FC' },
+        { label: 'Go', color: '#FBBF24' },
+      ].map((x) => (
+        <Box key={x.label} style={{ background: 'rgba(74,222,128,0.12)', border: `1px solid ${x.color}`, borderRadius: 20, padding: 'xs lg' }}>
+          <Text style={{ fontSize: 'label', color: x.color }}>{x.label}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

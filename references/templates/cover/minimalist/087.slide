@@ -1,0 +1,15 @@
+<Slide>
+  {/* cover/minimalist/087 线性渐变：浅渐变底 + 左上L形装饰线 + 居中标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F3F4F6 0%, #FFFFFF 100%)' }}>
+    <Box style={{ position: 'absolute', top: 128, left: 128, alignItems: 'flex-start' }}>
+      <Box style={{ width: 192, height: 1, background: 'text' }} />
+      <Box style={{ width: 1, height: 80, background: 'text' }} />
+    </Box>
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center', gap: 'xl', padding: '0 160px' }}>
+      <Text style={{ fontSize: 'hero', color: 'text', lineHeight: 1.15, letterSpacing: 1 }}>{/* {{替换：主标题}} */}简约设计理念</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 3 }}>{/* {{替换：副标题}} */}少即是多·专注本质</Text>
+      <Box style={{ width: 80, height: 2, background: 'text' }} />
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginTop: 'md' }}>{/* {{替换：部门/主题}} */}设计中心 | 设计规范分享</Text>
+    </Box>
+  </Box>
+</Slide>

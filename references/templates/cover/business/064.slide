@@ -1,0 +1,35 @@
+<Slide>
+  {/* business/064 深色封面：垂直条纹背景 + 四角竖条装饰 + 居中大标题 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #1E293B 0%, #0F172A 100%)', position: 'relative' }}>
+    {/* 垂直条纹背景（5 等分，蓝/透明交替） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'row' }}>
+      <Box style={{ flex: 1, background: '#2563EB', opacity: 0.05 }} />
+      <Box style={{ flex: 1 }} />
+      <Box style={{ flex: 1, background: '#2563EB', opacity: 0.05 }} />
+      <Box style={{ flex: 1 }} />
+      <Box style={{ flex: 1, background: '#2563EB', opacity: 0.05 }} />
+    </Box>
+    {/* 左上角三竖条（递增高） */}
+    <Box style={{ position: 'absolute', top: 40, left: 40, flexDirection: 'row', alignItems: 'flex-end', gap: 'sm' }}>
+      <Box style={{ width: 6, height: 80, background: '#3B82F6' }} />
+      <Box style={{ width: 6, height: 64, background: '#60A5FA' }} />
+      <Box style={{ width: 6, height: 48, background: '#93C5FD' }} />
+    </Box>
+    {/* 右下角三竖条（递减高，镜像） */}
+    <Box style={{ position: 'absolute', bottom: 40, right: 40, flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+      <Box style={{ width: 6, height: 48, background: '#93C5FD' }} />
+      <Box style={{ width: 6, height: 64, background: '#60A5FA' }} />
+      <Box style={{ width: 6, height: 80, background: '#3B82F6' }} />
+    </Box>
+    {/* 主内容区 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, justifyContent: 'center', alignItems: 'center', padding: 'xxl xl' }}>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, textAlign: 'center', letterSpacing: 4, lineHeight: 1.2, marginBottom: 'xxl' }}>{/* {{主标题}} */}财务分析报告</Text>
+      <Text style={{ fontSize: 'body', color: '#CBD5E1', textAlign: 'center', letterSpacing: 2, lineHeight: 1.5, marginBottom: 'xxl' }}>{/* {{副标题}} */}数据驱动·精准决策·价值导向</Text>
+      <Box style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 'lg' }}>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', letterSpacing: 1 }}>{/* {{落款一}} */}财务管理部</Text>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.5 }}>·</Text>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', letterSpacing: 1 }}>{/* {{落款二}} */}月度财务复盘</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

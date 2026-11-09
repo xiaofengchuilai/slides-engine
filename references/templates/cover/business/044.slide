@@ -1,0 +1,23 @@
+<Slide>
+  {/* cover/business/044 商务风-绿色环保：深绿渐变底 + 左下圆形徽标 + ESG 标题 + 副标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #064E3B 0%, #134E4A 100%)', padding: 'xxl xl', justifyContent: 'center' }}>
+    {/* 装饰：右侧光晕（半透明色块，不用 blur） */}
+    <Box style={{ position: 'absolute', top: 0, right: 0, width: 640, height: 720, background: '#10B981', opacity: 0.08 }} />
+    <Box style={{ position: 'absolute', right: 40, bottom: 40, width: 260, height: 260, borderRadius: 130, background: '#10B981', opacity: 0.05 }} />
+    {/* 内容区 */}
+    <Box style={{ maxWidth: 1100 }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', marginBottom: 32 }}>
+        {/* 圆形徽标：内层半透明绿底 + 外层实色描边 + 叶子图标（原 emoji 🌱 → Emoji 组件） */}
+        <Box style={{ width: 112, height: 112, borderRadius: 56, border: '5px solid #10B981', alignItems: 'center', justifyContent: 'center', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Box style={{ position: 'absolute', top: 0, left: 0, width: 112, height: 112, borderRadius: 56, background: '#10B981', opacity: 0.2 }} />
+          <Emoji name="🌱" style={{ width: 44, height: 44 }} />
+        </Box>
+        <Box>
+          <Text style={{ fontSize: 16, color: '#34D399', bold: true, letterSpacing: 4, marginBottom: 'sm' }}>{/* {{替换：顶部英文标签}} */}ESG REPORT 2025</Text>
+          <Text style={{ fontSize: 72, color: '#FFFFFF', bold: true, lineHeight: 1.1 }}>{/* {{替换：主标题}} */}可持续发展报告</Text>
+        </Box>
+      </Box>
+      <Text style={{ fontSize: 24, color: '#D1D5DB', marginLeft: 136 }}>{/* {{替换：英文副标题}} */}Environmental, Social &amp; Governance</Text>
+    </Box>
+  </Box>
+</Slide>

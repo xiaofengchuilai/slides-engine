@@ -1,0 +1,40 @@
+<Slide>
+  {/* ending/black-gold/1098 黑金风-皇冠：黑渐变 + 顶部皇冠 + 两侧花纹 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(180deg, #0A0A0A 0%, #1A1A1A 50%, #0A0A0A 100%)' }}>
+    {/* 顶部皇冠（降级为金色三角 + 圆点组合） */}
+    <Box style={{ position: 'absolute', top: 70, left: 550, width: 180, height: 135, alignItems: 'center', justifyContent: 'center' }}>
+      <Shape type="triangle" style={{ width: 120, height: 70, fill: '#D4AF37', opacity: 0.8 }} />
+      <Box style={{ position: 'absolute', top: 55, left: 30, width: 40, height: 40, borderRadius: 20, background: '#FFD700', opacity: 0.8 }} />
+      <Box style={{ position: 'absolute', top: 55, left: 110, width: 40, height: 40, borderRadius: 20, background: '#FFD700', opacity: 0.8 }} />
+    </Box>
+    {/* 金色光芒（顶部放射细线） */}
+    <Shape type="line" style={{ width: 270, height: 0, position: 'absolute', top: 70, left: 505, line: { color: '#FFD700', width: 2 }, rotate: 0, opacity: 0.5 }} />
+    <Shape type="line" style={{ width: 225, height: 0, position: 'absolute', top: 80, left: 527, line: { color: '#D4AF37', width: 1 }, rotate: 20, opacity: 0.4 }} />
+    <Shape type="line" style={{ width: 225, height: 0, position: 'absolute', top: 80, left: 527, line: { color: '#D4AF37', width: 1 }, rotate: -20, opacity: 0.4 }} />
+    {/* 底部装饰线 */}
+    <Box style={{ position: 'absolute', bottom: 70, left: 460, width: 360, height: 2, background: 'linear-gradient(90deg, #0A0A0A 0%, #FFD700 50%, #0A0A0A 100%)', opacity: 0.6 }} />
+    {/* 两侧花纹（降级为竖线+圆点） */}
+    <Box style={{ position: 'absolute', top: 292, left: 150, width: 90, height: 135, opacity: 0.4 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 44, width: 2, height: 130, background: '#D4AF37' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 41, width: 8, height: 8, borderRadius: 4, background: '#FFD700' }} />
+      <Box style={{ position: 'absolute', top: 60, left: 42, width: 6, height: 6, borderRadius: 3, background: '#D4AF37' }} />
+      <Box style={{ position: 'absolute', top: 122, left: 41, width: 8, height: 8, borderRadius: 4, background: '#FFD700' }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 292, right: 150, width: 90, height: 135, opacity: 0.4 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 44, width: 2, height: 130, background: '#D4AF37' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 41, width: 8, height: 8, borderRadius: 4, background: '#FFD700' }} />
+      <Box style={{ position: 'absolute', top: 60, left: 42, width: 6, height: 6, borderRadius: 3, background: '#D4AF37' }} />
+      <Box style={{ position: 'absolute', top: 122, left: 41, width: 8, height: 8, borderRadius: 4, background: '#FFD700' }} />
+    </Box>
+    {/* 金色粒子 */}
+    <Box style={{ position: 'absolute', top: 160, left: 280, width: 5, height: 5, borderRadius: 2, background: '#FFD700', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 195, right: 320, width: 6, height: 6, borderRadius: 3, background: '#D4AF37', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', bottom: 160, left: 345, width: 4, height: 4, borderRadius: 2, background: '#FFD700', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', bottom: 195, right: 370, width: 5, height: 5, borderRadius: 2, background: '#DAA520', opacity: 0.8 }} />
+    {/* 居中内容（顶部留空给皇冠） */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center', paddingTop: 120 }}>
+      <Text style={{ fontSize: 'kpi', color: '#FFD700', bold: true, letterSpacing: 3, marginBottom: 'md' }}>{/* {{替换：主标题}} */}谢谢</Text>
+      <Text style={{ fontSize: 'title', color: '#D4AF37' }}>{/* {{替换：致谢语}} */}感谢您的耐心聆听</Text>
+    </Box>
+  </Box>
+</Slide>

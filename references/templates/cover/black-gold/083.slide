@@ -1,0 +1,20 @@
+<Slide>
+  {/* black-gold/083 金箔质感：深黑渐变底 + 金箔光斑 + 金框 + 标签 + 金字标题 + 副标题 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 50%, #0A0A0A 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 金箔光斑（三处低透明度金晕） */}
+    <Box style={{ position: 'absolute', top: 216, left: 256, width: 160, height: 160, borderRadius: 80, background: '#FFD700', opacity: 0.08 }} />
+    <Box style={{ position: 'absolute', bottom: 216, right: 256, width: 200, height: 200, borderRadius: 100, background: '#D4AF37', opacity: 0.1 }} />
+    <Box style={{ position: 'absolute', top: 576, left: 512, width: 120, height: 120, borderRadius: 60, background: '#FFD700', opacity: 0.06 }} />
+    {/* 金色框架 */}
+    <Box style={{ position: 'absolute', top: 80, left: 80, right: 80, bottom: 80, border: '1px solid #EAB308', opacity: 0.3, boxShadow: '0 0 40px rgba(255,215,0,0.1)' }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Box style={{ background: 'linear-gradient(90deg, rgba(234,179,8,0) 0%, rgba(234,179,8,0.1) 50%, rgba(234,179,8,0) 100%)', padding: 'xs xl', marginBottom: 'xl' }}>
+        <Text style={{ fontSize: 'label', color: '#EAB308', letterSpacing: 6 }}>{/* {{替换：标签}} */}Luxury Edition</Text>
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}珠宝品鉴会</Text>
+      <Text style={{ fontSize: 'card', color: '#C9A961', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}臻选珍品·传世工艺·璀璨光华</Text>
+      <Text style={{ fontSize: 'body', color: '#9CA3AF' }}>{/* {{替换：落款}} */}奢侈品事业部 | 新品发布会</Text>
+    </Box>
+  </Box>
+</Slide>

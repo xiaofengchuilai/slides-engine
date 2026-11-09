@@ -1,0 +1,10 @@
+<Slide>
+  {/* cover/minimalist/003 单线条：巨字标题 + 通栏渐变细线 + 英文标签 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', justifyContent: 'center', alignItems: 'center', padding: '0 160px' }}>
+    <Box style={{ alignItems: 'center', gap: 'xl', width: 960 }}>
+      <Text style={{ fontSize: 'hero', color: 'text', lineHeight: 1.1, letterSpacing: 2 }}>{/* {{替换：主标题}} */}品牌策略</Text>
+      <Box style={{ width: 960, height: 1, background: 'linear-gradient(90deg, #FFFFFF 0%, #0F172A 50%, #FFFFFF 100%)' }} />
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 6 }}>{/* {{替换：英文副标题}} */}BRAND STRATEGY · 2025</Text>
+    </Box>
+  </Box>
+</Slide>

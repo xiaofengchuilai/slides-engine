@@ -1,0 +1,39 @@
+<Slide>
+  {/* ending/tech/1103 科技风-网络节点：深色渐变 + 节点连线 + 蓝框致谢 + 状态指示 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0D1117 0%, #161B22 100%)' }}>
+    {/* 网络节点连线装饰（斜线用 Shape line，带宽度） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, opacity: 0.35 }}>
+      <Shape type="line" style={{ width: 260, height: 0, position: 'absolute', top: 120, left: 165, line: { color: '#58A6FF', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 200, height: 0, position: 'absolute', top: 235, left: 415, line: { color: '#58A6FF', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 200, height: 0, position: 'absolute', top: 235, left: 600, line: { color: '#58A6FF', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 260, height: 0, position: 'absolute', top: 120, left: 805, line: { color: '#58A6FF', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 200, height: 0, position: 'absolute', top: 480, left: 415, line: { color: '#58A6FF', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 200, height: 0, position: 'absolute', top: 480, left: 600, line: { color: '#58A6FF', width: 1.5 } }} />
+    </Box>
+    {/* 节点圆点 */}
+    <Box style={{ position: 'absolute', top: 110, left: 160, width: 12, height: 12, borderRadius: 'sm', background: '#58A6FF', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 230, left: 410, width: 16, height: 16, borderRadius: 'sm', background: '#79C0FF', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 340, left: 595, width: 24, height: 24, borderRadius: 'sm', background: '#58A6FF', opacity: 0.9 }} />
+    <Box style={{ position: 'absolute', top: 230, left: 800, width: 16, height: 16, borderRadius: 'sm', background: '#79C0FF', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 110, left: 1040, width: 12, height: 12, borderRadius: 'sm', background: '#58A6FF', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 480, left: 410, width: 16, height: 16, borderRadius: 'sm', background: '#79C0FF', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 480, left: 800, width: 16, height: 16, borderRadius: 'sm', background: '#79C0FF', opacity: 0.8 }} />
+    {/* 中心内容框（半透明底用深色 hex 双层：底层装饰、上层内容） */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ position: 'relative', border: '2px solid #58A6FF', padding: 'xl xxl', borderRadius: 'sm', background: '#0D1117', boxShadow: '0 0 50px rgba(88,166,255,0.3)' }}>
+        {/* 连接点装饰（四角圆点） */}
+        <Box style={{ position: 'absolute', top: -6, left: -6, width: 10, height: 10, borderRadius: 'sm', background: '#58A6FF' }} />
+        <Box style={{ position: 'absolute', top: -6, right: -6, width: 10, height: 10, borderRadius: 'sm', background: '#58A6FF' }} />
+        <Box style={{ position: 'absolute', bottom: -6, left: -6, width: 10, height: 10, borderRadius: 'sm', background: '#58A6FF' }} />
+        <Box style={{ position: 'absolute', bottom: -6, right: -6, width: 10, height: 10, borderRadius: 'sm', background: '#58A6FF' }} />
+        <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, letterSpacing: 5, marginBottom: 'md' }}>{/* {{替换：主标题}} */}谢谢观看</Text>
+        <Text style={{ fontSize: 'card', color: '#58A6FF', letterSpacing: 3 }}>{/* {{替换：致谢语}} */}期待您的宝贵意见</Text>
+      </Box>
+    </Box>
+    {/* 网络状态指示 */}
+    <Box style={{ position: 'absolute', bottom: 20, left: 0, right: 0, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 'sm', opacity: 0.7 }}>
+      <Box style={{ width: 8, height: 8, borderRadius: 'sm', background: '#58A6FF' }} />
+      <Text style={{ fontSize: 'label', color: '#58A6FF', fontFamily: 'Courier New' }}>NETWORK STATUS: CONNECTED</Text>
+    </Box>
+  </Box>
+</Slide>

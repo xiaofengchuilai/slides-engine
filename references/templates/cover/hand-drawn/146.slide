@@ -1,0 +1,24 @@
+<Slide>
+  {/* hand-drawn/146 水彩融合：琥珀→玫瑰→青绿柔和渐变 + 水彩斑点 + 手绘虚线标签卡 */}
+  {/* 背景渐变（琥珀→玫瑰→青绿） */}
+  <Box style={{ width: 1280, height: 720, position: 'absolute', top: 0, left: 0, background: 'linear-gradient(135deg, #FFFBEB 0%, #FFF1F2 50%, #F0FDFA 100%)', justifyContent: 'center', alignItems: 'center' }} />
+  {/* 水彩斑点（左上，琥珀） */}
+  <Box style={{ position: 'absolute', top: 96, left: 128, width: 128, height: 128, borderRadius: 64, background: '#FDE68A', opacity: 0.4 }} />
+  {/* 水彩斑点（右上，玫瑰） */}
+  <Box style={{ position: 'absolute', top: 160, right: 192, width: 112, height: 112, borderRadius: 56, background: '#FECDD3', opacity: 0.35 }} />
+  {/* 水彩斑点（左下，青绿） */}
+  <Box style={{ position: 'absolute', bottom: 144, left: 192, width: 96, height: 96, borderRadius: 48, background: '#99F6E4', opacity: 0.3 }} />
+  {/* 水彩斑点（右下，琥珀深） */}
+  <Box style={{ position: 'absolute', bottom: 112, right: 144, width: 80, height: 80, borderRadius: 40, background: '#FCD34D', opacity: 0.25 }} />
+  {/* 主内容区 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 'hero', color: '#1F2937', bold: true, fontFamily: 'hand', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}水彩插画创作</Text>
+    <Text style={{ fontSize: 'card', color: '#4B5563', textAlign: 'center', marginTop: 'md', marginBottom: 'xl' }}>{/* {{副标题}} */}色彩融合·艺术表达</Text>
+    {/* 手绘虚线标签卡（白色纯底 + 橙虚线边框，阴影） */}
+    <RoughBox shape="rect" style={{ width: 320, height: 110, stroke: '#D97706', strokeWidth: 2, roughness: 1.5, fill: '#FFFFFF', fillStyle: 'solid', dash: [6, 5], position: 'absolute', top: 440, left: 480 }} />
+    <Box style={{ position: 'absolute', top: 440, left: 480, width: 320, height: 110, justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 'card', color: '#B45309', bold: true, textAlign: 'center' }}>{/* {{标签一}} */}艺术创作室</Text>
+      <Text style={{ fontSize: 'label', color: '#4B5563', textAlign: 'center', marginTop: 'xs' }}>{/* {{标签二}} */}绘画技法分享</Text>
+    </Box>
+  </Box>
+</Slide>

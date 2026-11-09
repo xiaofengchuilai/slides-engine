@@ -1,0 +1,62 @@
+<Slide>
+  {/* minimalist/1613 金融科技创新趋势：非对称三栏（45%文字 / 25%竖图 / 30%图文） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    <Box style={{ flexDirection: 'row', gap: 'xl', flex: 1 }}>
+      {/* 左栏：文字主导 */}
+      <Box style={{ flex: 1.8, justifyContent: 'center', gap: 'lg' }}>
+        <Box>
+          <Box style={{ background: 'primary', padding: 'xs md', borderRadius: 'sm', alignSelf: 'flex-start', marginBottom: 'md', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>行业分析</Text>
+          </Box>
+          <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'md' }}>{/* {{标题}} */}金融科技创新趋势</Text>
+          <Box style={{ width: 96, height: 2, background: 'primary', marginBottom: 'lg' }} />
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6, marginBottom: 'sm' }}>金融科技正在重塑传统金融业态，区块链、AI、大数据等技术深度融合，推动金融服务向更加智能化、普惠化方向发展。</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>预计到2026年，全球金融科技投资规模将突破3000亿美元。</Text>
+        </Box>
+        <Box style={{ gap: 'sm' }}>
+          {[
+            ['数字支付普及率达85%', 'primary'],
+            ['区块链应用场景拓展', 'secondary'],
+            ['智能风控技术成熟', 'muted'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', gap: 'md', alignItems: 'center', background: 'cardBg', borderRadius: 'sm', padding: 'sm md', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+              <Box style={{ width: 32, height: 32, borderRadius: 'sm', background: x[1], alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{i + 1}</Text>
+              </Box>
+              <Text style={{ fontSize: 'body', color: 'text' }}>{x[0]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+
+      {/* 中栏：竖图 */}
+      <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', alignItems: 'center', justifyContent: 'center', padding: 'md', gap: 'md', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+        <Box style={{ background: '#FFFFFF', padding: 'xs md', borderRadius: 'sm' }}>
+          <Text style={{ fontSize: 'label', color: 'text', bold: true }}>成熟度评估</Text>
+        </Box>
+        {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/radar.png" style={{ width: 200, height: 300, objectFit: 'cover' }} />
+      </Box>
+
+      {/* 右栏：图文混合 */}
+      <Box style={{ flex: 1.2, gap: 'md' }}>
+        <Box style={{ flex: 1, background: 'primary', borderRadius: 'md', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>¥3000亿</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.8 }}>预期投资规模</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.6 }}>2026年目标</Text>
+        </Box>
+        <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/growth.png" style={{ width: 220, height: 120, objectFit: 'cover' }} />
+        </Box>
+      </Box>
+    </Box>
+
+    {/* 底部条 */}
+    <Box style={{ height: 2, background: '#E5E7EB', marginTop: 'md', marginBottom: 'sm' }} />
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>数据来源：普华永道《2024全球金融科技报告》</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>调研范围：覆盖全球50+国家和地区</Text>
+    </Box>
+  </Box>
+</Slide>

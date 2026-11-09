@@ -1,0 +1,18 @@
+<Slide>
+  {/* decorative/hand-drawn/2012 简笔小装饰：浅底 + 手绘星星 + 云/叶/日/月线性图标装饰网格 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #FAFAF9 0%, #F5F5F4 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', alignItems: 'center', gap: 'xxl' }}>
+      <Box style={{ flexDirection: 'row', gap: 64, alignItems: 'center' }}>
+        <FAIcon name="cloud" style={{ width: 48, height: 32, fill: '#6B7280' }} />
+        <FAIcon name="leaf" style={{ width: 40, height: 40, fill: '#4D7C0F' }} />
+        <FAIcon name="leaf" style={{ width: 40, height: 40, fill: '#16A34A' }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 64, alignItems: 'center' }}>
+        {/* 手绘星星（amber-500） */}
+        <RoughBox shape="polygon" points={[[50, 0], [63, 35], [100, 35], [70, 58], [80, 95], [50, 72], [20, 95], [30, 58], [0, 35], [37, 35]]} style={{ width: 100, height: 95, stroke: '#F59E0B', strokeWidth: 2, roughness: 2, fill: 'none' }} />
+        <FAIcon name="sun" style={{ width: 44, height: 44, fill: '#F59E0B' }} />
+        <FAIcon name="moon" style={{ width: 40, height: 40, fill: '#64748B' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

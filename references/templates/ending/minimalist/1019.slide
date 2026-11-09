@@ -1,0 +1,10 @@
+<Slide>
+  {/* minimalist/1019 纯白致谢：超大字标题 + 细线 + 副文，大量留白 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', alignItems: 'center', justifyContent: 'center' }}>
+    <Box style={{ alignItems: 'center', gap: 'md' }}>
+      <Text style={{ fontSize: 'kpi', color: 'text', letterSpacing: 8 }}>{/* {{替换：致谢标题}} */}谢谢观看</Text>
+      <Box style={{ width: 90, height: 1, background: '#9CA3AF', marginTop: 'xl', marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'card', color: 'muted', lineHeight: 1.6 }}>{/* {{替换：副文}} */}感谢您的聆听</Text>
+    </Box>
+  </Box>
+</Slide>

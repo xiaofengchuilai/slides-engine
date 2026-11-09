@@ -1,0 +1,27 @@
+<Slide>
+  {/* cover/geometric 149 圆环交织封面：淡蓝紫渐变底 + 圆环装饰 + 白卡落款 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #EFF6FF 0%, #FFFFFF 50%, #FAF5FF 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 圆环装饰（左上） */}
+    <Shape type="ellipse" style={{ position: 'absolute', top: 96, left: 144, width: 128, height: 128, line: { color: '#93C5FD', width: 4 } }} />
+    <Shape type="ellipse" style={{ position: 'absolute', top: 128, left: 176, width: 96, height: 96, line: { color: '#D8B4FE', width: 3 } }} />
+    {/* 圆环装饰（右上） */}
+    <Shape type="ellipse" style={{ position: 'absolute', top: 112, right: 192, width: 112, height: 112, line: { color: '#A5B4FC', width: 4 } }} />
+    {/* 圆环装饰（左下） */}
+    <Shape type="ellipse" style={{ position: 'absolute', bottom: 144, left: 208, width: 80, height: 80, line: { color: '#60A5FA', width: 3 } }} />
+    {/* 圆环装饰（右下） */}
+    <Shape type="ellipse" style={{ position: 'absolute', bottom: 128, right: 176, width: 104, height: 104, line: { color: '#C084FC', width: 4 } }} />
+    {/* 主内容 */}
+    <Box style={{ alignItems: 'center', padding: '0 xl', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'md', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}数据可视化设计</Text>
+      <Text style={{ fontSize: 'card', color: 'muted', marginBottom: 'lg', textAlign: 'center' }}>{/* {{副标题}} */}圆环图表·信息呈现</Text>
+      {/* 白卡落款（左侧主色条） */}
+      <Box style={{ background: 'bg', padding: 'md xl', flexDirection: 'row', alignItems: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+        <Box style={{ width: 3, height: 48, background: '#3B82F6' }} />
+        <Box style={{ paddingLeft: 'md' }}>
+          <Text style={{ fontSize: 'body', color: '#2563EB', bold: true }}>{/* {{落款一}} */}数据分析部</Text>
+          <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>{/* {{落款二}} */}图表设计规范</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

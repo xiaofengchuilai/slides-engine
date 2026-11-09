@@ -1,0 +1,12 @@
+<Slide>
+  {/* title/tech/3025 科技风-霓虹灯效：深蓝底 + 霓虹大字标题 + 副标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E293B 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'hero', color: '#22d3ee', bold: true, letterSpacing: 4, textAlign: 'center' }}>{/* {{替换：标题}} */}AI REVOLUTION</Text>
+        <Box style={{ height: 3, width: 320, background: 'linear-gradient(90deg, rgba(34,211,238,0) 0%, #22d3ee 50%, rgba(34,211,238,0) 100%)', marginTop: 24, marginBottom: 16 }} />
+        <Text style={{ fontSize: 'card', color: '#67e8f9', letterSpacing: 8 }}>{/* {{替换：副标题}} */}人工智能变革</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

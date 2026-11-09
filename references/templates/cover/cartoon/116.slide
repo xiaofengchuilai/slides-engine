@@ -1,0 +1,30 @@
+<Slide>
+  {/* cartoon/116 棒棒糖：粉渐变底 + 棒棒糖装饰 + 星星 + 大标题 + 三色点 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FDF2F8 0%, #FBCFE8 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 棒棒糖装饰（右上：同心圆环） */}
+    <Box style={{ position: 'absolute', top: 64, right: 80, width: 96, height: 144 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 8, width: 80, height: 80, borderRadius: 40, border: '6px solid #F472B6' }} />
+      <Box style={{ position: 'absolute', top: 16, left: 24, width: 48, height: 48, borderRadius: 24, border: '6px solid #FFFFFF' }} />
+      <Box style={{ position: 'absolute', bottom: 0, left: 42, width: 8, height: 64, background: '#F9FAFB', borderRadius: 4 }} />
+    </Box>
+    {/* 棒棒糖装饰（左下：青环） */}
+    <Box style={{ position: 'absolute', bottom: 64, left: 80, width: 72, height: 128 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 4, width: 64, height: 64, borderRadius: 32, border: '6px solid #22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 12, left: 16, width: 40, height: 40, borderRadius: 20, border: '6px solid #FFFFFF' }} />
+      <Box style={{ position: 'absolute', bottom: 0, left: 32, width: 6, height: 56, background: '#F9FAFB', borderRadius: 3 }} />
+    </Box>
+    {/* 星星装饰（左上） */}
+    <Emoji name="⭐" style={{ position: 'absolute', top: 128, left: 128, width: 36, height: 36 }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 800 }}>
+      <Text style={{ fontSize: 'hero', color: '#F472B6', bold: true, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}糖果艺术节</Text>
+      <Text style={{ fontSize: 'card', color: '#22D3EE', bold: true, marginBottom: 'xl' }}>{/* {{替换：副标题}} */}甜蜜创意·缤纷童趣</Text>
+      <Box style={{ flexDirection: 'row', gap: 'md', justifyContent: 'center', marginBottom: 'xl' }}>
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#F472B6' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#22D3EE' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#FCD34D' }} />
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#4B5563', bold: true }}>{/* {{替换：落款}} */}创意美食坊 | 手工制作分享</Text>
+    </Box>
+  </Box>
+</Slide>

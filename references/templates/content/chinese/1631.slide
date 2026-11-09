@@ -1,0 +1,49 @@
+<Slide>
+  {/* chinese/1631 图文·左图右文：左侧大图 + 右侧标题/导语/三科技卡 + 印章降级 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF9F6 0%, #F5F3ED 100%)', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xxl', alignItems: 'center' }}>
+      {/* 左侧图片区 */}
+      <Box style={{ width: 450, height: 450, borderRadius: 'sm', background: '#FFFFFF', alignItems: 'center', justifyContent: 'center', border: '1px solid #E5E7EB' }}>
+        {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/chinese-1631.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      </Box>
+      {/* 右侧文字区 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        <Box>
+          <Text style={{ fontSize: 'title', color: '#8B4513', bold: true, marginBottom: 'sm', fontFamily: 'serif' }}>{/* {{替换：标题}} */}古代科技</Text>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+            <Box style={{ width: 80, height: 2, background: '#8B4513', opacity: 0.7 }} />
+            <Box style={{ width: 6, height: 6, borderRadius: 6, background: '#8B4513' }} />
+          </Box>
+          <Text style={{ fontSize: 'label', color: '#8A8A8A', letterSpacing: 1 }}>Ancient Chinese Technology</Text>
+        </Box>
+        <Box style={{ gap: 'lg' }}>
+          <Text style={{ fontSize: 'body', color: '#4A4A4A', lineHeight: 1.7 }}>
+            {/* {{替换：导语}} */}中国古代科技成就辉煌，从天文历法到水利工程，从机械制造到医药化学，展现了中华民族的智慧与创造力。
+          </Text>
+          <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+            {[
+              ['地动仪', '张衡发明'],
+              ['浑天仪', '观测天象'],
+              ['水运仪象台', '苏颂制造'],
+            ].map((x, i) => (
+              <Box key={i} style={{ flex: 1, gap: 'xs' }}>
+                <Box style={{ height: 4, background: '#8B4513', opacity: 0.3, marginBottom: 'sm' }} />
+                <Text style={{ fontSize: 'body', color: '#8B4513', bold: true, fontFamily: 'serif' }}>{/* {{替换：x[0]}} */}{x[0]}</Text>
+                <Text style={{ fontSize: 'label', color: '#6B7280' }}>{x[1]}</Text>
+              </Box>
+            ))}
+          </Box>
+          {/* 印章装饰（降级为简约红块） */}
+          <Box style={{ width: 40, height: 40, background: '#C41E3A', alignItems: 'center', justifyContent: 'center', marginTop: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>技</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+  {/* 底部功能文字 */}
+  <Box style={{ position: 'absolute', bottom: 24, left: 0, right: 0, alignItems: 'center' }}>
+    <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>参考：《中国科学技术史》· 李约瑟研究</Text>
+  </Box>
+</Slide>

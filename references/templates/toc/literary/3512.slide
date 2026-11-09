@@ -1,0 +1,35 @@
+<Slide>
+  {/* literary/3512 文艺风-书页翻转：浅灰渐变底 + 左标题（虚线分隔）+ 右罗马数字章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(90deg, #F1F5F9 0%, #F5F5F4 100%)', padding: 48 }}>
+    <Box style={{ height: 624, flexDirection: 'row' }}>
+      {/* 左页 */}
+      <Box style={{ width: 600, justifyContent: 'center', paddingRight: 40, position: 'relative' }}>
+        <Text style={{ fontSize: 'title', color: '#374151', bold: true, marginBottom: 16, fontFamily: 'serif' }}>{/* {{标题}} */}目录</Text>
+        <Text style={{ fontSize: 'body', color: '#6b7280', fontFamily: 'serif', marginBottom: 40 }}>{/* {{副标题}} */}Index of Chapters</Text>
+        <Box style={{ width: 112, height: 112, borderRadius: 56, border: '2px solid #9ca3af', opacity: 0.3, alignItems: 'center', justifyContent: 'center' }}>
+          <Box style={{ width: 40, height: 40, borderRadius: 20, border: '2px solid #9ca3af' }} />
+        </Box>
+        <Box style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 2, background: 'repeating-linear-gradient(180deg, #9ca3af 0px, #9ca3af 8px, rgba(0,0,0,0) 8px, rgba(0,0,0,0) 16px)', opacity: 0.5 }} />
+      </Box>
+      {/* 右页 */}
+      <Box style={{ flex: 1, justifyContent: 'center', paddingLeft: 40 }}>
+        <Box style={{ gap: 24 }}>
+          {[
+            ['I.', '引言', 'Introduction to the Topic'],
+            ['II.', '正文', 'Main Content Discussion'],
+            ['III.', '展开', 'Detailed Exploration'],
+            ['IV.', '结语', 'Conclusion & Summary'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', gap: 16, alignItems: 'baseline' }}>
+              <Text style={{ fontSize: 'kpi', color: '#9ca3af', fontFamily: 'serif', bold: true }}>{/* {{章节编号}} */}{x[0]}</Text>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+                <Text style={{ fontSize: 'body', color: '#6b7280', marginTop: 4, fontFamily: 'serif' }}>{/* {{章节副标题}} */}{x[2]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

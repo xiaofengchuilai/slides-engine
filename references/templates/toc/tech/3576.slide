@@ -1,0 +1,35 @@
+<Slide>
+  {/* tech/3576 科技风-雷达扫描：深蓝底 + 雷达圆环装饰 + 4 列章节卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0a1628 0%, #020814 100%)', padding: 48, position: 'relative' }}>
+    {/* 雷达圆环装饰 */}
+    <Box style={{ position: 'absolute', top: 60, right: 80, width: 220, height: 220, borderRadius: 110, border: '1px solid rgba(0,212,255,0.4)', opacity: 0.5 }} />
+    <Box style={{ position: 'absolute', top: 100, right: 120, width: 140, height: 140, borderRadius: 70, border: '1px solid rgba(0,212,255,0.3)', opacity: 0.5 }} />
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center', marginBottom: 32 }}>
+        <Text style={{ fontSize: 'title', color: '#22d3ee', bold: true, letterSpacing: 4 }}>{/* {{标题}} */}SCAN TARGETS</Text>
+        <Box style={{ flexDirection: 'row', gap: 8, marginTop: 16 }}>
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#22d3ee' }} />
+          <Box style={{ width: 32, height: 8, background: 'rgba(34,211,238,0.5)' }} />
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#22d3ee' }} />
+        </Box>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 20 }}>
+        {[
+          ['1', '项目背景', '了解项目的起源与目标'],
+          ['2', '核心功能', '产品的主要功能介绍'],
+          ['3', '技术架构', '系统设计与技术选型'],
+          ['4', '实施计划', '项目的推进与时间安排'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, border: '2px solid rgba(0,212,255,0.5)', background: 'linear-gradient(135deg, rgba(0,212,255,0.1) 0%, rgba(0,100,255,0.05) 100%)', padding: 24, alignItems: 'center', position: 'relative' }}>
+            <Box style={{ position: 'absolute', top: 0, right: 0, width: 16, height: 16, background: '#22d3ee', opacity: 0.3 }} />
+            <Box style={{ width: 70, height: 70, borderRadius: 35, border: '2px solid #22d3ee', background: 'rgba(0,212,255,0.15)', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+              <Text style={{ fontSize: 'kpi', color: '#22d3ee', bold: true }}>{/* {{章节编号}} */}{x[0]}</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#22d3ee', bold: true, marginBottom: 8, textAlign: 'center' }}>{/* {{章节名}} */}{x[1]}</Text>
+            <Text style={{ fontSize: 'body', color: '#67e8f9', textAlign: 'center' }}>{/* {{章节副标题}} */}{x[2]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

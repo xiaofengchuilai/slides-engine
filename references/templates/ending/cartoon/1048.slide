@@ -1,0 +1,43 @@
+<Slide>
+  {/* ending/cartoon/1048 卡通风-像素方块：浅蓝底+四角像素方块组+小方块、深灰标题+五色方块+副题 */}
+  <Box style={{ height: 720, width: 1280, background: '#F0F4FF', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 左上像素组 */}
+    <Box style={{ position: 'absolute', top: 58, left: 77, width: 35, height: 35, background: '#FF6B9D' }} />
+    <Box style={{ position: 'absolute', top: 58, left: 116, width: 35, height: 35, background: '#FFD93D' }} />
+    <Box style={{ position: 'absolute', top: 97, left: 77, width: 35, height: 35, background: '#6BCF7F' }} />
+    <Box style={{ position: 'absolute', top: 97, left: 116, width: 35, height: 35, background: '#4D9FFF' }} />
+    <Box style={{ position: 'absolute', top: 97, left: 155, width: 35, height: 35, background: '#C77DFF' }} />
+    {/* 右上像素组 */}
+    <Box style={{ position: 'absolute', top: 72, right: 103, width: 30, height: 30, background: '#FF6B9D' }} />
+    <Box style={{ position: 'absolute', top: 72, right: 141, width: 30, height: 30, background: '#6BCF7F' }} />
+    <Box style={{ position: 'absolute', top: 106, right: 103, width: 30, height: 30, background: '#FFD93D' }} />
+    <Box style={{ position: 'absolute', top: 106, right: 141, width: 30, height: 30, background: '#4D9FFF' }} />
+    {/* 左下像素组 */}
+    <Box style={{ position: 'absolute', bottom: 72, left: 90, width: 32, height: 32, background: '#C77DFF' }} />
+    <Box style={{ position: 'absolute', bottom: 72, left: 135, width: 32, height: 32, background: '#FF6B9D' }} />
+    <Box style={{ position: 'absolute', bottom: 108, left: 90, width: 32, height: 32, background: '#FFD93D' }} />
+    <Box style={{ position: 'absolute', bottom: 108, left: 135, width: 32, height: 32, background: '#6BCF7F' }} />
+    <Box style={{ position: 'absolute', bottom: 108, left: 180, width: 32, height: 32, background: '#4D9FFF' }} />
+    {/* 右下像素组 */}
+    <Box style={{ position: 'absolute', bottom: 58, right: 77, width: 38, height: 38, background: '#FFD93D' }} />
+    <Box style={{ position: 'absolute', bottom: 58, right: 128, width: 38, height: 38, background: '#FF6B9D' }} />
+    <Box style={{ position: 'absolute', bottom: 103, right: 77, width: 38, height: 38, background: '#6BCF7F' }} />
+    <Box style={{ position: 'absolute', bottom: 103, right: 128, width: 38, height: 38, background: '#C77DFF' }} />
+    {/* 小方块 */}
+    <Box style={{ position: 'absolute', top: 180, left: 192, width: 20, height: 20, background: '#FF6B9D' }} />
+    <Box style={{ position: 'absolute', top: 252, right: 230, width: 20, height: 20, background: '#4D9FFF' }} />
+    <Box style={{ position: 'absolute', bottom: 200, left: 256, width: 20, height: 20, background: '#FFD93D' }} />
+    <Box style={{ position: 'absolute', bottom: 230, right: 192, width: 20, height: 20, background: '#6BCF7F' }} />
+    <Box style={{ alignItems: 'center', gap: 'lg' }}>
+      <Text style={{ fontSize: 64, color: '#2D3748', bold: true, letterSpacing: 6 }}>{/* {{替换：致谢标题}} */}谢谢</Text>
+      <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+        <Box style={{ width: 25, height: 25, background: '#FF6B9D' }} />
+        <Box style={{ width: 25, height: 25, background: '#FFD93D' }} />
+        <Box style={{ width: 25, height: 25, background: '#6BCF7F' }} />
+        <Box style={{ width: 25, height: 25, background: '#4D9FFF' }} />
+        <Box style={{ width: 25, height: 25, background: '#C77DFF' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#4A5568', bold: true, letterSpacing: 2 }}>{/* {{替换：副题}} */}感谢您的耐心聆听</Text>
+    </Box>
+  </Box>
+</Slide>

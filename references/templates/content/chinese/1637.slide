@@ -1,0 +1,43 @@
+<Slide>
+  {/* chinese/1637 图文·左文右图：左侧标题/导语/要点 + 右侧大图 + 印章降级 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF9F6 0%, #F0EBE1 100%)', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xxl', alignItems: 'center' }}>
+      {/* 左侧文字区 */}
+      <Box style={{ width: 450, flexDirection: 'column', justifyContent: 'center', gap: 'lg' }}>
+        <Box>
+          <Text style={{ fontSize: 'title', color: '#8B4513', bold: true, marginBottom: 'md', fontFamily: 'serif' }}>{/* {{替换：标题}} */}山水画意</Text>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+            <Box style={{ width: 64, height: 2, background: '#8B4513', opacity: 0.7 }} />
+            <Box style={{ width: 6, height: 6, borderRadius: 6, background: '#8B4513' }} />
+          </Box>
+        </Box>
+        <Box style={{ gap: 'lg' }}>
+          <Text style={{ fontSize: 'body', color: '#4A4A4A', lineHeight: 1.7 }}>
+            {/* {{替换：导语}} */}中国山水画追求“外师造化，中得心源”的境界，通过笔墨的运用，展现自然山川的雄奇秀美。
+          </Text>
+          <Box style={{ gap: 'md' }}>
+            {['意境深远，气韵生动', '水墨为主，写意传神', '诗书画印，相得益彰'].map((x, i) => (
+              <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+                <Box style={{ width: 6, height: 6, borderRadius: 6, background: '#8B4513' }} />
+                <Text style={{ fontSize: 'body', color: '#4A4A4A' }}>{/* {{替换：x}} */}{x}</Text>
+              </Box>
+            ))}
+          </Box>
+          {/* 印章装饰（降级为简约红块） */}
+          <Box style={{ width: 40, height: 40, background: '#C41E3A', alignItems: 'center', justifyContent: 'center', marginTop: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>画</Text>
+          </Box>
+        </Box>
+      </Box>
+      {/* 右侧图片区 */}
+      <Box style={{ flex: 1, height: 500, borderRadius: 'sm', background: '#FFFFFF', alignItems: 'center', justifyContent: 'center', border: '1px solid #E5E7EB' }}>
+        {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/chinese-1637.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      </Box>
+    </Box>
+  </Box>
+  {/* 底部功能文字 */}
+  <Box style={{ position: 'absolute', bottom: 24, right: 80, alignItems: 'flex-end' }}>
+    <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>参考：《林泉高致》· 郭熙著 · 北宋山水画论</Text>
+  </Box>
+</Slide>

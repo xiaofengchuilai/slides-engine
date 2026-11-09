@@ -1,0 +1,56 @@
+<Slide>
+  {/* functional/business/2507 商务风-变体1：白底 + 章节导航/面包屑/行动卡/企业页脚组件组 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 20 }}>
+      {/* 导航 - 章节编号(英文) */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, border: '1px solid #D1D5DB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        <Box style={{ width: 40, height: 40, background: '#2563EB', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：章节号}} */}03</Text>
+        </Box>
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：章节名}} */}Chapter 03</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：副标签}} */}Market Analysis</Text>
+        </Box>
+      </Box>
+      {/* 导航 - 商务面包屑 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8, border: '1px solid #D1D5DB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：面包屑1}} */}Overview</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>▸</Text>
+        <Text style={{ fontSize: 'label', color: '#2563EB', bold: true }}>{/* {{替换：面包屑2}} */}Market Analysis</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>▸</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：面包屑3}} */}Strategy</Text>
+      </Box>
+      {/* 行动 - 专业行动卡片组 */}
+      <Box style={{ flexDirection: 'row', gap: 12 }}>
+        {[
+          ['📊', 'Download Report'],
+          ['💼', 'Contact Sales'],
+          ['❓', 'Q&A Session'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: 'sm', padding: 16, alignItems: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Emoji name={x[0]} style={{ width: 28, height: 28, marginBottom: 8 }} />
+            <Text style={{ fontSize: 'label', color: 'text', bold: true }}>{/* {{替换：按钮文字}} */}{x[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+      {/* 页脚 - 企业信息栏 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, border: '1px solid #D1D5DB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, flex: 1 }}>
+          <Box style={{ width: 32, height: 32, background: 'primary', borderRadius: 'sm' }} />
+          <Box>
+            <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：品牌名}} */}Enterprise Solutions Inc.</Text>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：网址}} */}www.enterprise.com</Text>
+          </Box>
+        </Box>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：版权}} */}Confidential | © 2024</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：页码标签}} */}Page</Text>
+          <Box style={{ width: 32, height: 32, background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{替换：页码}} */}3</Text>
+          </Box>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：总页数}} */}of 20</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

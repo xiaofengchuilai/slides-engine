@@ -1,0 +1,36 @@
+<Slide>
+  {/* geometric/3552 几何风-圆形轨道：青蓝底+圆形轨道装饰（Shape ellipse 圆环），2x2 白圆卡+圆形渐变数字 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #CFFAFE 0%, #BFDBFE 100%)', position: 'relative' }}>
+    {/* 背景轨道装饰（同心圆环） */}
+    <Shape type="ellipse" style={{ position: 'absolute', top: 72, left: 128, width: 1024, height: 576, line: { color: '#3B82F6', width: 8 }, fill: 'none', opacity: 0.1 }} />
+    <Shape type="ellipse" style={{ position: 'absolute', top: 144, left: 256, width: 768, height: 432, line: { color: '#06B6D4', width: 8 }, fill: 'none', opacity: 0.1 }} />
+    <Box style={{ height: 720, justifyContent: 'center', padding: 'xxl xl' }}>
+      <Box style={{ alignItems: 'center', marginBottom: 40 }}>
+        <Box style={{ background: '#FFFFFF', borderRadius: 999, paddingTop: 20, paddingBottom: 20, paddingLeft: 40, paddingRight: 40, boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Text style={{ fontSize: 'title', color: '#1E3A8A', bold: true, textAlign: 'center' }}>{/* {{替换：标题}} */}目录</Text>
+        </Box>
+      </Box>
+      {[
+        ['1', '项目背景'],
+        ['2', '核心功能'],
+        ['3', '技术架构'],
+        ['4', '实施计划'],
+      ].reduce((rows, item, idx) => {
+        if (idx % 2 === 0) rows.push([]);
+        rows[rows.length - 1].push(item);
+        return rows;
+      }, []).map((row, ri) => (
+        <Box key={ri} style={{ flexDirection: 'row', gap: 'lg', marginBottom: 24 }}>
+          {row.map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: '#FFFFFF', borderRadius: 999, padding: 'lg', flexDirection: 'row', alignItems: 'center', gap: 'lg', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+              <Box style={{ width: 80, height: 80, borderRadius: 999, background: 'linear-gradient(135deg, #0891B2 0%, #2563EB 100%)', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+                <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

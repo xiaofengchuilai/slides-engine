@@ -1,0 +1,30 @@
+<Slide>
+  {/* ending/cartoon/1045 卡通风-贴纸拼贴：米粉渐变底+四角贴纸（星/心/圆/三角）+白卡+彩点+副题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FEF9E7 0%, #FCE4EC 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 贴纸-左上（黄星 → 旋转星） */}
+    <Box style={{ position: 'absolute', top: 60, left: 100, width: 70, height: 70, borderRadius: 'sm', background: '#FFEA5C', rotate: 15 }} />
+    {/* 贴纸-右上（粉心） */}
+    <Box style={{ position: 'absolute', top: 90, right: 120, width: 60, height: 60, borderRadius: 'sm', background: '#FF6B9D' }} />
+    {/* 贴纸-左下（绿圆 + 👍 emoji） */}
+    <Box style={{ position: 'absolute', bottom: 90, left: 150, width: 70, height: 70, borderRadius: 'sm', background: '#77DD77', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+      <Emoji name="👍" style={{ width: 32, height: 32 }} />
+    </Box>
+    {/* 贴纸-右下（紫三角→圆 + 旋转） */}
+    <Box style={{ position: 'absolute', bottom: 110, right: 180, width: 60, height: 60, borderRadius: 'sm', background: '#B388FF', rotate: 20 }} />
+    {/* 小星星（彩色 emoji） */}
+    <Emoji name="✨" style={{ position: 'absolute', top: 200, left: 320, width: 20, height: 20 }} />
+    <Emoji name="✨" style={{ position: 'absolute', bottom: 230, right: 360, width: 22, height: 22 }} />
+    {/* 白卡 */}
+    <Box style={{ background: 'rgba(255,255,255,0.8)', borderRadius: 'lg', padding: 'xxl xxl', alignItems: 'center', gap: 'md', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Text style={{ fontSize: 62, color: '#FF6B9D', bold: true }}>{/* {{替换：致谢标题}} */}谢谢</Text>
+      <Box style={{ flexDirection: 'row', gap: 'xs' }}>
+        <Box style={{ width: 15, height: 15, background: '#FFEA5C', borderRadius: 'sm' }} />
+        <Box style={{ width: 15, height: 15, borderRadius: 'sm', background: '#FF6B9D' }} />
+        <Box style={{ width: 15, height: 15, borderRadius: 'sm', background: '#77DD77' }} />
+        <Box style={{ width: 15, height: 15, borderRadius: 'sm', background: '#B388FF' }} />
+        <Box style={{ width: 15, height: 15, background: '#66CCFF', borderRadius: 'sm' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#666666', bold: true }}>{/* {{替换：副题}} */}感谢您的宝贵时间</Text>
+    </Box>
+  </Box>
+</Slide>

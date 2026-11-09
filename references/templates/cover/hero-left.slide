@@ -1,0 +1,26 @@
+<Slide>
+  {/* cover/hero-left：左大色块 + 右标题钩子（深底反差） */}
+  <Box style={{ flexDirection: 'row', height: 720, width: 1280 }}>
+    {/* 左栏：主色深底，放装饰 + 关键词 */}
+    <Box style={{ width: 540, height: 720, background: 'primary', padding: '60px 50px', justifyContent: 'space-between' }}>
+      {/* 装饰：大圆 + 小圆（纯几何，不用图） */}
+      <Box style={{ width: 120, height: 120, borderRadius: 60, background: 'accent', opacity: 0.9 }} />
+      <Box>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', letterSpacing: 2 }}>{/* {{替换：上方小标签，如「2026 年度」}} */}2026 年度</Text>
+        <Text style={{ fontSize: 64, color: '#FFFFFF', bold: true, lineHeight: 1.1 }}>{/* {{替换：主关键词}} */}破局</Text>
+      </Box>
+      <Box style={{ width: 40, height: 6, background: 'accent' }} />
+    </Box>
+    {/* 右栏：白底，标题钩子 + 定位 + 落款 */}
+    <Box style={{ flex: 1, height: 720, background: 'bg', padding: '80px 70px', justifyContent: 'center' }}>
+      {/* 钩子：反直觉事实 / 尖锐问题 / 惊人数字 / 强烈对比 */}
+      <Text style={{ fontSize: 'card', color: 'accent', bold: true, lineHeight: 1.4 }}>{/* {{替换：钩子，一句话制造认知缺口}} */}80% 的增长，来自 20% 的决策</Text>
+      <Text style={{ fontSize: 52, color: 'text', bold: true, lineHeight: 1.2, marginTop: 16 }}>{/* {{替换：主标题}} */}2026 战略复盘与增长规划</Text>
+      <Text style={{ fontSize: 20, color: 'muted', lineHeight: 1.5, marginTop: 20 }}>{/* {{替换：一句话定位}} */}聚焦核心业务，重构增长引擎</Text>
+      <Box style={{ flexDirection: 'row', marginTop: 40, gap: 12 }}>
+        <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{替换：汇报人}} */}汇报人：张三</Text>
+        <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{替换：日期}} */}2026.08</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,17 @@
+<Slide>
+  {/* ending/flat 1082 渐变色卡结尾：浅灰底 + 四角渐变色卡 + 小色块 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'cardBg' }}>
+    {/* 渐变色卡装饰（+ 阴影 + 旋转） */}
+    <Box style={{ position: 'absolute', top: 64, left: 50, width: 180, height: 120, background: 'linear-gradient(135deg, #6366F1 0%, #6D28D9 100%)', borderRadius: 'sm', boxShadow: '0 12px 36px rgba(0,0,0,0.22)', rotate: -5 }} />
+    <Box style={{ position: 'absolute', top: 360, right: 64, width: 200, height: 130, background: 'linear-gradient(135deg, #F472B6 0%, #EF4444 100%)', borderRadius: 'sm', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }} />
+    <Box style={{ position: 'absolute', bottom: 80, left: 80, width: 170, height: 110, background: 'linear-gradient(135deg, #60A5FA 0%, #67E8F9 100%)', borderRadius: 'sm', boxShadow: '0 12px 36px rgba(0,0,0,0.22)', rotate: 8 }} />
+    {/* 小色块装饰（+ 旋转） */}
+    <Box style={{ position: 'absolute', top: 180, left: 384, width: 50, height: 50, background: 'linear-gradient(135deg, #F472B6 0%, #FDE047 100%)', borderRadius: 'sm', rotate: -15 }} />
+    <Box style={{ position: 'absolute', bottom: 216, right: 320, width: 60, height: 60, background: 'linear-gradient(135deg, #22D3EE 0%, #312E81 100%)', borderRadius: 'sm', rotate: 12 }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: 'text', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}致谢</Text>
+      <Text style={{ fontSize: 'card', color: 'text', textAlign: 'center' }}>{/* {{副标题}} */}欢迎交流与指导</Text>
+    </Box>
+  </Box>
+</Slide>

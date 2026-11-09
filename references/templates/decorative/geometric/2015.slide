@@ -1,0 +1,65 @@
+<Slide>
+  {/* decorative/geometric/2015 几何风-几何小点阵：白底 + 圆点/方块点阵元素网格 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 40 }}>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        {/* 3x3 圆点点阵 */}
+        <Box style={{ flexDirection: 'row', gap: 4 }}>
+          {[0, 1, 2].map((r) => (
+            <Box key={r} style={{ flexDirection: 'column', gap: 4 }}>
+              {[0, 1, 2].map((c) => (
+                <Box key={c} style={{ width: 8, height: 8, borderRadius: 4, background: '#6366F1' }} />
+              ))}
+            </Box>
+          ))}
+        </Box>
+        {/* 4x2 方块点阵 */}
+        <Box style={{ flexDirection: 'row', gap: 4 }}>
+          {[0, 1, 3, 4].map((r) => (
+            <Box key={r} style={{ flexDirection: 'column', gap: 4 }}>
+              {[0, 1].map((c) => (
+                <Box key={c} style={{ width: 8, height: 8, background: '#A855F7' }} />
+              ))}
+            </Box>
+          ))}
+        </Box>
+        {/* 2x3 双列蓝点 */}
+        <Box style={{ flexDirection: 'row', gap: 8 }}>
+          {[0, 1].map((c) => (
+            <Box key={c} style={{ flexDirection: 'column', gap: 8 }}>
+              {[0, 1, 2].map((r) => (
+                <Box key={r} style={{ width: 8, height: 8, background: '#3B82F6' }} />
+              ))}
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        {/* 2x2 对角圆点（靛/紫） */}
+        <Box style={{ flexDirection: 'row', gap: 8 }}>
+          <Box style={{ flexDirection: 'column', gap: 8 }}>
+            <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#6366F1' }} />
+            <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#A855F7' }} />
+          </Box>
+          <Box style={{ flexDirection: 'column', gap: 8 }}>
+            <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#A855F7' }} />
+            <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#6366F1' }} />
+          </Box>
+        </Box>
+        {/* 四色圆点横排（青/蓝/靛/紫） */}
+        <Box style={{ flexDirection: 'row', gap: 4, alignItems: 'center' }}>
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#06B6D4' }} />
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#3B82F6' }} />
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#6366F1' }} />
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#A855F7' }} />
+        </Box>
+        {/* 3 菱形点横排 */}
+        <Box style={{ flexDirection: 'row', gap: 8 }}>
+          {[0, 1, 2].map((i) => (
+            <Shape key={i} type="diamond" style={{ width: 8, height: 8, fill: '#6366F1', rotate: 45 }} />
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

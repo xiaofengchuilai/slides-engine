@@ -1,0 +1,25 @@
+<Slide>
+  {/* minimalist/3523 简约风-时间轴式：标题 + 垂直时间轴（圆点+PART 标签） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 48 }}>{/* {{标题}} */}目录</Text>
+      <Box style={{ position: 'relative' }}>
+        <Box style={{ position: 'absolute', left: 8, top: 0, bottom: 0, width: 2, background: 'line' }} />
+        <Box style={{ gap: 40, marginLeft: 80 }}>
+          {[
+            ['PART 01', '项目背景'],
+            ['PART 02', '核心功能'],
+            ['PART 03', '技术架构'],
+            ['PART 04', '实施计划'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 24, position: 'relative' }}>
+              <Box style={{ position: 'absolute', left: -52, top: 8, width: 16, height: 16, borderRadius: 8, border: '4px solid line', background: 'bg' }} />
+              <Text style={{ fontSize: 'label', color: 'muted', width: 80 }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

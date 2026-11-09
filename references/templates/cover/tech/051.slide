@@ -1,0 +1,34 @@
+<Slide>
+  {/* cover/tech/051 科技风-粒子流：深紫渐变底 + 粒子横线 + 主标题 + 副标题 + 落款卡 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #1E1B4B 0%, #2E1065 50%, #0F172A 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 粒子横线装饰 */}
+    <Box style={{ position: 'absolute', top: 180, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, #1E1B4B 0%, #7C3AED 50%, #1E1B4B 100%)' }} />
+    <Box style={{ position: 'absolute', top: 360, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, #1E1B4B 0%, #7C3AED 50%, #1E1B4B 100%)' }} />
+    <Box style={{ position: 'absolute', top: 540, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, #1E1B4B 0%, #7C3AED 50%, #1E1B4B 100%)' }} />
+    <Box style={{ justifyContent: 'center', alignItems: 'center', maxWidth: 1100 }}>
+      {/* 顶部装饰：横线 + 圆点 + 横线 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'lg', justifyContent: 'center', marginBottom: 'xxl' }}>
+        <Box style={{ width: 80, height: 2, background: 'linear-gradient(90deg, #2E1065 0%, #A855F7 100%)' }} />
+        <Box style={{ flexDirection: 'row', gap: 'xs' }}>
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#A855F7' }} />
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#A855F7' }} />
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#A855F7' }} />
+        </Box>
+        <Box style={{ width: 80, height: 2, background: 'linear-gradient(90deg, #A855F7 0%, #2E1065 100%)' }} />
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, letterSpacing: 3, textAlign: 'center', lineHeight: 1.1, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}量子计算研究</Text>
+      <Text style={{ fontSize: 'card', color: '#C4B5FD', fontWeight: 300, letterSpacing: 3, textAlign: 'center', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}QUANTUM COMPUTING RESEARCH</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', border: '2px solid #6D28D9', background: '#2E1065', borderRadius: 'md', padding: 'lg xl' }}>
+        <Box>
+          <Text style={{ fontSize: 'label', color: '#A78BFA', letterSpacing: 1, marginBottom: 4 }}>Presented by</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：落款一}} */}量子实验室</Text>
+        </Box>
+        <Box style={{ width: 1, height: 48, background: '#6D28D9' }} />
+        <Box>
+          <Text style={{ fontSize: 'label', color: '#A78BFA', letterSpacing: 1, marginBottom: 4 }}>Date</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：落款二}} */}2025/01/20</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

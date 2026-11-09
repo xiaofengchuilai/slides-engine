@@ -1,0 +1,66 @@
+<Slide>
+  {/* tech/3517 科技风-电路板：深绿渐变底 + 芯片标题 + 2x2 章节卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0a3d2e 0%, #1a2f1a 50%, #0d2818 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      {/* 标题区（芯片风格：左侧引脚细条 + 标题 + 下划线） */}
+      <Box style={{ marginBottom: 32, paddingLeft: 24, paddingRight: 24 }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16 }}>
+          <Box style={{ width: 6, height: 56, background: '#22c55e' }} />
+          <Text style={{ fontSize: 'title', color: '#4ade80', bold: true, letterSpacing: 4 }}>{/* {{标题}} */}CONTENTS</Text>
+        </Box>
+        <Box style={{ height: 2, background: 'rgba(34,197,94,0.4)', marginTop: 16 }} />
+      </Box>
+      {/* 2x2 章节卡片 */}
+      <Box style={{ gap: 20 }}>
+        <Box style={{ flexDirection: 'row', gap: 20 }}>
+          <Box style={{ flex: 1, border: '2px solid #22c55e', background: 'rgba(21,128,61,0.15)', padding: 20 }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, marginBottom: 16 }}>
+              <Box style={{ width: 48, height: 48, background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)', borderRadius: 8, alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 20px rgba(34,197,94,0.5)' }}>
+                <Text style={{ fontSize: 'card', color: '#0a3d2e', bold: true }}>{/* {{章节编号}} */}1</Text>
+              </Box>
+              <Box style={{ flex: 1, height: 2, background: 'linear-gradient(90deg, #22c55e 0%, rgba(34,197,94,0) 100%)' }} />
+              <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#4ade80', boxShadow: '0 0 10px rgba(74,222,128,0.7)' }} />
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#4ade80', bold: true, marginBottom: 8 }}>{/* {{章节名}} */}项目背景</Text>
+            <Text style={{ fontSize: 'body', color: '#86efac' }}>{/* {{章节副标题}} */}了解项目的起源与目标</Text>
+          </Box>
+          <Box style={{ flex: 1, border: '2px solid #22c55e', background: 'rgba(21,128,61,0.15)', padding: 20 }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, marginBottom: 16 }}>
+              <Box style={{ width: 48, height: 48, background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)', borderRadius: 8, alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 20px rgba(34,197,94,0.5)' }}>
+                <Text style={{ fontSize: 'card', color: '#0a3d2e', bold: true }}>{/* {{章节编号}} */}2</Text>
+              </Box>
+              <Box style={{ flex: 1, height: 2, background: 'linear-gradient(90deg, #22c55e 0%, rgba(34,197,94,0) 100%)' }} />
+              <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#4ade80', boxShadow: '0 0 10px rgba(74,222,128,0.7)' }} />
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#4ade80', bold: true, marginBottom: 8 }}>{/* {{章节名}} */}核心功能</Text>
+            <Text style={{ fontSize: 'body', color: '#86efac' }}>{/* {{章节副标题}} */}产品的主要功能介绍</Text>
+          </Box>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 20 }}>
+          <Box style={{ flex: 1, border: '2px solid #22c55e', background: 'rgba(21,128,61,0.15)', padding: 20 }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, marginBottom: 16 }}>
+              <Box style={{ width: 48, height: 48, background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)', borderRadius: 8, alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 20px rgba(34,197,94,0.5)' }}>
+                <Text style={{ fontSize: 'card', color: '#0a3d2e', bold: true }}>{/* {{章节编号}} */}3</Text>
+              </Box>
+              <Box style={{ flex: 1, height: 2, background: 'linear-gradient(90deg, #22c55e 0%, rgba(34,197,94,0) 100%)' }} />
+              <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#4ade80', boxShadow: '0 0 10px rgba(74,222,128,0.7)' }} />
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#4ade80', bold: true, marginBottom: 8 }}>{/* {{章节名}} */}技术架构</Text>
+            <Text style={{ fontSize: 'body', color: '#86efac' }}>{/* {{章节副标题}} */}系统设计与技术选型</Text>
+          </Box>
+          <Box style={{ flex: 1, border: '2px solid #22c55e', background: 'rgba(21,128,61,0.15)', padding: 20 }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, marginBottom: 16 }}>
+              <Box style={{ width: 48, height: 48, background: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)', borderRadius: 8, alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 20px rgba(34,197,94,0.5)' }}>
+                <Text style={{ fontSize: 'card', color: '#0a3d2e', bold: true }}>{/* {{章节编号}} */}4</Text>
+              </Box>
+              <Box style={{ flex: 1, height: 2, background: 'linear-gradient(90deg, #22c55e 0%, rgba(34,197,94,0) 100%)' }} />
+              <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#4ade80', boxShadow: '0 0 10px rgba(74,222,128,0.7)' }} />
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#4ade80', bold: true, marginBottom: 8 }}>{/* {{章节名}} */}实施计划</Text>
+            <Text style={{ fontSize: 'body', color: '#86efac' }}>{/* {{章节副标题}} */}项目的推进与时间安排</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

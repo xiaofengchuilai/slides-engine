@@ -1,0 +1,21 @@
+<Slide>
+  {/* decorative/black-gold/2022 黑金风-烫金小纹路：纯黑底 + 金色线条/方框/圆环/菱形装饰 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center', gap: 32 }}>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Box style={{ width: 48, height: 2, background: 'linear-gradient(90deg, rgba(234,179,8,0) 0%, #EAB308 50%, rgba(234,179,8,0) 100%)' }} />
+        <Box style={{ width: 40, height: 40, border: '2px double #C9A227' }} />
+        <Box style={{ width: 48, height: 48, borderRadius: 24, border: '2px solid #C9A227' }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Box style={{ width: 40, height: 40, border: '1px solid rgba(201,162,39,0.6)', borderRadius: 20 }} />
+        <Text style={{ fontSize: 'kpi', color: '#C9A227', bold: true }}>◆</Text>
+        <Text style={{ fontSize: 'kpi', color: '#C9A227', bold: true }}>✦</Text>
+        <Box style={{ width: 40, height: 40, position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 19, left: 0, width: 40, height: 2, background: '#C9A227', opacity: 0.7 }} />
+          <Box style={{ position: 'absolute', top: 0, left: 19, width: 2, height: 40, background: '#C9A227', opacity: 0.7 }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

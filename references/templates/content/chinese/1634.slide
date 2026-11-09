@@ -1,0 +1,39 @@
+<Slide>
+  {/* chinese/1634 纯文字·左右分栏：左标题区 + 右礼仪四卡列表 */}
+  <Box style={{ height: 720, width: 1280, background: '#FAF9F6', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl', padding: 'xl' }}>
+      {/* 左侧：标题区 */}
+      <Box style={{ width: 380, flexDirection: 'column', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'title', color: '#7A1F1F', bold: true, fontFamily: 'serif', marginBottom: 'md' }}>{/* {{替换：标题}} */}礼仪之邦</Text>
+        <Box style={{ width: 80, height: 1, background: '#7A1F1F', opacity: 0.3, marginBottom: 'lg' }} />
+        <Text style={{ fontSize: 'body', color: '#6B7280', lineHeight: 1.7, marginBottom: 'lg' }}>
+          {/* {{替换：导语}} */}中国自古被称为“礼仪之邦”，礼仪文化贯穿社会生活的方方面面，体现着中华民族的道德风范。
+        </Text>
+        <Text style={{ fontSize: 'label', color: '#8A8A8A', fontFamily: 'serif' }}>“不学礼，无以立”</Text>
+      </Box>
+      {/* 右侧：礼仪列表 */}
+      <Box style={{ flex: 1, flexDirection: 'column', justifyContent: 'center' }}>
+        <Box style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 'lg' }}>
+          {[
+            ['尊师重道', '师道尊严，尊重知识'],
+            ['敬老爱幼', '孝悌为先，关爱幼小'],
+            ['以礼待人', '温良恭俭让，彬彬有礼'],
+            ['诚信为本', '一诺千金，言而有信'],
+          ].map((x, i) => (
+            <Box key={i} style={{ width: '45%', flexDirection: 'row', gap: 'md', alignItems: 'flex-start', marginBottom: 'md' }}>
+              <Box style={{ width: 2, height: 48, background: '#7A1F1F', opacity: 0.3, marginTop: 4 }} />
+              <Box>
+                <Text style={{ fontSize: 'card', color: '#7A1F1F', bold: true, fontFamily: 'serif', marginBottom: 'xs' }}>{/* {{替换：x[0]}} */}{x[0]}</Text>
+                <Text style={{ fontSize: 'label', color: '#6B7280' }}>{x[1]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+  {/* 底部功能文字 */}
+  <Box style={{ position: 'absolute', bottom: 24, left: 0, right: 0, alignItems: 'center' }}>
+    <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>参考：《礼记》《周礼》等儒家经典</Text>
+  </Box>
+</Slide>

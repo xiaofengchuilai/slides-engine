@@ -1,0 +1,19 @@
+<Slide>
+  {/* cover/minimalist/089 半透明块：左上装饰块(左竖条+浅色块) + 居中标题 + 底部双段 */}
+  <Box style={{ height: 720, width: 1280, background: 'cardBg', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 原 bg-black/3 半透明块 + border-l-3 单边条：单边 border 禁止，改为左竖条 + 浅色块 */}
+    <Box style={{ position: 'absolute', top: 108, left: 80, width: 288, height: 192, flexDirection: 'row' }}>
+      <Box style={{ width: 3, background: 'text' }} />
+      <Box style={{ flex: 1, background: '#EEF2F6' }} />
+    </Box>
+    <Box style={{ alignItems: 'center', gap: 'xl' }}>
+      <Text style={{ fontSize: 'hero', color: 'text', lineHeight: 1.15, letterSpacing: 1 }}>{/* {{替换：主标题}} */}品质管理体系</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 3 }}>{/* {{替换：副标题}} */}精益求精·追求卓越</Text>
+      <Box style={{ flexDirection: 'row', gap: 'md', alignItems: 'center', marginTop: 'md' }}>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：部门}} */}质量管理部</Text>
+        <Box style={{ width: 32, height: 1, background: '#9CA3AF' }} />
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：主题}} */}体系建设汇报</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

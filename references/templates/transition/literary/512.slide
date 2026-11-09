@@ -1,0 +1,18 @@
+<Slide>
+  {/* transition/literary/512 文艺风-书签式：浅灰米渐变底 + 左侧彩条书签 + 章序/章节名 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(90deg, #F1F5F9 0%, #F5F5F4 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 40 }}>
+        <Box style={{ width: 8, height: 320, background: 'linear-gradient(180deg, #fbbf24 0%, #fb7185 50%, #c084fc 100%)', borderRadius: 4, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+        <Box style={{ alignItems: 'flex-start' }}>
+          <Box style={{ width: 64, height: 64, borderRadius: 32, background: '#f59e0b', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
+            <Emoji name="📖" style={{ width: 36, height: 36 }} />
+          </Box>
+          <Text style={{ fontSize: 'title', color: '#6b7280', fontFamily: 'serif', marginBottom: 8 }}>{/* {{替换：章序号}} */}第一章</Text>
+          <Text style={{ fontSize: 'title', color: '#374151', bold: true, marginBottom: 12, fontFamily: 'serif' }}>{/* {{替换：章节名}} */}项目背景</Text>
+          <Text style={{ fontSize: 'body', color: '#6b7280', fontFamily: 'serif' }}>{/* {{替换：一句章节导语}} */}— 了解项目的起源与目标 —</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,93 @@
+<Slide>
+  {/* educational/1646 计算机编程·Python入门：深色代码编辑器 + 左代码/运行结果 + 右数据类型/小贴士 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #1E293B 0%, #334155 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' }}>
+      <Box>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, fontFamily: 'monospace' }}>{/* {{替换：标题}} */}Python 入门</Text>
+        <Text style={{ fontSize: 'body', color: '#4ADE80', fontFamily: 'monospace', marginTop: 'xs' }}>{/* {{替换：副标题}} */}第1课：变量与数据类型</Text>
+      </Box>
+      <FAIcon name="python" style={{ fill: '#60A5FA', width: 40, height: 40 }} />
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+      {/* 左侧：代码示例 + 运行结果 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        <Box style={{ background: '#0F172A', border: '1px solid #374151', borderRadius: 'md', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Box style={{ background: '#1F2937', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 'xs lg' }}>
+            <Box style={{ flexDirection: 'row', gap: 'xs' }}>
+              <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#EF4444' }} />
+              <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#F59E0B' }} />
+              <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#22C55E' }} />
+            </Box>
+            <Text style={{ fontSize: 'label', color: '#9CA3AF', fontFamily: 'monospace' }}>example.py</Text>
+          </Box>
+          <Box style={{ padding: 'lg', gap: 'xs' }}>
+            <Text style={{ fontSize: 'label', color: '#6B7280', fontFamily: 'monospace' }}>1  # 定义变量</Text>
+            <Text style={{ fontSize: 'label', color: '#93C5FD', fontFamily: 'monospace' }}>2  name = "小明"</Text>
+            <Text style={{ fontSize: 'label', color: '#93C5FD', fontFamily: 'monospace' }}>3  age = 10</Text>
+            <Text style={{ fontSize: 'label', color: '#93C5FD', fontFamily: 'monospace' }}>4  height = 1.45</Text>
+            <Text style={{ fontSize: 'label', color: '#93C5FD', fontFamily: 'monospace' }}>5  is_student = True</Text>
+            <Text style={{ fontSize: 'label', color: '#6B7280', fontFamily: 'monospace' }}>6</Text>
+            <Text style={{ fontSize: 'label', color: '#6B7280', fontFamily: 'monospace' }}>7  # 打印信息</Text>
+            <Text style={{ fontSize: 'label', color: '#F472B6', fontFamily: 'monospace' }}>{'print(f"我叫{name}")'}</Text>
+          </Box>
+        </Box>
+        <Box style={{ background: '#0F172A', border: '1px solid rgba(74,222,128,0.3)', borderRadius: 'md', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Box style={{ background: 'rgba(20,83,45,0.2)', padding: 'xs lg' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+              <FAIcon name="check-circle" style={{ fill: '#4ADE80', width: 14, height: 14 }} />
+              <Text style={{ fontSize: 'label', color: '#4ADE80', fontFamily: 'monospace' }}>{/* {{替换：标题}} */}运行结果</Text>
+            </Box>
+          </Box>
+          <Box style={{ padding: 'lg' }}>
+            <Text style={{ fontSize: 'body', color: '#4ADE80', fontFamily: 'monospace' }}>{/* {{替换：运行输出}} */}我叫小明</Text>
+          </Box>
+        </Box>
+      </Box>
+      {/* 右侧：知识点 + 小贴士 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        <Box style={{ background: 'rgba(71,85,105,0.4)', border: '1px solid #475569', borderRadius: 'md', padding: 'lg' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+            <Box style={{ width: 32, height: 32, background: '#3B82F6', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+              <FAIcon name="cog" style={{ fill: '#FFFFFF', width: 18, height: 18 }} />
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：标题}} */}数据类型</Text>
+          </Box>
+          <Box style={{ gap: 'sm' }}>
+            {[
+              ['str (字符串)', '用引号包裹的文本，如 "hello"', '#22C55E'],
+              ['int (整数)', '没有小数点的数字，如 10, -5', '#FB923C'],
+              ['float (浮点数)', '带小数点的数字，如 3.14', '#FACC15'],
+              ['bool (布尔值)', '只有 True 或 False', '#C084FC'],
+            ].map((x, i) => (
+              <Box key={i} style={{ flexDirection: 'row', background: 'rgba(51,65,85,0.5)', borderRadius: 'sm', padding: 'sm' }}>
+                <Box style={{ width: 4, background: x[2], borderRadius: 2, marginRight: 'sm', alignSelf: 'stretch' }} />
+                <Box>
+                  <Text style={{ fontSize: 'label', color: x[2], fontFamily: 'monospace', bold: true }}>{/* {{替换：类型名}} */}{x[0]}</Text>
+                  <Text style={{ fontSize: 'label', color: '#D1D5DB' }}>{/* {{替换：说明}} */}{x[1]}</Text>
+                </Box>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Box style={{ background: 'rgba(59,130,246,0.12)', border: '1px solid rgba(59,130,246,0.3)', borderRadius: 'md', padding: 'lg' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Emoji name="💡" style={{ width: 18, height: 18 }} />
+            <Text style={{ fontSize: 'body', color: '#60A5FA', bold: true }}>{/* {{替换：标题}} */}编程小贴士</Text>
+          </Box>
+          <Box style={{ gap: 'xs' }}>
+            {[
+              '变量名要有意义，使用英文或拼音',
+              '多个单词用下划线连接：is_student',
+              'Python会自动识别数据类型',
+            ].map((x, i) => (
+              <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+                <Text style={{ fontSize: 'label', color: '#60A5FA', bold: true }}>▸</Text>
+                <Text style={{ fontSize: 'label', color: '#D1D5DB' }}>{/* {{替换：贴士}} */}{x}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

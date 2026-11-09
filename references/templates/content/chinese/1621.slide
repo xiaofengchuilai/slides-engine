@@ -1,0 +1,31 @@
+<Slide>
+  {/* chinese/1621 三图横排·丝绸之路：标题 + 导语 + 三图卡 */}
+  <Box style={{ height: 720, width: 1280, background: '#FAF9F6', padding: 'xxl xl' }}>
+    {/* 标题区 */}
+    <Box style={{ marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true }}>{/* {{替换：主标题}} */}丝绸之路</Text>
+      <Box style={{ width: 80, height: 2, background: 'rgba(168, 24, 16, 0.3)', marginTop: 'md', marginBottom: 'lg' }} />
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.8, maxWidth: 720 }}>{/* {{替换：导语}} */}
+        丝绸之路是古代连接东西方文明的重要通道，促进了商品、文化、技术的交流与传播。
+      </Text>
+    </Box>
+    {/* 三图横排 */}
+    <Box style={{ flexDirection: 'row', gap: 'xl', height: 420 }}>
+      {[
+        ['陆上丝路', '穿越沙漠戈壁\n连接中亚欧洲'],
+        ['海上丝路', '航行南海印度洋\n通达东南亚非洲'],
+        ['文化交融', '文明对话互鉴\n东西文化交流'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1 }}>
+          <Box style={{ alignItems: 'center', justifyContent: 'center', marginBottom: 'md' }}>
+            {/* {{图片：有图填 assets/images/silkroad-{i+1}.png，无图删掉整个 <Image>}} */}
+            <Image src={`assets/images/silkroad-${i + 1}.png`} style={{ objectFit: 'cover', width: '100%', height: 340 }} />
+          </Box>
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.7, textAlign: 'center' }}>{x[1].split('\n').join('\n')}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 功能文字 */}
+    <Text style={{ fontSize: 'label', color: 'muted', position: 'absolute', right: 80, bottom: 24 }}>{/* {{替换：来源}} */}UNESCO世界文化遗产 · 2014年入选</Text>
+  </Box>
+</Slide>

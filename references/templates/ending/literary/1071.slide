@@ -1,0 +1,29 @@
+<Slide>
+  {/* ending/literary/1071 文艺风-手绘花卉：浅粉渐变 + 角部花朵装饰 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #FFF5EE 0%, #FFE4E1 100%)' }}>
+    {/* 角部花卉装饰（降级为圆环组+枝条线） */}
+    <Box style={{ position: 'absolute', top: 50, left: 50, width: 200, height: 200, opacity: 0.4 }}>
+      <Box style={{ position: 'absolute', top: 20, left: 20, width: 56, height: 56, borderRadius: 28, border: '2px solid #E8B4B8' }} />
+      <Box style={{ position: 'absolute', top: 20, left: 92, width: 56, height: 56, borderRadius: 28, border: '2px solid #E8B4B8' }} />
+      <Box style={{ position: 'absolute', top: 92, left: 20, width: 56, height: 56, borderRadius: 28, border: '2px solid #E8B4B8' }} />
+      <Box style={{ position: 'absolute', top: 92, left: 92, width: 56, height: 56, borderRadius: 28, border: '2px solid #E8B4B8' }} />
+      <Shape type="line" style={{ width: 0, height: 70, position: 'absolute', top: 120, left: 60, line: { color: '#C9A896', width: 2 } }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 50, right: 50, width: 220, height: 220, opacity: 0.4 }}>
+      <Box style={{ position: 'absolute', top: 30, left: 30, width: 60, height: 60, borderRadius: 30, border: '2px solid #D4B8C5' }} />
+      <Box style={{ position: 'absolute', top: 30, left: 105, width: 60, height: 60, borderRadius: 30, border: '2px solid #D4B8C5' }} />
+      <Box style={{ position: 'absolute', top: 105, left: 30, width: 60, height: 60, borderRadius: 30, border: '2px solid #D4B8C5' }} />
+      <Box style={{ position: 'absolute', top: 105, left: 105, width: 60, height: 60, borderRadius: 30, border: '2px solid #D4B8C5' }} />
+    </Box>
+    {/* 顶部装饰曲线 */}
+    <Shape type="line" style={{ width: 260, height: 0, position: 'absolute', top: 40, left: 510, line: { color: '#D4B8C5', width: 1.5 } }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#8B6F78', fontFamily: 'serif', marginBottom: 'xl' }}>{/* {{替换：主标题}} */}谢谢</Text>
+      <Text style={{ fontSize: 'title', color: '#A68A96', fontFamily: 'serif', lineHeight: 1.8 }}>{/* {{替换：致谢语}} */}感谢您的关注与支持</Text>
+    </Box>
+    {/* 小装饰点 */}
+    <Box style={{ position: 'absolute', top: 215, left: 320, width: 6, height: 6, borderRadius: 3, background: '#E8B4B8' }} />
+    <Box style={{ position: 'absolute', top: 470, right: 360, width: 8, height: 8, borderRadius: 4, background: '#D4B8C5' }} />
+  </Box>
+</Slide>

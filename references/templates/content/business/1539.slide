@@ -1,0 +1,100 @@
+<Slide>
+  {/* business/1539 商业模式画布：5 列网格（左三卡 / 价值主张 / 右三卡 / 成本+收入） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 标题 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'md' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：页面标题}} */}商业模式画布</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', marginTop: 'xs' }}>Business Model Canvas</Text>
+    </Box>
+
+    {/* 画布网格：5 列（左3卡 / 价值主张 / 右3卡 / 成本+收入） */}
+    <Box style={{ flexDirection: 'row', gap: 'md', flex: 1, alignItems: 'stretch' }}>
+      {/* 左列：关键合作 / 关键业务 / 核心资源 */}
+      <Box style={{ flex: 1, gap: 'md' }}>
+        {[
+          ['关键合作', ['云服务商', '技术合作伙伴', '渠道分销商', '战略投资方'], '#FFEDD5', '#FDBA74', '#9A3412', '#C2410C'],
+          ['关键业务', ['产品研发', '平台运营', '客户服务', '市场推广'], '#DBEAFE', '#93C5FD', '#1E40AF', '#1D4ED8'],
+          ['核心资源', ['技术团队', '知识产权', '品牌资产', '客户数据'], '#F3E8FF', '#D8B4FE', '#6B21A8', '#7C3AED'],
+        ].map((c, i) => (
+          <Box key={i} style={{ flex: 1, background: c[2], border: '2px solid ' + c[3], borderRadius: 'md', padding: 'md', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+            <Text style={{ fontSize: 'card', color: c[4], bold: true, marginBottom: 'sm' }}>{c[0]}</Text>
+            {c[1].map((item, j) => (
+              <Text key={j} style={{ fontSize: 'body', color: c[5], marginTop: 'xs' }}>• {item}</Text>
+            ))}
+          </Box>
+        ))}
+      </Box>
+
+      {/* 中列：价值主张 */}
+      <Box style={{ flex: 1, background: 'linear-gradient(135deg, #10B981 0%, #16A34A 100%)', borderRadius: 'md', padding: 'lg', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, textAlign: 'center', marginBottom: 'md' }}>价值主张</Text>
+        {[
+          ['高效智能', 'AI驱动的自动化解决方案'],
+          ['安全可靠', '企业级安全保障体系'],
+          ['灵活可扩展', '模块化架构按需定制'],
+        ].map((v, i) => (
+          <Box key={i} style={{ background: '#FFFFFF', opacity: 0.18, borderRadius: 'sm', padding: 'md', marginBottom: 'sm' }}>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{v[0]}</Text>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.92, marginTop: 'xs' }}>{v[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+
+      {/* 右列：客户关系 / 渠道通路 / 客户细分 */}
+      <Box style={{ flex: 1, gap: 'md' }}>
+        {[
+          ['客户关系', ['专属客户经理', '7x24技术支持', '在线社区', '定期培训'], '#FCE7F3', '#F9A8D4', '#9D174D', '#BE185D'],
+          ['渠道通路', ['官方网站', '直销团队', '合作伙伴', '线上广告'], '#CFFAFE', '#67E8F9', '#155E75', '#0891B2'],
+          ['客户细分', ['大型企业', '中小企业', '政府机构', '教育机构'], '#E0E7FF', '#A5B4FC', '#3730A3', '#4338CA'],
+        ].map((c, i) => (
+          <Box key={i} style={{ flex: 1, background: c[2], border: '2px solid ' + c[3], borderRadius: 'md', padding: 'md', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+            <Text style={{ fontSize: 'card', color: c[4], bold: true, marginBottom: 'sm' }}>{c[0]}</Text>
+            {c[1].map((item, j) => (
+              <Text key={j} style={{ fontSize: 'body', color: c[5], marginTop: 'xs' }}>• {item}</Text>
+            ))}
+          </Box>
+        ))}
+      </Box>
+
+      {/* 右端（2 份宽）：成本结构 + 收入来源 */}
+      <Box style={{ flex: 2, gap: 'md' }}>
+        <Box style={{ flex: 1, background: '#FEE2E2', border: '2px solid #FCA5A5', borderRadius: 'md', padding: 'md', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          <Text style={{ fontSize: 'card', color: '#991B1B', bold: true, marginBottom: 'md' }}>成本结构</Text>
+          <Box style={{ gap: 'md', flex: 1 }}>
+            {[
+              [['研发成本', '35%'], ['运营成本', '25%']],
+              [['销售成本', '20%'], ['管理成本', '20%']],
+            ].map((row, i) => (
+              <Box key={i} style={{ flexDirection: 'row', gap: 'md', flex: 1 }}>
+                {row.map((x, j) => (
+                  <Box key={j} style={{ flex: 1, background: '#FFFFFF', opacity: 0.6, borderRadius: 'sm', padding: 'md', alignItems: 'center', justifyContent: 'center' }}>
+                    <Text style={{ fontSize: 'label', color: '#B91C1C' }}>{x[0]}</Text>
+                    <Text style={{ fontSize: 'card', color: '#991B1B', bold: true, marginTop: 'xs' }}>{x[1]}</Text>
+                  </Box>
+                ))}
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Box style={{ flex: 1, background: '#D1FAE5', border: '2px solid #6EE7B7', borderRadius: 'md', padding: 'md', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          <Text style={{ fontSize: 'card', color: '#065F46', bold: true, marginBottom: 'md' }}>收入来源</Text>
+          <Box style={{ gap: 'md', flex: 1 }}>
+            {[
+              [['订阅费用', '50%'], ['定制开发', '30%']],
+              [['技术服务', '15%'], ['培训咨询', '5%']],
+            ].map((row, i) => (
+              <Box key={i} style={{ flexDirection: 'row', gap: 'md', flex: 1 }}>
+                {row.map((x, j) => (
+                  <Box key={j} style={{ flex: 1, background: '#FFFFFF', opacity: 0.6, borderRadius: 'sm', padding: 'md', alignItems: 'center', justifyContent: 'center' }}>
+                    <Text style={{ fontSize: 'label', color: '#047857' }}>{x[0]}</Text>
+                    <Text style={{ fontSize: 'card', color: '#065F46', bold: true, marginTop: 'xs' }}>{x[1]}</Text>
+                  </Box>
+                ))}
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

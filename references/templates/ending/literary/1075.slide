@@ -1,0 +1,27 @@
+<Slide>
+  {/* ending/literary/1075 文艺风-墨迹晕染：米白渐变 + 墨色笔触 + 居中致谢 + 印章 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #FDFBF7 0%, #F7F4ED 100%)' }}>
+    {/* 墨迹晕染降级为低透明圆斑 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 260, height: 260, borderRadius: 130, background: '#645A50', opacity: 0.08 }} />
+    <Box style={{ position: 'absolute', top: 290, right: 0, width: 280, height: 280, borderRadius: 140, background: '#78645A', opacity: 0.06 }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 320, width: 240, height: 240, borderRadius: 120, background: '#6E5F55', opacity: 0.07 }} />
+    {/* 墨迹笔触降级为粗横线 */}
+    <Box style={{ position: 'absolute', top: 145, left: 155, width: 200, height: 14, background: '#5A4A3A', opacity: 0.15, borderRadius: 7 }} />
+    <Box style={{ position: 'absolute', top: 165, left: 170, width: 180, height: 10, background: '#6A5545', opacity: 0.2, borderRadius: 5 }} />
+    <Box style={{ position: 'absolute', bottom: 130, right: 130, width: 180, height: 12, background: '#5A4A3A', opacity: 0.12, borderRadius: 6 }} />
+    {/* 墨点装饰 */}
+    <Box style={{ position: 'absolute', top: 250, left: 260, width: 8, height: 8, borderRadius: 4, background: '#5A4A3A', opacity: 0.2 }} />
+    <Box style={{ position: 'absolute', top: 275, left: 295, width: 5, height: 5, borderRadius: 2, background: '#5A4A3A', opacity: 0.15 }} />
+    <Box style={{ position: 'absolute', bottom: 215, right: 280, width: 10, height: 10, borderRadius: 5, background: '#5A4A3A', opacity: 0.18 }} />
+    <Box style={{ position: 'absolute', bottom: 240, right: 320, width: 6, height: 6, borderRadius: 3, background: '#5A4A3A', opacity: 0.12 }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#5A4A3A', fontFamily: 'serif', letterSpacing: 1, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}谢谢</Text>
+      <Text style={{ fontSize: 'title', color: '#7A6555', fontFamily: 'serif', lineHeight: 1.8 }}>{/* {{替换：致谢语}} */}感谢您的宝贵时间</Text>
+    </Box>
+    {/* 印章效果（降级为圆环+文字） */}
+    <Box style={{ position: 'absolute', bottom: 120, right: 150, width: 70, height: 70, borderRadius: 35, border: '3px solid #8B4513', opacity: 0.4, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'card', color: '#8B4513', bold: true, fontFamily: 'serif' }}>谢</Text>
+    </Box>
+  </Box>
+</Slide>

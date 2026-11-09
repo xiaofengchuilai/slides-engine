@@ -1,0 +1,12 @@
+<Slide>
+  {/* transition/flat/553 渐变条纹：蓝紫粉渐变底，白卡内渐变文字大章节号+章节名+导语 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(90deg, #3B82F6 0%, #A855F7 50%, #EC4899 100%)' }}>
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ background: '#FFFFFF', paddingTop: 64, paddingBottom: 64, paddingLeft: 96, paddingRight: 96, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 96, bold: true, marginBottom: 24, textAlign: 'center', backgroundImage: 'linear-gradient(90deg, #3B82F6 0%, #A855F7 50%, #EC4899 100%)', backgroundClip: 'text', color: 'transparent' }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Text style={{ fontSize: 'title', color: '#111827', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'card', color: 'muted', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

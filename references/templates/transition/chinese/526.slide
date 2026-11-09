@@ -1,0 +1,24 @@
+<Slide>
+  {/* transition/chinese/526 中国风-祥云飘渺：蓝白米渐变底 + 云朵 + 金点 + 居中章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #E6F2FF 0%, #CCE0F5 50%, #F5F0E6 100%)', padding: 48, position: 'relative' }}>
+    {/* 祥云（椭圆组合降级） */}
+    <Box style={{ position: 'absolute', top: 40, left: 40, width: 160, height: 80, borderRadius: 80, background: 'rgba(255,255,255,0.5)' }} />
+    <Box style={{ position: 'absolute', top: 64, left: 96, width: 128, height: 64, borderRadius: 64, background: 'rgba(255,255,255,0.4)' }} />
+    <Box style={{ position: 'absolute', bottom: 40, right: 40, width: 176, height: 88, borderRadius: 88, background: 'rgba(255,255,255,0.5)' }} />
+    <Box style={{ position: 'absolute', bottom: 56, right: 104, width: 144, height: 72, borderRadius: 72, background: 'rgba(255,255,255,0.4)' }} />
+    {/* 金色点缀 */}
+    <Box style={{ position: 'absolute', top: 240, left: 320, width: 8, height: 8, borderRadius: 4, background: '#d4af37', opacity: 0.6 }} />
+    <Box style={{ position: 'absolute', top: 480, right: 320, width: 8, height: 8, borderRadius: 4, background: '#d4af37', opacity: 0.6 }} />
+    {/* 印章 */}
+    <Box style={{ position: 'absolute', bottom: 64, right: 64, width: 64, height: 64, background: 'linear-gradient(135deg, #C41E3A 0%, #8B1428 100%)', alignItems: 'center', justifyContent: 'center', opacity: 0.7, rotate: 8 }}>
+      <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>{/* {{印章字}} */}云</Text>
+    </Box>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'card', color: '#8b4513', letterSpacing: 8, fontFamily: 'serif', marginBottom: 20, opacity: 0.8 }}>{/* {{替换：章序号}} */}· 第一章 ·</Text>
+        <Text style={{ fontSize: 'title', color: '#2d2d2d', bold: true, letterSpacing: 4, fontFamily: 'serif', marginBottom: 24 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#666666', fontFamily: 'serif' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

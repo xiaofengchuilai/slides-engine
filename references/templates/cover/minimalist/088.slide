@@ -1,0 +1,13 @@
+<Slide>
+  {/* cover/minimalist/088 纯白底色：右上角方块叠层装饰 + 居中标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ position: 'absolute', top: 144, right: 192, width: 40, height: 40, border: '1px solid #D1D5DB' }}>
+      <Box style={{ position: 'absolute', top: 6, left: 6, width: 20, height: 20, background: '#F1F5F9' }} />
+    </Box>
+    <Box style={{ alignItems: 'center', gap: 'xl' }}>
+      <Text style={{ fontSize: 'hero', color: 'text', lineHeight: 1.15, letterSpacing: 2 }}>{/* {{替换：主标题}} */}极简工作法</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 3 }}>{/* {{替换：副标题}} */}提升效率·回归本真</Text>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginTop: 'md' }}>{/* {{替换：部门/主题}} */}效率提升部 | 工作方法分享</Text>
+    </Box>
+  </Box>
+</Slide>

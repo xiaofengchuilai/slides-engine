@@ -1,0 +1,22 @@
+<Slide>
+  {/* cover/flat 027 卡片网格封面：灰底 + 标题 + 三张渐变数据卡 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'cardBg', alignItems: 'center', justifyContent: 'center', padding: 'xxl' }}>
+    <Box style={{ width: '100%', maxWidth: 960 }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'xl', textAlign: 'center' }}>{/* {{主标题}} */}用户研究报告</Text>
+      <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+        <Box style={{ flex: 1, background: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)', borderRadius: 'lg', padding: 'xl', alignItems: 'center' }}>
+          <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{指标一}} */}75%</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{指标一说明}} */}用户满意度</Text>
+        </Box>
+        <Box style={{ flex: 1, background: 'linear-gradient(135deg, #22C55E 0%, #16A34A 100%)', borderRadius: 'lg', padding: 'xl', alignItems: 'center' }}>
+          <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{指标二}} */}10K+</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{指标二说明}} */}活跃用户</Text>
+        </Box>
+        <Box style={{ flex: 1, background: 'linear-gradient(135deg, #A855F7 0%, #9333EA 100%)', borderRadius: 'lg', padding: 'xl', alignItems: 'center' }}>
+          <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{指标三}} */}4.8</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{指标三说明}} */}应用评分</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

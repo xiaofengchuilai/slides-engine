@@ -1,0 +1,13 @@
+<Slide>
+  {/* black-gold/034 立体边框：黑底 + 金边大卡 + 皇冠 + 大标题 + 英文副标 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 金色外衬（渐变） */}
+    <Box style={{ position: 'absolute', width: 720, height: 440, background: 'linear-gradient(90deg, #CA8A04 0%, #EAB308 50%, #CA8A04 100%)' }} />
+    {/* 黑底金边主卡 */}
+    <Box style={{ width: 680, height: 400, background: '#000000', border: '5px solid #CA8A04', alignItems: 'center', justifyContent: 'center' }}>
+      <FAIcon name="crown" style={{ fill: '#EAB308', width: 56, height: 56, marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, letterSpacing: 4, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}商务尊享</Text>
+      <Text style={{ fontSize: 'card', color: '#CA8A04', letterSpacing: 8 }}>{/* {{替换：英文副标}} */}BUSINESS ELITE</Text>
+    </Box>
+  </Box>
+</Slide>

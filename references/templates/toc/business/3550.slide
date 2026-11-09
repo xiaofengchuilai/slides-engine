@@ -1,0 +1,28 @@
+<Slide>
+  {/* business/3550 商务风-进度条式：居中标题 + 横向 4 节点进度条 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #EFF6FF 0%, #F1F5F9 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, textAlign: 'center', marginBottom: 48 }}>{/* {{标题}} */}目录</Text>
+      <Box style={{ position: 'relative' }}>
+        <Box style={{ position: 'absolute', top: 40, left: 60, right: 60, height: 8, background: 'line', borderRadius: 4 }} />
+        <Box style={{ flexDirection: 'row', gap: 16 }}>
+          {[
+            ['1', '项目背景'],
+            ['2', '核心功能'],
+            ['3', '技术架构'],
+            ['4', '实施计划'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flex: 1, alignItems: 'center' }}>
+              <Box style={{ width: 80, height: 80, background: 'linear-gradient(135deg, #2563EB 0%, #1E3A8A 100%)', borderRadius: 40, alignItems: 'center', justifyContent: 'center', marginBottom: 20, boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+                <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+              </Box>
+              <Box style={{ width: '100%', background: 'cardBg', padding: 12, borderRadius: 8, alignItems: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+                <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

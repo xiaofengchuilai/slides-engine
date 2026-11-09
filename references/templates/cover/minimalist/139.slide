@@ -1,0 +1,19 @@
+<Slide>
+  {/* cover/minimalist/139 环绕布局：三色渐变底 + 四个环绕圆 + 顶部装饰行 + 居中标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F9FAFB 0%, #FFFFFF 50%, #F8FAFC 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ position: 'absolute', top: 86, left: 230, width: 128, height: 128, borderRadius: 64, background: '#E2E8F0', opacity: 0.2 }} />
+    <Box style={{ position: 'absolute', top: 108, right: 192, width: 160, height: 160, borderRadius: 80, background: 'secondary', opacity: 0.15 }} />
+    <Box style={{ position: 'absolute', bottom: 130, left: 256, width: 144, height: 144, borderRadius: 72, background: '#F1F5F9', opacity: 0.25 }} />
+    <Box style={{ position: 'absolute', bottom: 144, right: 230, width: 112, height: 112, borderRadius: 56, background: '#DBEAFE', opacity: 0.2 }} />
+    <Box style={{ alignItems: 'center', gap: 'xl' }}>
+      <Box style={{ flexDirection: 'row', gap: 'md', alignItems: 'center' }}>
+        <Box style={{ width: 48, height: 1, background: 'secondary' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: 'secondary' }} />
+        <Box style={{ width: 48, height: 1, background: '#CBD5E1' }} />
+      </Box>
+      <Text style={{ fontSize: 'hero', color: 'text', bold: true, lineHeight: 1.15, letterSpacing: 2 }}>{/* {{替换：主标题}} */}生态协同发展</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 4 }}>{/* {{替换：副标题}} */}全局视野·协同共赢</Text>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginTop: 'md' }}>{/* {{替换：部门/主题}} */}战略发展部 | 生态合作计划</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,63 @@
+<Slide>
+  {/* cartoon/1529 本周天气预报：标题卡 + 七日天气卡 + 温馨提示 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #60A5FA 0%, #67E8F9 50%, #BFDBFE 100%)', padding: 'xl', gap: 'lg' }}>
+    {/* 背景太阳 */}
+    <Box style={{ position: 'absolute', top: 64, right: 140, width: 120, height: 120, borderRadius: 60, background: '#FDE047', opacity: 0.9, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }} />
+    {/* 背景云朵 */}
+    <Box style={{ position: 'absolute', top: 160, left: 60, opacity: 0.9 }}>
+      <Emoji name="☁️" style={{ width: 88, height: 88 }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 180, right: 240, opacity: 0.7 }}>
+      <Emoji name="☁️" style={{ width: 64, height: 64 }} />
+    </Box>
+    {/* 标题卡片 */}
+    <Box style={{ background: 'rgba(255,255,255,0.9)', borderRadius: 'lg', padding: 'lg', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xs' }}>
+          <Text style={{ fontSize: 'title', color: '#2563EB', bold: true }}>{/* {{替换：标题}} */}本周天气预报</Text>
+          <Emoji name="🌤️" style={{ width: 32, height: 32 }} />
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#4B5563', bold: true }}>{/* {{替换：副标题}} */}Happy Weather Forecast</Text>
+      </Box>
+      <Box style={{ alignItems: 'flex-end' }}>
+        <Text style={{ fontSize: 'label', color: '#6B7280' }}>{/* {{替换：年月}} */}2024年1月</Text>
+        <Text style={{ fontSize: 'card', color: '#3B82F6', bold: true }}>{/* {{替换：日期区间}} */}15 - 21日</Text>
+      </Box>
+    </Box>
+    {/* 七日天气卡 */}
+    <Box style={{ flexDirection: 'row', gap: 'md', flex: 1 }}>
+      {[
+        ['周一', '28°', '晴天', 'linear-gradient(180deg, #FCD34D 0%, #FDBA74 100%)', '#9A3412', '☀️'],
+        ['周二', '22°', '小雨', 'linear-gradient(180deg, #93C5FD 0%, #60A5FA 100%)', '#1E3A8A', '🌧️'],
+        ['周三', '24°', '多云', 'linear-gradient(180deg, #D1D5DB 0%, #9CA3AF 100%)', '#374151', '☁️'],
+        ['周四', '20°', '雷阵雨', 'linear-gradient(180deg, #67E8F9 0%, #22D3EE 100%)', '#155E75', '⛈️'],
+        ['周五', '26°', '晴转多云', 'linear-gradient(180deg, #FCD34D 0%, #FBBF24 100%)', '#92400E', '🌤️'],
+        ['周六', '30°', '晴热', 'linear-gradient(180deg, #FDBA74 0%, #F87171 100%)', '#9A3412', '☀️'],
+        ['周日', '27°', '雨后彩虹', 'linear-gradient(180deg, #F9A8D4 0%, #FB7185 100%)', '#9D174D', '🌈'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: x[3], borderRadius: 'md', padding: 'md', alignItems: 'center', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Text style={{ fontSize: 'body', color: x[4], bold: true, marginBottom: 'sm' }}>{/* {{替换：星期}} */}{x[0]}</Text>
+          <Emoji name={x[5]} style={{ width: 44, height: 44, marginBottom: 'sm' }} />
+          <Text style={{ fontSize: 'card', color: x[4], bold: true, marginBottom: 'xs' }}>{/* {{替换：温度}} */}{x[1]}</Text>
+          <Text style={{ fontSize: 'label', color: x[4], bold: true }}>{/* {{替换：天气}} */}{x[2]}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 温馨提示 */}
+    <Box style={{ background: 'rgba(255,255,255,0.9)', borderRadius: 'md', padding: 'lg', flexDirection: 'row', alignItems: 'center', gap: 'lg', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+      <Emoji name="💡" style={{ width: 40, height: 40 }} />
+      <Box style={{ flex: 1 }}>
+        <Text style={{ fontSize: 'card', color: '#1F2937', bold: true, marginBottom: 'xs' }}>{/* {{替换：提示标题}} */}温馨提示</Text>
+        <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.6 }}>{/* {{替换：提示内容}} */}本周气温变化较大，请注意及时增减衣物。周二、周四有降雨，出门记得带伞哦～ 🌂</Text>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+        <Box style={{ background: '#DBEAFE', borderRadius: 20, padding: 'xs md' }}>
+          <Text style={{ fontSize: 'label', color: '#1D4ED8', bold: true }}>{/* {{替换：湿度}} */}🌊 湿度 65%</Text>
+        </Box>
+        <Box style={{ background: '#D1FAE5', borderRadius: 20, padding: 'xs md' }}>
+          <Text style={{ fontSize: 'label', color: '#047857', bold: true }}>{/* {{替换：风力}} */}💨 风力 3级</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,89 @@
+<Slide>
+  {/* minimalist/1618 供应链管理优化：三栏瀑布流（左窄标题+数据 / 中大图+2x2卡 / 右窄图+指标卡） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1, alignItems: 'stretch' }}>
+      {/* 左列：窄 */}
+      <Box style={{ flex: 0.9, gap: 'md' }}>
+        <Box>
+          <Box style={{ background: 'primary', padding: 'xs md', borderRadius: 'sm', alignSelf: 'flex-start', marginBottom: 'sm', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>深度分析</Text>
+          </Box>
+          <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'md' }}>{/* {{标题}} */}供应链管理优化</Text>
+          <Box style={{ width: 64, height: 2, background: 'primary', marginBottom: 'md' }} />
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6 }}>构建智能化、可视化的供应链体系，实现端到端的协同与优化。</Text>
+        </Box>
+        <Box style={{ flex: 1, background: 'primary', borderRadius: 'md', padding: 'lg', alignItems: 'center', justifyContent: 'center', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>45%</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.8, textAlign: 'center' }}>库存周转率提升</Text>
+          <Box style={{ width: '100%', height: 1, background: '#FFFFFF', opacity: 0.2, marginBottom: 'md' }} />
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.6, textAlign: 'center' }}>从65天缩短至36天</Text>
+        </Box>
+      </Box>
+
+      {/* 中列：标准 */}
+      <Box style={{ flex: 1.4, gap: 'md' }}>
+        <Box style={{ flex: 1.1, background: 'cardBg', borderRadius: 'md', padding: 'md', alignItems: 'center', justifyContent: 'center', position: 'relative', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/supplychain.png" style={{ width: 400, height: 180, objectFit: 'cover' }} />
+          <Box style={{ position: 'absolute', top: 16, right: 16, background: '#FFFFFF', padding: 'sm md', borderRadius: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>供应商数量</Text>
+            <Text style={{ fontSize: 'card', color: 'text', bold: true }}>120+</Text>
+          </Box>
+          <Box style={{ position: 'absolute', bottom: 16, left: 16, background: 'primary', padding: 'sm md', borderRadius: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.8 }}>覆盖区域</Text>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>全球</Text>
+          </Box>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'row', gap: 'md' }}>
+          {[
+            ['智能预测', '基于AI算法的需求预测，准确率达92%。', '预测周期：30天'],
+            ['协同平台', '实时数据共享，多方协同决策。', '响应时间：<1小时'],
+            ['风险管控', '多维度风险监控预警机制。', '监控指标：25+'],
+            ['成本优化', '智能路径规划，降低物流成本。', '节省：18%'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', border: '1px solid #E5E7EB', justifyContent: 'space-between', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+              <Box>
+                <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs', marginBottom: 'xs' }}>
+                  <Box style={{ width: 6, height: 6, borderRadius: 3, background: 'primary' }} />
+                  <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{x[0]}</Text>
+                </Box>
+                <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.4 }}>{x[1]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{x[2]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+
+      {/* 右列：窄 */}
+      <Box style={{ flex: 0.8, gap: 'md' }}>
+        <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/monitor2.png" style={{ width: 180, height: 120, objectFit: 'cover' }} />
+        </Box>
+        <Box style={{ flex: 1.4, background: 'cardBg', borderRadius: 'md', padding: 'md', border: '2px solid primary', justifyContent: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'md' }}>关键指标</Text>
+          <Box style={{ gap: 'md' }}>
+            {[
+              ['订单准时率', '98.5%'],
+              ['库存准确率', '99.2%'],
+              ['供应商合格率', '96.8%'],
+            ].map((x, i) => (
+              <Box key={i}>
+                <Text style={{ fontSize: 'label', color: 'muted' }}>{x[0]}</Text>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{x[1]}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+
+    {/* 底部条 */}
+    <Box style={{ height: 2, background: '#E5E7EB', marginTop: 'md', marginBottom: 'sm' }} />
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>系统平台：SAP + Oracle SCM | 数据更新频率：每15分钟</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>案例时间：2023年7月-2024年12月</Text>
+    </Box>
+  </Box>
+</Slide>

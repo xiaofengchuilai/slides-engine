@@ -1,0 +1,33 @@
+<Slide>
+  {/* geometric/3551 几何风-菱形网格：浅紫粉橙底，2x2 白卡+菱形数字块（rotate 禁 → Shape diamond） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F3E8FF 0%, #FCE7F3 50%, #FFEDD5 100%)' }}>
+    {/* 背景菱形装饰（opacity 低的大菱形） */}
+    <Shape type="diamond" style={{ position: 'absolute', top: 40, left: 40, width: 128, height: 128, fill: '#A855F7', opacity: 0.1 }} />
+    <Shape type="diamond" style={{ position: 'absolute', bottom: 80, right: 80, width: 160, height: 160, fill: '#F97316', opacity: 0.1 }} />
+    <Box style={{ height: 720, justifyContent: 'center', padding: 'xxl xl' }}>
+      <Text style={{ fontSize: 'title', color: '#581C87', bold: true, marginBottom: 40, textAlign: 'center' }}>{/* {{替换：标题}} */}目录</Text>
+      {[
+        ['1', '项目背景'],
+        ['2', '核心功能'],
+        ['3', '技术架构'],
+        ['4', '实施计划'],
+      ].reduce((rows, item, idx) => {
+        if (idx % 2 === 0) rows.push([]);
+        rows[rows.length - 1].push(item);
+        return rows;
+      }, []).map((row, ri) => (
+        <Box key={ri} style={{ flexDirection: 'row', gap: 'lg', marginBottom: 24 }}>
+          {row.map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: '#FFFFFF', padding: 'xl', flexDirection: 'row', alignItems: 'center', gap: 'lg', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+              <Box style={{ width: 64, height: 64, alignItems: 'center', justifyContent: 'center' }}>
+                <Shape type="diamond" style={{ position: 'absolute', top: 0, left: 0, width: 64, height: 64, fill: 'linear-gradient(135deg, #7C3AED 0%, #DB2777 100%)', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+                <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

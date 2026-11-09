@@ -1,0 +1,42 @@
+<Slide>
+  {/* chinese/1635 图文·左右图夹中文：左竹图 + 中文字区 + 右菊图 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF9F6 0%, #F5F3ED 100%)', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl', alignItems: 'center' }}>
+      {/* 左图 */}
+      <Box style={{ width: 288, height: 320, borderRadius: 'sm', background: '#FFFFFF', alignItems: 'center', justifyContent: 'center', border: '1px solid #E5E7EB' }}>
+        {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/chinese-1635-a.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      </Box>
+      {/* 中间文字区 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        <Box style={{ alignItems: 'center' }}>
+          <Text style={{ fontSize: 'title', color: '#7A1F1F', bold: true, fontFamily: 'serif', marginBottom: 'sm' }}>{/* {{替换：标题}} */}君子四德</Text>
+          <Box style={{ width: 96, height: 1, background: '#7A1F1F', opacity: 0.3 }} />
+        </Box>
+        <Box style={{ gap: 'lg' }}>
+          <Box style={{ alignItems: 'center', gap: 'sm' }}>
+            <Text style={{ fontSize: 'kpi', color: '#7A1F1F', fontFamily: 'serif', lineHeight: 1.3 }}>{/* {{替换：副题}} */}梅兰竹菊</Text>
+            <Text style={{ fontSize: 'body', color: '#4B5563', lineHeight: 1.8, textAlign: 'center' }}>
+              {'傲雪凌霜，幽香清雅\n虚心有节，淡泊高洁'}
+            </Text>
+          </Box>
+          <Box style={{ alignItems: 'center', marginTop: 'md' }}>
+            <Text style={{ fontSize: 'body', color: '#4A4A4A', lineHeight: 1.9, textAlign: 'center' }}>
+              {/* {{替换：四德详解}} */}
+              {'梅：不畏严寒，坚韧不拔\n兰：空谷幽香，清雅脱俗\n竹：虚心劲节，高风亮节\n菊：凌霜自芳，淡泊名利'}
+            </Text>
+          </Box>
+        </Box>
+      </Box>
+      {/* 右图 */}
+      <Box style={{ width: 288, height: 320, borderRadius: 'sm', background: '#FFFFFF', alignItems: 'center', justifyContent: 'center', border: '1px solid #E5E7EB' }}>
+        {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/chinese-1635-b.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      </Box>
+    </Box>
+  </Box>
+  {/* 底部功能文字 */}
+  <Box style={{ position: 'absolute', bottom: 24, left: 0, right: 0, alignItems: 'center' }}>
+    <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>中国画题材 · 文人画四君子</Text>
+  </Box>
+</Slide>

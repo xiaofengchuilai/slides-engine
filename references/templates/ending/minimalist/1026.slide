@@ -1,0 +1,13 @@
+<Slide>
+  {/* minimalist/1026 底部条纹：底部灰色横条 + 上方居中致谢标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg' }}>
+    {/* 底部灰条（90px 高，全宽） */}
+    <Box style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 90, background: '#F3F4F6', alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{替换：底部文案}} */}欢迎提出宝贵建议</Text>
+    </Box>
+    {/* 中央标题（避开底部灰条，上移） */}
+    <Box style={{ height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: 'text', letterSpacing: 8 }}>{/* {{替换：致谢标题}} */}谢谢观看</Text>
+    </Box>
+  </Box>
+</Slide>

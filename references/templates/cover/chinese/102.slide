@@ -1,0 +1,25 @@
+<Slide>
+  {/* chinese/102 窗棂格栅：浅灰底 + 四角窗棂方框 + 主标题 + 副标题 + 金线 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #E7E5E4 0%, #D6D3D1 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 窗棂装饰（左上：方框 + 十字线 + 对角线） */}
+    <Box style={{ position: 'absolute', top: 64, left: 64, width: 208, height: 208, opacity: 0.3 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 208, height: 208, border: '3px solid #78350F' }} />
+      <Box style={{ position: 'absolute', top: 104, left: 0, width: 208, height: 4, background: '#78350F' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 104, width: 4, height: 208, background: '#78350F' }} />
+      <Box style={{ position: 'absolute', top: 82, left: 82, width: 44, height: 44, border: '3px solid #78350F', rotate: 45 }} />
+    </Box>
+    {/* 窗棂装饰（右下：小方框 + 十字线） */}
+    <Box style={{ position: 'absolute', bottom: 64, right: 64, width: 160, height: 160, opacity: 0.25 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 160, height: 160, border: '2px solid #92400E' }} />
+      <Box style={{ position: 'absolute', top: 80, left: 0, width: 160, height: 2, background: '#92400E' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 80, width: 2, height: 160, background: '#92400E' }} />
+    </Box>
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#1C1917', bold: true, lineHeight: 1.3, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}古建筑保护</Text>
+      <Text style={{ fontSize: 'card', color: '#78350F', marginBottom: 'xxl', letterSpacing: 2 }}>{/* {{替换：副标题}} */}传承古韵·守护遗产</Text>
+      <Box style={{ width: 112, height: 2, background: '#78350F', marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：落款}} */}文物保护中心 | 修缮工程报告</Text>
+    </Box>
+  </Box>
+</Slide>

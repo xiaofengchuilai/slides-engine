@@ -1,0 +1,63 @@
+<Slide>
+  {/* educational/1641 古诗词赏析·平仄格律：左诗词原文+平仄标注，右格律特点+意境解读 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FDFAF5 0%, #F9F6F0 100%)', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xxl', alignItems: 'center' }}>
+      {/* 左侧：诗词原文 */}
+      <Box style={{ flex: 1, gap: 'xl' }}>
+        <Box style={{ flexDirection: 'row', gap: 'md', alignItems: 'center' }}>
+          <Box style={{ width: 4, height: 56, background: '#4F46E5', borderRadius: 2 }} />
+          <Box>
+            <Text style={{ fontSize: 'title', color: '#312E81', bold: true }}>{/* {{替换：诗题}} */}《春晓》</Text>
+            <Text style={{ fontSize: 'body', color: '#4B5563', marginTop: 'xs' }}>{/* {{替换：作者}} */}唐·孟浩然</Text>
+          </Box>
+        </Box>
+        <Box style={{ gap: 'lg' }}>
+          {[
+            ['春眠不觉晓', '平平仄仄仄'],
+            ['处处闻啼鸟', '仄仄平平仄'],
+            ['夜来风雨声', '仄平平仄平'],
+            ['花落知多少', '平仄平平仄'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 'lg' }}>
+              <Text style={{ fontSize: 'hero', color: '#1F2937', bold: true, fontFamily: 'serif' }}>{/* {{替换：诗句}} */}{x[0]}</Text>
+              <Text style={{ fontSize: 'label', color: '#4F46E5', letterSpacing: 4 }}>{/* {{替换：平仄标注}} */}{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 右侧：格律解析 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        <Box style={{ background: 'rgba(255,255,255,0.7)', border: '1px solid #C7D2FE', borderRadius: 'md', padding: 'xl' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+            <Box style={{ width: 32, height: 32, background: '#EEF2FF', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'body', color: '#4F46E5', bold: true }}>律</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#3730A3', bold: true }}>{/* {{替换：标题}} */}格律特点</Text>
+          </Box>
+          <Box style={{ gap: 'md' }}>
+            {[
+              '押韵：晓、鸟、少（上声·皓韵）',
+              '韵脚规则：首句不押韵，二四句押韵',
+              '平仄对仗：第一、三句平仄相对',
+            ].map((x, i) => (
+              <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'xs' }}>
+                <Text style={{ fontSize: 'body', color: '#4F46E5', bold: true }}>•</Text>
+                <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.6 }}>{/* {{替换：要点}} */}{x}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Box style={{ background: 'rgba(255,255,255,0.7)', border: '1px solid #C7D2FE', borderRadius: 'md', padding: 'xl' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Box style={{ width: 32, height: 32, background: '#EEF2FF', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'body', color: '#4F46E5', bold: true }}>赏</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#3730A3', bold: true }}>{/* {{替换：标题}} */}意境解读</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.7 }}>{/* {{替换：解读文字}} */}通过"不觉"二字体现春睡之沉，以"处处"、"知多少"营造无尽春意。全诗以声衬静，动静结合，营造惜春之情。</Text>
+        </Box>
+      </Box>
+    </Box>
+    <Text style={{ fontSize: 'label', color: '#9CA3AF', marginTop: 'md' }}>{/* {{替换：参考来源}} */}参考：《唐诗三百首详注》· 中华书局</Text>
+  </Box>
+</Slide>

@@ -1,0 +1,41 @@
+<Slide>
+  {/* educational/1669 趣味启蒙·颜色认知：标题 + 8颜色卡(渐变) + 彩虹歌 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAFAFA 0%, #F5F5F5 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+        <Text style={{ fontSize: 'title', color: '#1F2937', bold: true }}>{/* {{替换：标题}} */}认识颜色</Text>
+        <Emoji name="🎨" style={{ width: 30, height: 30 }} />
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：副标题}} */}Colors · 五彩缤纷的世界</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'md', flexWrap: 'wrap' }}>
+      {[
+        ['红色', 'Red', '#F43F5E', '#E11D48', ['🍎', '🌹', '❤']],
+        ['黄色', 'Yellow', '#FBBF24', '#F59E0B', ['☀', '🍌', '🌻']],
+        ['蓝色', 'Blue', '#38BDF8', '#0EA5E9', ['🌊', '🦋', '💙']],
+        ['绿色', 'Green', '#34D399', '#10B981', ['🌳', '🍀', '💚']],
+        ['橙色', 'Orange', '#FB923C', '#F97316', ['🍊', '🎃', '🧡']],
+        ['紫色', 'Purple', '#A78BFA', '#8B5CF6', ['🍇', '🦄', '💜']],
+        ['粉色', 'Pink', '#F9A8D4', '#F472B6', ['🌸', '🎀', '💗']],
+        ['黑色', 'Black', '#475569', '#334155', ['🖤', '🐼', '🌑']],
+      ].map((x, i) => (
+        <Box key={i} style={{ width: '23%', background: '#FFFFFF', border: '1px solid #F3F4F6', borderRadius: 'md', padding: 'sm', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          <Box style={{ height: 64, background: `linear-gradient(135deg, ${x[2]} 0%, ${x[3]} 100%)`, borderRadius: 'sm', marginBottom: 'sm' }} />
+          <Box style={{ flexDirection: 'row', justifyContent: 'center', gap: 'sm', marginBottom: 'xs' }}>
+            {x[4].map((e, ei) => <Emoji key={ei} name={e} style={{ width: 16, height: 16 }} />)}
+          </Box>
+          <Text style={{ fontSize: 'card', color: x[2], bold: true, textAlign: 'center', marginBottom: 'xs' }}>{/* {{替换：中文名}} */}{x[0]}</Text>
+          <Text style={{ fontSize: 'body', color: '#6B7280', textAlign: 'center' }}>{/* {{替换：英文名}} */}{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flex: 1, background: 'linear-gradient(90deg, #F3F4F6 0%, #FAFAFA 50%, #F3F4F6 100%)', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg', alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+        <Emoji name="🌈" style={{ width: 20, height: 20 }} />
+        <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{替换：标题}} */}彩虹歌</Text>
+        <Emoji name="🎵" style={{ width: 20, height: 20 }} />
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#4B5563', fontFamily: 'serif', lineHeight: 2, textAlign: 'center' }}>{/* {{替换：歌词}} */}红橙黄绿青蓝紫，七色彩虹真美丽！小朋友们快快记，颜色世界真神奇！</Text>
+    </Box>
+  </Box>
+</Slide>

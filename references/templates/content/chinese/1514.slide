@@ -1,0 +1,41 @@
+<Slide>
+  {/* chinese/1514 左文右图·传统节日：标题 + 三圆节徽 + 右大图 + 印章降级为红块 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF8F5 0%, #F0EBE1 100%)', padding: 'xxl xl', flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+    {/* 左文字区 */}
+    <Box style={{ flex: 1, gap: 'xl' }}>
+      <Box style={{ gap: 'md' }}>
+        <Text style={{ fontSize: 'title', color: '#8B4513', bold: true }}>{/* {{替换：主标题}} */}传统节日文化</Text>
+        <Box style={{ width: 96, height: 4, background: 'linear-gradient(90deg, #A81810 0%, rgba(168,24,16,0) 100%)' }} />
+        <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2 }}>{/* {{替换：英文副标}} */}Traditional Festival Culture</Text>
+      </Box>
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.8 }}>{/* {{替换：导语段落}} */}
+        中国传统节日承载着深厚的文化内涵和民族情感，是中华民族生活方式与精神追求的重要体现。
+      </Text>
+      <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+        {[
+          ['春', '春节'],
+          ['端', '端午'],
+          ['中', '中秋'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, alignItems: 'center', gap: 'sm' }}>
+            <Box style={{ width: 64, height: 64, borderRadius: 999, background: 'rgba(139, 69, 19, 0.08)', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: '#8B4513', bold: true }}>{x[0]}</Text>
+            </Box>
+            <Text style={{ fontSize: 'label', color: 'text' }}>{x[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    {/* 右图区 */}
+    <Box style={{ width: 480, height: 480, alignItems: 'center', justifyContent: 'center' }}>
+      {/* {{图片：有图填 assets/images/festival.png，无图删掉整个 <Image>}} */}
+      <Image src="assets/images/festival.png" style={{ objectFit: 'cover', width: 480, height: 480 }} />
+      {/* 印章降级：红块 + 白字（无旋转） */}
+      <Box style={{ position: 'absolute', right: 16, bottom: 16, width: 48, height: 48, background: '#C41E3A', borderRadius: 2, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>节</Text>
+      </Box>
+    </Box>
+    {/* 功能文字 */}
+    <Text style={{ fontSize: 'label', color: 'muted', position: 'absolute', right: 80, bottom: 24 }}>{/* {{替换：来源}} */}资料来源：中国民俗学会 · 2024</Text>
+  </Box>
+</Slide>

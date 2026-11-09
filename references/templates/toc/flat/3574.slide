@@ -1,0 +1,33 @@
+<Slide>
+  {/* flat/3574 扁平风-Material风格：淡蓝紫底，白卡+靛蓝数字块 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #EFF6FF 0%, #EEF2FF 100%)' }}>
+    <Box style={{ height: 720, justifyContent: 'center', padding: 'xxl xl' }}>
+      <Box style={{ alignItems: 'center', marginBottom: 40 }}>
+        <Box style={{ background: '#FFFFFF', borderRadius: 'sm', paddingTop: 20, paddingBottom: 20, paddingLeft: 40, paddingRight: 40, boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Text style={{ fontSize: 'title', color: '#312E81', bold: true, textAlign: 'center' }}>{/* {{替换：标题}} */}目录</Text>
+        </Box>
+      </Box>
+      {[
+        ['1', '项目背景'],
+        ['2', '核心功能'],
+        ['3', '技术架构'],
+        ['4', '实施计划'],
+      ].reduce((rows, item, idx) => {
+        if (idx % 2 === 0) rows.push([]);
+        rows[rows.length - 1].push(item);
+        return rows;
+      }, []).map((row, ri) => (
+        <Box key={ri} style={{ flexDirection: 'row', gap: 'lg', marginBottom: 24 }}>
+          {row.map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: '#FFFFFF', borderRadius: 'sm', padding: 'xl', flexDirection: 'row', alignItems: 'center', gap: 'lg', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+              <Box style={{ width: 64, height: 64, background: '#4F46E5', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+                <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: '#111827', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

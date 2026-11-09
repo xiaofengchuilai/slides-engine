@@ -1,0 +1,71 @@
+<Slide>
+  {/* educational/1650 趣味数学·图形认知：标题 + 4图形卡(圆/方/长/三角) + 找一找游戏/组合挑战 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F0F9FF 0%, #DBEAFE 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs', flexDirection: 'row', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'title', color: '#1E3A8A', bold: true }}>{/* {{替换：标题}} */}认识基本图形</Text>
+      <Emoji name="🔷" style={{ width: 30, height: 30, marginLeft: 'sm' }} />
+    </Box>
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 'body', color: '#2563EB' }}>{/* {{替换：副标题}} */}平面图形 · 特征与识别</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+      {[
+        ['圆形', '没有角，没有边', '🎈 ⚽ 🍊 🌕', '#F87171', 'circle'],
+        ['正方形', '4条边一样长', '🎁 🧊 🪟 📦', '#60A5FA', 'square'],
+        ['长方形', '对边一样长', '📱 📺 📖 🚪', '#34D399', 'rectangle'],
+        ['三角形', '3条边，3个角', '⛺ 🔺 🎄 🏔', '#FACC15', 'triangle'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: '#FFFFFF', border: '2px solid #BFDBFE', borderRadius: 'md', padding: 'lg', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Box style={{ height: 96, alignItems: 'center', justifyContent: 'center', marginBottom: 'sm' }}>
+            {i === 0 && <Box style={{ width: 88, height: 88, borderRadius: 44, background: 'linear-gradient(135deg, #F87171 0%, #EF4444 100%)' }} />}
+            {i === 1 && <Box style={{ width: 88, height: 88, background: 'linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%)' }} />}
+            {i === 2 && <Box style={{ width: 112, height: 64, background: 'linear-gradient(135deg, #34D399 0%, #10B981 100%)' }} />}
+            {i === 3 && <Shape type="triangle" style={{ width: 88, height: 88, fill: '#FACC15' }} />}
+          </Box>
+          <Text style={{ fontSize: 'card', color: '#1E3A8A', bold: true, textAlign: 'center', marginBottom: 'sm' }}>{/* {{替换：图形名}} */}{x[0]}</Text>
+          <Box style={{ gap: 'xs' }}>
+            <Box style={{ background: '#EFF6FF', borderRadius: 'sm', padding: 'xs' }}>
+              <Text style={{ fontSize: 'label', color: '#1D4ED8', bold: true }}>特点: </Text>
+              <Text style={{ fontSize: 'label', color: '#374151' }}>{/* {{替换：特点}} */}{x[1]}</Text>
+            </Box>
+            <Box style={{ background: '#EFF6FF', borderRadius: 'sm', padding: 'xs' }}>
+              <Text style={{ fontSize: 'label', color: '#1D4ED8', bold: true }}>生活: </Text>
+              <Text style={{ fontSize: 'label', color: '#374151' }}>{/* {{替换：生活举例}} */}{x[2]}</Text>
+            </Box>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'lg' }}>
+      <Box style={{ flex: 1, background: 'linear-gradient(135deg, #EFF6FF 0%, #ECFEFF 100%)', border: '2px solid #93C5FD', borderRadius: 'md', padding: 'lg' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xs' }}>
+          <Emoji name="🎮" style={{ width: 18, height: 18 }} />
+          <Text style={{ fontSize: 'body', color: '#1E3A8A', bold: true }}>{/* {{替换：标题}} */}找一找游戏</Text>
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#374151', marginBottom: 'md' }}>{/* {{替换：说明}} */}在下面的图形中，找出各种图形各有几个？</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around', background: '#FFFFFF', borderRadius: 'sm', padding: 'md', height: 88 }}>
+          <Box style={{ width: 48, height: 48, borderRadius: 24, background: '#FCA5A5' }} />
+          <Box style={{ width: 48, height: 48, background: '#93C5FD' }} />
+          <Box style={{ width: 56, height: 32, background: '#6EE7B7' }} />
+          <Box style={{ width: 48, height: 48, borderRadius: 24, background: '#FCA5A5' }} />
+          <Shape type="triangle" style={{ width: 48, height: 48, fill: '#FCD34D' }} />
+        </Box>
+      </Box>
+      <Box style={{ flex: 1, background: 'linear-gradient(135deg, #FAF5FF 0%, #FDF2F8 100%)', border: '2px solid #C4B5FD', borderRadius: 'md', padding: 'lg' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xs' }}>
+          <Emoji name="🏆" style={{ width: 18, height: 18 }} />
+          <Text style={{ fontSize: 'body', color: '#6B21A8', bold: true }}>{/* {{替换：标题}} */}图形组合挑战</Text>
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#374151', marginBottom: 'md' }}>{/* {{替换：说明}} */}想一想：用这些基本图形可以组合成什么？</Text>
+        <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+          {['房子', '汽车', '机器人'].map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: '#FFFFFF', borderRadius: 'sm', padding: 'md', alignItems: 'center' }}>
+              <Emoji name={['🏠', '🚗', '🤖'][i]} style={{ width: 28, height: 28, marginBottom: 'xs' }} />
+              <Text style={{ fontSize: 'label', color: '#4B5563' }}>{/* {{替换：示例}} */}{x}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

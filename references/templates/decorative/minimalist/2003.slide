@@ -1,0 +1,17 @@
+<Slide>
+  {/* decorative/minimalist/2003 简约风-低透小色块：白底 + 浅灰圆角/圆/渐变/菱形小色块元素网格 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 40 }}>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 48, height: 48, borderRadius: 'sm', background: '#E5E7EB', rotate: 45 }} />
+        <Box style={{ width: 48, height: 48, borderRadius: 24, background: '#E5E7EB' }} />
+        <Box style={{ width: 48, height: 48, borderRadius: 'sm', background: 'linear-gradient(135deg, #E5E7EB 0%, #D1D5DB 100%)' }} />
+        <Box style={{ width: 56, height: 32, borderRadius: 16, background: '#E5E7EB' }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        <Shape type="diamond" style={{ width: 48, height: 48, fill: '#E5E7EB' }} />
+        <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: 'rgba(229,231,235,0.5)', border: '1px solid #D1D5DB' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

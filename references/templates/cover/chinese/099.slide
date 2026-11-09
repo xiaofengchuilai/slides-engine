@@ -1,0 +1,52 @@
+<Slide>
+  {/* chinese/099 书香古韵：深蓝底 + 左侧书法大字 + 金环 + 右部标题 + 三卡 + 落款 + 印章 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #1A1A2E 0%, #16213E 100%)', flexDirection: 'row' }}>
+    {/* 左侧书法装饰区（原竖排"经典"大字，改横排透明金字） */}
+    <Box style={{ position: 'absolute', left: 48, top: 0, bottom: 0, width: 160, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'hero', color: '#C9A227', opacity: 0.12, letterSpacing: 16, bold: true }}>{/* {{替换：装饰字}} */}经典</Text>
+    </Box>
+    {/* 装饰圆环（左中） */}
+    <Box style={{ position: 'absolute', top: 200, left: 256, width: 288, height: 288, borderRadius: 144, border: '1px solid #C9A227', opacity: 0.1 }} />
+    <Box style={{ position: 'absolute', top: 180, left: 236, width: 328, height: 328, borderRadius: 164, border: '1px solid #C9A227', opacity: 0.05 }} />
+    {/* 右上角八角星装饰（旋转 45° 方形） */}
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 40, height: 40, border: '1px solid #C9A227', opacity: 0.3, rotate: 45 }} />
+    {/* 右下角印章（红框金字） */}
+    <Box style={{ position: 'absolute', bottom: 48, right: 48, width: 64, height: 64, border: '2px solid #A81810', alignItems: 'center', justifyContent: 'center', opacity: 0.6 }}>
+      <Text style={{ fontSize: 'body', color: '#A81810', bold: true }}>学</Text>
+    </Box>
+    {/* 主内容区（右侧） */}
+    <Box style={{ position: 'absolute', right: 96, top: 0, bottom: 0, width: 800, justifyContent: 'center' }}>
+      {/* 顶部装饰：金线 + 英文标签 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 'xxl' }}>
+        <Box style={{ width: 32, height: 2, background: '#C9A227' }} />
+        <Text style={{ fontSize: 'label', color: '#C9A227', letterSpacing: 4 }}>CHINESE CLASSICS</Text>
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#F5F0E6', bold: true, letterSpacing: 8, marginBottom: 'md' }}>{/* {{替换：主标题}} */}国学经典研读</Text>
+      <Text style={{ fontSize: 'card', color: '#A89070', letterSpacing: 4, marginBottom: 'xl' }}>{/* {{替换：副标题}} */}传承千年智慧 · 涵养君子之风</Text>
+      {/* 分隔线：金线 + 菱形 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xl' }}>
+        <Box style={{ width: 80, height: 2, background: 'linear-gradient(90deg, #C9A227, rgba(201,162,39,0))' }} />
+        <Box style={{ width: 8, height: 8, background: '#C9A227', rotate: 45 }} />
+      </Box>
+      {/* 三列（诗书礼） */}
+      <Box style={{ flexDirection: 'row', gap: 'xl', marginBottom: 'xl' }}>
+        {[
+          ['诗', '诗词歌赋'],
+          ['书', '经史子集'],
+          ['礼', '礼仪文化'],
+        ].map((x) => (
+          <Box key={x[0]} style={{ flex: 1, alignItems: 'center' }}>
+            <Text style={{ fontSize: 'title', color: '#C9A227', marginBottom: 'sm' }}>{x[0]}</Text>
+            <Text style={{ fontSize: 'label', color: '#8A8A8A' }}>{x[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+      {/* 底部信息 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        <Text style={{ fontSize: 'label', color: '#6B6B6B' }}>{/* {{替换：机构}} */}国学研究院</Text>
+        <Text style={{ fontSize: 'label', color: '#C9A227' }}>|</Text>
+        <Text style={{ fontSize: 'label', color: '#6B6B6B' }}>{/* {{替换：课程}} */}经典导读课程</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

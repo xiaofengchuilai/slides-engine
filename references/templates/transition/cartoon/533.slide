@@ -1,0 +1,25 @@
+<Slide>
+  {/* transition/cartoon/533 卡通风-贴纸拼贴：粉黄绿渐变底 + 四角贴纸块 + 虚线白卡章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FBCFE8 0%, #FEF9C3 50%, #DCFCE7 100%)', padding: 48, position: 'relative' }}>
+    {/* 四角贴纸块 */}
+    <Box style={{ position: 'absolute', top: 24, left: 24, background: '#f472b6', borderRadius: 999, padding: 8, paddingLeft: 20, paddingRight: 20, rotate: -12, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+      <Emoji name="✨" style={{ width: 20, height: 20 }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 24, right: 24, background: '#facc15', borderRadius: 999, padding: 8, paddingLeft: 20, paddingRight: 20, rotate: 15, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+      <Emoji name="🎨" style={{ width: 20, height: 20 }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 24, left: 24, background: '#4ade80', borderRadius: 999, padding: 8, paddingLeft: 20, paddingRight: 20, rotate: 12, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+      <Emoji name="💡" style={{ width: 20, height: 20 }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 24, right: 24, background: '#a855f7', borderRadius: 999, padding: 8, paddingLeft: 20, paddingRight: 20, rotate: -15, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+      <Emoji name="🚀" style={{ width: 20, height: 20 }} />
+    </Box>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ background: '#FFFFFF', border: '4px dashed #f472b6', borderRadius: 24, padding: 40, paddingLeft: 64, paddingRight: 64, alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 'title', color: '#7c3aed', bold: true, marginBottom: 16 }}>{/* {{替换：章序号}} */}第一章</Text>
+        <Text style={{ fontSize: 'title', color: '#374151', bold: true, marginBottom: 12 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#db2777' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,46 @@
+<Slide>
+  {/* tech/1590 深度神经网络：层级节点可视化 + 底部统计 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xl', alignItems: 'center' }}>
+    {/* 网格背景装饰 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'row', justifyContent: 'space-between', opacity: 0.05 }}>
+      {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+        <Box key={i} style={{ width: 1, height: 720, background: '#22D3EE' }} />
+      ))}
+    </Box>
+    <Text style={{ fontSize: 'title', color: '#22D3EE', bold: true, backgroundImage: 'linear-gradient(90deg, #22D3EE 0%, #C084FC 50%, #4ADE80 100%)', backgroundClip: 'text', textAlign: 'center', marginBottom: 'md' }}>{/* {{标题}} */}深度神经网络</Text>
+    <Box style={{ flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+      {/* 各层节点列 */}
+      {[
+        { label: '输入层', color: '#22D3EE', nodes: ['X1', 'X2', 'X3'], size: 28 },
+        { label: '隐藏层 1', color: '#C084FC', nodes: ['', '', '', ''], size: 20 },
+        { label: '隐藏层 2', color: '#C084FC', nodes: ['', '', ''], size: 20 },
+        { label: '隐藏层 3', color: '#4ADE80', nodes: ['', ''], size: 20 },
+        { label: '输出层', color: '#FBBF24', nodes: ['Y'], size: 30 },
+      ].map((layer, li) => (
+        <Box key={li} style={{ flex: 1, alignItems: 'center' }}>
+          <Box style={{ flexDirection: 'column', gap: 'lg', alignItems: 'center', justifyContent: 'center', height: 340 }}>
+            {layer.nodes.map((n, ni) => (
+              <Box key={ni} style={{ width: layer.size * 2, height: layer.size * 2, borderRadius: layer.size, background: li === 4 ? '#FBBF24' : layer.color, border: `2px solid ${layer.color}`, alignItems: 'center', justifyContent: 'center' }}>
+                {n !== '' && <Text style={{ fontSize: 'body', color: li === 4 ? '#0F172A' : '#FFFFFF', bold: true }}>{n}</Text>}
+              </Box>
+            ))}
+          </Box>
+          <Text style={{ fontSize: 'label', color: layer.color, marginTop: 'sm' }}>{layer.label}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flexDirection: 'row', justifyContent: 'center', gap: 'xxl', marginTop: 'md' }}>
+      {[
+        { val: '3', label: '输入节点', color: '#22D3EE' },
+        { val: '9', label: '隐藏层节点', color: '#C084FC' },
+        { val: '1', label: '输出节点', color: '#4ADE80' },
+        { val: '98.7%', label: '准确率', color: '#FBBF24' },
+      ].map((x) => (
+        <Box key={x.label} style={{ alignItems: 'center' }}>
+          <Text style={{ fontSize: 'kpi', color: x.color, bold: true, lineHeight: 1.1, marginBottom: 'xs' }}>{x.val}</Text>
+          <Text style={{ fontSize: 'body', color: '#94A3B8' }}>{x.label}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

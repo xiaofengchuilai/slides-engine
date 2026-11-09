@@ -1,0 +1,68 @@
+<Slide>
+  {/* minimalist/1610 60-40分割：左(标题+3版本卡交错) + 右(主图+2数据卡) + 底部注释 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    <Box style={{ flexDirection: 'row', gap: 'xxl', flex: 1, alignItems: 'stretch' }}>
+      {/* 左侧 60% */}
+      <Box style={{ flex: 3, gap: 'lg' }}>
+        <Box>
+          <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'sm' }}>{/* {{标题}} */}产品迭代历程</Text>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+            <Box style={{ width: 64, height: 2, background: 'primary' }} />
+            <Text style={{ fontSize: 'label', color: 'muted' }}>EVOLUTION JOURNEY</Text>
+          </Box>
+        </Box>
+        <Box style={{ flex: 1, justifyContent: 'center', gap: 'md' }}>
+          {[
+            { v: 'V1.0', t: '2022.Q1', p: '核心功能上线', d: '奠定产品基础，验证商业模式', bar: 'primary', offset: 'flex-start' },
+            { v: 'V2.0', t: '2023.Q2', p: 'AI能力集成', d: '智能推荐系统，用户体验大幅提升', bar: 'secondary', offset: 'flex-end' },
+            { v: 'V3.0', t: '2024.Q4', p: '生态开放平台', d: '支持第三方集成，构建开放生态', bar: 'muted', offset: 'flex-start' },
+          ].map((c, i) => (
+            <Box key={i} style={{ flexDirection: 'row', alignItems: 'stretch', justifyContent: c.offset }}>
+              <Box style={{ flex: 1, flexDirection: 'row', background: 'bg', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg', gap: 'md', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+                <Box style={{ width: 4, alignSelf: 'stretch', background: c.bar, borderRadius: 2 }} />
+                <Box style={{ flex: 1 }}>
+                  <Box style={{ flexDirection: 'row', alignItems: 'baseline', gap: 'sm', marginBottom: 'xs' }}>
+                    <Text style={{ fontSize: 'kpi', color: 'text', bold: true, lineHeight: 1 }}>{c.v}</Text>
+                    <Text style={{ fontSize: 'label', color: 'muted' }}>{c.t}</Text>
+                  </Box>
+                  <Text style={{ fontSize: 'body', color: 'text', bold: true, marginBottom: 'xs' }}>{/* {{版本标题}} */}{c.p}</Text>
+                  <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{版本说明}} */}{c.d}</Text>
+                </Box>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 右侧 40% */}
+      <Box style={{ flex: 2, gap: 'lg' }}>
+        <Box style={{ flex: 1, position: 'relative', borderRadius: 'md', background: 'cardBg' }}>
+          {/* {{图片：版本迭代图谱，有图填 assets/images/1610_main.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1610_main.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+          <Box style={{ position: 'absolute', top: 20, right: 20, background: 'primary', padding: 'sm md', borderRadius: 'sm', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.8 }}>累计迭代</Text>
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 'xs' }}>
+              <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, lineHeight: 1 }}>36</Text>
+              <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>次</Text>
+            </Box>
+          </Box>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 'md' }}>
+          {[
+            ['2.8年', '产品生命周期'],
+            ['150万', '活跃用户'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: 'bg', border: '1px solid #E5E7EB', borderRadius: 'sm', padding: 'md', alignItems: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+              <Text style={{ fontSize: 'kpi', color: 'text', bold: true, lineHeight: 1, marginBottom: 'xs' }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+    {/* 底部注释 */}
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 'lg' }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>产品管理工具：Jira + Confluence | 发布节奏：每月1次</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>版本管理：语义化版本控制 (Semantic Versioning)</Text>
+    </Box>
+  </Box>
+</Slide>

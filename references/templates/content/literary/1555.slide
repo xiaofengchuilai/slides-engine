@@ -1,0 +1,39 @@
+<Slide>
+  {/* literary/1555 音乐诗篇：五线谱五音符，中间主音符+金句 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #312E81 50%, #581C87 100%)', padding: 'xxl xl' }}>
+    <Box style={{ height: '100%', gap: 'xl', alignItems: 'center' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', fontFamily: 'serif', textAlign: 'center', letterSpacing: 1 }}>{/* {{替换：标题}} */}音乐诗篇</Text>
+      {/* 五线谱面板 */}
+      <Box style={{ flex: 1, width: '100%', background: 'linear-gradient(135deg, #FFFFFF 0%, #F9FAFB 100%)', borderRadius: 'lg', padding: 'xl', position: 'relative', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        {/* 五线谱五条线 */}
+        {[0, 1, 2, 3, 4].map((i) => (
+          <Box key={i} style={{ position: 'absolute', left: 48, right: 48, top: 64 + i * 40, height: 2, background: '#CBD5E1' }} />
+        ))}
+        <Box style={{ flexDirection: 'row', justifyContent: 'space-around', alignItems: 'flex-start', height: '100%', paddingTop: 24 }}>
+          {[
+            ['Do', '旋律', 'Melody', '#06B6D4', 88],
+            ['Re', '节奏', 'Rhythm', '#3B82F6', 100],
+            ['Mi', '主音符', 'Note', '#A855F7', 128],
+            ['Fa', '和声', 'Harmony', '#F59E0B', 100],
+            ['Sol', '共鸣', 'Resonance', '#F43F5E', 88],
+          ].map((x, i) => (
+            <Box key={i} style={{ alignItems: 'center', marginTop: i === 2 ? 0 : 36 }}>
+              <Box style={{ width: x[4], height: x[4], borderRadius: x[4] / 2, background: i === 2 ? 'linear-gradient(135deg, #A855F7 0%, #EC4899 100%)' : 'linear-gradient(135deg, ' + x[2 + 1] + ' 0%, ' + x[2 + 1] + ' 100%)', alignItems: 'center', justifyContent: 'center', border: i === 2 ? '4px solid #FFFFFF' : undefined, boxShadow: i === 2 ? '0 16px 48px rgba(0,0,0,0.28)' : '0 8px 24px rgba(0,0,0,0.18)' }}>
+                <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：音符名}} */}{x[0]}</Text>
+              </Box>
+              <Box style={{ width: 2, height: 52, background: '#1F2937', marginTop: 'xs' }} />
+              <Text style={{ fontSize: 'body', color: '#374151', bold: true, marginTop: 'sm' }}>{/* {{替换：要素中文名}} */}{x[1]}</Text>
+              <Text style={{ fontSize: 'label', color: '#6B7280' }}>{/* {{替换：要素英文名}} */}{x[2]}</Text>
+              {i === 2 && (
+                <Box style={{ background: '#FFFFFF', borderRadius: 'sm', padding: 'sm md', marginTop: 'md', alignItems: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+                  <Text style={{ fontSize: 'card', color: '#1F2937', fontFamily: 'serif', lineHeight: 1.5 }}>{/* {{替换：主金句}} */}"音乐是流动的建筑"</Text>
+                  <Text style={{ fontSize: 'label', color: '#6B7280', marginTop: 'xs' }}>{/* {{替换：副句}} */}聆听音符之间的对话</Text>
+                </Box>
+              )}
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

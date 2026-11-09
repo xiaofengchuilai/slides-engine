@@ -1,0 +1,39 @@
+<Slide>
+  {/* literary/1554 美学四维：左引言区+右四要素2x2 */}
+  <Box style={{ height: 720, width: 1280, background: '#FAF9F7', padding: 'xxl xl' }}>
+    <Box style={{ flexDirection: 'row', flex: 1, gap: 'xl' }}>
+      {/* 左引言区 */}
+      <Box style={{ width: 380, padding: 'xl', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'kpi', color: '#E7E5E4', fontFamily: 'serif', lineHeight: 1, marginBottom: 'md' }}>“</Text>
+        <Text style={{ fontSize: 'card', color: '#57534E', fontFamily: 'serif', lineHeight: 1.8, letterSpacing: 1 }}>{/* {{替换：引言}} */}艺术是生活的镜子，<br />映照内心的风景</Text>
+        <Text style={{ fontSize: 'label', color: '#A8A29E', marginTop: 'lg', letterSpacing: 2 }}>{/* {{替换：署名}} */}— 艺术感知</Text>
+      </Box>
+      {/* 左栏与右栏分隔线 */}
+      <Box style={{ width: 2, background: '#E7E5E4' }} />
+      {/* 右内容区 */}
+      <Box style={{ flex: 1, padding: 'xl', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'title', color: '#44403C', fontFamily: 'serif', letterSpacing: 1, marginBottom: 'sm' }}>{/* {{替换：标题}} */}美学四维</Text>
+        <Box style={{ width: 64, height: 2, background: '#D6D3D1', marginBottom: 'xxl' }} />
+        <Box style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 'lg' }}>
+          {[
+            ['01', '色彩', '光与影的交织，情感的表达'],
+            ['02', '构图', '空间的韵律，视觉的引导'],
+            ['03', '灵感', '瞬间的火花，创作的源泉'],
+            ['04', '创意', '突破边界，无限可能'],
+          ].map((x, i) => (
+            <Box key={i} style={{ width: 340, marginBottom: 'sm' }}>
+              <Box style={{ flexDirection: 'row', alignItems: 'baseline', gap: 'md', marginBottom: 'xs' }}>
+                <Text style={{ fontSize: 'kpi', color: '#E7E5E4', fontFamily: 'serif' }}>{/* {{替换：编号}} */}{x[0]}</Text>
+                <Text style={{ fontSize: 'card', color: '#44403C', letterSpacing: 1 }}>{/* {{替换：要素名}} */}{x[1]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'label', color: '#78716C', lineHeight: 1.6, paddingLeft: 64 }}>{/* {{替换：要素描述}} */}{x[2]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+    {/* 右下装饰圆环 */}
+    <Box style={{ position: 'absolute', bottom: 48, right: 48, width: 96, height: 96, border: '1px solid #E7E5E4', borderRadius: 48 }} />
+    <Box style={{ position: 'absolute', bottom: 64, right: 64, width: 64, height: 64, border: '1px solid #D6D3D1', borderRadius: 32 }} />
+  </Box>
+</Slide>

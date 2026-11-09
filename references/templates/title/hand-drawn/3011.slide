@@ -1,0 +1,20 @@
+<Slide>
+  {/* title/hand-drawn/3011 手绘风-箭头标注标题：米黄底 + 红色手绘圈"!"标注 + 大标题 + 红色虚线 */}
+  <Box style={{ width: 1280, height: 720, background: '#FEFCE8', position: 'absolute', top: 0, left: 0, padding: 'xl' }}>
+    <Box style={{ height: '100%', justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xxl' }}>
+        {/* 红色手绘虚线圆 + "!" 标注 */}
+        <Box style={{ position: 'relative', width: 96, height: 96, justifyContent: 'center', alignItems: 'center' }}>
+          <RoughBox shape="circle" style={{ position: 'absolute', left: 0, top: 0, width: 96, height: 96, stroke: '#EF4444', strokeWidth: 3, roughness: 2, dash: [5, 5], fill: 'none' }} />
+          <Text style={{ fontSize: 44, color: '#EF4444', bold: true, fontFamily: 'hand' }}>!</Text>
+        </Box>
+        <Box>
+          <Text style={{ fontSize: 'title', color: 'text', bold: true, fontFamily: 'hand', lineHeight: 1.4 }}>{/* {{标题}} */}重要提醒</Text>
+          {/* 标题下方红色虚线 */}
+          <RoughBox shape="line" style={{ width: 260, height: 12, stroke: '#EF4444', strokeWidth: 2, roughness: 2, dash: [6, 4] }} />
+          <Text style={{ fontSize: 'body', color: 'muted', fontFamily: 'hand', marginTop: 'sm', lineHeight: 1.5 }}>{/* {{说明}} */}以下内容请务必仔细阅读</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

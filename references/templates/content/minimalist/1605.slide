@@ -1,0 +1,62 @@
+<Slide>
+  {/* minimalist/1605 左竖条 + 标题 + 大图(带双标注) + 右上/右下文字卡 + 底部注释 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', flexDirection: 'row' }}>
+    {/* 左侧竖条装饰 */}
+    <Box style={{ width: 48, background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>Analysis</Text>
+    </Box>
+    <Box style={{ flex: 1, padding: 'xxl xl' }}>
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        {/* 标题 */}
+        <Box>
+          <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'xs' }}>{/* {{标题}} */}竞争格局分析</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>Competitive Landscape Analysis</Text>
+        </Box>
+        {/* 主内容：左大图 + 右上/右下卡片 */}
+        <Box style={{ flex: 1, flexDirection: 'row', gap: 'lg' }}>
+          <Box style={{ flex: 2, position: 'relative', borderRadius: 'md', background: 'cardBg' }}>
+            {/* {{图片：市场份额分布图，有图填 assets/images/1605_main.png，无图删掉整个 <Image>}} */}
+            <Image src="assets/images/1605_main.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+            <Box style={{ position: 'absolute', top: 16, left: 16, background: 'bg', padding: 'xs sm', borderRadius: 'sm', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>市场份额</Text>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>28.5%</Text>
+            </Box>
+            <Box style={{ position: 'absolute', bottom: 16, right: 16, background: 'primary', padding: 'xs sm', borderRadius: 'sm', flexDirection: 'row' }}>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>行业排名 </Text>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>#2</Text>
+            </Box>
+          </Box>
+          <Box style={{ flex: 1, gap: 'lg' }}>
+            <Box style={{ flex: 1, background: 'bg', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'md' }}>
+              <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs', marginBottom: 'sm' }}>
+                <Box style={{ width: 8, height: 8, background: 'primary' }} />
+                <Text style={{ fontSize: 'card', color: 'text', bold: true }}>核心优势</Text>
+              </Box>
+              <Box style={{ gap: 'xs' }}>
+                {['技术壁垒高', '用户粘性强', '品牌认知度领先'].map((t, i) => (
+                  <Text key={i} style={{ fontSize: 'body', color: 'muted' }}>· {t}</Text>
+                ))}
+              </Box>
+            </Box>
+            <Box style={{ flex: 1, background: 'cardBg', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'md' }}>
+              <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs', marginBottom: 'sm' }}>
+                <Box style={{ width: 8, height: 8, background: 'muted' }} />
+                <Text style={{ fontSize: 'card', color: 'text', bold: true }}>待提升项</Text>
+              </Box>
+              <Box style={{ gap: 'xs' }}>
+                {['国际化程度', '生态系统建设', '渠道覆盖广度'].map((t, i) => (
+                  <Text key={i} style={{ fontSize: 'body', color: 'muted' }}>· {t}</Text>
+                ))}
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+        {/* 底部注释 */}
+        <Box style={{ flexDirection: 'row', justifyContent: 'space-between', paddingTop: 'md' }}>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>数据来源：IDC《2024中国市场竞争力分析报告》</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>数据截至：2024年Q3</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

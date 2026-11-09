@@ -1,0 +1,15 @@
+<Slide>
+  {/* title/geometric/3013 几何风-三角装饰：白底 + 蓝紫渐变菱形 + 大标题 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 'xl' }}>
+    <Box style={{ height: '100%', justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xxl' }}>
+        {/* 蓝紫渐变菱形（内嵌白色小菱形） */}
+        <Box style={{ width: 96, height: 96, position: 'relative' }}>
+          <Shape type="diamond" style={{ width: 96, height: 96, fill: '#6366F1', position: 'absolute', top: 0, left: 0 }} />
+          <Shape type="diamond" style={{ width: 72, height: 72, fill: '#FFFFFF', position: 'absolute', top: 12, left: 12 }} />
+        </Box>
+        <Text style={{ fontSize: 'kpi', color: 'text', bold: true }}>{/* {{替换：主标题}} */}数据可视化</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

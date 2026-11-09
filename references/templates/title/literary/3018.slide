@@ -1,0 +1,15 @@
+<Slide>
+  {/* title/literary/3018 文艺风-书签样式：紫粉浅底 + 左彩条 + 标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F5F3FF 0%, #FDF2F8 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ flexDirection: 'row', gap: 24, alignItems: 'center' }}>
+        <Box style={{ width: 6, height: 128, background: 'linear-gradient(180deg, #a855f7 0%, #ec4899 50%, #f43f5e 100%)', borderRadius: 3 }} />
+        <Box style={{ alignItems: 'flex-start' }}>
+          <Text style={{ fontSize: 'label', color: '#7c3aed', bold: true, letterSpacing: 4, marginBottom: 8 }}>{/* {{替换：标签}} */}· LITERATURE ·</Text>
+          <Text style={{ fontSize: 'title', color: '#111827', fontFamily: 'serif', bold: true, lineHeight: 1.3 }}>{/* {{替换：标题}} */}文学与{'\n'}人生感悟</Text>
+          <Text style={{ fontSize: 'body', color: '#6b7280', fontFamily: 'serif', marginTop: 16 }}>{/* {{替换：副标题}} */}在字里行间寻找生命的意义</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,16 @@
+<Slide>
+  {/* cartoon/012 多彩堆叠：蓝紫粉渐变底 + 角部色块 + 黄色堆叠卡 + 大标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #DBEAFE 0%, #E9D5FF 50%, #FCE7F3 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 角部色块装饰 */}
+    <Box style={{ position: 'absolute', top: 64, left: 64, width: 192, height: 192, background: '#FBBF24', borderRadius: 'lg', opacity: 0.5, rotate: 12 }} />
+    <Box style={{ position: 'absolute', bottom: 64, right: 64, width: 224, height: 224, borderRadius: 112, background: '#F472B6', opacity: 0.4 }} />
+    {/* 堆叠卡：蓝紫衬底 + 黄色主卡 */}
+    <Box style={{ position: 'absolute', width: 640, height: 420, borderRadius: 'lg', background: '#3B82F6', opacity: 0.85, rotate: 6 }} />
+    <Box style={{ position: 'absolute', width: 620, height: 400, borderRadius: 'lg', background: '#8B5CF6', opacity: 0.9, rotate: -3 }} />
+    <Box style={{ width: 600, height: 380, background: 'linear-gradient(135deg, #FBBF24 0%, #FB923C 100%)', borderRadius: 'lg', border: '10px solid #111827', alignItems: 'center', justifyContent: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Emoji name="🌍" style={{ width: 72, height: 72, marginBottom: 'xxl' }} />
+      <Text style={{ fontSize: 'hero', color: '#111827', bold: true, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}探索世界</Text>
+      <Text style={{ fontSize: 'card', color: '#1F2937', bold: true }}>{/* {{替换：副标题}} */}Explore The World</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,38 @@
+<Slide>
+  {/* cover/tech/046 科技风-网络节点：深蓝渐变底 + 横线装饰 + 圆点 + 主标题 + 副标题 + 落款 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 上下装饰横线 */}
+    <Box style={{ position: 'absolute', top: 180, left: 0, width: 1280, height: 1, background: 'linear-gradient(90deg, #0F172A 0%, #1D4ED8 50%, #0F172A 100%)' }} />
+    <Box style={{ position: 'absolute', top: 540, left: 0, width: 1280, height: 1, background: 'linear-gradient(90deg, #0F172A 0%, #1D4ED8 50%, #0F172A 100%)' }} />
+    {/* 角落装饰（L形细线） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 160, height: 160, opacity: 0.3 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 160, height: 2, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 2, height: 160, background: '#3B82F6' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 160, height: 160, opacity: 0.3 }}>
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 160, height: 2, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 2, height: 160, background: '#3B82F6' }} />
+    </Box>
+    <Box style={{ justifyContent: 'center', alignItems: 'center', maxWidth: 1100 }}>
+      {/* 顶部装饰：横线 + 圆点 + 横线 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', justifyContent: 'center', marginBottom: 'xxl' }}>
+        <Box style={{ width: 96, height: 2, background: 'linear-gradient(90deg, #0F172A 0%, #3B82F6 100%)' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#3B82F6' }} />
+        <Box style={{ width: 96, height: 2, background: 'linear-gradient(90deg, #3B82F6 0%, #0F172A 100%)' }} />
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, letterSpacing: 4, textAlign: 'center', lineHeight: 1.1, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}网络架构设计</Text>
+      <Text style={{ fontSize: 'card', color: '#93C5FD', fontWeight: 300, letterSpacing: 3, textAlign: 'center', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}NETWORK ARCHITECTURE DESIGN 2025</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', justifyContent: 'center' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#3B82F6' }} />
+          <Text style={{ fontSize: 'body', color: '#9CA3AF' }}>{/* {{替换：部门}} */}技术部</Text>
+        </Box>
+        <Box style={{ width: 1, height: 20, background: '#4B5563' }} />
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#3B82F6' }} />
+          <Text style={{ fontSize: 'body', color: '#9CA3AF' }}>{/* {{替换：日期}} */}2025/01/20</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

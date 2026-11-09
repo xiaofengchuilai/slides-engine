@@ -1,0 +1,14 @@
+<Slide>
+  {/* cover/tech/038 科技风-代码矩阵：黑底 + 终端框 + 命令提示符 + 渐变主标题 + 副标题 */}
+  <Box style={{ width: 1280, height: 720, background: '#020617', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 终端外框 */}
+    <Box style={{ width: 1000, borderRadius: 'lg', border: '2px solid #065F46', background: 'linear-gradient(135deg, #020617 0%, #111827 100%)', padding: 'xxl' }}>
+      {/* 顶/底渐变细线 */}
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 1000, height: 2, background: 'linear-gradient(90deg, #022c22 0%, #10B981 50%, #022c22 100%)' }} />
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1000, height: 2, background: 'linear-gradient(90deg, #022c22 0%, #10B981 50%, #022c22 100%)' }} />
+      <Text style={{ fontSize: 'body', color: '#10B981', letterSpacing: 6, marginBottom: 'xxl' }}>{/* {{替换：命令提示}} */}&gt; system.init()</Text>
+      <Text style={{ fontSize: 'hero', color: '#34D399', bold: true, letterSpacing: 2, lineHeight: 1.1, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}&lt;BLOCKCHAIN/&gt;</Text>
+      <Text style={{ fontSize: 'card', color: '#34D399', letterSpacing: 2 }}>{/* {{替换：副标题}} */}区块链技术解析</Text>
+    </Box>
+  </Box>
+</Slide>

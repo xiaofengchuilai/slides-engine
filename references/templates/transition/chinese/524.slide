@@ -1,0 +1,22 @@
+<Slide>
+  {/* transition/chinese/524 中国风-水墨留白：米白浅底 + 底部墨晕 + 居中章节（横线章序） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FDFCF8 0%, #F5F2EA 100%)', padding: 48, position: 'relative' }}>
+    {/* 底部墨晕 */}
+    <Box style={{ position: 'absolute', bottom: 0, left: 320, width: 640, height: 240, borderRadius: 320, background: 'rgba(26,26,26,0.08)' }} />
+    {/* 印章 */}
+    <Box style={{ position: 'absolute', bottom: 64, right: 64, width: 56, height: 56, background: 'linear-gradient(135deg, #C41E3A 0%, #8B1428 100%)', alignItems: 'center', justifyContent: 'center', opacity: 0.7, rotate: 12 }}>
+      <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>{/* {{印章字}} */}墨</Text>
+    </Box>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, marginBottom: 32 }}>
+          <Box style={{ width: 24, height: 1, background: '#9ca3af' }} />
+          <Text style={{ fontSize: 'card', color: '#8b4513', letterSpacing: 8, fontFamily: 'serif' }}>{/* {{替换：章序号}} */}第一章</Text>
+          <Box style={{ width: 24, height: 1, background: '#9ca3af' }} />
+        </Box>
+        <Text style={{ fontSize: 'title', color: '#2d2d2d', bold: true, fontFamily: 'serif', marginBottom: 24 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#888888', fontFamily: 'serif' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,37 @@
+<Slide>
+  {/* chinese/1628 纯文字·上中下三段：标题 + 三栏(儒释道) + 总结 */}
+  <Box style={{ height: 720, width: 1280, background: '#FAF9F6', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', padding: 'xl' }}>
+      {/* 上段：标题 */}
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'title', color: '#7A1F1F', bold: true, letterSpacing: 4, fontFamily: 'serif' }}>{/* {{替换：标题}} */}儒释道三家</Text>
+        <Box style={{ width: 128, height: 1, background: '#7A1F1F', opacity: 0.3, marginTop: 'md' }} />
+      </Box>
+      {/* 中段：三栏 */}
+      <Box style={{ flexDirection: 'row', gap: 'xxl', alignItems: 'flex-start' }}>
+        {[
+          ['儒', '入世', '修身齐家\n治国平天下'],
+          ['释', '出世', '慈悲为怀\n普度众生'],
+          ['道', '顺世', '道法自然\n无为而治'],
+        ].map((x, i) => (
+          <Box key={i} style={{ alignItems: 'center', gap: 'md' }}>
+            <Text style={{ fontSize: 'hero', color: '#7A1F1F', fontFamily: 'serif', lineHeight: 1.1 }}>{x[0]}</Text>
+            <Box style={{ width: 1, height: 56, background: '#7A1F1F', opacity: 0.2 }} />
+            <Box style={{ alignItems: 'center', gap: 'sm' }}>
+              <Text style={{ fontSize: 'body', color: '#1F2937', bold: true }}>{x[1]}</Text>
+              <Text style={{ fontSize: 'body', color: '#4B5563', lineHeight: 1.7, textAlign: 'center' }}>{x[2]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+      {/* 下段：总结 */}
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'body', color: '#4B5563', letterSpacing: 1 }}>{/* {{替换：总结}} */}三家并立，互补融合，共同构成中国传统文化的思想基础</Text>
+      </Box>
+    </Box>
+  </Box>
+  {/* 底部功能文字 */}
+  <Box style={{ position: 'absolute', bottom: 24, left: 0, right: 0, alignItems: 'center' }}>
+    <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>参考：《中国哲学简史》· 冯友兰著</Text>
+  </Box>
+</Slide>

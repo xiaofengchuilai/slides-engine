@@ -1,0 +1,17 @@
+<Slide>
+  {/* transition/literary/547 文艺风-花卉装饰：粉红浅底 + 白卡章节块 + 角花装饰 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FDF2F8 0%, #FFF1F2 50%, #FEF2F2 100%)', padding: 48, position: 'relative' }}>
+    {/* 角花装饰 */}
+    <Emoji name="🌸" style={{ position: 'absolute', top: 16, left: 24, width: 56, height: 56, opacity: 0.4 }} />
+    <Emoji name="🌺" style={{ position: 'absolute', top: 16, right: 24, width: 48, height: 48, opacity: 0.4 }} />
+    <Emoji name="🌷" style={{ position: 'absolute', bottom: 16, left: 64, width: 48, height: 48, opacity: 0.4 }} />
+    <Emoji name="🌹" style={{ position: 'absolute', bottom: 16, right: 24, width: 56, height: 56, opacity: 0.4 }} />
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ background: 'rgba(255,255,255,0.9)', border: '4px solid #fda4af', borderRadius: 16, padding: 48, paddingLeft: 80, paddingRight: 80, alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 'title', color: '#be123c', fontFamily: 'serif', marginBottom: 24 }}>{/* {{替换：章序号}} */}第一章</Text>
+        <Text style={{ fontSize: 'title', color: '#374151', bold: true, marginBottom: 16, fontFamily: 'serif' }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#e11d48', fontFamily: 'serif' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

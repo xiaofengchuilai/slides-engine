@@ -1,0 +1,51 @@
+<Slide>
+  {/* minimalist/1595 左图右文：配图(带增长率标签) + 眉题/标题 + 三条要点 + 注释卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 底部装饰线 */}
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 420, height: 4, background: 'primary' }} />
+
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xxl' }}>
+      {/* 左侧图片列 */}
+      <Box style={{ width: 480, alignItems: 'center', justifyContent: 'center' }}>
+        {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/1595.png" style={{ width: 480, height: 620, objectFit: 'contain' }} />
+      </Box>
+
+      {/* 右侧内容列 */}
+      <Box style={{ flex: 1, justifyContent: 'center', gap: 'lg' }}>
+        <Box style={{ gap: 'sm' }}>
+          <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2 }}>{/* {{眉题}} */}ANALYSIS REPORT</Text>
+          <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{标题}} */}产品竞争力分析</Text>
+          <Box style={{ width: 64, height: 2, background: 'primary', marginTop: 'xs' }} />
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6 }}>{/* {{正文1}} */}在激烈的市场竞争中，产品的差异化优势至关重要。我们的核心竞争力体现在技术创新、用户体验和服务质量三个维度。</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{正文2}} */}通过持续的研发投入和市场洞察，我们始终保持行业领先地位。</Text>
+        </Box>
+
+        {/* 三条要点 */}
+        <Box style={{ gap: 'md' }}>
+          {[
+            ['技术领先性', '专利数量行业第一'],
+            ['用户满意度', 'NPS评分持续提升'],
+            ['市场占有率', '连续三年增长'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+              <Box style={{ width: 4, height: 32, background: 'primary' }} />
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{要点标题}} */}{x[0]}</Text>
+                <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{要点说明}} */}{x[1]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+
+        {/* 注释卡 */}
+        <Box style={{ flexDirection: 'row', background: 'cardBg', padding: 'md', borderRadius: 'sm', gap: 'md', alignItems: 'stretch', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Box style={{ width: 4, alignSelf: 'stretch', background: 'primary' }} />
+          <Box style={{ flex: 1 }}>
+            <Text style={{ fontSize: 'label', color: 'muted', lineHeight: 1.6 }}>{/* {{注释}} */}<span style={{ color: 'text', bold: true }}>注：</span>以上数据基于第三方市场调研机构《2024年度行业竞争力报告》，样本覆盖1000+企业用户。</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

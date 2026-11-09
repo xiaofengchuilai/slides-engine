@@ -1,0 +1,17 @@
+<Slide>
+  {/* decorative/geometric/2014 几何风-镂空小多边形：白底 + 描边六边形/三角/菱形元素网格 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 40 }}>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        <Shape type="hexagon" style={{ width: 48, height: 48, line: { color: '#6366F1', width: 3 } }} />
+        <Shape type="triangle" style={{ width: 48, height: 48, line: { color: '#A855F7', width: 4 } }} />
+        <Shape type="hexagon" style={{ width: 48, height: 48, line: { color: '#8B5CF6', width: 3 } }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        <Shape type="diamond" style={{ width: 48, height: 48, line: { color: '#6366F1', width: 4 }, rotate: 45 }} />
+        <Shape type="hexagon" style={{ width: 48, height: 48, line: { color: '#6366F1', width: 3 } }} />
+        <Shape type="triangle" style={{ width: 48, height: 48, line: { color: '#7C3AED', width: 3 } }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

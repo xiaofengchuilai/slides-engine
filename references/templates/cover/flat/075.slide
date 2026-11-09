@@ -1,0 +1,25 @@
+<Slide>
+  {/* cover/flat 075 彩色圆点封面：白底 + 彩色圆点装饰 + 居中标题 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'bg', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 左上角圆点组 */}
+    <Box style={{ position: 'absolute', top: 56, left: 56, width: 128, height: 128, borderRadius: 64, background: '#F87171', opacity: 0.6 }} />
+    <Box style={{ position: 'absolute', top: 112, left: 208, width: 80, height: 80, borderRadius: 40, background: '#FACC15', opacity: 0.6 }} />
+    <Box style={{ position: 'absolute', top: 208, left: 112, width: 96, height: 96, borderRadius: 48, background: '#4ADE80', opacity: 0.6 }} />
+    {/* 右上角圆点组 */}
+    <Box style={{ position: 'absolute', top: 56, right: 56, width: 96, height: 96, borderRadius: 48, background: '#60A5FA', opacity: 0.6 }} />
+    <Box style={{ position: 'absolute', top: 160, right: 160, width: 128, height: 128, borderRadius: 64, background: '#C084FC', opacity: 0.6 }} />
+    <Box style={{ position: 'absolute', top: 256, right: 80, width: 80, height: 80, borderRadius: 40, background: '#F472B6', opacity: 0.6 }} />
+    {/* 左下角圆点组 */}
+    <Box style={{ position: 'absolute', bottom: 56, left: 112, width: 96, height: 96, borderRadius: 48, background: '#FB923C', opacity: 0.6 }} />
+    <Box style={{ position: 'absolute', bottom: 160, left: 208, width: 80, height: 80, borderRadius: 40, background: '#2DD4BF', opacity: 0.6 }} />
+    {/* 右下角圆点组 */}
+    <Box style={{ position: 'absolute', bottom: 56, right: 56, width: 128, height: 128, borderRadius: 64, background: '#22D3EE', opacity: 0.6 }} />
+    <Box style={{ position: 'absolute', bottom: 208, right: 208, width: 96, height: 96, borderRadius: 48, background: '#818CF8', opacity: 0.6 }} />
+    {/* 主内容 */}
+    <Box style={{ alignItems: 'center', padding: '0 xl', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'lg', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}社群运营手册</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', marginBottom: 'xxl', textAlign: 'center' }}>{/* {{副标题}} */}建立连接·培育信任·创造价值</Text>
+      <Text style={{ fontSize: 'card', color: 'muted' }}>{/* {{落款}} */}用户运营部 | 社群运营培训</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,29 @@
+<Slide>
+  {/* transition/chinese/527 中国风-云纹雅韵：米白渐变底 + 竹叶线条 + 圆章序 + 居中章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #F8F6F2 0%, #EBE8E0 100%)', padding: 48, position: 'relative' }}>
+    {/* 竹叶线条（左下） */}
+    <Box style={{ position: 'absolute', bottom: 56, left: 56, width: 80, height: 4, background: '#4b5563', borderRadius: 2, opacity: 0.2, rotate: 12 }} />
+    <Box style={{ position: 'absolute', bottom: 44, left: 64, width: 64, height: 4, background: '#4b5563', borderRadius: 2, opacity: 0.2, rotate: -12 }} />
+    {/* 竹叶线条（右上） */}
+    <Box style={{ position: 'absolute', top: 56, right: 56, width: 80, height: 4, background: '#4b5563', borderRadius: 2, opacity: 0.2, rotate: -12 }} />
+    <Box style={{ position: 'absolute', top: 44, right: 64, width: 64, height: 4, background: '#4b5563', borderRadius: 2, opacity: 0.2, rotate: 12 }} />
+    {/* 印章 */}
+    <Box style={{ position: 'absolute', bottom: 56, right: 64, width: 48, height: 48, background: 'linear-gradient(135deg, #C41E3A 0%, #8B1428 100%)', alignItems: 'center', justifyContent: 'center', opacity: 0.6, rotate: 8 }}>
+      <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>{/* {{印章字}} */}雅</Text>
+    </Box>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ width: 64, height: 64, borderRadius: 32, background: 'rgba(139,69,19,0.08)', alignItems: 'center', justifyContent: 'center', marginBottom: 32 }}>
+          <Text style={{ fontSize: 'card', color: '#8b4513', bold: true, fontFamily: 'serif' }}>{/* {{替换：章节号}} */}01</Text>
+        </Box>
+        <Text style={{ fontSize: 'title', color: '#2d2d2d', bold: true, fontFamily: 'serif', marginBottom: 20 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, marginBottom: 20 }}>
+          <Box style={{ width: 40, height: 1, background: 'linear-gradient(90deg, rgba(139,69,19,0) 0%, #8b4513 100%)' }} />
+          <Box style={{ width: 4, height: 4, borderRadius: 2, background: '#8b4513' }} />
+          <Box style={{ width: 40, height: 1, background: 'linear-gradient(270deg, rgba(139,69,19,0) 0%, #8b4513 100%)' }} />
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#888888', fontFamily: 'serif' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

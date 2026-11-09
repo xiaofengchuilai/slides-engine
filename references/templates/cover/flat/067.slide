@@ -1,0 +1,27 @@
+<Slide>
+  {/* cover/flat 067 左右分栏封面：左侧橙色大数字 + 右侧白色标题区 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'row' }}>
+    {/* 左侧橙色区 */}
+    <Box style={{ width: '33.33%', height: 720, background: '#F97316', justifyContent: 'flex-end', padding: 'xxl' }}>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, marginBottom: 'md' }}>{/* {{章节号}} */}01</Text>
+      <Text style={{ fontSize: 'label', color: '#FFFFFF', letterSpacing: 4, opacity: 0.8 }}>{/* {{栏目名}} */}PRESENTATION</Text>
+    </Box>
+    {/* 右侧白色区 */}
+    <Box style={{ width: '66.67%', height: 720, background: 'bg', alignItems: 'center', justifyContent: 'center', padding: 'xxl xl' }}>
+      <Box style={{ maxWidth: 620, alignSelf: 'flex-start' }}>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'lg', lineHeight: 1.2 }}>{/* {{主标题}} */}用户体验设计</Text>
+        {/* 三色装饰条 */}
+        <Box style={{ flexDirection: 'row', gap: 'sm', marginBottom: 'xl' }}>
+          <Box style={{ width: 96, height: 8, background: '#F97316' }} />
+          <Box style={{ width: 48, height: 8, background: '#3B82F6' }} />
+          <Box style={{ width: 24, height: 8, background: '#22C55E' }} />
+        </Box>
+        <Text style={{ fontSize: 'body', color: 'muted', marginBottom: 'xl' }}>{/* {{副标题}} */}以用户为中心的产品设计方法论</Text>
+        <Box style={{ gap: 'md' }}>
+          <Text style={{ fontSize: 'card', color: 'text' }}>{/* {{落款一}} */}设计中心</Text>
+          <Text style={{ fontSize: 'card', color: 'text' }}>{/* {{落款二}} */}设计规范分享</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

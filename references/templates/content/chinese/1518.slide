@@ -1,0 +1,40 @@
+<Slide>
+  {/* chinese/1518 四图并列·四大发明：标题 + 4 卡（图+标题+说明）+ 底部说明 + 印章降级为色块 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF9F6 0%, #F0EBE1 100%)', padding: 'xxl xl' }}>
+    {/* 标题区 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: '#8B4513', bold: true, letterSpacing: 2 }}>{/* {{替换：主标题}} */}四大发明</Text>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 3, marginTop: 'sm' }}>{/* {{替换：副标题}} */}改变世界的中国智慧</Text>
+    </Box>
+    {/* 四图网格 */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1, maxHeight: 440 }}>
+      {[
+        ['造纸术', '蔡伦改进 · 东汉时期'],
+        ['指南针', '司南发明 · 战国时期'],
+        ['火药', '炼丹发现 · 唐朝时期'],
+        ['印刷术', '毕昇发明 · 北宋时期'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, height: '100%', background: 'rgba(255,255,255,0.55)', borderRadius: 'md', padding: 'md' }}>
+          {/* {{图片：有图填 assets/images/invention-{i+1}.png，无图删掉整个 <Image>}} */}
+          <Image src={`assets/images/invention-${i + 1}.png`} style={{ objectFit: 'cover', width: '100%', height: 280 }} />
+          <Box style={{ alignItems: 'center', gap: 'xs', marginTop: 'md' }}>
+            <Text style={{ fontSize: 'card', color: '#8B4513', bold: true }}>{x[0]}</Text>
+            <Text style={{ fontSize: 'label', color: 'text', lineHeight: 1.5 }}>{x[1]}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+    {/* 底部说明 */}
+    <Box style={{ alignItems: 'center', marginTop: 'lg' }}>
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6, textAlign: 'center' }}>{/* {{替换：总结句}} */}
+        四大发明是中国古代劳动人民智慧的结晶，对世界文明进程产生了深远影响
+      </Text>
+    </Box>
+    {/* 印章降级：左上角红块 */}
+    <Box style={{ position: 'absolute', top: 48, left: 48, width: 48, height: 48, background: '#C41E3A', borderRadius: 2, alignItems: 'center', justifyContent: 'center', opacity: 0.7 }}>
+      <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>古智</Text>
+    </Box>
+    {/* 功能文字 */}
+    <Text style={{ fontSize: 'label', color: 'muted', position: 'absolute', right: 56, bottom: 24 }}>{/* {{替换：来源}} */}资料来源：《中国科技史》· 李约瑟著</Text>
+  </Box>
+</Slide>

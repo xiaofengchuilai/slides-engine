@@ -1,0 +1,27 @@
+<Slide>
+  {/* business/3546 商务风-分隔线式：居中标题（下划线）+ 分隔线章节行 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center', marginBottom: 40 }}>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true, textAlign: 'center' }}>{/* {{标题}} */}目录</Text>
+        <Box style={{ width: 640, height: 4, background: 'text', borderRadius: 2, marginTop: 20 }} />
+      </Box>
+      <Box>
+        {[
+          ['1', '项目背景'],
+          ['2', '核心功能'],
+          ['3', '技术架构'],
+          ['4', '实施计划'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', gap: 24, alignItems: 'center', padding: 24 }}>
+            <Box style={{ width: 56, height: 56, background: 'text', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+            {i < 3 && <Box style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 2, background: 'line' }} />}
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

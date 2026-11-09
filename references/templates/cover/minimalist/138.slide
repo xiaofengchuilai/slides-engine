@@ -1,0 +1,18 @@
+<Slide>
+  {/* cover/minimalist/138 斜向穿插：白底 + 两条竖直淡线(斜线禁 rotate 降级) + 方块装饰行 + 居中标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 320, width: 1, height: 720, background: '#E2E8F0', opacity: 0.6, rotate: -12 }} />
+    <Box style={{ position: 'absolute', top: 0, left: 960, width: 1, height: 720, background: '#E2E8F0', opacity: 0.6, rotate: 12 }} />
+    <Box style={{ alignItems: 'center', gap: 'xl' }}>
+      <Box style={{ flexDirection: 'row', gap: 'md', alignItems: 'center' }}>
+        <Box style={{ width: 32, height: 1, background: '#CBD5E1' }} />
+        {/* 原中间方块 rotate-45（菱形），回填 rotate */}
+        <Box style={{ width: 16, height: 16, border: '2px solid #0F172A', rotate: 45 }} />
+        <Box style={{ width: 32, height: 1, background: '#CBD5E1' }} />
+      </Box>
+      <Text style={{ fontSize: 'hero', color: 'text', bold: true, lineHeight: 1.15, letterSpacing: 2 }}>{/* {{替换：主标题}} */}突破思维边界</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 4 }}>{/* {{替换：副标题}} */}跨界融合·创新突破</Text>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginTop: 'md' }}>{/* {{替换：部门/主题}} */}创新实验室 | 思维训练营</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,21 @@
+<Slide>
+  {/* ending/geometric 1059 三角拼接结尾：靛紫渐变底 + 四角三角 + 中心菱形框 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #667EEA 0%, #764BA2 100%)' }}>
+    {/* 四角三角装饰（半透明白） */}
+    <Shape type="rightTriangle" style={{ position: 'absolute', top: 0, left: 0, width: 300, height: 300, fill: '#FFFFFF', opacity: 0.1 }} />
+    <Shape type="rightTriangle" style={{ position: 'absolute', top: 0, right: 0, width: 250, height: 250, fill: '#FFFFFF', opacity: 0.15, rotate: 90 }} />
+    <Shape type="rightTriangle" style={{ position: 'absolute', bottom: 0, left: 0, width: 200, height: 200, fill: '#FFFFFF', opacity: 0.12, rotate: -90 }} />
+    <Shape type="rightTriangle" style={{ position: 'absolute', bottom: 0, right: 0, width: 280, height: 280, fill: '#FFFFFF', opacity: 0.08, rotate: 180 }} />
+    {/* 中心菱形框（边框菱形） */}
+    <Shape type="diamond" style={{ position: 'absolute', top: '50%', left: '50%', width: 150, height: 150, line: { color: '#FFFFFF', width: 3 }, opacity: 0.3 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: '50%', left: '50%', width: 120, height: 120, fill: '#FFFFFF', opacity: 0.1 }} />
+    {/* 小三角装饰 */}
+    <Shape type="triangle" style={{ position: 'absolute', top: 144, left: 192, width: 40, height: 40, fill: '#FFFFFF', opacity: 0.2 }} />
+    <Shape type="triangle" style={{ position: 'absolute', top: 504, right: 256, width: 50, height: 50, fill: '#FFFFFF', opacity: 0.15 }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: '#FFFFFF', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}谢谢观看</Text>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', textAlign: 'center' }}>{/* {{副标题}} */}感谢您的聆听</Text>
+    </Box>
+  </Box>
+</Slide>

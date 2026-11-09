@@ -1,0 +1,47 @@
+<Slide>
+  {/* cover/tech/052 科技风-波形脉冲：深色底 + 波形装饰线 + 脉冲指示 + 主标题 + 副标题 + 数据卡 + 边角装饰 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 波形装饰线 */}
+    <Box style={{ position: 'absolute', top: 240, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, #0F172A 0%, #0E7490 50%, #0F172A 100%)' }} />
+    <Box style={{ position: 'absolute', top: 360, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, #0F172A 0%, #0E7490 50%, #0F172A 100%)' }} />
+    <Box style={{ position: 'absolute', top: 480, left: 0, width: 1280, height: 2, background: 'linear-gradient(90deg, #0F172A 0%, #0E7490 50%, #0F172A 100%)' }} />
+    {/* 边角装饰（L形线） */}
+    <Box style={{ position: 'absolute', top: 32, left: 32, width: 80, height: 80 }}>
+      <Box style={{ position: 'absolute', top: 32, left: 32, width: 80, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 32, left: 32, width: 2, height: 80, background: '#06B6D4' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 32, right: 32, width: 80, height: 80 }}>
+      <Box style={{ position: 'absolute', bottom: 32, right: 32, width: 80, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', bottom: 32, right: 32, width: 2, height: 80, background: '#06B6D4' }} />
+    </Box>
+    <Box style={{ justifyContent: 'center', alignItems: 'center', maxWidth: 1100 }}>
+      {/* 脉冲指示器 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', justifyContent: 'center', marginBottom: 'xxl' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+          <Box style={{ width: 2, height: 40, background: '#06B6D4' }} />
+          <Box style={{ width: 2, height: 64, background: '#06B6D4' }} />
+          <Box style={{ width: 2, height: 32, background: '#06B6D4' }} />
+          <Box style={{ width: 2, height: 56, background: '#06B6D4' }} />
+          <Box style={{ width: 2, height: 40, background: '#06B6D4' }} />
+        </Box>
+        <Text style={{ fontSize: 'label', color: '#22D3EE', letterSpacing: 4, marginLeft: 'md' }}>{/* {{替换：状态文案}} */}SIGNAL DETECTED</Text>
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, letterSpacing: 4, textAlign: 'center', lineHeight: 1.1, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}信号处理系统</Text>
+      <Text style={{ fontSize: 'card', color: '#67E8F9', fontWeight: 300, letterSpacing: 3, textAlign: 'center', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}SIGNAL PROCESSING SYSTEM</Text>
+      {/* 底部数据卡 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        <Box style={{ justifyContent: 'center', alignItems: 'center', padding: 'md xl', background: '#0B2E3A' }}>
+          <Box style={{ position: 'absolute', left: 0, top: 0, width: 3, height: 64, background: '#06B6D4' }} />
+          <Text style={{ fontSize: 'label', color: '#22D3EE', marginBottom: 'xs' }}>AUTHOR</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：落款一}} */}信号实验室</Text>
+        </Box>
+        <Box style={{ width: 40, height: 2, background: '#0E7490' }} />
+        <Box style={{ justifyContent: 'center', alignItems: 'center', padding: 'md xl', background: '#0B2E3A' }}>
+          <Box style={{ position: 'absolute', left: 0, top: 0, width: 3, height: 64, background: '#06B6D4' }} />
+          <Text style={{ fontSize: 'label', color: '#22D3EE', marginBottom: 'xs' }}>DATE</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：落款二}} */}2025/01/20</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

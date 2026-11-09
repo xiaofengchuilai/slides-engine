@@ -1,0 +1,14 @@
+<Slide>
+  {/* cover/flat 074 蓝色渐变封面：深蓝渐变底 + 居中白色标题 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(180deg, #60A5FA 0%, #3B82F6 50%, #1D4ED8 100%)', alignItems: 'center', justifyContent: 'center', padding: 'xl' }}>
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xxl', textAlign: 'center', lineHeight: 1.2, textShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>{/* {{主标题}} */}云服务架构</Text>
+      <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.9, marginBottom: 'xxl', textAlign: 'center' }}>{/* {{副标题}} */}弹性扩展·高可用·安全可靠</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF' }}>{/* {{落款一}} */}云平台部</Text>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF' }}>·</Text>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF' }}>{/* {{落款二}} */}架构设计评审</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

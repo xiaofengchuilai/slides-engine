@@ -1,0 +1,66 @@
+<Slide>
+  {/* tech/1688 投资回报分析：三列（成本/业务价值/风险） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题 */}
+    <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, textAlign: 'center', marginBottom: 'xl' }}>{/* {{标题}} */}投资回报分析</Text>
+
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+      {/* 左列 */}
+      <Box style={{ flex: 1, flexDirection: 'column', gap: 'lg' }}>
+        <Box>
+          <Box style={{ height: 180, borderRadius: 'md', marginBottom: 'md' }}>
+            {/* {{图片：有图填 assets/images/1688a.png，无图删掉整个 <Image>}} */}
+            <Image src="assets/images/1688a.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{小标题}} */}成本节约</Text>
+          <Text style={{ fontSize: 14, color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}通过统一数据平台整合，减少重复建设投入，预计3年节约IT成本2000万元。</Text>
+        </Box>
+        <Box style={{ marginTop: 'auto' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{小标题}} */}效率提升</Text>
+          <Text style={{ fontSize: 14, color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}数据开发效率提升300%，原本需要1周的数据开发工作缩短至1-2天。</Text>
+        </Box>
+      </Box>
+
+      {/* 中列 */}
+      <Box style={{ flex: 1, flexDirection: 'column', gap: 'lg', paddingTop: 40 }}>
+        <Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{小标题}} */}业务价值</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}数据驱动的精准营销带来转化率提升25%，风控模型优化减少损失1500万/年。</Text>
+        </Box>
+        <Box style={{ marginTop: 'auto', background: 'cardBg', borderRadius: 'md', padding: 'lg' }}>
+          <Text style={{ fontSize: 18, color: '#FFFFFF', bold: true, marginBottom: 'md' }}>{/* {{卡标题}} */}关键指标</Text>
+          <Box style={{ flexDirection: 'column', gap: 'sm' }}>
+            {[
+              ['投资回收期', '18个月'],
+              ['3年ROI', '280%'],
+            ].map((x, i) => (
+              <Box key={i} style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                <Text style={{ fontSize: 14, color: 'muted' }}>{x[0]}</Text>
+                <Text style={{ fontSize: 20, color: '#FFFFFF', bold: true }}>{x[1]}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+
+      {/* 右列 */}
+      <Box style={{ flex: 1, flexDirection: 'column', gap: 'lg', paddingTop: 20 }}>
+        <Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{小标题}} */}风险降低</Text>
+          <Text style={{ fontSize: 14, color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}统一数据标准与安全体系，降低数据合规风险，避免潜在罚款损失。</Text>
+        </Box>
+        <Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{小标题}} */}竞争优势</Text>
+          <Text style={{ fontSize: 14, color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}快速响应市场变化，数据洞察驱动产品创新，构建差异化竞争壁垒。</Text>
+        </Box>
+        <Box style={{ flex: 1, borderRadius: 'md' }}>
+          {/* {{图片：有图填 assets/images/1688b.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1688b.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

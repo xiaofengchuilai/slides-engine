@@ -1,0 +1,15 @@
+<Slide>
+  {/* cover/full-gradient：全屏深色底 + 居中标题（渐变降级为纯色，深底白字） */}
+  <Box style={{ height: 720, width: 1280, background: 'primary', padding: '0 100px', justifyContent: 'center' }}>
+    {/* 装饰几何：右下大圆 + 左上小方块（均在画布内，不越界） */}
+    <Box style={{ width: 260, height: 260, borderRadius: 130, background: 'secondary', opacity: 0.35, position: 'absolute', right: 60, bottom: 60 }} />
+    <Box style={{ width: 48, height: 48, background: 'accent', opacity: 0.7, position: 'absolute', top: 80, left: 80 }} />
+    <Box>
+      <Text style={{ fontSize: 20, color: '#FFFFFF', letterSpacing: 3, opacity: 0.8 }}>{/* {{替换：小标签}} */}产品发布会</Text>
+      <Text style={{ fontSize: 66, color: '#FFFFFF', bold: true, lineHeight: 1.12, marginTop: 20 }}>{/* {{替换：主标题}} */}重新定义效率</Text>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', lineHeight: 1.5, marginTop: 24, opacity: 0.85 }}>{/* {{替换：钩子/副标}} */}一个数字，颠覆一种工作方式</Text>
+      <Box style={{ width: 60, height: 4, background: 'accent', marginTop: 44 }} />
+      <Text style={{ fontSize: 'body', color: '#FFFFFF', marginTop: 28, opacity: 0.7 }}>{/* {{替换：落款}} */}产品团队 · 2026.08</Text>
+    </Box>
+  </Box>
+</Slide>

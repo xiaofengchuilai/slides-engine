@@ -1,0 +1,32 @@
+<Slide>
+  {/* ending/chinese/1038 中国风-金色祥云：深棕底+金色边框四角+圆章、金标题+金线+副题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #2C1810 0%, #4A2A18 50%, #2C1810 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 金色边框+四角（细条替代单边 border） */}
+    <Box style={{ position: 'absolute', top: 144, left: 160, width: 960, height: 2, background: 'rgba(212,175,55,0.3)' }} />
+    <Box style={{ position: 'absolute', bottom: 144, left: 160, width: 960, height: 2, background: 'rgba(212,175,55,0.3)' }} />
+    <Box style={{ position: 'absolute', top: 144, left: 160, width: 2, height: 432, background: 'rgba(212,175,55,0.3)' }} />
+    <Box style={{ position: 'absolute', top: 144, right: 160, width: 2, height: 432, background: 'rgba(212,175,55,0.3)' }} />
+    {/* 角落装饰 */}
+    <Box style={{ position: 'absolute', top: 130, left: 146, width: 30, height: 4, background: '#D4AF37' }} />
+    <Box style={{ position: 'absolute', top: 130, left: 146, width: 4, height: 30, background: '#D4AF37' }} />
+    <Box style={{ position: 'absolute', top: 130, right: 146, width: 30, height: 4, background: '#D4AF37' }} />
+    <Box style={{ position: 'absolute', top: 130, right: 146, width: 4, height: 30, background: '#D4AF37' }} />
+    <Box style={{ position: 'absolute', bottom: 130, left: 146, width: 30, height: 4, background: '#D4AF37' }} />
+    <Box style={{ position: 'absolute', bottom: 130, left: 146, width: 4, height: 30, background: '#D4AF37' }} />
+    <Box style={{ position: 'absolute', bottom: 130, right: 146, width: 30, height: 4, background: '#D4AF37' }} />
+    <Box style={{ position: 'absolute', bottom: 130, right: 146, width: 4, height: 30, background: '#D4AF37' }} />
+    {/* 印章（红圆章） */}
+    <Box style={{ position: 'absolute', bottom: 168, left: 610, width: 60, height: 60, borderRadius: 'sm', border: '2px solid #A81810', background: 'rgba(200,16,46,0.2)', alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 15, color: '#A81810', bold: true }}>谢谢</Text>
+    </Box>
+    <Box style={{ alignItems: 'center', gap: 'md' }}>
+      <Text style={{ fontSize: 64, color: '#D4AF37', letterSpacing: 14 }}>{/* {{替换：致谢标题}} */}感谢</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+        <Box style={{ width: 80, height: 2, background: 'linear-gradient(90deg, #2C1810 0%, #D4AF37 100%)' }} />
+        <Box style={{ width: 12, height: 12, background: '#D4AF37', borderRadius: 'sm', rotate: 45 }} />
+        <Box style={{ width: 80, height: 2, background: 'linear-gradient(90deg, #D4AF37 0%, #2C1810 100%)' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#C8A882', letterSpacing: 4 }}>{/* {{替换：副题}} */}感谢您的宝贵时间</Text>
+    </Box>
+  </Box>
+</Slide>

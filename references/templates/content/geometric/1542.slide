@@ -1,0 +1,43 @@
+<Slide>
+  {/* geometric/1542 模块化思维方法论：标题卡 + 4 六边形 + 金句卡/提示卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F0FDFA 0%, #ECFEFF 100%)', padding: 'xxl xl' }}>
+    {/* 标题卡 */}
+    <Box style={{ background: '#FFFFFF', opacity: 0.95, borderRadius: 'sm', padding: 'xxl', marginBottom: 'lg', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 'sm' }}>
+        <Shape type="hexagon" style={{ width: 44, height: 44, fill: '#0D9488' }} />
+        <Text style={{ fontSize: 'title', color: '#134E4A', bold: true }}>{/* {{替换：页面标题}} */}模块化思维方法论</Text>
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.6 }}>{/* {{替换：介绍段}} */}模块化设计是一种将复杂系统分解为独立、可互换组件的方法论。模块化的核心优势在于降低系统复杂度、提高可维护性、促进团队协作。</Text>
+    </Box>
+    {/* 4 个六边形特征 */}
+    <Box style={{ flexDirection: 'row', justifyContent: 'center', gap: 'lg', marginBottom: 'lg' }}>
+      {[
+        ['高内聚', '模块内部功能紧密关联', '#0D9488'],
+        ['低耦合', '模块间依赖最小化', '#14B8A6'],
+        ['可复用', '模块可在不同场景使用', '#06B6D4'],
+        ['易扩展', '便于添加新功能', '#22D3EE'],
+      ].map((m, i) => (
+        <Box key={i} style={{ width: 230, height: 230, alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+          <Shape type="hexagon" style={{ position: 'absolute', top: 0, left: 0, width: 230, height: 230, fill: m[2] }} />
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{替换：特征名}} */}{m[0]}</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.9 }}>{/* {{替换：特征说明}} */}{m[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 下方：金句 + 提示 */}
+    <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+      <Box style={{ flex: 2, background: 'linear-gradient(90deg, #0F766E 0%, #0E7490 100%)', borderRadius: 'sm', padding: 'lg', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, lineHeight: 1.6, marginBottom: 'sm' }}>{/* {{替换：金句}} */}"系统的价值不在于部件的数量，而在于它们如何协同工作。"</Text>
+        <Text style={{ fontSize: 'body', color: '#99F6E4' }}>— 系统思维理论</Text>
+      </Box>
+      <Box style={{ flex: 1, background: '#CFFAFE', borderRadius: 'sm', padding: 'md', border: '2px solid #67E8F9', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs', marginBottom: 'xs' }}>
+          <FAIcon name="lightbulb" style={{ fill: '#0E7490', width: 16, height: 16 }} />
+          <Text style={{ fontSize: 'label', color: '#164E63', bold: true }}>提示：</Text>
+        </Box>
+        <Text style={{ fontSize: 'label', color: '#155E75', lineHeight: 1.6, marginBottom: 'xs' }}>{/* {{替换：提示内容}} */}模块化设计需要前期投入更多的规划时间。</Text>
+        <Text style={{ fontSize: 'label', color: '#0E7490' }}>相关阅读：《设计模式》</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

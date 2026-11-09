@@ -1,0 +1,74 @@
+<Slide>
+  {/* flat/1568 微交互：橙黄渐变底 + 3卡片(细腻按钮态/即时加载/愉悦开关) */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FACC15 0%, #FB923C 50%, #F97316 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ gap: 'xs' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, textAlign: 'center' }}>{/* {{替换：标题}} */}微交互</Text>
+      <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.9, textAlign: 'center' }}>{/* {{替换：副标题}} */}Micro-interactions</Text>
+    </Box>
+    {/* 交互演示网格 3列 */}
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'lg' }}>
+      {/* 按钮交互：细腻 */}
+      <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'lg', padding: 'xl', alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'lg' }}>{/* {{替换：卡1标题}} */}细腻</Text>
+        <Box style={{ width: '100%', gap: 'sm' }}>
+          <Box style={{ background: 'linear-gradient(90deg, #F97316 0%, #EA580C 100%)', borderRadius: 'sm', padding: 'sm md', alignItems: 'center' }}>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>Normal</Text>
+          </Box>
+          <Box style={{ background: 'linear-gradient(90deg, #EA580C 0%, #C2410C 100%)', borderRadius: 'sm', padding: 'sm md', alignItems: 'center' }}>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>Hover</Text>
+          </Box>
+          <Box style={{ background: 'linear-gradient(90deg, #C2410C 0%, #9A3412 100%)', borderRadius: 'sm', padding: 'sm md', alignItems: 'center' }}>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>Active</Text>
+          </Box>
+        </Box>
+        <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'lg' }}>{/* {{替换：卡1说明}} */}注重细节体验</Text>
+      </Box>
+      {/* 加载动画：即时 */}
+      <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'lg', padding: 'xl', alignItems: 'center', justifyContent: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'lg' }}>{/* {{替换：卡2标题}} */}即时</Text>
+        {/* 进度环示意 */}
+        <Box style={{ width: 160, height: 160, borderRadius: 80, border: '14px solid #F3F4F6', alignItems: 'center', justifyContent: 'center', position: 'relative', marginBottom: 'md' }}>
+          <Box style={{ width: 132, height: 132, borderRadius: 66, background: 'linear-gradient(135deg, #F59E0B 0%, #F97316 100%)' }} />
+        </Box>
+        <Text style={{ fontSize: 'kpi', color: '#EA580C', bold: true, marginTop: '-100px', marginBottom: '40px' }}>{/* {{替换：进度}} */}75%</Text>
+        <Text style={{ fontSize: 'label', color: 'muted', marginBottom: 'sm' }}>Loading</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：卡2说明}} */}反馈及时有效</Text>
+      </Box>
+      {/* 开关切换：愉悦 */}
+      <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'lg', padding: 'xl', alignItems: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'lg' }}>{/* {{替换：卡3标题}} */}愉悦</Text>
+        <Box style={{ width: '100%', gap: 'lg' }}>
+          {/* Toggle 开关 */}
+          <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+            <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：开关名}} */}通知</Text>
+            <Box style={{ width: 56, height: 28, background: 'linear-gradient(90deg, #F97316 0%, #EA580C 100%)', borderRadius: 14, flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', padding: 4 }}>
+              <Box style={{ width: 20, height: 20, background: 'cardBg', borderRadius: 10 }} />
+            </Box>
+          </Box>
+          {/* 滑块 */}
+          <Box>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 'xs' }}>
+              <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：滑块名}} */}音量</Text>
+              <Text style={{ fontSize: 'body', color: '#EA580C', bold: true }}>{/* {{替换：滑块值}} */}80%</Text>
+            </Box>
+            <Box style={{ height: 10, background: '#E5E7EB', borderRadius: 5, position: 'relative' }}>
+              <Box style={{ width: '80%', height: 10, background: 'linear-gradient(90deg, #F97316 0%, #EA580C 100%)', borderRadius: 5 }} />
+            </Box>
+          </Box>
+          {/* 复选框 */}
+          <Box style={{ gap: 'sm' }}>
+            {['设计优先', '用户体验'].map((x, i) => (
+              <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+                <Box style={{ width: 28, height: 28, background: 'linear-gradient(135deg, #F97316 0%, #EA580C 100%)', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+                  <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>✓</Text>
+                </Box>
+                <Text style={{ fontSize: 'body', color: 'text' }}>{x}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'lg' }}>{/* {{替换：卡3说明}} */}提升使用满意</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

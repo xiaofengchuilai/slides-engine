@@ -1,0 +1,21 @@
+<Slide>
+  {/* transition/tech/563 科技风-全息投影：紫蓝深底 + 全息圆环 + 章节号/名/导语 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #3b0764 0%, #312e81 50%, #172554 100%)', padding: 48, position: 'relative' }}>
+    {/* 全息圆环 */}
+    <Box style={{ position: 'absolute', top: 180, left: 470, width: 340, height: 340, borderRadius: 170, border: '2px solid rgba(34,211,238,0.4)' }} />
+    <Box style={{ position: 'absolute', top: 210, left: 500, width: 280, height: 280, borderRadius: 140, border: '2px solid rgba(192,132,252,0.5)' }} />
+    <Box style={{ position: 'absolute', top: 240, left: 530, width: 220, height: 220, borderRadius: 110, border: '2px solid rgba(244,114,182,0.6)' }} />
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'hero', color: '#22d3ee', bold: true, marginBottom: 24 }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 16 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#67e8f9' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+        <Box style={{ flexDirection: 'row', gap: 16, marginTop: 32 }}>
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#22d3ee' }} />
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#c084fc' }} />
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#f472b6' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,31 @@
+<Slide>
+  {/* geometric/3509 几何风-三角拼接：2x2 白卡+旋转45度方块/圆角方块装饰角（rotate 禁 → 普通色块） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F3E8FF 0%, #FCE7F3 100%)' }}>
+    <Box style={{ height: 720, justifyContent: 'center', padding: 'xxl xl' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 48, textAlign: 'center' }}>{/* {{替换：标题}} */}目录</Text>
+      {[
+        ['01', '研究背景', 'Research Background', '#A855F7', 'square'],
+        ['02', '方法论', 'Methodology', '#EC4899', 'circle'],
+        ['03', '数据分析', 'Data Analysis', '#3B82F6', 'square'],
+        ['04', '研究结论', 'Conclusions', '#22C55E', 'circle'],
+      ].reduce((rows, item, idx) => {
+        if (idx % 2 === 0) rows.push([]);
+        rows[rows.length - 1].push(item);
+        return rows;
+      }, []).map((row, ri) => (
+        <Box key={ri} style={{ flexDirection: 'row', gap: 'lg', marginBottom: 32 }}>
+          {row.map((x, i) => (
+            <Box key={i} style={{ flex: 1, position: 'relative', paddingTop: 12 }}>
+              <Box style={{ position: 'absolute', top: 0, left: i % 2 === 0 ? 0 : undefined, right: i % 2 === 0 ? undefined : 0, width: 64, height: 64, background: x[3], borderRadius: x[4] === 'circle' ? 999 : 0, rotate: x[4] === 'square' ? 45 : 0 }} />
+              <Box style={{ background: '#FFFFFF', padding: 'xl', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+                <Text style={{ fontSize: 'card', color: x[3], bold: true, marginBottom: 8 }}>{/* {{章节号}} */}{x[0]}</Text>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 8 }}>{/* {{章节名}} */}{x[1]}</Text>
+                <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{章节副标题}} */}{x[2]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

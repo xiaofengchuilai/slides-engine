@@ -1,0 +1,31 @@
+<Slide>
+  {/* decorative/business/2029 商务风-哑光小分隔符：白底 + 分隔线元素网格 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 40 }}>
+      <Box style={{ flexDirection: 'row', gap: 64, alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 64, height: 2, background: '#CBD5E1' }} />
+        <Box style={{ width: 2, height: 48, background: '#CBD5E1' }} />
+        {/* 线-点-线 */}
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Box style={{ width: 24, height: 2, background: '#94A3B8' }} />
+          <Box style={{ width: 4, height: 4, borderRadius: 2, background: '#94A3B8' }} />
+          <Box style={{ width: 24, height: 2, background: '#94A3B8' }} />
+        </Box>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 64, alignItems: 'center', justifyContent: 'center' }}>
+        {/* 三段短线 */}
+        <Box style={{ flexDirection: 'row', gap: 4 }}>
+          <Box style={{ width: 16, height: 2, background: '#94A3B8' }} />
+          <Box style={{ width: 16, height: 2, background: '#94A3B8' }} />
+          <Box style={{ width: 16, height: 2, background: '#94A3B8' }} />
+        </Box>
+        <Box style={{ width: 48, height: 8, background: '#2563EB' }} />
+        {/* 双横线 */}
+        <Box style={{ flexDirection: 'column', gap: 4 }}>
+          <Box style={{ width: 48, height: 2, background: '#CBD5E1' }} />
+          <Box style={{ width: 48, height: 2, background: '#CBD5E1' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

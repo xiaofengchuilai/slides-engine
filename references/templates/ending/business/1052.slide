@@ -1,0 +1,28 @@
+<Slide>
+  {/* ending/business/1052 深灰商务：四角橙色 L 装饰 + 十字分割线 + 居中致谢 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(90deg, #2d3748 0%, #1a202c 50%, #2d3748 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 垂直分割线 - 左 */}
+    <Box style={{ position: 'absolute', top: 108, bottom: 108, left: 256, width: 2, background: 'linear-gradient(180deg, rgba(237,137,54,0) 0%, rgba(237,137,54,0.6) 50%, rgba(237,137,54,0) 100%)' }} />
+    {/* 垂直分割线 - 右 */}
+    <Box style={{ position: 'absolute', top: 108, bottom: 108, right: 256, width: 2, background: 'linear-gradient(180deg, rgba(237,137,54,0) 0%, rgba(237,137,54,0.6) 50%, rgba(237,137,54,0) 100%)' }} />
+    {/* 水平分割线 - 上 */}
+    <Box style={{ position: 'absolute', top: 216, left: 192, right: 192, height: 1, background: 'linear-gradient(90deg, rgba(237,137,54,0) 0%, rgba(237,137,54,0.4) 50%, rgba(237,137,54,0) 100%)' }} />
+    {/* 水平分割线 - 下 */}
+    <Box style={{ position: 'absolute', bottom: 216, left: 192, right: 192, height: 1, background: 'linear-gradient(90deg, rgba(237,137,54,0) 0%, rgba(237,137,54,0.4) 50%, rgba(237,137,54,0) 100%)' }} />
+    {/* 四角橙色 L 形装饰（细条组合） */}
+    <Box style={{ position: 'absolute', top: 72, left: 128, width: 50, height: 3, background: '#ed8936' }} />
+    <Box style={{ position: 'absolute', top: 72, left: 128, width: 3, height: 50, background: '#ed8936' }} />
+    <Box style={{ position: 'absolute', top: 72, right: 128, width: 50, height: 3, background: '#ed8936' }} />
+    <Box style={{ position: 'absolute', top: 72, right: 128, width: 3, height: 50, background: '#ed8936' }} />
+    <Box style={{ position: 'absolute', bottom: 72, left: 128, width: 50, height: 3, background: '#ed8936' }} />
+    <Box style={{ position: 'absolute', bottom: 72, left: 128, width: 3, height: 50, background: '#ed8936' }} />
+    <Box style={{ position: 'absolute', bottom: 72, right: 128, width: 50, height: 3, background: '#ed8936' }} />
+    <Box style={{ position: 'absolute', bottom: 72, right: 128, width: 3, height: 50, background: '#ed8936' }} />
+    {/* 主要内容 */}
+    <Box style={{ alignItems: 'center', maxWidth: 832 }}>
+      <Text style={{ fontSize: 56, color: '#FFFFFF', letterSpacing: 10, textAlign: 'center', marginBottom: 40 }}>{/* {{替换：主标题}} */}致谢</Text>
+      <Box style={{ width: 100, height: 3, background: '#ed8936', marginBottom: 38 }} />
+      <Text style={{ fontSize: 'card', color: '#cbd5e0', letterSpacing: 2, lineHeight: 1.8, textAlign: 'center' }}>{/* {{替换：致谢语}} */}欢迎交流与指导</Text>
+    </Box>
+  </Box>
+</Slide>

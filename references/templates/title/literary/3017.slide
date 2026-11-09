@@ -1,0 +1,16 @@
+<Slide>
+  {/* title/literary/3017 文艺风-边框装饰：白紫渐变底 + 虚线框 + 章节标签 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(90deg, #FFFFFF 0%, #FAF5FF 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ border: '2px dashed #c4b5fd', borderRadius: 16, padding: 56, paddingLeft: 96, paddingRight: 96, position: 'relative', background: '#FFFFFF' }}>
+        <Box style={{ position: 'absolute', top: -16, left: 32, background: '#FFFFFF', paddingLeft: 16, paddingRight: 16 }}>
+          <Text style={{ fontSize: 'label', color: '#7c3aed', bold: true, letterSpacing: 4 }}>{/* {{替换：章节标签}} */}CHAPTER I</Text>
+        </Box>
+        <Box style={{ alignItems: 'center' }}>
+          <Text style={{ fontSize: 'title', color: '#111827', fontFamily: 'serif', bold: true, textAlign: 'center' }}>{/* {{替换：标题}} */}岁月留声</Text>
+          <Text style={{ fontSize: 'body', color: '#6b7280', marginTop: 12, fontFamily: 'serif' }}>{/* {{替换：副标题}} */}时光里的温柔诗篇</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,17 @@
+<Slide>
+  {/* title/hand-drawn/3010 手绘风-涂鸦线条标题：白底 + 手写大标题 + 手绘波浪下划线 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 'xl' }}>
+    {/* 左上手绘铅笔图标（装饰） */}
+    <RoughBox shape="path" path="M 20 20 L 60 20 Q 90 5, 120 20 T 180 20" style={{ position: 'absolute', left: 64, top: 96, width: 200, height: 40, stroke: '#F59E0B', strokeWidth: 3, roughness: 2 }} />
+    {/* 主内容区（居中） */}
+    <Box style={{ height: '100%', justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+      <Box style={{ position: 'relative', width: 900, alignItems: 'center' }}>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true, fontFamily: 'hand', textAlign: 'center', lineHeight: 1.4 }}>{/* {{主标题}} */}创意笔记</Text>
+        {/* 手绘波浪下划线（amber-500 #F59E0B） */}
+        <RoughBox shape="path" path="M 0 0 Q 45 10, 90 0 T 180 0 T 270 0 T 360 0 T 450 0" style={{ position: 'absolute', left: 0, top: 76, width: 900, height: 24, stroke: '#F59E0B', strokeWidth: 3, roughness: 2 }} />
+        {/* 副标题占位 */}
+        <Text style={{ fontSize: 'body', color: 'muted', fontFamily: 'hand', textAlign: 'center', marginTop: 'xl', lineHeight: 1.5 }}>{/* {{副标题}} */}把灵感随手记下，让创意自然生长</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

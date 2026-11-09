@@ -1,0 +1,32 @@
+<Slide>
+  {/* ending/cartoon/1039 卡通风-彩虹告别：蓝米渐变底+顶部彩虹半环+白云、红标题+彩点线+副题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #E0F7FF 0%, #FFF5E0 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 彩虹半环（顶部多色弧，降级为多色条带） */}
+    <Box style={{ position: 'absolute', top: -80, left: 190, width: 900, height: 300, borderRadius: 'sm', background: 'linear-gradient(180deg, #FF6B6B 0%, #FFB347 20%, #FFEA5C 40%, #77DD77 60%, #66CCFF 80%, #B388FF 100%)', opacity: 0.35 }} />
+    {/* 云朵（白圆组） */}
+    <Box style={{ position: 'absolute', top: 110, left: 128, flexDirection: 'row', alignItems: 'center' }}>
+      <Box style={{ width: 50, height: 50, borderRadius: 'sm', background: '#FFFFFF' }} />
+      <Box style={{ width: 70, height: 70, borderRadius: 'sm', background: '#FFFFFF', marginLeft: -15 }} />
+      <Box style={{ width: 50, height: 50, borderRadius: 'sm', background: '#FFFFFF', marginLeft: -15 }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 150, right: 150, flexDirection: 'row', alignItems: 'center' }}>
+      <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: '#FFFFFF' }} />
+      <Box style={{ width: 55, height: 55, borderRadius: 'sm', background: '#FFFFFF', marginLeft: -12 }} />
+      <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: '#FFFFFF', marginLeft: -12 }} />
+    </Box>
+    {/* 星星装饰（彩色 emoji） */}
+    <Emoji name="⭐" style={{ position: 'absolute', bottom: 150, left: 200, width: 22, height: 22 }} />
+    <Emoji name="⭐" style={{ position: 'absolute', bottom: 180, right: 230, width: 20, height: 20 }} />
+    <Box style={{ alignItems: 'center', gap: 'md', marginTop: 20 }}>
+      <Text style={{ fontSize: 64, color: '#FF6B6B', bold: true }}>{/* {{替换：致谢标题}} */}谢谢观看</Text>
+      <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+        <Box style={{ width: 16, height: 16, borderRadius: 'sm', background: '#FF6B6B' }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 'sm', background: '#FFB347' }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 'sm', background: '#FFEA5C' }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 'sm', background: '#77DD77' }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 'sm', background: '#66CCFF' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#666666', bold: true }}>{/* {{替换：副题}} */}感谢您的聆听</Text>
+    </Box>
+  </Box>
+</Slide>

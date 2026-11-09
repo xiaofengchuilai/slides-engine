@@ -1,0 +1,59 @@
+<Slide>
+  {/* minimalist/1614 用户体验五要素：中心标题 + 五行要素卡（螺旋环绕简化为对称排列） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 中心标题 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'xs' }}>{/* {{标题}} */}用户体验五要素</Text>
+      <Box style={{ width: 128, height: 2, background: 'primary', marginBottom: 'xs' }} />
+      <Text style={{ fontSize: 'label', color: 'muted' }}>UX Five Elements</Text>
+    </Box>
+
+    {/* 上排：战略层 / 范围层 / 结构层 */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1 }}>
+      {[
+        ['战略层', '明确产品目标和用户需求，建立商业价值与用户价值的平衡点。', 'primary'],
+        ['范围层', '定义功能规格和内容需求，确定产品边界。', 'secondary'],
+        ['结构层', '设计交互方式和信息架构，构建产品骨架。', 'muted'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'lg', border: '1px solid #E5E7EB', gap: 'sm', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+            <Box style={{ width: 32, height: 32, borderRadius: 16, background: x[2], alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{i + 1}</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{x[0]}</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+
+    {/* 下排：框架层 / 表现层（深色突出） */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1, marginTop: 'lg' }}>
+      <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'lg', border: '1px solid #E5E7EB', gap: 'sm', justifyContent: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Box style={{ width: 32, height: 32, borderRadius: 16, background: 'muted', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>4</Text>
+          </Box>
+          <Text style={{ fontSize: 'card', color: 'text', bold: true }}>框架层</Text>
+        </Box>
+        <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>界面设计、导航设计、信息设计的具体实现。</Text>
+      </Box>
+      <Box style={{ flex: 1, background: 'primary', borderRadius: 'md', padding: 'lg', gap: 'sm', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Box style={{ width: 32, height: 32, borderRadius: 16, background: '#FFFFFF', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'label', color: 'primary', bold: true }}>5</Text>
+          </Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>表现层</Text>
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.8, lineHeight: 1.5 }}>视觉设计的最终呈现，用户直接感知的界面。</Text>
+      </Box>
+      {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+      <Box style={{ flex: 0.6, background: 'cardBg', borderRadius: 160, alignItems: 'center', justifyContent: 'center' }}>
+        <Image src="assets/images/model.png" style={{ width: 120, height: 120, objectFit: 'cover' }} />
+      </Box>
+    </Box>
+
+    {/* 底部条 */}
+    <Text style={{ fontSize: 'label', color: 'muted', textAlign: 'center', marginTop: 'md' }}>理论基础：Jesse James Garrett《用户体验要素》| 应用场景：产品设计全流程</Text>
+  </Box>
+</Slide>

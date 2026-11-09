@@ -1,0 +1,70 @@
+<Slide>
+  {/* minimalist/1611 人工智能应用场景：三栏砌体布局（左大图+卡 / 中三块 / 右卡+图） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 标题栏 */}
+    <Box style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 'lg' }}>
+      <Box style={{ width: 40, height: 40, borderRadius: 20, background: 'primary', alignItems: 'center', justifyContent: 'center', marginRight: 'md' }}>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>AI</Text>
+      </Box>
+      <Box>
+        <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{标题}} */}人工智能应用场景</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{副标题}} */}Artificial Intelligence Use Cases</Text>
+      </Box>
+    </Box>
+
+    {/* 三栏主体 */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1 }}>
+      {/* 左列：一大图 + 应用领域卡 */}
+      <Box style={{ flex: 1, gap: 'md' }}>
+        <Box style={{ flex: 1.5, background: 'cardBg', borderRadius: 'md', padding: 'md', gap: 'sm', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/vision.png" style={{ width: 230, height: 130, objectFit: 'cover' }} />
+          <Box style={{ background: '#FFFFFF', padding: 'sm md', borderRadius: 'sm', alignItems: 'flex-start', width: '100%' }}>
+            <Text style={{ fontSize: 'label', color: 'text', bold: true }}>图像识别准确率</Text>
+            <Text style={{ fontSize: 'kpi', color: 'text', bold: true }}>99.2%</Text>
+          </Box>
+        </Box>
+        <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', border: '1px solid #E5E7EB', justifyContent: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'xs' }}>应用领域</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>质量检测、安防监控、医疗影像分析</Text>
+        </Box>
+      </Box>
+
+      {/* 中列：NLP 卡 + 数据卡 + 图 */}
+      <Box style={{ flex: 1, gap: 'md' }}>
+        <Box style={{ flex: 1, background: 'primary', borderRadius: 'md', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.8 }}>自然语言处理</Text>
+          <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>NLP</Text>
+        </Box>
+        <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', border: '1px solid #E5E7EB', justifyContent: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>处理效率</Text>
+          <Text style={{ fontSize: 'kpi', color: 'text', bold: true }}>1000次/秒</Text>
+          <Text style={{ fontSize: 'body', color: 'muted' }}>智能客服、文本分析</Text>
+        </Box>
+        <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/voice.png" style={{ width: 200, height: 110, objectFit: 'cover' }} />
+        </Box>
+      </Box>
+
+      {/* 右列：机器学习卡 + 图 */}
+      <Box style={{ flex: 1, gap: 'md' }}>
+        <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', border: '2px solid primary', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'xs' }}>机器学习</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>预测分析、推荐系统、异常检测</Text>
+        </Box>
+        <Box style={{ flex: 1.5, background: 'cardBg', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/deeplearning.png" style={{ width: 230, height: 130, objectFit: 'cover' }} />
+        </Box>
+      </Box>
+    </Box>
+
+    {/* 底部条 */}
+    <Box style={{ height: 2, background: '#E5E7EB', marginTop: 'md', marginBottom: 'sm' }} />
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>技术框架：TensorFlow + PyTorch | 算力支持：GPU集群</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>数据来源：[数据来源名] [年份]</Text>
+    </Box>
+  </Box>
+</Slide>

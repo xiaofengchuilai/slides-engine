@@ -1,0 +1,12 @@
+<Slide>
+  {/* transition/business/507 斜切分割：左渐变斜块 + 白章节号/章节名/导语 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', position: 'relative' }}>
+    {/* 左侧色块（原 clip-path 斜切，引擎不支持 → 渐变块降级近似） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, bottom: 0, width: 768, background: 'linear-gradient(135deg, #4F46E5 0%, #1D4ED8 100%)' }} />
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, marginBottom: 24, textAlign: 'center' }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+    </Box>
+  </Box>
+</Slide>

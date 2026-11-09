@@ -1,0 +1,21 @@
+<Slide>
+  {/* ending/business/1051 深青蓝渐变：半透明圆装饰 + 斜线 + 居中谢谢 + 蓝绿渐变分隔线 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #1e3a5f 0%, #2c5f7e 50%, #1e5050 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 半透明圆形装饰 - 左上 */}
+    <Box style={{ position: 'absolute', top: -100, left: -120, width: 400, height: 400, borderRadius: 200, background: 'rgba(68,187,164,0.15)' }} />
+    {/* 半透明圆形装饰 - 右下（贴角，负偏移会溢出画布故用 0） */}
+    <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 450, height: 450, borderRadius: 225, background: 'rgba(82,139,255,0.15)' }} />
+    {/* 线条装饰（右上、左下，旋转 45°） */}
+    <Box style={{ position: 'absolute', top: 144, right: 192, width: 100, height: 1, background: 'rgba(68,187,164,0.5)', rotate: -45 }} />
+    <Box style={{ position: 'absolute', bottom: 180, left: 192, width: 120, height: 1, background: 'rgba(82,139,255,0.5)', rotate: 45 }} />
+    {/* 小方块装饰（旋转 45° 菱形） */}
+    <Box style={{ position: 'absolute', top: 130, left: 154, width: 12, height: 12, border: '2px solid rgba(68,187,164,0.6)', rotate: 45 }} />
+    <Box style={{ position: 'absolute', bottom: 144, right: 154, width: 14, height: 14, border: '2px solid rgba(82,139,255,0.6)', rotate: 45 }} />
+    {/* 主要内容 */}
+    <Box style={{ alignItems: 'center', maxWidth: 960 }}>
+      <Text style={{ fontSize: 60, color: '#FFFFFF', letterSpacing: 8, textAlign: 'center', marginBottom: 42 }}>{/* {{替换：主标题}} */}谢谢</Text>
+      <Box style={{ width: 140, height: 2, background: 'linear-gradient(90deg, #528bff 0%, #44bba4 100%)', marginBottom: 40 }} />
+      <Text style={{ fontSize: 'card', color: '#b8d4e8', letterSpacing: 2, lineHeight: 1.8, textAlign: 'center' }}>{/* {{替换：致谢语}} */}感谢您的关注与支持</Text>
+    </Box>
+  </Box>
+</Slide>

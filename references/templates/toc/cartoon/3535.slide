@@ -1,0 +1,54 @@
+<Slide>
+  {/* cartoon/3535 卡通风-糖果色块：粉紫蓝渐变底 + 圆点装饰 + 2x2 糖果渐变章节卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FCE7F3 0%, #EDE9FE 50%, #DBEAFE 100%)', padding: 48, position: 'relative' }}>
+    {/* 装饰圆点 */}
+    <Box style={{ position: 'absolute', top: 40, left: 80, width: 64, height: 64, borderRadius: 32, background: '#facc15', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', bottom: 80, right: 80, width: 80, height: 80, borderRadius: 40, background: '#f472b6', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 160, right: 160, width: 48, height: 48, borderRadius: 24, background: '#60a5fa', opacity: 0.4 }} />
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center', marginBottom: 32 }}>
+        <Box style={{ background: '#FFFFFF', borderRadius: 999, padding: 12, paddingLeft: 24, paddingRight: 24, boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Text style={{ fontSize: 'title', color: '#9333ea', bold: true }}>{/* {{标题}} */}目录</Text>
+        </Box>
+      </Box>
+      <Box style={{ gap: 20 }}>
+        <Box style={{ flexDirection: 'row', gap: 20 }}>
+          <Box style={{ flex: 1, background: 'linear-gradient(135deg, #f472b6 0%, #a855f7 100%)', borderRadius: 24, padding: 24, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 20 }}>
+              <Box style={{ width: 64, height: 64, background: '#FFFFFF', borderRadius: 16, alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+                <Text style={{ fontSize: 'card', color: '#9333ea', bold: true }}>{/* {{章节编号}} */}1</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节名}} */}项目背景</Text>
+            </Box>
+          </Box>
+          <Box style={{ flex: 1, background: 'linear-gradient(135deg, #f472b6 0%, #a855f7 100%)', borderRadius: 24, padding: 24, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 20 }}>
+              <Box style={{ width: 64, height: 64, background: '#FFFFFF', borderRadius: 16, alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+                <Text style={{ fontSize: 'card', color: '#9333ea', bold: true }}>{/* {{章节编号}} */}2</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节名}} */}核心功能</Text>
+            </Box>
+          </Box>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 20 }}>
+          <Box style={{ flex: 1, background: 'linear-gradient(135deg, #f472b6 0%, #a855f7 100%)', borderRadius: 24, padding: 24, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 20 }}>
+              <Box style={{ width: 64, height: 64, background: '#FFFFFF', borderRadius: 16, alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+                <Text style={{ fontSize: 'card', color: '#9333ea', bold: true }}>{/* {{章节编号}} */}3</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节名}} */}技术架构</Text>
+            </Box>
+          </Box>
+          <Box style={{ flex: 1, background: 'linear-gradient(135deg, #f472b6 0%, #a855f7 100%)', borderRadius: 24, padding: 24, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 20 }}>
+              <Box style={{ width: 64, height: 64, background: '#FFFFFF', borderRadius: 16, alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+                <Text style={{ fontSize: 'card', color: '#9333ea', bold: true }}>{/* {{章节编号}} */}4</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{章节名}} */}实施计划</Text>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

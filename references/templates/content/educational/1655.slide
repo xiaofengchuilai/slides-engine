@@ -1,0 +1,59 @@
+<Slide>
+  {/* educational/1655 现代文阅读·段落大意：标题 + 示例段落 + 3方法卡 + 归纳示例 + 口诀 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F0FDFA 0%, #CCFBF1 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Text style={{ fontSize: 'title', color: '#134E4A', bold: true }}>{/* {{替换：标题}} */}现代文阅读技巧</Text>
+      <Text style={{ fontSize: 'body', color: '#0D9488' }}>{/* {{替换：副标题}} */}如何归纳段落大意</Text>
+    </Box>
+    <Box style={{ background: '#FFFFFF', border: '2px solid #99F6E4', borderRadius: 'md', padding: 'lg', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+        <Box style={{ width: 28, height: 28, background: '#CCFBF1', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+          <Emoji name="📝" style={{ width: 14, height: 14 }} />
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#115E59', bold: true }}>{/* {{替换：标题}} */}示例段落</Text>
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#1F2937', lineHeight: 1.7 }}>{/* {{替换：示例段落}} */}春天来了，校园里的樱花树开满了粉色的花朵。清晨，阳光透过花瓣洒在地面上，形成斑驳的光影。同学们喜欢在樱花树下读书、聊天，享受这美好的时光。微风吹过，花瓣纷纷飘落，就像下了一场粉色的雪。老师说，樱花的花期很短，要珍惜眼前的美景。</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+      {[
+        ['找主要人物', ['同学们', '老师'], '→ 谁做了什么', '#3B82F6', 'rgba(59,130,246,0.12)'],
+        ['找关键事物', ['樱花树', '花瓣'], '→ 写了什么东西', '#22C55E', 'rgba(34,197,94,0.12)'],
+        ['找中心句', ['"春天来了..."', '"要珍惜美景"'], '→ 表达什么意思', '#A855F7', 'rgba(168,85,247,0.12)'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: x[4], border: `2px solid ${x[3]}`, borderRadius: 'md', padding: 'lg' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Box style={{ width: 28, height: 28, background: x[3], borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{i + 1}</Text>
+            </Box>
+            <Text style={{ fontSize: 'body', color: '#1E3A8A', bold: true }}>{/* {{替换：方法名}} */}{x[0]}</Text>
+          </Box>
+          <Box style={{ gap: 'xs' }}>
+            {x[1].map((t, ti) => (
+              <Text key={ti} style={{ fontSize: 'label', color: '#374151' }}>• {t}</Text>
+            ))}
+          </Box>
+          <Box style={{ background: '#FFFFFF', border: `1px solid ${x[3]}`, borderRadius: 'sm', padding: 'xs', marginTop: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: x[3], bold: true }}>{/* {{替换：结论}} */}{x[2]}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ background: 'linear-gradient(90deg, #14B8A6 0%, #06B6D4 100%)', borderRadius: 'md', padding: 'lg', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+        <Emoji name="✨" style={{ width: 18, height: 18 }} />
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：标题}} */}段落大意归纳</Text>
+      </Box>
+      <Box style={{ background: 'rgba(255,255,255,0.2)', borderRadius: 'sm', padding: 'md' }}>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', lineHeight: 1.7 }}>{/* {{替换：归纳示例}} */}春天校园里的樱花盛开，同学们在树下欣赏美景，老师提醒大家要珍惜短暂的花期。</Text>
+      </Box>
+    </Box>
+    <Box style={{ background: '#FFFBEB', flexDirection: 'row', alignItems: 'center', padding: 'md', borderRadius: 'sm' }}>
+      <Box style={{ width: 4, height: 40, background: '#F59E0B', borderRadius: 2, marginRight: 'md' }} />
+      <Emoji name="💡" style={{ width: 16, height: 16, marginRight: 'sm' }} />
+      <Box style={{ flex: 1 }}>
+        <Text style={{ fontSize: 'body', color: '#92400E', bold: true, marginBottom: 'xs' }}>{/* {{替换：标题}} */}归纳技巧口诀</Text>
+        <Text style={{ fontSize: 'body', color: '#374151' }}>谁(人物) + 在哪(地点) + 做什么(事件) + 怎么样(结果/感受)</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

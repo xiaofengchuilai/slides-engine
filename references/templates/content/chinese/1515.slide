@@ -1,0 +1,29 @@
+<Slide>
+  {/* chinese/1515 四象布局·纯文字：中心标题 + 2x2 四象限内容（中医文化） */}
+  <Box style={{ height: 720, width: 1280, background: '#FAF9F6', padding: 'xxl xl', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 中心标题 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'xl' }}>
+      <Box style={{ width: 64, height: 64, borderRadius: 999, border: '1px solid rgba(168,24,16,0.3)', alignItems: 'center', justifyContent: 'center', marginBottom: 'lg' }}>
+        <Text style={{ fontSize: 'card', color: '#A81810', bold: true }}>{/* {{替换：中心符号}} */}医</Text>
+      </Box>
+      <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true, letterSpacing: 2 }}>{/* {{替换：主标题}} */}中医文化</Text>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 3, marginTop: 'sm' }}>{/* {{替换：英文副标}} */}Traditional Chinese Medicine</Text>
+    </Box>
+    {/* 四象 2x2 */}
+    <Box style={{ flexDirection: 'row', flexWrap: 'wrap', width: 900, gap: 'xl' }}>
+      {[
+        ['望闻问切', '四诊合参，综合分析\n辨证论治，因人施方', 'flex-start'],
+        ['阴阳平衡', '阴阳调和，气血畅通\n扶正祛邪，标本兼治', 'flex-end'],
+        ['五行相生', '金木水火土，相生相克\n脏腑关联，整体观念', 'flex-start'],
+        ['经络穴位', '经脉循行，气血运转\n针灸推拿，疏通调理', 'flex-end'],
+      ].map((x, i) => (
+        <Box key={i} style={{ width: 420, alignItems: i % 2 === 0 ? 'flex-end' : 'flex-start', gap: 'sm' }}>
+          <Text style={{ fontSize: 'card', color: '#A81810', bold: true }}>{x[0]}</Text>
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6, textAlign: i % 2 === 0 ? 'right' : 'left' }}>{x[1].split('\n').join('\n')}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 功能文字 */}
+    <Text style={{ fontSize: 'label', color: 'muted', position: 'absolute', right: 64, bottom: 24 }}>{/* {{替换：参考}} */}参考：《黄帝内经》· 国家中医药管理局</Text>
+  </Box>
+</Slide>

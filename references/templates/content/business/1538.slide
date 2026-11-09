@@ -1,0 +1,59 @@
+<Slide>
+  {/* business/1538 竞争对比分析：标题 + 五星对比表(Table) + 底部三张核心优势卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 标题 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'md' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：页面标题}} */}竞争力分析</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', marginTop: 'xs' }}>Competitive Advantage Analysis</Text>
+    </Box>
+
+    {/* 对比表格 */}
+    <Table
+      style={{ width: '100%', height: 372 }}
+      cells={[
+        [
+          { text: '评估维度', textStyle: { bold: true, color: '#0F172A' } },
+          { text: '我们', textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#2563EB' } } },
+          { text: '竞品A', textStyle: { bold: true, color: '#0F172A' } },
+          { text: '竞品B', textStyle: { bold: true, color: '#0F172A' } },
+          { text: '竞品C', textStyle: { bold: true, color: '#0F172A' } },
+        ],
+        ...[
+          ['产品功能', '★★★★★', '★★★★☆', '★★★☆☆', '★★★★☆'],
+          ['用户体验', '★★★★★', '★★★☆☆', '★★★★☆', '★★★☆☆'],
+          ['技术架构', '★★★★★', '★★★★☆', '★★★☆☆', '★★★☆☆'],
+          ['性价比', '★★★★★', '★★★☆☆', '★★☆☆☆', '★★★★☆'],
+          ['售后服务', '★★★★★', '★★★★☆', '★★★☆☆', '★★★☆☆'],
+          ['生态系统', '★★★★★', '★★★★☆', '★★★★☆', '★★☆☆☆'],
+        ].map((row) => [
+          { text: row[0], textStyle: { bold: true, color: '#0F172A' } },
+          { text: row[1], textStyle: { bold: true, color: '#FFFFFF' }, cellStyle: { background: { color: '#10B981' } } },
+          { text: row[2], textStyle: { color: '#475569' } },
+          { text: row[3], textStyle: { color: '#475569' } },
+          { text: row[4], textStyle: { color: '#475569' } },
+        ]),
+        [
+          { text: '综合评分', textStyle: { bold: true, color: '#0F172A' }, cellStyle: { background: { color: '#F1F5F9' } } },
+          { text: '95', textStyle: { bold: true, color: '#FFFFFF', fontSize: 28 }, cellStyle: { background: { color: '#2563EB' } } },
+          { text: '78', textStyle: { bold: true, color: '#475569' }, cellStyle: { background: { color: '#F1F5F9' } } },
+          { text: '72', textStyle: { bold: true, color: '#475569' }, cellStyle: { background: { color: '#F1F5F9' } } },
+          { text: '75', textStyle: { bold: true, color: '#475569' }, cellStyle: { background: { color: '#F1F5F9' } } },
+        ],
+      ]}
+    />
+
+    {/* 核心优势 */}
+    <Box style={{ flexDirection: 'row', gap: 'md', marginTop: 'lg' }}>
+      {[
+        ['领先', '技术架构业界领先', 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)'],
+        ['优质', '用户体验最优', 'linear-gradient(135deg, #059669 0%, #15803D 100%)'],
+        ['全面', '功能覆盖最全', 'linear-gradient(135deg, #9333EA 0%, #4338CA 100%)'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: x[2], borderRadius: 'md', padding: 'md', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+          <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.92, marginTop: 'xs' }}>{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

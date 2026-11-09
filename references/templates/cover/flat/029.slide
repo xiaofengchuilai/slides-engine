@@ -1,0 +1,14 @@
+<Slide>
+  {/* cover/flat 029 几何拼接封面：三色竖条分区 + 右侧深色标题区 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'row' }}>
+    <Box style={{ width: '25%', height: 720, background: '#FACC15' }} />
+    <Box style={{ width: '25%', height: 720, background: '#F472B6' }} />
+    <Box style={{ width: '50%', height: 720, background: 'primary', alignItems: 'center', justifyContent: 'center', padding: 'xl' }}>
+      <Box style={{ alignItems: 'center', maxWidth: 560 }}>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xl', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}创意设计</Text>
+        <Box style={{ width: 128, height: 3, background: '#FFFFFF', marginBottom: 'xl' }} />
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', letterSpacing: 2 }}>{/* {{副标题}} */}Creative Design</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

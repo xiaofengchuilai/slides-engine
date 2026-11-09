@@ -1,0 +1,26 @@
+<Slide>
+  {/* flat/1565 图标系统：深绿渐变底 + 3x4 图标网格(白卡片+图标+标签) + 底部说明 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #10B981 0%, #0D9488 100%)', padding: 'xxl xl', gap: 'md' }}>
+    <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, textAlign: 'center' }}>{/* {{替换：标题}} */}图标系统</Text>
+    <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.9, textAlign: 'center' }}>{/* {{替换：副标题}} */}Icon Design System</Text>
+    {/* 图标网格 3x4 */}
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'md', marginTop: 'sm' }}>
+      {[
+        [['主页', 'home'], ['列表', 'list'], ['快速', 'bolt'], ['认证', 'shield']],
+        [['用户', 'user'], ['消息', 'envelope'], ['设置', 'gear'], ['菜单', 'bars']],
+        [['网格', 'th'], ['团队', 'users'], ['特效', 'wand-magic-sparkles'], ['发送', 'paper-plane']],
+      ].map((row, r) => (
+        <Box key={r} style={{ flex: 1, flexDirection: 'column', gap: 'md' }}>
+          {row.map((item, j) => (
+            <Box key={j} style={{ flex: 1, background: '#FFFFFF', opacity: 0.92, borderRadius: 'lg', alignItems: 'center', justifyContent: 'center', gap: 'xs', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+              <FAIcon name={item[1]} style={{ fill: '#059669', width: 32, height: 32 }} />
+              <Text style={{ fontSize: 'label', color: 'text', bold: true }}>{item[0]}</Text>
+            </Box>
+          ))}
+        </Box>
+      ))}
+    </Box>
+    {/* 底部说明 */}
+    <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.85, textAlign: 'center', marginTop: 'sm' }}>{/* {{替换：说明}} */}统一风格 · 易于识别 · 视觉和谐</Text>
+  </Box>
+</Slide>

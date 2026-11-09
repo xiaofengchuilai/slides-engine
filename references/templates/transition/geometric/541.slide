@@ -1,0 +1,15 @@
+<Slide>
+  {/* transition/geometric/541 圆环交叠：浅蓝靛底，背景三个圆环交叠(Shape ellipse) + 中置章节号/章节名/导语 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #DBEAFE 0%, #E0E7FF 100%)' }}>
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Shape type="ellipse" style={{ position: 'absolute', top: 80, left: -80, width: 320, height: 320, line: { color: '#3B82F6', width: 8 }, fill: 'none', opacity: 0.4 }} />
+        <Shape type="ellipse" style={{ position: 'absolute', top: 130, left: -160, width: 260, height: 260, line: { color: '#A855F7', width: 8 }, fill: 'none', opacity: 0.4 }} />
+        <Shape type="ellipse" style={{ position: 'absolute', top: 130, left: 0, width: 260, height: 260, line: { color: '#EC4899', width: 8 }, fill: 'none', opacity: 0.4 }} />
+        <Text style={{ fontSize: 96, color: '#4F46E5', bold: true, marginBottom: 24, textAlign: 'center' }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Text style={{ fontSize: 'title', color: '#111827', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'card', color: '#4338CA', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,51 @@
+<Slide>
+  {/* tech/1681 行业解决方案：左主图+角标，右场景/特性/数据指标 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题区 */}
+    <Box style={{ marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{标题}} */}行业解决方案</Text>
+      <Box style={{ width: 96, height: 4, background: 'secondary' }} />
+    </Box>
+
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+      {/* 左侧主图 */}
+      <Box style={{ width: 500, flexDirection: 'column' }}>
+        <Box style={{ flex: 1, borderRadius: 'md', position: 'relative' }}>
+          {/* {{图片：有图填 assets/images/1681.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1681.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          <Box style={{ position: 'absolute', top: 16, right: 16, background: '#1E293B', opacity: 0.9, padding: 'xs md', borderRadius: 20 }}>
+            <Text style={{ fontSize: 18, color: '#FFFFFF', bold: true }}>{/* {{行业标签}} */}金融行业</Text>
+          </Box>
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6, marginTop: 'md' }}>{/* {{配图说明}} */}针对金融行业的数据合规、实时风控、精准营销等场景，提供端到端的数据解决方案。</Text>
+      </Box>
+
+      {/* 右侧内容 */}
+      <Box style={{ flex: 1, flexDirection: 'column', gap: 'xl' }}>
+        <Box>
+          <Text style={{ fontSize: 24, color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{小标题}} */}核心应用场景</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}覆盖信贷风控、反欺诈检测、客户画像、智能营销等核心业务场景，已在多家银行成功落地。</Text>
+        </Box>
+        <Box>
+          <Text style={{ fontSize: 24, color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{小标题}} */}关键技术特性</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}实时流式计算、图计算分析、机器学习模型训练与在线推理，满足金融级性能与安全要求。</Text>
+        </Box>
+        {/* 数据指标 */}
+        <Box style={{ marginTop: 'auto', flexDirection: 'row', gap: 'lg' }}>
+          {[
+            ['20+', '金融客户'],
+            ['50ms', '风控响应时间'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'lg', alignItems: 'center' }}>
+              <Text style={{ fontSize: 32, color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

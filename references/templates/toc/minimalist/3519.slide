@@ -1,0 +1,28 @@
+<Slide>
+  {/* minimalist/3519 简约风-圆点列表：标题 + 圆点章节行（右编号） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Box style={{ flexDirection: 'row', gap: 20, alignItems: 'center', marginBottom: 48 }}>
+        <Box style={{ width: 8, height: 8, borderRadius: 4, background: 'text' }} />
+        <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{标题}} */}目录</Text>
+      </Box>
+      <Box style={{ gap: 24, marginLeft: 32 }}>
+        {[
+          ['第一章节', '01'],
+          ['第二章节', '02'],
+          ['第三章节', '03'],
+          ['第四章节', '04'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', gap: 24, alignItems: 'center' }}>
+            <Box style={{ width: 12, height: 12, borderRadius: 6, background: 'line' }} />
+            <Box style={{ flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingBottom: 12, position: 'relative' }}>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[0]}</Text>
+              <Text style={{ fontSize: 'body', color: 'muted' }}>{x[1]}</Text>
+                            <Box style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 2, background: 'line' }} />
+                            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,40 @@
+<Slide>
+  {/* black-gold/1575 卓越性能：中央大表盘 + 左右小表盘 + 状态栏 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 'xl', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 顶部状态栏 */}
+    <Box style={{ position: 'absolute', top: 48, left: '50%', flexDirection: 'row', gap: 'xl' }}>
+      {[
+        ['系统正常', '#22C55E'],
+        ['待优化', '#FBBF24'],
+        ['需关注', '#EF4444'],
+      ].map((x, i) => (
+        <Box key={i} style={{ alignItems: 'center' }}>
+          <Box style={{ width: 10, height: 10, borderRadius: 5, background: x[1], marginBottom: 'xs' }} />
+          <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>{/* {{替换：状态名}} */}{x[0]}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 中央大表盘 */}
+    <Box style={{ width: 280, height: 280, borderRadius: 140, border: '6px solid #D4AF37', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+      <Box style={{ width: 256, height: 256, borderRadius: 128, border: '2px solid #374151' }} />
+      <Text style={{ fontSize: 'kpi', color: '#FBBF24', bold: true }}>{/* {{替换：主指标}} */}85%</Text>
+      <Text style={{ fontSize: 'label', color: '#9CA3AF', letterSpacing: 2 }}>{/* {{替换：主指标名}} */}PERFORMANCE</Text>
+      {/* 指针 */}
+      <Box style={{ position: 'absolute', width: 4, height: 104, background: '#F97316', borderRadius: 2, top: 36, left: 138 }} />
+      <Box style={{ position: 'absolute', width: 16, height: 16, borderRadius: 8, background: '#D4AF37' }} />
+    </Box>
+    {/* 左右小表盘 */}
+    <Box style={{ position: 'absolute', left: 120, width: 140, height: 140, borderRadius: 70, border: '4px solid #D4AF37', alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'card', color: '#FBBF24', bold: true }}>{/* {{替换：左指标}} */}效率</Text>
+      <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>{/* {{替换：左指标名}} */}EFFICIENCY</Text>
+    </Box>
+    <Box style={{ position: 'absolute', right: 120, width: 140, height: 140, borderRadius: 70, border: '4px solid #D4AF37', alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'card', color: '#FBBF24', bold: true }}>{/* {{替换：右指标}} */}品质</Text>
+      <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>{/* {{替换：右指标名}} */}QUALITY</Text>
+    </Box>
+    {/* 底部信息条 */}
+    <Box style={{ position: 'absolute', bottom: 48, left: 0, right: 0, alignItems: 'center' }}>
+      <Text style={{ fontSize: 'label', color: '#FBBF24', letterSpacing: 3 }}>{/* {{替换：底部文字}} */}LUXURY PERFORMANCE DASHBOARD</Text>
+    </Box>
+  </Box>
+</Slide>

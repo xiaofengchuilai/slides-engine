@@ -1,0 +1,54 @@
+<Slide>
+  {/* chinese/1639 图文·左文右四图网格：左侧标题/导语/两要点 + 右侧 2x2 图 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(90deg, #FAF9F6 0%, #F5F3ED 100%)', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xxl', alignItems: 'center' }}>
+      {/* 左侧文字区 */}
+      <Box style={{ width: 380, flexDirection: 'column', justifyContent: 'center', gap: 'lg' }}>
+        <Box>
+          <Text style={{ fontSize: 'title', color: '#8B4513', bold: true, marginBottom: 'sm', fontFamily: 'serif' }}>{/* {{替换：标题}} */}琴棋书画</Text>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+            <Box style={{ width: 64, height: 2, background: '#8B4513', opacity: 0.7 }} />
+            <Box style={{ width: 8, height: 8, borderRadius: 8, background: '#8B4513' }} />
+            <Box style={{ width: 32, height: 2, background: '#8B4513', opacity: 0.7 }} />
+          </Box>
+          <Text style={{ fontSize: 'label', color: '#8A8A8A', letterSpacing: 1 }}>文人四艺 · 修身养性</Text>
+        </Box>
+        <Box style={{ gap: 'lg' }}>
+          <Text style={{ fontSize: 'body', color: '#4A4A4A', lineHeight: 1.7 }}>
+            {/* {{替换：导语}} */}琴棋书画是中国传统文人必备的四项修养，代表了高雅的艺术追求与人文精神。
+          </Text>
+          <Box style={{ gap: 'md' }}>
+            {[
+              ['陶冶情操', '提升个人修养与审美'],
+              ['传承文化', '延续千年的文化传统'],
+            ].map((x, i) => (
+              <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+                <Box style={{ width: 28, height: 28, borderRadius: 28, background: '#8B4513', opacity: 0.12, alignItems: 'center', justifyContent: 'center' }}>
+                  <Text style={{ fontSize: 'label', color: '#8B4513', bold: true }}>{i + 1}</Text>
+                </Box>
+                <Box>
+                  <Text style={{ fontSize: 'body', color: '#8B4513', bold: true, fontFamily: 'serif', marginBottom: 'xs' }}>{/* {{替换：x[0]}} */}{x[0]}</Text>
+                  <Text style={{ fontSize: 'label', color: '#6B7280' }}>{x[1]}</Text>
+                </Box>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+      {/* 右侧四图网格 */}
+      <Box style={{ flex: 1, flexDirection: 'row', flexWrap: 'wrap', gap: 'lg' }}>
+        {['琴', '棋', '书', '画'].map((alt, i) => (
+          <Box key={i} style={{ width: 320, height: 260, borderRadius: 'sm', background: '#FFFFFF', alignItems: 'center', justifyContent: 'center', border: '1px solid #E5E7EB' }}>
+            {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+            <Image src={`assets/images/chinese-1639-${i + 1}.png`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <Text style={{ fontSize: 'label', color: '#8A8A8A' }}>{alt}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+  {/* 底部功能文字 */}
+  <Box style={{ position: 'absolute', bottom: 24, left: 0, right: 0, alignItems: 'center' }}>
+    <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>中国传统文人雅士必备修养 · 国家级非物质文化遗产</Text>
+  </Box>
+</Slide>

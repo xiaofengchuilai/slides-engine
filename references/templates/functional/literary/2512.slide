@@ -1,0 +1,59 @@
+<Slide>
+  {/* functional/literary/2512 文艺风-变体2：米白底 + 复古导航/按钮/四宫格/页脚 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFFFFF 0%, #F5F5F4 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 24 }}>
+      {/* 导航 - 罗马数字+双线边框 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, border: '1px solid #E5E7EB', background: '#FAFAF9', padding: 20 }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, flex: 1 }}>
+          <Text style={{ fontSize: 'kpi', color: '#57534e', bold: true, fontFamily: 'serif' }}>{/* {{替换：章节号}} */}III</Text>
+          <Box>
+            <Text style={{ fontSize: 'card', color: '#44403c', bold: true, fontFamily: 'serif' }}>{/* {{替换：章节名}} */}旧时光里的书香</Text>
+            <Text style={{ fontSize: 'label', color: '#78716c', fontFamily: 'serif' }}>{/* {{替换：副标签}} */}Old Books</Text>
+          </Box>
+        </Box>
+        <Box style={{ background: '#44403c', padding: 8, paddingLeft: 20, paddingRight: 20 }}>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', fontFamily: 'serif' }}>{/* {{替换：按钮文字}} */}继续 →</Text>
+        </Box>
+      </Box>
+      {/* 行动 - 报纸风格四宫格 */}
+      <Box style={{ border: '2px solid #fde68a', borderRadius: 8, background: '#FFFBEB', padding: 20, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Text style={{ fontSize: 'body', color: '#78350f', textAlign: 'center', fontFamily: 'serif', marginBottom: 16 }}>{/* {{替换：引言}} */}— 愿你在书中找到心灵的归宿 —</Text>
+        <Box style={{ flexDirection: 'row', gap: 16 }}>
+          {[
+            ['QR', '📖', '订阅专栏'],
+            ['book', '📖', '往期文章'],
+            ['pen', '✍️', '投稿分享'],
+            ['comment', '💬', '读者社区'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flex: 1, alignItems: 'center', gap: 8 }}>
+              <Box style={{ width: 64, height: 64, border: '1px solid #d6d3d1', borderRadius: 8, background: '#f5f5f4', alignItems: 'center', justifyContent: 'center' }}>
+                {x[0] === 'QR' ? (
+                  <Text style={{ fontSize: 'label', color: '#a8a29e' }}>QR</Text>
+                ) : (
+                  <Emoji name={x[1]} style={{ width: 28, height: 28 }} />
+                )}
+              </Box>
+              <Text style={{ fontSize: 'label', color: '#57534e', fontFamily: 'serif' }}>{/* {{替换：按钮文字}} */}{x[2]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 页脚 - 双线复古页脚 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, padding: 12, background: '#FAFAF9', border: '1px solid #E7E5E4' }}>
+        <Box style={{ width: 32, height: 32, borderRadius: 16, background: '#57534e' }} />
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'body', color: '#44403c', bold: true, fontFamily: 'serif' }}>{/* {{替换：品牌名}} */}文艺生活专栏</Text>
+          <Text style={{ fontSize: 'label', color: '#78716c', fontFamily: 'serif' }}>{/* {{替换：副标签}} */}Literary Life</Text>
+        </Box>
+        <Text style={{ fontSize: 'label', color: '#78716c', fontFamily: 'serif' }}>{/* {{替换：版权}} */}© 2024 版权所有</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Text style={{ fontSize: 'label', color: '#a8a29e', fontFamily: 'serif' }}>Page</Text>
+          <Box style={{ width: 32, height: 32, borderRadius: 16, background: '#57534e', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>{/* {{替换：页码}} */}3</Text>
+          </Box>
+          <Text style={{ fontSize: 'label', color: '#a8a29e', fontFamily: 'serif' }}>{/* {{替换：总页数}} */}/ 12</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

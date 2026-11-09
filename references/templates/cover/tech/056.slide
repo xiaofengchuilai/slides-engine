@@ -1,0 +1,40 @@
+<Slide>
+  {/* cover/tech/056 科技风-霓虹边框：黑底 + 四边霓虹细线 + 角落色块 + 主标题 + 副标题 + 落款 */}
+  <Box style={{ width: 1280, height: 720, background: '#020617', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 四边霓虹细线（渐变线放 Box） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 6, background: 'linear-gradient(90deg, #020617 0%, #EC4899 50%, #020617 100%)' }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 6, background: 'linear-gradient(90deg, #020617 0%, #06B6D4 50%, #020617 100%)' }} />
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 6, height: 720, background: 'linear-gradient(180deg, #020617 0%, #EC4899 50%, #020617 100%)' }} />
+    <Box style={{ position: 'absolute', top: 0, right: 0, width: 6, height: 720, background: 'linear-gradient(180deg, #020617 0%, #06B6D4 50%, #020617 100%)' }} />
+    {/* 角落装饰 */}
+    <Box style={{ position: 'absolute', top: 48, left: 48, width: 80, height: 80 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 80, height: 2, background: '#EC4899' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 2, height: 80, background: '#EC4899' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 24, height: 24, background: '#831843' }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 80, height: 80, alignItems: 'flex-end' }}>
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 80, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 2, height: 80, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 24, height: 24, background: '#164E63' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 48, left: 48, width: 80, height: 80 }}>
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 80, height: 2, background: '#EC4899' }} />
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 2, height: 80, background: '#EC4899' }} />
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 24, height: 24, background: '#831843' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 48, right: 48, width: 80, height: 80, alignItems: 'flex-end' }}>
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 80, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 2, height: 80, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 24, height: 24, background: '#164E63' }} />
+    </Box>
+    <Box style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, letterSpacing: 3, textAlign: 'center', lineHeight: 1.1, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}数字化转型战略</Text>
+      <Text style={{ fontSize: 'card', color: '#67E8F9', fontWeight: 300, letterSpacing: 2, textAlign: 'center', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}打造智慧企业新生态</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：落款一}} */}数字化办公室</Text>
+        <Text style={{ fontSize: 'body', color: '#EC4899' }}>·</Text>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：落款二}} */}战略规划汇报</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

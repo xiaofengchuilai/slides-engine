@@ -1,0 +1,53 @@
+<Slide>
+  {/* literary/1556 电影时光：深色胶片边框 + 场记板 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 'xl' }}>
+    {/* 胶片边框（左右齿孔条 + 上下帧条） */}
+    <Box style={{ position: 'absolute', left: 48, top: 24, bottom: 24, width: 40, background: '#1F2937', borderRadius: 'sm' }}>
+      {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+        <Box key={i} style={{ position: 'absolute', left: 8, top: 16 + i * 84, width: 24, height: 16, background: '#000000', borderRadius: 2, boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+      ))}
+    </Box>
+    <Box style={{ position: 'absolute', right: 48, top: 24, bottom: 24, width: 40, background: '#1F2937', borderRadius: 'sm' }}>
+      {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+        <Box key={i} style={{ position: 'absolute', left: 8, top: 16 + i * 84, width: 24, height: 16, background: '#000000', borderRadius: 2, boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+      ))}
+    </Box>
+    <Box style={{ position: 'absolute', left: 96, right: 96, top: 24, height: 10, background: '#374151' }} />
+    <Box style={{ position: 'absolute', left: 96, right: 96, bottom: 24, height: 10, background: '#374151' }} />
+    {/* 主画面区 */}
+    <Box style={{ height: '100%', margin: 'xs xxl', background: 'linear-gradient(135deg, #4C1D95 0%, #312E81 50%, #1E3A8A 100%)', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center', marginBottom: 'xl' }}>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{替换：片名}} */}电影时光</Text>        <Text style={{ fontSize: 'card', color: '#D1D5DB', fontFamily: 'serif' }}>{/* {{替换：副标题}} */}Cinema Moments</Text>
+      </Box>
+      {/* 场记板 */}
+      <Box style={{ width: 620, background: '#FFFFFF', borderRadius: 'md', padding: 'lg', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Box style={{ height: 56, background: 'linear-gradient(90deg, #FBBF24 0%, #F59E0B 50%, #FBBF24 100%)', borderRadius: 'sm', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 'xs md', marginBottom: 'md' }}>
+          <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+            <Box style={{ width: 52, height: 52, background: '#000000', borderRadius: 2, alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：场记块}} */}A</Text>
+            </Box>
+            <Box style={{ width: 52, height: 52, background: '#000000', borderRadius: 2, alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>01</Text>
+            </Box>
+          </Box>
+          <Text style={{ fontSize: 'card', color: '#000000', bold: true }}>{/* {{替换：场记编号}} */}SCENE 1 - TAKE 1</Text>
+        </Box>
+        <Box style={{ gap: 'sm' }}>
+          {[
+            ['导演:', '梦的创造者'],
+            ['主题:', '"电影是梦的艺术"'],
+            ['描述:', '在光影交织的故事中，体验不同的人生与情感'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', paddingBottom: 'xs' }}>
+              <Text style={{ width: 96, fontSize: 'body', color: '#374151', bold: true }}>{/* {{替换：字段名}} */}{x[0]}</Text>
+              <Text style={{ flex: 1, fontSize: 'body', color: '#4B5563' }}>{/* {{替换：字段值}} */}{x[1]}</Text>
+              {i < 2 && <Box style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 1, background: '#D1D5DB' }} />}
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 帧计数器 */}
+      <Text style={{ position: 'absolute', bottom: 16, right: 24, fontSize: 'label', color: '#FBBF24' }}>{/* {{替换：帧数}} */}FRAME: 24fps | 00:01:23:15</Text>
+    </Box>
+  </Box>
+</Slide>

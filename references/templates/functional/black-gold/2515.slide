@@ -1,0 +1,54 @@
+<Slide>
+  {/* functional/black-gold/2515 黑金风-变体1：黑底 + 金渐变导航/按钮/行动/页脚 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 24 }}>
+      {/* 导航 - 金色渐变章节号 + 金边按钮 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24, border: '1px solid rgba(201,162,39,0.3)', background: '#111827', padding: 20 }}>
+        <Box style={{ width: 56, height: 56, background: 'linear-gradient(135deg, #EAB308 0%, #B45309 100%)', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#000000', bold: true }}>{/* {{替换：章节号}} */}03</Text>
+        </Box>
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'card', color: '#EAB308', bold: true, letterSpacing: 2 }}>{/* {{替换：章节名}} */}CHAPTER THREE</Text>
+          <Text style={{ fontSize: 'label', color: '#9ca3af', marginTop: 4 }}>{/* {{替换：副标签}} */}Luxury Brand</Text>
+        </Box>
+        <Box style={{ border: '2px solid #C9A227', padding: 10, paddingLeft: 24, paddingRight: 24 }}>
+          <Text style={{ fontSize: 'body', color: '#EAB308', bold: true }}>{/* {{替换：按钮文字}} */}NEXT →</Text>
+        </Box>
+      </Box>
+      {/* 行动 - 奢华三格+扫码 */}
+      <Box style={{ flexDirection: 'row', gap: 16 }}>
+        {[
+          ['#C9A227', '♔', 'VIP'],
+          ['#B45309', '💎', 'PREMIUM'],
+          ['#a16207', '👑', 'CONSULT'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, border: '1px solid ' + x[0], background: 'rgba(202,138,4,0.15)', padding: 16, alignItems: 'center' }}>
+            <Text style={{ fontSize: 'kpi', color: '#EAB308', bold: true }}>{x[1]}</Text>
+            <Text style={{ fontSize: 'label', color: '#EAB308', bold: true, marginTop: 8 }}>{/* {{替换：按钮文字}} */}{x[2]}</Text>
+          </Box>
+        ))}
+        <Box style={{ flex: 1, border: '2px solid #C9A227', background: '#000000', padding: 16, alignItems: 'center' }}>
+          <Text style={{ fontSize: 'label', color: '#EAB308', bold: true, marginBottom: 8 }}>SCAN</Text>
+          <Box style={{ width: '100%', height: 40, border: '1px solid rgba(201,162,39,0.3)', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'label', color: '#C9A227' }}>QR</Text>
+          </Box>
+        </Box>
+      </Box>
+      {/* 页脚 - 金色高端页脚 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, padding: 12, background: '#111827' }}>
+        <Box style={{ width: 40, height: 40, background: 'linear-gradient(135deg, #EAB308 0%, #B45309 100%)' }} />
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'body', color: '#EAB308', bold: true }}>{/* {{替换：品牌名}} */}PRESTIGE CORP</Text>
+          <Text style={{ fontSize: 'label', color: '#9ca3af' }}>{/* {{替换：网址}} */}www.prestige.com</Text>
+        </Box>
+        <Text style={{ fontSize: 'label', color: '#C9A227' }}>{/* {{替换：版权}} */}© 2024</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Box style={{ width: 40, height: 40, background: 'linear-gradient(135deg, #EAB308 0%, #B45309 100%)', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'body', color: '#000000', bold: true }}>{/* {{替换：页码}} */}3</Text>
+          </Box>
+          <Text style={{ fontSize: 'label', color: '#C9A227' }}>{/* {{替换：总页数}} */}/ 20</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

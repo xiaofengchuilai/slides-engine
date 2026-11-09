@@ -1,0 +1,54 @@
+<Slide>
+  {/* functional/flat/2513 扁平风-变体1：白底 + 方形编号/斜杠面包屑/纯色按钮/四色行动组/扁平页脚 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 20 }}>
+      {/* 导航 - 方形编号 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, border: '1px solid #D1D5DB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        <Box style={{ width: 48, height: 48, background: '#3B82F6', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：章节号}} */}3</Text>
+        </Box>
+      </Box>
+      {/* 导航 - 斜杠面包屑 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, border: '1px solid #D1D5DB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：面包屑1}} */}Home</Text>
+        <Text style={{ fontSize: 'label', color: '#D1D5DB' }}>/</Text>
+        <Text style={{ fontSize: 'label', color: '#3B82F6', bold: true }}>{/* {{替换：面包屑2}} */}Design</Text>
+        <Text style={{ fontSize: 'label', color: '#D1D5DB' }}>/</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：面包屑3}} */}Implementation</Text>
+      </Box>
+      {/* 导航 - 纯色按钮 */}
+      <Box style={{ alignSelf: 'flex-start', background: '#3B82F6', padding: 12, paddingLeft: 24, paddingRight: 24 }}>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：按钮文字}} */}NEXT</Text>
+      </Box>
+      {/* 行动 - 纯色四色按钮 */}
+      <Box style={{ flexDirection: 'row', gap: 12 }}>
+        {[
+          ['#EF4444', '📥', 'Download'],
+          ['#22C55E', '📧', 'Contact'],
+          ['#A855F7', '💬', 'Q&A'],
+          ['#F97316', '🔗', 'Share'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, background: x[0], padding: 20, alignItems: 'center' }}>
+            <Emoji name={x[1]} style={{ width: 28, height: 28, marginBottom: 8 }} />
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{替换：按钮文字}} */}{x[2]}</Text>
+          </Box>
+        ))}
+      </Box>
+      {/* 页脚 - 扁平化页脚 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', border: '1px solid #E5E7EB', background: '#F9FAFB', padding: 12, borderRadius: 'sm' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+          <Box style={{ width: 40, height: 40, background: '#111827' }} />
+          <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：品牌名}} */}FLAT DESIGN CO.</Text>
+        </Box>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：版权}} */}© 2024</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：页码标签}} */}Page</Text>
+          <Box style={{ width: 40, height: 40, background: '#111827', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{替换：页码}} */}3</Text>
+          </Box>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：总页数}} */}/ 15</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

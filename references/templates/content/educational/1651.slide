@@ -1,0 +1,50 @@
+<Slide>
+  {/* educational/1651 古文翻译·逐句对照：标题 + 4句对照行 + 重点词汇 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FEFCE8 0%, #FEF3C7 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Text style={{ fontSize: 'title', color: '#713F12', fontFamily: 'serif', bold: true }}>{/* {{替换：篇名}} */}《伤仲永》节选</Text>
+      <Text style={{ fontSize: 'body', color: '#CA8A04' }}>{/* {{替换：作者}} */}宋·王安石</Text>
+    </Box>
+    <Box style={{ flex: 1, gap: 'sm' }}>
+      {[
+        ['金溪民方仲永，世隶耕。', '金溪有个平民叫方仲永，家里世代以耕田为业。'],
+        ['仲永生五年，未尝识书具。', '仲永长到五岁时，从没见过书写工具。'],
+        ['忽啼求之，父异焉，借旁近与之。', '忽然有一天哭着要这些东西，父亲对此感到惊异，从邻近人家借来给他。'],
+        ['即书诗四句，并自为其名。', '仲永立刻写了四句诗，并且自己题写了名字。'],
+      ].map((x, i) => (
+        <Box key={i} style={{ background: '#FFFFFF', border: '2px solid #FDE68A', borderRadius: 'md' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'stretch' }}>
+            <Box style={{ flex: 1, background: 'linear-gradient(90deg, #FEF9C3 0%, #FFFFFF 100%)', padding: 'md', flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+              <Box style={{ width: 28, height: 28, background: '#EAB308', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{i + 1}</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: '#1F2937', fontFamily: 'serif', lineHeight: 1.6, flex: 1 }}>{/* {{替换：原文}} */}{x[0]}</Text>
+            </Box>
+            <Box style={{ flex: 1, background: '#FFFFFF', padding: 'md' }}>
+              <Text style={{ fontSize: 'body', color: '#374151', lineHeight: 1.6 }}>{/* {{替换：译文}} */}{x[1]}</Text>
+            </Box>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ background: 'linear-gradient(90deg, #FEF9C3 0%, #FDE68A 100%)', border: '2px solid #FCD34D', borderRadius: 'md', padding: 'lg' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+        <Emoji name="📝" style={{ width: 18, height: 18 }} />
+        <Text style={{ fontSize: 'body', color: '#713F12', bold: true }}>{/* {{替换：标题}} */}重点词汇</Text>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 'md' }}>
+        {[
+          ['隶', '属于'],
+          ['书具', '书写工具'],
+          ['异', '对...感到惊异'],
+          ['即', '立刻、马上'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, background: '#FFFFFF', borderRadius: 'sm', padding: 'sm' }}>
+            <Text style={{ fontSize: 'body', color: '#A16207', bold: true, fontFamily: 'serif' }}>{/* {{替换：词}} */}{x[0]}</Text>
+            <Text style={{ fontSize: 'label', color: '#4B5563', marginTop: 'xs' }}>{/* {{替换：释义}} */}{x[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

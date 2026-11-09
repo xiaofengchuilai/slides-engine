@@ -1,0 +1,60 @@
+<Slide>
+  {/* cartoon/1522 AI小助手说：对话框 + 学习秘籍四部曲 + 金句 + 提示 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #CFFAFE 0%, #FEF9C3 100%)', padding: 'xl', gap: 'md' }}>
+    {/* 装饰气球 */}
+    <Box style={{ position: 'absolute', top: 40, left: 40, opacity: 0.3 }}>
+      <Emoji name="🎈" style={{ width: 56, height: 56 }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 40, right: 40, opacity: 0.3 }}>
+      <Emoji name="🎪" style={{ width: 56, height: 56 }} />
+    </Box>
+    {/* 顶部对话卡 */}
+    <Box style={{ background: '#FFFFFF', borderRadius: 'lg', padding: 'lg', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xs' }}>
+        <Emoji name="🤖" style={{ width: 30, height: 30 }} />
+        <Text style={{ fontSize: 'card', color: '#0891B2', bold: true }}>{/* {{替换：说话人}} */}AI小助手说：</Text>
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#1F2937', lineHeight: 1.7 }}>{/* {{替换：对话内容}} */}嘿！让我告诉你一个秘密～ 学习新知识就像玩游戏闯关一样！🎮 不要害怕遇到"大boss"级的困难，因为正是这些挑战让我们变得更强大！💪</Text>
+    </Box>
+    {/* 学习秘籍四部曲 */}
+    <Box style={{ background: '#FFFFFF', borderRadius: 'lg', padding: 'lg', flex: 1, boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+        <Emoji name="📝" style={{ width: 24, height: 24 }} />
+        <Text style={{ fontSize: 'card', color: '#CA8A04', bold: true }}>{/* {{替换：卡标题}} */}学习秘籍四部曲</Text>
+      </Box>
+      <Box style={{ flexDirection: 'column', gap: 'sm' }}>
+        {[
+          ['好奇心驱动', '保持好奇，主动探索 🔍', 'linear-gradient(90deg, #FECACA 0%, #FEF2F2 100%)', '#B91C1C', '1️⃣'],
+          ['专注力修炼', '番茄工作法，25分钟专注 ⏰', 'linear-gradient(90deg, #BFDBFE 0%, #EFF6FF 100%)', '#1D4ED8', '2️⃣'],
+          ['实践出真知', '动手做项目 🛠️', 'linear-gradient(90deg, #A7F3D0 0%, #ECFDF5 100%)', '#047857', '3️⃣'],
+          ['反思与总结', '定期回顾 📊', 'linear-gradient(90deg, #E9D5FF 0%, #FAF5FF 100%)', '#6D28D9', '4️⃣'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'md', background: x[2], borderRadius: 'md', padding: 'sm md' }}>
+            <Box style={{ width: 40, height: 40, borderRadius: 20, background: '#FFFFFF', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'body', color: x[3], bold: true }}>{x[4]}</Text>
+            </Box>
+            <Box style={{ flex: 1 }}>
+              <Text style={{ fontSize: 'body', color: x[3], bold: true }}>{/* {{替换：步骤名}} */}{x[0]}</Text>
+              <Text style={{ fontSize: 'label', color: '#4B5563' }}>{/* {{替换：步骤描述}} */}{x[1]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    {/* 底部金句 + 提示 */}
+    <Box style={{ flexDirection: 'row', gap: 'md' }}>
+      <Box style={{ flex: 1, background: 'linear-gradient(135deg, #EC4899 0%, #F43F5E 100%)', borderRadius: 'lg', padding: 'md', justifyContent: 'center', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+        <Emoji name="💬" style={{ position: 'absolute', right: -10, bottom: -10, width: 56, height: 56, opacity: 0.2 }} />
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, lineHeight: 1.5, marginBottom: 'xs' }}>{/* {{替换：金句}} */}"每个专家都曾是新手！"</Text>
+        <Text style={{ fontSize: 'label', color: '#FBCFE8' }}>{/* {{替换：署名}} */}— 成长金句</Text>
+      </Box>
+      <Box style={{ width: 340, background: '#FED7AA', borderRadius: 'lg', padding: 'md', flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+        <Emoji name="📌" style={{ width: 24, height: 24 }} />
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'label', color: '#7C2D12', bold: true }}>{/* {{替换：温馨提示标签}} */}温馨提示：</Text>
+          <Text style={{ fontSize: 'label', color: '#7C2D12', lineHeight: 1.6 }}>{/* {{替换：温馨提示内容}} */}学习是一场马拉松，不是百米冲刺～ 加油！💪✨</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

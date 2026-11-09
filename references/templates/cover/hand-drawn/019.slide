@@ -1,0 +1,16 @@
+<Slide>
+  {/* hand-drawn/019 波浪线条：粉紫渐变 + 大标题下波浪线 + 装饰小波浪 */}
+  {/* 背景（粉→紫渐变） */}
+  <Box style={{ width: 1280, height: 720, position: 'absolute', top: 0, left: 0, background: 'linear-gradient(135deg, #FDF2F8 0%, #FAF5FF 100%)', justifyContent: 'center', alignItems: 'center' }} />
+  {/* 左下装饰波浪线 */}
+  <RoughBox shape="path" path="M 0 15 Q 50 5, 100 15 T 200 15 T 300 15" style={{ width: 300, height: 32, stroke: '#F9A8D4', strokeWidth: 4, roughness: 1.5, position: 'absolute', left: 60, bottom: 80 }} />
+  {/* 右上装饰波浪线 */}
+  <RoughBox shape="path" path="M 0 15 Q 50 5, 100 15 T 200 15 T 300 15" style={{ width: 300, height: 32, stroke: '#C4B5FD', strokeWidth: 4, roughness: 1.5, position: 'absolute', right: 60, top: 80 }} />
+  {/* 主内容区 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 'hero', color: '#111827', bold: true, fontFamily: 'hand', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}涂鸦日记</Text>
+    {/* 标题下波浪线 */}
+    <RoughBox shape="path" path="M 0 15 Q 50 5, 100 15 T 200 15 T 300 15 T 400 15 T 500 15" style={{ width: 500, height: 32, stroke: '#EC4899', strokeWidth: 6, roughness: 1.5, marginTop: 'sm' }} />
+    <Text style={{ fontSize: 'kpi', color: '#7C3AED', bold: true, fontFamily: 'hand', textAlign: 'center', marginTop: 'xxl' }}>{/* {{副标题}} */}Doodle Diary 2025</Text>
+  </Box>
+</Slide>

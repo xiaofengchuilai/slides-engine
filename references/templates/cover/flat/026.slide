@@ -1,0 +1,26 @@
+<Slide>
+  {/* cover/flat 026 纯色分区封面：左 1/3 主色大数字 + 右 2/3 白底标题区 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'row' }}>
+    {/* 左侧主色区 */}
+    <Box style={{ width: '33.33%', height: 720, background: 'secondary', alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, opacity: 0.25 }}>{/* {{章节号}} */}01</Text>
+    </Box>
+    {/* 右侧白色区 */}
+    <Box style={{ width: '66.67%', height: 720, background: 'bg', justifyContent: 'center', padding: 'xxl xl' }}>
+      <Box style={{ maxWidth: 620 }}>
+        <Box style={{ background: 'secondary', borderRadius: 'sm', padding: 'xs lg', marginBottom: 'xl', alignSelf: 'flex-start' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{年份}} */}2025</Text>
+        </Box>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'lg', lineHeight: 1.2 }}>{/* {{主标题}} */}产品设计方法论</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', marginBottom: 'xl' }}>{/* {{副标题}} */}Product Design Methodology</Text>
+        {/* 四色装饰条 */}
+        <Box style={{ flexDirection: 'row', gap: 'xs' }}>
+          <Box style={{ width: 80, height: 8, background: '#EF4444', borderRadius: 'sm' }} />
+          <Box style={{ width: 80, height: 8, background: '#F97316', borderRadius: 'sm' }} />
+          <Box style={{ width: 80, height: 8, background: '#EAB308', borderRadius: 'sm' }} />
+          <Box style={{ width: 80, height: 8, background: '#22C55E', borderRadius: 'sm' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

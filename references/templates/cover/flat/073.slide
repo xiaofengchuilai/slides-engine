@@ -1,0 +1,19 @@
+<Slide>
+  {/* cover/flat 073 青蓝渐变封面：渐变底 + 白色圆装饰 + 中央白卡 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #22D3EE 0%, #3B82F6 100%)', alignItems: 'center', justifyContent: 'center', padding: 'xl' }}>
+    {/* 装饰圆（左上） */}
+    <Box style={{ position: 'absolute', top: 56, left: 56, width: 112, height: 112, borderRadius: 56, background: '#FFFFFF', opacity: 0.2 }} />
+    {/* 装饰圆（右下） */}
+    <Box style={{ position: 'absolute', bottom: 56, right: 56, width: 160, height: 160, borderRadius: 80, background: '#FFFFFF', opacity: 0.1 }} />
+    {/* 中央白卡 */}
+    <Box style={{ background: 'bg', borderRadius: 'lg', padding: 'xxl', alignItems: 'center', maxWidth: 960, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'xxl', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}数据可视化</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', marginBottom: 'xxl', textAlign: 'center' }}>{/* {{副标题}} */}让数据讲故事·驱动业务决策</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        <Text style={{ fontSize: 'card', color: 'text' }}>{/* {{落款一}} */}数据分析部</Text>
+        <Text style={{ fontSize: 'body', color: 'text', opacity: 0.5 }}>·</Text>
+        <Text style={{ fontSize: 'card', color: 'text' }}>{/* {{落款二}} */}数据报表培训</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

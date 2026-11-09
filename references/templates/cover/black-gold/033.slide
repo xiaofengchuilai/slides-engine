@@ -1,0 +1,24 @@
+<Slide>
+  {/* black-gold/033 金色花纹：灰黑渐变底 + 斜纹线组 + 金框标签 + 金字标题 + 装饰线 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #1F2937 0%, #000000 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 金色斜纹装饰（对角细线） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, opacity: 0.1 }}>
+      {[0, 60, 120, 180, 240, 300, 360, 420, 480, 540, 600, 660, 720, 780, 840, 900, 960, 1020, 1080, 1140, 1200, 1260].map((x) => (
+        <Box key={x} style={{ position: 'absolute', top: 0, left: x, width: 1, height: 720, background: '#FBBF24' }} />
+      ))}
+    </Box>
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      {/* 金框标签 */}
+      <Box style={{ border: '3px solid #CA8A04', background: 'rgba(202,138,4,0.1)', padding: 'md xl', marginBottom: 'xl' }}>
+        <Text style={{ fontSize: 'body', color: '#EAB308', bold: true, letterSpacing: 8 }}>{/* {{替换：标签}} */}PREMIUM</Text>
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}尊享服务</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xxl' }}>
+        <Box style={{ width: 112, height: 2, background: 'linear-gradient(90deg, rgba(234,179,8,0) 0%, #CA8A04 100%)' }} />
+        <Text style={{ fontSize: 'title', color: '#EAB308' }}>◇</Text>
+        <Box style={{ width: 112, height: 2, background: 'linear-gradient(270deg, rgba(234,179,8,0) 0%, #CA8A04 100%)' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

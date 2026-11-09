@@ -1,0 +1,15 @@
+<Slide>
+  {/* cover/minimalist/001 留白美学：装饰行(线·点·线) + 巨字标题 + 英文副标题 + 署名信息 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', justifyContent: 'center', alignItems: 'center', padding: '0 160px' }}>
+    <Box style={{ alignItems: 'center', gap: 'xxl' }}>
+      <Box style={{ flexDirection: 'row', gap: 'md', alignItems: 'center' }}>
+        <Box style={{ width: 88, height: 1, background: 'text' }} />
+        <Box style={{ width: 16, height: 16, borderRadius: 8, background: 'text' }} />
+        <Box style={{ width: 88, height: 1, background: 'text' }} />
+      </Box>
+      <Text style={{ fontSize: 'hero', color: 'text', lineHeight: 1.15, letterSpacing: 2 }}>{/* {{替换：主标题}} */}产品设计报告</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 5 }}>{/* {{替换：英文副标题}} */}PRODUCT DESIGN REPORT 2025</Text>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginTop: 'md' }}>{/* {{替换：主讲人/日期}} */}主讲人：张小明 | 2025/01/20</Text>
+    </Box>
+  </Box>
+</Slide>

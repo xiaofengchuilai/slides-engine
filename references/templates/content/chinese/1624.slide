@@ -1,0 +1,39 @@
+<Slide>
+  {/* chinese/1624 左右分栏·古代建筑：左标题+导语+引文，右 2x4 特色列表 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF9F6 0%, #F0EBE1 100%)', padding: 'xxl xl', flexDirection: 'row', gap: 'xl' }}>
+    {/* 左：标题区 */}
+    <Box style={{ width: 380, justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true, marginBottom: 'md' }}>{/* {{替换：主标题}} */}古代建筑</Text>
+      <Box style={{ width: 80, height: 2, background: 'rgba(168, 24, 16, 0.3)', marginBottom: 'lg' }} />
+      <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.8, marginBottom: 'lg' }}>{/* {{替换：导语}} */}
+        中国传统建筑历经千年发展，形成了独特的建筑体系，以木结构为主，讲究对称与和谐。
+      </Text>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{替换：引文}} */}“雕梁画栋，飞檐翘角”</Text>
+    </Box>
+    {/* 右：特色列表 2 列 */}
+    <Box style={{ flex: 1, justifyContent: 'center' }}>
+      <Box style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 'lg' }}>
+        {[
+          ['斗拱', '承重装饰，层层叠加'],
+          ['飞檐', '翘角向上，轻盈灵动'],
+          ['雕梁', '精雕细刻，巧夺天工'],
+          ['彩绘', '色彩斑斓，富丽堂皇'],
+          ['对称', '中轴布局，庄重大气'],
+          ['庭院', '天井采光，曲径通幽'],
+          ['榫卯', '不用钉子，严丝合缝'],
+          ['青瓦', '层层叠叠，古朴典雅'],
+        ].map((x, i) => (
+          <Box key={i} style={{ width: '46%', flexDirection: 'row', alignItems: 'flex-start', gap: 'md' }}>
+            <Box style={{ width: 2, height: 48, background: 'rgba(168, 24, 16, 0.3)', marginTop: 4 }} />
+            <Box style={{ gap: 2 }}>
+              <Text style={{ fontSize: 'card', color: '#A81810', bold: true }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{x[1]}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    {/* 功能文字 */}
+    <Text style={{ fontSize: 'label', color: 'muted', position: 'absolute', bottom: 24, alignSelf: 'center' }}>{/* {{替换：参考}} */}参考：《营造法式》· 宋代建筑专著</Text>
+  </Box>
+</Slide>

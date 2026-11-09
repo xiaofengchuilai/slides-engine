@@ -1,0 +1,11 @@
+<Slide>
+  {/* title/minimalist/3003 简约风-纯文字：白底 + 大字英文标题 + 细字中文副标 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 'xl' }}>
+    <Box style={{ height: '100%', justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'kpi', color: 'text', bold: false, fontWeight: 200, letterSpacing: 4 }}>{/* {{替换：主标题}} */}DESIGN THINKING</Text>
+        <Text style={{ fontSize: 'card', color: 'muted', bold: false, fontWeight: 300, letterSpacing: 2, marginTop: 'sm' }}>{/* {{替换：副标题}} */}设计思维方法论</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

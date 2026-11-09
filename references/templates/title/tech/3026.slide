@@ -1,0 +1,23 @@
+<Slide>
+  {/* title/tech/3026 科技风-数据面板：深底 + 左侧编号块 + 右侧标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E293B 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 32 }}>
+        <Box style={{ width: 96, height: 96, position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, border: '4px solid #22d3ee', borderRadius: 8 }} />
+          <Box style={{ position: 'absolute', top: 8, left: 8, right: 8, bottom: 8, border: '2px solid rgba(34,211,238,0.5)', borderRadius: 8 }} />
+          <Box style={{ position: 'absolute', top: 16, left: 16, right: 16, bottom: 16, background: 'rgba(34,211,238,0.2)', borderRadius: 8, alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'card', color: '#22d3ee', bold: true }}>{/* {{替换：编号}} */}01</Text>
+          </Box>
+        </Box>
+        <Box style={{ alignItems: 'flex-start' }}>
+          <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true }}>{/* {{替换：标题}} */}量子计算时代</Text>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 12 }}>
+            <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#22d3ee' }} />
+            <Text style={{ fontSize: 'label', color: '#22d3ee', letterSpacing: 4 }}>{/* {{替换：状态文字}} */}SYSTEM ONLINE</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

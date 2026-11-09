@@ -1,0 +1,15 @@
+<Slide>
+  {/* cover/minimalist/092 上下分层：顶部粗条 + 底部细条 + 标签框 + 居中标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 8, background: 'text' }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 3, background: '#D1D5DB' }} />
+    <Box style={{ alignItems: 'center', gap: 'xl' }}>
+      <Box style={{ border: '1px solid #9CA3AF', padding: 'xs md', marginBottom: 'sm' }}>
+        <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 4 }}>{/* {{替换：标签}} */}PRESENTATION</Text>
+      </Box>
+      <Text style={{ fontSize: 'hero', color: 'text', lineHeight: 1.15, letterSpacing: 2 }}>{/* {{替换：主标题}} */}企业文化建设</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 3 }}>{/* {{替换：副标题}} */}凝聚共识·共创未来</Text>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginTop: 'md' }}>{/* {{替换：部门/主题}} */}企业文化部 | 年度文化建设</Text>
+    </Box>
+  </Box>
+</Slide>

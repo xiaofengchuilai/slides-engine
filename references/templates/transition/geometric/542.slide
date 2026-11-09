@@ -1,0 +1,15 @@
+<Slide>
+  {/* transition/geometric/542 多边形拼接：浅绿青底，角落多边形(Shape)装饰 + 中置白卡（八边形 clip 降级为直角白卡） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #DCFCE7 0%, #CCFBF1 100%)', position: 'relative' }}>
+    <Shape type="diamond" style={{ position: 'absolute', top: 0, left: 0, width: 128, height: 128, fill: '#22C55E', opacity: 0.4 }} />
+    <Shape type="pentagon" style={{ position: 'absolute', bottom: 0, right: 0, width: 160, height: 160, fill: '#14B8A6', opacity: 0.4 }} />
+    <Shape type="star5" style={{ position: 'absolute', top: 240, right: 320, width: 96, height: 96, fill: '#3B82F6', opacity: 0.4 }} />
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ background: '#FFFFFF', paddingTop: 64, paddingBottom: 64, paddingLeft: 80, paddingRight: 80 }}>
+        <Text style={{ fontSize: 96, color: '#16A34A', bold: true, marginBottom: 24, textAlign: 'center' }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Text style={{ fontSize: 'title', color: '#111827', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'card', color: '#0F766E', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

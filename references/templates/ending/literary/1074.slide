@@ -1,0 +1,35 @@
+<Slide>
+  {/* ending/literary/1074 文艺风-书页对开：米色底 + 中缝 + 左右书页装饰 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: '#F8F6F0' }}>
+    {/* 左页浅色底 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 640, height: 720, background: 'linear-gradient(90deg, #F0EBE0 0%, #F8F6F0 100%)' }} />
+    {/* 页面中缝 */}
+    <Box style={{ position: 'absolute', top: 0, left: 638, width: 3, height: 720, background: 'linear-gradient(180deg, #F8F6F0 0%, #C9B896 50%, #F8F6F0 100%)', opacity: 0.6 }} />
+    {/* 书页装饰（文字行降级为细线） */}
+    <Box style={{ position: 'absolute', top: 100, left: 190, width: 150, height: 100, opacity: 0.2 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 130, height: 1, background: '#8B6F47' }} />
+      <Box style={{ position: 'absolute', top: 18, left: 0, width: 110, height: 1, background: '#8B6F47' }} />
+      <Box style={{ position: 'absolute', top: 36, left: 0, width: 125, height: 1, background: '#8B6F47' }} />
+      <Box style={{ position: 'absolute', top: 54, left: 0, width: 105, height: 1, background: '#8B6F47' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 120, right: 190, width: 150, height: 100, opacity: 0.2 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 130, height: 1, background: '#8B6F47' }} />
+      <Box style={{ position: 'absolute', top: 18, left: 0, width: 115, height: 1, background: '#8B6F47' }} />
+      <Box style={{ position: 'absolute', top: 36, left: 0, width: 120, height: 1, background: '#8B6F47' }} />
+      <Box style={{ position: 'absolute', top: 54, left: 0, width: 100, height: 1, background: '#8B6F47' }} />
+    </Box>
+    {/* 书签装饰（顶部细条） */}
+    <Box style={{ position: 'absolute', top: 0, left: 620, width: 40, height: 100, background: '#B48C64', opacity: 0.3 }} />
+    {/* 页码装饰 */}
+    <Text style={{ position: 'absolute', bottom: 60, left: 250, fontSize: 'label', color: '#8B6F47', fontFamily: 'serif', opacity: 0.4 }}>~ 谢 ~</Text>
+    <Text style={{ position: 'absolute', bottom: 60, right: 250, fontSize: 'label', color: '#8B6F47', fontFamily: 'serif', opacity: 0.4 }}>~ 谢 ~</Text>
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#6B5D4F', fontFamily: 'serif', letterSpacing: 2, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}感谢</Text>
+      <Text style={{ fontSize: 'title', color: '#8B7355', fontFamily: 'serif', lineHeight: 1.8 }}>{/* {{替换：致谢语}} */}感谢您的聆听与关注</Text>
+    </Box>
+    {/* 装饰花纹（左右圆环） */}
+    <Box style={{ position: 'absolute', top: 340, left: 320, width: 40, height: 40, borderRadius: 20, border: '1px solid #8B6F47', opacity: 0.2 }} />
+    <Box style={{ position: 'absolute', top: 340, right: 320, width: 40, height: 40, borderRadius: 20, border: '1px solid #8B6F47', opacity: 0.2 }} />
+  </Box>
+</Slide>

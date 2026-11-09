@@ -1,0 +1,24 @@
+<Slide>
+  {/* minimalist/1505 核心价值观：左竖条 + 右3条价值观(方块标记) */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', flexDirection: 'row' }}>
+    <Box style={{ width: 8, background: 'primary' }} />
+    <Box style={{ flex: 1, paddingLeft: 'xxl', justifyContent: 'center', gap: 'xl' }}>
+      <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{替换：标题}} */}核心价值观</Text>
+      <Box style={{ gap: 'xl' }}>
+        {[
+          { title: '诚信为本', body: '建立在诚信基础上的商业关系才能长久，我们始终坚持透明、负责的原则。' },
+          { title: '创新驱动', body: '持续创新是企业发展的核心动力，我们鼓励探索和试错，推动技术进步。' },
+          { title: '客户至上', body: '深入理解客户需求，提供超越期待的产品和服务，创造真正的价值。' },
+        ].map((x, i) => (
+          <Box key={i} style={{ flexDirection: 'row', gap: 'md', alignItems: 'flex-start' }}>
+            <Box style={{ width: 16, height: 16, background: 'primary', marginTop: 6 }} />
+            <Box style={{ flex: 1, gap: 'sm' }}>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{替换：价值观}} */}{x.title}</Text>
+              <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.7 }}>{/* {{替换：价值观说明}} */}{x.body}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

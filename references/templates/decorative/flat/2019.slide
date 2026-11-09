@@ -1,0 +1,18 @@
+<Slide>
+  {/* decorative/flat/2019 扁平风-纯色小图标：白底 + 彩色圆/方/三角/多边形小图标网格 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 40 }}>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 40, height: 40, borderRadius: 20, background: '#3B82F6' }} />
+        <Box style={{ width: 40, height: 40, background: '#22C55E', rotate: 45 }} />
+        <Shape type="triangle" style={{ width: 40, height: 40, fill: '#EF4444' }} />
+        <Shape type="diamond" style={{ width: 40, height: 40, fill: '#A855F7' }} />
+        <Box style={{ width: 48, height: 24, borderRadius: 12, background: '#F97316' }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        <Shape type="hexagon" style={{ width: 48, height: 48, fill: '#EC4899' }} />
+        <Shape type="hexagon" style={{ width: 40, height: 40, line: { color: '#6366F1', width: 3 } }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

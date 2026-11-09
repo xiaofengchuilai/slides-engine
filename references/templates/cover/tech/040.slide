@@ -1,0 +1,25 @@
+<Slide>
+  {/* cover/tech/040 科技风-扫描线：黑底 + 扫描线 + 徽标胶囊 + 主标题 + 副标题 */}
+  <Box style={{ width: 1280, height: 720, background: '#020617', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 扫描线（顶部横线） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #020617 0%, #06B6D4 50%, #020617 100%)' }} />
+    {/* 扫描线纹理（细横线降级） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, opacity: 0.03 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 4, left: 0, width: 1280, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 8, left: 0, width: 1280, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 12, left: 0, width: 1280, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 16, left: 0, width: 1280, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 20, left: 0, width: 1280, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 24, left: 0, width: 1280, height: 2, background: '#06B6D4' }} />
+      <Box style={{ position: 'absolute', top: 28, left: 0, width: 1280, height: 2, background: '#06B6D4' }} />
+    </Box>
+    <Box style={{ justifyContent: 'center', alignItems: 'center', padding: 'xl', maxWidth: 900 }}>
+      <Box style={{ border: '1px solid #0E7490', borderRadius: 100, background: '#123C46', padding: 'xs xl', marginBottom: 'xl' }}>
+        <Text style={{ fontSize: 'label', color: '#22D3EE', letterSpacing: 3 }}>{/* {{替换：标签}} */}5G · IoT · CLOUD</Text>
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, letterSpacing: 2, textAlign: 'center', lineHeight: 1.1, marginBottom: 'lg' }}>{/* {{替换：主标题}} */}未来科技</Text>
+      <Text style={{ fontSize: 'card', color: '#22D3EE', fontWeight: 300, letterSpacing: 2, textAlign: 'center' }}>{/* {{替换：副标题}} */}Future Technology Summit</Text>
+    </Box>
+  </Box>
+</Slide>

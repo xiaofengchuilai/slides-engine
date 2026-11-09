@@ -1,0 +1,18 @@
+<Slide>
+  {/* business/057 深蓝渐变封面：光晕装饰 + 居中大标题 + 落款 */}
+  <Box style={{ width: 1280, height: 720, position: 'absolute', top: 0, left: 0, background: 'linear-gradient(135deg, #1E3A8A 0%, #3730A3 50%, #6D28D9 100%)' }} />
+  {/* 装饰光晕（右上） */}
+  <Box style={{ position: 'absolute', top: 0, right: 0, width: 420, height: 420, borderRadius: 210, background: '#3B82F6', opacity: 0.08 }} />
+  {/* 装饰光晕（左下） */}
+  <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 420, height: 420, borderRadius: 210, background: '#8B5CF6', opacity: 0.08 }} />
+  {/* 主内容区 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, justifyContent: 'center', alignItems: 'center', padding: 'xxl xl' }}>
+    <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, textAlign: 'center', letterSpacing: 4, lineHeight: 1.2, marginBottom: 'xxl' }}>{/* {{主标题}} */}年度经营战略规划</Text>
+    <Text style={{ fontSize: 'body', color: '#BFDBFE', textAlign: 'center', letterSpacing: 2, lineHeight: 1.5, marginBottom: 'xxl' }}>{/* {{副标题}} */}聚焦增长·创造价值·持续发展</Text>
+    <Box style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 'lg' }}>
+      <Text style={{ fontSize: 'label', color: '#DBEAFE', letterSpacing: 1 }}>{/* {{落款一}} */}战略发展部</Text>
+      <Text style={{ fontSize: 'body', color: '#DBEAFE', opacity: 0.5 }}>·</Text>
+      <Text style={{ fontSize: 'label', color: '#DBEAFE', letterSpacing: 1 }}>{/* {{落款二}} */}2026年度规划汇报</Text>
+    </Box>
+  </Box>
+</Slide>

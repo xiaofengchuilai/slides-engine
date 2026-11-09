@@ -1,0 +1,26 @@
+<Slide>
+  {/* minimalist/3524 简约风-数字方块：居中标题 + 2x2 描边数字方块行 */}
+  <Box style={{ height: 720, width: 1280, background: 'cardBg', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center', marginBottom: 40 }}>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true, textAlign: 'center' }}>{/* {{标题}} */}目录</Text>
+        <Box style={{ width: 80, height: 4, background: 'text', marginTop: 12 }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 24, flexWrap: 'wrap' }}>
+        {[
+          ['01', '项目背景'],
+          ['02', '核心功能'],
+          ['03', '技术架构'],
+          ['04', '实施计划'],
+        ].map((x, i) => (
+          <Box key={i} style={{ width: 576, flexDirection: 'row', gap: 20, alignItems: 'center', padding: 20, background: 'bg', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+            <Box style={{ width: 64, height: 64, border: '2px solid text', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{x[0]}</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

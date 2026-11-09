@@ -1,0 +1,20 @@
+<Slide>
+  {/* cover/literary/156 文艺风-墨香氤氲：浅米白渐变底 + 笔触装饰 + 主标题 + 渐变分隔线 + 副标题 + 落款 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #FAF8F3 0%, #F0EBE1 50%, #E8E0D1 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 墨香笔触装饰（细弧线降级） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, opacity: 0.15 }}>
+      <Box style={{ position: 'absolute', top: 150, left: 200, width: 100, height: 1, background: '#654321' }} />
+      <Box style={{ position: 'absolute', top: 650, left: 1100, width: 100, height: 1, background: '#654321' }} />
+    </Box>
+    <Box style={{ justifyContent: 'center', alignItems: 'center', maxWidth: 900 }}>
+      {/* 笔触装饰（细线） */}
+      <Box style={{ width: 150, height: 2, background: '#654321', opacity: 0.3, marginBottom: 'lg' }} />
+      <Box style={{ width: 120, height: 1, background: '#654321', opacity: 0.2, marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'hero', color: '#4A3728', fontWeight: 300, fontFamily: 'serif', letterSpacing: 4, textAlign: 'center', lineHeight: 1.2, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}墨韵书香</Text>
+      {/* 渐变分隔线 */}
+      <Box style={{ width: 280, height: 3, background: 'linear-gradient(90deg, #654321 40%, #C4B5FD 70%, #E8E0D1 100%)', borderRadius: 'sm', marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'card', color: '#6B5444', fontWeight: 300, letterSpacing: 2, textAlign: 'center', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}笔墨传情·文字留香</Text>
+      <Text style={{ fontSize: 'body', color: '#8B7355', letterSpacing: 2, textAlign: 'center' }}>{/* {{替换：落款}} */}书法协会 | 书法艺术鉴赏</Text>
+    </Box>
+  </Box>
+</Slide>

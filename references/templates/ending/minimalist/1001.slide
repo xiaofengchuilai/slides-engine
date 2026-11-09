@@ -1,0 +1,15 @@
+<Slide>
+  {/* minimalist/1001 极简感谢：居中大标题 + 分隔线 + 英文副标 + 联系人 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', alignItems: 'center', justifyContent: 'center' }}>
+    <Box style={{ alignItems: 'center', gap: 'md' }}>
+      <Text style={{ fontSize: 'hero', color: 'text', bold: true }}>{/* {{替换：致谢标题}} */}谢谢</Text>
+      <Box style={{ width: 128, height: 4, background: 'secondary', marginTop: 'sm' }} />
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 4, marginTop: 'sm' }}>THANK YOU</Text>
+      <Box style={{ gap: 'xs', alignItems: 'center', marginTop: 'lg' }}>
+        <Text style={{ fontSize: 'body', color: 'text' }}>{/* {{替换：联系人}} */}联系人：张三</Text>
+        <Text style={{ fontSize: 'body', color: 'text' }}>{/* {{替换：邮箱}} */}邮箱：zhangsan@example.com</Text>
+        <Text style={{ fontSize: 'body', color: 'text' }}>{/* {{替换：电话}} */}电话：138-0000-0000</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

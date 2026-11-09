@@ -1,0 +1,56 @@
+<Slide>
+  {/* ending/tech/1100 科技风-矩阵代码：黑底渐变 + 二进制列装饰 + 绿框致谢 + 状态条 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #000000 0%, #1A1A2E 100%)' }}>
+    {/* 二进制装饰（左右两列） */}
+    <Box style={{ position: 'absolute', top: 90, left: 90, opacity: 0.35 }}>
+      <Text style={{ fontSize: 15, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.6 }}>01001000</Text>
+      <Text style={{ fontSize: 15, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.6 }}>01100101</Text>
+      <Text style={{ fontSize: 15, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.6 }}>01101100</Text>
+      <Text style={{ fontSize: 15, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.6 }}>01101100</Text>
+      <Text style={{ fontSize: 15, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.6 }}>01101111</Text>
+      <Text style={{ fontSize: 15, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.6 }}>01010111</Text>
+      <Text style={{ fontSize: 15, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.6 }}>01101111</Text>
+      <Text style={{ fontSize: 15, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.6 }}>01110010</Text>
+    </Box>
+    <Box style={{ position: 'absolute', top: 400, right: 100, opacity: 0.35 }}>
+      <Text style={{ fontSize: 15, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.6 }}>01001110</Text>
+      <Text style={{ fontSize: 15, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.6 }}>01001011</Text>
+      <Text style={{ fontSize: 15, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.6 }}>01010011</Text>
+      <Text style={{ fontSize: 15, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.6 }}>01000110</Text>
+      <Text style={{ fontSize: 15, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.6 }}>01010101</Text>
+    </Box>
+    {/* 中心绿框内容（半透明底用深色 hex 双层：底层装饰、上层内容） */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ position: 'relative', border: '3px solid #00FF00', padding: 'xl xxl', borderRadius: 'sm', background: '#000000', boxShadow: '0 0 40px rgba(0,255,0,0.5)' }}>
+        {/* 角落数字装饰 */}
+        <Box style={{ position: 'absolute', top: -1, left: -1, padding: 'xs sm', background: '#00FF00', borderRadius: 'sm' }}>
+          <Text style={{ fontSize: 'label', color: '#000000', bold: true }}>01</Text>
+        </Box>
+        <Box style={{ position: 'absolute', top: -1, right: -1, padding: 'xs sm', background: '#00FF00', borderRadius: 'sm' }}>
+          <Text style={{ fontSize: 'label', color: '#000000', bold: true }}>10</Text>
+        </Box>
+        <Box style={{ position: 'absolute', bottom: -1, left: -1, padding: 'xs sm', background: '#00FF00', borderRadius: 'sm' }}>
+          <Text style={{ fontSize: 'label', color: '#000000', bold: true }}>11</Text>
+        </Box>
+        <Box style={{ position: 'absolute', bottom: -1, right: -1, padding: 'xs sm', background: '#00FF00', borderRadius: 'sm' }}>
+          <Text style={{ fontSize: 'label', color: '#000000', bold: true }}>00</Text>
+        </Box>
+        <Text style={{ fontSize: 'kpi', color: '#00FF00', bold: true, letterSpacing: 5, marginBottom: 'md' }}>{/* {{替换：主标题}} */}感谢聆听</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Text style={{ fontSize: 'card', color: '#00FF00', letterSpacing: 3 }}>{/* {{替换：致谢语}} */}期待与您再次相见</Text>
+          <Box style={{ width: 3, height: 24, background: '#00FF00' }} />
+        </Box>
+      </Box>
+    </Box>
+    {/* 底部状态条 */}
+    <Box style={{ position: 'absolute', bottom: 20, left: 90, right: 90, height: 36, border: '1px solid #00FF00', background: '#000000', flexDirection: 'row', alignItems: 'center', padding: '0 16px', gap: 'sm', opacity: 0.85 }}>
+      <Box style={{ flex: 1 }}>
+        <Text style={{ fontSize: 'label', color: '#00FF00', fontFamily: 'Courier New' }}>[STATUS: PRESENTATION COMPLETE]</Text>
+      </Box>
+      <Box style={{ width: 180, height: 7, background: '#1A1A2E' }}>
+        <Box style={{ width: 180, height: 7, background: '#00FF00' }} />
+      </Box>
+      <Text style={{ fontSize: 'label', color: '#00FF00', fontFamily: 'Courier New' }}>[100%]</Text>
+    </Box>
+  </Box>
+</Slide>

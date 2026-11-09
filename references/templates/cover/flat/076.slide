@@ -1,0 +1,25 @@
+<Slide>
+  {/* cover/flat 076 极简色块封面：白底 + 左侧渐变色条 + 右侧浅色块 + 居中标题 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'bg', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 左侧渐变色条 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, bottom: 0, width: 12, background: 'linear-gradient(180deg, #EC4899 0%, #A855F7 50%, #6366F1 100%)' }} />
+    {/* 右侧浅色块组 */}
+    <Box style={{ position: 'absolute', right: 80, top: 168, gap: 'xl' }}>
+      <Box style={{ width: 128, height: 128, background: '#FBCFE8', borderRadius: 'lg' }} />
+      <Box style={{ width: 128, height: 96, background: '#E9D5FF', borderRadius: 'lg' }} />
+      <Box style={{ width: 128, height: 112, background: '#C7D2FE', borderRadius: 'lg' }} />
+    </Box>
+    {/* 主内容 */}
+    <Box style={{ alignItems: 'center', padding: '0 xl', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'lg', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}知识管理体系</Text>
+      {/* 三色装饰条 */}
+      <Box style={{ flexDirection: 'row', gap: 'sm', marginBottom: 'xl' }}>
+        <Box style={{ width: 128, height: 6, background: '#EC4899' }} />
+        <Box style={{ width: 80, height: 6, background: '#A855F7' }} />
+        <Box style={{ width: 40, height: 6, background: '#6366F1' }} />
+      </Box>
+      <Text style={{ fontSize: 'body', color: 'muted', marginBottom: 'xxl', textAlign: 'center' }}>{/* {{副标题}} */}沉淀经验·传承智慧·赋能成长</Text>
+      <Text style={{ fontSize: 'card', color: 'muted' }}>{/* {{落款}} */}知识管理部 | 知识库建设方案</Text>
+    </Box>
+  </Box>
+</Slide>

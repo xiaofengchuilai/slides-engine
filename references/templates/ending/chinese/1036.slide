@@ -1,0 +1,36 @@
+<Slide>
+  {/* ending/chinese/1036 中国风-灯笼喜庆：米红底+左右灯笼（红椭圆+金横线+流苏）、红标题+金点分隔+副题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #F5E8E0 0%, #E8D8C8 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 灯笼-左 */}
+    <Box style={{ position: 'absolute', top: 88, left: 192, alignItems: 'center' }}>
+      <Box style={{ width: 80, height: 15, background: '#8B7355', borderRadius: 'sm' }} />
+      <Box style={{ width: 100, height: 140, background: 'linear-gradient(135deg, #A81810 0%, #E62E3A 50%, #A81810 100%)', borderRadius: 'sm', justifyContent: 'center', gap: 20 }}>
+        <Box style={{ width: 80, height: 2, background: '#F5D908', alignSelf: 'center' }} />
+        <Box style={{ width: 80, height: 2, background: '#F5D908', alignSelf: 'center' }} />
+        <Box style={{ width: 80, height: 2, background: '#F5D908', alignSelf: 'center' }} />
+      </Box>
+      <Box style={{ width: 80, height: 15, background: '#8B7355', borderRadius: 'sm' }} />
+      <Box style={{ width: 3, height: 40, background: 'linear-gradient(180deg, #F5D908 0%, rgba(245,217,8,0) 100%)' }} />
+    </Box>
+    {/* 灯笼-右 */}
+    <Box style={{ position: 'absolute', top: 88, right: 192, alignItems: 'center' }}>
+      <Box style={{ width: 80, height: 15, background: '#8B7355', borderRadius: 'sm' }} />
+      <Box style={{ width: 100, height: 140, background: 'linear-gradient(135deg, #A81810 0%, #E62E3A 50%, #A81810 100%)', borderRadius: 'sm', justifyContent: 'center', gap: 20 }}>
+        <Box style={{ width: 80, height: 2, background: '#F5D908', alignSelf: 'center' }} />
+        <Box style={{ width: 80, height: 2, background: '#F5D908', alignSelf: 'center' }} />
+        <Box style={{ width: 80, height: 2, background: '#F5D908', alignSelf: 'center' }} />
+      </Box>
+      <Box style={{ width: 80, height: 15, background: '#8B7355', borderRadius: 'sm' }} />
+      <Box style={{ width: 3, height: 40, background: 'linear-gradient(180deg, #F5D908 0%, rgba(245,217,8,0) 100%)' }} />
+    </Box>
+    <Box style={{ alignItems: 'center', gap: 'md', marginTop: 60 }}>
+      <Text style={{ fontSize: 62, color: '#A81810', letterSpacing: 12 }}>{/* {{替换：致谢标题}} */}致谢</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+        <Box style={{ width: 80, height: 2, background: '#A81810' }} />
+        <Box style={{ width: 12, height: 12, borderRadius: 'sm', background: '#F5D908' }} />
+        <Box style={{ width: 80, height: 2, background: '#A81810' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#666666', letterSpacing: 3 }}>{/* {{替换：副题}} */}欢迎交流指导</Text>
+    </Box>
+  </Box>
+</Slide>

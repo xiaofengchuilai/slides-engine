@@ -1,0 +1,72 @@
+<Slide>
+  {/* business/1532 战略规划要点：标题 + 战略目标卡 + 三步走三卡 + 引语/备注双栏 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 标题栏 */}
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'md' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{标题}} */}战略规划要点</Text>
+      <Box style={{ alignItems: 'flex-end' }}>
+        <Text style={{ fontSize: 'body', color: 'muted' }}>Strategic Planning</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>2024-2026</Text>
+      </Box>
+    </Box>
+    <Box style={{ height: 4, background: 'primary', borderRadius: 2, marginBottom: 'lg' }} />
+
+    {/* 战略目标卡 */}
+    <Box style={{ flexDirection: 'row', background: 'cardBg', borderRadius: 'md', padding: 'lg', marginBottom: 'lg', alignItems: 'flex-start' }}>
+      <Box style={{ width: 4, alignSelf: 'stretch', background: 'primary', borderRadius: 2, marginRight: 'md' }} />
+      <Box style={{ flex: 1, gap: 'sm' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+          <Text style={{ fontSize: 'body', color: 'text', bold: true }}>战略目标：</Text>
+          <Text style={{ fontSize: 'body', color: 'text', flex: 1, lineHeight: 1.6 }}>{/* {{战略目标}} */}在未来三年内，通过技术创新和市场拓展，实现营收规模翻倍，市场占有率提升至行业前三。</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+          <Text style={{ fontSize: 'body', color: 'text', bold: true }}>实施路径：</Text>
+          <Text style={{ fontSize: 'body', color: 'text', flex: 1, lineHeight: 1.6 }}>{/* {{实施路径}} */}采用"三步走"策略，确保目标的稳健达成。</Text>
+        </Box>
+      </Box>
+    </Box>
+
+    {/* 三步走三卡（可增删条目） */}
+    <Box style={{ flexDirection: 'row', gap: 'xl', flex: 1, marginBottom: 'lg' }}>
+      {[
+        { num: '01', title: '技术创新', items: ['AI算法优化', '云原生架构'], grad: 'linear-gradient(135deg, #1E293B 0%, #334155 100%)' },
+        { num: '02', title: '市场扩张', items: ['渠道网络建设', '品牌影响力提升'], grad: 'linear-gradient(135deg, #2563EB 0%, #3B82F6 100%)' },
+        { num: '03', title: '组织优化', items: ['人才梯队培养', '流程效率提升'], grad: 'linear-gradient(135deg, #475569 0%, #64748B 100%)' },
+      ].map((c, i) => (
+        <Box key={i} style={{ flex: 1, background: c.grad, borderRadius: 'lg', padding: 'lg', gap: 'md', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, lineHeight: 1 }}>{c.num}</Text>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{卡片标题}} */}{c.title}</Text>
+          <Box style={{ gap: 'sm' }}>
+            {c.items.map((it, j) => (
+              <Box key={j} style={{ flexDirection: 'row', gap: 'xs', alignItems: 'center' }}>
+                <Box style={{ width: 6, height: 6, borderRadius: 3, background: '#FFFFFF', opacity: 0.7 }} />
+                <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{要点}} */}{it}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      ))}
+    </Box>
+
+    {/* 引语 + 备注双栏 */}
+    <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+      <Box style={{ flex: 2, flexDirection: 'row', background: 'cardBg', borderRadius: 'sm', padding: 'lg', alignItems: 'flex-start' }}>
+        <Box style={{ width: 4, alignSelf: 'stretch', background: 'muted', borderRadius: 2, marginRight: 'md' }} />
+        <Box style={{ flex: 1, gap: 'sm' }}>
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6 }}>{/* {{引语}} */}"战略不是一份计划，而是一种持续演进的思考方式。"</Text>
+          <Text style={{ fontSize: 'body', color: 'muted' }}>— Roger Martin</Text>
+        </Box>
+      </Box>
+      <Box style={{ width: 400, flexDirection: 'row', background: 'cardBg', borderRadius: 'sm', padding: 'lg', alignItems: 'flex-start' }}>
+        <Box style={{ width: 4, alignSelf: 'stretch', background: 'accent', borderRadius: 2, marginRight: 'md' }} />
+        <Box style={{ flex: 1 }}>
+          <Box style={{ flexDirection: 'row', gap: 'xs', alignItems: 'center', marginBottom: 'xs' }}>
+            <FAIcon name='info-circle' style={{ fill: 'accent', width: 16, height: 16 }} />
+            <Text style={{ fontSize: 'label', color: 'text', bold: true }}>备注：</Text>
+          </Box>
+          <Text style={{ fontSize: 'label', color: 'muted', lineHeight: 1.6 }}>{/* {{备注}} */}本战略需根据实际执行情况进行季度复盘和动态调整。</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

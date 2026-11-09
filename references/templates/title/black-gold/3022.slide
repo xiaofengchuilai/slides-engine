@@ -1,0 +1,11 @@
+<Slide>
+  {/* title/black-gold/3022 黑金风-描边字体：纯黑底 + 金色渐变大标题 + 金线 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, letterSpacing: 4, textAlign: 'center' }}>{/* {{替换：标题}} */}尊贵体验</Text>
+        <Box style={{ width: 128, height: 4, background: 'linear-gradient(90deg, #EAB308 0%, #CA8A04 100%)', marginTop: 16 }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

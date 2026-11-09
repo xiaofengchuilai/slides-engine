@@ -1,0 +1,39 @@
+<Slide>
+  {/* flat/1563 扁平化设计：标题 + 3张错位层叠卡片(简洁/明快/现代) + 底部彩色装饰条 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #EFF6FF 0%, #EEF2FF 100%)', padding: 'xxl xl' }}>
+    <Text style={{ fontSize: 'title', color: 'text', bold: true, textAlign: 'center', marginBottom: 'xl' }}>{/* {{替换：标题}} */}扁平化设计</Text>
+    {/* 层叠卡片区 */}
+    <Box style={{ position: 'relative', flex: 1 }}>
+      {/* 卡片1 简洁（左，靠上） */}
+      <Box style={{ position: 'absolute', top: 40, left: 0, width: 360, background: '#3B82F6', borderRadius: 'lg', padding: 'xl', boxShadow: '0 12px 36px rgba(0,0,0,0.22)', rotate: -3 }}>
+        <Box style={{ width: 64, height: 64, background: 'cardBg', borderRadius: 32, alignItems: 'center', justifyContent: 'center', marginBottom: 'md' }}>
+          <Text style={{ fontSize: 'card', color: '#3B82F6', bold: true }}>简</Text>
+        </Box>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{替换：要点1}} */}简洁</Text>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.9, lineHeight: 1.6 }}>{/* {{替换：说明1}} */}去除多余装饰，聚焦内容本身，让信息传达更加直接有效</Text>
+      </Box>
+      {/* 卡片2 明快（中，错位） */}
+      <Box style={{ position: 'absolute', top: 100, left: 380, width: 360, background: '#8B5CF6', borderRadius: 'lg', padding: 'xl', boxShadow: '0 16px 48px rgba(0,0,0,0.28)', rotate: 2 }}>
+        <Box style={{ width: 64, height: 64, background: 'cardBg', borderRadius: 32, alignItems: 'center', justifyContent: 'center', marginBottom: 'md' }}>
+          <Text style={{ fontSize: 'card', color: '#8B5CF6', bold: true }}>明</Text>
+        </Box>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{替换：要点2}} */}明快</Text>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.9, lineHeight: 1.6 }}>{/* {{替换：说明2}} */}色彩鲜明直接，对比强烈，营造积极向上的视觉氛围</Text>
+      </Box>
+      {/* 卡片3 现代（右，靠下） */}
+      <Box style={{ position: 'absolute', top: 160, left: 760, width: 360, background: '#EC4899', borderRadius: 'lg', padding: 'xl', boxShadow: '0 12px 36px rgba(0,0,0,0.22)', rotate: -1 }}>
+        <Box style={{ width: 64, height: 64, background: 'cardBg', borderRadius: 32, alignItems: 'center', justifyContent: 'center', marginBottom: 'md' }}>
+          <Text style={{ fontSize: 'card', color: '#EC4899', bold: true }}>现</Text>
+        </Box>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{替换：要点3}} */}现代</Text>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.9, lineHeight: 1.6 }}>{/* {{替换：说明3}} */}符合时代审美，体现当代设计理念，引领视觉潮流</Text>
+      </Box>
+      {/* 底部装饰色条 */}
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, right: 0, flexDirection: 'row', gap: 'sm' }}>
+        <Box style={{ flex: 1, height: 8, background: '#60A5FA', borderRadius: 4 }} />
+        <Box style={{ flex: 1, height: 8, background: '#A78BFA', borderRadius: 4 }} />
+        <Box style={{ flex: 1, height: 8, background: '#F472B6', borderRadius: 4 }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

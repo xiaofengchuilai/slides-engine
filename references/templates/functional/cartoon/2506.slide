@@ -1,0 +1,58 @@
+<Slide>
+  {/* functional/cartoon/2506 卡通风-变体2：浅粉底 + 关卡进度/四格互动/萌系页脚 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #ECFEFF 0%, #FDF2F8 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 24 }}>
+      {/* 导航 - 关卡进度条 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, border: '4px solid #a5f3fc', borderRadius: 24, background: '#FFFFFF', padding: 16 }}>
+        <Box style={{ width: 48, height: 48, borderRadius: 24, background: '#22d3ee', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：关卡号}} */}3</Text>
+        </Box>
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'body', color: '#0e7490', bold: true }}>{/* {{替换：关卡名}} */}关卡三：学习秘籍</Text>
+          <Text style={{ fontSize: 'label', color: '#06b6d4' }}>{/* {{替换：副标签}} */}Level 3</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 4 }}>
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#4ade80' }} />
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#4ade80' }} />
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#facc15' }} />
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#d1d5db' }} />
+        </Box>
+      </Box>
+      {/* 行动 - 四格互动按钮 */}
+      <Box style={{ flexDirection: 'row', gap: 16 }}>
+        {[
+          ['#f9a8d4', '👍', '点赞'],
+          ['#d8b4fe', '💬', '留言'],
+          ['#93c5fd', '📤', '分享'],
+          ['#86efac', '⭐', '收藏'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, border: '3px solid ' + x[0], borderRadius: 24, background: '#FFFFFF', padding: 16, alignItems: 'center', gap: 8, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Emoji name={x[1]} style={{ width: 28, height: 28 }} />
+            <Text style={{ fontSize: 'label', color: '#be185d', bold: true }}>{/* {{替换：按钮文字}} */}{x[2]}</Text>
+          </Box>
+        ))}
+      </Box>
+      {/* 页脚 - 萌系风格 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, border: '4px solid #a5f3fc', borderRadius: 24, background: '#FFFFFF', padding: 16 }}>
+        <Box style={{ width: 40, height: 40, borderRadius: 20, background: 'linear-gradient(135deg, #f472b6 0%, #a855f7 100%)', alignItems: 'center', justifyContent: 'center' }}>
+          <Emoji name="🎨" style={{ width: 24, height: 24 }} />
+        </Box>
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'body', color: '#0e7490', bold: true }}>{/* {{替换：品牌名}} */}快乐学习平台</Text>
+          <Text style={{ fontSize: 'label', color: '#06b6d4' }}>{/* {{替换：副标签}} */}Happy Learning</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+          <Text style={{ fontSize: 'label', color: '#0891b2' }}>{/* {{替换：版权}} */}© 2024 让学习有趣</Text>
+          <Emoji name="😄" style={{ width: 18, height: 18 }} />
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Text style={{ fontSize: 'body', color: '#0e7490', bold: true }}>{/* {{替换：页码前缀}} */}第</Text>
+          <Box style={{ width: 40, height: 40, borderRadius: 20, background: 'linear-gradient(90deg, #22d3ee 0%, #60a5fa 100%)', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：页码}} */}3</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#0e7490', bold: true }}>{/* {{替换：页码后缀}} */}页</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

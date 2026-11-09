@@ -1,0 +1,19 @@
+<Slide>
+  {/* black-gold/079 奢华条纹：黑底 + 三条金竖线 + 金框标签 + 金字标题 + 副标题 + 金线 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 金色竖条纹（三列） */}
+    <Box style={{ position: 'absolute', top: 0, left: 320, width: 2, height: 720, background: '#EAB308', opacity: 0.1 }} />
+    <Box style={{ position: 'absolute', top: 0, left: 640, width: 2, height: 720, background: '#EAB308', opacity: 0.1 }} />
+    <Box style={{ position: 'absolute', top: 0, left: 960, width: 2, height: 720, background: '#EAB308', opacity: 0.1 }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Box style={{ border: '1px solid #EAB308', background: 'rgba(234,179,8,0.05)', padding: 'sm xl', marginBottom: 'xl' }}>
+        <Text style={{ fontSize: 'label', color: '#EAB308', letterSpacing: 6 }}>{/* {{替换：标签}} */}LUXURY</Text>
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#EAB308', bold: true, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}财富管理方案</Text>
+      <Text style={{ fontSize: 'card', color: '#CA8A04', marginBottom: 'xl' }}>{/* {{替换：副标题}} */}资产配置·风险管控·稳健增值</Text>
+      <Box style={{ width: 128, height: 2, background: '#EAB308', marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'body', color: '#9CA3AF' }}>{/* {{替换：落款}} */}财富管理部 | 高净值客户专案</Text>
+    </Box>
+  </Box>
+</Slide>

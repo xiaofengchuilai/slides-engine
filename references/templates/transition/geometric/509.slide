@@ -1,0 +1,15 @@
+<Slide>
+  {/* transition/geometric/509 三角组合：浅紫粉底，角落三角形装饰（Shape），中置白卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F3E8FF 0%, #FCE7F3 100%)', position: 'relative' }}>
+    <Shape type="triangle" style={{ position: 'absolute', top: 0, left: 0, width: 130, height: 130, fill: '#A855F7', opacity: 0.8 }} />
+    <Shape type="triangle" style={{ position: 'absolute', bottom: 0, right: 0, width: 150, height: 150, fill: '#EC4899', opacity: 0.8, rotate: 180 }} />
+    <Shape type="diamond" style={{ position: 'absolute', top: 180, right: 320, width: 112, height: 112, fill: '#3B82F6', opacity: 0.6 }} />
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ background: '#FFFFFF', paddingTop: 40, paddingBottom: 40, paddingLeft: 48, paddingRight: 48, boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 'title', color: '#A855F7', bold: true, marginBottom: 12, textAlign: 'center' }}>{/* {{替换：章节标识}} */}第一章</Text>
+        <Text style={{ fontSize: 'title', color: '#111827', bold: true, marginBottom: 12, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Box style={{ height: 4, background: 'linear-gradient(90deg, #A855F7 0%, #EC4899 50%, #3B82F6 100%)', borderRadius: 2, marginTop: 12 }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

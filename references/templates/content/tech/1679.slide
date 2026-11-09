@@ -1,0 +1,84 @@
+<Slide>
+  {/* tech/1679 系统性能指标：2x2 网格（大区横跨两列）+ 数据锚点 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题 */}
+    <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xl' }}>{/* {{标题}} */}系统性能指标</Text>
+
+    <Box style={{ flex: 1, flexDirection: 'column', gap: 'xl' }}>
+      {/* 第一行: 区域1 + 区域2(跨两列) */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+        {/* 区域1 */}
+        <Box style={{ flex: 1 }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>1</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{指标名}} */}数据吞吐能力</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6, marginBottom: 'md' }}>{/* {{指标描述}} */}单节点支持每秒100万条数据写入，集群模式可线性扩展，满足海量数据实时处理需求。</Text>
+          <Text style={{ fontSize: 32, color: '#FFFFFF', bold: true }}>{/* {{数据值}} */}100万/s</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{数据说明}} */}单节点写入能力</Text>
+        </Box>
+
+        {/* 区域2 */}
+        <Box style={{ flex: 2, flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+          {/* {{图片：有图填 assets/images/1679a.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1679a.png" style={{ width: 280, height: 220, objectFit: 'cover' }} />
+          <Box style={{ flex: 1 }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{指标名}} */}查询响应性能</Text>
+            <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6, marginBottom: 'md' }}>{/* {{指标描述}} */}基于列式存储与向量化执行引擎，亿级数据查询响应时间控制在秒级，P99延迟小于3秒。</Text>
+            <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+              <Box>
+                <Text style={{ fontSize: 28, color: '#FFFFFF', bold: true }}>{'P50 <500ms'}</Text>
+                <Text style={{ fontSize: 'label', color: 'muted' }}>中位数延迟</Text>
+              </Box>
+              <Box>
+                <Text style={{ fontSize: 28, color: '#FFFFFF', bold: true }}>{'P99 <3s'}</Text>
+                <Text style={{ fontSize: 'label', color: 'muted' }}>尾部延迟</Text>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+
+      {/* 第二行: 区域3(跨两列) + 区域4 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+        {/* 区域3 */}
+        <Box style={{ flex: 2, flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+          <Box style={{ flex: 1 }}>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{指标名}} */}系统稳定性</Text>
+            <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6, marginBottom: 'md' }}>{/* {{指标描述}} */}多副本存储与自动故障转移机制，确保数据零丢失，系统年度可用性达99.99%。</Text>
+            <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+              <Box>
+                <Text style={{ fontSize: 28, color: '#FFFFFF', bold: true }}>99.99%</Text>
+                <Text style={{ fontSize: 'label', color: 'muted' }}>系统可用性</Text>
+              </Box>
+              <Box>
+                <Text style={{ fontSize: 28, color: '#FFFFFF', bold: true }}>0</Text>
+                <Text style={{ fontSize: 'label', color: 'muted' }}>数据丢失事件</Text>
+              </Box>
+            </Box>
+          </Box>
+          {/* {{图片：有图填 assets/images/1679b.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1679b.png" style={{ width: 280, height: 220, objectFit: 'cover' }} />
+        </Box>
+
+        {/* 区域4 */}
+        <Box style={{ flex: 1 }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: 'secondary', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>4</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{指标名}} */}资源利用率</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6, marginBottom: 'md' }}>{/* {{指标描述}} */}智能资源调度算法，动态分配计算资源，平均资源利用率提升至85%以上。</Text>
+          <Text style={{ fontSize: 32, color: '#FFFFFF', bold: true }}>{/* {{数据值}} */}85%+</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{数据说明}} */}资源利用率</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

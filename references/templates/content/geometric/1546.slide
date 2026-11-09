@@ -1,0 +1,44 @@
+<Slide>
+  {/* geometric/1546 对称平衡：中轴线 + 左右镜像的 三角/圆/方 三组图形 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #EEF2FF 0%, #FAF5FF 50%, #FDF2F8 100%)', padding: 'xxl xl', alignItems: 'center' }}>
+    <Text style={{ fontSize: 'title', color: '#111827', bold: true, textAlign: 'center', marginBottom: 'xs' }}>{/* {{替换：页面标题}} */}对称平衡</Text>
+    <Text style={{ fontSize: 'body', color: '#4B5563', textAlign: 'center', marginBottom: 'xl' }}>{/* {{替换：副标题}} */}中轴线两侧的完美映射关系</Text>
+    {/* 中央对称轴 */}
+    <Box style={{ position: 'absolute', top: 210, left: 639, width: 2, height: 370, background: 'linear-gradient(180deg, #C084FC 0%, #6366F1 50%, #3B82F6 100%)' }} />
+    {/* 画布 1000x400 居中（左右各 140） */}
+    <Box style={{ position: 'relative', width: 1000, height: 400, marginLeft: 140 }}>
+      {/* 左侧组：三角形/圆/方 */}
+      <Box style={{ position: 'absolute', left: 130, top: 40, width: 132, height: 132, alignItems: 'center', justifyContent: 'center' }}>
+        <Shape type="triangle" style={{ position: 'absolute', top: 0, left: 0, width: 132, height: 132, fill: '#3B82F6', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>分析</Text>
+      </Box>
+      <Box style={{ position: 'absolute', left: 40, top: 170, width: 144, height: 144, borderRadius: 72, background: 'linear-gradient(135deg, #A855F7 0%, #EC4899 100%)', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>设计</Text>
+      </Box>
+      <Box style={{ position: 'absolute', left: 150, top: 320, width: 128, height: 128, background: 'linear-gradient(135deg, #10B981 0%, #14B8A6 100%)', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>实施</Text>
+      </Box>
+      {/* 右侧组（镜像） */}
+      <Box style={{ position: 'absolute', left: 738, top: 40, width: 132, height: 132, alignItems: 'center', justifyContent: 'center' }}>
+        <Shape type="triangle" style={{ position: 'absolute', top: 0, left: 0, width: 132, height: 132, fill: '#06B6D4', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>评估</Text>
+      </Box>
+      <Box style={{ position: 'absolute', left: 816, top: 170, width: 144, height: 144, borderRadius: 72, background: 'linear-gradient(135deg, #EC4899 0%, #A855F7 100%)', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>验证</Text>
+      </Box>
+      <Box style={{ position: 'absolute', left: 722, top: 320, width: 128, height: 128, background: 'linear-gradient(135deg, #14B8A6 0%, #10B981 100%)', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>优化</Text>
+      </Box>
+      {/* 中央连接线（3 条横向 + 圆点） */}
+      {[
+        [120, '#8B5CF6'],
+        [255, '#A855F7'],
+        [400, '#14B8A6'],
+      ].map((ln, i) => (
+        <Box key={i} style={{ position: 'absolute', left: 388, top: ln[0], width: 224, height: 2, background: ln[1], opacity: 0.7 }}>
+          <Box style={{ position: 'absolute', left: 106, top: -7, width: 16, height: 16, borderRadius: 8, background: ln[1] }} />
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

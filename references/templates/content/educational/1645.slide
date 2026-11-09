@@ -1,0 +1,87 @@
+<Slide>
+  {/* educational/1645 英语启蒙·字母认知：标题 + 左大小写/笔顺 + 右单词/儿歌 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%)', padding: 'xxl xl', gap: 'lg', position: 'relative' }}>
+    <Box style={{ position: 'absolute', top: 32, right: 48, opacity: 0.3 }}>
+      <Emoji name="🌟" style={{ width: 42, height: 42 }} />
+    </Box>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Text style={{ fontSize: 'title', color: '#78350F', bold: true }}>{/* {{替换：标题}} */}Letter A · 字母 A</Text>
+      <Text style={{ fontSize: 'body', color: '#B45309' }}>{/* {{替换：音标}} */}/eɪ/ · 第一个字母</Text>
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+      {/* 左侧：大小写 + 笔顺 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        <Box style={{ background: '#FFFFFF', border: '2px solid #FCD34D', borderRadius: 'md', padding: 'lg', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Box style={{ flexDirection: 'row', gap: 'xl' }}>
+            <Box style={{ flex: 1, alignItems: 'center' }}>
+              <Text style={{ fontSize: 'label', color: '#4B5563', marginBottom: 'sm' }}>大写 Uppercase</Text>
+              <Box style={{ width: 112, height: 112, background: '#FFFBEB', border: '2px solid #FBBF24', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'kpi', color: '#B45309', bold: true }}>{/* {{替换：大写字母}} */}A</Text>
+              </Box>
+            </Box>
+            <Box style={{ flex: 1, alignItems: 'center' }}>
+              <Text style={{ fontSize: 'label', color: '#4B5563', marginBottom: 'sm' }}>小写 Lowercase</Text>
+              <Box style={{ width: 112, height: 112, background: '#FFFBEB', border: '2px solid #FBBF24', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'kpi', color: '#B45309', bold: true }}>{/* {{替换：小写字母}} */}a</Text>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+        <Box style={{ background: '#FFFFFF', border: '2px solid #FDE68A', borderRadius: 'md', padding: 'md' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Emoji name="✏" style={{ width: 18, height: 18 }} />
+            <Text style={{ fontSize: 'card', color: '#92400E', bold: true }}>{/* {{替换：标题}} */}书写笔顺</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around' }}>
+            {['╱', '╲', '—'].map((x, i) => (
+              <Box key={i} style={{ alignItems: 'center', gap: 'xs' }}>
+                <Box style={{ width: 48, height: 48, background: '#FFFBEB', border: '1px solid #FCD34D', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+                  <Text style={{ fontSize: 'card', color: '#D97706' }}>{/* {{替换：笔画}} */}{x}</Text>
+                </Box>
+                <Text style={{ fontSize: 'label', color: '#4B5563' }}>{/* {{替换：笔序}} */}第{i + 1}笔</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+      {/* 右侧：单词 + 儿歌 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        <Box style={{ background: '#FFFFFF', border: '2px solid #FDE68A', borderRadius: 'md', padding: 'md' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Emoji name="📖" style={{ width: 18, height: 18 }} />
+            <Text style={{ fontSize: 'card', color: '#92400E', bold: true }}>{/* {{替换：标题}} */}常见单词</Text>
+          </Box>
+          <Box style={{ gap: 'sm' }}>
+            {[
+              ['apple', '苹果', '🍎'],
+              ['ant', '蚂蚁', '🐜'],
+              ['art', '艺术', '🎨'],
+            ].map((x, i) => (
+              <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', background: '#FFFBEB', borderRadius: 'sm', padding: 'sm' }}>
+                <Box style={{ width: 40, height: 40, background: '#FDE68A', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+                  <Emoji name={x[2]} style={{ width: 26, height: 26 }} />
+                </Box>
+                <Box>
+                  <Text style={{ fontSize: 'card', color: '#78350F', bold: true }}>{/* {{替换：单词}} */}{x[0]}</Text>
+                  <Text style={{ fontSize: 'label', color: '#6B7280' }}>{/* {{替换：释义}} */}{x[1]}</Text>
+                </Box>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Box style={{ background: 'linear-gradient(135deg, #FEF3C7 0%, #FEF9C3 100%)', border: '2px solid #FCD34D', borderRadius: 'md', padding: 'md', flex: 1 }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Emoji name="🎵" style={{ width: 18, height: 18 }} />
+            <Text style={{ fontSize: 'card', color: '#92400E', bold: true }}>{/* {{替换：标题}} */}字母儿歌</Text>
+          </Box>
+          <Box style={{ gap: 'xs' }}>
+            <Text style={{ fontSize: 'body', color: '#78350F', fontFamily: 'serif' }}>A is for Apple,</Text>
+            <Text style={{ fontSize: 'body', color: '#78350F', fontFamily: 'serif' }}>Red and sweet,</Text>
+            <Text style={{ fontSize: 'body', color: '#78350F', fontFamily: 'serif' }}>A is for Ant,</Text>
+            <Text style={{ fontSize: 'body', color: '#78350F', fontFamily: 'serif' }}>Tiny feet!</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

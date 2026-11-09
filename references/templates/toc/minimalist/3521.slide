@@ -1,0 +1,24 @@
+<Slide>
+  {/* minimalist/3521 简约风-网格布局：居中标题 + 2x2 描边章节卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, textAlign: 'center', marginBottom: 40 }}>{/* {{标题}} */}目录</Text>
+      <Box style={{ flexDirection: 'row', gap: 20, flexWrap: 'wrap' }}>
+        {[
+          ['01', '项目背景'],
+          ['02', '核心功能'],
+          ['03', '技术架构'],
+          ['04', '实施计划'],
+        ].map((x, i) => (
+          <Box key={i} style={{ width: 576, border: '2px solid line', padding: 24, justifyContent: 'space-between' }}>
+            <Box>
+              <Text style={{ fontSize: 'card', color: 'line', bold: true, marginBottom: 12 }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{章节名}} */}{x[1]}</Text>
+            </Box>
+            <Box style={{ width: 48, height: 4, background: 'text', marginTop: 16 }} />
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,16 @@
+<Slide>
+  {/* title/literary/3016 文艺风-花体字：白底 + 紫色花体标题 + 圆点 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFFFFF 0%, #FAF5FF 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'hero', color: '#4c1d95', fontFamily: 'serif', bold: true, marginBottom: 12, textAlign: 'center' }}>{/* {{替换：标题}} */}Poetry & Arts</Text>
+        <Text style={{ fontSize: 'card', color: '#6b7280', letterSpacing: 8 }}>{/* {{替换：副标题}} */}诗意生活美学</Text>
+        <Box style={{ flexDirection: 'row', gap: 12, marginTop: 16 }}>
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#a78bfa' }} />
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#a78bfa' }} />
+          <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#a78bfa' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

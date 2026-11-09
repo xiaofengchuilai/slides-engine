@@ -1,0 +1,29 @@
+<Slide>
+  {/* decorative/minimalist/2002 简约风-极简短分割线：白底 + 细线/点线/虚线分隔元素网格 */}
+  <Box style={{ width: 1280, height: 720, background: 'bg', position: 'absolute', top: 0, left: 0, padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 40 }}>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        <Box style={{ width: 64, height: 2, background: '#D1D5DB' }} />
+        {/* 中线渐变（灰→透明→灰） */}
+        <Box style={{ width: 48, height: 2, background: 'linear-gradient(90deg, rgba(156,163,175,0) 0%, #9CA3AF 50%, rgba(156,163,175,0) 100%)' }} />
+        {/* 三段短线 */}
+        <Box style={{ flexDirection: 'row', gap: 4 }}>
+          <Box style={{ width: 16, height: 2, background: '#9CA3AF' }} />
+          <Box style={{ width: 16, height: 2, background: '#9CA3AF' }} />
+          <Box style={{ width: 16, height: 2, background: '#9CA3AF' }} />
+        </Box>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 56, alignItems: 'center', justifyContent: 'center' }}>
+        {/* 虚线分隔线（Shape line dashType=dash） */}
+        <Shape type="line" style={{ width: 64, height: 0, line: { color: '#D1D5DB', width: 1, dashType: 'dash' } }} />
+        {/* 线-点-线 */}
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Box style={{ width: 24, height: 2, background: '#D1D5DB' }} />
+          <Box style={{ width: 4, height: 4, borderRadius: 2, background: '#9CA3AF' }} />
+          <Box style={{ width: 24, height: 2, background: '#D1D5DB' }} />
+        </Box>
+        <Box style={{ width: 2, height: 64, background: '#D1D5DB' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,41 @@
+<Slide>
+  {/* cover/tech/054 科技风-能量核心：黑底 + 能量圆环 + 角部指示条 + 主标题 + 副标题 + 落款 */}
+  <Box style={{ width: 1280, height: 720, background: '#020617', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 能量核心圆环装饰 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, justifyContent: 'center', alignItems: 'center', opacity: 0.2 }}>
+      <Box style={{ width: 192, height: 192, borderRadius: 96, background: '#0E7490', opacity: 0.3 }} />
+      <Box style={{ position: 'absolute', width: 320, height: 320, borderRadius: 160, border: '2px solid #0E7490' }} />
+      <Box style={{ position: 'absolute', width: 384, height: 384, borderRadius: 192, border: '1px solid #155E75' }} />
+    </Box>
+    {/* 角部能量指示条 */}
+    <Box style={{ position: 'absolute', top: 40, left: 40 }}>
+      <Box style={{ width: 64, height: 6, background: '#155E75', marginBottom: 'xs' }} />
+      <Box style={{ width: 48, height: 6, background: '#0E7490', marginBottom: 'xs' }} />
+      <Box style={{ width: 32, height: 6, background: '#164E63' }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 40, right: 40, alignItems: 'flex-end' }}>
+      <Box style={{ width: 64, height: 6, background: '#155E75', marginBottom: 'xs' }} />
+      <Box style={{ width: 48, height: 6, background: '#0E7490', marginBottom: 'xs' }} />
+      <Box style={{ width: 32, height: 6, background: '#164E63' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 40, left: 40 }}>
+      <Box style={{ width: 32, height: 6, background: '#164E63', marginBottom: 'xs' }} />
+      <Box style={{ width: 48, height: 6, background: '#0E7490', marginBottom: 'xs' }} />
+      <Box style={{ width: 64, height: 6, background: '#155E75' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 40, right: 40, alignItems: 'flex-end' }}>
+      <Box style={{ width: 32, height: 6, background: '#164E63', marginBottom: 'xs' }} />
+      <Box style={{ width: 48, height: 6, background: '#0E7490', marginBottom: 'xs' }} />
+      <Box style={{ width: 64, height: 6, background: '#155E75' }} />
+    </Box>
+    <Box style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, letterSpacing: 4, textAlign: 'center', lineHeight: 1.1, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}云原生技术架构</Text>
+      <Text style={{ fontSize: 'card', color: '#67E8F9', fontWeight: 300, letterSpacing: 2, textAlign: 'center', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}微服务与容器化部署实践</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'body', color: '#A5F3FC' }}>{/* {{替换：落款一}} */}架构组</Text>
+        <Text style={{ fontSize: 'body', color: '#A5F3FC', opacity: 0.5 }}>·</Text>
+        <Text style={{ fontSize: 'body', color: '#A5F3FC' }}>{/* {{替换：落款二}} */}技术方案评审</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

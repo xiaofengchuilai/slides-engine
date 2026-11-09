@@ -1,0 +1,19 @@
+<Slide>
+  {/* transition/literary/511 文艺风-复古标签：琥珀米渐变底 + 圆角标签章序 + 标题/导语 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFFBEB 0%, #FFF7ED 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ background: '#fef3c7', border: '4px solid #fbbf24', borderRadius: 999, padding: 8, paddingLeft: 40, paddingRight: 40, marginBottom: 24, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'card', color: '#92400e', bold: true, fontFamily: 'serif' }}>{/* {{替换：章序号}} */}第一章</Text>
+        </Box>
+        <Text style={{ fontSize: 'title', color: '#374151', bold: true, marginBottom: 12, fontFamily: 'serif' }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, marginBottom: 16 }}>
+          <Box style={{ width: 80, height: 1, background: '#fbbf24' }} />
+          <Text style={{ fontSize: 'body', color: '#6b7280', fontFamily: 'serif' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+          <Box style={{ width: 80, height: 1, background: '#fbbf24' }} />
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#6b7280', fontFamily: 'serif' }}>{/* {{替换：引言}} */}" 让我们一起开启新的篇章 "</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

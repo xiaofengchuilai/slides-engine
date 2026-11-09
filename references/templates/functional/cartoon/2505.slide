@@ -1,0 +1,53 @@
+<Slide>
+  {/* functional/cartoon/2505 卡通风-变体1：浅粉底 + 关卡导航/胶囊面包屑/扫码卡/页脚 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FDF2F8 0%, #EDE9FE 100%)', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 24 }}>
+      {/* 导航 - 关卡指示 + 胶囊面包屑 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24, border: '1px solid #F9A8D4', background: '#FFFFFF', borderRadius: 16, padding: 20 }}>
+        <Box style={{ background: 'linear-gradient(90deg, #f472b6 0%, #a855f7 100%)', borderRadius: 999, padding: 8, paddingLeft: 16, paddingRight: 16 }}>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：关卡文字}} */}第三关</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8, flex: 1 }}>
+          <Box style={{ background: '#fbcfe8', borderRadius: 999, padding: 4, paddingLeft: 12, paddingRight: 12 }}>
+            <Text style={{ fontSize: 'label', color: '#be185d', bold: true }}>{/* {{替换：面包屑1}} */}开始</Text>
+          </Box>
+          <Text style={{ fontSize: 'card', color: '#a855f7' }}>→</Text>
+          <Box style={{ background: '#d8b4fe', borderRadius: 999, padding: 4, paddingLeft: 12, paddingRight: 12 }}>
+            <Text style={{ fontSize: 'label', color: '#6b21a8', bold: true }}>{/* {{替换：面包屑2}} */}创意思维</Text>
+          </Box>
+          <Text style={{ fontSize: 'card', color: '#a855f7' }}>→</Text>
+          <Box style={{ background: '#bfdbfe', borderRadius: 999, padding: 4, paddingLeft: 12, paddingRight: 12 }}>
+            <Text style={{ fontSize: 'label', color: '#1d4ed8', bold: true }}>{/* {{替换：面包屑3}} */}实践</Text>
+          </Box>
+        </Box>
+      </Box>
+      {/* 行动 - 扫码加入卡片 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, border: '4px solid #f9a8d4', borderRadius: 24, background: '#FFFFFF', padding: 20, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Box style={{ width: 80, height: 80, background: 'linear-gradient(135deg, #f9a8d4 0%, #c4b5fd 100%)', borderRadius: 16, alignItems: 'center', justifyContent: 'center' }}>
+          <Emoji name="📱" style={{ width: 40, height: 40 }} />
+        </Box>
+        <Box style={{ flex: 1 }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+            <Text style={{ fontSize: 'card', color: '#7c3aed', bold: true }}>{/* {{替换：标题}} */}扫码加入我们！</Text>
+            <Emoji name="🎉" style={{ width: 24, height: 24 }} />
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#a855f7' }}>{/* {{替换：副标题}} */}一起玩转创意</Text>
+        </Box>
+      </Box>
+      {/* 页脚 - 圆润卡片风格 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, border: '2px solid #ddd6fe', borderRadius: 16, background: 'rgba(255,255,255,0.85)', padding: 16 }}>
+        <Box style={{ width: 40, height: 40, borderRadius: 20, background: 'linear-gradient(135deg, #f472b6 0%, #a855f7 100%)', alignItems: 'center', justifyContent: 'center' }}>
+          <Emoji name="😊" style={{ width: 24, height: 24 }} />
+        </Box>
+        <Text style={{ flex: 1, fontSize: 'body', color: '#7c3aed', bold: true }}>{/* {{替换：品牌名}} */}创意工坊</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+          <Text style={{ fontSize: 'label', color: '#a855f7' }}>{/* {{替换：版权}} */}© 2024 保持快乐</Text>
+          <Emoji name="💖" style={{ width: 18, height: 18 }} />
+        </Box>
+        <Box style={{ background: 'linear-gradient(90deg, #f9a8d4 0%, #c4b5fd 100%)', borderRadius: 999, padding: 8, paddingLeft: 16, paddingRight: 16 }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{替换：页码}} */}3 / 10</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

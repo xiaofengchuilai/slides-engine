@@ -1,0 +1,25 @@
+<Slide>
+  {/* chinese/1622 对联式·中国画派：竖排对联改横排 + 中轴方印 + 底部横批 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF9F6 0%, #F5F3ED 100%)', padding: 'xxl xl', alignItems: 'center', justifyContent: 'center', gap: 'xl' }}>
+    {/* 左联（竖排改横排） */}
+    <Box style={{ alignItems: 'center', gap: 'md' }}>
+      <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true, letterSpacing: 6 }}>{/* {{替换：上联}} */}笔墨纸砚传千古</Text>
+    </Box>
+    {/* 中轴 */}
+    <Box style={{ alignItems: 'center', gap: 'lg' }}>
+      <Box style={{ width: 56, height: 56, border: '1px solid rgba(168,24,16,0.3)', alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'card', color: '#A81810', bold: true }}>{/* {{替换：中心字}} */}文</Text>
+      </Box>
+      <Box style={{ width: 2, height: 112, background: 'rgba(168, 24, 16, 0.2)' }} />
+      <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true }}>{/* {{替换：标题}} */}中国画派</Text>
+    </Box>
+    {/* 右联（竖排改横排） */}
+    <Box style={{ alignItems: 'center', gap: 'md' }}>
+      <Text style={{ fontSize: 'title', color: '#7A1F12', bold: true, letterSpacing: 6 }}>{/* {{替换：下联}} */}诗情画意润春秋</Text>
+    </Box>
+    {/* 底部横批 */}
+    <Text style={{ fontSize: 'body', color: 'text', position: 'absolute', bottom: 64, letterSpacing: 4 }}>{/* {{替换：横批}} */}水墨丹青  意境深远</Text>
+    {/* 功能文字 */}
+    <Text style={{ fontSize: 'label', color: 'muted', position: 'absolute', bottom: 24 }}>{/* {{替换：来源}} */}资料：中国美术家协会</Text>
+  </Box>
+</Slide>

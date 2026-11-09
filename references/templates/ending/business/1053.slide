@@ -1,0 +1,19 @@
+<Slide>
+  {/* ending/business/1053 白底简洁：左右侧装饰线 + 右侧菱形装饰 + 左对齐谢谢观看 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 顶部/底部细线 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 1, background: '#e2e8f0' }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 1, background: '#e2e8f0' }} />
+    {/* 左侧装饰线（蓝色竖渐变） */}
+    <Box style={{ position: 'absolute', top: 180, left: 102, width: 3, height: 360, background: 'linear-gradient(180deg, #3182ce 0%, #2c5282 100%)' }} />
+    {/* 右侧装饰元素（菱形嵌套，旋转 45°） */}
+    <Box style={{ position: 'absolute', top: 144, right: 102, width: 80, height: 80, border: '2px solid #e2e8f0', rotate: 45 }} />
+    <Box style={{ position: 'absolute', top: 166, right: 134, width: 50, height: 50, border: '2px solid #3182ce', rotate: 45 }} />
+    {/* 主要内容（左对齐） */}
+    <Box style={{ width: 896, padding: '0 160px' }}>
+      <Text style={{ fontSize: 54, color: '#1a202c', letterSpacing: 4, textAlign: 'left', marginBottom: 35 }}>{/* {{替换：主标题}} */}谢谢观看</Text>
+      <Box style={{ width: 120, height: 3, background: '#3182ce', marginBottom: 35 }} />
+      <Text style={{ fontSize: 'card', color: '#718096', letterSpacing: 1, lineHeight: 1.8, textAlign: 'left' }}>{/* {{替换：致谢语}} */}期待您的宝贵意见</Text>
+    </Box>
+  </Box>
+</Slide>

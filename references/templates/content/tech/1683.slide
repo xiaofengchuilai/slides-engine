@@ -1,0 +1,62 @@
+<Slide>
+  {/* tech/1683 技术演进路线：左右两列 + 中间分隔圆点 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题区 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{标题}} */}技术演进路线</Text>
+      <Box style={{ width: 80, height: 2, background: 'secondary' }} />
+    </Box>
+
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xxl' }}>
+      {/* 左列 */}
+      <Box style={{ flex: 1, flexDirection: 'column', gap: 'xl' }}>
+        <Box style={{ flex: 1, flexDirection: 'column', justifyContent: 'center' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 'md' }}>
+            <Box style={{ width: 48, height: 48, borderRadius: 'md', background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>1</Text>
+            </Box>
+            <Text style={{ fontSize: 24, color: '#FFFFFF', bold: true }}>{/* {{阶段标题}} */}现状分析</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6, marginBottom: 'md' }}>{/* {{描述}} */}当前系统存在数据孤岛、架构老化、扩展性差等问题，难以支撑业务快速发展需求。</Text>
+          <Box style={{ height: 120, borderRadius: 'md' }}>
+            {/* {{图片：有图填 assets/images/1683a.png，无图删掉整个 <Image>}} */}
+            <Image src="assets/images/1683a.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </Box>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{小标题}} */}关键挑战</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}技术债务积累、人才储备不足、组织协同困难是技术演进面临的主要挑战。</Text>
+        </Box>
+      </Box>
+
+      {/* 中间分隔 */}
+      <Box style={{ width: 2, background: '#334155', position: 'relative' }}>
+        <Box style={{ position: 'absolute', top: '50%', left: -5, width: 12, height: 12, borderRadius: 6, background: 'secondary' }} />
+      </Box>
+
+      {/* 右列 */}
+      <Box style={{ flex: 1, flexDirection: 'column', gap: 'xl' }}>
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{小标题}} */}演进策略</Text>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}采用渐进式重构策略，优先解决核心痛点，分阶段完成系统现代化改造。</Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', justifyContent: 'center' }}>
+          <Box style={{ height: 120, borderRadius: 'md', marginBottom: 'md' }}>
+            {/* {{图片：有图填 assets/images/1683b.png，无图删掉整个 <Image>}} */}
+            <Image src="assets/images/1683b.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </Box>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', gap: 'md' }}>
+            <Text style={{ fontSize: 24, color: '#FFFFFF', bold: true, textAlign: 'right' }}>{/* {{阶段标题}} */}目标架构</Text>
+            <Box style={{ width: 48, height: 48, borderRadius: 'md', background: 'secondary', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>2</Text>
+            </Box>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6, textAlign: 'right', marginTop: 'md' }}>{/* {{描述}} */}构建云原生、微服务化的新一代数据平台，支撑业务10倍增长。</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

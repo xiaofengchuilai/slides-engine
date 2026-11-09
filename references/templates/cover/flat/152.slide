@@ -1,0 +1,20 @@
+<Slide>
+  {/* cover/flat 152 色块漂浮封面：淡紫粉渐变底 + 彩色圆角色块 + 居中标题 + 白卡落款 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #EDE9FE 0%, #FDF2F8 50%, #FFE4E6 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 漂浮色块装饰 */}
+    <Box style={{ position: 'absolute', top: 96, left: 144, width: 112, height: 112, background: '#C4B5FD', opacity: 0.5, borderRadius: 'lg', rotate: 12 }} />
+    <Box style={{ position: 'absolute', top: 160, right: 176, width: 96, height: 96, background: '#F9A8D4', opacity: 0.45, borderRadius: 'md', rotate: -6 }} />
+    <Box style={{ position: 'absolute', bottom: 144, left: 192, width: 80, height: 80, background: '#FDA4AF', opacity: 0.4, borderRadius: 'lg', rotate: 6 }} />
+    <Box style={{ position: 'absolute', bottom: 112, right: 160, width: 64, height: 64, background: '#A78BFA', opacity: 0.35, borderRadius: 'md', rotate: -12 }} />
+    {/* 主内容 */}
+    <Box style={{ alignItems: 'center', padding: '0 xl', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'md', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}UI设计趋势</Text>
+      <Text style={{ fontSize: 'card', color: 'text', marginBottom: 'lg', textAlign: 'center' }}>{/* {{副标题}} */}色彩漂浮·现代美学</Text>
+      {/* 白卡落款 */}
+      <Box style={{ background: 'bg', borderRadius: 'md', padding: 'md xl', alignItems: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+        <Text style={{ fontSize: 'body', color: '#7C3AED', bold: true }}>{/* {{落款一}} */}设计研究院</Text>
+        <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>{/* {{落款二}} */}年度趋势报告</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

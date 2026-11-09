@@ -1,0 +1,100 @@
+<Slide>
+  {/* tech/1687 服务支持体系：3x2 六宫格（售前/实施/培训/运维/成功/增值） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题区 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{标题}} */}服务支持体系</Text>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{副题}} */}全生命周期的专业服务保障</Text>
+    </Box>
+
+    {/* 六宫格布局: 三列两行 */}
+    <Box style={{ flex: 1, flexDirection: 'column', gap: 'xl' }}>
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+        {/* 左上: 售前咨询 */}
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Box style={{ width: 40, height: 40, borderRadius: 'md', background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>1</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{服务名}} */}售前咨询</Text>
+          </Box>
+          <Text style={{ fontSize: 14, color: '#CBD5E1', lineHeight: 1.6, flex: 1 }}>{/* {{描述}} */}资深架构师提供专业技术咨询，深入了解业务需求，定制最优解决方案。</Text>
+          <Box style={{ height: 100, borderRadius: 'md' }}>
+            {/* {{图片：有图填 assets/images/1687a.png，无图删掉整个 <Image>}} */}
+            <Image src="assets/images/1687a.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </Box>
+        </Box>
+
+        {/* 中上: 实施部署 */}
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{服务名}} */}实施部署</Text>
+          <Text style={{ fontSize: 14, color: '#CBD5E1', lineHeight: 1.6, flex: 1 }}>{/* {{描述}} */}专业实施团队全程支持，确保项目按时交付，提供完整的部署文档与操作培训。</Text>
+          <Box style={{ flexDirection: 'row', background: 'cardBg', padding: 'sm md', borderRadius: 'md' }}>
+            <Box style={{ width: 4, background: 'secondary', borderRadius: 2, marginRight: 'sm', alignSelf: 'stretch' }} />
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{数据}} */}平均交付周期：4周</Text>
+          </Box>
+        </Box>
+
+        {/* 右上: 技术培训 */}
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+          <Box style={{ height: 100, borderRadius: 'md', marginBottom: 'sm' }}>
+            {/* {{图片：有图填 assets/images/1687b.png，无图删掉整个 <Image>}} */}
+            <Image src="assets/images/1687b.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </Box>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{服务名}} */}技术培训</Text>
+          <Text style={{ fontSize: 14, color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{描述}} */}提供系统化的产品培训课程，包括在线课程、实操演练、认证考试等。</Text>
+        </Box>
+      </Box>
+
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+        {/* 左下: 运维支持 */}
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{服务名}} */}运维支持</Text>
+          <Text style={{ fontSize: 14, color: '#CBD5E1', lineHeight: 1.6, flex: 1 }}>{/* {{描述}} */}7x24小时技术支持，快速响应问题工单，平均响应时间小于15分钟。</Text>
+          <Box style={{ flexDirection: 'row', background: 'cardBg', padding: 'sm md', borderRadius: 'md' }}>
+            <Box style={{ width: 4, background: 'secondary', borderRadius: 2, marginRight: 'sm', alignSelf: 'stretch' }} />
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{'响应时间：<15分钟'}</Text>
+          </Box>
+        </Box>
+
+        {/* 中下: 客户成功 */}
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'sm' }}>{/* {{服务名}} */}客户成功</Text>
+          <Text style={{ fontSize: 14, color: '#CBD5E1', lineHeight: 1.6, flex: 1 }}>{/* {{描述}} */}专属客户成功经理，定期业务回访，持续跟踪使用情况，确保价值实现。</Text>
+          <Box style={{ flexDirection: 'row', gap: 'md' }}>
+            {[
+              ['续约率', '95%'],
+              ['NPS', '72'],
+            ].map((x, i) => (
+              <Box key={i} style={{ alignItems: 'center' }}>
+                <Text style={{ fontSize: 'label', color: 'muted', marginBottom: 'xs' }}>{x[0]}</Text>
+                <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{x[1]}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+
+        {/* 右下: 增值服务 */}
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs', marginBottom: 'sm' }}>
+            <Box style={{ width: 36, height: 36, borderRadius: 'sm', background: 'secondary', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 14, color: '#FFFFFF', bold: true }}>6</Text>
+            </Box>
+            <Text style={{ fontSize: 18, color: '#FFFFFF', bold: true }}>{/* {{服务名}} */}增值服务</Text>
+          </Box>
+          <Text style={{ fontSize: 14, color: '#CBD5E1', lineHeight: 1.6, flex: 1 }}>{/* {{描述}} */}提供定制开发、性能调优、架构评审等增值服务，满足个性化需求。</Text>
+          <Box style={{ flexDirection: 'row', gap: 'xs', flexWrap: 'wrap' }}>
+            {['定制开发', '性能调优'].map((t, i) => (
+              <Box key={i} style={{ padding: 'xs sm', background: 'cardBg', borderRadius: 'sm' }}>
+                <Text style={{ fontSize: 'label', color: 'muted' }}>{t}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

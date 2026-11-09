@@ -1,0 +1,51 @@
+<Slide>
+  {/* educational/1661 部首识字·偏旁归类：标题 + 6汉字卡(氵部) + 规律总结 + 分类展示 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FEFBF6 0%, #F5F0E8 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Text style={{ fontSize: 'title', color: '#1F2937', bold: true }}>{/* {{替换：标题}} */}部首识字法</Text>
+      <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：副标题}} */}三点水 · 氵</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'md' }}>
+      {[
+        ['江', 'jiāng', '江河'],
+        ['河', 'hé', '黄河'],
+        ['湖', 'hú', '湖泊'],
+        ['海', 'hǎi', '大海'],
+        ['洋', 'yáng', '海洋'],
+        ['流', 'liú', '流水'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg', alignItems: 'center' }}>
+          <Text style={{ fontSize: 'kpi', color: '#374151', fontFamily: 'serif', bold: true, marginBottom: 'sm' }}>{/* {{替换：汉字}} */}{x[0]}</Text>
+          <Text style={{ fontSize: 'body', color: '#6B7280', marginBottom: 'xs' }}>{/* {{替换：拼音}} */}{x[1]}</Text>
+          <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>{/* {{替换：例词}} */}{x[2]}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+        <Emoji name="💡" style={{ width: 20, height: 20 }} />
+        <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{替换：标题}} */}规律总结</Text>
+      </Box>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+        <Text style={{ fontSize: 'body', color: '#4B5563' }}>带有</Text>
+        <Box style={{ width: 40, height: 40, background: '#F3F4F6', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#111827', bold: true, fontFamily: 'serif' }}>氵</Text>
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#4B5563' }}>{/* {{替换：规律}} */}(三点水)的字，大多与水有关系。看到三点水，就想到"水"！</Text>
+      </Box>
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'md' }}>
+      {[
+        ['江河湖海', '与水相关的自然水体', '🌊'],
+        ['流淌涌泻', '水流动的状态', '💧'],
+        ['洗涤清洁', '与水相关的动作', '🚿'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: '#F9FAFB', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg', alignItems: 'center', justifyContent: 'center' }}>
+          <Emoji name={x[2]} style={{ width: 28, height: 28, marginBottom: 'sm' }} />
+          <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{替换：类别}} */}{x[0]}</Text>
+          <Text style={{ fontSize: 'label', color: '#6B7280', marginTop: 'xs', textAlign: 'center' }}>{/* {{替换：说明}} */}{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,60 @@
+<Slide>
+  {/* functional/geometric/2509 几何风-变体1：白底 + 三角进度/倾斜按钮/旋转扫码/渐变按钮组/方形Logo页脚 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 20 }}>
+      {/* 导航 - 三角形+进度条 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, border: '1px solid #D1D5DB', background: '#F9FAFB', padding: 16, borderRadius: 'sm' }}>
+        <Shape type="triangle" style={{ width: 56, height: 56, fill: '#4F46E5' }} />
+        <Box style={{ flexDirection: 'row', gap: 8 }}>
+          <Box style={{ width: 40, height: 8, background: '#C7D2FE' }} />
+          <Box style={{ width: 40, height: 8, background: '#818CF8' }} />
+          <Box style={{ width: 40, height: 8, background: '#4F46E5' }} />
+          <Box style={{ width: 40, height: 8, background: '#A5B4FC' }} />
+        </Box>
+        <Text style={{ fontSize: 'card', color: '#3730A3', bold: true }}>{/* {{替换：章节标签}} */}CHAPTER 03</Text>
+      </Box>
+      {/* 导航 - 倾斜按钮 */}
+      <Box style={{ alignSelf: 'flex-start', background: 'linear-gradient(90deg, #4F46E5 0%, #7C3AED 100%)', padding: 12, paddingLeft: 24, paddingRight: 24 }}>
+        <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：按钮文字}} */}NEXT →</Text>
+      </Box>
+      {/* 行动 - 旋转方形扫码 */}
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ width: 112, height: 112, border: '4px solid #A5B4FC', background: '#FFFFFF', alignItems: 'center', justifyContent: 'center', rotate: 45, boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'label', color: '#4338CA', bold: true, textAlign: 'center', lineHeight: 1.5, rotate: -45 }}>{/* {{替换：扫码文字}} */}SCAN{'\n'}CODE</Text>
+        </Box>
+      </Box>
+      {/* 行动 - 渐变方块按钮组 */}
+      <Box style={{ flexDirection: 'row', gap: 12 }}>
+        {[
+          ['linear-gradient(135deg, #6366F1 0%, #A855F7 100%)', '💬', 'DISCUSS', 'Join'],
+          ['linear-gradient(135deg, #A855F7 0%, #EC4899 100%)', '📥', 'DOWNLOAD', 'Get'],
+          ['linear-gradient(135deg, #EC4899 0%, #EF4444 100%)', '🔗', 'CONNECT', 'Follow'],
+          ['linear-gradient(135deg, #3B82F6 0%, #6366F1 100%)', '❓', 'Q&A', 'Ask'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, background: x[0], padding: 16 }}>
+            <Emoji name={x[1]} style={{ width: 24, height: 24, marginBottom: 8 }} />
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{替换：按钮文字}} */}{x[2]}</Text>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.9, marginTop: 4 }}>{/* {{替换：副标签}} */}{x[3]}</Text>
+          </Box>
+        ))}
+      </Box>
+      {/* 页脚 - 方形Logo页脚 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', border: '2px solid #C7D2FE', background: '#F9FAFB', padding: 12, borderRadius: 'sm' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+          <Box style={{ width: 40, height: 40, background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)' }} />
+          <Box>
+            <Text style={{ fontSize: 'label', color: '#312E81', bold: true }}>{/* {{替换：品牌名}} */}GEOMETRIC STUDIO</Text>
+            <Text style={{ fontSize: 'label', color: '#4F46E5' }}>{/* {{替换：网址}} */}www.geometric.com</Text>
+          </Box>
+        </Box>
+        <Text style={{ fontSize: 'label', color: '#4F46E5' }}>{/* {{替换：版权}} */}© 2024</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Box style={{ width: 32, height: 32, background: '#4F46E5', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{替换：页码}} */}3</Text>
+          </Box>
+          <Text style={{ fontSize: 'label', color: '#818CF8' }}>{/* {{替换：总页数}} */}/ 15</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

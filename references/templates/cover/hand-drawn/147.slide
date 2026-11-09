@@ -1,0 +1,24 @@
+<Slide>
+  {/* hand-drawn/147 涂鸦飞扬：黄→白→蓝渐变 + 手绘圆环/圆角框装饰 + 橙边卡 */}
+  {/* 背景渐变（黄→白→蓝） */}
+  <Box style={{ width: 1280, height: 720, position: 'absolute', top: 0, left: 0, background: 'linear-gradient(135deg, #FEF9C3 0%, #FFFFFF 50%, #DBEAFE 100%)', justifyContent: 'center', alignItems: 'center' }} />
+  {/* 手绘圆环（左上，蓝虚线） */}
+  <RoughBox shape="circle" style={{ width: 80, height: 80, stroke: '#93C5FD', strokeWidth: 4, roughness: 1.5, position: 'absolute', left: 144, top: 96, opacity: 0.6 }} />
+  {/* 手绘圆角框（右上，橙点线） */}
+  <RoughBox shape="rect" style={{ width: 64, height: 64, stroke: '#FDBA74', strokeWidth: 4, roughness: 1.5, position: 'absolute', right: 176, top: 160, opacity: 0.5 }} />
+  {/* 手绘圆环（左下，绿虚线） */}
+  <RoughBox shape="circle" style={{ width: 56, height: 56, stroke: '#86EFAC', strokeWidth: 4, roughness: 1.5, position: 'absolute', left: 208, bottom: 128, opacity: 0.55 }} />
+  {/* 手绘圆角框（右下，粉点线） */}
+  <RoughBox shape="rect" style={{ width: 48, height: 48, stroke: '#F9A8D4', strokeWidth: 4, roughness: 1.5, position: 'absolute', right: 160, bottom: 176, opacity: 0.45 }} />
+  {/* 主内容区 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 'hero', color: '#1F2937', bold: true, fontFamily: 'hand', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}创意涂鸦课</Text>
+    <Text style={{ fontSize: 'card', color: '#374151', textAlign: 'center', marginTop: 'md', marginBottom: 'xl' }}>{/* {{副标题}} */}自由表达·童心飞扬</Text>
+    {/* 橙色手绘标签卡 */}
+    <RoughBox shape="rect" style={{ width: 300, height: 110, stroke: '#F97316', strokeWidth: 2, roughness: 1.5, fill: '#FFFFFF', fillStyle: 'solid', position: 'absolute', top: 450, left: 490 }} />
+    <Box style={{ position: 'absolute', top: 450, left: 490, width: 300, height: 110, justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ fontSize: 'card', color: '#EA580C', bold: true, textAlign: 'center' }}>{/* {{标签一}} */}创意美术馆</Text>
+      <Text style={{ fontSize: 'label', color: '#4B5563', textAlign: 'center', marginTop: 'xs' }}>{/* {{标签二}} */}儿童艺术启蒙</Text>
+    </Box>
+  </Box>
+</Slide>

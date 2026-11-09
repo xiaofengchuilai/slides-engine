@@ -1,0 +1,60 @@
+<Slide>
+  {/* minimalist/1598 左文(标题+三数据卡+来源) + 右双图：主图 + 客户logo */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 右下角装饰线 */}
+    <Box style={{ position: 'absolute', right: 64, bottom: 64 }}>
+      <Box style={{ width: 64, height: 2, background: 'primary', alignSelf: 'flex-end' }} />
+      <Box style={{ width: 48, height: 2, background: 'muted', alignSelf: 'flex-end', marginTop: 'xs' }} />
+      <Box style={{ width: 32, height: 2, background: '#E5E7EB', alignSelf: 'flex-end', marginTop: 'xs' }} />
+    </Box>
+
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+      {/* 左侧 2/3 */}
+      <Box style={{ flex: 2, gap: 'lg' }}>
+        <Box style={{ gap: 'sm' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+            <Box style={{ width: 32, height: 32, background: 'primary' }} />
+            <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 1 }}>{/* {{眉题}} */}CASE STUDY</Text>
+          </Box>
+          <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{标题}} */}客户成功案例</Text>
+          <Box style={{ width: 96, height: 2, background: 'primary' }} />
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6 }}>{/* {{正文1}} */}某大型制造企业通过实施数字化转型战略，实现了生产效率的跨越式提升。从项目启动到全面落地仅用时8个月，创造了行业标杆。</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{正文2}} */}该项目涵盖智能制造、供应链优化、质量管理等多个关键领域，为企业节省成本超过2000万元。</Text>
+        </Box>
+
+        {/* 关键数据卡片 */}
+        <Box style={{ flexDirection: 'row', gap: 'md' }}>
+          {[
+            ['8', '月完成交付'],
+            ['35%', '效率提升'],
+            ['2000万', '成本节约'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: 'cardBg', padding: 'lg', borderRadius: 'sm', gap: 'xs', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+              <Text style={{ fontSize: 'kpi', color: 'primary', bold: true, lineHeight: 1 }}>{/* {{数据}} */}{x[0]}</Text>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{数据说明}} */}{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+
+        {/* 来源 */}
+        <Box style={{ gap: 'xs', marginTop: 'auto' }}>
+          <Box style={{ width: '100%', height: 2, background: '#E5E7EB', marginBottom: 'sm' }} />
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{来源}} */}*数据来源：客户授权发布，经第三方审计机构验证</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{周期}} */}项目周期：2023年6月 - 2024年2月</Text>
+        </Box>
+      </Box>
+
+      {/* 右侧 1/3 图片 */}
+      <Box style={{ flex: 1, gap: 'md' }}>
+        <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center', borderRadius: 'md' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1598.png" style={{ width: 360, height: 440, objectFit: 'contain' }} />
+        </Box>
+        <Box style={{ height: 128, alignItems: 'center', justifyContent: 'center', borderRadius: 'md' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1598-logo.png" style={{ width: 360, height: 128, objectFit: 'contain' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

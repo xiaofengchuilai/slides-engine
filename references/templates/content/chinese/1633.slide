@@ -1,0 +1,40 @@
+<Slide>
+  {/* chinese/1633 图文·三图纵向：左侧文字区 + 右侧三图竖排 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF9F6 0%, #F0EBE1 100%)', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+      {/* 左侧文字区 */}
+      <Box style={{ width: 480, justifyContent: 'center', gap: 'lg' }}>
+        <Box>
+          <Text style={{ fontSize: 'title', color: '#7A1F1F', bold: true, fontFamily: 'serif', marginBottom: 'md' }}>{/* {{替换：标题}} */}传统节气</Text>
+          <Box style={{ width: 80, height: 1, background: '#7A1F1F', opacity: 0.3, marginBottom: 'md' }} />
+          <Text style={{ fontSize: 'body', color: '#4A4A4A', lineHeight: 1.8 }}>
+            {/* {{替换：导语}} */}
+            {'二十四节气是中国古代农业文明的智慧结晶，\n反映了天地万物的自然规律与节奏。'}
+          </Text>
+        </Box>
+        <Box style={{ gap: 'md' }}>
+          {['顺应天时，指导农耕', '观察物候，预测气候', '文化传承，生活智慧'].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+              <Text style={{ fontSize: 'body', color: '#7A1F1F', bold: true }}>·</Text>
+              <Text style={{ fontSize: 'body', color: '#4A4A4A' }}>{/* {{替换：x}} */}{x}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 右侧三图纵向 */}
+      <Box style={{ flex: 1, flexDirection: 'column', gap: 'md' }}>
+        {['春分·立春', '夏至·芒种', '秋分·霜降'].map((alt, i) => (
+          <Box key={i} style={{ flex: 1, borderRadius: 'sm', background: '#FFFFFF', alignItems: 'center', justifyContent: 'center', border: '1px solid #E5E7EB' }}>
+            {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+            <Image src={`assets/images/chinese-1633-${i + 1}.png`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <Text style={{ fontSize: 'label', color: '#8A8A8A' }}>{alt}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+  {/* 底部功能文字 */}
+  <Box style={{ position: 'absolute', bottom: 24, left: 80, alignItems: 'flex-start' }}>
+    <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>UNESCO人类非物质文化遗产代表作 · 2016年入选</Text>
+  </Box>
+</Slide>

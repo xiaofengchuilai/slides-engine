@@ -1,0 +1,26 @@
+<Slide>
+  {/* ending/chinese/1032 中国风-扇面留白：米白底+底部扇弧、红梅点装饰，大标题+点缀线+寄语 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF9F6 0%, #F0EDE5 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 扇面弧（底部半透明棕弧） */}
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 300, borderRadius: 'sm', background: 'linear-gradient(180deg, rgba(139,115,85,0.08) 0%, rgba(139,115,85,0.04) 100%)' }} />
+    {/* 扇骨细线（底部放射） */}
+    <Box style={{ position: 'absolute', bottom: 80, left: 640, width: 2, height: 240, background: 'rgba(139,115,85,0.35)' }} />
+    <Box style={{ position: 'absolute', bottom: 40, left: 560, width: 2, height: 200, background: 'rgba(139,115,85,0.3)' }} />
+    <Box style={{ position: 'absolute', bottom: 40, left: 720, width: 2, height: 200, background: 'rgba(139,115,85,0.3)' }} />
+    {/* 梅花装饰（右上三红点） */}
+    <Box style={{ position: 'absolute', top: 96, right: 180, width: 24, height: 24, borderRadius: 'sm', background: '#A81810' }} />
+    <Box style={{ position: 'absolute', top: 128, right: 146, width: 20, height: 20, borderRadius: 'sm', background: '#A81810' }} />
+    <Box style={{ position: 'absolute', top: 132, right: 180, width: 16, height: 16, borderRadius: 'sm', background: '#A81810' }} />
+    <Box style={{ alignItems: 'center', gap: 'md', marginTop: -40 }}>
+      <Text style={{ fontSize: 62, color: '#2C2C2C', letterSpacing: 10 }}>{/* {{替换：致谢标题}} */}谢谢观看</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+        <Box style={{ width: 10, height: 10, borderRadius: 'sm', background: '#A81810' }} />
+        <Box style={{ width: 60, height: 2, background: '#8B7355' }} />
+        <Box style={{ width: 14, height: 14, borderRadius: 'sm', border: '2px solid #A81810' }} />
+        <Box style={{ width: 60, height: 2, background: '#8B7355' }} />
+        <Box style={{ width: 10, height: 10, borderRadius: 'sm', background: '#A81810' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#666666', letterSpacing: 3 }}>{/* {{替换：寄语}} */}愿与君共勉</Text>
+    </Box>
+  </Box>
+</Slide>

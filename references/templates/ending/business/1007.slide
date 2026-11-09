@@ -1,0 +1,31 @@
+<Slide>
+  {/* ending/business/1007 商务风-专业名片式：左深蓝渐变块(THANK YOU) + 右联系信息 4 行 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', flexDirection: 'row' }}>
+    {/* 左色块：indigo-600 → blue-700 渐变 */}
+    <Box style={{ width: 512, background: 'linear-gradient(135deg, #4F46E5 0%, #1D4ED8 100%)', alignItems: 'center', justifyContent: 'center', padding: 'xl' }}>
+      <Text style={{ fontSize: 44, color: '#FFFFFF', bold: true, letterSpacing: 6, textAlign: 'center', marginBottom: 'lg' }}>{/* {{替换：主标题}} */}THANK YOU</Text>
+      <Box style={{ width: 112, height: 4, background: '#FFFFFF', marginBottom: 'lg' }} />
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', textAlign: 'center' }}>{/* {{替换：致谢语}} */}感谢您的关注</Text>
+    </Box>
+    {/* 右内容区：联系信息 4 行（可增删） */}
+    <Box style={{ flex: 1, justifyContent: 'center', padding: '0 80px', gap: 'xl' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'sm' }}>{/* {{替换：区块标题}} */}联系我们</Text>
+      {[
+        ['envelope', '📧', 'Email', 'business@company.com'],
+        ['phone', '📱', 'Phone', '+86 010-8888-8888'],
+        ['globe', '🌐', 'Website', 'www.company.com'],
+        ['map-pin', '📍', 'Address', '北京市朝阳区某某大厦'],
+      ].map((c, i) => (
+        <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 'md' }}>
+          <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: '#EEF2FF', alignItems: 'center', justifyContent: 'center' }}>
+            <Emoji name={c[1]} style={{ width: 18, height: 18 }} />
+          </Box>
+          <Box>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>{c[2]}</Text>
+            <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：联系内容}} */}{c[3]}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

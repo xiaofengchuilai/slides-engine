@@ -1,0 +1,45 @@
+<Slide>
+  {/* black-gold/1571 奢华品牌战略：标题卡 + 四要素卡 + 金句/备注 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #111827 0%, #000000 50%, #111827 100%)', padding: 'xxl xl' }}>
+    {/* 装饰方框（旋转） */}
+    <Box style={{ position: 'absolute', top: 80, left: 80, width: 256, height: 256, border: '1px solid rgba(234,179,8,0.3)', rotate: 45 }} />
+    <Box style={{ position: 'absolute', bottom: 80, right: 80, width: 384, height: 384, border: '1px solid rgba(202,138,4,0.3)', borderRadius: 192 }} />
+    {/* 标题卡 */}
+    <Box style={{ background: 'rgba(202,138,4,0.2)', borderRadius: 'sm', padding: 'lg', border: '4px solid rgba(202,138,4,0.5)', marginBottom: 'lg' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', marginBottom: 'sm' }}>
+        <Box style={{ width: 44, height: 44, borderRadius: 'sm', background: 'linear-gradient(135deg, #EAB308 0%, #D97706 100%)' }} />
+        <Text style={{ fontSize: 'title', color: '#FBBF24', bold: true }}>{/* {{替换：标题}} */}奢华品牌战略</Text>
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#F3F4F6', lineHeight: 1.7, marginBottom: 'sm' }}>{/* {{替换：正文1}} */}在高端市场中，品牌不仅代表产品本身，更是一种生活方式和身份象征的体现。成功的奢华品牌深谙情感营销之道，通过精心打造的品牌故事和独特的客户体验。</Text>
+      <Text style={{ fontSize: 'body', color: '#F3F4F6', lineHeight: 1.7 }}>{/* {{替换：正文2}} */}稀缺性、传承性、工艺性是奢华品牌的三大核心要素，它们共同构筑起品牌的护城河。</Text>
+    </Box>
+    {/* 四要素 + 右栏 */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1 }}>
+      <Box style={{ flex: 2, flexDirection: 'row', flexWrap: 'wrap', gap: 'md' }}>
+        {[
+          ['01', '品牌故事', '深厚的历史底蕴与文化传承', 'linear-gradient(135deg, #CA8A04 0%, #A16207 100%)'],
+          ['02', '匠心工艺', '极致的细节追求与品质保证', 'linear-gradient(135deg, #B45309 0%, #92400E 100%)'],
+          ['03', '尊贵体验', '私人定制与专属服务', 'linear-gradient(135deg, #A16207 0%, #9A3412 100%)'],
+          ['04', '稀缺价值', '限量发行与独家设计', 'linear-gradient(135deg, #92400E 0%, #713F12 100%)'],
+        ].map((x, i) => (
+          <Box key={i} style={{ width: 336, background: x[3], borderRadius: 'sm', padding: 'md' }}>
+            <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{替换：编号}} */}{x[0]}</Text>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>{/* {{替换：要素名}} */}{x[1]}</Text>
+            <Text style={{ fontSize: 'label', color: 'rgba(254,243,199,0.9)' }}>{/* {{替换：要素描述}} */}{x[2]}</Text>
+          </Box>
+        ))}
+      </Box>
+      <Box style={{ flex: 1, flexDirection: 'column', gap: 'md' }}>
+        <Box style={{ background: '#000000', border: '4px solid #CA8A04', borderRadius: 'sm', padding: 'lg', flex: 1 }}>
+          <Text style={{ fontSize: 'kpi', color: 'rgba(202,138,4,0.2)', lineHeight: 1 }}>♔</Text>
+          <Text style={{ fontSize: 'card', color: '#FBBF24', bold: true, fontFamily: 'serif', lineHeight: 1.6, marginBottom: 'sm' }}>{/* {{替换：金句}} */}"奢华是对细节的完美追求。"</Text>
+          <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>{/* {{替换：署名}} */}— Coco Chanel</Text>
+        </Box>
+        <Box style={{ background: 'rgba(113,63,18,0.3)', borderRadius: 'sm', padding: 'md', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+          <Text style={{ fontSize: 'label', color: '#FDE68A', lineHeight: 1.6, marginBottom: 'xs' }}>{/* {{替换：备注}} */}备注：数据来源于《全球奢侈品市场报告2024》</Text>
+          <Text style={{ fontSize: 'label', color: '#FCD34D' }}>{/* {{替换：备注2}} */}高端消费者心理研究</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

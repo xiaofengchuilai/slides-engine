@@ -1,0 +1,28 @@
+<Slide>
+  {/* decorative/black-gold/2024 黑金风-黑金小徽章：纯黑底 + 金色徽章/圆/菱形/钻石装饰 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center', gap: 32 }}>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Box style={{ width: 40, height: 40, borderRadius: 20, background: 'linear-gradient(135deg, #EAB308 0%, #B45309 100%)', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#000000', bold: true }}>V</Text>
+        </Box>
+        <Box style={{ width: 40, height: 40, borderRadius: 20, border: '2px solid #C9A227', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#EAB308', bold: true }}>★</Text>
+        </Box>
+        <Box style={{ width: 40, height: 40, background: 'linear-gradient(135deg, #EAB308 0%, #B45309 100%)', rotate: 45 }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Box style={{ width: 40, height: 40, position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 19, left: 0, width: 40, height: 2, background: '#C9A227' }} />
+          <Box style={{ position: 'absolute', top: 0, left: 19, width: 2, height: 40, background: '#C9A227' }} />
+          <Box style={{ position: 'absolute', top: 12, left: 12, width: 16, height: 16, background: '#C9A227' }} />
+        </Box>
+        <Text style={{ fontSize: 'kpi', color: '#C9A227', bold: true }}>♔</Text>
+        <Emoji name="💎" style={{ width: 36, height: 36 }} />
+        <Box style={{ width: 40, height: 40, borderRadius: 20, border: '2px solid #C9A227', position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 10, left: 10, width: 20, height: 20, background: '#C9A227' }} />
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

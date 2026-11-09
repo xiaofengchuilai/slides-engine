@@ -1,0 +1,18 @@
+<Slide>
+  {/* transition/black-gold/556 黑金风-钻石切割：黑灰渐变底 + 金色菱形框 + 居中章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #111827 0%, #000000 50%, #111827 100%)', padding: 48, position: 'relative' }}>
+    {/* 钻石菱形框（rotate 45 还原） */}
+    <Box style={{ position: 'absolute', top: 208, left: 448, width: 224, height: 224, border: '4px solid #C9A227', opacity: 0.2, rotate: 45 }} />
+    <Box style={{ position: 'absolute', top: 240, left: 480, width: 160, height: 160, border: '4px solid #EAB308', opacity: 0.3, rotate: 45 }} />
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ width: 64, height: 64, background: '#C9A227', alignItems: 'center', justifyContent: 'center', marginBottom: 24 }}>
+          <Emoji name="💎" style={{ width: 40, height: 40 }} />
+        </Box>
+        <Text style={{ fontSize: 'hero', color: '#C9A227', bold: true, marginBottom: 32 }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 16 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#EAB308' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

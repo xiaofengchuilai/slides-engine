@@ -1,0 +1,39 @@
+<Slide>
+  {/* ending/cartoon/1047 卡通风-冰淇淋甜筒：米蓝渐变底+左右冰淇淋（彩球+棕筒）+小冰淇淋+闪光点、粉标题+彩点+寄语 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #FFF5F0 0%, #F0F8FF 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 冰淇淋-左（粉球+棕筒 + 阴影） */}
+    <Box style={{ position: 'absolute', bottom: 90, left: 160, alignItems: 'center' }}>
+      <Box style={{ width: 100, height: 100, borderRadius: 'sm', background: 'linear-gradient(135deg, #FF99CC 0%, #FF6B9D 100%)', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }} />
+      <Box style={{ width: 80, height: 70, borderRadius: 'sm', background: '#D4A574', marginTop: -14 }} />
+    </Box>
+    {/* 冰淇淋-右（紫球+棕筒 + 阴影） */}
+    <Box style={{ position: 'absolute', bottom: 90, right: 160, alignItems: 'center' }}>
+      <Box style={{ width: 95, height: 95, borderRadius: 'sm', background: 'linear-gradient(135deg, #B388FF 0%, #9966FF 100%)', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }} />
+      <Box style={{ width: 76, height: 66, borderRadius: 'sm', background: '#D4A574', marginTop: -12 }} />
+    </Box>
+    {/* 小冰淇淋-左上（黄球 + 阴影） */}
+    <Box style={{ position: 'absolute', top: 110, left: 260, alignItems: 'center' }}>
+      <Box style={{ width: 50, height: 50, borderRadius: 'sm', background: 'linear-gradient(135deg, #FFEA5C 0%, #FFD700 100%)', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+      <Box style={{ width: 40, height: 36, borderRadius: 'sm', background: '#D4A574', marginTop: -8 }} />
+    </Box>
+    {/* 小冰淇淋-右上（绿球 + 阴影） */}
+    <Box style={{ position: 'absolute', top: 140, right: 280, alignItems: 'center' }}>
+      <Box style={{ width: 55, height: 55, borderRadius: 'sm', background: 'linear-gradient(135deg, #77DD77 0%, #5FD85F 100%)', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+      <Box style={{ width: 44, height: 40, borderRadius: 'sm', background: '#D4A574', marginTop: -8 }} />
+    </Box>
+    {/* 闪光点（彩色 emoji） */}
+    <Emoji name="✨" style={{ position: 'absolute', top: 200, left: 450, width: 18, height: 18 }} />
+    <Emoji name="✨" style={{ position: 'absolute', bottom: 250, right: 390, width: 16, height: 16 }} />
+    <Box style={{ alignItems: 'center', gap: 'md' }}>
+      <Text style={{ fontSize: 64, color: '#FF6B9D', bold: true }}>{/* {{替换：致谢标题}} */}感谢聆听</Text>
+      <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+        <Box style={{ width: 18, height: 18, borderRadius: 'sm', background: '#FF99CC' }} />
+        <Box style={{ width: 18, height: 18, borderRadius: 'sm', background: '#FFEA5C' }} />
+        <Box style={{ width: 18, height: 18, borderRadius: 'sm', background: '#77DD77' }} />
+        <Box style={{ width: 18, height: 18, borderRadius: 'sm', background: '#66CCFF' }} />
+        <Box style={{ width: 18, height: 18, borderRadius: 'sm', background: '#B388FF' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#666666', bold: true }}>{/* {{替换：寄语}} */}期待下次再见</Text>
+    </Box>
+  </Box>
+</Slide>

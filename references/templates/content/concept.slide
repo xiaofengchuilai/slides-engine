@@ -1,0 +1,32 @@
+<Slide>
+  {/* content/concept：概念拆解（定义 + 3-5 组成 + 应用 + 误区） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: '56px 80px' }}>
+    <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：概念标题}} */}什么是「增长飞轮」</Text>
+    {/* 定义 */}
+    <Box style={{ borderRadius: 14, background: 'cardBg', padding: '20px 24px', marginTop: 24 }}>
+      <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.7 }}>{/* {{替换：定义}} */}增长飞轮 = 一个由多个环节组成的、能自我增强的良性循环，每一环的正反馈都会推动下一环加速。</Text>
+    </Box>
+    {/* 组成：3-5 个 */}
+    <Box style={{ flexDirection: 'row', gap: 16, marginTop: 28 }}>
+      {[
+        { no: '1', name: '获客', body: '精准触达目标用户' },
+        { no: '2', name: '激活', body: '首次体验即见价值' },
+        { no: '3', name: '留存', body: '持续满足核心需求' },
+        { no: '4', name: '转化', body: '付费与复购闭环' },
+      ].map((c, i) => (
+        <Box key={i} style={{ flex: 1, borderRadius: 12, background: 'cardBg', padding: '18px', alignItems: 'center' }}>
+          <Box style={{ width: 40, height: 40, borderRadius: 20, background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{c.no}</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: 'text', bold: true, marginTop: 12 }}>{/* {{替换：组成名}} */}{c.name}</Text>
+          <Text style={{ fontSize: 'label', color: 'muted', textAlign: 'center', marginTop: 6, lineHeight: 1.5 }}>{/* {{替换：组成说明}} */}{c.body}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* 误区 */}
+    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 28 }}>
+      <Text style={{ fontSize: 'body', color: 'danger', bold: true }}>{/* {{替换：误区标签}} */}常见误区：</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{替换：误区说明}} */}飞轮 ≠ 一次性增长，需要持续投入才能加速。</Text>
+    </Box>
+  </Box>
+</Slide>

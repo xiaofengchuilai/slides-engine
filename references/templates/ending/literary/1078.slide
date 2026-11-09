@@ -1,0 +1,25 @@
+<Slide>
+  {/* ending/literary/1078 文艺风-蕾丝花边：橙粉渐变 + 蕾丝边框降级 + 角落花纹 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #FFEDD5 0%, #FFE4E6 100%)' }}>
+    {/* 顶部/底部蕾丝边框（降级为细线+圆点） */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 1, background: '#D4A89A', opacity: 0.5 }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 1280, height: 1, background: '#D4A89A', opacity: 0.5 }} />
+    {/* 角落花纹（同心圆环） */}
+    <Box style={{ position: 'absolute', top: 40, left: 40, width: 100, height: 100, borderRadius: 50, border: '1px solid #D4A89A', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 50, left: 50, width: 80, height: 80, borderRadius: 40, border: '1px solid #D4A89A', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 60, left: 60, width: 60, height: 60, borderRadius: 30, border: '1px solid #D4A89A', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', bottom: 40, right: 40, width: 100, height: 100, borderRadius: 50, border: '1px solid #D4A89A', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', bottom: 50, right: 50, width: 80, height: 80, borderRadius: 40, border: '1px solid #D4A89A', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', bottom: 60, right: 60, width: 60, height: 60, borderRadius: 30, border: '1px solid #D4A89A', opacity: 0.4 }} />
+    {/* 中心花纹（大圆环） */}
+    <Box style={{ position: 'absolute', top: 260, left: 540, width: 200, height: 200, borderRadius: 100, border: '1.5px solid #D4A89A', opacity: 0.25 }} />
+    <Box style={{ position: 'absolute', top: 280, left: 560, width: 160, height: 160, borderRadius: 80, border: '1px solid #D4A89A', opacity: 0.25 }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#57534E', fontFamily: 'serif', letterSpacing: 2, marginBottom: 'md' }}>{/* {{替换：主标题}} */}谢谢</Text>
+      <Text style={{ fontSize: 'title', color: '#78716C', fontFamily: 'serif', lineHeight: 1.8 }}>{/* {{替换：致谢语}} */}感谢您的耐心聆听</Text>
+    </Box>
+    {/* 丝带装饰（低透明圆角条） */}
+    <Box style={{ position: 'absolute', bottom: 100, left: 540, width: 200, height: 40, background: '#D4A89A', opacity: 0.2, borderRadius: 20 }} />
+  </Box>
+</Slide>

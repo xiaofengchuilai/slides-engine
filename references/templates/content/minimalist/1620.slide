@@ -1,0 +1,51 @@
+<Slide>
+  {/* minimalist/1620 产品核心能力：中心核心 + 四方向能力卡 + 四个数据小卡（中心发散式） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 中心核心区 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'lg' }}>
+      <Box style={{ width: 80, height: 80, borderRadius: 40, background: 'primary', alignItems: 'center', justifyContent: 'center', marginBottom: 'sm', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>Core</Text>
+      </Box>
+      <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'xs' }}>{/* {{标题}} */}产品核心能力</Text>
+      <Box style={{ width: 80, height: 2, background: 'primary', marginBottom: 'xs' }} />
+      <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>围绕核心价值主张，构建完整的产品能力体系</Text>
+    </Box>
+
+    {/* 上排：四方向能力卡（A/B/C/D） */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1 }}>
+      {[
+        ['A', '智能分析', 'AI驱动的数据分析与洞察能力', 'primary'],
+        ['B', '高效协同', '跨团队实时协作与沟通平台', 'secondary'],
+        ['C', '安全可靠', '企业级安全保障与合规体系', 'muted'],
+        ['D', '灵活扩展', '模块化架构支持自定义扩展', 'primary'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'lg', border: '1px solid #E5E7EB', alignItems: 'center', gap: 'sm', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+          <Box style={{ width: 40, height: 40, borderRadius: 20, background: x[3] === 'primary' ? 'primary' : x[3], alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+          </Box>
+          <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{x[1]}</Text>
+          <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center', lineHeight: 1.4 }}>{x[2]}</Text>
+        </Box>
+      ))}
+    </Box>
+
+    {/* 下排：四个数据小卡 */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1, marginTop: 'lg' }}>
+      {[
+        ['150+', '功能模块', 'primary', '#FFFFFF'],
+        ['99.95%', '系统可用性', 'primary', '#FFFFFF'],
+        ['500万+', '企业用户', 'cardBg', 'text'],
+        ['20+', '行业解决方案', 'cardBg', 'text'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: x[2], borderRadius: 'md', padding: 'lg', alignItems: 'center', justifyContent: 'center', border: x[2] === 'cardBg' ? '1px solid #E5E7EB' : undefined, boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+          <Text style={{ fontSize: 'kpi', color: x[3], bold: true }}>{x[0]}</Text>
+          <Text style={{ fontSize: 'body', color: x[3], opacity: 0.8 }}>{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+
+    {/* 底部条 */}
+    <Box style={{ height: 2, background: '#E5E7EB', marginTop: 'md', marginBottom: 'sm' }} />
+    <Text style={{ fontSize: 'label', color: 'muted', textAlign: 'center' }}>产品架构：云原生微服务 | 支持平台：Web / iOS / Android / 小程序 | 更新频率：双周迭代</Text>
+  </Box>
+</Slide>

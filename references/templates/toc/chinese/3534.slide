@@ -1,0 +1,40 @@
+<Slide>
+  {/* chinese/3534 中国风-书法式：宣纸米底 + 右侧 4 列章节（墨点编号+竖排改横排）+ 左侧大标题+印章 */}
+  <Box style={{ height: 720, width: 1280, background: '#F4F1EA', padding: 48, position: 'relative' }}>
+    {/* 大墨迹装饰 */}
+    <Box style={{ position: 'absolute', top: 40, right: 40, width: 240, height: 240, borderRadius: 120, background: 'rgba(0,0,0,0.05)' }} />
+    <Box style={{ height: 624, flexDirection: 'row', alignItems: 'center' }}>
+      {/* 右侧章节列（横排） */}
+      <Box style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-around', alignItems: 'flex-start' }}>
+        {[
+          ['1', '项目背景'],
+          ['2', '核心功能'],
+          ['3', '技术架构'],
+          ['4', '实施计划'],
+        ].map((x, i) => (
+          <Box key={i} style={{ alignItems: 'center', width: 150 }}>
+            <Box style={{ width: 64, height: 64, position: 'relative', marginBottom: 24 }}>
+              <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.1)', borderRadius: 8 }} />
+              <Box style={{ position: 'absolute', top: 8, left: 8, right: 8, bottom: 8, background: '#b91c1c', borderRadius: 8, alignItems: 'center', justifyContent: 'center', rotate: 12 }}>
+                <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>{/* {{章节编号}} */}{x[0]}</Text>
+              </Box>
+            </Box>
+            <Text style={{ fontSize: 'title', color: '#111827', fontFamily: 'serif', bold: true, textAlign: 'center' }}>{/* {{章节名}} */}{x[1]}</Text>
+            <Box style={{ width: 8, height: 8, borderRadius: 4, background: 'rgba(0,0,0,0.2)', marginTop: 16 }} />
+          </Box>
+        ))}
+      </Box>
+      {/* 左侧标题 */}
+      <Box style={{ width: 240, alignItems: 'flex-end', paddingLeft: 48, position: 'relative' }}>
+        <Text style={{ fontSize: 'hero', color: '#111827', bold: true, fontFamily: 'serif' }}>{/* {{标题}} */}目录</Text>
+        <Box style={{ position: 'absolute', bottom: 24, left: 48, width: 64, height: 64, background: '#b91c1c', border: '2px solid #7f1d1d', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true, fontFamily: 'serif', textAlign: 'center' }}>{/* {{印章字}} */}肆意{'\n'}山河</Text>
+        </Box>
+        <Box style={{ marginTop: 80, alignItems: 'flex-end', gap: 4 }}>
+          <Text style={{ fontSize: 'label', color: '#9ca3af', letterSpacing: 4, fontFamily: 'serif' }}>丙申年冬</Text>
+          <Text style={{ fontSize: 'label', color: '#9ca3af', letterSpacing: 4, fontFamily: 'serif' }}>水墨丹青系列</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

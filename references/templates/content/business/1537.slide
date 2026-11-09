@@ -1,0 +1,74 @@
+<Slide style={{ background: 'bg' }}>
+  {/* business/1537 客户成功案例：标题 + 2×2 案例卡（渐变头/背景/方案/3指标） */}
+  <Box style={{ position: 'relative', height: '100%' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(135deg, #F1F5F9 0%, #EFF6FF 100%)' }} />
+    <Box style={{ position: 'relative', padding: 'xxl xl', height: '100%', gap: 'md' }}>
+      {/* 标题 */}
+      <Box style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{标题}} */}客户成功案例</Text>
+        <Text style={{ fontSize: 'body', color: 'muted', marginTop: 'xs' }}>携手行业领军企业，共创数字化未来</Text>
+      </Box>
+      {/* 案例卡 2×2 */}
+      <Box style={{ flexDirection: 'row', gap: 'md', flexWrap: 'wrap' }}>
+        {[
+          {
+            name: '某大型银行', icon: '🏦', tag: '金融服务行业 · Fortune 500', tagColor: '#DBEAFE',
+            grad: 'linear-gradient(90deg, #2563EB 0%, #4F46E5 100%)',
+            bg: '核心业务系统亟需数字化升级，提升客户服务体验和运营效率',
+            sol: '部署云原生架构，实现全渠道整合和智能化服务',
+            metrics: [['60%', '效率提升', '#2563EB'], ['¥2亿', '成本节省', '#059669'], ['95%', '满意度', '#7C3AED']],
+          },
+          {
+            name: '某零售集团', icon: '🏬', tag: '零售行业 · 连锁企业', tagColor: '#D1FAE5',
+            grad: 'linear-gradient(90deg, #059669 0%, #16A34A 100%)',
+            bg: '线上线下融合困难，库存管理效率低，数据孤岛严重',
+            sol: '打造全渠道零售平台，实现智能补货和精准营销',
+            metrics: [['45%', '销售增长', '#059669'], ['30%', '库存优化', '#2563EB'], ['8个月', '投资回报', '#7C3AED']],
+          },
+          {
+            name: '某制造企业', icon: '🏭', tag: '制造业 · 智能工厂', tagColor: '#EDE9FE',
+            grad: 'linear-gradient(90deg, #7C3AED 0%, #4F46E5 100%)',
+            bg: '生产设备老化，能耗高，质量管控依赖人工检查',
+            sol: '部署工业物联网和AI质检系统，实现智能制造',
+            metrics: [['40%', '良品率提升', '#7C3AED'], ['35%', '能耗降低', '#059669'], ['24/7', '连续生产', '#2563EB']],
+          },
+          {
+            name: '某医疗机构', icon: '🏥', tag: '医疗健康 · 三甲医院', tagColor: '#FFEDD5',
+            grad: 'linear-gradient(90deg, #EA580C 0%, #DC2626 100%)',
+            bg: '就诊流程复杂，患者等待时间长，医疗资源分配不均',
+            sol: '建设智慧医疗平台，实现预约挂号、远程诊疗一体化',
+            metrics: [['50%', '等待时间减少', '#EA580C'], ['80%', '在线预约率', '#059669'], ['98%', '患者满意度', '#7C3AED']],
+          },
+        ].map((c, i) => (
+          <Box key={i} style={{ width: 606, background: 'cardBg', borderRadius: 'md', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+            {/* 渐变头 */}
+            <Box style={{ background: c.grad, padding: 'sm md', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+              <Box>
+                <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{客户名}} */}{c.name}</Text>
+                <Text style={{ fontSize: 'label', color: c.tagColor, marginTop: 'xs' }}>{c.tag}</Text>
+              </Box>
+              <Emoji name={c.icon} style={{ width: 30, height: 30 }} />
+            </Box>
+            {/* 内容 */}
+            <Box style={{ padding: 'sm' }}>
+              <Text style={{ fontSize: 'label', color: 'muted', bold: true }}>项目背景</Text>
+              <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.5, marginTop: 'xs' }}>{c.bg}</Text>
+              <Text style={{ fontSize: 'label', color: 'muted', bold: true, marginTop: 'xs' }}>解决方案</Text>
+              <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.5, marginTop: 'xs' }}>{c.sol}</Text>
+              {/* 指标分隔线（替代 border-t） */}
+              <Box style={{ height: 2, background: '#E2E8F0', marginTop: 'sm', marginBottom: 'xs' }} />
+              <Box style={{ flexDirection: 'row' }}>
+                {c.metrics.map((m, k) => (
+                  <Box key={k} style={{ flex: 1, alignItems: 'center' }}>
+                    <Text style={{ fontSize: 18, color: m[2], bold: true }}>{/* {{指标值}} */}{m[0]}</Text>
+                    <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>{m[1]}</Text>
+                  </Box>
+                ))}
+              </Box>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

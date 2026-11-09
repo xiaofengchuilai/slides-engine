@@ -1,0 +1,24 @@
+<Slide>
+  {/* toc/grid：网格卡片章节（6 章） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: '60px 70px' }}>
+    <Text style={{ fontSize: 20, color: 'muted', letterSpacing: 2 }}>CONTENTS</Text>
+    <Text style={{ fontSize: 44, color: 'text', bold: true, marginTop: 8 }}>{/* {{替换：目录标题}} */}目录</Text>
+    {/* 2 列 × 3 行卡片网格 */}
+    <Box style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 16, marginTop: 36 }}>
+      {[
+        { no: '01', name: '市场与机会', desc: '行业趋势与增长空间' },
+        { no: '02', name: '产品与方案', desc: '核心能力与差异化' },
+        { no: '03', name: '数据与成果', desc: '关键指标与里程碑' },
+        { no: '04', name: '规划与行动', desc: '下一步与资源需求' },
+        { no: '05', name: '团队与组织', desc: '人才与协作机制' },
+        { no: '06', name: '总结与展望', desc: '结论与号召' },
+      ].map((item, i) => (
+        <Box key={i} style={{ width: 548, height: 120, borderRadius: 14, background: 'cardBg', padding: '18px 20px', justifyContent: 'space-between' }}>
+          <Text style={{ fontSize: 'card', color: 'accent', bold: true }}>{item.no}</Text>
+          <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{替换：章节名}} */}{item.name}</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{替换：章节导语}} */}{item.desc}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

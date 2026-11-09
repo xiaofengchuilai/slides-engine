@@ -1,0 +1,58 @@
+<Slide>
+  {/* functional/tech/2517 科技风-变体1：深底 + 代码导航/按钮/操作组/页脚组件 */}
+  <Box style={{ height: 720, width: 1280, background: '#0F172A', padding: 48 }}>
+    <Box style={{ height: 624, justifyContent: 'center', gap: 24 }}>
+      {/* 导航 - 代码标签风格 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24, border: '1px solid rgba(59,130,246,0.5)', background: 'rgba(59,130,246,0.1)', padding: 20 }}>
+        <Box style={{ width: 56, height: 56, border: '2px solid #3b82f6', background: 'rgba(59,130,246,0.2)', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#60a5fa', bold: true }}>{/* {{替换：章节号}} */}03</Text>
+        </Box>
+        <Box style={{ flex: 1 }}>
+          <Text style={{ fontSize: 'card', color: '#60a5fa', bold: true }}>{/* {{替换：章节标签}} */}&lt;SECTION_03 /&gt;</Text>
+          <Text style={{ fontSize: 'label', color: '#94a3b8', marginTop: 4 }}>{/* {{替换：副标签}} */}AI_TECHNOLOGY</Text>
+        </Box>
+        <Box style={{ border: '1px solid #3b82f6', background: 'rgba(59,130,246,0.2)', padding: 8, paddingLeft: 24, paddingRight: 24 }}>
+          <Text style={{ fontSize: 'body', color: '#60a5fa', bold: true }}>{/* {{替换：按钮文字}} */}NEXT &gt;&gt;</Text>
+        </Box>
+      </Box>
+      {/* 行动 - 多彩按钮组 */}
+      <Box style={{ flexDirection: 'row', gap: 16 }}>
+        {[
+          ['#3b82f6', '📡', 'CONNECT'],
+          ['#22d3ee', '💾', 'DOWNLOAD'],
+          ['#a855f7', '⚡', 'DEPLOY'],
+          ['#22c55e', '💬', 'Q&A'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, border: '1px solid ' + x[0], background: 'rgba(59,130,246,0.08)', padding: 16, alignItems: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+            <Emoji name={x[1]} style={{ width: 24, height: 24, marginBottom: 8 }} />
+            <Text style={{ fontSize: 'label', color: x[0], bold: true }}>{/* {{替换：按钮文字}} */}{x[2]}</Text>
+          </Box>
+        ))}
+        <Box style={{ flex: 1, border: '2px solid #60a5fa', background: 'rgba(37,99,235,0.2)', padding: 16, alignItems: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'label', color: '#60a5fa', bold: true }}>{/* {{替换：扫码文字}} */}&lt;QR/&gt; SCAN</Text>
+        </Box>
+      </Box>
+      {/* 页脚 - 代码符号页脚 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 24, padding: 12, background: 'rgba(59,130,246,0.05)' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, flex: 1 }}>
+          <Box style={{ width: 40, height: 40, background: '#3b82f6', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：logo文字}} */}&lt;/&gt;</Text>
+          </Box>
+          <Box>
+            <Text style={{ fontSize: 'body', color: '#60a5fa', bold: true }}>{/* {{替换：品牌名}} */}TECH LAB</Text>
+            <Text style={{ fontSize: 'label', color: '#94a3b8' }}>{/* {{替换：网址}} */}https://tech-lab.io</Text>
+          </Box>
+        </Box>
+        <Text style={{ fontSize: 'label', color: '#60a5fa' }}>{/* {{替换：版权}} */}© 2024</Text>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+          <Text style={{ fontSize: 'body', color: '#60a5fa', bold: true }}>[</Text>
+          <Box style={{ width: 40, height: 40, background: '#3b82f6', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{替换：页码}} */}3</Text>
+          </Box>
+          <Text style={{ fontSize: 'label', color: '#60a5fa' }}>{/* {{替换：总页数}} */}/ 16</Text>
+          <Text style={{ fontSize: 'body', color: '#60a5fa', bold: true }}>]</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

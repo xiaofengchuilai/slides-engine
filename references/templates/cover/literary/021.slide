@@ -1,0 +1,16 @@
+<Slide>
+  {/* cover/literary/021 文艺风-复古书籍：浅紫粉渐变底 + 圆点 + 装饰标签 + 主标题 + 分隔线 + 副标题 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #F5F3FF 0%, #FCE7F3 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ justifyContent: 'center', alignItems: 'center', maxWidth: 900, padding: 'xl' }}>
+      <Box style={{ flexDirection: 'row', gap: 'sm', marginBottom: 'xl' }}>
+        <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#A78BFA' }} />
+        <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#A78BFA' }} />
+        <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#A78BFA' }} />
+      </Box>
+      <Text style={{ fontSize: 'label', color: '#9333EA', bold: true, letterSpacing: 6, marginBottom: 'md', textAlign: 'center' }}>· LITERATURE ·</Text>
+      <Text style={{ fontSize: 'hero', color: '#4C1D95', fontFamily: 'serif', letterSpacing: 1, textAlign: 'center', marginBottom: 'lg' }}>{/* {{替换：主标题}} */}Poetry &amp; Arts</Text>
+      <Box style={{ width: 256, height: 1, background: '#C4B5FD', marginBottom: 'lg' }} />
+      <Text style={{ fontSize: 'card', color: '#374151', fontWeight: 300, letterSpacing: 2, textAlign: 'center' }}>{/* {{替换：副标题}} */}诗意生活美学</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,19 @@
+<Slide>
+  {/* chinese/008 祥云纹饰：红米渐变底 + 四角圆环装饰 + 卷次 + 大标题 + 分割线 + 副标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FBEDE8 0%, #FBF1E3 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 祥云装饰：四角浅红圆环（原 ☁️ emoji，恢复 Emoji 组件） */}
+    <Emoji name="☁️" style={{ position: 'absolute', top: 40, left: 40, width: 96, height: 96, opacity: 0.15 }} />
+    <Emoji name="☁️" style={{ position: 'absolute', bottom: 40, right: 40, width: 96, height: 96, opacity: 0.15 }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 'card', color: '#A81810', letterSpacing: 4, marginBottom: 'xl' }}>{/* {{替换：卷次}} */}【 卷一 】</Text>
+      <Text style={{ fontSize: 'hero', color: '#7F1D1D', bold: true, letterSpacing: 8, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}古韵雅集</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'lg', marginBottom: 'xl' }}>
+        <Box style={{ width: 64, height: 2, background: '#A81810' }} />
+        <Text style={{ fontSize: 'card', color: '#A81810', bold: true }}>◆</Text>
+        <Box style={{ width: 64, height: 2, background: '#A81810' }} />
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#4B5563', letterSpacing: 2 }}>{/* {{替换：副标题}} */}Traditional Culture Collection</Text>
+    </Box>
+  </Box>
+</Slide>

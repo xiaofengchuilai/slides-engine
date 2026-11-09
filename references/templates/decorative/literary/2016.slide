@@ -1,0 +1,19 @@
+<Slide>
+  {/* decorative/literary/2016 文艺风-迷你小植物：米白底 + 植物 emoji 装饰网格 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFFFFF 0%, #F5F5F4 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center', gap: 24 }}>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Emoji name="🌿" style={{ width: 32, height: 32, opacity: 0.8 }} />
+        <Emoji name="🍃" style={{ width: 28, height: 28, opacity: 0.8 }} />
+        <Emoji name="🌾" style={{ width: 28, height: 28, opacity: 0.8 }} />
+        <Emoji name="🌸" style={{ width: 32, height: 32, opacity: 0.8 }} />
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Emoji name="🌼" style={{ width: 28, height: 28, opacity: 0.8 }} />
+        <Emoji name="🍂" style={{ width: 28, height: 28, opacity: 0.8 }} />
+        <Emoji name="🌻" style={{ width: 32, height: 32, opacity: 0.8 }} />
+        <Emoji name="🌺" style={{ width: 28, height: 28, opacity: 0.8 }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,11 @@
+<Slide>
+  {/* chinese/007 竖版排版：米色渐变底 + 竖排标题（改横排）+ 中线 + 作者 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F5F0E6 0%, #FBEDE0 100%)', alignItems: 'center', justifyContent: 'center', gap: 'xxl' }}>
+    {/* 主标题（原竖排 text-7xl，改横排大字） */}
+    <Text style={{ fontSize: 'hero', color: '#7F1D1D', bold: true, letterSpacing: 12 }}>{/* {{替换：标题}} */}出师表</Text>
+    {/* 中线（原 w-px h-64 竖线） */}
+    <Box style={{ width: 2, height: 160, background: '#A81810' }} />
+    {/* 作者（原竖排 text-4xl） */}
+    <Text style={{ fontSize: 'title', color: '#4B5563', letterSpacing: 6 }}>{/* {{替换：作者}} */}诸葛亮</Text>
+  </Box>
+</Slide>

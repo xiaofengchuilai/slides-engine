@@ -1,0 +1,11 @@
+<Slide>
+  {/* transition/minimalist/501 大数字章节：浅灰巨号 + 蓝色短横线 + 章节名 + 导语 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', alignItems: 'center', justifyContent: 'center' }}>
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 'hero', color: '#E5E7EB', bold: true, lineHeight: 1, marginBottom: 24 }}>{/* {{替换：章节号 01-0N}} */}01</Text>
+      <Box style={{ width: 128, height: 4, background: 'secondary', marginBottom: 24 }} />
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 16, textAlign: 'center' }}>{/* {{替换：章节名}} */}项目背景</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+    </Box>
+  </Box>
+</Slide>

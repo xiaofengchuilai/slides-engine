@@ -1,0 +1,27 @@
+{
+  "name": "slides-engine",
+  "version": "0.5.5",
+  "private": true,
+  "description": "声明式幻灯片引擎：.slide(JSX) → SWC → 沙箱执行 → Yoga布局 → pptxgenjs → .pptx",
+  "type": "module",
+  "scripts": {
+    "build": "node src/cli.mjs",
+    "demo": "node src/cli.mjs examples/hello.slide --out hello.pptx",
+    "test": "node --test src/*.test.mjs",
+    "qa": "node scripts/qa-all.mjs",
+    "qa:quick": "node scripts/qa-all.mjs --type=cover",
+    "qa:regress": "node scripts/qa-regress.mjs",
+    "qa:golden": "node scripts/build-golden.mjs"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "@swc/core": "^1.15.18",
+    "canvas": "^3.2.3",
+    "mathjax": "^4.1.3",
+    "mathjax-full": "^3.2.1",
+    "pptxgenjs": "^3.12.0",
+    "qrcode": "^1.5.4",
+    "shiki": "^4.4.3",
+    "yoga-wasm-web": "^0.3.3"
+  }
+}

@@ -1,0 +1,27 @@
+<Slide>
+  {/* ending/geometric 1066 星芒放射结尾：橙金渐变底 + 放射线 + 五角星 + 同心圆环 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'linear-gradient(135deg, #F6D365 0%, #FDA085 100%)' }}>
+    {/* 放射线（六条过中心的细线，绕中心旋转；线长 260 居中锚定避免旋转溢出） */}
+    <Shape type="line" style={{ position: 'absolute', top: 358, left: 540, width: 260, height: 2, line: { color: '#FFFFFF', width: 2 }, opacity: 0.15 }} />
+    <Shape type="line" style={{ position: 'absolute', top: 358, left: 540, width: 260, height: 2, line: { color: '#FFFFFF', width: 2 }, opacity: 0.15, rotate: 30 }} />
+    <Shape type="line" style={{ position: 'absolute', top: 358, left: 540, width: 260, height: 2, line: { color: '#FFFFFF', width: 2 }, opacity: 0.15, rotate: 60 }} />
+    <Shape type="line" style={{ position: 'absolute', top: 358, left: 540, width: 260, height: 2, line: { color: '#FFFFFF', width: 2 }, opacity: 0.15, rotate: 90 }} />
+    <Shape type="line" style={{ position: 'absolute', top: 358, left: 540, width: 260, height: 2, line: { color: '#FFFFFF', width: 2 }, opacity: 0.15, rotate: 120 }} />
+    <Shape type="line" style={{ position: 'absolute', top: 358, left: 540, width: 260, height: 2, line: { color: '#FFFFFF', width: 2 }, opacity: 0.15, rotate: 150 }} />
+    {/* 中心五角星 */}
+    <Shape type="star5" style={{ position: 'absolute', top: '50%', left: '50%', width: 200, height: 200, fill: '#FFFFFF', opacity: 0.15 }} />
+    {/* 同心圆环 */}
+    <Shape type="ellipse" style={{ position: 'absolute', top: '50%', left: '50%', width: 300, height: 300, line: { color: '#FFFFFF', width: 2 }, opacity: 0.25 }} />
+    <Shape type="ellipse" style={{ position: 'absolute', top: '50%', left: '50%', width: 250, height: 250, line: { color: '#FFFFFF', width: 2 }, opacity: 0.2 }} />
+    <Shape type="ellipse" style={{ position: 'absolute', top: '50%', left: '50%', width: 200, height: 200, line: { color: '#FFFFFF', width: 2 }, opacity: 0.15 }} />
+    {/* 小星星装饰 */}
+    <Shape type="star5" style={{ position: 'absolute', top: 108, left: 192, width: 30, height: 30, fill: '#FFFFFF', opacity: 0.3 }} />
+    <Shape type="star5" style={{ position: 'absolute', top: 504, right: 192, width: 35, height: 35, fill: '#FFFFFF', opacity: 0.35 }} />
+    <Shape type="star5" style={{ position: 'absolute', bottom: 72, left: 256, width: 28, height: 28, fill: '#FFFFFF', opacity: 0.28 }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: '#FFFFFF', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}谢谢观看</Text>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', textAlign: 'center' }}>{/* {{副标题}} */}欢迎提出宝贵建议</Text>
+    </Box>
+  </Box>
+</Slide>

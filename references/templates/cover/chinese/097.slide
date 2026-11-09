@@ -1,0 +1,19 @@
+<Slide>
+  {/* chinese/097 青花瓷纹：浅灰底 + 右上同心圆环 + 左下圆环 + 主标题 + 副标题 + 分割线 + 落款 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F8F8F8 0%, #EEF0F2 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 青花瓷纹装饰：右上三同心圆环 + 十字 */}
+    <Box style={{ position: 'absolute', top: 80, right: 80, width: 144, height: 144, borderRadius: 72, border: '2px solid rgba(30,64,175,0.3)' }} />
+    <Box style={{ position: 'absolute', top: 96, right: 96, width: 112, height: 112, borderRadius: 56, border: '2px solid rgba(29,78,216,0.2)' }} />
+    <Box style={{ position: 'absolute', top: 112, right: 112, width: 80, height: 80, borderRadius: 40, border: '2px solid rgba(30,64,175,0.3)' }} />
+    <Box style={{ position: 'absolute', top: 148, left: 148, width: 56, height: 2, background: 'rgba(30,64,175,0.3)' }} />
+    {/* 左下圆环 */}
+    <Box style={{ position: 'absolute', bottom: 112, left: 80, width: 96, height: 96, borderRadius: 48, border: '2px solid rgba(29,78,216,0.25)' }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center', maxWidth: 900 }}>
+      <Text style={{ fontSize: 'hero', color: '#374151', bold: true, lineHeight: 1.3, marginBottom: 'xxl' }}>{/* {{替换：主标题}} */}传统工艺传承</Text>
+      <Text style={{ fontSize: 'card', color: '#1E40AF', marginBottom: 'xxl', letterSpacing: 2 }}>{/* {{替换：副标题}} */}匠心独运·薪火相传</Text>
+      <Box style={{ width: 128, height: 2, background: 'linear-gradient(90deg, rgba(30,64,175,0) 0%, #1E40AF 50%, rgba(30,64,175,0) 100%)', marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：落款}} */}文化发展部 | 非遗保护计划</Text>
+    </Box>
+  </Box>
+</Slide>

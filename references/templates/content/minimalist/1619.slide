@@ -1,0 +1,73 @@
+<Slide>
+  {/* minimalist/1619 客户价值管理：顶部标题卡 / 左大图卡 + 右三数据卡组 + 浮动标签 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 顶部标题卡片 */}
+    <Box style={{ background: 'primary', borderRadius: 'md', padding: 'md lg', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'lg', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+      <Box>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', marginBottom: 'xs' }}>{/* {{标题}} */}客户价值管理</Text>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.8 }}>Customer Value Management</Text>
+      </Box>
+      <Box style={{ alignItems: 'flex-end' }}>
+        <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>CLV</Text>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.6 }}>客户生命周期价值</Text>
+      </Box>
+    </Box>
+
+    {/* 主内容：左大图卡 + 右三数据卡组 */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1 }}>
+      {/* 左：图片卡 + 策略 */}
+      <Box style={{ flex: 1.5, background: 'cardBg', borderRadius: 'md', padding: 'md', gap: 'md', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+        <Box style={{ flex: 1.2, background: 'cardBg', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center', padding: 'sm' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/clv.png" style={{ width: 380, height: 200, objectFit: 'cover' }} />
+          <Box style={{ position: 'absolute', top: 12, left: 12, background: 'primary', padding: 'xs sm', borderRadius: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>VIP客户占比 15%</Text>
+          </Box>
+        </Box>
+        <Box style={{ flex: 1, justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'sm' }}>价值提升策略</Text>
+          <Box style={{ gap: 'xs' }}>
+            {[
+              '个性化服务：基于客户画像定制专属方案',
+              '会员体系：分层权益激励复购和推荐',
+              '数据洞察：预测客户需求主动触达',
+            ].map((x, i) => (
+              <Box key={i} style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+                <Text style={{ fontSize: 'body', color: 'text', bold: true }}>•</Text>
+                <Text style={{ fontSize: 'body', color: 'muted', flex: 1 }}>{x}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+
+      {/* 右：三数据卡组 */}
+      <Box style={{ flex: 1, gap: 'md' }}>
+        {[
+          ['平均客单价提升', '42%', '通过精准营销实现客单价增长', 'primary'],
+          ['复购率', '68%', '会员复购率高于行业平均30%', 'secondary'],
+          ['客户留存率', '85%', '12个月后的客户留存表现', 'muted'],
+        ].map((x, i) => (
+          <Box key={i} style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', border: '1px solid #E5E7EB', flexDirection: 'row', gap: 'md', alignItems: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+            <Box style={{ width: 4, height: 48, background: x[3], borderRadius: 2 }} />
+            <Box style={{ flex: 1 }}>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'kpi', color: 'text', bold: true }}>{x[1]}</Text>
+              <Text style={{ fontSize: 'body', color: 'muted' }}>{x[2]}</Text>
+            </Box>
+          </Box>
+        ))}
+        <Box style={{ background: 'primary', padding: 'sm md', borderRadius: 'sm', alignSelf: 'flex-end', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>LTV/CAC = 3.8</Text>
+        </Box>
+      </Box>
+    </Box>
+
+    {/* 底部条 */}
+    <Box style={{ height: 2, background: '#E5E7EB', marginTop: 'md', marginBottom: 'sm' }} />
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>数据统计：12个月滚动数据 | 样本量：50,000+活跃客户</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>分析工具：CRM + BI平台</Text>
+    </Box>
+  </Box>
+</Slide>

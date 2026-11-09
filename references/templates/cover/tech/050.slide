@@ -1,0 +1,63 @@
+<Slide>
+  {/* cover/tech/050 科技风-HUD界面：深色底 + HUD圆环 + 状态栏 + 主标题 + 副标题 + 数据栏 + 边角装饰 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* HUD 圆环装饰 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, justifyContent: 'center', alignItems: 'center', opacity: 0.2 }}>
+      <Box style={{ width: 500, height: 500, borderRadius: 250, border: '1px solid #3B82F6' }} />
+      <Box style={{ position: 'absolute', width: 600, height: 600, borderRadius: 300, border: '1px solid #3B82F6', opacity: 0.5 }} />
+    </Box>
+    {/* 边角 HUD 装饰 */}
+    <Box style={{ position: 'absolute', top: 24, left: 24, width: 96, height: 96 }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 96, height: 2, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 2, height: 96, background: '#3B82F6' }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 24, right: 24, width: 96, height: 96 }}>
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 96, height: 2, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 2, height: 96, background: '#3B82F6' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 24, left: 24, width: 96, height: 96 }}>
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 96, height: 2, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 2, height: 96, background: '#3B82F6' }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 24, right: 24, width: 96, height: 96 }}>
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 96, height: 2, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 2, height: 96, background: '#3B82F6' }} />
+    </Box>
+    <Box style={{ justifyContent: 'center', alignItems: 'center', maxWidth: 1100 }}>
+      {/* 顶部状态栏 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', justifyContent: 'center', marginBottom: 'xxl' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#3B82F6' }} />
+          <Text style={{ fontSize: 'label', color: '#60A5FA', letterSpacing: 2 }}>SYSTEM ONLINE</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#10B981' }} />
+          <Text style={{ fontSize: 'label', color: '#60A5FA', letterSpacing: 2 }}>STATUS: READY</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#F59E0B' }} />
+          <Text style={{ fontSize: 'label', color: '#60A5FA', letterSpacing: 2 }}>SIGNAL: 100%</Text>
+        </Box>
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#FFFFFF', bold: true, letterSpacing: 4, textAlign: 'center', lineHeight: 1.1, marginBottom: 'lg' }}>{/* {{替换：主标题}} */}智能控制系统</Text>
+      <Text style={{ fontSize: 'card', color: '#93C5FD', fontWeight: 300, letterSpacing: 3, textAlign: 'center', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}INTELLIGENT CONTROL SYSTEM</Text>
+      {/* 底部数据栏 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', border: '2px solid #1E40AF', background: '#0B1B3A', padding: 'md xl' }}>
+        <Box>
+          <Text style={{ fontSize: 'label', color: '#60A5FA', marginBottom: 4 }}>AUTHOR</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：作者}} */}控制中心</Text>
+        </Box>
+        <Box style={{ width: 1, height: 40, background: '#1D4ED8' }} />
+        <Box>
+          <Text style={{ fontSize: 'label', color: '#60A5FA', marginBottom: 4 }}>DATE</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：日期}} */}2025/01/20</Text>
+        </Box>
+        <Box style={{ width: 1, height: 40, background: '#1D4ED8' }} />
+        <Box>
+          <Text style={{ fontSize: 'label', color: '#60A5FA', marginBottom: 4 }}>ID</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：编号}} */}HUD-2025</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

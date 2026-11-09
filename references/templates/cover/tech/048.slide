@@ -1,0 +1,61 @@
+<Slide>
+  {/* cover/tech/048 科技风-全息投影：黑底 + 网格纹理 + 全息外框 + 主标题 + 副标题 + 落款 */}
+  <Box style={{ width: 1280, height: 720, background: '#020617', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 网格纹理 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, opacity: 0.15 }}>
+      <Box style={{ position: 'absolute', top: 90, left: 0, width: 1280, height: 1, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 180, left: 0, width: 1280, height: 1, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 270, left: 0, width: 1280, height: 1, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 360, left: 0, width: 1280, height: 1, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 450, left: 0, width: 1280, height: 1, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 540, left: 0, width: 1280, height: 1, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 630, left: 0, width: 1280, height: 1, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 128, width: 1, height: 720, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 256, width: 1, height: 720, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 384, width: 1, height: 720, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 512, width: 1, height: 720, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 640, width: 1, height: 720, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 768, width: 1, height: 720, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 896, width: 1, height: 720, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 1024, width: 1, height: 720, background: '#3B82F6' }} />
+      <Box style={{ position: 'absolute', top: 0, left: 1152, width: 1, height: 720, background: '#3B82F6' }} />
+    </Box>
+    {/* 全息外框 */}
+    <Box style={{ width: 1080, border: '3px solid #3B82F6', opacity: 1, background: '#0B1B3A', padding: 'xxl' }}>
+      {/* 角落装饰 */}
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 48, height: 48 }}>
+        <Box style={{ position: 'absolute', top: 0, left: 0, width: 48, height: 4, background: '#60A5FA' }} />
+        <Box style={{ position: 'absolute', top: 0, left: 0, width: 4, height: 48, background: '#60A5FA' }} />
+      </Box>
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 48, height: 48 }}>
+        <Box style={{ position: 'absolute', top: 0, right: 0, width: 48, height: 4, background: '#60A5FA' }} />
+        <Box style={{ position: 'absolute', top: 0, right: 0, width: 4, height: 48, background: '#60A5FA' }} />
+      </Box>
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 48, height: 48 }}>
+        <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 48, height: 4, background: '#60A5FA' }} />
+        <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 4, height: 48, background: '#60A5FA' }} />
+      </Box>
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 48, height: 48 }}>
+        <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 48, height: 4, background: '#60A5FA' }} />
+        <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 4, height: 48, background: '#60A5FA' }} />
+      </Box>
+      <Box style={{ justifyContent: 'center', alignItems: 'center' }}>
+        <Box style={{ width: 1016, height: 2, background: 'linear-gradient(90deg, #0B1B3A 0%, #3B82F6 50%, #0B1B3A 100%)', marginBottom: 'xl' }} />
+        <Text style={{ fontSize: 'hero', color: '#60A5FA', bold: true, letterSpacing: 3, textAlign: 'center', lineHeight: 1.1, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}全息技术展示</Text>
+        <Text style={{ fontSize: 'card', color: '#93C5FD', fontWeight: 300, letterSpacing: 3, textAlign: 'center', marginBottom: 'xl' }}>{/* {{替换：副标题}} */}HOLOGRAPHIC TECHNOLOGY SHOWCASE</Text>
+        <Box style={{ width: 1016, height: 2, background: 'linear-gradient(90deg, #0B1B3A 0%, #3B82F6 50%, #0B1B3A 100%)', marginBottom: 'xxl' }} />
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', justifyContent: 'center' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+            <Box style={{ width: 12, height: 12, background: '#3B82F6' }} />
+            <Text style={{ fontSize: 'body', color: '#BFDBFE' }}>{/* {{替换：落款一}} */}创新实验室</Text>
+          </Box>
+          <Box style={{ width: 1, height: 20, background: '#3B82F6' }} />
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+            <Box style={{ width: 12, height: 12, background: '#3B82F6' }} />
+            <Text style={{ fontSize: 'body', color: '#BFDBFE' }}>{/* {{替换：落款二}} */}2025/01/20</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

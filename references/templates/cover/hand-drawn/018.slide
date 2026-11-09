@@ -1,0 +1,17 @@
+<Slide>
+  {/* hand-drawn/018 箭头指引：蓝虚线卡 + 手绘箭头 + 气泡图标 */}
+  {/* 背景（蓝→青渐变） */}
+  <Box style={{ width: 1280, height: 720, position: 'absolute', top: 0, left: 0, background: 'linear-gradient(135deg, #EFF6FF 0%, #ECFEFF 100%)', justifyContent: 'center', alignItems: 'center' }} />
+  {/* 手绘箭头（左上，虚线弯曲） */}
+  <RoughBox shape="path" path="M 10 80 Q 40 10, 80 60" style={{ width: 128, height: 128, stroke: '#60A5FA', strokeWidth: 3, roughness: 1.5, dash: [5, 5], position: 'absolute', left: 40, top: 40 }} />
+  {/* 手绘箭头尖头（左上） */}
+  <RoughBox shape="path" path="M 80 60 L 70 50 M 80 60 L 70 70" style={{ width: 128, height: 128, stroke: '#60A5FA', strokeWidth: 3, roughness: 1.5, position: 'absolute', left: 40, top: 40 }} />
+  {/* 蓝色手绘虚线卡（白色纯底 + 蓝虚线边框） */}
+  <RoughBox shape="rect" style={{ width: 640, height: 420, stroke: '#60A5FA', strokeWidth: 3, roughness: 2, fill: '#FFFFFF', fillStyle: 'solid', dash: [8, 6], position: 'absolute', left: 320, top: 150 }} />
+  {/* 主内容区 */}
+  <Box style={{ position: 'absolute', top: 150, left: 320, width: 640, height: 420, justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+    <Emoji name="💭" style={{ width: 72, height: 72, marginBottom: 'md' }} />
+    <Text style={{ fontSize: 'hero', color: '#111827', bold: true, fontFamily: 'hand', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}头脑风暴</Text>
+    <Text style={{ fontSize: 'card', color: '#2563EB', fontFamily: 'hand', textAlign: 'center', marginTop: 'lg' }}>{/* {{副标题}} */}Brainstorming Session</Text>
+  </Box>
+</Slide>

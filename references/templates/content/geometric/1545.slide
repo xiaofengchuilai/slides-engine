@@ -1,0 +1,48 @@
+<Slide>
+  {/* geometric/1545 立体架构：深色底 + 三层架构图（表现层/服务层/数据层） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #020617 0%, #1E1B4B 50%, #020617 100%)', padding: 'xl', alignItems: 'center' }}>
+    <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, textAlign: 'center', marginBottom: 'xs' }}>{/* {{替换：页面标题}} */}立体架构</Text>
+    <Text style={{ fontSize: 'body', color: '#C7D2FE', textAlign: 'center', marginBottom: 'lg' }}>{/* {{替换：副标题}} */}分层架构的模块化设计</Text>
+    {/* 架构图画布 960x460（居中） */}
+    <Box style={{ position: 'relative', width: 960, height: 460, marginLeft: 50 }}>
+      {/* 层级标签 */}
+      <Box style={{ position: 'absolute', left: 0, top: 8, width: 44 }}>
+        <Text style={{ fontSize: 'label', color: '#A5B4FC' }}>表现层</Text>
+      </Box>
+      <Box style={{ position: 'absolute', left: 0, top: 175, width: 44 }}>
+        <Text style={{ fontSize: 'label', color: '#A5B4FC' }}>服务层</Text>
+      </Box>
+      <Box style={{ position: 'absolute', left: 0, top: 345, width: 44 }}>
+        <Text style={{ fontSize: 'label', color: '#A5B4FC' }}>数据层</Text>
+      </Box>
+      {/* 顶层 - 前端应用层 */}
+      <Box style={{ position: 'absolute', left: 352, top: 0, width: 256, height: 96, background: 'linear-gradient(135deg, #06B6D4 0%, #2563EB 100%)', borderRadius: 'md', border: '2px solid rgba(103,232,249,0.3)', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>前端应用层</Text>
+        <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.85, marginTop: 'xs' }}>{/* {{替换：说明}} */}Web / Mobile / Desktop</Text>
+      </Box>
+      {/* 中间层 - 3 个服务 */}
+      {[
+        [120, '用户服务', '认证 / 权限', 'linear-gradient(135deg, #F43F5E 0%, #DB2777 100%)', 'rgba(253,164,175,0.3)'],
+        [384, '业务逻辑层', '核心业务处理', 'linear-gradient(135deg, #10B981 0%, #0D9488 100%)', 'rgba(110,231,183,0.3)'],
+        [648, 'API网关', '路由 / 限流', 'linear-gradient(135deg, #F59E0B 0%, #EA580C 100%)', 'rgba(252,211,77,0.3)'],
+      ].map((m, i) => (
+        <Box key={i} style={{ position: 'absolute', left: m[0], top: 160, width: 192, height: 112, background: m[3], borderRadius: 'md', border: '2px solid ' + m[4], alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{m[1]}</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.85, marginTop: 'xs' }}>{m[2]}</Text>
+        </Box>
+      ))}
+      {/* 底层 - 4 个存储 */}
+      {[
+        [60, '数据库', 'MySQL / PostgreSQL', 'linear-gradient(135deg, #2563EB 0%, #4338CA 100%)', 'rgba(147,197,253,0.3)'],
+        [300, '缓存', 'Redis / Memcached', 'linear-gradient(135deg, #9333EA 0%, #6D28D9 100%)', 'rgba(216,180,254,0.3)'],
+        [492, '消息队列', 'Kafka / RabbitMQ', 'linear-gradient(135deg, #C026D3 0%, #BE185D 100%)', 'rgba(240,171,252,0.3)'],
+        [684, '存储服务', 'OSS / MinIO', 'linear-gradient(135deg, #0D9488 0%, #0E7490 100%)', 'rgba(153,246,228,0.3)'],
+      ].map((m, i) => (
+        <Box key={i} style={{ position: 'absolute', left: m[0], top: 340, width: 176, height: 96, background: m[3], borderRadius: 'md', border: '2px solid ' + m[4], alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{m[1]}</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.85, marginTop: 'xs' }}>{m[2]}</Text>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+</Slide>

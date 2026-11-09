@@ -1,0 +1,65 @@
+<Slide>
+  {/* literary/1560 浪漫信纸：粉色渐变信纸 + 抬头 + 正文 + 签名 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FCE7F3 0%, #FFF1F2 50%, #F3E8FF 100%)', padding: 'xxl xl', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 主信纸 */}
+    <Box style={{ width: 980, background: 'linear-gradient(135deg, #FDF2F8 0%, #FFFFFF 100%)', borderRadius: 'lg', border: '4px solid #FBCFE8', padding: 'xl', alignItems: 'center', position: 'relative', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      {/* 顶部装饰条 */}
+      <Box style={{ background: 'linear-gradient(90deg, #F472B6 0%, #FB7185 50%, #F472B6 100%)', borderRadius: 24, padding: 'xs xl', border: '4px solid #FFFFFF', marginTop: -44, marginBottom: 'md', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs' }}>
+          <Emoji name="💝" style={{ width: 22, height: 22 }} />
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', fontFamily: 'serif' }}>{/* {{替换：顶部标签}} */}Love Letter</Text>
+        </Box>
+      </Box>
+      {/* 邮票装饰 */}
+      <Box style={{ position: 'absolute', top: 16, right: 16, width: 96, height: 120, background: '#FFFFFF', border: '4px dashed #F9A8D4', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Emoji name="🌹" style={{ width: 38, height: 38, marginBottom: 2 }} />
+        <Text style={{ fontSize: 'label', color: '#4B5563', fontFamily: 'serif' }}>Romance</Text>
+        <Text style={{ fontSize: 'label', color: '#6B7280' }}>Forever</Text>
+      </Box>
+      {/* 抬头 */}
+      <Box style={{ alignSelf: 'flex-end', marginBottom: 'md' }}>
+        <Text style={{ fontSize: 'body', color: '#BE185D', fontFamily: 'serif' }}>{/* {{替换：抬头}} */}致：热爱生活的你</Text>
+      </Box>
+      {/* 主标题 */}
+      <Text style={{ fontSize: 'title', color: '#BE185D', fontFamily: 'serif', bold: true, marginBottom: 'sm' }}>{/* {{替换：主标题}} */}浪漫情怀</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+        <Emoji name="💕" style={{ width: 22, height: 22 }} />
+        <Text style={{ fontSize: 'body', color: '#6B7280', fontFamily: 'serif' }}>{/* {{替换：副标题}} */}Romantic Spirit</Text>
+        <Emoji name="💕" style={{ width: 22, height: 22 }} />
+      </Box>
+      {/* 装饰分隔 */}
+      <Box style={{ width: 240, height: 2, background: 'linear-gradient(90deg, rgba(244,114,182,0) 0%, #EC4899 50%, rgba(244,114,182,0) 100%)', marginBottom: 'md' }} />
+      {/* 正文卡 */}
+      <Box style={{ background: 'rgba(255,255,255,0.6)', borderRadius: 'md', padding: 'lg', marginBottom: 'md', alignItems: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+        <Text style={{ fontSize: 'card', color: '#9F1239', fontFamily: 'serif', lineHeight: 1.6, marginBottom: 'md' }}>{/* {{替换：金句}} */}"浪漫是对生活的热爱"</Text>
+        <Text style={{ fontSize: 'body', color: '#374151', fontFamily: 'serif', lineHeight: 1.8, marginBottom: 'sm' }}>{/* {{替换：正文段1}} */}亲爱的朋友，浪漫不是奢侈品，而是一种生活态度。它藏在清晨的第一缕阳光里，藏在午后的一杯咖啡中，藏在黄昏时分的晚霞下。</Text>
+        <Text style={{ fontSize: 'body', color: '#374151', fontFamily: 'serif', lineHeight: 1.8 }}>{/* {{替换：正文段2}} */}保持对美的敏感，用浪漫点亮平凡的日子。让每一天都充满诗意，让每一刻都值得回味。</Text>
+      </Box>
+      {/* 签名区 */}
+      <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', width: '100%' }}>
+        <Box style={{ flexDirection: 'row', gap: 'sm' }}>
+          <Emoji name="🌸" style={{ width: 22, height: 22 }} />
+          <Emoji name="🦋" style={{ width: 22, height: 22 }} />
+          <Emoji name="🌺" style={{ width: 22, height: 22 }} />
+        </Box>
+        <Box style={{ alignItems: 'flex-end' }}>
+          <Text style={{ fontSize: 'card', color: '#BE185D', fontFamily: 'serif', marginBottom: 'xs' }}>{/* {{替换：落款}} */}With Love</Text>
+          <Text style={{ fontSize: 'label', color: '#6B7280', fontFamily: 'serif' }}>{/* {{替换：署名}} */}永远的浪漫主义者</Text>
+        </Box>
+      </Box>
+    </Box>
+    {/* 飘落花瓣装饰 */}
+    <Box style={{ position: 'absolute', top: 40, left: 48, opacity: 0.6, rotate: -8 }}>
+      <Emoji name="🌸" style={{ width: 32, height: 32 }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 120, right: 56, opacity: 0.5, rotate: 10 }}>
+      <Emoji name="💕" style={{ width: 26, height: 26 }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 72, left: 88, opacity: 0.6, rotate: -12 }}>
+      <Emoji name="🦋" style={{ width: 26, height: 26 }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 48, right: 104, opacity: 0.5, rotate: 14 }}>
+      <Emoji name="🌺" style={{ width: 32, height: 32 }} />
+    </Box>
+  </Box>
+</Slide>

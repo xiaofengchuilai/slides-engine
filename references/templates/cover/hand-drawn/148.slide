@@ -1,0 +1,29 @@
+<Slide>
+  {/* hand-drawn/148 素描交织：灰白渐变 + 素描斜线装饰 + 左边条标签卡 */}
+  {/* 背景渐变（灰→白→暖灰） */}
+  <Box style={{ width: 1280, height: 720, position: 'absolute', top: 0, left: 0, background: 'linear-gradient(135deg, #F3F4F6 0%, #FAFAFA 50%, #F5F5F4 100%)', justifyContent: 'center', alignItems: 'center' }} />
+  {/* 素描斜线（左上） */}
+  <RoughBox shape="line" x2={96} y2={40} style={{ width: 120, height: 60, stroke: '#A8A29E', strokeWidth: 2, roughness: 1.5, position: 'absolute', left: 160, top: 112, opacity: 0.4 }} />
+  {/* 素描斜线（左上二） */}
+  <RoughBox shape="line" x2={80} y2={24} style={{ width: 100, height: 44, stroke: '#A8A29E', strokeWidth: 2, roughness: 1.5, position: 'absolute', left: 176, top: 144, opacity: 0.35 }} />
+  {/* 素描斜线（右上） */}
+  <RoughBox shape="line" x2={96} y2={40} style={{ width: 120, height: 60, stroke: '#A8A29E', strokeWidth: 2, roughness: 1.5, position: 'absolute', right: 192, top: 128, opacity: 0.3 }} />
+  {/* 素描斜线（左下） */}
+  <RoughBox shape="line" x2={64} y2={24} style={{ width: 84, height: 40, stroke: '#A8A29E', strokeWidth: 2, roughness: 1.5, position: 'absolute', left: 208, bottom: 160, opacity: 0.35 }} />
+  {/* 素描斜线（右下） */}
+  <RoughBox shape="line" x2={80} y2={28} style={{ width: 100, height: 44, stroke: '#A8A29E', strokeWidth: 2, roughness: 1.5, position: 'absolute', right: 176, bottom: 144, opacity: 0.25 }} />
+  {/* 主内容区 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, justifyContent: 'center', alignItems: 'center' }}>
+    <Text style={{ fontSize: 'hero', color: '#1F2937', bold: true, fontFamily: 'hand', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}素描基础入门</Text>
+    <Text style={{ fontSize: 'card', color: '#4B5563', textAlign: 'center', marginTop: 'md', marginBottom: 'xl' }}>{/* {{副标题}} */}线条之美·光影交织</Text>
+    {/* 左边条标签卡（白底 + 石色竖条） */}
+    <RoughBox shape="rect" style={{ width: 300, height: 110, stroke: '#E7E5E4', strokeWidth: 1, roughness: 1.5, fill: '#FFFFFF', fillStyle: 'solid', position: 'absolute', top: 450, left: 490 }} />
+    <Box style={{ position: 'absolute', top: 450, left: 490, width: 300, height: 110, flexDirection: 'row', alignItems: 'stretch' }}>
+      <Box style={{ width: 4, height: 110, background: '#78716C' }} />
+      <Box style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <Text style={{ fontSize: 'card', color: '#44403C', bold: true, textAlign: 'center' }}>{/* {{标签一}} */}绘画学院</Text>
+        <Text style={{ fontSize: 'label', color: '#4B5563', textAlign: 'center', marginTop: 'xs' }}>{/* {{标签二}} */}美术基础课程</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

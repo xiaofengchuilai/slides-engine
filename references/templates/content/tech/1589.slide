@@ -1,0 +1,92 @@
+<Slide>
+  {/* tech/1589 云端数据中心：三服务器机柜（计算/存储/网络） */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xl' }}>
+    <Text style={{ fontSize: 'title', color: '#22D3EE', bold: true, textAlign: 'center', marginBottom: 'lg' }}>{/* {{标题}} */}云端数据中心</Text>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl', alignItems: 'flex-end', justifyContent: 'center' }}>
+      {/* 机柜1：计算节点 */}
+      <Box style={{ width: 250, alignItems: 'center' }}>
+        <Box style={{ width: 250, height: 500, border: '2px solid rgba(34,211,238,0.5)', borderRadius: 'sm', background: 'linear-gradient(180deg, #1E293B 0%, #0F172A 100%)', padding: 'sm', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Box style={{ height: 36, background: 'linear-gradient(180deg, #334155 0%, #1E293B 100%)', alignItems: 'center', justifyContent: 'center', marginBottom: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: '#22D3EE', bold: true }}>SERVER-01</Text>
+          </Box>
+          <Box style={{ gap: 'sm' }}>
+            {[
+              { pct: '95%', color: '#EF4444' },
+              { pct: '92%', color: '#EF4444' },
+              { pct: '88%', color: '#EF4444' },
+              { pct: '65%', color: '#F59E0B' },
+              { pct: '58%', color: '#F59E0B' },
+              { pct: '52%', color: '#F59E0B' },
+              { pct: '35%', color: '#22C55E' },
+              { pct: '28%', color: '#22C55E' },
+              { pct: '15%', color: '#22C55E' },
+            ].map((x) => (
+              <Box key={x.pct} style={{ height: 40, background: '#334155', border: `1px solid ${x.color}66`, borderRadius: 'sm', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 'xs sm' }}>
+                <Box style={{ flexDirection: 'row', gap: 4 }}>
+                  <Box style={{ width: 6, height: 6, borderRadius: 3, background: x.color }} />
+                  <Box style={{ width: 6, height: 6, borderRadius: 3, background: x.color }} />
+                  <Box style={{ width: 6, height: 6, borderRadius: 3, background: x.color }} />
+                </Box>
+                <Text style={{ fontSize: 'label', color: x.color }}>{x.pct}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#22D3EE', bold: true, marginTop: 'sm' }}>计算节点</Text>
+        <Text style={{ fontSize: 'label', color: '#94A3B8' }}>Compute Cluster</Text>
+      </Box>
+      {/* 机柜2：存储阵列 */}
+      <Box style={{ width: 250, alignItems: 'center' }}>
+        <Box style={{ width: 250, height: 500, border: '2px solid rgba(168,85,247,0.5)', borderRadius: 'sm', background: 'linear-gradient(180deg, #1E293B 0%, #0F172A 100%)', padding: 'sm', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Box style={{ height: 36, background: 'linear-gradient(180deg, #334155 0%, #1E293B 100%)', alignItems: 'center', justifyContent: 'center', marginBottom: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: '#C084FC', bold: true }}>SERVER-02</Text>
+          </Box>
+          <Box style={{ gap: 'sm' }}>
+            {[
+              { label: 'RAID 10 - 24TB', color: '#22D3EE' },
+              { label: 'RAID 10 - 24TB', color: '#22D3EE' },
+              { label: 'RAID 5 - 48TB', color: '#22D3EE' },
+              { label: 'RAID 5 - 48TB', color: '#22D3EE' },
+              { label: 'SSD Cache - 2TB', color: '#4ADE80' },
+              { label: 'SSD Cache - 2TB', color: '#4ADE80' },
+              { label: 'Backup - 96TB', color: '#60A5FA' },
+              { label: 'Backup - 96TB', color: '#60A5FA' },
+              { label: 'Archive - 192TB', color: '#C084FC' },
+            ].map((x) => (
+              <Box key={x.label + x.color} style={{ height: 40, background: '#334155', border: `1px solid ${x.color}66`, borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'label', color: x.color }}>{x.label}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#C084FC', bold: true, marginTop: 'sm' }}>存储阵列</Text>
+        <Text style={{ fontSize: 'label', color: '#94A3B8' }}>Storage Array</Text>
+      </Box>
+      {/* 机柜3：网络设备 */}
+      <Box style={{ width: 250, alignItems: 'center' }}>
+        <Box style={{ width: 250, height: 500, border: '2px solid rgba(52,211,153,0.5)', borderRadius: 'sm', background: 'linear-gradient(180deg, #1E293B 0%, #0F172A 100%)', padding: 'sm', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Box style={{ height: 36, background: 'linear-gradient(180deg, #334155 0%, #1E293B 100%)', alignItems: 'center', justifyContent: 'center', marginBottom: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: '#4ADE80', bold: true }}>SERVER-03</Text>
+          </Box>
+          <Box style={{ gap: 'sm' }}>
+            {[
+              { title: 'Core Switch', status: '', color: '#22D3EE' },
+              { title: 'Aggregation SW', status: '', color: '#60A5FA' },
+              { title: 'Firewall', status: '● Active', color: '#F59E0B' },
+              { title: 'Load Balancer', status: '● Running', color: '#C084FC' },
+              { title: 'IDS/IPS', status: '● Protected', color: '#FB923C' },
+              { title: 'Access Switch', status: '', color: '#F472B6' },
+            ].map((x) => (
+              <Box key={x.title} style={{ height: 56, background: '#334155', border: `1px solid ${x.color}66`, borderRadius: 'sm', alignItems: 'center', justifyContent: 'center', padding: 'xs' }}>
+                <Text style={{ fontSize: 'label', color: x.color }}>{x.title}</Text>
+                {x.status !== '' && <Text style={{ fontSize: 'label', color: '#4ADE80', marginTop: 2 }}>{x.status}</Text>}
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#4ADE80', bold: true, marginTop: 'sm' }}>网络设备</Text>
+        <Text style={{ fontSize: 'label', color: '#94A3B8' }}>Network Equipment</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

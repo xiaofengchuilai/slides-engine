@@ -1,0 +1,61 @@
+<Slide>
+  {/* ending/tech/1102 科技风-HUD：深色渐变 + 同心圆环 + 准星 + 角落HUD信息 + 绿框致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0A0E1A 0%, #1C1F2E 100%)' }}>
+    {/* HUD 同心圆环装饰（虚线圆环降级为细实线圆环） */}
+    <Box style={{ position: 'absolute', top: 45, left: 325, width: 630, height: 630, borderRadius: 'sm', border: '2px solid #00FF00', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 135, left: 415, width: 450, height: 450, borderRadius: 'sm', border: '2px solid #00FFFF', opacity: 0.3 }} />
+    <Box style={{ position: 'absolute', top: 180, left: 460, width: 360, height: 360, borderRadius: 'sm', border: '2px solid #FF00FF', opacity: 0.3 }} />
+    {/* 角落 HUD 信息 */}
+    <Box style={{ position: 'absolute', top: 15, left: 15, opacity: 0.7 }}>
+      <Text style={{ fontSize: 13, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.5 }}>[SYS: ONLINE]</Text>
+      <Text style={{ fontSize: 13, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.5 }}>[PWR: 100%]</Text>
+      <Text style={{ fontSize: 13, color: '#00FF00', fontFamily: 'Courier New', lineHeight: 1.5 }}>[CONN: STABLE]</Text>
+    </Box>
+    <Box style={{ position: 'absolute', top: 15, right: 15, opacity: 0.7 }}>
+      <Text style={{ fontSize: 13, color: '#00FFFF', fontFamily: 'Courier New', lineHeight: 1.5 }}>[TIME: 23:59:59]</Text>
+      <Text style={{ fontSize: 13, color: '#00FFFF', fontFamily: 'Courier New', lineHeight: 1.5 }}>[LAT: 39.9042°N]</Text>
+      <Text style={{ fontSize: 13, color: '#00FFFF', fontFamily: 'Courier New', lineHeight: 1.5 }}>[LON: 116.4074°E]</Text>
+    </Box>
+    {/* 底部状态栏 */}
+    <Box style={{ position: 'absolute', bottom: 15, left: 15, right: 15, height: 36, border: '1px solid #00FF00', background: '#0A0E1A', flexDirection: 'row', alignItems: 'center', padding: '0 16px', opacity: 0.85 }}>
+      <Box style={{ flex: 1 }}>
+        <Text style={{ fontSize: 'label', color: '#00FF00', fontFamily: 'Courier New' }}>[STATUS: PRESENTATION COMPLETE]</Text>
+      </Box>
+      <Box style={{ width: 180, height: 7, background: '#1C1F2E', marginRight: 'sm' }}>
+        <Box style={{ width: 180, height: 7, background: '#00FF00' }} />
+      </Box>
+      <Text style={{ fontSize: 'label', color: '#00FF00', fontFamily: 'Courier New' }}>[100%]</Text>
+    </Box>
+    {/* 中心内容框（半透明底用深色 hex 双层：底层装饰、上层内容） */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ position: 'relative', border: '2px solid #00FF00', padding: 'xl xxl', borderRadius: 'sm', background: '#0A0E1A', boxShadow: '0 0 40px rgba(0,255,0,0.3)' }}>
+        {/* 四角标记（L 形细条） */}
+        <Box style={{ position: 'absolute', top: -1, left: -1, width: 23, height: 23, background: 'transparent' }}>
+          <Box style={{ position: 'absolute', top: 0, left: 0, width: 23, height: 3, background: '#00FF00' }} />
+          <Box style={{ position: 'absolute', top: 0, left: 0, width: 3, height: 23, background: '#00FF00' }} />
+        </Box>
+        <Box style={{ position: 'absolute', top: -1, right: -1, width: 23, height: 23, background: 'transparent' }}>
+          <Box style={{ position: 'absolute', top: 0, right: 0, width: 23, height: 3, background: '#00FF00' }} />
+          <Box style={{ position: 'absolute', top: 0, right: 0, width: 3, height: 23, background: '#00FF00' }} />
+        </Box>
+        <Box style={{ position: 'absolute', bottom: -1, left: -1, width: 23, height: 23, background: 'transparent' }}>
+          <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 23, height: 3, background: '#00FF00' }} />
+          <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 3, height: 23, background: '#00FF00' }} />
+        </Box>
+        <Box style={{ position: 'absolute', bottom: -1, right: -1, width: 23, height: 23, background: 'transparent' }}>
+          <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 23, height: 3, background: '#00FF00' }} />
+          <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 3, height: 23, background: '#00FF00' }} />
+        </Box>
+        <Text style={{ fontSize: 'kpi', color: '#00FF00', bold: true, letterSpacing: 7, marginBottom: 'md' }}>{/* {{替换：主标题}} */}致谢</Text>
+        <Text style={{ fontSize: 'card', color: '#00FFFF', letterSpacing: 3, fontFamily: 'Courier New' }}>{/* {{替换：致谢语}} */}欢迎交流与指导</Text>
+      </Box>
+    </Box>
+    {/* 浮动指示器（菱形降级为旋转的方形框，用 Shape rotate） */}
+    <Box style={{ position: 'absolute', top: 160, left: 130, width: 45, height: 45, opacity: 0.8 }}>
+      <Shape type="rect" style={{ width: 45, height: 45, line: { color: '#00FFFF', width: 2 }, rotate: 45 }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 180, right: 150, width: 38, height: 38, opacity: 0.8 }}>
+      <Shape type="rect" style={{ width: 38, height: 38, line: { color: '#FF00FF', width: 2 }, rotate: 45 }} />
+    </Box>
+  </Box>
+</Slide>

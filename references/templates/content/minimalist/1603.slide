@@ -1,0 +1,55 @@
+<Slide>
+  {/* minimalist/1603 Z字形：上左文右图 + 中左图右文(3要点) + 底部功能条 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, gap: 'lg' }}>
+      {/* 顶部：左文右图 */}
+      <Box style={{ height: 180, flexDirection: 'row', gap: 'xl' }}>
+        <Box style={{ flex: 1, justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'label', color: 'muted', marginBottom: 'xs' }}>INNOVATION REPORT</Text>
+          <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'md' }}>{/* {{标题}} */}技术创新实践案例</Text>
+          <Box style={{ width: 80, height: 2, background: 'primary', marginBottom: 'md' }} />
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6 }}>{/* {{段落}} */}探索前沿技术在实际业务场景中的应用，通过创新驱动企业数字化转型。</Text>
+        </Box>
+        <Box style={{ width: 280, background: 'primary', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>技术雷达图</Text>
+        </Box>
+      </Box>
+      {/* 中部：左图右文 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+        <Box style={{ width: 520, position: 'relative', borderRadius: 'md', background: 'cardBg' }}>
+          {/* {{图片：实施效果对比，有图填 assets/images/1603_main.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1603_main.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+          <Box style={{ position: 'absolute', top: 16, right: 16, background: 'bg', padding: 'sm md', borderRadius: 'sm', border: '1px solid #E5E7EB', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>ROI提升</Text>
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 'xs' }}>
+              <Text style={{ fontSize: 'kpi', color: 'text', bold: true, lineHeight: 1 }}>3.2</Text>
+              <Text style={{ fontSize: 'body', color: 'muted' }}>倍</Text>
+            </Box>
+          </Box>
+        </Box>
+        <Box style={{ flex: 1, justifyContent: 'center', gap: 'md' }}>
+          {[
+            ['AI赋能业务', '智能算法优化决策流程，效率提升50%以上。'],
+            ['云原生架构', '弹性扩展能力，支撑业务快速增长。'],
+            ['数据中台', '统一数据治理，打破信息孤岛。'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', gap: 'sm', alignItems: 'flex-start' }}>
+              <Box style={{ width: 32, height: 32, borderRadius: 'sm', background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+                <FAIcon name='check' style={{ fill: '#FFFFFF', width: 16, height: 16 }} />
+              </Box>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'xs' }}>{/* {{要点标题}} */}{x[0]}</Text>
+                <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>{/* {{要点说明}} */}{x[1]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 底部功能条 */}
+      <Box style={{ flexDirection: 'row', justifyContent: 'space-between', paddingTop: 'md', border: 'none' }}>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>案例来源：某金融科技企业 | 实施周期：2023年6月-2024年3月</Text>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>*数据已脱敏处理</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

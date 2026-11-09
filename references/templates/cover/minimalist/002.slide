@@ -1,0 +1,13 @@
+<Slide>
+  {/* cover/minimalist/002 几何装饰：浅灰渐变底 + 右上圆环 + 左下大方框 + 左对齐内容(巨号·标题·横线·英文) */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 100%)' }}>
+    <Box style={{ position: 'absolute', top: 96, right: 128, width: 336, height: 336, borderRadius: 168, border: '2px solid #D1D5DB', opacity: 0.6 }} />
+    <Box style={{ position: 'absolute', bottom: 96, left: 128, width: 256, height: 256, border: '2px solid #9CA3AF', opacity: 0.5 }} />
+    <Box style={{ flex: 1, justifyContent: 'center', padding: '0 120px', gap: 'lg' }}>
+      <Text style={{ fontSize: 'hero', color: 'text', lineHeight: 1 }}>{/* {{替换：章节号}} */}01</Text>
+      <Text style={{ fontSize: 60, color: 'text', lineHeight: 1.2, letterSpacing: 1 }}>{/* {{替换：主标题}} */}年度总结报告</Text>
+      <Box style={{ width: 128, height: 3, background: 'text', marginTop: 'sm' }} />
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 2, marginTop: 'sm' }}>{/* {{替换：英文副标题}} */}Annual Summary Report</Text>
+    </Box>
+  </Box>
+</Slide>

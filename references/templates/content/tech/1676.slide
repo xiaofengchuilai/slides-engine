@@ -1,0 +1,87 @@
+<Slide>
+  {/* tech/1676 产品功能亮点：三行特性（文图交替）+ 底部统计 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xxl xl' }}>
+    {/* 顶部科技细线 + 右上装饰圆环 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 4, background: 'linear-gradient(90deg, #06B6D4 0%, #3B82F6 100%)' }} />
+    <Box style={{ position: 'absolute', top: 48, right: 48, width: 160, height: 160, borderRadius: 80, border: '2px solid #3B82F6', opacity: 0.12 }} />
+
+    {/* 标题 */}
+    <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true, marginBottom: 'xl' }}>{/* {{标题}} */}产品功能亮点</Text>
+
+    {/* 三行布局 */}
+    <Box style={{ flex: 1, gap: 'xl' }}>
+      {/* 第一行: 左文右图 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        <Box style={{ flex: 1 }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>1</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{特性标题}} */}一站式数据开发</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{特性描述}} */}集成SQL编辑器、任务调度、版本管理于一体，数据开发全流程可视化，大幅降低开发门槛。</Text>
+        </Box>
+        {/* {{图片：有图填 assets/images/1676a.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/1676a.png" style={{ width: 380, height: 140, objectFit: 'cover' }} />
+      </Box>
+
+      {/* 第二行: 左文右数据 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        <Box style={{ flex: 1 }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: 'secondary', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>2</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{特性标题}} */}智能运维监控</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{特性描述}} */}全方位系统监控，智能告警与自动化运维，故障发现时间缩短80%，运维效率提升3倍。</Text>
+        </Box>
+        <Box style={{ width: 380, gap: 'md' }}>
+          {[
+            ['故障发现时间', '↓80%'],
+            ['运维效率提升', '3x'],
+          ].map((x, i) => (
+            <Box key={i}>
+              <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                <Text style={{ fontSize: 'label', color: 'muted' }}>{x[0]}</Text>
+                <Text style={{ fontSize: 20, color: '#FFFFFF', bold: true }}>{x[1]}</Text>
+              </Box>
+              <Box style={{ height: 1, background: '#334155', marginTop: 'sm' }} />
+            </Box>
+          ))}
+        </Box>
+      </Box>
+
+      {/* 第三行: 左图右文 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        {/* {{图片：有图填 assets/images/1676b.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/1676b.png" style={{ width: 380, height: 140, objectFit: 'cover' }} />
+        <Box style={{ flex: 1 }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>3</Text>
+            </Box>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{特性标题}} */}全链路数据治理</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#CBD5E1', lineHeight: 1.6 }}>{/* {{特性描述}} */}数据标准管理、质量检测、血缘分析一体化，帮助企业建立完善的数据治理体系。</Text>
+        </Box>
+      </Box>
+    </Box>
+
+    {/* 底部统计 */}
+    <Box style={{ height: 2, background: '#334155', marginTop: 'lg' }} />
+    <Box style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 'xl', paddingTop: 'md' }}>
+      {[
+        ['500+', '企业客户'],
+        ['10万+', '日活用户'],
+        ['99.9%', '服务可用性'],
+      ].map((x, i) => [
+        i > 0 && <Box key={'d' + i} style={{ width: 2, height: 48, background: '#334155' }} />,
+        <Box key={i} style={{ alignItems: 'center' }}>
+          <Text style={{ fontSize: 28, color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+          <Text style={{ fontSize: 'label', color: 'muted', marginTop: 'xs' }}>{x[1]}</Text>
+        </Box>,
+      ])}
+    </Box>
+  </Box>
+</Slide>

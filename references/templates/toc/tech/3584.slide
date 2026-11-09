@@ -1,0 +1,64 @@
+<Slide>
+  {/* tech/3584 科技风-数据可视化：深蓝底 + 中列大标题 + 左右环形进度章节 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0a192f 0%, #112240 100%)', padding: 48 }}>
+    <Box style={{ height: 624, flexDirection: 'row' }}>
+      {/* 左侧内容列 */}
+      <Box style={{ flex: 1, justifyContent: 'center', gap: 20 }}>
+        {[
+          ['1', '项目背景', '了解项目的起源与目标'],
+          ['2', '核心功能', '产品的主要功能介绍'],
+        ].map((x, i) => (
+          <Box key={i} style={{ border: '1px solid rgba(100,255,218,0.3)', background: 'linear-gradient(135deg, rgba(100,255,218,0.05) 0%, rgba(0,212,255,0.08) 100%)', padding: 20, position: 'relative' }}>
+            <Box style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 4, background: '#64ffda' }} />
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 20, marginBottom: 16 }}>
+              <Box style={{ width: 56, height: 56, border: '3px solid #64ffda', borderRadius: 28, background: 'rgba(100,255,218,0.1)', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'card', color: '#64ffda', bold: true }}>{/* {{章节编号}} */}{x[0]}</Text>
+              </Box>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'card', color: '#64ffda', bold: true, marginBottom: 4 }}>{/* {{章节名}} */}{x[1]}</Text>
+                <Text style={{ fontSize: 'body', color: '#64ffda' }}>{/* {{章节副标题}} */}{x[2]}</Text>
+              </Box>
+            </Box>
+            <Box style={{ height: 3, background: 'linear-gradient(90deg, #64ffda 0%, rgba(100,255,218,0) 100%)' }} />
+          </Box>
+        ))}
+      </Box>
+      {/* 中间标题区 */}
+      <Box style={{ width: 280, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 'title', color: '#64ffda', bold: true, letterSpacing: 3, textAlign: 'center', lineHeight: 1.3 }}>{/* {{标题}} */}DATA{'\n'}ANALYTICS</Text>
+        <Box style={{ flexDirection: 'row', gap: 2, marginTop: 16 }}>
+          <Box style={{ width: 4, height: 12, background: '#64ffda' }} />
+          <Box style={{ width: 4, height: 18, background: '#64ffda' }} />
+          <Box style={{ width: 4, height: 14, background: '#64ffda' }} />
+        </Box>
+        <Box style={{ width: 2, height: 20, background: '#64ffda' }} />
+        <Box style={{ flexDirection: 'row', gap: 2 }}>
+          <Box style={{ width: 4, height: 16, background: '#22d3ee' }} />
+          <Box style={{ width: 4, height: 20, background: '#22d3ee' }} />
+          <Box style={{ width: 4, height: 15, background: '#22d3ee' }} />
+        </Box>
+      </Box>
+      {/* 右侧内容列 */}
+      <Box style={{ flex: 1, justifyContent: 'center', gap: 20 }}>
+        {[
+          ['3', '技术架构', '系统设计与技术选型'],
+          ['4', '实施计划', '项目的推进与时间安排'],
+        ].map((x, i) => (
+          <Box key={i} style={{ border: '1px solid rgba(100,255,218,0.3)', background: 'linear-gradient(135deg, rgba(100,255,218,0.05) 0%, rgba(0,212,255,0.08) 100%)', padding: 20, position: 'relative' }}>
+            <Box style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 4, background: '#64ffda' }} />
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 20, marginBottom: 16 }}>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'card', color: '#64ffda', bold: true, marginBottom: 4 }}>{/* {{章节名}} */}{x[1]}</Text>
+                <Text style={{ fontSize: 'body', color: '#64ffda' }}>{/* {{章节副标题}} */}{x[2]}</Text>
+              </Box>
+              <Box style={{ width: 56, height: 56, border: '3px solid #64ffda', borderRadius: 28, background: 'rgba(100,255,218,0.1)', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'card', color: '#64ffda', bold: true }}>{/* {{章节编号}} */}{x[0]}</Text>
+              </Box>
+            </Box>
+            <Box style={{ height: 3, background: 'linear-gradient(270deg, #64ffda 0%, rgba(100,255,218,0) 100%)' }} />
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Slide>

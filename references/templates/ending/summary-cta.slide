@@ -1,0 +1,28 @@
+<Slide>
+  {/* ending/summary-cta：结论回望 + 行动号召 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: '70px 90px', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 20, color: 'accent', letterSpacing: 3 }}>SUMMARY</Text>
+    <Text style={{ fontSize: 48, color: 'text', bold: true, lineHeight: 1.2, marginTop: 14 }}>{/* {{替换：核心结论一句}} */}增长，来自聚焦</Text>
+    {/* 回望要点：3-4 条 */}
+    <Box style={{ marginTop: 36, gap: 14 }}>
+      {[
+        '聚焦核心业务，砍掉低效投入',
+        '用数据驱动每一次决策',
+        '以客户价值为唯一标尺',
+      ].map((t, i) => (
+        <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+          <Box style={{ width: 22, height: 22, borderRadius: 11, background: 'accent', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{i + 1}</Text>
+          </Box>
+          <Text style={{ fontSize: 20, color: 'text', lineHeight: 1.5 }}>{/* {{替换：要点}} */}{t}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* CTA */}
+    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 16, marginTop: 48 }}>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{替换：行动号召}} */}下一步：</Text>
+      <Text style={{ fontSize: 'card', color: 'accent', bold: true }}>{/* {{替换：CTA 内容}} */}立即启动试点项目</Text>
+    </Box>
+    <Text style={{ fontSize: 'body', color: 'muted', marginTop: 40 }}>{/* {{替换：落款}} */}张三 · 2026.08</Text>
+  </Box>
+</Slide>

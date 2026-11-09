@@ -1,0 +1,55 @@
+<Slide>
+  {/* flat/1561 用户体验设计原则：左侧渐变竖条 + 标题区 + 2x2 彩色原则卡 + 底部金句/参考卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', flexDirection: 'row' }}>
+    {/* 左侧渐变竖条 */}
+    <Box style={{ width: 8, background: 'linear-gradient(180deg, #3B82F6 0%, #8B5CF6 50%, #EC4899 100%)' }} />
+    <Box style={{ flex: 1, padding: 'xxl xl', gap: 'lg' }}>
+      {/* 标题区 */}
+      <Box style={{ gap: 'sm' }}>
+        <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：标题}} */}用户体验设计原则</Text>
+        <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6 }}>{/* {{替换：导语段1}} */}优秀的用户体验设计始于对用户需求的深刻理解。设计不仅仅是让产品看起来美观，更重要的是让用户能够轻松、高效地完成目标任务。</Text>
+        <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6 }}>{/* {{替换：导语段2}} */}在设计过程中，我们需要始终保持"用户至上"的理念，持续优化产品体验。</Text>
+      </Box>
+      {/* 2x2 原则卡 */}
+      <Box style={{ flexDirection: 'row', gap: 'md', flex: 1 }}>
+        <Box style={{ flex: 1, gap: 'md' }}>
+          {[
+            ['01', '简洁性原则', '去除不必要的元素，降低认知负担', '#3B82F6'],
+            ['02', '一致性原则', '统一的视觉风格和交互模式', '#8B5CF6'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: x[3], borderRadius: 'sm', padding: 'md', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+              <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginTop: 'xs' }}>{x[1]}</Text>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.85, marginTop: 'xs' }}>{x[2]}</Text>
+            </Box>
+          ))}
+        </Box>
+        <Box style={{ flex: 1, gap: 'md' }}>
+          {[
+            ['03', '反馈原则', '及时响应用户操作', '#EC4899'],
+            ['04', '容错性原则', '允许用户犯错并修正', '#6366F1'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: x[3], borderRadius: 'sm', padding: 'md', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+              <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true }}>{x[0]}</Text>
+              <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginTop: 'xs' }}>{x[1]}</Text>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.85, marginTop: 'xs' }}>{x[2]}</Text>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 底部金句 + 参考卡 */}
+      <Box style={{ flexDirection: 'row', gap: 'md' }}>
+        <Box style={{ flex: 1, background: 'primary', borderRadius: 'sm', padding: 'md', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true, lineHeight: 1.6 }}>{/* {{替换：金句}} */}"好的设计是尽可能少的设计。"</Text>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.7, marginTop: 'xs' }}>{/* {{替换：署名}} */}— Dieter Rams</Text>
+        </Box>
+        <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'sm', padding: 'md', border: '1px solid line' }}>
+          <Box style={{ flexDirection: 'row' }}>
+            <Text style={{ fontSize: 'label', color: 'text', bold: true }}>{/* {{替换：参考标题}} */}参考资料：</Text>
+            <Text style={{ fontSize: 'label', color: 'muted', lineHeight: 1.6 }}>{/* {{替换：参考资料}} */}Don Norman《设计心理学》；Material Design设计规范</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

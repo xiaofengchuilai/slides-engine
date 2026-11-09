@@ -1,0 +1,48 @@
+<Slide>
+  {/* minimalist/1602 上图下文：标题 + 左大图(带标注) + 右侧上下双卡 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'lg' }}>
+      <Box style={{ width: 4, height: 44, background: 'primary', borderRadius: 2 }} />
+      <Box>
+        <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{标题}} */}用户增长策略</Text>
+        <Text style={{ fontSize: 'body', color: 'muted' }}>Growth Strategy & User Acquisition</Text>
+      </Box>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'xl', flex: 1 }}>
+      {/* 左大图 7 份 */}
+      <Box style={{ flex: 7, position: 'relative', borderRadius: 'md', background: 'cardBg' }}>
+        {/* {{图片：增长曲线图，有图填 assets/images/1602_main.png，无图删掉整个 <Image>}} */}
+        <Image src="assets/images/1602_main.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+        <Box style={{ position: 'absolute', top: 20, left: 20, background: 'primary', padding: 'sm md', borderRadius: 'sm' }}>
+          <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.8 }}>月活用户</Text>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>500万+</Text>
+        </Box>
+      </Box>
+      {/* 右列 5 份：上下双卡 */}
+      <Box style={{ flex: 5, gap: 'lg' }}>
+        {[
+          { n: 1, bg: 'primary', title: '内容营销', desc: '通过高质量内容吸引目标用户，建立品牌认知度和信任度。', kpi: '35%', kpiLabel: '转化率提升' },
+          { n: 2, bg: 'secondary', title: '裂变增长', desc: '设计病毒式传播机制，激励用户主动分享和推荐。', kpi: '1.8', kpiLabel: 'K因子达到' },
+        ].map((c, i) => (
+          <Box key={i} style={{ flex: 1, background: 'cardBg', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'xl', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+              <Box style={{ width: 32, height: 32, borderRadius: 'sm', background: c.bg, alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{c.n}</Text>
+              </Box>
+              <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{卡片标题}} */}{c.title}</Text>
+            </Box>
+            <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6 }}>{/* {{描述}} */}{c.desc}</Text>
+            <Box style={{ flexDirection: 'row', alignItems: 'baseline', gap: 'xs', marginTop: 'md' }}>
+              <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{指标标签}} */}{c.kpiLabel}</Text>
+              <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{c.kpi}</Text>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 'lg' }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>数据统计周期：2024年1-12月</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>样本量：10,000+ 用户行为数据</Text>
+    </Box>
+  </Box>
+</Slide>

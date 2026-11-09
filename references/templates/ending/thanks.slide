@@ -1,0 +1,14 @@
+<Slide>
+  {/* ending/thanks：金句 + 落款（大留白，克制收束） */}
+  <Box style={{ height: 720, width: 1280, background: 'primary', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 装饰：左右对称圆点 */}
+    <Box style={{ width: 16, height: 16, borderRadius: 8, background: 'accent', position: 'absolute', top: 120, left: 140 }} />
+    <Box style={{ width: 16, height: 16, borderRadius: 8, background: 'accent', position: 'absolute', bottom: 120, right: 140 }} />
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 56, color: '#FFFFFF', bold: true, lineHeight: 1.2, textAlign: 'center' }}>{/* {{替换：收束金句}} */}谢谢</Text>
+      <Text style={{ fontSize: 'card', color: '#FFFFFF', lineHeight: 1.6, marginTop: 24, textAlign: 'center', opacity: 0.85 }}>{/* {{替换：一句话回望/祝福}} */}让每一次汇报，都成为共识的起点</Text>
+      <Box style={{ width: 48, height: 3, background: 'accent', marginTop: 40 }} />
+      <Text style={{ fontSize: 'body', color: '#FFFFFF', marginTop: 32, opacity: 0.7 }}>{/* {{替换：落款/联系方式}} */}张三 · zhangsan@example.com</Text>
+    </Box>
+  </Box>
+</Slide>

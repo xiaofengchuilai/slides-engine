@@ -1,0 +1,17 @@
+<Slide>
+  {/* transition/black-gold/558 黑金风-奢华对称：黑灰渐变底 + 左右金线 + 金边内容块 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(90deg, #111827 0%, #000000 50%, #111827 100%)', padding: 48, position: 'relative' }}>
+    {/* 左右对称金线 */}
+    <Box style={{ position: 'absolute', top: 360, left: 16, width: 128, height: 2, background: 'linear-gradient(90deg, rgba(201,162,39,0) 0%, #C9A227 100%)' }} />
+    <Box style={{ position: 'absolute', top: 360, right: 16, width: 128, height: 2, background: 'linear-gradient(270deg, rgba(201,162,39,0) 0%, #C9A227 100%)' }} />
+    <Box style={{ position: 'absolute', top: 352, left: 8, width: 16, height: 16, borderRadius: 8, background: '#C9A227' }} />
+    <Box style={{ position: 'absolute', top: 352, right: 8, width: 16, height: 16, borderRadius: 8, background: '#C9A227' }} />
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ background: 'linear-gradient(135deg, #111827 0%, #000000 100%)', border: '4px solid #C9A227', padding: 48, paddingLeft: 96, paddingRight: 96, alignItems: 'center' }}>
+        <Text style={{ fontSize: 'title', color: '#C9A227', bold: true, marginBottom: 24 }}>{/* {{替换：章序号}} */}第一章</Text>
+        <Text style={{ fontSize: 'title', color: '#EAB308', bold: true, marginBottom: 16 }}>{/* {{替换：章节名}} */}项目背景</Text>
+        <Text style={{ fontSize: 'body', color: '#FDE68A' }}>{/* {{替换：一句章节导语}} */}了解项目的起源与目标</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

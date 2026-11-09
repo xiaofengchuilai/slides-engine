@@ -1,0 +1,73 @@
+<Slide>
+  {/* minimalist/1616 性能优化实践：左侧编号竖条 + 右上大横图 + 右下三数据卡（L型） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 标题 */}
+    <Box style={{ marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'xs' }}>{/* {{标题}} */}性能优化实践</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+        <Box style={{ width: 80, height: 2, background: 'primary' }} />
+        <Text style={{ fontSize: 'label', color: 'muted' }}>Performance Optimization Practice</Text>
+      </Box>
+    </Box>
+
+    {/* L型主体 */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1 }}>
+      {/* 左竖条：三项优化 */}
+      <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'lg', border: '1px solid #E5E7EB', justifyContent: 'space-between', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+        <Box style={{ gap: 'lg' }}>
+          {[
+            ['代码层优化', '算法优化、代码重构、异步处理，减少计算复杂度。', 'primary'],
+            ['缓存策略', '多级缓存架构，降低数据库压力，提升响应速度。', 'secondary'],
+            ['资源压缩', '图片、CSS、JS压缩，减少网络传输时间。', 'muted'],
+          ].map((x, i) => (
+            <Box key={i}>
+              <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xs' }}>
+                <Box style={{ width: 32, height: 32, borderRadius: 'sm', background: x[2], alignItems: 'center', justifyContent: 'center' }}>
+                  <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{i + 1}</Text>
+                </Box>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{x[0]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>{x[1]}</Text>
+            </Box>
+          ))}
+        </Box>
+        <Text style={{ fontSize: 'label', color: 'muted' }}>*优化效果基于100次压测数据统计</Text>
+      </Box>
+
+      {/* 右列：大横图 + 三数据卡 */}
+      <Box style={{ flex: 1.6, gap: 'md' }}>
+        <Box style={{ flex: 1.4, background: 'cardBg', borderRadius: 'md', padding: 'md', alignItems: 'center', justifyContent: 'center', position: 'relative', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/monitor.png" style={{ width: 480, height: 220, objectFit: 'cover' }} />
+          <Box style={{ position: 'absolute', top: 16, left: 16, background: '#FFFFFF', padding: 'sm md', borderRadius: 'sm' }}>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>响应时间</Text>
+            <Text style={{ fontSize: 'kpi', color: 'text', bold: true }}>120ms</Text>
+            <Text style={{ fontSize: 'label', color: 'success' }}>↓ 优化前：850ms</Text>
+          </Box>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 'md', flex: 1 }}>
+          {[
+            ['85%', '性能提升', 'primary'],
+            ['60%', '流量节省', 'secondary'],
+            ['A+', '性能评分', 'muted'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', border: '1px solid #E5E7EB', alignItems: 'center', justifyContent: 'center', flexDirection: 'row', gap: 'sm', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+              <Box style={{ width: 4, height: 40, background: x[2], borderRadius: 2 }} />
+              <Box style={{ alignItems: 'center' }}>
+                <Text style={{ fontSize: 'kpi', color: 'text', bold: true }}>{x[0]}</Text>
+                <Text style={{ fontSize: 'label', color: 'muted' }}>{x[1]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
+
+    {/* 底部条 */}
+    <Box style={{ height: 2, background: '#E5E7EB', marginTop: 'md', marginBottom: 'sm' }} />
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>测试工具：Lighthouse + WebPageTest + GTmetrix</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>测试环境：生产环境 | 测试时间：2024年12月</Text>
+    </Box>
+  </Box>
+</Slide>

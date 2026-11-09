@@ -1,0 +1,31 @@
+<Slide>
+  {/* literary/1558 人生如戏：深色底 + 金色标题 + 底部三栏 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #1E293B 0%, #334155 50%, #1E293B 100%)', padding: 'xxl xl', alignItems: 'center' }}>
+    {/* 顶部装饰 */}
+    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'lg', marginBottom: 'xl' }}>
+      <Box style={{ width: 80, height: 2, background: 'linear-gradient(90deg, rgba(251,191,36,0) 0%, rgba(251,191,36,0.6) 100%)' }} />
+      <Text style={{ fontSize: 'card', color: 'rgba(251,191,36,0.8)' }}>◇</Text>
+      <Box style={{ width: 80, height: 2, background: 'linear-gradient(270deg, rgba(251,191,36,0) 0%, rgba(251,191,36,0.6) 100%)' }} />
+    </Box>
+    <Text style={{ fontSize: 'title', color: '#FFFBEB', fontFamily: 'serif', letterSpacing: 6, marginBottom: 'xs' }}>{/* {{替换：主标题}} */}人生如戏</Text>
+    <Text style={{ fontSize: 'label', color: 'rgba(251,191,36,0.6)', letterSpacing: 3, marginBottom: 'xl' }}>{/* {{替换：副标题}} */}LIFE IS A STAGE</Text>
+    {/* 中心内容框 */}
+    <Box style={{ padding: 'xl xxl', marginBottom: 'xl' }}>
+      <Text style={{ fontSize: 'kpi', color: 'rgba(255,251,235,0.9)', fontFamily: 'serif', textAlign: 'center', lineHeight: 1.5, letterSpacing: 1 }}>{/* {{替换：中心语句}} */}在舞台的方寸之间<br />演绎人生百态</Text>
+    </Box>
+    {/* 底部三栏 */}
+    <Box style={{ flexDirection: 'row', gap: 'xxl', marginBottom: 'xl' }}>
+      {[
+        ['壹', '悲欢离合'],
+        ['贰', '喜怒哀乐'],
+        ['叁', '酸甜苦辣'],
+      ].map((x, i) => (
+        <Box key={i} style={{ alignItems: 'center' }}>
+          <Text style={{ fontSize: 'kpi', color: 'rgba(251,191,36,0.2)', fontFamily: 'serif', marginBottom: 'xs' }}>{/* {{替换：序数}} */}{x[0]}</Text>
+          <Text style={{ fontSize: 'card', color: 'rgba(254,243,199,0.8)', letterSpacing: 1 }}>{/* {{替换：人生百态}} */}{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Text style={{ fontSize: 'label', color: 'rgba(251,191,36,0.5)', letterSpacing: 6 }}>{/* {{替换：幕次}} */}第一幕 · ACT I</Text>
+  </Box>
+</Slide>

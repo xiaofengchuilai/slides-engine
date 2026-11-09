@@ -1,0 +1,85 @@
+<Slide>
+  {/* minimalist/1617 全渠道营销矩阵：2x2 网格 + 中心圆（360°全渠道整合） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 标题行 */}
+    <Box style={{ alignItems: 'center', marginBottom: 'lg' }}>
+      <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'xs' }}>{/* {{标题}} */}全渠道营销矩阵</Text>
+      <Box style={{ width: 96, height: 2, background: 'primary', marginBottom: 'xs' }} />
+      <Text style={{ fontSize: 'label', color: 'muted' }}>Omni-Channel Marketing Matrix</Text>
+    </Box>
+
+    {/* 主内容：2x2 + 中心圆 */}
+    <Box style={{ flex: 1, position: 'relative' }}>
+      <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1 }}>
+        <Box style={{ flex: 1, gap: 'lg' }}>
+          {/* 左上：数字化渠道 */}
+          <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', border: '1px solid #E5E7EB', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'md', marginBottom: 'sm' }}>
+              <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: 'primary', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>线上</Text>
+              </Box>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'xs' }}>数字化渠道</Text>
+                <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>社交媒体、搜索引擎、内容平台、电商平台等线上触点。</Text>
+              </Box>
+            </Box>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>触达人群：800万+</Text>
+          </Box>
+          {/* 左下：数据驱动 */}
+          <Box style={{ flex: 1, background: 'primary', borderRadius: 'md', padding: 'md', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'md', marginBottom: 'sm' }}>
+              <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: '#FFFFFF', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'label', color: 'primary', bold: true }}>数据</Text>
+              </Box>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'xs' }}>数据驱动</Text>
+                <Text style={{ fontSize: 'body', color: '#FFFFFF', opacity: 0.8, lineHeight: 1.5 }}>统一用户ID，跨渠道行为追踪，精准个性化推荐。</Text>
+              </Box>
+            </Box>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.8 }}>数据采集点：120+</Text>
+          </Box>
+        </Box>
+
+        {/* 中心圆 */}
+        <Box style={{ width: 200, height: 200, borderRadius: 100, background: 'cardBg', border: '4px solid #FFFFFF', alignSelf: 'center', alignItems: 'center', justifyContent: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>全渠道整合</Text>
+          <Text style={{ fontSize: 'kpi', color: 'text', bold: true }}>360°</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>用户触达</Text>
+        </Box>
+
+        <Box style={{ flex: 1, gap: 'lg' }}>
+          {/* 右上：实体渠道 */}
+          <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', border: '1px solid #E5E7EB', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'md', marginBottom: 'sm' }}>
+              <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: 'secondary', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>线下</Text>
+              </Box>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'xs' }}>实体渠道</Text>
+                <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>门店、活动、展会、路演等线下营销场景。</Text>
+              </Box>
+            </Box>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>覆盖城市：50+</Text>
+          </Box>
+          {/* 右下：转化优化 */}
+          <Box style={{ flex: 1, background: 'cardBg', borderRadius: 'md', padding: 'md', border: '1px solid #E5E7EB', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'md', marginBottom: 'sm' }}>
+              <Box style={{ width: 40, height: 40, borderRadius: 'sm', background: 'muted', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>效果</Text>
+              </Box>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true, marginBottom: 'xs' }}>转化优化</Text>
+                <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>A/B测试、归因分析、ROI优化，持续提升转化率。</Text>
+              </Box>
+            </Box>
+            <Text style={{ fontSize: 'label', color: 'muted' }}>平均ROI：1:4.2</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+
+    {/* 底部条 */}
+    <Box style={{ height: 2, background: '#E5E7EB', marginTop: 'md', marginBottom: 'sm' }} />
+    <Text style={{ fontSize: 'label', color: 'muted', textAlign: 'center' }}>营销技术栈：CDP + MA + CRM | 数据来源：2024年全年营销数据 | 最后更新：2024年12月</Text>
+  </Box>
+</Slide>

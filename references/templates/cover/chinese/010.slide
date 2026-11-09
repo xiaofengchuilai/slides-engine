@@ -1,0 +1,18 @@
+<Slide>
+  {/* chinese/010 水墨晕染：浅米渐变底 + 对角浅灰圆 + 小标签 + 大标题 + 副题 + 年份圆框 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F8F6F2 0%, #F0F2F4 55%, #F3F1EC 100%)', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 水墨晕染装饰（右上/左下浅灰圆） */}
+    <Box style={{ position: 'absolute', top: 0, right: 0, width: 384, height: 384, borderRadius: 192, background: '#1F2937', opacity: 0.05 }} />
+    <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 320, height: 320, borderRadius: 160, background: '#1F2937', opacity: 0.05 }} />
+    {/* 主内容区 */}
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 'body', color: '#6B7280', letterSpacing: 6, marginBottom: 'md' }}>· 中华文化 ·</Text>
+      <Text style={{ fontSize: 'hero', color: '#111827', bold: true, letterSpacing: 4, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}山水</Text>
+      <Text style={{ fontSize: 'card', color: '#374151', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}人文之美</Text>
+      {/* 年份圆框 */}
+      <Box style={{ borderRadius: 999, border: '2px solid #111827', padding: 'sm xl' }}>
+        <Text style={{ fontSize: 'body', color: '#111827', letterSpacing: 4 }}>{/* {{替换：年份}} */}二零二五年</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,20 @@
+<Slide>
+  {/* ending/flat 1079 彩色方块结尾：灰底 + 四角彩色大方块 + 小方块点缀 + 居中致谢 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'cardBg' }}>
+    {/* 彩色大方块装饰 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 190, height: 190, background: '#F87171', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 90, left: 64, width: 140, height: 140, background: '#2DD4BF', opacity: 0.7 }} />
+    <Box style={{ position: 'absolute', top: 45, right: 0, width: 210, height: 210, background: '#FDE047', opacity: 0.6 }} />
+    <Box style={{ position: 'absolute', bottom: 0, right: 90, width: 240, height: 240, background: '#86EFAC', opacity: 0.7 }} />
+    <Box style={{ position: 'absolute', bottom: 64, left: 0, width: 170, height: 170, background: '#F9A8D4', opacity: 0.65 }} />
+    {/* 小方块点缀 */}
+    <Box style={{ position: 'absolute', top: 180, left: 256, width: 40, height: 40, background: '#5EEAD4', opacity: 0.8 }} />
+    <Box style={{ position: 'absolute', top: 432, right: 282, width: 50, height: 50, background: '#FCA5A5', opacity: 0.75 }} />
+    <Box style={{ position: 'absolute', bottom: 216, left: 384, width: 35, height: 35, background: '#FEF08A', opacity: 0.7 }} />
+    {/* 内容区域 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 56, color: 'text', bold: true, marginBottom: 'lg' }}>{/* {{主标题}} */}谢谢观看</Text>
+      <Text style={{ fontSize: 'card', color: 'text', textAlign: 'center' }}>{/* {{副标题}} */}感谢您的聆听</Text>
+    </Box>
+  </Box>
+</Slide>

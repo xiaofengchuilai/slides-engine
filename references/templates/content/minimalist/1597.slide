@@ -1,0 +1,60 @@
+<Slide>
+  {/* minimalist/1597 标题栏 + 左文右图：四条编号要点 + 配图(带标注) + 底部应用案例 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 左上装饰 */}
+    <Box style={{ position: 'absolute', left: 48, top: 48, width: 32, height: 32 }}>
+      <Box style={{ position: 'absolute', left: 0, top: 0, width: 32, height: 4, background: 'muted' }} />
+      <Box style={{ position: 'absolute', left: 0, top: 0, width: 4, height: 32, background: 'muted' }} />
+    </Box>
+
+    <Box style={{ flex: 1, gap: 'lg' }}>
+      {/* 顶部标题栏 */}
+      <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+        <Box style={{ gap: 'xs' }}>
+          <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{标题}} */}团队协作模式</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{副标题}} */}Effective Team Collaboration</Text>
+        </Box>
+        <Box style={{ alignItems: 'flex-end' }}>
+          <Text style={{ fontSize: 'kpi', color: 'primary', bold: true, lineHeight: 1 }}>{/* {{大数}} */}4</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{大数说明}} */}核心要素</Text>
+        </Box>
+      </Box>
+      <Box style={{ width: '100%', height: 4, background: 'primary' }} />
+
+      {/* 主内容：左文右图 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+        {/* 左侧文字 */}
+        <Box style={{ flex: 1, gap: 'md', justifyContent: 'center' }}>
+          {[
+            ['01', '透明沟通', '建立开放的沟通渠道，确保信息及时、准确地在团队间流转。'],
+            ['02', '明确分工', '清晰界定每个成员的职责和权限，避免责任模糊。'],
+            ['03', '工具赋能', '利用先进的协作工具提升效率，减少重复劳动。'],
+            ['04', '持续反馈', '建立定期的反馈机制，及时调整优化协作方式。'],
+          ].map((x, i) => (
+            <Box key={i} style={{ flexDirection: 'row', gap: 'md', alignItems: 'flex-start' }}>
+              <Box style={{ width: 48, height: 48, borderRadius: 24, border: '4px solid primary', alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{序号}} */}{x[0]}</Text>
+              </Box>
+              <Box style={{ flex: 1 }}>
+                <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{要点标题}} */}{x[1]}</Text>
+                <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.5 }}>{/* {{要点说明}} */}{x[2]}</Text>
+              </Box>
+            </Box>
+          ))}
+        </Box>
+
+        {/* 右侧图片 */}
+        <Box style={{ width: 480, alignItems: 'center', justifyContent: 'center', borderRadius: 'md' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1597.png" style={{ width: 480, height: 440, objectFit: 'contain' }} />
+        </Box>
+      </Box>
+
+      {/* 底部应用案例 */}
+      <Box style={{ background: 'cardBg', padding: 'md', borderRadius: 'sm', flexDirection: 'row', alignItems: 'flex-start', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+        <Text style={{ fontSize: 'label', color: 'text', bold: true }}>应用案例：</Text>
+        <Text style={{ fontSize: 'label', color: 'muted', lineHeight: 1.6, flex: 1 }}>{/* {{案例}} */}某互联网公司采用此模式后，项目交付周期缩短30%，团队满意度提升45%（数据来源：内部调研，2024年Q3）</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,32 @@
+<Slide>
+  {/* ending/tech/1018 科技风-全息界面：纯黑底 + 扫描线 + 渐变描边标题框 + 三段联系方式 */}
+  <Box style={{ width: 1280, height: 720, background: '#000000', alignItems: 'center', justifyContent: 'center' }}>
+    {/* 扫描线装饰（hex 渐变细条） */}
+    <Box style={{ position: 'absolute', top: 240, left: 0, width: 1280, height: 1, background: 'linear-gradient(90deg, #0F172A 0%, #22D3EE 50%, #0F172A 100%)', opacity: 0.7 }} />
+    <Box style={{ position: 'absolute', top: 480, left: 0, width: 1280, height: 1, background: 'linear-gradient(90deg, #0F172A 0%, #A78BFA 50%, #0F172A 100%)', opacity: 0.7 }} />
+    {/* 主标题框 */}
+    <Box style={{ alignItems: 'center', gap: 'sm' }}>
+      <Box style={{ border: '4px solid #06B6D4', padding: 'xl xxl', background: '#000000', borderRadius: 'sm', alignItems: 'center' }}>
+        <Text style={{ fontSize: 'kpi', color: '#22D3EE', bold: true, letterSpacing: 3, textAlign: 'center' }}>{/* {{替换：主标题}} */}SYSTEM.END()</Text>
+        <Text style={{ fontSize: 'card', color: '#22D3EE', fontFamily: 'Courier New', textAlign: 'center' }}>{/* {{替换：致谢语}} */}谢谢观看</Text>
+      </Box>
+      {/* 联系方式三段（竖分隔线用 hex 渐变细条） */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xl', marginTop: 'xl' }}>
+        <Box style={{ width: 300, alignItems: 'center' }}>
+          <Text style={{ fontSize: 'label', color: '#22D3EE', fontFamily: 'Courier New', marginBottom: 'xs' }}>{/* {{替换：标签}} */}[ EMAIL ]</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：联系内容}} */}contact@tech.io</Text>
+        </Box>
+        <Box style={{ width: 1, height: 40, background: 'linear-gradient(180deg, #06B6D4 0%, #3B82F6 50%, #A78BFA 100%)' }} />
+        <Box style={{ width: 300, alignItems: 'center' }}>
+          <Text style={{ fontSize: 'label', color: '#60A5FA', fontFamily: 'Courier New', marginBottom: 'xs' }}>{/* {{替换：标签}} */}[ PHONE ]</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：联系内容}} */}400-888-9999</Text>
+        </Box>
+        <Box style={{ width: 1, height: 40, background: 'linear-gradient(180deg, #06B6D4 0%, #3B82F6 50%, #A78BFA 100%)' }} />
+        <Box style={{ width: 300, alignItems: 'center' }}>
+          <Text style={{ fontSize: 'label', color: '#A78BFA', fontFamily: 'Courier New', marginBottom: 'xs' }}>{/* {{替换：标签}} */}[ WEB ]</Text>
+          <Text style={{ fontSize: 'body', color: '#FFFFFF' }}>{/* {{替换：联系内容}} */}www.tech.io</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

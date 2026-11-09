@@ -1,0 +1,42 @@
+<Slide>
+  {/* educational/1662 趣味英语·动物单词：标题 + 8动物卡 + 动物歌谣 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+        <Text style={{ fontSize: 'title', color: '#1F2937', bold: true }}>{/* {{替换：标题}} */}Animals</Text>
+        <Emoji name="🐾" style={{ width: 30, height: 30 }} />
+      </Box>
+      <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：副标题}} */}动物单词大集合</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'md', flexWrap: 'wrap' }}>
+      {[
+        ['dog', '狗', '🐶'],
+        ['cat', '猫', '🐱'],
+        ['rabbit', '兔子', '🐰'],
+        ['bird', '鸟', '🐦'],
+        ['fish', '鱼', '🐟'],
+        ['elephant', '大象', '🐘'],
+        ['monkey', '猴子', '🐒'],
+        ['lion', '狮子', '🦁'],
+      ].map((x, i) => (
+        <Box key={i} style={{ width: '23%', background: '#FFFFFF', border: '1px solid #F1F5F9', borderRadius: 'md', padding: 'lg', alignItems: 'center', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          <Emoji name={x[2]} style={{ width: 32, height: 32, marginBottom: 'sm' }} />
+          <Text style={{ fontSize: 'card', color: '#374151', bold: true }}>{/* {{替换：单词}} */}{x[0]}</Text>
+          <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：释义}} */}{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flex: 1, background: 'linear-gradient(90deg, #334155 0%, #1E293B 100%)', borderRadius: 'md', padding: 'lg' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'md' }}>
+        <Emoji name="🎵" style={{ width: 20, height: 20 }} />
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{替换：标题}} */}Animal Song</Text>
+      </Box>
+      <Box style={{ gap: 'xs' }}>
+        <Text style={{ fontSize: 'body', color: '#E2E8F0' }}>Dog, dog, woof woof woof!</Text>
+        <Text style={{ fontSize: 'body', color: '#E2E8F0' }}>Cat, cat, meow meow meow!</Text>
+        <Text style={{ fontSize: 'body', color: '#E2E8F0' }}>Bird, bird, tweet tweet tweet!</Text>
+        <Text style={{ fontSize: 'body', color: '#E2E8F0' }}>Let's learn animals, so sweet!</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

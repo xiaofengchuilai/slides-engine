@@ -1,0 +1,17 @@
+<Slide>
+  {/* cover/minimalist/095 细线框架：浅灰底 + 双重细线边框 + 居中标题 + 短线组 */}
+  <Box style={{ height: 720, width: 1280, background: 'cardBg', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ position: 'absolute', top: 56, left: 56, width: 1168, height: 608, border: '1px solid #D1D5DB' }} />
+    <Box style={{ position: 'absolute', top: 80, left: 80, width: 1120, height: 560, border: '1px solid #E5E7EB' }} />
+    <Box style={{ alignItems: 'center', gap: 'xl' }}>
+      <Text style={{ fontSize: 'hero', color: 'text', lineHeight: 1.15, letterSpacing: 2 }}>{/* {{替换：主标题}} */}品牌视觉规范</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 3 }}>{/* {{替换：副标题}} */}统一形象·强化认知</Text>
+      <Box style={{ flexDirection: 'row', gap: 'sm', alignItems: 'center', marginTop: 'sm' }}>
+        <Box style={{ width: 40, height: 1, background: 'muted' }} />
+        <Box style={{ width: 20, height: 1, background: 'muted' }} />
+        <Box style={{ width: 40, height: 1, background: 'muted' }} />
+      </Box>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginTop: 'md' }}>{/* {{替换：部门/主题}} */}品牌设计部 | 视觉手册发布</Text>
+    </Box>
+  </Box>
+</Slide>

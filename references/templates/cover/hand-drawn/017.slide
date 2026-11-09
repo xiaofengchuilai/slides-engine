@@ -1,0 +1,19 @@
+<Slide>
+  {/* hand-drawn/017 便签拼贴：粉/蓝便签错位 + 黄主卡 + 红胶带条 */}
+  {/* 背景（橙→黄渐变） */}
+  <Box style={{ width: 1280, height: 720, position: 'absolute', top: 0, left: 0, background: 'linear-gradient(135deg, #FFF7ED 0%, #FEFCE8 100%)', justifyContent: 'center', alignItems: 'center' }} />
+  {/* 粉色便签（左上错位） */}
+  <RoughBox shape="rect" style={{ width: 256, height: 256, stroke: '#F9A8D4', strokeWidth: 2, roughness: 1.5, fill: '#FBCFE8', fillStyle: 'solid', position: 'absolute', left: 300, top: 150 }} />
+  {/* 蓝色便签（右下错位） */}
+  <RoughBox shape="rect" style={{ width: 256, height: 256, stroke: '#93C5FD', strokeWidth: 2, roughness: 1.5, fill: '#BFDBFE', fillStyle: 'solid', position: 'absolute', left: 724, top: 314 }} />
+  {/* 黄色主卡 */}
+  <RoughBox shape="rect" style={{ width: 640, height: 400, stroke: '#FDBA74', strokeWidth: 3, roughness: 2, fill: '#FEF3C7', fillStyle: 'solid', position: 'absolute', left: 320, top: 160 }} />
+  {/* 顶部胶带条 */}
+  <Box style={{ position: 'absolute', top: 130, left: 600, width: 80, height: 40, background: '#F87171', opacity: 0.5, rotate: -6 }} />
+  {/* 主内容区 */}
+  <Box style={{ position: 'absolute', top: 160, left: 320, width: 640, height: 400, justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+    <Emoji name="💡" style={{ width: 64, height: 64, marginBottom: 'md' }} />
+    <Text style={{ fontSize: 'hero', color: '#111827', bold: true, fontFamily: 'hand', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}我的想法</Text>
+    <Text style={{ fontSize: 'card', color: '#374151', fontFamily: 'hand', textAlign: 'center', marginTop: 'lg' }}>{/* {{副标题}} */}Ideas &amp; Inspiration</Text>
+  </Box>
+</Slide>

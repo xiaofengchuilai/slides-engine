@@ -1,0 +1,32 @@
+<Slide>
+  {/* chinese/1630 纯文字·诗意三段：大标题 + 诗意描述(三要点) + 细线 */}
+  <Box style={{ height: 720, width: 1280, background: '#FAF9F6', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center', gap: 'xl' }}>
+      {/* 第一段：大标题 */}
+      <Text style={{ fontSize: 'title', color: '#7A1F1F', bold: true, letterSpacing: 6, fontFamily: 'serif' }}>{/* {{替换：大标题}} */}龙文化</Text>
+      {/* 第二段：诗意描述 */}
+      <Box style={{ alignItems: 'center', gap: 'xl' }}>
+        <Text style={{ fontSize: 'kpi', color: '#4A4A4A', fontFamily: 'serif', lineHeight: 1.4 }}>{/* {{替换：诗句}} */}龙，中华民族的图腾</Text>
+        <Box style={{ flexDirection: 'row', gap: 'xl', alignItems: 'center' }}>
+          {['吉祥象征', '权力威严', '民族精神'].map((x, i) => (
+            <Box key={i} style={{ alignItems: 'center', gap: 'sm' }}>
+              <Text style={{ fontSize: 'title', color: '#7A1F1F', lineHeight: 1 }}>·</Text>
+              <Text style={{ fontSize: 'body', color: '#4A4A4A' }}>{/* {{替换：x}} */}{x}</Text>
+            </Box>
+          ))}
+        </Box>
+        <Text style={{ fontSize: 'card', color: '#6B7280', fontFamily: 'serif', letterSpacing: 2 }}>“龙的传人，华夏儿女”</Text>
+      </Box>
+      {/* 第三段：细线装饰 */}
+      <Box style={{ width: 176, height: 1, background: '#7A1F1F', opacity: 0.3 }} />
+    </Box>
+  </Box>
+  {/* 印章装饰（降级为简约色块+细线） */}
+  <Box style={{ position: 'absolute', top: 64, right: 64, width: 56, height: 56, border: '1px solid #7A1F1F', alignItems: 'center', justifyContent: 'center', opacity: 0.4 }}>
+    <Text style={{ fontSize: 'body', color: '#7A1F1F', fontFamily: 'serif' }}>龍</Text>
+  </Box>
+  {/* 底部功能文字 */}
+  <Box style={{ position: 'absolute', bottom: 24, left: 0, right: 0, alignItems: 'center' }}>
+    <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>中国民间信仰与文化符号研究</Text>
+  </Box>
+</Slide>

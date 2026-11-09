@@ -1,0 +1,18 @@
+<Slide>
+  {/* cover/minimalist/091 点线装饰：浅灰底 + 左下点线 + 右上竖点线 + 居中标题 */}
+  <Box style={{ height: 720, width: 1280, background: 'cardBg', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ position: 'absolute', bottom: 216, left: 192, flexDirection: 'row', gap: 'sm', alignItems: 'center' }}>
+      <Box style={{ width: 8, height: 8, borderRadius: 4, background: 'text' }} />
+      <Box style={{ width: 96, height: 1, background: 'text' }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 180, right: 256, alignItems: 'center', gap: 'sm' }}>
+      <Box style={{ width: 6, height: 6, borderRadius: 3, background: 'muted' }} />
+      <Box style={{ width: 1, height: 80, background: 'muted' }} />
+    </Box>
+    <Box style={{ alignItems: 'center', gap: 'xl' }}>
+      <Text style={{ fontSize: 'hero', color: 'text', lineHeight: 1.15, letterSpacing: 1 }}>{/* {{替换：主标题}} */}流程标准化</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', letterSpacing: 3 }}>{/* {{替换：副标题}} */}规范操作·提升效能</Text>
+      <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 2, marginTop: 'md' }}>{/* {{替换：部门/主题}} */}运营管理部 | 流程优化方案</Text>
+    </Box>
+  </Box>
+</Slide>

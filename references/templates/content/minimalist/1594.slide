@@ -1,0 +1,54 @@
+<Slide>
+  {/* minimalist/1594 标题 + 左三段编号内容 + 右配图(带数据标签) + 底部来源 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    {/* 右上角对角装饰 */}
+    <Box style={{ position: 'absolute', top: 0, right: 0, width: 160, height: 160 }}>
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 160, height: 4, background: '#E5E7EB' }} />
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 4, height: 160, background: '#E5E7EB' }} />
+    </Box>
+
+    <Box style={{ flex: 1, gap: 'xl' }}>
+      {/* 标题区 */}
+      <Box style={{ gap: 'sm' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm' }}>
+          <Box style={{ width: 48, height: 2, background: 'primary' }} />
+          <Text style={{ fontSize: 'label', color: 'muted', letterSpacing: 1 }}>{/* {{眉题}} */}KEY INSIGHTS</Text>
+        </Box>
+        <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{标题}} */}市场趋势与机遇</Text>
+      </Box>
+
+      {/* 主内容左右布局 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+        {/* 左侧三段编号内容 */}
+        <Box style={{ flex: 1, gap: 'lg', justifyContent: 'center' }}>
+          {[
+            ['01', '市场规模扩大', '预计到2025年，全球市场规模将突破5000亿美元，年均复合增长率达到25%。'],
+            ['02', '技术突破', '人工智能、物联网等新技术的融合应用将带来新的商业场景和价值创造空间。'],
+            ['03', '政策支持', '各国政府纷纷出台扶持政策，为行业发展提供良好的外部环境。'],
+          ].map((x, i) => (
+            <Box key={i} style={{ gap: 'sm' }}>
+              <Box style={{ flexDirection: 'row', alignItems: 'baseline', gap: 'md' }}>
+                <Text style={{ fontSize: 'kpi', color: 'muted' }}>{/* {{序号}} */}{x[0]}</Text>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true }}>{/* {{小标题}} */}{x[1]}</Text>
+              </Box>
+              <Text style={{ fontSize: 'body', color: 'muted', lineHeight: 1.6, marginLeft: 'xxl' }}>{/* {{正文}} */}{x[2]}</Text>
+            </Box>
+          ))}
+        </Box>
+
+        {/* 右侧配图 */}
+        <Box style={{ width: 420, alignItems: 'center', justifyContent: 'center', borderRadius: 'md' }}>
+          {/* {{图片：有图填 assets/images/xxx.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1594.png" style={{ width: 420, height: 460, objectFit: 'contain' }} />
+        </Box>
+      </Box>
+
+      {/* 底部来源 */}
+      <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 'md' }}>
+        <Box style={{ height: 2, background: '#E5E7EB', flex: 1, marginRight: 'md' }} />
+        <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{来源}} */}数据来源：Gartner Market Forecast Report 2024</Text>
+        <Text style={{ fontSize: 'label', color: 'muted', marginLeft: 'lg' }}>{/* {{更新时间}} */}最后更新：2024年Q4</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,14 @@
+<Slide>
+  {/* cover/literary/023 文艺风-复古报纸：米黄底 + 双线报头 + 主标题 + 分隔线 + 副标题 */}
+  <Box style={{ width: 1280, height: 720, background: '#FEF9C3', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ justifyContent: 'center', alignItems: 'center', maxWidth: 900, padding: 'xl' }}>
+      {/* 报头双线（上下边框用 Box 细线替代） */}
+      <Box style={{ width: 640, border: '3px double #1F2937', padding: 'md', marginBottom: 'xl', justifyContent: 'center', alignItems: 'center' }}>
+        <Text style={{ fontSize: 'label', color: '#4B5563', letterSpacing: 4 }}>{/* {{替换：期号}} */}Vol. 2025 · No. 01</Text>
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#111827', fontFamily: 'serif', bold: true, letterSpacing: 1, textAlign: 'center', lineHeight: 1.2, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}The Literary Chronicle</Text>
+      <Box style={{ width: 192, height: 1, background: '#9CA3AF', marginBottom: 'lg' }} />
+      <Text style={{ fontSize: 'card', color: '#374151', fontFamily: 'serif', textAlign: 'center' }}>{/* {{替换：副标题}} */}文学编年史</Text>
+    </Box>
+  </Box>
+</Slide>

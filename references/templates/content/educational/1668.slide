@@ -1,0 +1,77 @@
+<Slide>
+  {/* educational/1668 看图写话·场景描述：标题 + 左图画场景(可选图) + 右观察四步法 + 底部写作小贴士 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FAF9F7 0%, #F5F3EF 100%)', padding: 'xxl xl', gap: 'md' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Text style={{ fontSize: 'title', color: '#1F2937', bold: true }}>{/* {{替换：标题}} */}看图写话</Text>
+      <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：副标题}} */}观察·思考·表达</Text>
+    </Box>
+    <Box style={{ flex: 1, flexDirection: 'row', gap: 'lg' }}>
+      {/* 左侧：图画场景 */}
+      <Box style={{ flex: 1, background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+          <Emoji name="🖼" style={{ width: 16, height: 16 }} />
+          <Text style={{ fontSize: 'body', color: '#374151', bold: true }}>{/* {{替换：标题}} */}图画场景</Text>
+        </Box>
+        <Box style={{ height: 300, background: 'linear-gradient(135deg, #BAE6FD 0%, #A7F3D0 100%)', border: '1px solid #E5E7EB', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 20, right: 40 }}>
+            <Emoji name="☀" style={{ width: 40, height: 40 }} />
+          </Box>
+          <Box style={{ position: 'absolute', bottom: 16, flexDirection: 'row', alignItems: 'flex-end', gap: 'lg' }}>
+            <Emoji name="🌳" style={{ width: 36, height: 36 }} />
+            <Text style={{ fontSize: 42, lineHeight: 1 }}>👧</Text>
+            <Emoji name="🦋" style={{ width: 36, height: 36 }} />
+            <Emoji name="🌺" style={{ width: 32, height: 32 }} />
+          </Box>
+          {/* {{图片：有图填 assets/images/picture-story.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/picture-story.png" style={{ objectFit: 'cover', width: '100%', height: 300 }} />
+        </Box>
+      </Box>
+      {/* 右侧：观察四步法 */}
+      <Box style={{ flex: 1, gap: 'md' }}>
+        <Box style={{ background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'md' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Emoji name="📝" style={{ width: 16, height: 16 }} />
+            <Text style={{ fontSize: 'body', color: '#374151', bold: true }}>{/* {{替换：标题}} */}观察四步法</Text>
+          </Box>
+          <Box style={{ gap: 'xs' }}>
+            {[
+              ['看时间地点', '晴朗的一天，公园里', '#0EA5E9', 'rgba(14,165,233,0.08)'],
+              ['看人物', '一个小女孩', '#10B981', 'rgba(16,185,129,0.08)'],
+              ['看在做什么', '追逐蝴蝶，欣赏花朵', '#8B5CF6', 'rgba(139,92,246,0.08)'],
+              ['想心情感受', '开心、快乐', '#F59E0B', 'rgba(245,158,11,0.08)'],
+            ].map((x, i) => (
+              <Box key={i} style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', background: x[3], borderRadius: 'sm', padding: 'xs' }}>
+                <Box style={{ width: 20, height: 20, background: x[2], borderRadius: 10, alignItems: 'center', justifyContent: 'center' }}>
+                  <Text style={{ fontSize: 10, color: '#FFFFFF', bold: true }}>{i + 1}</Text>
+                </Box>
+                <Text style={{ fontSize: 'label', color: '#1F2937', bold: true }}>{/* {{替换：步骤}} */}{x[0]}</Text>
+                <Text style={{ fontSize: 'label', color: '#6B7280' }}>{/* {{替换：示例}} */}{x[1]}</Text>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+        <Box style={{ background: '#F8FAFC', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'md' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xs' }}>
+            <Emoji name="✏" style={{ width: 14, height: 14 }} />
+            <Text style={{ fontSize: 'body', color: '#374151', bold: true }}>{/* {{替换：标题}} */}示例句子</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#4B5563', lineHeight: 1.7 }}>{/* {{替换：示例}} */}一个晴朗的早晨，小红来到公园玩耍。她看到一只美丽的蝴蝶在花丛中飞舞，高兴地追赶起来。</Text>
+        </Box>
+      </Box>
+    </Box>
+    <Box style={{ background: '#FFFBEB', flexDirection: 'row', alignItems: 'center', padding: 'md', borderRadius: 'sm' }}>
+      <Box style={{ width: 4, height: 48, background: '#F59E0B', borderRadius: 2, marginRight: 'md' }} />
+      <Box style={{ flex: 1 }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'xs' }}>
+          <Emoji name="💡" style={{ width: 16, height: 16 }} />
+          <Text style={{ fontSize: 'body', color: '#92400E', bold: true }}>{/* {{替换：标题}} */}写作小贴士</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+          <Text style={{ fontSize: 'label', color: '#4B5563' }}>时间: 早上、中午、晚上</Text>
+          <Text style={{ fontSize: 'label', color: '#4B5563' }}>地点: 公园、学校、家里</Text>
+          <Text style={{ fontSize: 'label', color: '#4B5563' }}>人物: 谁在做什么</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

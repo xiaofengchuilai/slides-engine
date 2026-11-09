@@ -1,0 +1,37 @@
+<Slide>
+  {/* ending/literary/1073 文艺风-羽毛信笺：蓝粉渐变 + 羽毛线装饰 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #E8F4F8 0%, #F8E8F4 100%)' }}>
+    {/* 羽毛装饰降级为竖线组 */}
+    <Box style={{ position: 'absolute', top: 70, left: 190, width: 80, height: 180, opacity: 0.4 }}>
+      <Shape type="line" style={{ width: 0, height: 170, position: 'absolute', top: 0, left: 40, line: { color: '#B8C5D6', width: 2 } }} />
+      <Shape type="line" style={{ width: 30, height: 0, position: 'absolute', top: 25, left: 12, line: { color: '#B8C5D6', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 35, height: 0, position: 'absolute', top: 45, left: 10, line: { color: '#B8C5D6', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 40, height: 0, position: 'absolute', top: 65, left: 8, line: { color: '#B8C5D6', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 30, height: 0, position: 'absolute', top: 25, right: 12, line: { color: '#B8C5D6', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 35, height: 0, position: 'absolute', top: 45, right: 10, line: { color: '#B8C5D6', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 40, height: 0, position: 'absolute', top: 65, right: 8, line: { color: '#B8C5D6', width: 1.5 } }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 280, right: 150, width: 70, height: 160, opacity: 0.35 }}>
+      <Shape type="line" style={{ width: 0, height: 150, position: 'absolute', top: 0, left: 35, line: { color: '#D6B8C5', width: 2 } }} />
+      <Shape type="line" style={{ width: 25, height: 0, position: 'absolute', top: 20, left: 12, line: { color: '#D6B8C5', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 30, height: 0, position: 'absolute', top: 40, left: 10, line: { color: '#D6B8C5', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 25, height: 0, position: 'absolute', top: 20, right: 12, line: { color: '#D6B8C5', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 30, height: 0, position: 'absolute', top: 40, right: 10, line: { color: '#D6B8C5', width: 1.5 } }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 100, left: 260, width: 60, height: 140, opacity: 0.3 }}>
+      <Shape type="line" style={{ width: 0, height: 130, position: 'absolute', top: 0, left: 30, line: { color: '#C5D6B8', width: 2 } }} />
+      <Shape type="line" style={{ width: 20, height: 0, position: 'absolute', top: 18, left: 12, line: { color: '#C5D6B8', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 25, height: 0, position: 'absolute', top: 35, left: 10, line: { color: '#C5D6B8', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 20, height: 0, position: 'absolute', top: 18, right: 12, line: { color: '#C5D6B8', width: 1.5 } }} />
+      <Shape type="line" style={{ width: 25, height: 0, position: 'absolute', top: 35, right: 10, line: { color: '#C5D6B8', width: 1.5 } }} />
+    </Box>
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#7D8B96', fontFamily: 'serif', marginBottom: 'xl' }}>{/* {{替换：主标题}} */}谢谢观看</Text>
+      <Text style={{ fontSize: 'title', color: '#96A8B4', fontFamily: 'serif', lineHeight: 1.8 }}>{/* {{替换：致谢语}} */}期待您的宝贵意见</Text>
+    </Box>
+    {/* 小羽毛装饰（斜细条） */}
+    <Box style={{ position: 'absolute', top: 250, left: 380, width: 30, height: 3, background: '#B8C5D6', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', bottom: 290, right: 320, width: 35, height: 3, background: '#D6B8C5', opacity: 0.35 }} />
+  </Box>
+</Slide>

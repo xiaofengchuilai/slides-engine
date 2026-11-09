@@ -1,0 +1,35 @@
+<Slide>
+  {/* tech/1584 数据流转系统：五节点流水线 + 上下辅助标签 + 底部说明 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', padding: 'xl' }}>
+    {/* 粒子背景装饰：低透明度圆点 */}
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, opacity: 0.3 }}>
+      <Box style={{ position: 'absolute', top: 180, left: 60, width: 8, height: 8, borderRadius: 4, background: '#22D3EE' }} />
+      <Box style={{ position: 'absolute', top: 260, left: 420, width: 6, height: 6, borderRadius: 3, background: '#60A5FA' }} />
+      <Box style={{ position: 'absolute', top: 480, left: 900, width: 7, height: 7, borderRadius: 4, background: '#C084FC' }} />
+      <Box style={{ position: 'absolute', top: 380, left: 1150, width: 5, height: 5, borderRadius: 3, background: '#22D3EE' }} />
+    </Box>
+    <Text style={{ fontSize: 'title', color: '#22D3EE', bold: true, textAlign: 'center', marginBottom: 'lg' }}>{/* {{标题}} */}数据流转系统</Text>
+    <Box style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}>
+      {/* 五个数据节点 */}
+      {[
+        { name: '数据', sub: '采集', en: 'Collect', color: '#22D3EE', val: '1.2TB', tag: '传感器' },
+        { name: '数据', sub: '清洗', en: 'Clean', color: '#60A5FA', val: '98%', tag: 'ETL引擎' },
+        { name: '数据', sub: '分析', en: 'Analyze', color: '#A78BFA', val: '5ms', tag: 'AI算法' },
+        { name: '数据', sub: '存储', en: 'Store', color: '#34D399', val: '99.9%', tag: '数据库' },
+        { name: '数据', sub: '应用', en: 'Apply', color: '#FBBF24', val: 'Real-time', tag: '可视化' },
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, alignItems: 'center' }}>
+          <Text style={{ fontSize: 'label', color: '#94A3B8', marginBottom: 'md' }}>{x.tag}</Text>
+          <Box style={{ width: 108, height: 108, border: `2px solid ${x.color}`, borderRadius: 'sm', background: '#1E293B', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'body', color: x.color, bold: true }}>{x.name}</Text>
+            <Text style={{ fontSize: 'body', color: x.color, bold: true }}>{x.sub}</Text>
+            <Text style={{ fontSize: 'label', color: '#94A3B8', marginTop: 'xs' }}>{x.en}</Text>
+          </Box>
+          <Text style={{ fontSize: 'kpi', color: x.color, bold: true, marginTop: 'md', lineHeight: 1.1 }}>{x.val}</Text>
+          {i < 4 && <Box style={{ position: 'absolute', right: -14, top: 250, width: 28, height: 2, background: '#22D3EE', opacity: 0.5 }} />}
+        </Box>
+      ))}
+    </Box>
+    <Text style={{ fontSize: 'card', color: '#22D3EE', textAlign: 'center', marginTop: 'lg', letterSpacing: 2 }}>DATA PIPELINE · HIGH PERFORMANCE · REAL-TIME PROCESSING</Text>
+  </Box>
+</Slide>

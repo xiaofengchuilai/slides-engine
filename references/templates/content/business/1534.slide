@@ -1,0 +1,83 @@
+<Slide>
+  {/* business/1534 财务绩效仪表盘：深色 KPI 四卡 + 收入构成/同期对比双栏 */}
+  <Box style={{ height: 720, width: 1280, background: '#0F172A', padding: 'xxl xl' }}>
+    {/* 标题栏 */}
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', background: 'linear-gradient(90deg, #1E293B 0%, #334155 100%)', borderRadius: 'md', padding: 'lg', marginBottom: 'lg' }}>
+      <Box>
+        <Text style={{ fontSize: 'title', color: '#FFFFFF', bold: true }}>{/* {{标题}} */}财务绩效仪表盘</Text>
+        <Text style={{ fontSize: 'body', color: '#94A3B8' }}>Financial Performance Dashboard · Q4 2024</Text>
+      </Box>
+      <Box style={{ alignItems: 'flex-end' }}>
+        <Text style={{ fontSize: 'kpi', color: '#34D399', bold: true, lineHeight: 1 }}>+18.5%</Text>
+        <Text style={{ fontSize: 'label', color: '#94A3B8' }}>{/* {{标签}} */}同比增长</Text>
+      </Box>
+    </Box>
+
+    {/* KPI 四卡 */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', marginBottom: 'lg' }}>
+      {[
+        { label: '营业收入', value: '¥12.8亿', delta: '+23.5%', icon: '💰', grad: 'linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%)', deltaColor: '#6EE7B7' },
+        { label: '净利润', value: '¥2.3亿', delta: '+31.2%', icon: '📈', grad: 'linear-gradient(135deg, #059669 0%, #15803D 100%)', deltaColor: '#A7F3D0' },
+        { label: '毛利率', value: '45.6%', delta: '+2.8%', icon: '📊', grad: 'linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%)', deltaColor: '#D8B4FE' },
+        { label: '净资产收益率', value: '28.3%', delta: '+5.1%', icon: '🎯', grad: 'linear-gradient(135deg, #EA580C 0%, #B91C1C 100%)', deltaColor: '#FED7AA' },
+      ].map((k, i) => (
+        <Box key={i} style={{ flex: 1, background: k.grad, borderRadius: 'md', padding: 'lg', gap: 'md', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true, opacity: 0.9 }}>{/* {{指标名}} */}{k.label}</Text>
+            <Box style={{ width: 36, height: 36, borderRadius: 'sm', background: '#FFFFFF', opacity: 0.2, alignItems: 'center', justifyContent: 'center' }}>
+              <Emoji name={k.icon} style={{ width: 22, height: 22 }} />
+            </Box>
+          </Box>
+          <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, lineHeight: 1 }}>{/* {{指标值}} */}{k.value}</Text>
+          <Box style={{ flexDirection: 'row', gap: 'xs', alignItems: 'center' }}>
+            <FAIcon name='arrow-up' style={{ fill: k.deltaColor, width: 14, height: 14 }} />
+            <Text style={{ fontSize: 'label', color: k.deltaColor, bold: true }}>{/* {{同比}} */}{k.delta}</Text>
+          </Box>
+        </Box>
+      ))}
+    </Box>
+
+    {/* 收入构成 + 同期对比 */}
+    <Box style={{ flexDirection: 'row', gap: 'lg', flex: 1 }}>
+      <Box style={{ flex: 1, background: '#1E293B', borderRadius: 'md', padding: 'lg' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'md' }}>{/* {{栏标题}} */}收入构成分析</Text>
+        <Box style={{ height: 2, background: '#334155', marginBottom: 'md' }} />
+        <Box style={{ gap: 'md' }}>
+          {[
+            { name: '产品销售', pct: '68%', w: '68%', grad: 'linear-gradient(90deg, #3B82F6 0%, #06B6D4 100%)' },
+            { name: '服务收入', pct: '22%', w: '22%', grad: 'linear-gradient(90deg, #10B981 0%, #22C55E 100%)' },
+            { name: '授权许可', pct: '10%', w: '10%', grad: 'linear-gradient(90deg, #A855F7 0%, #EC4899 100%)' },
+          ].map((r, i) => (
+            <Box key={i}>
+              <Box style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 'xs' }}>
+                <Text style={{ fontSize: 'body', color: '#CBD5E1' }}>{/* {{分类名}} */}{r.name}</Text>
+                <Text style={{ fontSize: 'body', color: '#FFFFFF', bold: true }}>{/* {{占比}} */}{r.pct}</Text>
+              </Box>
+              <Box style={{ flexDirection: 'row', height: 10, borderRadius: 5, background: '#334155' }}>
+                <Box style={{ height: 10, width: r.w, background: r.grad, borderRadius: 5 }} />
+              </Box>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      <Box style={{ flex: 1, background: '#1E293B', borderRadius: 'md', padding: 'lg' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, marginBottom: 'md' }}>{/* {{栏标题}} */}同期对比</Text>
+        <Box style={{ height: 2, background: '#334155', marginBottom: 'md' }} />
+        <Box style={{ flexDirection: 'row', gap: 'md' }}>
+          <Box style={{ flex: 1, background: '#0F172A', borderRadius: 'sm', padding: 'md' }}>
+            <Text style={{ fontSize: 'label', color: '#94A3B8', marginBottom: 'xs' }}>{/* {{标签}} */}本季度</Text>
+            <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true }}>{/* {{数值}} */}¥12.8亿</Text>
+          </Box>
+          <Box style={{ flex: 1, background: '#0F172A', borderRadius: 'sm', padding: 'md' }}>
+            <Text style={{ fontSize: 'label', color: '#94A3B8', marginBottom: 'xs' }}>{/* {{标签}} */}去年同期</Text>
+            <Text style={{ fontSize: 'card', color: '#94A3B8', bold: true }}>{/* {{数值}} */}¥10.4亿</Text>
+          </Box>
+        </Box>
+        <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', background: '#064E3B', border: '1px solid #059669', borderRadius: 'sm', padding: 'md', marginTop: 'md' }}>
+          <Text style={{ fontSize: 'body', color: '#6EE7B7' }}>环比增长</Text>
+          <Text style={{ fontSize: 'card', color: '#34D399', bold: true }}>+8.2%</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

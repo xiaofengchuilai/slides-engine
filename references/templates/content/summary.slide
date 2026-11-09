@@ -1,0 +1,31 @@
+<Slide>
+  {/* content/summary：总结（执行摘要 + 4-6 要点 + 关键数字 + CTA） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: '56px 80px' }}>
+    <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：总结标题}} */}本季核心结论</Text>
+    {/* 执行摘要 */}
+    <Box style={{ borderRadius: 14, background: 'primary', padding: '24px', marginTop: 24 }}>
+      <Text style={{ fontSize: 'body', color: '#FFFFFF', lineHeight: 1.7, opacity: 0.92 }}>{/* {{替换：执行摘要一段话}} */}本季度营收超预期 12%，核心业务保持高增长；下季度重点在提升转化率与客户留存。</Text>
+    </Box>
+    {/* 要点（4-6 条） */}
+    <Box style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 16, marginTop: 28 }}>
+      {[
+        { no: '1', t: '营收同比增长 35%' },
+        { no: '2', t: '核心业务贡献 72%' },
+        { no: '3', t: '转化率待提升，根因已定位' },
+        { no: '4', t: '下季度聚焦转化与留存' },
+      ].map((k, i) => (
+        <Box key={i} style={{ width: 548, flexDirection: 'row', gap: 12, alignItems: 'center', borderRadius: 10, background: 'cardBg', padding: '16px 18px' }}>
+          <Box style={{ width: 28, height: 28, borderRadius: 14, background: 'accent', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{k.no}</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.5 }}>{/* {{替换：要点}} */}{k.t}</Text>
+        </Box>
+      ))}
+    </Box>
+    {/* CTA */}
+    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 14, marginTop: 30 }}>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{替换：行动标签}} */}下一步：</Text>
+      <Text style={{ fontSize: 20, color: 'accent', bold: true }}>{/* {{替换：CTA}} */}启动转化率优化专项</Text>
+    </Box>
+  </Box>
+</Slide>

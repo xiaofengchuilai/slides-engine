@@ -1,0 +1,38 @@
+<Slide>
+  {/* content/problem：问题-方案（问题 + 影响 + 根因 + 方案） */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: '56px 80px' }}>
+    <Text style={{ fontSize: 'title', color: 'text', bold: true }}>{/* {{替换：问题标题（结论句）}} */}增长放缓的根因在转化，不在流量</Text>
+    {/* 问题 + 影响 */}
+    <Box style={{ flexDirection: 'row', gap: 24, marginTop: 32 }}>
+      <Box style={{ flex: 1, borderRadius: 14, background: 'cardBg', padding: '24px' }}>
+        <Text style={{ fontSize: 'body', color: 'danger', bold: true }}>{/* {{替换：问题标签}} */}问题</Text>
+        <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6, marginTop: 10 }}>{/* {{替换：问题描述}} */}流量增长 50%，但转化率连续 3 个月下滑。</Text>
+      </Box>
+      <Box style={{ flex: 1, borderRadius: 14, background: 'cardBg', padding: '24px' }}>
+        <Text style={{ fontSize: 'body', color: 'danger', bold: true }}>{/* {{替换：影响标签}} */}影响</Text>
+        <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.6, marginTop: 10 }}>{/* {{替换：影响描述}} */}获客成本攀升，ROI 持续走低，营收增速放缓。</Text>
+      </Box>
+    </Box>
+    {/* 根因（3 个） */}
+    <Box style={{ marginTop: 28 }}>
+      <Text style={{ fontSize: 'body', color: 'text', bold: true }}>{/* {{替换：根因标题}} */}根因分析</Text>
+      <Box style={{ flexDirection: 'row', gap: 16, marginTop: 16 }}>
+        {[
+          { no: '1', t: '落地页与广告不匹配' },
+          { no: '2', t: '注册流程过长' },
+          { no: '3', t: '缺乏信任背书' },
+        ].map((r, i) => (
+          <Box key={i} style={{ flex: 1, flexDirection: 'row', gap: 10, alignItems: 'center', borderRadius: 10, background: 'cardBg', padding: '14px 16px' }}>
+            <Text style={{ fontSize: 'body', color: 'accent', bold: true }}>{r.no}</Text>
+            <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.5 }}>{/* {{替换：根因}} */}{r.t}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+    {/* 方案 */}
+    <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 28 }}>
+      <Text style={{ fontSize: 'body', color: 'muted' }}>{/* {{替换：方案标签}} */}方案：</Text>
+      <Text style={{ fontSize: 20, color: 'accent', bold: true }}>{/* {{替换：方案结论}} */}重做落地页 + 简化注册 + 增加案例背书</Text>
+    </Box>
+  </Box>
+</Slide>

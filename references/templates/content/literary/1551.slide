@@ -1,0 +1,60 @@
+<Slide>
+  {/* literary/1551 慢生活的艺术：左主卡+四宫格习惯卡，右金句+诗意生活+提示 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FDF6E3 0%, #FEF3E2 50%, #FDE8E8 100%)', padding: 'xxl xl' }}>
+    <Box style={{ flexDirection: 'row', gap: 'xxl', height: '100%' }}>
+      {/* 左栏 */}
+      <Box style={{ flex: 1, gap: 'xl' }}>
+        <Box style={{ background: '#FFFFFF', borderRadius: 'md', padding: 'xl', border: '2px dashed #FCD34D', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 'md' }}>
+            <Box style={{ width: 10, height: 10, borderRadius: 'sm', background: '#FB7185', marginRight: 'sm' }} />
+            <Text style={{ fontSize: 'title', color: '#78350F', bold: true }}>{/* {{替换：主标题}} */}慢生活的艺术</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.7, marginBottom: 'md' }}>{/* {{替换：段落一}} */}在这个快节奏的时代，我们似乎忘记了停下来感受生活的美好。一杯清茶、一本好书，都能让我们的心灵得到片刻的宁静。</Text>
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.7 }}>{/* {{替换：段落二}} */}当我们学会放慢脚步，生活的细节便会变得清晰起来。</Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', gap: 'lg' }}>
+          {[
+            [['阅读时光', '每天留出30分钟', '#FEF3C7', '#B45309', 'book', '📚'], ['创作表达', '用画笔记录生活', '#FCE7F3', '#BE185D', 'palette', '🎨']],
+            [['自然漫步', '感受四季变化', '#D1FAE5', '#047857', 'leaf', '🌿'], ['品茗小憩', '享受下午茶时光', '#DBEAFE', '#1D4ED8', 'coffee', '☕']],
+          ].map((row, ri) => (
+            <Box key={ri} style={{ flexDirection: 'row', gap: 'lg', flex: 1 }}>
+              {row.map((c, ci) => (
+                <Box key={ci} style={{ flex: 1, background: c[2], borderRadius: 'md', padding: 'lg', boxShadow: '0 4px 12px rgba(0,0,0,0.15)', rotate: ci === 1 ? 2 : ci === 2 ? -2 : 1 }}>
+                  <Box style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'sm' }}>
+                    <Emoji name={c[5]} style={{ width: 28, height: 28 }} />
+                    <Box style={{ flex: 1 }}>
+                      <Text style={{ fontSize: 'card', color: c[3], bold: true, marginBottom: 'xs' }}>{/* {{替换：要素名}} */}{c[0]}</Text>
+                      <Text style={{ fontSize: 'label', color: c[3], opacity: 0.85 }}>{/* {{替换：要素描述}} */}{c[1]}</Text>
+                    </Box>
+                  </Box>
+                </Box>
+              ))}
+            </Box>
+          ))}
+        </Box>
+      </Box>
+      {/* 右栏 */}
+      <Box style={{ width: 360, flexDirection: 'column', gap: 'lg' }}>
+        <Box style={{ background: 'linear-gradient(135deg, #FDE8E8 0%, #FEF3C7 100%)', borderRadius: 'md', padding: 'lg', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+          <Box style={{ height: 4, background: '#FB7185', marginBottom: 'lg' }} />
+          <Text style={{ fontSize: 'card', color: '#881337', fontFamily: 'serif', lineHeight: 1.6, marginBottom: 'sm' }}>{/* {{替换：金句}} */}"生活不是赶路，而是去感受路。"</Text>
+          <Text style={{ fontSize: 'label', color: '#9F1239', textAlign: 'right' }}>{/* {{替换：署名}} */}— 汪曾祺</Text>
+        </Box>
+        <Box style={{ background: '#FFFFFF', borderRadius: 'md', padding: 'lg', alignItems: 'center', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }}>
+          <Box style={{ width: 72, height: 3, background: '#FBBF24', marginBottom: 'sm' }} />
+          <Text style={{ fontSize: 'card', color: '#92400E', bold: true, marginBottom: 'sm' }}>{/* {{替换：小标题}} */}诗意生活</Text>
+          <Text style={{ fontSize: 'label', color: 'text', textAlign: 'center', lineHeight: 1.8 }}>{/* {{替换：诗句}} */}清晨的第一缕阳光<br />午后的一杯热茶<br />傍晚的散步时光<br />夜晚的静心阅读</Text>
+        </Box>
+        <Box style={{ background: '#FEF3C7', borderRadius: 'sm', padding: 'md', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+          <Box style={{ background: '#F59E0B', borderRadius: 'sm', padding: 'xs md', alignSelf: 'flex-start', marginBottom: 'xs' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{/* {{替换：标签}} */}Note</Text>
+          </Box>
+          <Box style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 'xs' }}>
+            <Emoji name="💭" style={{ width: 18, height: 18 }} />
+            <Text style={{ flex: 1, fontSize: 'label', color: '#92400E', lineHeight: 1.6 }}>{/* {{替换：提示}} */}温馨提示：慢生活不是逃避现实，而是更好地拥抱生活。</Text>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

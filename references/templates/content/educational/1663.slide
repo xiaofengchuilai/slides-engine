@@ -1,0 +1,57 @@
+<Slide>
+  {/* educational/1663 古文断句·标点练习：标题 + 错误/正确断句对比 + 3技巧卡 + 练习口诀 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FDFBF7 0%, #F5F1E8 100%)', padding: 'xxl xl', gap: 'lg' }}>
+    <Box style={{ alignItems: 'center', gap: 'xs' }}>
+      <Text style={{ fontSize: 'title', color: '#1F2937', fontFamily: 'serif', bold: true }}>{/* {{替换：标题}} */}古文断句技巧</Text>
+      <Text style={{ fontSize: 'body', color: '#6B7280' }}>{/* {{替换：副标题}} */}准确理解 · 正确停顿</Text>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+      <Box style={{ flex: 1, background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+          <Box style={{ width: 28, height: 28, background: '#FEE2E2', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'label', color: '#DC2626', bold: true }}>✗</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#374151', bold: true }}>{/* {{替换：标题}} */}错误断句</Text>
+        </Box>
+        <Box style={{ background: '#FEF2F2', border: '2px solid #FCA5A5', borderRadius: 'sm', padding: 'md' }}>
+          <Text style={{ fontSize: 'card', color: '#374151', fontFamily: 'serif', lineHeight: 1.8 }}>{/* {{替换：错误示例}} */}学而时习之不，亦说乎有朋，自远方来不，亦乐乎</Text>
+        </Box>
+      </Box>
+      <Box style={{ flex: 1, background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+          <Box style={{ width: 28, height: 28, background: '#DCFCE7', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+            <Text style={{ fontSize: 'label', color: '#16A34A', bold: true }}>✓</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#374151', bold: true }}>{/* {{替换：标题}} */}正确断句</Text>
+        </Box>
+        <Box style={{ background: '#F0FDF4', border: '2px solid #86EFAC', borderRadius: 'sm', padding: 'md' }}>
+          <Text style={{ fontSize: 'card', color: '#374151', fontFamily: 'serif', lineHeight: 1.8 }}>{/* {{替换：正确示例}} */}学而时习之，不亦说乎？有朋自远方来，不亦乐乎？</Text>
+        </Box>
+      </Box>
+    </Box>
+    <Box style={{ flexDirection: 'row', gap: 'lg' }}>
+      {[
+        ['找虚词', '之、乎、者、也、矣、焉、耳等虚词通常是句末标志'],
+        ['看语气', '疑问句(乎、耶)、感叹句(哉、矣)要断开'],
+        ['析结构', '主谓宾结构完整处断句，对仗句相应位置断句'],
+      ].map((x, i) => (
+        <Box key={i} style={{ flex: 1, background: '#F9FAFB', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+            <Box style={{ width: 28, height: 28, background: '#1F2937', borderRadius: 'sm', alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontSize: 'label', color: '#FFFFFF', bold: true }}>{i + 1}</Text>
+            </Box>
+            <Text style={{ fontSize: 'body', color: '#111827', bold: true }}>{/* {{替换：技巧名}} */}{x[0]}</Text>
+          </Box>
+          <Text style={{ fontSize: 'body', color: '#4B5563', lineHeight: 1.6 }}>{/* {{替换：技巧说明}} */}{x[1]}</Text>
+        </Box>
+      ))}
+    </Box>
+    <Box style={{ flex: 1, background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'lg', alignItems: 'center', justifyContent: 'center' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', marginBottom: 'sm' }}>
+        <Emoji name="📝" style={{ width: 16, height: 16 }} />
+        <Text style={{ fontSize: 'body', color: '#374151', bold: true }}>{/* {{替换：标题}} */}练习口诀</Text>
+      </Box>
+      <Text style={{ fontSize: 'card', color: '#1F2937', fontFamily: 'serif', lineHeight: 1.9, textAlign: 'center' }}>{/* {{替换：口诀}} */}虚词句末要停顿，语气完整断句点，主谓宾全可断开，对仗工整同位断。</Text>
+    </Box>
+  </Box>
+</Slide>

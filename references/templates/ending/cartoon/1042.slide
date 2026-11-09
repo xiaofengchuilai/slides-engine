@@ -1,0 +1,18 @@
+<Slide>
+  {/* ending/cartoon/1042 卡通风-笑脸表情：米粉渐变底+中央大笑脸（黄圆+眼+笑弧）+四角小脸、红标题+副题 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(180deg, #FFFACD 0%, #FFF0F5 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 中央大笑脸 */}
+    <Box style={{ position: 'absolute', top: 110, left: 515, width: 250, height: 250, borderRadius: 'sm', background: 'linear-gradient(135deg, #FFEA5C 0%, #FFD700 100%)', alignItems: 'center', justifyContent: 'center', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+      <Box style={{ width: 180, height: 60, border: '5px solid #333333', borderRadius: 'sm', background: 'transparent' }} />
+    </Box>
+    {/* 四角小脸（+ 阴影） */}
+    <Box style={{ position: 'absolute', top: 120, left: 200, width: 60, height: 60, borderRadius: 'sm', background: '#FFB347', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+    <Box style={{ position: 'absolute', top: 150, right: 230, width: 55, height: 55, borderRadius: 'sm', background: '#FF99CC', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+    <Box style={{ position: 'absolute', bottom: 130, left: 260, width: 50, height: 50, borderRadius: 'sm', background: '#77DD77', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+    <Box style={{ position: 'absolute', bottom: 110, right: 280, width: 58, height: 58, borderRadius: 'sm', background: '#B388FF', boxShadow: '0 8px 24px rgba(0,0,0,0.18)' }} />
+    <Box style={{ alignItems: 'center', gap: 'sm', marginTop: 300 }}>
+      <Text style={{ fontSize: 60, color: '#FF6B6B', bold: true }}>{/* {{替换：致谢标题}} */}致谢</Text>
+      <Text style={{ fontSize: 'card', color: '#666666', bold: true }}>{/* {{替换：副题}} */}欢迎交流与指导</Text>
+    </Box>
+  </Box>
+</Slide>

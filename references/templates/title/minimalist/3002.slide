@@ -1,0 +1,11 @@
+<Slide>
+  {/* title/minimalist/3002 简约风-留白美学：浅灰底 + 浅灰大序号 + 黑字标题 */}
+  <Box style={{ width: 1280, height: 720, background: '#FAFAFA', position: 'absolute', top: 0, left: 0, padding: 'xl' }}>
+    <Box style={{ height: '100%', justifyContent: 'center', alignItems: 'center', padding: 'xxl' }}>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xxl' }}>
+        <Text style={{ fontSize: 'hero', color: 'muted', bold: false, fontWeight: 200 }}>{/* {{替换：序号}} */}01</Text>
+        <Text style={{ fontSize: 'title', color: 'text' }}>{/* {{替换：主标题}} */}核心理念</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

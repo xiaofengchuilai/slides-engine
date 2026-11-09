@@ -1,0 +1,16 @@
+<Slide>
+  {/* cover/flat 070 对角分割封面：左上主色三角 + 右下白底 + 居中标题 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'bg', alignItems: 'center', justifyContent: 'center', padding: 'xl' }}>
+    {/* 对角主色三角（左上） */}
+    <Shape type="rightTriangle" style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, fill: 'primary', rotate: 180 }} />
+    <Box style={{ alignItems: 'center' }}>
+      <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'xxl', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}项目管理指南</Text>
+      <Text style={{ fontSize: 'body', color: 'muted', marginBottom: 'xxl', textAlign: 'center' }}>{/* {{副标题}} */}规范流程·控制风险·达成目标</Text>
+      <Box style={{ background: 'primary', borderRadius: 'lg', padding: 'lg xl', flexDirection: 'row', alignItems: 'center', gap: 'xl' }}>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF' }}>{/* {{落款一}} */}项目管理办公室</Text>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF' }}>·</Text>
+        <Text style={{ fontSize: 'card', color: '#FFFFFF' }}>{/* {{落款二}} */}新人入职培训</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

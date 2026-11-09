@@ -1,0 +1,15 @@
+<Slide>
+  {/* cover/tech/036 科技风-霓虹灯效：深色底 + 居中霓虹主标题 + 副标题 + 状态行 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 主标题光晕（降级为低透明度色块） */}
+    <Box style={{ position: 'absolute', width: 900, height: 300, borderRadius: 150, background: '#06B6D4', opacity: 0.06 }} />
+    <Box style={{ justifyContent: 'center', alignItems: 'center', maxWidth: 1000, padding: 'xxl' }}>
+      <Text style={{ fontSize: 'hero', color: '#22D3EE', bold: true, letterSpacing: 6, textAlign: 'center', lineHeight: 1.1, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}AI REVOLUTION</Text>
+      <Text style={{ fontSize: 'title', color: '#67E8F9', fontWeight: 300, letterSpacing: 12, textAlign: 'center', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}人工智能变革</Text>
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'md', justifyContent: 'center' }}>
+        <Box style={{ width: 12, height: 12, borderRadius: 6, background: '#06B6D4' }} />
+        <Text style={{ fontSize: 'body', color: '#22D3EE', letterSpacing: 3 }}>{/* {{替换：状态文案}} */}SYSTEM ONLINE</Text>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

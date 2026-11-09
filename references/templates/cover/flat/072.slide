@@ -1,0 +1,32 @@
+<Slide>
+  {/* cover/flat 072 彩块网格封面：灰底 + 3x3 色块网格拼贴 */}
+  <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, background: 'cardBg' }}>
+    <Box style={{ position: 'absolute', top: 20, left: 20, right: 20, bottom: 20, flexDirection: 'row', gap: 'lg' }}>
+      {/* 左列：上蓝块 + 下绿块 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        <Box style={{ flex: 1, background: '#3B82F6', borderRadius: 'md' }} />
+        <Box style={{ flex: 1, background: '#22C55E', borderRadius: 'md' }} />
+      </Box>
+      {/* 中列：白卡标题 + 白卡落款 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        <Box style={{ flex: 1.2, background: 'bg', borderRadius: 'md', alignItems: 'center', justifyContent: 'center', padding: 'lg' }}>
+          <Box style={{ alignItems: 'center' }}>
+            <Text style={{ fontSize: 'title', color: 'text', bold: true, marginBottom: 'md', textAlign: 'center', lineHeight: 1.2 }}>{/* {{主标题}} */}团队协作工具</Text>
+            <Text style={{ fontSize: 'body', color: 'muted', textAlign: 'center' }}>{/* {{副标题}} */}高效沟通·无缝协作·共享成果</Text>
+          </Box>
+        </Box>
+        <Box style={{ flex: 0.8, background: 'bg', borderRadius: 'md', alignItems: 'center', justifyContent: 'center', padding: 'lg' }}>
+          <Box style={{ alignItems: 'center' }}>
+            <Text style={{ fontSize: 'card', color: 'text' }}>{/* {{落款一}} */}效率工程部</Text>
+            <Text style={{ fontSize: 'card', color: 'text', marginTop: 'xs' }}>{/* {{落款二}} */}工具使用培训</Text>
+          </Box>
+        </Box>
+      </Box>
+      {/* 右列：橙块 + 紫块 */}
+      <Box style={{ flex: 1, gap: 'lg' }}>
+        <Box style={{ flex: 1, background: '#F97316', borderRadius: 'md' }} />
+        <Box style={{ flex: 1, background: '#A855F7', borderRadius: 'md' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

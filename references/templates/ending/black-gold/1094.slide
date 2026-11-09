@@ -1,0 +1,36 @@
+<Slide>
+  {/* ending/black-gold/1094 黑金风-奢华边框：纯黑底 + 三重金边框 + 四角金块 + 居中致谢 */}
+  <Box style={{ width: 1280, height: 720, background: '#09090B' }}>
+    {/* 外层金色边框 */}
+    <Box style={{ position: 'absolute', top: 32, left: 32, right: 32, bottom: 32, border: '3px solid #D4AF37', opacity: 0.7 }} />
+    {/* 中层金色边框 */}
+    <Box style={{ position: 'absolute', top: 48, left: 48, right: 48, bottom: 48, border: '2px solid #EAB308', opacity: 0.6 }} />
+    {/* 内层装饰边框 */}
+    <Box style={{ position: 'absolute', top: 64, left: 64, right: 64, bottom: 64, border: '1px solid #DAA520', opacity: 0.5 }} />
+    {/* 四角装饰（L 形金块） */}
+    <Box style={{ position: 'absolute', top: 32, left: 32, width: 80, height: 80, background: 'transparent' }}>
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 80, height: 20, background: '#D4AF37', opacity: 0.8 }} />
+      <Box style={{ position: 'absolute', top: 0, left: 0, width: 20, height: 80, background: '#D4AF37', opacity: 0.8 }} />
+    </Box>
+    <Box style={{ position: 'absolute', top: 32, right: 32, width: 80, height: 80, background: 'transparent' }}>
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 80, height: 20, background: '#D4AF37', opacity: 0.8 }} />
+      <Box style={{ position: 'absolute', top: 0, right: 0, width: 20, height: 80, background: '#D4AF37', opacity: 0.8 }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 32, left: 32, width: 80, height: 80, background: 'transparent' }}>
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 80, height: 20, background: '#D4AF37', opacity: 0.8 }} />
+      <Box style={{ position: 'absolute', bottom: 0, left: 0, width: 20, height: 80, background: '#D4AF37', opacity: 0.8 }} />
+    </Box>
+    <Box style={{ position: 'absolute', bottom: 32, right: 32, width: 80, height: 80, background: 'transparent' }}>
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 80, height: 20, background: '#D4AF37', opacity: 0.8 }} />
+      <Box style={{ position: 'absolute', bottom: 0, right: 0, width: 20, height: 80, background: '#D4AF37', opacity: 0.8 }} />
+    </Box>
+    {/* 装饰细节（左右竖金条） */}
+    <Box style={{ position: 'absolute', top: 332, left: 32, width: 15, height: 56, background: 'linear-gradient(180deg, #09090B 0%, #FFD700 50%, #09090B 100%)', opacity: 0.6 }} />
+    <Box style={{ position: 'absolute', top: 332, right: 32, width: 15, height: 56, background: 'linear-gradient(180deg, #09090B 0%, #FFD700 50%, #09090B 100%)', opacity: 0.6 }} />
+    {/* 居中内容 */}
+    <Box style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 'kpi', color: '#EAB308', bold: true, letterSpacing: 2, marginBottom: 'md' }}>{/* {{替换：主标题}} */}感谢</Text>
+      <Text style={{ fontSize: 'title', color: '#D4AF37' }}>{/* {{替换：致谢语}} */}感谢您的聆听与关注</Text>
+    </Box>
+  </Box>
+</Slide>

@@ -1,0 +1,70 @@
+<Slide>
+  {/* minimalist/1609 对角线三区块：左上文字+竖图 + 右中(关键发现+小图+大图) + 底部注释 */}
+  <Box style={{ height: 720, width: 1280, background: 'bg', padding: 'xxl xl' }}>
+    <Box style={{ flex: 1, gap: 'lg' }}>
+      {/* 区域1：左文右图 */}
+      <Box style={{ height: 210, flexDirection: 'row', gap: 'xl' }}>
+        <Box style={{ flex: 1, justifyContent: 'center' }}>
+          <Box style={{ background: 'primary', padding: 'xs md', borderRadius: 'sm', alignSelf: 'flex-start', marginBottom: 'sm', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF' }}>核心洞察</Text>
+          </Box>
+          <Text style={{ fontSize: 'title', color: 'text', marginBottom: 'sm' }}>{/* {{标题}} */}消费者行为趋势</Text>
+          <Box style={{ width: 96, height: 2, background: 'primary', marginBottom: 'md' }} />
+          <Text style={{ fontSize: 'body', color: 'text', lineHeight: 1.5, marginBottom: 'sm' }}>{/* {{段落1}} */}随着Z世代成为消费主力，个性化、社交化、可持续性成为消费决策的关键因素。品牌需要重新思考与年轻消费者的沟通方式。</Text>
+          <Text style={{ fontSize: 'label', color: 'muted' }}>{/* {{段落2}} */}数据显示，超过70%的Z世代用户更倾向于选择有社会责任感的品牌。</Text>
+        </Box>
+        <Box style={{ width: 192, background: 'primary', borderRadius: 'md', alignItems: 'center', justifyContent: 'center' }}>
+          <Box style={{ alignItems: 'center' }}>
+            <Text style={{ fontSize: 'kpi', color: '#FFFFFF', bold: true, lineHeight: 1 }}>70%</Text>
+            <Text style={{ fontSize: 'label', color: '#FFFFFF', opacity: 0.8, marginTop: 'xs' }}>Z世代占比</Text>
+          </Box>
+        </Box>
+      </Box>
+      {/* 区域2：左关键发现+小图，右大图 */}
+      <Box style={{ flex: 1, flexDirection: 'row', gap: 'xl' }}>
+        <Box style={{ width: '45%', gap: 'md' }}>
+          <Box style={{ flex: 1, background: 'cardBg', border: '1px solid #E5E7EB', borderRadius: 'md', padding: 'xl', boxShadow: '0 1px 2px rgba(0,0,0,0.08)' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'xs', marginBottom: 'md' }}>
+              <Box style={{ width: 6, height: 6, borderRadius: 3, background: 'primary' }} />
+              <Text style={{ fontSize: 'body', color: 'text', bold: true }}>关键发现</Text>
+            </Box>
+            <Box style={{ gap: 'xs' }}>
+              {['个性化需求增长215%', '社交媒体影响占比达82%', '环保产品偏好提升3倍', '品牌忠诚度周期缩短40%'].map((t, i) => (
+                <Text key={i} style={{ fontSize: 'label', color: 'muted' }}>· {t}</Text>
+              ))}
+            </Box>
+          </Box>
+          <Box style={{ height: 96, borderRadius: 'sm', background: 'cardBg' }}>
+            {/* {{图片：消费者画像，有图填 assets/images/1609_sub.png，无图删掉整个 <Image>}} */}
+            <Image src="assets/images/1609_sub.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+          </Box>
+        </Box>
+        <Box style={{ flex: 1, position: 'relative', borderRadius: 'md', background: 'cardBg' }}>
+          {/* {{图片：行为路径分析图，有图填 assets/images/1609_main.png，无图删掉整个 <Image>}} */}
+          <Image src="assets/images/1609_main.png" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+          <Box style={{ position: 'absolute', bottom: 20, left: 20, right: 20, background: 'bg', padding: 'md', borderRadius: 'sm', border: '1px solid #E5E7EB', flexDirection: 'row', justifyContent: 'space-between', boxShadow: '0 12px 36px rgba(0,0,0,0.22)' }}>
+            <Box>
+              <Text style={{ fontSize: 'label', color: 'muted', marginBottom: 'xs' }}>平均决策时长</Text>
+              <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 'xs' }}>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true }}>3.2</Text>
+                <Text style={{ fontSize: 'body', color: 'muted' }}>天</Text>
+              </Box>
+            </Box>
+            <Box style={{ alignItems: 'flex-end' }}>
+              <Text style={{ fontSize: 'label', color: 'muted', marginBottom: 'xs' }}>触点数量</Text>
+              <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 'xs' }}>
+                <Text style={{ fontSize: 'card', color: 'text', bold: true }}>7.5</Text>
+                <Text style={{ fontSize: 'body', color: 'muted' }}>次</Text>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+    {/* 底部功能文字 */}
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', paddingTop: 'md', marginTop: 'lg' }}>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>研究方法：定量调研（n=5,000）+ 定性访谈（n=50）</Text>
+      <Text style={{ fontSize: 'label', color: 'muted' }}>数据来源：《2024中国消费者行为白皮书》第三季度</Text>
+    </Box>
+  </Box>
+</Slide>

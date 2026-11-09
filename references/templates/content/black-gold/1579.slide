@@ -1,0 +1,48 @@
+<Slide>
+  {/* black-gold/1579 荣耀殿堂：领奖台三阶 + 奖杯 + 底部标语 */}
+  <Box style={{ height: 720, width: 1280, background: '#000000', padding: 'xl', alignItems: 'center', justifyContent: 'center' }}>
+    <Text style={{ fontSize: 'title', color: '#FBBF24', bold: true, marginBottom: 'xl' }}>{/* {{替换：标题}} */}荣耀殿堂</Text>
+    {/* 领奖台（金银铜三阶） */}
+    <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 'lg', marginBottom: 'xl' }}>
+      {/* 第二名（左） */}
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ width: 80, height: 80, borderRadius: 40, border: '3px solid #9CA3AF', background: 'rgba(156,163,175,0.15)', alignItems: 'center', justifyContent: 'center', marginBottom: 'xs' }}>
+          <Text style={{ fontSize: 'kpi', color: '#D1D5DB', bold: true }}>2</Text>
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#D1D5DB', bold: true }}>{/* {{替换：亚军名}} */}卓越成就</Text>
+        <Text style={{ fontSize: 'label', color: '#9CA3AF' }}>{/* {{替换：亚军副名}} */}Excellence</Text>
+        <Box style={{ width: 180, height: 108, background: 'linear-gradient(180deg, #4B5563 0%, #1F2937 100%)', alignItems: 'center', justifyContent: 'center', marginTop: 'sm', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: '#9CA3AF' }} />
+          <Text style={{ fontSize: 'card', color: '#9CA3AF', bold: true }}>{/* {{替换：亚军称号}} */}银牌得主</Text>
+        </Box>
+      </Box>
+      {/* 第一名（中） */}
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ width: 100, height: 100, borderRadius: 50, border: '4px solid #FBBF24', background: 'linear-gradient(135deg, #FBBF24 0%, #D97706 100%)', alignItems: 'center', justifyContent: 'center', marginBottom: 'xs' }}>
+          <Text style={{ fontSize: 'title', color: '#000000', bold: true }}>1</Text>
+        </Box>
+        <Text style={{ fontSize: 'card', color: '#FBBF24', bold: true }}>{/* {{替换：冠军名}} */}冠军荣耀</Text>
+        <Text style={{ fontSize: 'label', color: '#EAB308' }}>{/* {{替换：冠军副名}} */}Champion</Text>
+        <Box style={{ width: 200, height: 140, background: 'linear-gradient(180deg, #CA8A04 0%, #92400E 100%)', alignItems: 'center', justifyContent: 'center', marginTop: 'sm', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: '#FCD34D' }} />
+          <Box style={{ position: 'absolute', top: 8, width: 160, height: 120, border: '2px solid rgba(253,230,138,0.3)' }} />
+          <Text style={{ fontSize: 'title', color: '#FDE68A', bold: true }}>{/* {{替换：冠军称号}} */}金牌冠军</Text>
+        </Box>
+      </Box>
+      {/* 第三名（右） */}
+      <Box style={{ alignItems: 'center' }}>
+        <Box style={{ width: 80, height: 80, borderRadius: 40, border: '3px solid #B45309', background: 'rgba(180,83,9,0.15)', alignItems: 'center', justifyContent: 'center', marginBottom: 'xs' }}>
+          <Text style={{ fontSize: 'kpi', color: '#FDBA74', bold: true }}>3</Text>
+        </Box>
+        <Text style={{ fontSize: 'body', color: '#FDBA74', bold: true }}>{/* {{替换：季军名}} */}优秀表现</Text>
+        <Text style={{ fontSize: 'label', color: '#B45309' }}>{/* {{替换：季军副名}} */}Outstanding</Text>
+        <Box style={{ width: 180, height: 84, background: 'linear-gradient(180deg, #9A3412 0%, #7C2D12 100%)', alignItems: 'center', justifyContent: 'center', marginTop: 'sm', boxShadow: '0 16px 48px rgba(0,0,0,0.28)' }}>
+          <Box style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: '#FB923C' }} />
+          <Text style={{ fontSize: 'card', color: '#FDBA74', bold: true }}>{/* {{替换：季军称号}} */}铜牌得主</Text>
+        </Box>
+      </Box>
+    </Box>
+    {/* 底部标语 */}
+    <Text style={{ fontSize: 'body', color: '#FBBF24', letterSpacing: 2 }}>{/* {{替换：标语}} */}用实力铸就辉煌 · 让荣耀永恒闪耀</Text>
+  </Box>
+</Slide>

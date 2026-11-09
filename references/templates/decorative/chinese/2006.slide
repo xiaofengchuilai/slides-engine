@@ -1,0 +1,27 @@
+<Slide>
+  {/* decorative/chinese/2006 中国风-古典小纹样：米白底 + 红圆环/方框/菱纹装饰 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFFFFF 0%, #FBF7EF 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center', gap: 32 }}>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Box style={{ width: 48, height: 48, borderRadius: 24, border: '2px solid #dc2626', position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 8, left: 8, right: 8, bottom: 8, border: '1px solid rgba(220,38,38,0.6)', borderRadius: 16 }} />
+        </Box>
+        <Box style={{ width: 48, height: 48, borderRadius: 24, border: '4px double #b91c1c' }} />
+        <Box style={{ width: 40, height: 40, position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 19, left: 0, width: 40, height: 2, background: '#991b1b' }} />
+          <Box style={{ position: 'absolute', top: 0, left: 19, width: 2, height: 40, background: '#991b1b' }} />
+          <Box style={{ position: 'absolute', top: 12, left: 12, width: 16, height: 16, borderRadius: 8, background: '#b91c1c' }} />
+        </Box>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Box style={{ width: 40, height: 40, position: 'relative' }}>
+          <Box style={{ position: 'absolute', top: 0, left: 19, width: 2, height: 40, background: '#991b1b' }} />
+          <Box style={{ position: 'absolute', top: 19, left: 0, width: 40, height: 2, background: '#991b1b' }} />
+          <Box style={{ position: 'absolute', top: 12, left: 12, width: 16, height: 16, borderRadius: 8, background: '#b91c1c' }} />
+        </Box>
+        <Box style={{ width: 40, height: 40, border: '2px double #b45309', borderRadius: 8 }} />
+        <Box style={{ width: 40, height: 40, borderRadius: 20, border: '1px solid rgba(220,38,38,0.5)', background: 'rgba(220,38,38,0.1)' }} />
+      </Box>
+    </Box>
+  </Box>
+</Slide>

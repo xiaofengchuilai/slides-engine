@@ -1,0 +1,29 @@
+<Slide>
+  {/* decorative/chinese/2004 中国风-篆刻小印章：米白底 + 红印章块/圆/方装饰 */}
+  <Box style={{ height: 720, width: 1280, background: 'linear-gradient(135deg, #FFFFFF 0%, #FBF7EF 100%)', padding: 48 }}>
+    <Box style={{ height: 624, alignItems: 'center', justifyContent: 'center', gap: 32 }}>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Box style={{ width: 48, height: 48, borderRadius: 24, background: '#b91c1c', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>印</Text>
+        </Box>
+        <Box style={{ width: 48, height: 48, background: '#b91c1c', alignItems: 'center', justifyContent: 'center', rotate: 45 }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, fontFamily: 'serif', rotate: -45 }}>章</Text>
+        </Box>
+        <Box style={{ width: 48, height: 48, borderRadius: 24, border: '2px solid #b91c1c', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#b91c1c', bold: true, fontFamily: 'serif' }}>篆</Text>
+        </Box>
+      </Box>
+      <Box style={{ flexDirection: 'row', gap: 48, alignItems: 'center' }}>
+        <Box style={{ width: 40, height: 40, borderRadius: 20, background: 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>中</Text>
+        </Box>
+        <Box style={{ width: 48, height: 48, background: '#b91c1c', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#FFFFFF', bold: true, fontFamily: 'serif' }}>印</Text>
+        </Box>
+        <Box style={{ width: 40, height: 40, border: '2px solid #b91c1c', alignItems: 'center', justifyContent: 'center' }}>
+          <Text style={{ fontSize: 'card', color: '#b91c1c', bold: true, fontFamily: 'serif' }}>福</Text>
+        </Box>
+      </Box>
+    </Box>
+  </Box>
+</Slide>

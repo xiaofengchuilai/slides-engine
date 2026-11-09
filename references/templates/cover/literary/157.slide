@@ -1,0 +1,23 @@
+<Slide>
+  {/* cover/literary/157 文艺风-花语轻吟：浅米粉渐变底 + 散落圆点 + 花纹装饰 + 主标题 + 渐变分隔线 + 副标题 + 落款 */}
+  <Box style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #FFF8F0 0%, #FEF3E8 50%, #F9E4C8 100%)', justifyContent: 'center', alignItems: 'center' }}>
+    {/* 花语散落圆点 */}
+    <Box style={{ position: 'absolute', top: 130, left: 230, width: 8, height: 8, borderRadius: 4, background: '#E59899', opacity: 0.4 }} />
+    <Box style={{ position: 'absolute', top: 158, right: 256, width: 6, height: 6, borderRadius: 3, background: '#CB9397', opacity: 0.35 }} />
+    <Box style={{ position: 'absolute', bottom: 202, left: 282, width: 8, height: 8, borderRadius: 4, background: '#E59899', opacity: 0.35 }} />
+    <Box style={{ position: 'absolute', bottom: 230, right: 307, width: 6, height: 6, borderRadius: 3, background: '#CB9397', opacity: 0.3 }} />
+    <Box style={{ justifyContent: 'center', alignItems: 'center', maxWidth: 900 }}>
+      {/* 花纹装饰：圆点 + 弧线 + 圆点 */}
+      <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 'sm', justifyContent: 'center', marginBottom: 'lg' }}>
+        <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#E59899', opacity: 0.5 }} />
+        <Box style={{ width: 80, height: 1, background: '#E59899', opacity: 0.4 }} />
+        <Box style={{ width: 8, height: 8, borderRadius: 4, background: '#E59899', opacity: 0.5 }} />
+      </Box>
+      <Text style={{ fontSize: 'hero', color: '#7A5F52', fontWeight: 300, fontFamily: 'serif', letterSpacing: 3, textAlign: 'center', lineHeight: 1.2, marginBottom: 'xl' }}>{/* {{替换：主标题}} */}花间词话</Text>
+      {/* 渐变分隔线 */}
+      <Box style={{ width: 320, height: 6, background: 'linear-gradient(90deg, #E59899 30%, #F0D1D2 70%, #F9E4C8 100%)', borderRadius: 'sm', marginBottom: 'xl' }} />
+      <Text style={{ fontSize: 'card', color: '#9D8173', fontWeight: 300, letterSpacing: 2, textAlign: 'center', marginBottom: 'xxl' }}>{/* {{替换：副标题}} */}以花为媒·诗意栖居</Text>
+      <Text style={{ fontSize: 'body', color: '#9D8173', letterSpacing: 2, textAlign: 'center' }}>{/* {{替换：落款}} */}花艺工作室 | 插花艺术分享</Text>
+    </Box>
+  </Box>
+</Slide>

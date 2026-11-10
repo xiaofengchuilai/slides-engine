@@ -3,6 +3,10 @@
 > 声明式幻灯片引擎：用 JSX 写 `.slide`，编译成真正的 `.pptx`。
 > 不调用 PowerPoint / LibreOffice，纯 Node.js 生成，版式稳定可复现。
 
+![slides-engine 效果预览](docs/images/preview.png)
+
+左：封面 · 中：商务内容页 · 右：科技风内容页（共 6 套主题可选）
+
 ```jsx
 // cover.slide
 <Slide style={{ background: 'bg' }}>
